@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/microapp_m_root_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/microapp_m_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/microapp_m_title_custom_bg" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <ViewStub android:id="@+id/microapp_m_viewstub_title_normal" android:layout="@layout/microapp_m_game_titlebar" android:layout_width="match_parent" android:layout_height="44dp"/> /&gt; 
+        <ViewStub android:id="@+id/microapp_m_app_notification_stub" android:layout="@layout/microapp_m_app_notification_top_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.tt.miniapp.view.refresh.SwipeToLoadLayout android:id="@+id/microapp_m_refreshLayout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.tt.miniapp.view.refresh.RefreshHeaderView android:gravity="center" android:id="@+id/microapp_m_swipe_refresh_header" android:layout_width="match_parent" android:layout_height="41dp"/>
+            <com.tt.miniapp.view.webcore.SwipeRefreshTargetDelegate android:id="@+id/microapp_m_swipe_target" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.tt.miniapp.view.refresh.SwipeToLoadLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@+id/microapp_m_viewstub_title_custom" android:layout="@layout/microapp_m_game_titlebar" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <ViewStub android:id="@+id/microapp_m_app_notification_custom_stub" android:layout="@layout/microapp_m_app_notification_top_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/microapp_m_bottom_bar_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

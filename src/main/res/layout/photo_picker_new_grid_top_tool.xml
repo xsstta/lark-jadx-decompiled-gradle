@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_title" android:background="@color/bg_body" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp">
+    <ImageView android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/btn_back" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_back_white" app:tint="@color/text_title"/>
+    <Button android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="right" android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Lark_Legacy_PickerAllImage" style="@style/Widget.AppCompat.ActionButton"/>
+    <View android:id="@+id/popup_anchor" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="44dp"/>
+</FrameLayout>

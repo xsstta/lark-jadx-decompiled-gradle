@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/doc_search_toolbar" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="49dp">
+        <View android:id="@+id/place_holder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_pre" android:background="@drawable/doc_search_pre" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="4dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_next" android:background="@drawable/doc_search_next" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="32dp" android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+</LinearLayout>

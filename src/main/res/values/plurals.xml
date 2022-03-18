@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Bitable_AdvancedPermission_CanEditAndViewNumTable">
+        <item quantity="one">Can edit %d table. Can view __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+        <item quantity="other">Can edit %d tables. Can view __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+    </plurals>
+    <plurals name="Bitable_AdvancedPermission_CanEditNumTable">
+        <item quantity="one">Can edit %d table</item>
+        <item quantity="other">Can edit %d tables</item>
+    </plurals>
+    <plurals name="Bitable_AdvancedPermission_CanViewNumTable">
+        <item quantity="one">Can view %d table</item>
+        <item quantity="other">Can view %d tables</item>
+    </plurals>
+    <plurals name="Bitable_BTModule_TotalTables">
+        <item quantity="one">Collaborator (%d)</item>
+        <item quantity="other">Collaborators (%d)</item>
+    </plurals>
+    <plurals name="Calendar_Detail_DaysLater">
+        <item quantity="one">Starting in 1 day</item>
+        <item quantity="other">Starting in %d days</item>
+    </plurals>
+    <plurals name="Calendar_Detail_HoursLater">
+        <item quantity="one">Starting in 1 hour</item>
+        <item quantity="other">Starting in %d hours</item>
+    </plurals>
+    <plurals name="Calendar_Edit_DisplayAvaliableRoomNumber">
+        <item quantity="one">Available: 1 room</item>
+        <item quantity="other">Available: %d rooms</item>
+    </plurals>
+    <plurals name="Calendar_Edit_Email">
+        <item quantity="one">%d email</item>
+        <item quantity="other">%d emails</item>
+    </plurals>
+    <plurals name="Calendar_Edit_Group">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <plurals name="Calendar_Edit_Member">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="Calendar_Edit_Organization">
+        <item quantity="one">%d department</item>
+        <item quantity="other">%d departments</item>
+    </plurals>
+    <plurals name="Calendar_Edit_ReservationCantExceed">
+        <item quantity="one">Reservation can&apos;t exceed %d hr</item>
+        <item quantity="other">Reservation can&apos;t exceed %d hr</item>
+    </plurals>
+    <plurals name="Calendar_Edit_SelectedMeetingRoomNumber">
+        <item quantity="one">Selected: %d meeting room</item>
+        <item quantity="other">Selected: %d meeting rooms</item>
+    </plurals>
+    <plurals name="Calendar_Feed_NumEventsAtTheSameTime_Hover">
+        <item quantity="one">Click to view %d other event starting at the same time</item>
+        <item quantity="other">Click to view %d other events starting at the same time</item>
+    </plurals>
+    <plurals name="Calendar_Manage_CalendarHandoverDesc">
+        <item quantity="one">The account of {{User}} has been set as unavailable. You are now the owner of %d calendar</item>
+        <item quantity="other">The account of {{User}} has been set as unavailable. You are now the owner of %d calendars</item>
+    </plurals>
+    <plurals name="Calendar_Manage_EventsHandoverDesc">
+        <item quantity="one">The account of {{User}} has been set as unavailable. You are now the organizer of %d event organized by this user.</item>
+        <item quantity="other">The account of {{User}} has been set as unavailable. You are now the organizer of %d events organized by this user.</item>
+    </plurals>
+    <plurals name="Calendar_MeetingRoom_CheckInDescription">
+        <item quantity="one">You can check in within 1 min before the scheduled starting time.</item>
+        <item quantity="other">You can check in within %d min before the scheduled starting time.</item>
+    </plurals>
+    <plurals name="Calendar_MeetingView_GuestCapacity">
+        <item quantity="one">Room for 1 guest</item>
+        <item quantity="other">Room for %d guests</item>
+    </plurals>
+    <plurals name="Calendar_Plural_Attachment">
+        <item quantity="one">1 attachment</item>
+        <item quantity="other">%d attachments</item>
+    </plurals>
+    <plurals name="Calendar_Plural_AttendeeNumAfter">
+        <item quantity="one">Guest(1)</item>
+        <item quantity="other">Guests(%d)</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ChatFindTimeSelected">
+        <item quantity="one">Selected: 1 member</item>
+        <item quantity="other">Selected: %d members</item>
+    </plurals>
+    <plurals name="Calendar_Plural_CommonDays">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="Calendar_Plural_CommonHrs">
+        <item quantity="one">1 hr</item>
+        <item quantity="other">%d hrs</item>
+    </plurals>
+    <plurals name="Calendar_Plural_CommonMins">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+    <plurals name="Calendar_Plural_CommonWeeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="Calendar_Plural_Duration">
+        <item quantity="one">~1 min</item>
+        <item quantity="other">~%d min</item>
+    </plurals>
+    <plurals name="Calendar_Plural_FullDetailStringOfGuests">
+        <item quantity="one">1 guest</item>
+        <item quantity="other">%d guests</item>
+    </plurals>
+    <plurals name="Calendar_Plural_GuestOnBusy">
+        <item quantity="one">Some guest is</item>
+        <item quantity="other">Some guests are</item>
+    </plurals>
+    <plurals name="Calendar_Plural_MeetingNumberOfSelectedContact">
+        <item quantity="one">Selected: 1 contact</item>
+        <item quantity="other">Selected: contacts</item>
+    </plurals>
+    <plurals name="Calendar_Plural_MeetingNumberofSelectedRooms">
+        <item quantity="one">Selected: 1 room</item>
+        <item quantity="other">Selected: %d rooms</item>
+    </plurals>
+    <plurals name="Calendar_Plural_PCCommonHrs">
+        <item quantity="one">number hr</item>
+        <item quantity="other">number hrs</item>
+    </plurals>
+    <plurals name="Calendar_Plural_RRuleDay">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="Calendar_Plural_RRuleMonth">
+        <item quantity="one">month</item>
+        <item quantity="other">months</item>
+    </plurals>
+    <plurals name="Calendar_Plural_RRuleWeek">
+        <item quantity="one">week</item>
+        <item quantity="other">weeks</item>
+    </plurals>
+    <plurals name="Calendar_Plural_RRuleYear">
+        <item quantity="one">year</item>
+        <item quantity="other">years</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ReminderDay">
+        <item quantity="one">1 day before</item>
+        <item quantity="other">%d days before</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ReminderHour">
+        <item quantity="one">1 hour before</item>
+        <item quantity="other">%d hours before</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ReminderMinute">
+        <item quantity="one">1 min before</item>
+        <item quantity="other">%d min before</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ReminderWeek">
+        <item quantity="one">1 week before</item>
+        <item quantity="other">%d weeks before</item>
+    </plurals>
+    <plurals name="Calendar_Plural_SearchInCalendar">
+        <item quantity="one">Search in 1 calendar</item>
+        <item quantity="other">Search in %d calendars</item>
+    </plurals>
+    <plurals name="Calendar_Plural_ShortDetailStringOfGuests">
+        <item quantity="one">1 guest</item>
+        <item quantity="other">%d guests</item>
+    </plurals>
+    <plurals name="Calendar_Plural_TotalAttendee">
+        <item quantity="one">1 guest</item>
+        <item quantity="other">%d guests</item>
+    </plurals>
+    <plurals name="Calendar_Reminder_MinutesLater">
+        <item quantity="one">Starting in 1 minute</item>
+        <item quantity="other">Starting in %d minutes</item>
+    </plurals>
+    <plurals name="Calendar_Rooms_ApplicationRecall">
+        <item quantity="one">Reservation request for the following meeting room will be withdrawn. Change time?</item>
+        <item quantity="other">Reservation requests for the following meeting rooms will be withdrawn. Change time?</item>
+    </plurals>
+    <plurals name="Calendar_Rooms_ReservedCanceledDialog">
+        <item quantity="one">Reservation request for the following meeting room will be withdrawn and needs to be submitted again</item>
+        <item quantity="other">Reservation requests for the following meeting rooms will be withdrawn and need to be submitted again</item>
+    </plurals>
+    <plurals name="Doc_Facade_Day">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="Doc_Facade_HoursAgo">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="Doc_Facade_MinsAgo">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="Doc_Feed_NewMessage">
+        <item quantity="one">%d new message</item>
+        <item quantity="other">%d new messages</item>
+    </plurals>
+    <plurals name="Doc_List_RefreshDocTipsNumber">
+        <item quantity="one">document</item>
+        <item quantity="other">documents</item>
+    </plurals>
+    <plurals name="Doc_List_UploadedFail">
+        <item quantity="one">%d File failed to upload</item>
+        <item quantity="other">%d Files failed to upload</item>
+    </plurals>
+    <plurals name="Doc_Permission_CollaboratorNum">
+        <item quantity="one">Collaborator (%d)</item>
+        <item quantity="other">Collaborators (%d)</item>
+    </plurals>
+    <plurals name="Doc_Share_CollaboratorNum">
+        <item quantity="one">Collaborator (%d)</item>
+        <item quantity="other">Collaborators (%d)</item>
+    </plurals>
+    <plurals name="Doc_Util_HoursAgo">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="Doc_Util_MinsAgo">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="Lark_Community_CommentreactionnumberResponses">
+        <item quantity="one">%d reaction</item>
+        <item quantity="other">%d reactions</item>
+    </plurals>
+    <plurals name="Lark_Community_Dynamic">
+        <item quantity="one">Moment</item>
+        <item quantity="other">Moments</item>
+    </plurals>
+    <plurals name="Lark_Community_Followers">
+        <item quantity="one">Follower</item>
+        <item quantity="other">Followers</item>
+    </plurals>
+    <plurals name="Lark_Community_Following">
+        <item quantity="one">Following</item>
+        <item quantity="other">Following</item>
+    </plurals>
+    <plurals name="Lark_Community_NumberMomentsInCategory">
+        <item quantity="one">%d moment</item>
+        <item quantity="other">%d moments</item>
+    </plurals>
+    <plurals name="Lark_Community_NumberPeopleInCategory">
+        <item quantity="one">%d interaction</item>
+        <item quantity="other">%d interactions</item>
+    </plurals>
+    <plurals name="Lark_Community_Selected">
+        <item quantity="one">Selected: %d chat</item>
+        <item quantity="other">Selected: %d chats</item>
+    </plurals>
+    <plurals name="Lark_Community_TopicsNumberEngagement">
+        <item quantity="one">%d interaction</item>
+        <item quantity="other">%d interactions</item>
+    </plurals>
+    <plurals name="Lark_Community_TopicsNumberMoments">
+        <item quantity="one">%d moment</item>
+        <item quantity="other">%d moments</item>
+    </plurals>
+    <plurals name="Lark_Community_TopicsNumberTimesEngagement">
+        <item quantity="one">%d interaction</item>
+        <item quantity="other">%d interactions</item>
+    </plurals>
+    <plurals name="Lark_Community_TopicsNumberViews">
+        <item quantity="one">%d view</item>
+        <item quantity="other">%d views</item>
+    </plurals>
+    <plurals name="Lark_Education_ClassXParentsInactive">
+        <item quantity="one">1 parent in this class is inactive</item>
+        <item quantity="other">%d parents in this class are inactive</item>
+    </plurals>
+    <plurals name="Lark_Group_TitleNumberMembers">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="Lark_Group_ViewApplication">
+        <item quantity="one">%d pending entry request. Click to approve now</item>
+        <item quantity="other">%d pending entry requests. Click to approve now</item>
+    </plurals>
+    <plurals name="Lark_Groups_MobileSelectedCountMembers">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="Lark_Groups_NewNumPendingRequests">
+        <item quantity="one">%d pending group entry request.</item>
+        <item quantity="other">%d pending group entry requests.</item>
+    </plurals>
+    <plurals name="Lark_Legacy_MaxGroupAdmins">
+        <item quantity="one">Maximum %d group administrator</item>
+        <item quantity="other">Maximum %d group administrators</item>
+    </plurals>
+    <plurals name="Lark_Legacy_NumberChats">
+        <item quantity="one">%d chats</item>
+        <item quantity="other">%d chats</item>
+    </plurals>
+    <plurals name="Lark_Legacy_NumberChatsICU">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <plurals name="Lark_Legacy_NumberOrganizations">
+        <item quantity="one">%d organization</item>
+        <item quantity="other">%d organizations</item>
+    </plurals>
+    <plurals name="Lark_ProfilePage_ReationgNumber">
+        <item quantity="one">Reaction</item>
+        <item quantity="other">Reactions</item>
+    </plurals>
+    <plurals name="Lark_Profile_NumberBadgesAchieved">
+        <item quantity="one">%d badge achieved in total</item>
+        <item quantity="other">%d badges achieved in total</item>
+    </plurals>
+    <plurals name="Mail_Attachment_Count">
+        <item quantity="zero">no attachments</item>
+        <item quantity="one">%d attachment</item>
+        <item quantity="other">%d attachments</item>
+    </plurals>
+    <plurals name="Mail_Calendar_NumberOfGuests">
+        <item quantity="zero">no guest</item>
+        <item quantity="one">%d guest</item>
+        <item quantity="other">%d guests</item>
+    </plurals>
+    <plurals name="Mail_Contacts_SelectedNumContacts">
+        <item quantity="one">Selected: %d contact</item>
+        <item quantity="other">Selected: %d contacts</item>
+    </plurals>
+    <plurals name="Moments_UnableToUpload_SizeLimit">
+        <item quantity="one">%d image failed to upload. Please upload images under 25 MB.</item>
+        <item quantity="other">%d images failed to upload. Please upload images under 25 MB.</item>
+    </plurals>
+    <plurals name="Moments_UploadImage_NumPhotosResolutionOverNum_Toast">
+        <item quantity="one">%d image failed to upload. Resolution can&apos;t exceed {{Resolution}}.</item>
+        <item quantity="other">%d images failed to upload. Resolution can&apos;t exceed {{Resolution}}.</item>
+    </plurals>
+    <plurals name="Moments_UploadImage_NumPhotosSizeOrResolutionOverNum_Toast">
+        <item quantity="one">%d image failed to upload. Image size can&apos;t exceed {{Size}} MB, and resolution can&apos;t exceed {{Resolution}}.</item>
+        <item quantity="other">%d images failed to upload. Image size can&apos;t exceed {{Size}} MB, and resolution can&apos;t exceed {{Resolution}}.</item>
+    </plurals>
+    <plurals name="Moments_UploadImage_NumPhotosSizeOverNum_Toast">
+        <item quantity="one">%d image failed to upload. Image size can&apos;t exceed {{Num}} MB.</item>
+        <item quantity="other">%d images failed to upload. Image size can&apos;t exceed {{Num}} MB.</item>
+    </plurals>
+    <plurals name="Project_MV_CreateNewGroup_Desc">
+        <item quantity="one">All team members (%d member) will automatically join this group</item>
+        <item quantity="other">All team members (%d members) will automatically join this group</item>
+    </plurals>
+    <plurals name="Project_MV_GroupMemberChange_Text">
+        <item quantity="one">%d member from the team will automatically join this group.</item>
+        <item quantity="other">%d members from the team will automatically join this group.</item>
+    </plurals>
+    <plurals name="Project_MV_GroupsMembers">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="Project_MV_GroupsOnlyIcu">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <plurals name="Project_MV_GroupsTotal">
+        <item quantity="one">%d group</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <plurals name="Project_MV_HowManyMembersGroups">
+        <item quantity="one">%d group, __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+        <item quantity="other">%d groups, __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+    </plurals>
+    <plurals name="Project_MV_IcuMembersGroups">
+        <item quantity="one">%d group, __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+        <item quantity="other">%d groups, __PLURAL_TYPE_CARDINAL_BLOCK__</item>
+    </plurals>
+    <plurals name="Project_MV_MembersOnlyIcu">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="Project_T_SelectedHowManyMembers">
+        <item quantity="one">Selected: %d member</item>
+        <item quantity="other">Selected: %d members</item>
+    </plurals>
+    <plurals name="Project_T_SelectedMembersIcu">
+        <item quantity="one">Selected: %d member, groupNum</item>
+        <item quantity="other">Selected: %d members, groupNum</item>
+    </plurals>
+    <plurals name="Project_T_SomeOneJoinGroup">
+        <item quantity="one">%d member joined the group</item>
+        <item quantity="other">%d members joined the group</item>
+    </plurals>
+    <plurals name="Project_T_SomeOneJoinTeam">
+        <item quantity="one">%d member joined the team</item>
+        <item quantity="other">%d members joined the team</item>
+    </plurals>
+    <plurals name="Project_T_TotalBecomesAutomatically">
+        <item quantity="one">There are %d member in the group. They will automatically become team members.</item>
+        <item quantity="other">There are %d members in the group. They will automatically become team members.</item>
+    </plurals>
+    <plurals name="Project_T_TotalBecomesAutomatically2">
+        <item quantity="one">There are %d member in the group. Group members will automatically join the team and other groups under this team. Other team members will automatically join this group.</item>
+        <item quantity="other">There are %d members in the group. Group members will automatically join the team and other groups under this team. Other team members will automatically join this group.</item>
+    </plurals>
+    <plurals name="Project_T_UsernameInviteTeamName">
+        <item quantity="other">{username} created {TeamName} and invited {members1}, {members2} +%d members to join. The team will communicate in this group by default.</item>
+    </plurals>
+    <plurals name="Todo_AndNumberMore">
+        <item quantity="one">%d assignee</item>
+        <item quantity="other">%d assignees</item>
+    </plurals>
+    <plurals name="Todo_Label_UserAddLabels">
+        <item quantity="one">hashtag {Labels}</item>
+        <item quantity="other">hashtags {Labels}</item>
+    </plurals>
+    <plurals name="Todo_Task_AlertTimeNDaysBefore">
+        <item quantity="one">1 day before</item>
+        <item quantity="other">%d days before</item>
+    </plurals>
+    <plurals name="Todo_Task_AlertTimeNHoursBefore">
+        <item quantity="one">1 hour before</item>
+        <item quantity="other">%d hours before</item>
+    </plurals>
+    <plurals name="Todo_Task_AlertTimeNMinutesBefore">
+        <item quantity="one">1 minute before</item>
+        <item quantity="other">%d minutes before</item>
+    </plurals>
+    <plurals name="Todo_Task_AlertTimeNWeeksBefore">
+        <item quantity="one">1 week before</item>
+        <item quantity="other">%d weeks before</item>
+    </plurals>
+    <plurals name="Todo_Task_ManyAssigneesCount">
+        <item quantity="one">%d assignee</item>
+        <item quantity="other">%d assignees</item>
+    </plurals>
+    <plurals name="Todo_Task_NumAssignees">
+        <item quantity="one">%d assignee</item>
+        <item quantity="other">%d assignees</item>
+    </plurals>
+    <plurals name="Todo_Task_NumFollower">
+        <item quantity="one">%d follower</item>
+        <item quantity="other">%d followers</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="test_for_icu">
+        <item quantity="one">{number} student</item>
+        <item quantity="other">{number} students</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/bg_operate_window" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:id="@+id/operate_tv_copy" android:text="@string/Lark_Legacy_Copy" style="@style/OperateTextView"/>
+    <TextView android:id="@+id/operate_tv_select_all" android:text="@string/Lark_Legacy_SelectAll" style="@style/OperateTextView"/>
+</LinearLayout>

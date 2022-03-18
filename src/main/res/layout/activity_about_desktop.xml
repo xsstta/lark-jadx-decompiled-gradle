@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" app:tb_title="@string/Lark_NewSettings_AboutFeishuMobile"/>
+    <include layout="@layout/view_title_about_setting_desktop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:layout_constraintTop_toBottomOf="@+id/titlebar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/lark_logo_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/app_icon_iv" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="18dp" android:src="@drawable/feishu_logo_color"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/lark_version_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="17dp">
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/lkui_N900" android:id="@+id/lark_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_App_Name" app:layout_constraintBaseline_toBaselineOf="@+id/current_version_tv" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/current_version_tv" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:id="@+id/current_version_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/lark_title_tv" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/update_now_ll" android:background="@drawable/settings_item_bg_desktop_upper" android:clickable="false" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:id="@+id/app_version_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_SoftwareUpdateCheckUpdatesButton" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="15dp"/>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/new_version_ll" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginStart="10dp">
+                <TextView android:textColor="@color/lkui_R500" android:id="@+id/new_version_icon_tv" android:background="@drawable/red_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/Lark_Legacy_NewVersionShortLabel" style="@style/TagTextViewStyle"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0810d0" android:layout_marginStart="9dp" android:layout_marginEnd="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp"/>
+        <LinearLayout android:id="@+id/release_notes_ll" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_AboutFeishuChangeLog" android:layout_marginStart="16dp"/>
+            <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="18dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0810d0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp"/>
+        <LinearLayout android:id="@+id/lark_special_function_ll" android:background="@drawable/settings_item_bg_desktop_upper_selector" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_AboutFeishuFeatures" android:layout_marginStart="15dp"/>
+            <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="18dp">
+                <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0810d0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/lark_special_function_divider_ll" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/lark_best_practice_ll" android:background="@drawable/settings_item_bg_desktop_lower" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_AboutFeishuBestPractice" android:layout_marginStart="15dp"/>
+            <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="18dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0810d0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/security_white_paper" android:background="@drawable/settings_item_bg_desktop_upper" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Core_FeishuSecurityWhitePaper" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewItem"/>
+                <ImageView android:src="0x7f0810d0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ImageViewItem"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/passed_information_security_certification" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="@dimen/dp_14" android:layout_marginStart="@dimen/dp_16">
+                <ImageView android:id="@+id/passed_information_security_certification_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_svg_passed_information_security_certification" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/passed_information_security_certification_tv" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:id="@+id/passed_information_security_certification_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Core_PassedInformationSecurityCertification" android:layout_marginStart="@dimen/dp_2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/passed_information_security_certification_iv" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/settings_item_bg_desktop" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/user_agreement" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:text="@string/Lark_NewSettings_AboutFeishuUserAgreement" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewItem"/>
+                    <ImageView android:src="0x7f0810d0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ImageViewItem"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/dp_16"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/privacy_policy" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:text="@string/Lark_NewSettings_AboutFeishuPrivacyPolicy" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewItem"/>
+                    <ImageView android:src="0x7f0810d0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ImageViewItem"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <View android:id="@+id/application_permission_desc_divider_above" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/dp_16"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/application_permission_desc" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:text="@string/Lark_Core_ApplicationPermissionDesc" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewItem"/>
+                    <ImageView android:src="0x7f0810d0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ImageViewItem"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <View android:id="@+id/third_party_sdk_divider_above" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/dp_16"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/third_party_sdk" android:layout_width="match_parent" android:layout_height="48dp">
+                    <TextView android:text="@string/Lark_Core_ThirdPartySDKList" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextViewItem"/>
+                    <ImageView android:src="0x7f0810d0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ImageViewItem"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/copy_right_tv" android:paddingTop="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:minHeight="18dp" android:text="Copyright © 2020 Beijing Feishu Technology Co., Ltd." android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

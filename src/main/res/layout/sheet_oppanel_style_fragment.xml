@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/oppanel_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/oppanel_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_kit_len_16" android:paddingBottom="@dimen/space_kit_len_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_kit_len_16" android:paddingEnd="@dimen/space_kit_len_16">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="bold" android:contentDescription="bold" app:icon="@drawable/ud_icon_bold_outlined" app:position="floating" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="italic" android:contentDescription="italic" app:icon="@drawable/ud_icon_italic_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="underline" android:contentDescription="underline" app:icon="@drawable/ud_icon_underline_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="strikethrough" android:contentDescription="strikethrough" app:icon="@drawable/ud_icon_horizontal_line_outlined" app:position="aboveThumb" style="@style/SheetAttrItem"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height" android:layout_marginTop="@dimen/space_kit_len_16">
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="horizontalLeft" android:contentDescription="horizontalLeft" app:icon="@drawable/ud_icon_left_alignment_outlined" app:position="floating" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="horizontalCenter" android:contentDescription="horizontalCenter" app:icon="@drawable/ud_icon_center_alignment_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="horizontalRight" android:contentDescription="horizontalRight" app:icon="@drawable/ud_icon_right_alignment_outlined" app:position="aboveThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/space_kit_len_8" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="verticalTop" android:contentDescription="verticalTop" app:icon="@drawable/ud_icon_top_align_outlined" app:position="floating" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="verticalCenter" android:contentDescription="verticalCenter" app:icon="@drawable/ud_icon_vertical_align_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="verticalBottom" android:contentDescription="verticalBottom" app:icon="@drawable/ud_icon_bottom_align_outlined" app:position="aboveThumb" style="@style/SheetAttrItem"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height" android:layout_marginTop="@dimen/space_kit_len_16">
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="autoWrap" android:contentDescription="autoWrap" app:position="floating" app:text="@string/Doc_Doc_ToolbarCellAutoWrap" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="overflow" android:contentDescription="overflow" app:position="atThumb" app:text="@string/Doc_Doc_ToolbarCellClip" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="clip" android:contentDescription="clip" app:position="aboveThumb" app:text="@string/Doc_Doc_ToolbarCellOverflow" style="@style/SheetAttrItem"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/style_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_8"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

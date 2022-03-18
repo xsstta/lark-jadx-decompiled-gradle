@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ud_N100" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.mail.impl.view.titlebar.OperationTitleBar android:id="@+id/mail_msg_list_operation_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/mail_operation_title_bar_height"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/mail_msg_list_operation_title_bar" layout="@layout/mail_message_list_mailtitle_subject"/>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRoundableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/round_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rl_border_color="@color/line_border_card" app:rl_border_width="1dp" app:rl_radius="10dp">
+    <com.ss.android.lark.chatbase.view.ChatImageGroup android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.larksuite.component.ui.layout.LKUIRoundableLayout>

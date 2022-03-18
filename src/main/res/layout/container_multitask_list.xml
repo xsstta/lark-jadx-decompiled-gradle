@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/task_list_container" android:background="@color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/rv_task_list" android:background="@color/transparent" android:layout_width="272dp" android:layout_height="wrap_content" android:overScrollMode="never"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+package com.ss.android.lark.widget.light.listener;
+
+import com.ss.android.lark.widget.light.listener.IAbbreviationClickListener;
+import kotlin.Metadata;
+
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00072\u00020\b2\u00020\t2\u00020\n¨\u0006\u000b"}, d2 = {"Lcom/ss/android/lark/widget/light/listener/ISpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IAtSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IPhoneSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IUrlSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IAbbreviationClickListener;", "Lcom/ss/android/lark/widget/light/listener/IAbbreviationClickListener$IActionLocationProvider;", "Lcom/ss/android/lark/widget/light/listener/IImageSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IIntentionClickListener;", "Lcom/ss/android/lark/widget/light/listener/IMentionSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IMediaSpanClickListener;", "Lcom/ss/android/lark/widget/light/listener/IMomentsHashTagSpanClickListener;", "linked-emoji_release"}, mo238835k = 1, mv = {1, 1, 16})
+/* renamed from: com.ss.android.lark.widget.light.c.i */
+public interface ISpanClickListener extends IAbbreviationClickListener, IAbbreviationClickListener.IActionLocationProvider, IAtSpanClickListener, IImageSpanClickListener, IIntentionClickListener, IMediaSpanClickListener, IMentionSpanClickListener, IMomentsHashTagSpanClickListener, IPhoneSpanClickListener, IUrlSpanClickListener {
+}

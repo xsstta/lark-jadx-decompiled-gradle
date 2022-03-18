@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/notice_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/tabLayout" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:ud_tab_backgroundColor="@color/lkui_transparent" app:ud_tab_gravity="1" app:ud_tab_indicatorFullWidth="true" app:ud_tab_minWidth="@dimen/dp_34" app:ud_tab_mode="1"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/notice_vp" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

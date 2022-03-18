@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/hwclickeffic_default_color_emui"/>
+            <corners android:topLeftRadius="@dimen/hwsearchview_left_radius" android:topRightRadius="@dimen/hwsearchview_right_radius" android:bottomLeftRadius="@dimen/hwsearchview_left_radius" android:bottomRightRadius="@dimen/hwsearchview_right_radius"/>
+        </shape>
+    </item>
+</selector>

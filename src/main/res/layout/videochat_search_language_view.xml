@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/invite_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/search_bar_highlight" android:visibility="visible" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginStart="16dp">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/interpreter_searchbar_selector" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_weight="1">
+            <View android:background="@drawable/participant_searchbar_highlight_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="16dp" android:textColor="@color/icon_n3" android:id="@+id/searchicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_search_new" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <com.ss.android.lark.widget.ExtendedEditText android:textSize="14dp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:ellipsize="end" android:id="@+id/search_et" android:background="@null" android:paddingRight="36dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/View_G_SearchLanguages" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionUnspecified|actionGo|actionSend|actionDone|flagNoExtractUi" android:textCursorDrawable="@drawable/history_search_text_cursor_drawable" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/searchicon"/>
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="16dp" android:textColor="@color/text_placeholder" android:id="@+id/clear_search_highlight" android:padding="8dp" android:visibility="visible" android:layout_width="32dp" android:layout_height="32dp" android:text="@string/iconfont_icon_close_solid" android:layout_centerVertical="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/primary_pri_500" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/search_cancel_button" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/View_G_CancelButton"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/warning_layout_slot" android:background="@color/ud_N800" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/search_result_top_normal_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="16dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/search_list_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/search_result_lv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

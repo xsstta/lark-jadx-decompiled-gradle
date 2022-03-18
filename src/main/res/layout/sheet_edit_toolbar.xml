@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="0dp" android:layout_height="@dimen/space_kit_len_44" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/toolbar_items_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/sheet_toolbar_first_item_margin_start"/>
+        </LinearLayout>
+        <View android:layout_gravity="end" android:id="@+id/mark" android:background="@drawable/toolbar_keyboard_mark" android:layout_width="@dimen/space_kit_len_52" android:layout_height="match_parent" android:backgroundTint="@color/bg_body"/>
+        <View android:layout_gravity="end" android:id="@+id/separator" android:background="@drawable/doc_toolar_v2_divider" android:layout_width="@dimen/space_kit_len_3" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="@dimen/sheet_toolbar_shortcut_width" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.sheet.inputbar.toolbar.ToolbarItemView android:layout_gravity="center" android:id="@+id/toolbar_shortcut" android:layout_width="wrap_content" android:layout_height="wrap_content" app:itemIcon="@drawable/ud_icon_keyboard_display_outlined"/>
+    </FrameLayout>
+</LinearLayout>

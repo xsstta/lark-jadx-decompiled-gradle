@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/mail_item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:focusable="true" android:layout_width="match_parent" android:layout_height="48dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/menu_lable_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:id="@+id/menu_lable_badge" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/menu_lable_badge_other" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/menu_lable_text" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:includeFontPadding="false" android:layout_toLeftOf="@+id/menu_lable_badge" android:layout_toRightOf="@+id/menu_lable_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/menu_lable_line" android:background="@color/line_border_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mail_divider_height" android:layout_marginLeft="@dimen/mail_home_menu_left_margin" android:layout_alignParentBottom="true"/>
+</LinearLayout>

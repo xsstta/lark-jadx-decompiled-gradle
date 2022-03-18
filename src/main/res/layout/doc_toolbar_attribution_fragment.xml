@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:id="@+id/headerLevel" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="64dp" android:layout_marginBottom="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <FrameLayout android:background="@color/space_kit_trans" android:layout_width="8dp" android:layout_height="match_parent"/>
+                    <FrameLayout android:tag="h1" android:background="@drawable/doc_toolbar_subitem_left" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h1_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h2" android:background="@drawable/doc_toolbar_subitem_none" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h2_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h3" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h3_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h4" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h4_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h5" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h5_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h6" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h6_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h7" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h7_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h8" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h8_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="h9" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h9_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:background="@color/space_kit_trans" android:layout_width="8dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="8dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginBottom="12dp">
+                    <FrameLayout android:tag="bold" android:background="@drawable/doc_toolbar_subitem_left" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_bold_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="italic" android:background="@drawable/doc_toolbar_subitem_none" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_italic_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="underline" android:background="@drawable/doc_toolbar_subitem_none" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_underline_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="strikethrough" android:background="@drawable/doc_toolbar_subitem_right" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_horizontal_line_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="8dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginBottom="12dp">
+                    <FrameLayout android:tag="checkbox" android:background="@drawable/doc_toolbar_subitem_left" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_todo_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="unorderedList" android:background="@drawable/doc_toolbar_subitem_none" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_disorder_list_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="orderedList" android:background="@drawable/doc_toolbar_subitem_right" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_order_list_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="inlineCode" android:background="@drawable/doc_toolbar_subitem_left" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_code_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="codeList" android:background="@drawable/doc_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_codeblock_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginBottom="16dp">
+                    <FrameLayout android:tag="blockQuote" android:background="@drawable/doc_toolbar_subitem_all" android:layout_weight="69" android:layout_marginEnd="@dimen/doc_toolbar_subitem_margin3" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_reference_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="alignLeft" android:background="@drawable/doc_toolbar_subitem_left" android:layout_weight="66" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_left_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="alignCenter" android:background="@drawable/doc_toolbar_subitem_none" android:layout_weight="67" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_center_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="alignRight" android:background="@drawable/doc_toolbar_subitem_right" android:layout_weight="66" android:layout_marginEnd="@dimen/doc_toolbar_subitem_margin3" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_right_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="insertSeparator" android:background="@drawable/doc_toolbar_subitem_all" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="69">
+                        <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_divider_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="@color/space_kit_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/selectColor" android:layout_width="match_parent" android:layout_height="64dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/space_kit_n900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Doc_ToolbarHighLight" android:layout_marginStart="12dp"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <com.bytedance.ee.bear.widgets.RoundColorView android:id="@+id/highLightColor" android:layout_width="40dp" android:layout_height="40dp"/>
+                        <ImageView android:padding="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/toolbar_arrow_right_normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/selectColorV2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/space_kit_n900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Doc_ColorSelectTitle" android:layout_marginStart="12dp"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <com.bytedance.ee.bear.document.model.toolbar.selectcolor.impl.RectColorView android:id="@+id/highLightColorV2" android:layout_width="42dp" android:layout_height="42dp"/>
+                        <ImageView android:padding="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/toolbar_arrow_right_normal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="40dp" app:tb_back_icon="@drawable/titlebar_close_bg_selector"/>
+    <com.ss.android.lark.contact.widget.DesktopContactsTitle android:id="@+id/desktop_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_placeholder" android:background="@drawable/contact_department_struct_search_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_in_search_view" android:tint="@color/icon_n1" android:layout_marginStart="8dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="6.5dp" android:layout_marginBottom="7.5dp" android:text="@string/Lark_Legacy_Search" android:singleLine="true" android:layout_marginStart="4dp" android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/contactDepartmentInviteMemberFl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+        <RelativeLayout android:background="@drawable/contact_department_invite_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="14dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_contact_department_invite" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/Lark_Invitation_InviteTeamMembers_TitleBar" android:drawablePadding="12dp" android:layout_centerVertical="true" android:drawableStart="@drawable/contact_invite_member_icon" android:layout_toStartOf="@+id/contactDepartmentInviteMemberGoView" android:layout_alignParentStart="true"/>
+            <ImageView android:id="@+id/contactDepartmentInviteMemberGoView" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:adjustViewBounds="true" android:tint="@color/icon_n3" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_horizontal" android:id="@+id/empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160dp" android:layout_marginBottom="300dp" android:text="@string/Lark_Legacy_HistorySendEmpty" android:includeFontPadding="false"/>
+</LinearLayout>

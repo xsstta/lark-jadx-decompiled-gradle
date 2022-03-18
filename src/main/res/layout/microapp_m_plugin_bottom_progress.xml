@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:id="@+id/microapp_m_video_bottom_progressbar" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="1.5dp" android:max="100" android:progressDrawable="@drawable/microapp_m_video_progress_bar" android:minHeight="1.5dp" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>

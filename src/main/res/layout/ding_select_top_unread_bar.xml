@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.member_manage.impl.select_ding_member.DingSelectTopUnreadBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/bg_section_split_bar" android:layout_width="match_parent" android:layout_height="9dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/select_all_unread_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="66dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/select_all_unread_check_box" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" app:ud_checkbox_type="0"/>
+        <TextView android:textSize="17sp" android:textColor="@color/text_title" android:id="@+id/select_all_unread_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_buzz_SelectUnreadMembers"/>
+    </LinearLayout>
+    <View android:background="@drawable/bg_section_split_bar" android:layout_width="match_parent" android:layout_height="9dp"/>
+</com.ss.android.lark.member_manage.impl.select_ding_member.DingSelectTopUnreadBar>

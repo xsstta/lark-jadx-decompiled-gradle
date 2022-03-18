@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/udtoken_component_outlined_bg"/>
+    <stroke android:width="@dimen/space_kit_len_1" android:color="@color/recordcard_border" android:dashWidth="@dimen/space_kit_len_2" android:dashGap="@dimen/space_kit_len_2"/>
+    <corners android:radius="@dimen/bitable_cell_item_radius"/>
+</shape>

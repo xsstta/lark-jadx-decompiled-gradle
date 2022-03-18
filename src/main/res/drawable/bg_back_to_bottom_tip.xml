@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <stroke android:width="0.5dp" android:color="@color/line_border_card"/>
+            <size android:height="48dp" android:width="48dp"/>
+            <solid android:color="@color/new_message_tip_color_selector"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@+id/double_angle" android:drawable="@drawable/ud_icon_down_bottom_outlined" android:left="14dp" android:top="14dp" android:right="14dp" android:bottom="14dp"/>
+</layer-list>

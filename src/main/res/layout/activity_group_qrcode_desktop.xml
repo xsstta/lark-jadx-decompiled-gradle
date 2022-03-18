@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/group_qrcode" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/group_qrcode_titlebar" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/qrcode_group_info_layout" android:background="@drawable/share_profile_bg" android:layout_width="360dp" android:layout_height="360dp" android:layout_marginTop="15dp" android:layout_below="@+id/group_qrcode_titlebar" android:layout_centerHorizontal="true" android:elevation="6dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.joooonho.SelectableRoundedImageView android:id="@+id/qrcode_group_avatar" android:background="@color/bg_body" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_circle_bg" android:scaleType="centerCrop" android:layout_marginStart="16dp" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp">
+                <TextView android:textSize="14sp" android:textColor="@color/text_title" android:id="@+id/qrcode_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_marginStart="10dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/qrcode_group_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:singleLine="true" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:id="@+id/group_qrcode_loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp">
+            <com.ss.android.lark.ui.RotateLoadingView android:id="@+id/group_qrcode_loading" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerInParent="true" app:rotate_src="@drawable/qrcode_loading"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/group_qrcode_empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp">
+            <ImageView android:id="@+id/group_qrcode_failed_iv" android:layout_width="140dp" android:layout_height="120dp" android:layout_marginTop="56.5dp" android:src="@drawable/illustration_placeholder_common_load_failed" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/group_qrcode_failed_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:text="@string/Lark_Legacy_QRCodeLoadFailed" android:layout_below="@+id/group_qrcode_failed_iv" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/function_info_500" android:id="@+id/group_qrcode_load_again" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/Lark_Legacy_QrCodeLoadAgain" android:layout_below="@+id/group_qrcode_failed_tip" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/group_qrcode_layout" android:layout_width="match_parent" android:layout_height="300dp">
+            <ImageView android:id="@+id/group_qrcode_iv" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="16dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/group_qrcode_valid_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_qrcode_add_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:text="@string/Lark_Chat_Group_QRcode_ExternalAddTip" android:maxLines="3" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14sp" android:textColor="@drawable/group_chat_qrcode_save_btn_textcolor_selector" android:gravity="center" android:id="@+id/group_qrcode_save_to_phone_btn" android:background="@drawable/group_qrcode_save_to_phone_btn_bg" android:layout_width="160dp" android:layout_height="match_parent" android:text="@string/Lark_Legacy_QrCodeSave"/>
+        <TextView android:textSize="14sp" android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/group_qrcode_share_btn" android:background="@drawable/group_chat_qrcode_share_btn_bg_selector" android:layout_width="160dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="@string/Lark_Legacy_QrCodeShare" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

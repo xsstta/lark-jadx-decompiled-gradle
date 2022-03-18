@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sheet_tab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_36">
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:background="@color/sheet_tab_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/fl_exit_landscape" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/exit_landscape_btn" android:background="@drawable/sheet_exit_landscape_button_bg" android:paddingTop="@dimen/space_kit_len_2" android:paddingBottom="@dimen/space_kit_len_2" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_22" android:text="@string/Doc_Sheet_ExitLandscape" android:singleLine="true" android:paddingStart="@dimen/space_kit_len_10" android:paddingEnd="@dimen/space_kit_len_10" android:layout_marginStart="@dimen/space_kit_len_16" android:layout_marginEnd="@dimen/space_kit_len_12"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_add_sheets" android:background="@drawable/sheet_tab_addsheets_bg" android:layout_width="@dimen/space_kit_len_50" android:layout_height="@dimen/space_kit_len_34" android:layout_toStartOf="@+id/fl_exit_landscape">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/space_kit_len_16" android:layout_height="@dimen/space_kit_len_16" android:src="@drawable/ud_icon_add_outlined" android:tint="@color/icon_n1"/>
+        </FrameLayout>
+        <com.bytedance.ee.bear.sheet.tab.view.ElasticLinearLayout android:layout_gravity="bottom" android:id="@+id/ell_sheet_tab_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@+id/fl_add_sheets">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_sheet_tab" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.bytedance.ee.bear.sheet.tab.view.ElasticLinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

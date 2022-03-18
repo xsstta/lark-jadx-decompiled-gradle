@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.slide.common.export.SlideExportView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/slide_export_title" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_50" android:layout_alignParentTop="true"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/slide_export_long_picture_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/slide_export_share_and_download_container" android:layout_below="@+id/slide_export_title" android:layout_marginStart="@dimen/space_kit_len_15" android:layout_marginEnd="@dimen/space_kit_len_15" app:srlEnableLoadmore="false" app:srlEnableRefresh="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/slide_bitmaps_recycler_view" android:paddingTop="@dimen/space_kit_len_10" android:paddingBottom="@dimen/space_kit_len_5" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/slide_export_loading_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardElevation="@dimen/space_kit_len_2">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/slide_preview_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_24">
+            <ImageView android:id="@+id/slide_export_error_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_global_error_nor" android:layout_marginEnd="@dimen/space_kit_len_5"/>
+            <ProgressBar android:id="@+id/slide_export_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/space_kit_len_6" style="@style/SlideSmallProgress"/>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_title" android:id="@+id/slide_export_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Slide_Slide_Exporting"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/slide_export_share_and_download_container" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_44" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/slide_export_share_image_view" android:layout_width="@dimen/space_kit_len_24" android:layout_height="@dimen/space_kit_len_24" android:src="@drawable/ud_icon_share_label_outlined" android:tint="@color/icon_n1" android:layout_marginEnd="@dimen/space_kit_len_50"/>
+        <ImageView android:id="@+id/slide_export_download_image_view" android:layout_width="@dimen/space_kit_len_24" android:layout_height="@dimen/space_kit_len_24" android:src="@drawable/facade_icon_global_download_nor" android:tint="@color/icon_n1" android:layout_marginStart="@dimen/space_kit_len_50"/>
+    </LinearLayout>
+</com.bytedance.ee.bear.slide.common.export.SlideExportView>

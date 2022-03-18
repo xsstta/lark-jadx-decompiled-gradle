@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="splash_fit_xy">true</bool>
+    <bool name="splash_full_screen">false</bool>
+    <bool name="undo_is_align_bottom_possible">true</bool>
+    <bool name="zm_config_enter_meeting_from_lock_screen">false</bool>
+    <bool name="zm_config_invite_by_only_action_meeting_invite">false</bool>
+</resources>

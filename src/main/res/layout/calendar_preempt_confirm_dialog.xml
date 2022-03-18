@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/dialogTitleContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="0x7f0804ba" android:paddingLeft="@dimen/dp_24" android:paddingTop="@dimen/dp_24" android:paddingRight="@dimen/dp_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/dialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/Calendar_Takeover_TipsNoUse" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N600" android:gravity="center_horizontal" android:id="@+id/dialogMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Takeover_TipsNoUseTwo"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/checkboxContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/dialogCheckbox" android:focusable="true" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N600" android:gravity="center_vertical" android:id="@+id/dialogCheckboxTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_7" android:text="@string/Calendar_Takeover_TipsNoShow"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/dialog_content_divider_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:id="@+id/default_divider" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_12">
+            <View android:id="@+id/dialog_content_divider" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/dialog_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_white_corner6_bottom_bg" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="17sp" android:textColor="@color/lkui_B500" android:gravity="center" android:id="@+id/dialogBtn" android:background="@drawable/common_dialog_single_btn_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:text="@string/Calendar_Takeover_Confirm"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

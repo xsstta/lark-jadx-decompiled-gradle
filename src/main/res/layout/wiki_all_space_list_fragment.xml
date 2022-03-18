@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/wiki_all_space_title_bar_layout" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_45">
+        <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/wiki_all_space_list_title_bar" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentTop="true" android:contentDescription="title_bar"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/wiki_all_space_content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_45">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/wiki_all_space_list_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/ud_empty_no_network_state" android:visibility="gone" android:layout_marginTop="206dp" app:ud_empty_desc="Network has been interrupted, please try again later." app:ud_empty_imageRes="@drawable/illustration_empty_negative_no_wifi" style="@style/SpaceEmptyStatusStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/wiki_all_space_search_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.wiki.search.WikiSearchView android:id="@+id/wiki_all_space_search_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="@dimen/signin_sdk_button_stroke_width" android:color="@color/line_border_component"/>
+            <solid android:color="@color/udtoken_btn_se_bg_neutral_hover"/>
+            <corners android:radius="@dimen/signin_sdk_button_radius"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="@dimen/signin_sdk_button_stroke_width" android:color="@color/line_border_component"/>
+            <solid android:color="@color/udtoken_component_outlined_bg"/>
+            <corners android:radius="@dimen/signin_sdk_button_radius"/>
+        </shape>
+    </item>
+</selector>

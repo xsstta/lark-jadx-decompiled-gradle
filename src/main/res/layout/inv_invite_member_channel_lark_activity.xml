@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.inv.export.util.InvErrorView android:id="@+id/imclErrorView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/imclRv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/imclBottomLl" android:overScrollMode="never"/>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/imclTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/bg_base"/>
+    <include layout="@layout/inv_invite_member_channel_lark_bottom_view"/>
+</RelativeLayout>

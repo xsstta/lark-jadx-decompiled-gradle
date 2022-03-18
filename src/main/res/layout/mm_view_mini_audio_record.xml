@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mini_audio_record_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_radius="12dp" style="@style/UDShadow.S3.Down">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/mm_shape_float_round_mini" android:layout_width="wrap_content" android:layout_height="60dp">
+        <FrameLayout android:layout_width="38dp" android:layout_height="50dp" android:layout_marginLeft="16dp">
+            <com.larksuite.component.ui.imageview.LKUILottieAnimationView android:id="@+id/ivWaveLottie" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivWavePause" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/mm_ic_record_float_wave_pause"/>
+        </FrameLayout>
+        <TextView android:textSize="17dp" android:textStyle="normal" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tvDuration" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="12dp" android:minWidth="72dp" android:maxLines="1" android:textFontWeight="700"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivResumePause" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="16dp" android:layout_marginRight="12dp" app:srcCompat="@drawable/mm_ic_record_float_pause"/>
+    </LinearLayout>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

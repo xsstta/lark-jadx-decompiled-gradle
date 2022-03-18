@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32">
+    <com.ss.android.lark.widget.searchfilter.SearchFilterView android:layout_gravity="center_vertical" android:id="@+id/filter_view_item" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginStart="10dp"/>
+    <View android:id="@+id/filter_view_item_placeholder" android:visibility="gone" android:layout_width="10dp" android:layout_height="match_parent"/>
+</LinearLayout>

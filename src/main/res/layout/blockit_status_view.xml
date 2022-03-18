@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/bg_body_overlay" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+    <ImageView android:id="@+id/iv_block_status" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/block_upgrade"/>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/tv_block_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/OpenPlatform_Block_AppVerUpdatePrompt"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:id="@+id/btn_block_status" android:background="@drawable/block_status_btn" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

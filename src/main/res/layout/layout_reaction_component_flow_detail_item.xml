@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/tag_container" android:background="@drawable/bubble_reaction_grey_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_reaction_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/vertical_split_reaction" android:background="@color/line_divider_default" android:layout_width="0.5dp" android:layout_height="13dp"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/names_reaction_list" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

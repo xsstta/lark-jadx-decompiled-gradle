@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/attachment_container" android:background="@drawable/bitable_card_field_attachment_bg" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bitable_cell_min_height">
+        <com.bytedance.ee.bear.bitable.card.view.cell.attachment.view.AttachmentGridView android:gravity="center_vertical" android:id="@+id/attachment_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/add_attachment_button_fl" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_36" android:layout_marginBottom="@dimen/space_kit_len_12" android:layout_marginStart="@dimen/space_kit_len_12" android:layout_marginEnd="@dimen/space_kit_len_12">
+            <ImageView android:layout_gravity="center" android:id="@+id/add_attachment_button_image" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerInside"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_45">
+        <ImageView android:id="@+id/close_icon" android:layout_width="@dimen/space_kit_len_24" android:layout_height="@dimen/space_kit_len_24" android:src="@drawable/ud_icon_close_small_outlined" android:tint="@color/facade_selector_icon_n1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_12" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="@dimen/space_kit_font_17" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_Docs_DocCover_ChooseCover_Title" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/primary_pri_500" android:id="@+id/delete_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_Docs_DocCover_Remove_Tab" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/space_kit_len_16" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_40">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/tab_indicator" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/space_kit_len_8"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/random_view" android:background="@drawable/doc_cover_random_selector" android:paddingTop="@dimen/space_kit_len_2" android:paddingBottom="@dimen/space_kit_len_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/space_kit_len_4" android:paddingEnd="@dimen/space_kit_len_4" android:layout_marginEnd="@dimen/space_kit_len_14">
+            <ImageView android:layout_width="@dimen/space_kit_len_14" android:layout_height="@dimen/space_kit_len_14" android:src="@drawable/icon_doc_cover_random"/>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:id="@+id/random_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_Docs_DocCover_Random_Tab" android:layout_marginStart="@dimen/space_kit_len_4"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/doc_cover_selection_tab_shadow" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_5"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_back_icon="@drawable/ud_icon_left_outlined" app:widget_widgets_tb_background="@color/bg_base" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_Share_SettingTitle"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/perm_external_share_layout" android:background="@drawable/facade_common_round_rectangle_bg" android:layout_height="@dimen/space_kit_len_52" android:layout_marginTop="@dimen/space_kit_len_10" style="@style/ShareSettingTitleFrameLayout">
+                <TextView android:id="@+id/perm_external_share_text" android:text="@string/CreationDoc_Minutes_permissions_settings_ExternalShare_toggle" android:layout_weight="1" style="@style/ShareSettingTextTitle"/>
+                <com.larksuite.component.universe_design.p1166switch.UDSwitch android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/perm_external_share_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:id="@+id/comment_item_title" android:text="@string/CreationMobile_Minutes_permissions_settings_comment" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/facade_common_round_rectangle_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_comment_with_read" app:title="@string/CreationDoc_Minutes_permissions_settings_viewer_option" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_comment_with_edit" app:showBottomDivider="false" app:title="@string/CreationDoc_Minutes_permissions_settings_editor_option" style="@style/ShareSettingItem"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:id="@+id/collaborator_setting_divider" android:text="@string/Doc_Share_SettingShareTitle" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/facade_common_round_rectangle_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_share_anyone" android:visibility="visible" app:title="@string/Doc_Permission_SettingShareAnyone" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_share_tenant" app:title="@string/Doc_Share_SettingShareTenantAccessible" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_share_tenant_invite_colleague" android:layout_marginStart="19dp" app:title="@string/Doc_Share_SettingInviteCompanny" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_share_tenant_invite_anyone" android:layout_marginStart="19dp" app:title="@string/Doc_Share_SettingInviteDocs" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_share_only_me" app:showBottomDivider="false" app:title="@string/Doc_Share_SettingShareOnlyICan" style="@style/ShareSettingItem"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:id="@+id/perm_security_title" android:text="@string/CreationMobile_common_whocan" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/facade_common_round_rectangle_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_security_read" app:title="@string/CreationDoc_Minutes_permissions_settings_viewer_option" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_security_edit" app:title="@string/CreationDoc_Minutes_permissions_settings_editor_option" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/perm_security_fa" android:visibility="gone" app:showBottomDivider="false" app:title="@string/Doc_Share_SettingShareOnlyICan" style="@style/ShareSettingItem"/>
+                <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomLine="false" app:topLine="false"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:layout_width="match_parent" android:layout_height="match_parent" app:bottomLine="false" app:topLine="false"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

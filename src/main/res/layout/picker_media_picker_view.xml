@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <RelativeLayout android:orientation="vertical" android:background="@color/picker_side_panel" android:layout_width="58dp" android:layout_height="match_parent">
+            <ImageView android:id="@+id/camera_btn" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:src="@drawable/picker_ic_keyboard_camera" android:tint="@color/item_tint" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_photo_album" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="44dp" android:src="@drawable/picker_ic_keyboard_picture" android:tint="@color/item_tint" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recyclerview_photo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/photo_permission_denied_layout" android:paddingTop="40dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/tv_photo_permission_denied" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/Lark_MediaPicker_MediaPermissionDeniedLint"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_link_normal" android:gravity="center" android:id="@+id/btn_photo_permission_denied" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_MediaPicker_OpenPhotoPermission"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/chat_menu_post" android:layout_width="match_parent" android:layout_height="44dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_original_photo" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/cb_original_photo" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="15sp" android:textColor="@color/text_caption" android:gravity="center_vertical" android:id="@+id/original_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5dp" android:text="@string/Lark_MediaPicker_OriginPic"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/layout_media_send" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <TextView android:textSize="14dp" android:textColor="@drawable/picker_send_btn_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_media_send" android:background="@drawable/picker_send_bg_selector" android:paddingLeft="2.5dp" android:paddingRight="2.5dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginRight="15dp" android:minWidth="64dp" android:text="@string/Lark_MediaPicker_Send" android:maxLines="1" android:textAllCaps="false"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_media_preview" android:paddingLeft="2.5dp" android:paddingRight="2.5dp" android:layout_width="wrap_content" android:layout_height="28dp" android:minWidth="64dp" android:text="@string/Lark_MediaPicker_Preview" android:maxLines="1" android:textAllCaps="false"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

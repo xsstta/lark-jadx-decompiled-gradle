@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/vc_bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.larksuite.component.ui.loading.LKUILoadingView android:id="@+id/tab_loading_view" android:visibility="visible" android:layout_width="100dp" android:layout_height="100dp"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textAppearance="@style/UDText.Body2" android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:text="@string/Lark_View_Loading"/>
+    </LinearLayout>
+</merge>

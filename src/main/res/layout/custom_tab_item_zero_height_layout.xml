@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="0dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/custom_tab_editor_item_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/custom_tab_editor_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/custom_tab_editor_item_icon" android:layout_width="24dp" android:layout_height="24dp"/>
+        <TextView android:id="@+id/custom_tab_editor_item_name" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/custom_tab_editor_item_drag" android:layout_width="24dp" android:layout_height="24dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/custom_tab_editor_item_remove" android:layout_width="80dp" android:layout_height="match_parent"/>
+    <View android:id="@+id/custom_tab_editor_item_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</FrameLayout>

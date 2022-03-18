@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/widgets_alert_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/space_kit_font_17" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_24" android:layout_marginTop="@dimen/space_kit_len_24" android:layout_marginStart="@dimen/space_kit_len_20" android:layout_marginEnd="@dimen/space_kit_len_20"/>
+    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_9" android:layout_marginStart="@dimen/space_kit_len_20" android:layout_marginEnd="@dimen/space_kit_len_20"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/button_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_24" android:overScrollMode="never"/>
+</LinearLayout>

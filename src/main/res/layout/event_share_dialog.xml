@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:background="@drawable/calendar_rectangle_grey_top_r8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/shareChannelsRv" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_22" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="@dimen/dp_12" android:paddingEnd="@dimen/dp_12"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/cancelTv" android:paddingTop="@dimen/dp_19" android:paddingBottom="@dimen/dp_19" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Common_Cancel"/>
+</LinearLayout>

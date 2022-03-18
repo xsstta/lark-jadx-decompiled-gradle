@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/menuContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/bg_body" app:cardElevation="@dimen/dp_0">
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_500" android:id="@+id/work_hour_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:text="@string/Calendar_Common_Confirm" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <FrameLayout android:id="@+id/work_hour_time_picker" android:background="@color/bg_body" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_49">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_disable" android:gravity="center" android:id="@+id/work_hour_start_time_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_StartTime" android:layout_weight="1"/>
+                <View android:background="@color/line_divider_default" android:layout_width="@dimen/dp_05" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_disable" android:gravity="center" android:id="@+id/work_hour_end_time_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_EndTime" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/invEmptyLl" android:background="@color/lkui_N00" android:paddingBottom="96dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_contact_empty" android:adjustViewBounds="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/rgb_156_162_169" android:gravity="center" android:id="@+id/invEmptyTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="10dp" android:layout_marginRight="24dp" android:text="@string/Lark_Legacy_ContactEmpty"/>
+</LinearLayout>

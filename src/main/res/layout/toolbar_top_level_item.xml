@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/EditToolbarTopLevelFrame">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toolbarItemImg" android:background="@drawable/facade_round_around_m" android:padding="@dimen/space_kit_len_6" android:layout_width="@dimen/space_kit_len_36" android:layout_height="@dimen/space_kit_len_36" android:maxWidth="@dimen/space_kit_len_36" android:maxHeight="@dimen/space_kit_len_36" android:tint="@color/sdk_toolbar_item_icon_tint" android:backgroundTint="@color/sdk_toolbar_item_background_tint" style="@style/EditToolbarTopLevelIcon"/>
+</FrameLayout>

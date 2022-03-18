@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/people_item_layout" android:background="@drawable/item_bg_selector_transparent" android:layout_width="match_parent" android:layout_height="60dp" android:animateLayoutChanges="true" android:paddingStart="16dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/select_box" android:padding="0dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12dp" app:ud_checkbox_type="0"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/single_avator" android:visibility="visible" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerCrop" app:civ_border_width="0dp" app:civ_oval="true"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:id="@+id/department_tag_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15dp"/>
+                    <ImageView android:id="@+id/image_close" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/guanbi" android:layout_centerVertical="true"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_name_and_department_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/icon_container" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:gravity="top" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:text="name" android:maxLines="1" android:layout_marginStart="12dp"/>
+                        <TextView android:textColor="@color/lkui_B500" android:id="@+id/group_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" style="@style/TagTextViewStyle"/>
+                        <TextView android:textColor="@color/lkui_R500" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/workday_leave" android:background="@drawable/mine_leave_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" style="@style/TagTextViewStyle"/>
+                        <LinearLayout android:layout_gravity="bottom" android:id="@+id/local_time_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp">
+                            <ImageView android:id="@+id/time_zone_icon" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/icon_local_time"/>
+                            <TextView android:textSize="11dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/local_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_4"/>
+                        </LinearLayout>
+                        <com.ss.android.lark.widget.status.UserStatusLinearLayout android:layout_gravity="center_vertical" android:id="@+id/user_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/icon_container" android:layout_toRightOf="@+id/ll_name_and_department_container"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:gravity="bottom" android:id="@+id/text_department" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="hello" android:maxLines="1" android:layout_marginStart="12dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/divider_next_people" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider_next_department" android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="6dp"/>
+</LinearLayout>

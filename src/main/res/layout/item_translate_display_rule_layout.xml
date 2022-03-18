@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/language_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height">
+    <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:id="@+id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_N500" android:id="@+id/display_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/right_arrow"/>
+    <ImageView android:id="@+id/right_arrow" android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@style/SettingItemImageForward"/>
+    <com.ss.android.lark.setting.SettingDividerView android:id="@+id/language_divider" android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+</RelativeLayout>

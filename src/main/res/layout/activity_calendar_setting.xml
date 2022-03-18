@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_account_manager" android:background="@drawable/calendar_rectangle_white_r10" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:onClick="onClickCalendarManager">
+                    <TextView android:id="@+id/tv_account_manager" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_CalendarThirdPartyAccount" android:layout_weight="1" style="@style/CalendarSettingViewItemText"/>
+                    <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                </LinearLayout>
+                <TextView android:id="@+id/alertTipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_2" android:text="@string/Calendar_NewSettings_EventReminderTimeMobile" style="@style/CalendarChooseWeekText"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/calendar_rectangle_white_r10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_event_reminder" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_setting_events" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_EventReminderNotAllDayMobile" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_event_reminder_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_all_day_event_reminder" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_all_day_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_EventReminderAllDayMobile" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_all_day_event_reminder_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:id="@+id/tv_all_day_img" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/calendar_rectangle_white_r10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_event_duration" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_default_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_DefaultEventDuration" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_event_duration" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_first_day_of_week" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_first_day_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_FirstDayOfWeek" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_first_day_of_week" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_work_hour_setting" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_work_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_WorkingHoursMobile" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_enable_work_hour" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Workinghours_Notenabled" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_event_color_mode" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_event_color_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_EventColor" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="right" android:id="@+id/tv_event_color_mode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/alternate_calendar_container" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_alternate_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_NewSettings_UseAlternateCalendar" style="@style/CalendarSettingViewItemText"/>
+                        <TextView android:gravity="end" android:id="@+id/tv_alternate_calendar_mode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_15" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_show_past_mask" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Calendar_NewSettings_LowerBrightnessOfPastEvents" android:layout_weight="1" style="@style/CalendarSettingViewItemText"/>
+                        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switch_view_show_past_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_show_reject" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Calendar_NewSettings_ShowRejectedEvents" android:layout_weight="1" style="@style/CalendarSettingViewItemText"/>
+                        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switch_view_show_reject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/calendar_rectangle_white_r10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_accept_reminder" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Calendar_NewSettings_NotifyAcceptedEvents" android:layout_weight="1" style="@style/CalendarSettingViewItemText"/>
+                        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switch_view_accept_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_15"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_decline_invitation_reminder" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Calendar_NewSettings_NotifyWhenOthersRejectMyEvent" android:layout_weight="1" style="@style/CalendarSettingViewItemText"/>
+                        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switch_decline_invitation_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_time_zone" android:background="@drawable/calendar_rectangle_white_r10" android:paddingRight="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+                    <TextView android:id="@+id/tv_timezone_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Calendar_NewSettings_CurrentTimezoneMobile" style="@style/CalendarSettingViewItemText"/>
+                    <TextView android:gravity="right" android:id="@+id/tv_current_time_zone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/CalendarChooseSettingText"/>
+                </LinearLayout>
+                <com.ss.android.lark.widget.flowlayout.FlowLayout android:gravity="center_vertical" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_76">
+                    <TextView android:id="@+id/tv_go_system_setting_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:text="@string/Calendar_NewSettings_ChangeTimezoneDescriptionMobile" style="@style/CalendarChooseWeekText"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/primary_pri_500" android:gravity="center_vertical" android:id="@+id/tv_go_system_setting_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/Calendar_NewSettings_ChangeTimezoneGoToSettingsMobile"/>
+                </com.ss.android.lark.widget.flowlayout.FlowLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/setting_fragment_container" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

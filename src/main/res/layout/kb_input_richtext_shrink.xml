@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_reply" android:background="@color/bg_body_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_replay_content" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <ImageView android:id="@+id/btn_close_reply" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/reply_close"/>
+            <View android:id="@+id/divider_vertical" android:background="@color/line_border_card" android:layout_width="1dp" android:layout_height="14dp"/>
+            <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:textColorHint="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_root_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Reply" android:maxLines="1" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/input_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/normal_message_et_layout" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.ui.layout.LKUIRoundLinearLayout android:orientation="horizontal" android:id="@+id/et_container" android:background="@drawable/kb_input_round_bg" android:padding="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+                <ScrollView android:id="@+id/kb_rich_text_content_wrapper" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_weight="1">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.ss.android.lark.keyboard.widget.KeyboardRichTextEditText android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="left" android:id="@+id/kb_rich_text_title" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:maxLines="2" android:maxLength="100" android:lineSpacingExtra="3sp" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/text_cursor_drawable_ig"/>
+                        <com.ss.android.lark.keyboard.widget.KeyboardRichTextEditText android:textSize="16sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="left" android:id="@+id/kb_rich_text_content" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="90dp" android:maxLength="10000" android:layout_weight="1" android:lineSpacingExtra="3sp" android:inputType="text" android:textCursorDrawable="@drawable/text_cursor_drawable_ig"/>
+                    </LinearLayout>
+                </ScrollView>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/status_transform_btn" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/icon_n3" app:srcCompat="@drawable/ud_icon_magnify_outlined"/>
+            </com.larksuite.component.ui.layout.LKUIRoundLinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

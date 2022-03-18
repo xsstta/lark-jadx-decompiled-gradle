@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/sign_in_des">
+    <com.ss.android.lark.passport.infra.widget.CommonTitleBar android:id="@+id/login_web_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/login_web_titlebar_des"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/login_content_frame_container" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/login_content_frame_container_des">
+        <FrameLayout android:id="@+id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/sign_in_page_container_des"/>
+        <FrameLayout android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/sign_in_lark_web"/>
+        <ProgressBar android:id="@+id/log_web_progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:progress="0" android:progressDrawable="@drawable/passport_signin_sdk_login_browser_progress_bar_bg" android:contentDescription="@string/log_web_progressbar_des" style="?android:attr/progressBarStyleHorizontal"/>
+        <include android:id="@+id/error_page" android:visibility="gone" android:contentDescription="@string/sign_in_web_error_des" layout="@layout/signin_sdk_error_page_passport"/>
+    </FrameLayout>
+</LinearLayout>

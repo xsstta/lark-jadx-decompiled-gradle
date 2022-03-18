@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activityRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="@dimen/dp_40"/>
+        <RelativeLayout android:id="@+id/searchGroup" android:background="@drawable/calendar_calendar_subscribe_search_bg" android:paddingLeft="@dimen/dp_8" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_12">
+            <ImageView android:id="@+id/icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_8" android:src="@drawable/ud_icon_search_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true"/>
+            <EditText android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/etSearchBar" android:background="@null" android:paddingRight="@dimen/dp_32" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/Calendar_Common_Search" android:maxLines="1" android:layout_toRightOf="@+id/icon" android:inputType="text"/>
+            <ImageView android:id="@+id/clearBtn" android:visibility="invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:src="@drawable/ud_icon_close_filled" android:scaleType="fitXY" android:tint="@color/icon_n3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_8"/>
+        <View android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/subscribeCalendarViewpager" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/meetingRoomSubscribeFrameLayout" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:background="@color/bg_body" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lkui_navigation_back" android:layout_marginStart="19dp" app:tint="@color/icon_n1"/>
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/AppDetail_Application_Mechanism_ApplyAccess"/>
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="4dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/AppDetail_Application_Mechanism_AppName" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/app_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="4dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/AppDetail_Application_Mechanism_Applicant" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/proposer_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="4dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/AppDetail_Application_Mechanism_Team" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/proposer_dep" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+        <EditText android:id="@+id/reason_edit" android:background="@drawable/appcenter_propose_edit_bg" android:layout_width="match_parent" android:layout_height="118dp" android:layout_marginTop="30dp" android:hint="@string/AppDetail_Application_Mechanism_RequestReason" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/AppCenter_EditText_Style"/>
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.larksuite.component.universe_design.button.UDButton android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/submit" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="16dp" android:text="@string/AppDetail_Application_Mechanism_Confirm" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:ud_backgroundColor="@color/ud_button_blue_bg" app:ud_radius="2" style="@style/UDButton.Small.Primary"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ptrLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@+id/rv" android:focusableInTouchMode="true" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+</com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>

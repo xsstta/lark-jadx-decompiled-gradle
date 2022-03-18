@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tt.miniapp.view.SizeDetectFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tma_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/microapp_m_activity_no_tab_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/microapp_m_no_tab_real_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ViewStub android:id="@+id/microapp_m_video_view_stub" android:layout="@layout/microapp_m_layout_video_full_screen" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/action_not_support_stub" android:layout="@layout/microapp_m_layout_action_not_support" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/no_status_bar_slot_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.tt.miniapp.view.SizeDetectFrameLayout>

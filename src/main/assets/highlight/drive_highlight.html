@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=UTF-8 content=width=device-width,initial-scale=1/>
+    <link rel="stylesheet" href="file:///android_asset/highlight/styles/drive_atom-one-light.css">
+    <title></title>
+    <script src="file:///android_asset/highlight/drive_highlight.min.js"></script>
+    <script src="file:///android_asset/drive_base64.min.js"></script>
+    <script src="file:///android_asset/drive_purify.min.js"></script>
+    <style>
+        pre {margin: 0px}
+    </style>
+    <script>
+
+        function setString(str, needHighLight){
+            let body = document.getElementById('content');
+            let pre =  document.createElement('pre');
+
+            let code = decode(str);
+            if(needHighLight){
+                code = hljs.highlightAuto(code).value;
+            }else{
+                code = htmlEncode(code);
+            }
+            pre.innerHTML = code;
+            body.appendChild(pre);
+
+            return Date.now();
+        }
+
+        function htmlEncode(s){
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(s));
+            return div.innerHTML;
+        }
+
+        function decode(highlightStr){
+            return Base64.decode(highlightStr);
+        }
+
+        jsObj.javaScriptFinishLoaded();
+
+    </script>
+</head>
+<body>
+<div id=content></div>
+</body>
+</html>

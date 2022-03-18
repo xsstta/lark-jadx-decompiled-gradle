@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/item_card_attendee_layout" android:background="@drawable/card_attendee_item_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="66dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/card_attendee_avatar" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/dp_12" app:civ_border_width="0dp" app:civ_oval="true"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/card_attendee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/flags_container" app:layout_constraintHorizontal_bias="0" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/flags_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/card_attendee_name" app:layout_constraintTop_toTopOf="0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/card_attendee_mobile" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:scaleType="centerCrop" android:layout_marginStart="4dp" app:srcCompat="@drawable/ud_icon_cellphone_filled" app:tint="@color/icon_n3"/>
+                <com.ss.android.vc.common.widget.tag.OrganizerTag android:id="@+id/card_attendee_creator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp"/>
+                <com.ss.android.vc.common.widget.tag.ExternalTag android:id="@+id/externalTagView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

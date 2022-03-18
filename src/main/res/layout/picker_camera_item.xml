@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mediapicker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/picker_media_picker_item_bg" android:padding="1.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_photo" android:background="#1d252f" android:layout_width="27dp" android:layout_height="27dp" android:src="@drawable/picker_ic_camera_item" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#939aa3" android:layout_gravity="center" android:id="@+id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/Lark_MediaPicker_Camera"/>
+    </LinearLayout>
+</com.ss.android.lark.mediapicker.widget.SquareItemLayout>

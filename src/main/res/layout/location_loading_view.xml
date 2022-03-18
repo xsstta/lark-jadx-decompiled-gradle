@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@+id/location_pb_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/location_bg_progress" android:indeterminateTint="@color/ud_N500" style="?android:attr/progressBarStyleSmall"/>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_placeholder" android:id="@+id/location_tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="@string/Lark_Legacy_LoadingTip"/>
+</LinearLayout>

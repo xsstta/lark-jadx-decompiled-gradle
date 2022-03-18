@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/toolbar_menu_height">
+            <FrameLayout android:id="@+id/keyboardSwitch" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/EditToolbarTopLevelFrame">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/keyboardSwitchIcon" android:tint="@color/mail_compose_toolbar_keyboard_icon_tint" app:srcCompat="@drawable/mail_toolbar_keyboard_selector" style="@style/EditToolbarTopLevelIcon"/>
+            </FrameLayout>
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/keyboardSwitch" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/topLevelItems" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.bytedance.ee.bear.document.widget.KeyboardPlaceholderView android:id="@+id/keyboardPlaceholder" android:layout_width="1dp" android:layout_height="wrap_content"/>
+</LinearLayout>

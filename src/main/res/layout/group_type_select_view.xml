@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tv_select_contacts_wrapper" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="35dp">
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="@string/Lark_NearbyGroup_SelectContacts" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:id="@+id/layout_group_type_select" android:background="@drawable/bg_setting_group_item_rectangle" android:layout_width="match_parent" android:layout_height="54dp">
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/text_group_select_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Group_CreateGroup_GroupType" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:id="@+id/text_group_type_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="私有群 · 对话" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_toStartOf="@+id/iv_group_type_select"/>
+        <ImageView android:id="@+id/iv_group_type_select" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" app:tint="@color/icon_n3"/>
+    </RelativeLayout>
+    <include android:id="@+id/topic_group_type_select" android:visibility="gone" layout="@layout/group_type_select_layout"/>
+    <include android:id="@+id/divider_group_type_bottom" layout="@layout/group_type_select_view_divider"/>
+</LinearLayout>

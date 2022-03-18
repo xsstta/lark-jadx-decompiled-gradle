@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent"/>
+    <ScrollView android:id="@+id/group_manage_scrollview" android:background="@color/bg_base" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_margin_horizontal" android:layout_marginRight="@dimen/setting_item_margin_horizontal" android:layout_marginHorizontal="@dimen/setting_item_margin_horizontal">
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/member_permission_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_item_margin_top" android:layout_marginBottom="4dp" android:text="@string/Lark_Chat_MemberPermissionManagement" android:layout_marginStart="16dp"/>
+            <include layout="@layout/item_manage_chat_admin_layout"/>
+            <include layout="@layout/item_manage_group_message_edit_layout"/>
+            <include layout="@layout/item_manage_only_owner_add_layout"/>
+            <include layout="@layout/item_manage_vc_permission_layout"/>
+            <include layout="@layout/item_manage_owner_mention_all_layout"/>
+            <include layout="@layout/item_manage_buzz_permission_layout"/>
+            <include layout="@layout/item_manage_pin_permission_layout"/>
+            <include layout="@layout/item_manage_pin_top_permission_layout"/>
+            <include layout="@layout/item_manage_post_setting_layout"/>
+            <include layout="@layout/item_manage_mail_group_setting_layout"/>
+            <include layout="@layout/item_manage_group_allow_anonymous_layout"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/invitationSettingTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_item_margin_top" android:layout_marginBottom="4dp" android:text="@string/Lark_Legacy_InvitationSettings" android:layout_marginStart="16dp"/>
+            <include layout="@layout/item_manage_membership_approval_layout"/>
+            <com.ss.android.lark.setting.SettingDividerView android:id="@+id/membership_approval_divider" android:layout_width="match_parent" android:layout_height="0.5dp" style="@style/SettingDividerLeftBlank"/>
+            <include layout="@layout/item_manage_allow_search_layout"/>
+            <include layout="@layout/item_manage_see_history_message_setting_layout"/>
+            <include layout="@layout/item_manage_join_group_message_setting_layout"/>
+            <include layout="@layout/item_manage_leave_group_message_setting_layout"/>
+            <include layout="@layout/item_manage_join_leave_history_layout"/>
+            <include layout="@layout/item_manage_group_share_history_layout"/>
+            <include layout="@layout/item_manage_group_apply_group_limit_layout"/>
+            <include layout="@layout/item_manage_group_transfer_to_layout"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/transfer_to_chat" android:background="@drawable/bg_setting_group_item_round" android:layout_width="match_parent" android:layout_height="@dimen/cell_height" android:layout_marginTop="@dimen/setting_item_margin_top" android:text="@string/Calendar_Setting_TransformToNormalGroup"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

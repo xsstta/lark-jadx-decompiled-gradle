@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/todo_content_view" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_58">
+        <com.ss.android.lark.todo.impl.features.mainview.widget.TodoClassifyHeaderView android:id="@+id/todo_classify_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@+id/todo_classify_view">
+            <com.larksuite.component.ui.layout.LKUIRoundLinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" app:rl_radius_left_top="@dimen/dp_10" app:rl_radius_right_top="@dimen/dp_10">
+                <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/todo_ptr_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.ss.android.lark.todo.impl.features.mainview.adapter.pinned.PinnedHeaderRecyclerView android:id="@+id/todo_list" android:background="@color/bg_base" android:paddingBottom="@dimen/dp_16" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+            </com.larksuite.component.ui.layout.LKUIRoundLinearLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/empty_container" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/img_empty" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:src="@drawable/illustration_empty_positive_complete"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/tv_empty_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/Todo_Task_TaskEmpty" android:layout_below="@+id/img_empty"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/todo_loading_container" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/todo_lottie_loading_anim" android:visibility="gone" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:layout_centerInParent="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/todo_loading_error_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@+id/todo_error_iv" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:src="@drawable/illustration_placeholder_common_load_failed"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/todo_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/Todo_Task_LoadFailedTryAgainLater"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/todo_append_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:ud_shadow_radius="24dp" style="@style/UDShadow.S3.Down.Pri">
+        <ImageView android:id="@+id/create_bt" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="16dp" android:src="@drawable/todo_create_post_bt" android:layout_marginEnd="16dp"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</RelativeLayout>

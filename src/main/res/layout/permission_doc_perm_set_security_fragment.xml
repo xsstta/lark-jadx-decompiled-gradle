@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_background="@color/color_transparent" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/CreationMobile_common_whocan"/>
+    <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:layout_width="match_parent" android:layout_height="16dp" app:bottomLine="false" app:topLine="false"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_kit_len_16" android:layout_marginRight="@dimen/space_kit_len_16">
+        <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/securityReadItem" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52" app:showBottomDivider="false" app:title="@string/CreationMobile_ECM_Permission_Comment_option"/>
+        <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/securityEditItem" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52" app:showBottomDivider="false" app:title="@string/CreationMobile_ECM_Permission_Comment_option"/>
+        <com.bytedance.ee.bear.middleground.permission.setting.SelectItemView android:id="@+id/securityFaItem" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52" app:showBottomDivider="false" app:title="@string/CreationMobile_ECM_Permission_Comment_option"/>
+    </com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout>
+</LinearLayout>

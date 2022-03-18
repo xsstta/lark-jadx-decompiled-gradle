@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar_layout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/sheet_panel_title_height">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ud_icon_left_small_ccm_outlined" android:tint="@color/icon_n1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_16" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="@dimen/space_kit_font_17" android:textColor="@color/text_title" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

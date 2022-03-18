@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/border_recycler_view" android:padding="@dimen/space_kit_len_16" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/sheet_divider_height" android:layout_marginStart="@dimen/space_kit_len_16" android:layout_marginEnd="@dimen/space_kit_len_16"/>
+    <com.bytedance.ee.bear.widgets.colorpicker.CommonColorSchemeView android:id="@+id/color_scheme_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_16" android:layout_marginBottom="@dimen/space_kit_len_16"/>
+</LinearLayout>

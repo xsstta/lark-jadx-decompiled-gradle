@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/country_tel_layout" android:background="@drawable/bg_pstn_invite_item_selector" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/countryName" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="14dp" android:textColor="@color/primary_pri_500" android:id="@+id/telNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:lineHeight="20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/countryName"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp"/>
+</LinearLayout>

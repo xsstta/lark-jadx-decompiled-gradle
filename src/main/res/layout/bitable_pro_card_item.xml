@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:cardCornerRadius="10dp" app:cardElevation="0dp">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout android:orientation="vertical" android:id="@+id/roleContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/roleTitleLayout" android:paddingTop="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <com.bytedance.ee.bear.bitable.pro.DefaultTagTitleView android:id="@+id/roleTitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/roleDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/inviteMemberLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <ImageView android:id="@+id/inviteMemberIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_member_add_outlined" android:tint="@color/icon_n1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/inviteMemberText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/Bitable_AdvancedPermission_AddCollaborator" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <ImageView android:id="@+id/inviteMemberArrowIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/managerMemberLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <ImageView android:id="@+id/managerMemberIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_group_outlined" android:tint="@color/icon_n1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/managerMemberText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/Doc_Share_Collaborators" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            <com.larksuite.component.universe_design.image.UDAvatarList android:id="@+id/memberAvatarList" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_avatarList_maxCount="5"/>
+            <ImageView android:id="@+id/managerMemberArrowIcon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+        </LinearLayout>
+    </com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@color/bg_body"/>
+            <item android:left="@dimen/space_kit_len_6" android:right="@dimen/space_kit_len_6">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/fill_hover"/>
+                    <corners android:radius="@dimen/space_radius_m"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

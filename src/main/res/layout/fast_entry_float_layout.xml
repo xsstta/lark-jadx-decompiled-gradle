@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.meeting.module.fastentry.FastEntryFloatLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fast_entry_float_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="right" android:id="@+id/fast_entry_window" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.ss.android.vc.meeting.module.fastentry.FastEntryFloatLayout>

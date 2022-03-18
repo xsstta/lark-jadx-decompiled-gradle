@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.wikiv2.common.widget.InterceptableRecyclerView android:id="@+id/recycler_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.oubowu.stickyitemdecoration.StickyHeadContainer android:id="@+id/sticky_head_container" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.wikiv2.wikitreev2.widget.view.WikItemRootView android:id="@+id/sticky_head" android:layout_width="match_parent" android:layout_height="50dp"/>
+    </com.oubowu.stickyitemdecoration.StickyHeadContainer>
+</FrameLayout>

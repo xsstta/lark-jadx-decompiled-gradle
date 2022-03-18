@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/bg_body"/>
+                    <stroke android:width="@dimen/dp_05" android:color="@color/ud_N400"/>
+                    <corners android:radius="@dimen/dp_4"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/ud_N900_05"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_body"/>
+            <stroke android:width="@dimen/dp_05" android:color="@color/ud_N400"/>
+            <corners android:radius="@dimen/dp_4"/>
+        </shape>
+    </item>
+</selector>

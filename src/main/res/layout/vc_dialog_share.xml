@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/vc_bg_dialog_share" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/ll_root" android:paddingLeft="12dp" android:paddingTop="@dimen/dp_32" android:paddingRight="12dp" android:paddingBottom="@dimen/dp_24" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/vc_divider_share_dialog_item" android:showDividers="middle" android:paddingHorizontal="12dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/ud_N950" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/Common_G_FromView_CancelButton"/>
+</LinearLayout>

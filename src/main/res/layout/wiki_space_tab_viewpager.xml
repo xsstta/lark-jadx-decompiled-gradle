@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginStart="6dp" app:tabIndicator="@drawable/facade_tab_indicator" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2dp" app:tabMaxWidth="200dp" app:tabMinWidth="20dp" app:tabMode="0" app:tabPadding="0dp" app:tabPaddingEnd="10dp" app:tabPaddingStart="10dp" app:tabRippleColor="@null" app:tabSelectedTextColor="@color/primary_pri_500"/>
+    <View android:background="@color/line_divider_default" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <com.bytedance.ee.bear.list.homepage.tab.HomeViewPager android:id="@+id/tab_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

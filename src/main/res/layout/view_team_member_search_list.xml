@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/search_list_ptr_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>

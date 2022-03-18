@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/innerBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/toolbar_fragment"/>
+    <com.bytedance.ee.bear.sheet.inputbar.editor.SheetEditorLayout android:id="@+id/sheetEdit" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/innerBottom"/>
+</RelativeLayout>

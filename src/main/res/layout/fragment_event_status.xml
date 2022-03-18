@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/choose_status_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_12"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_status_busy" android:background="@color/bg_body" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Detail_Busy" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_status_busy" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_list_check_outlined" android:tint="@color/primary_pri_500"/>
+    </LinearLayout>
+    <ImageView android:background="@color/bg_body" android:paddingLeft="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:src="@color/line_divider_default"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_status_free" android:background="@color/bg_body" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Detail_Free" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_status_free" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_list_check_outlined" android:tint="@color/primary_pri_500"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+</LinearLayout>

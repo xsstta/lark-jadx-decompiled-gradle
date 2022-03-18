@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="62dp" android:layout_height="@dimen/toolbar_item_horizontal_height" android:layout_marginStart="14dp" android:layout_marginEnd="5dp">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/selected" android:background="@drawable/doc_subtoolbar_highlight_selected" android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerVertical="true"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/openPanel" android:background="@drawable/doc_subtoolbar_highlight_allow_selected" android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerVertical="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/allow" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ud_icon_expand_down_filled" android:tint="@color/icon_n2" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+    <FrameLayout android:id="@+id/parent" android:background="@drawable/doc_subtoolbar_highlight_a_selected" android:layout_width="match_parent" android:layout_height="36dp" android:layout_centerVertical="true">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center" android:id="@+id/sub_toolbar_item_icon" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="centerInside" android:tint="@color/toolbar_item_tint" app:radius="@dimen/space_radius_m"/>
+    </FrameLayout>
+</RelativeLayout>

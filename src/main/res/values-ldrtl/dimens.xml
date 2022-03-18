@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hwsearchview_left_radius">@dimen/emui_corner_radius_inputbox</dimen>
+    <dimen name="hwsearchview_right_radius">0dp</dimen>
+</resources>

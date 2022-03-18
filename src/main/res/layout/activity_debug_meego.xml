@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/meego_debug_item_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="13sp" android:textColor="@color/lkui_N500" android:gravity="end" android:id="@+id/net_proxy_title" android:layout_width="80dp" android:layout_height="wrap_content"/>
+        <View android:background="@color/lkui_N500" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <EditText android:textSize="12sp" android:id="@+id/net_proxy_edit" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/meego_debug_item_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="13sp" android:textColor="@color/lkui_N500" android:gravity="end" android:id="@+id/use_ppe_title" android:layout_width="80dp" android:layout_height="wrap_content"/>
+        <View android:background="@color/lkui_N500" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <EditText android:textSize="12sp" android:id="@+id/use_ppe_edit" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/meego_debug_item_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="13sp" android:textColor="@color/lkui_N500" android:gravity="end" android:id="@+id/tt_env_title" android:layout_width="80dp" android:layout_height="wrap_content"/>
+        <View android:background="@color/lkui_N500" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        <EditText android:textSize="12sp" android:id="@+id/tt_env_edit" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:textSize="13sp" android:textColor="@color/lkui_N00" android:layout_gravity="center_horizontal" android:id="@+id/confirm" android:background="@drawable/meego_debug_btn_bg" android:layout_width="100dp" android:layout_height="35dp" android:layout_marginTop="20dp"/>
+    <View android:background="@color/lkui_N500" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp"/>
+    <TextView android:textSize="15sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_horizontal" android:id="@+id/info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="5dp"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:background="@drawable/meego_debug_item_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="13sp" android:textColor="@color/lkui_N500" android:id="@+id/plugin_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="13sp" android:textColor="@color/lkui_N500" android:id="@+id/plugin_version_code" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

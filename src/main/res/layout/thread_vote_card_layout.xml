@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/chat_msg_bubble" android:background="@drawable/chat_bubble_self_bg_selector" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:rl_radius_left_top="10dp" app:rl_radius_right_top="10dp">
+        <include layout="@layout/message_vote_card_content_item"/>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+</LinearLayout>

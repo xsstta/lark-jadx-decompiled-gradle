@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_NewSettings_NewMessageNotifications" app:tb_title_color="@color/text_title"/>
+    <include layout="@layout/view_title_notification_desktop"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/notification_tip" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_MessageNotificationScopeMobile"/>
+            <FrameLayout android:id="@+id/notification_setting_wrapper_fl" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/badge_tip" android:paddingLeft="32dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_StillShowNumberOfAllUnreadMessages"/>
+            <include android:id="@+id/guidance_entry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" layout="@layout/notification_guidance"/>
+            <include android:id="@+id/meeting_undisturbed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/activity_mine_setting_notification_nodisturb"/>
+            <include android:id="@+id/badge_style_zone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" layout="@layout/view_setting_undisturbed_chat_notice_style"/>
+            <com.ss.android.lark.notification.setting.impl.setting.view.MuteOnPCLoginView android:id="@+id/mute_option_zone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp"/>
+            <com.ss.android.lark.notification.setting.impl.setting.view.NotifyDetailSettingView android:id="@+id/notify_detail" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.ss.android.lark.notification.setting.impl.setting.view.SoundsAndVibrationSettingView android:id="@+id/notification_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.drive.view.preview.loadingview.LoadingAnimView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@+id/render_view" android:visibility="gone" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>

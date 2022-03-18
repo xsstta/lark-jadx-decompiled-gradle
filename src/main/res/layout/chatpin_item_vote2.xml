@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle2">
+    <include layout="@layout/chat_pin_item_sender2"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/vote_card" android:background="@drawable/item_bg_corner4_white_border" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/vote_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="12dp" android:src="@drawable/pin_icon_vote" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/vote_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="1" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toEndOf="@+id/vote_icon" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/vote_option_rv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toEndOf="@+id/vote_icon" app:layout_constraintTop_toBottomOf="@+id/vote_title_tv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/chat_pin_footer_layout"/>
+    <include layout="@layout/chat_pin_item_sender"/>
+</com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout>

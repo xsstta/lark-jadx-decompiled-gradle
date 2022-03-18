@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/outer_layer" android:background="@drawable/common_color_picker_outer_layer" android:padding="@dimen/space_kit_len_2" android:layout_width="@dimen/space_kit_len_44" android:layout_height="@dimen/space_kit_len_44">
+        <FrameLayout android:id="@+id/center_layer" android:background="@drawable/common_color_picker_center_layer" android:padding="@dimen/space_kit_len_1" android:layout_width="@dimen/space_kit_len_40" android:layout_height="@dimen/space_kit_len_40">
+            <View android:layout_gravity="center" android:id="@+id/inner_layer" android:background="@drawable/common_color_picker_inner_layer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:id="@+id/bottom_panel" android:layout_width="match_parent" android:layout_height="wrap_content" app:panel_title="@string/CreationMobile_MindNotes_Menu_title">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/Mindnote_Mindnote_Title_Structure" android:layout_marginStart="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="14dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView android:id="@+id/tool_right_view_img" android:background="@drawable/mindnote_toolbar_subitem_left" style="@style/MindNoteStructureFrame">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_mindmap_right_outlined" style="@style/MindNoteStructureImage"/>
+            </com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView>
+            <com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView android:id="@+id/tool_left_view_img" android:background="@drawable/mindnote_toolbar_subitem_none" style="@style/MindNoteStructureFrame">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_mindmap_left_outlined" style="@style/MindNoteStructureImage"/>
+            </com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView>
+            <com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView android:id="@+id/tool_bilateral_view_img" android:background="@drawable/mindnote_toolbar_subitem_none" style="@style/MindNoteStructureFrame">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_mindmap_side_outlined" style="@style/MindNoteStructureImage"/>
+            </com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView>
+            <com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView android:id="@+id/tool_down_view_img" android:background="@drawable/mindnote_toolbar_subitem_right" style="@style/MindNoteStructureFrame">
+                <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_mindmap_down_outlined" style="@style/MindNoteStructureImage"/>
+            </com.bytedance.ee.bear.mindnote.setting.SettingNormalImageView>
+        </LinearLayout>
+    </LinearLayout>
+</com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>

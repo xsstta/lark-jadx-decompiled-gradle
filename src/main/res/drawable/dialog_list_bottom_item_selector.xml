@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/dialog_gray_corner6_bottom_bg"/>
+    <item android:state_selected="true" android:drawable="@drawable/dialog_gray_corner6_bottom_bg"/>
+    <item android:drawable="@drawable/dialog_light_gray_corner6_bottom_bg" android:state_hovered="true"/>
+    <item android:drawable="@drawable/dialog_white_corner6_bottom_bg"/>
+</selector>

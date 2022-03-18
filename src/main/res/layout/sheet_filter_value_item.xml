@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/filter_value_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_4" app:ud_checkbox_size="1"/>
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/filter_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/space_kit_len_2" android:layout_marginEnd="@dimen/space_kit_len_40"/>
+        <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (" android:layout_marginStart="-40dp"/>
+        <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:id="@+id/filter_value_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/space_kit_len_16"/>
+</LinearLayout>

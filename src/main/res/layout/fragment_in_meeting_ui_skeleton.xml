@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container_top_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <FrameLayout android:id="@+id/container_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_statusbar_bg"/>
+        <View android:id="@+id/view_statusbar_bg" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/container_gallery_follow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/container_top_white_bg">
+        <FrameLayout android:id="@+id/container_video_gallery" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/container_follow_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/container_video_gallery"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_bottom_extra_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@+id/container_share_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/container_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/container_bottom_stub" android:background="@color/vc_bg_body" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_collapse_state_height"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/container_content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/container_bottom_extra_layout" android:layout_below="@+id/container_gallery_follow">
+        <FrameLayout android:id="@+id/container_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/sketch_control_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/container_top_tips" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/container_top_white_bg"/>
+    <ViewStub android:id="@+id/fv_landscape_folder_viewstub" android:layout="@layout/fv_landscape_float_toolbar_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/container_content_layout" android:layout_alignBottom="@+id/container_content_layout"/>
+    <ViewStub android:id="@+id/stub_full_screen" android:layout="@layout/view_in_meet_fullscreen" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/container_im_expand" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignBottom="@+id/container_content_layout"/>
+    <com.ss.android.vc.meeting.module.interpretation.widget.ChannelSwitchBar android:id="@+id/bar_channel_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_alignBottom="@+id/container_content_layout" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/container_notice" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/container_top_white_bg"/>
+    <FrameLayout android:id="@+id/container_bottom_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+    <ViewStub android:id="@+id/stub_guide" android:layout="@layout/stub_guide_in_meeting" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/history_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/container_dialog" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/busy_ringing_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/stub_loading_mask" android:layout="@layout/view_in_meeting_loading_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/stub_break_room_mask" android:layout="@layout/view_in_meeting_breakout_room_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/breakout_room_container" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="96dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+</RelativeLayout>

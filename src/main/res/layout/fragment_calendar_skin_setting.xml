@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent"/>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/calendar_rectangle_white_r10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_16">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_skin_setting_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginBottom="@dimen/dp_30">
+            <ImageView android:id="@+id/img_skin_setting_light" android:background="@drawable/calendar_skin_setting_light" android:layout_width="@dimen/dp_135" android:layout_height="@dimen/dp_168"/>
+            <TextView android:textSize="@dimen/dp_14" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/text_skin_setting_light" android:background="@drawable/bg_calendar_skin_text" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_20" android:text="@string/Calendar_NewSettings_EventColorLightMode"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_skin_setting_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_25" android:layout_marginTop="@dimen/dp_30" android:layout_toRightOf="@+id/ll_skin_setting_light">
+            <ImageView android:id="@+id/img_skin_setting_dark" android:background="@drawable/calendar_skin_setting_dark" android:layout_width="@dimen/dp_135" android:layout_height="@dimen/dp_168"/>
+            <TextView android:textSize="@dimen/dp_14" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/text_skin_setting_dark" android:background="@drawable/bg_calendar_skin_text" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_20" android:text="@string/Calendar_NewSettings_EventColorDarkMode"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

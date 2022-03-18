@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/microapp_m_text_size_18" android:textColor="@color/microapp_m_black" android:ellipsize="end" android:id="@+id/tv_permission_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="sans-serif-medium"/>
+    <View android:background="@color/microapp_m_black_7" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="7dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="13dp">
+        <com.tt.miniapp.component.nativeview.game.RoundedImageView android:id="@+id/iv_user_head_icon" android:layout_width="44dp" android:layout_height="44dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_user_name" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginLeft="12dp" android:maxLines="1" android:layout_toRightOf="@+id/iv_user_head_icon"/>
+        <TextView android:textSize="@dimen/microapp_m_text_size_14" android:textColor="@color/microapp_m_black_4" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_account_origin" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginLeft="12dp" android:maxLines="1" android:layout_toRightOf="@+id/iv_user_head_icon" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

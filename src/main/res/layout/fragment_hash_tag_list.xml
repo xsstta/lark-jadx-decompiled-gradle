@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/lkui_N50" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_B500" android:gravity="center_vertical" android:id="@+id/tvAddHashTag" android:background="@drawable/avatar_item_bg_selector" android:paddingLeft="@dimen/dp_16" android:paddingTop="19dp" android:paddingRight="@dimen/dp_16" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" android:text="@string/Lark_Pano_AddTopic" android:drawableLeft="@drawable/ic_svg_add_hash_tag" android:drawablePadding="10dp"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N500" android:gravity="center_vertical" android:id="@+id/tvAddedHashTagDesc" android:background="@color/lkui_N00" android:paddingLeft="@dimen/dp_16" android:paddingTop="@dimen/dp_18" android:paddingRight="@dimen/dp_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="38dp" android:text="@string/Lark_Pano_AddedTopic"/>
+    <FrameLayout android:id="@+id/flEmptyContainer" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColor="@color/lkui_N600" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Pano_TagList_Empty" android:drawableTop="@drawable/pano_taglist_empty"/>
+    </FrameLayout>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/rvAddedHashTag" android:background="@color/lkui_N00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

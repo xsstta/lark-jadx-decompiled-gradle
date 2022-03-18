@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/frontViewContainer" android:background="@color/bg_body" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/timezoneInfoZone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/timezoneNameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10.5dp" android:maxWidth="351dp" android:maxLines="2"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:id="@+id/timezoneOffsetTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/timezoneNameTV" android:layout_alignLeft="@+id/timezoneNameTV"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:id="@+id/includeCityLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/timezoneOffsetTV" android:layout_alignLeft="@+id/timezoneNameTV"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/selectedIcon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="3dp" android:src="@drawable/ud_icon_done_outlined" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</FrameLayout>

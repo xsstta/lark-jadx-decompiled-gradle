@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/bg_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/bg_detail_reply_bottom" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_12">
+            <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_4" android:src="@drawable/bg_gray_rectangle_n300"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+            <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/buildingTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_SelectDeviceTitle"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_link_normal" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/clearEquipment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Search_Reset" android:layout_marginEnd="@dimen/dp_16"/>
+        </FrameLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/deviceSetRv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout>
+</FrameLayout>

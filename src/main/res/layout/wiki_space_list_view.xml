@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/content_view" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:srlEnableAutoLoadmore="true" app:srlEnableLoadmore="false" app:srlEnableOverScrollBounce="false" app:srlEnableOverScrollDrag="false" app:srlEnablePreviewInEditMode="true" app:srlEnableRefresh="false">
+        <com.bytedance.ee.bear.wikiv2.home.viewall_multitab.WikiSpaceListRvView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" android:scaleType="centerInside" app:backgroundAlpha="0.9" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/empty_view" android:visibility="gone" android:layout_marginTop="206dp" app:ud_empty_desc="@string/Doc_Wiki_Network_Error" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/SpaceEmptyStatusStyle"/>
+</FrameLayout>

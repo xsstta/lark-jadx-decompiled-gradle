@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="57dp">
+    <TextView android:id="@+id/app_permission_label" android:text="Location" style="@style/AppCenter_AppDetailInfoItemLabel"/>
+    <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/app_permission_switch" android:layout_width="36dp" android:layout_height="14dp" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/divider_fill" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:layout_marginStart="17dp"/>
+</RelativeLayout>

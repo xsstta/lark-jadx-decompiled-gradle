@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.MonthViewLayout android:orientation="vertical" android:id="@+id/arrangeMonthLayout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dp_242" android:layout_weight="1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.ss.android.lark.calendar.impl.features.common.widget.calendar.base.CalendarWeekIndicator android:orientation="horizontal" android:id="@+id/arrangeWeekIndicator" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_16d5" android:layout_marginTop="@dimen/dp_13" android:layout_weight="0"/>
+        <com.ss.android.lark.calendar.impl.features.common.widget.calendar.month.MonthIndicator android:id="@+id/arrangeMonthViewPager" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/divideShadow" android:layout_width="match_parent" android:layout_height="@dimen/dp_4" android:src="@drawable/bg_shadow" android:layout_weight="0"/>
+    </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.MonthViewLayout>
+    <RelativeLayout android:id="@+id/titleBarContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/commonTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/titleTouchArea" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_50" android:layout_toLeftOf="@+id/addGroupChatter" android:layout_alignBottom="@+id/commonTitleBar" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/timeTitleLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/tvTimeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/imgTimeTitle" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_8" android:layout_marginLeft="4dp" android:src="@drawable/ud_icon_expand_down_filled" android:tint="@color/text_title" android:layout_toRightOf="@+id/tvTimeTitle" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/addGroupChatter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginRight="@dimen/dp_18" android:src="@drawable/ud_icon_group_outlined" android:tint="@color/text_title" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

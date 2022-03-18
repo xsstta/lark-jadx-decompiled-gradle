@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_B500" android:id="@+id/attendeeTipTv" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_B500" android:id="@+id/leftTipTv" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_32" android:layout_marginEnd="@dimen/dp_16"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioGroup android:id="@+id/radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_kit_len_20">
+        <RadioButton android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:gravity="top" android:id="@+id/rb_positive" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48" android:checked="true" android:button="@drawable/wiki_moveto_dig_rb_btn" android:text="@string/Doc_Wiki_Yes" android:includeFontPadding="false" android:paddingStart="@dimen/space_kit_len_12"/>
+        <RadioButton android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:gravity="top" android:id="@+id/rb_negative" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48" android:checked="false" android:button="@drawable/wiki_moveto_dig_rb_btn" android:text="@string/Doc_Wiki_RejectChangePermission" android:includeFontPadding="false" android:paddingStart="@dimen/space_kit_len_12"/>
+    </RadioGroup>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_loading" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center_horizontal" android:id="@+id/lark_loading_view" ptr:lottie_autoPlay="true" ptr:lottie_loop="true" ptr:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+    </FrameLayout>
+</LinearLayout>

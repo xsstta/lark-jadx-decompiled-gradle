@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/imndbExpiredTimeLl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:id="@+id/imndbExpiredTimeTv" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Invitation_AddMembersExpiredTime"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/imndbRefreshLl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/imndbRefreshView" android:visibility="visible" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_refresh_outlined" android:tint="@color/primary_pri_500"/>
+                <TextView android:textSize="12sp" android:textColor="@drawable/inv_blue_text_color" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/Lark_Invitation_AddMembersTeamCodeEntry_TeamCodeReset_Button" android:drawablePadding="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="40dp" android:layout_below="@+id/imndbExpiredTimeLl">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/imndbSaveOrCopyLinkTv" android:background="@drawable/inv_btn_white_corner_border_bg" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="16dp" android:text="@string/Lark_Legacy_QrCodeSave" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/imndbShareTv" android:background="@drawable/inv_btn_blue_bg" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Lark_Legacy_QrCodeShare" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

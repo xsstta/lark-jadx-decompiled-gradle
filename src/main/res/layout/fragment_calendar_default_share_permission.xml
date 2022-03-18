@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/titlePaddingView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_25"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlePaddingView">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/calendarShareOptionTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Calendar_Share_SharingPermissions"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_8"/>
+        <RelativeLayout android:id="@+id/tenantContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tenantTipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_8" android:layout_toStartOf="@+id/tenantPermissionTv" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tenantPermissionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_4" android:layout_toStartOf="@+id/tenantArrowIv"/>
+            <ImageView android:id="@+id/tenantArrowIv" android:background="@drawable/icon_right_arrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_16"/>
+        <RelativeLayout android:id="@+id/crossTenantContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/crossTenantTipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:layout_marginBottom="@dimen/dp_13" android:singleLine="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_8" android:layout_toStartOf="@+id/crossTenantPermissionTv" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/crossTenantPermissionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_4" android:layout_toStartOf="@+id/crossTenantArrow"/>
+            <ImageView android:id="@+id/crossTenantArrow" android:background="@drawable/icon_right_arrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/childFragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlePaddingView"/>
+</RelativeLayout>

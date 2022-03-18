@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mail.impl.utils.bubble.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="46dp" app:mbl_arrowDirection="3" app:mbl_arrowHeight="6dp" app:mbl_arrowPosition="16dp" app:mbl_arrowWidth="12dp" app:mbl_bubbleColor="@color/bg_tips" app:mbl_cornersRadius="40dp">
+    <TextView android:textSize="14dp" android:textColor="@color/static_white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/mail_tv_address_bubble" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+</com.ss.android.lark.mail.impl.utils.bubble.BubbleLayout>

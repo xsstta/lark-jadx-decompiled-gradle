@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/status_bar_diff_height_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/left_menu_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="4dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/right_menu_container" android:layout_toEndOf="@+id/left_menu_container">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/sync_icon" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/icon_tool_sync_nor" android:layout_marginEnd="8dp"/>
+                <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/right_menu_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/divider" android:background="@color/line_border_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/mail_operation_title_bar_fold_all_messages_icon" android:tint="@color/ud_N650"/>
+    </item>
+    <item>
+        <bitmap android:src="@drawable/mail_operation_title_bar_fold_all_messages_icon" android:tint="@color/icon_n1"/>
+    </item>
+</selector>

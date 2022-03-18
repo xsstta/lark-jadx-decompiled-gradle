@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_NewSettings_InternalSettings" app:tb_title_color="@color/text_title"/>
+    <include layout="@layout/view_title_mine_desktop"/>
+    <TextView android:id="@+id/fetch_latest_config" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" style="@style/SettingItemInternalSetting"/>
+</LinearLayout>

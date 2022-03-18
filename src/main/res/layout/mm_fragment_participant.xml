@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.mm.module.share.invite.MmInviteTitleBar android:id="@+id/titleBar" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/ptrLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvUserList" android:paddingTop="4dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+    <FrameLayout android:id="@+id/emptyContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.mm.widget.MmLoadingView android:id="@+id/loadingView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.wikiv2.wikitreev2.main.WikiCoverCoordinatorLayout android:id="@+id/wiki_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/wiki_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+                <com.bytedance.ee.bear.wikiv2.wikitreev2.main.SpaceCoverView android:id="@+id/wiki_cover_view" android:layout_width="match_parent" android:layout_height="210dp"/>
+                <androidx.appcompat.widget.Toolbar android:id="@+id/wiki_header_toolbar" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:alpha="0" app:contentInsetStart="0dp" app:layout_collapseMode="1">
+                    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/wiki_floating_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" app:widget_widgets_tb_divider_visible="false"/>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.bytedance.ee.bear.wikiv2.wikitreev2.widget.view.WikiTreeCtrlView android:id="@+id/wiki_tree_ctrl_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </com.bytedance.ee.bear.wikiv2.wikitreev2.main.WikiCoverCoordinatorLayout>
+    <com.bytedance.ee.bear.widgets.button.CommonCreateButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/common_create_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.bytedance.ee.bear.wikiv2.searchv2.WikiSearchView2 android:id="@+id/wiki_search_view" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_gravity="center" android:id="@+id/wiki_err_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/error_info_full_screen"/>
+</FrameLayout>

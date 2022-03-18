@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/filter_panel_container" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/sheet_subfragment_title_layout"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_kit_len_8" android:paddingBottom="@dimen/space_kit_len_16" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/space_kit_len_16" android:paddingEnd="@dimen/space_kit_len_16">
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetListItemView android:tag="filterByCell" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:forceGroupPosition="0"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetListItemView android:tag="cancelFilterByCell" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:forceGroupPosition="0"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetListItemView android:tag="filterValue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:forceGroupPosition="1" app:showListItemNext="true"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetListItemView android:tag="filterColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:forceGroupPosition="2" app:showListItemNext="true"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetListItemView android:tag="filterCondition" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:forceGroupPosition="3" app:showListItemNext="true"/>
+                <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:gravity="center" android:tag="filterClear" android:background="@drawable/sheet_cell_button_txt" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height" android:layout_marginTop="@dimen/space_kit_len_8"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

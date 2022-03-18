@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/sheet_filter_subfragment_top_layout"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:tag="noColorContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+                <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:tag="noColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_4" app:ud_checkbox_size="1" app:ud_checkbox_type="1"/>
+                <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:tag="noColorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_2"/>
+            </LinearLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/sheet_divider_height" android:layout_marginStart="@dimen/space_kit_len_16"/>
+            <com.bytedance.ee.bear.sheet.filter.FilterPanelColorView android:tag="backgroundColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.bytedance.ee.bear.sheet.filter.FilterPanelColorView android:tag="foregroundColor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/tips" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_103" android:text="@string/Doc_Sheet_NoColor"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

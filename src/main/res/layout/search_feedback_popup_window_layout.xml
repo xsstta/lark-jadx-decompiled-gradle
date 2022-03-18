@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/search_feedback_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="26dp">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_search_feedback_windowtitle" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_feedback_ic_window_close" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nsv_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/fl_suggestion_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_FeedbackSurveyTitle"/>
+                <com.larksuite.framework.ui.flowlayout.TagFlowLayout android:id="@+id/fl_suggestion" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/Lark_search_feedback_openquestiontitle"/>
+                <com.ss.android.lark.keyboard.plugin.input.RichTextEmojiconEditText android:scrollbarStyle="insideInset" android:textSize="16sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/et_suggestion" android:background="@drawable/search_feedback_editor_bg" android:paddingLeft="@dimen/dp_12" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_12" android:paddingBottom="@dimen/dp_8" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="104dp" android:layout_marginTop="@dimen/dp_8" android:hint="@string/Lark_search_feedback_openquestionguideline" android:overScrollMode="always"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/Lark_search_feedback_regulations"/>
+            <LinearLayout android:enabled="false" android:gravity="center" android:orientation="horizontal" android:id="@+id/confirm_btn" android:background="@drawable/search_feedback_dialog_btn_selector_bg" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="24dp" android:layout_marginBottom="30dp">
+                <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="@dimen/dp_4" android:indeterminateDrawable="@drawable/search_feedback_dialog_btn_loading"/>
+                <TextView android:textSize="17sp" android:textColor="@color/static_white" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Send" android:singleLine="true" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/places_autocomplete_list_background" android:layout_width="match_parent" android:layout_height="match_parent" android:textDirection="locale" android:layoutDirection="locale">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/places_autocomplete_action_bar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:contentInsetEnd="@dimen/places_autocomplete_toolbar_inset_end" app:contentInsetLeft="@dimen/places_autocomplete_toolbar_inset_start" app:contentInsetRight="@dimen/places_autocomplete_toolbar_inset_end" app:contentInsetStart="@dimen/places_autocomplete_toolbar_inset_start">
+        <include layout="@layout/places_autocomplete_search_bar"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View android:background="@drawable/places_autocomplete_toolbar_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:layout_below="@+id/places_autocomplete_action_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/places_autocomplete_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/places_autocomplete_action_bar"/>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/places_autocomplete_error" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/places_autocomplete_action_bar">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="192dp" android:layout_height="120dp" app:srcCompat="@drawable/quantum_ic_cloud_off_vd_theme_24"/>
+            <include layout="@layout/places_autocomplete_error_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

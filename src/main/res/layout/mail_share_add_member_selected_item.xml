@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.imageview.LKUIRoundedImageView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/mail_share_member_selected_item_avatar" android:background="@drawable/icon_circle_bg" android:layout_width="@dimen/mail_share_member_selected_avatar_size" android:layout_height="@dimen/mail_share_member_selected_avatar_size" android:layout_margin="10dp"/>

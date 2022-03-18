@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="442dp">
+    <FrameLayout android:id="@+id/profileBackground" android:layout_width="match_parent" android:layout_height="@dimen/dp_300">
+        <View android:id="@+id/ivBackground" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_16" android:layout_alignBottom="@+id/profileBackground">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" app:radius="16dp"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/aaaa" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/profileBackground">
+        <View android:textSize="@dimen/dp_24" android:textColor="@color/text_title" android:id="@+id/profileName" android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_48" android:layout_marginStart="@dimen/dp_20"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_20" android:layout_below="@+id/profileName" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+            <View android:textSize="@dimen/dp_24" android:textColor="@color/text_title" android:id="@+id/dynamicCount" android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="@dimen/dp_24" android:layout_weight="1"/>
+            <View android:layout_gravity="center_vertical" android:background="@color/line_divider_default" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <View android:textSize="@dimen/dp_24" android:textColor="@color/text_title" android:id="@+id/followingsCount" android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="@dimen/dp_24" android:layout_weight="1"/>
+            <View android:layout_gravity="center_vertical" android:background="@color/line_divider_default" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <View android:textSize="@dimen/dp_24" android:textColor="@color/text_title" android:id="@+id/followersCount" android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="@dimen/dp_24" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/avatar" android:background="@color/ud_R100" android:layout_width="@dimen/dp_96" android:layout_height="@dimen/dp_96" android:layout_marginBottom="-48dp" android:src="@drawable/moments_skeleton_n200_circle" android:layout_above="@+id/white" android:layout_marginStart="@dimen/dp_16" app:border_color="@color/ud_N00" app:border_width="@dimen/dp_3" app:oval="true"/>
+</RelativeLayout>

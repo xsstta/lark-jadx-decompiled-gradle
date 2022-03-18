@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/search_result_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_4" app:panel_background_color="@color/bg_body" app:panel_left_text="@string/Doc_Facade_Cancel" app:panel_menu_type="1" app:panel_title="@string/Doc_At_MentionTip">
+        <FrameLayout android:id="@+id/search_result_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_result_list" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false"/>
+            <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/search_loading" android:background="@color/bg_float" android:visibility="gone" android:scaleType="centerInside" app:backgroundAlpha="0.9" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+        </FrameLayout>
+    </com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>
+    <TextView android:textSize="18sp" android:textColor="@color/text_placeholder" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="bottom" android:id="@+id/search_not_found" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/space_kit_len_10" android:text="@string/Doc_At_NothingFound" android:paddingStart="20dp"/>
+</merge>

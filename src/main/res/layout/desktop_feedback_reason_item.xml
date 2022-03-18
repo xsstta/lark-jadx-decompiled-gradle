@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="32dp">
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="16dp" android:textColor="@drawable/desktop_feedback_checkbox_color_selector" android:gravity="center" android:id="@+id/desktop_feedback_reason_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/iconfont_icon_checkbox_unselected"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/desktop_feedback_reason_text" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="text" android:singleLine="true"/>
+</LinearLayout>

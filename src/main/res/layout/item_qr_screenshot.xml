@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/qrcode_screenshot_layout" android:background="@drawable/share_profile_bg" android:layout_width="327dp" android:layout_height="430dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/qrcode_contact_avatar" android:background="@drawable/icon_circle_bg" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="20dp" android:scaleType="fitCenter" android:layout_marginStart="20dp" app:sriv_oval="true"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/lkui_N900" android:id="@+id/qrcode_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:paddingLeft="40dp" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="341.5dp">
+        <ImageView android:id="@+id/qrcode_img" android:layout_width="247dp" android:layout_height="247dp" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

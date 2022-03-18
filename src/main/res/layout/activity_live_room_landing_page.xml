@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:gravity="center" android:layout_gravity="center" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:drawableTop="@drawable/illustration_platform_empty_positive_upgrading_1" android:drawablePadding="16dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/upgrade" android:background="@drawable/vc_next_button_corner4_normal" android:layout_width="88dp" android:layout_height="36dp" android:layout_marginTop="24dp"/>
+    </LinearLayout>
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/icon_n1" android:id="@+id/back" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/iconfont_icon_arrow_left"/>
+</FrameLayout>

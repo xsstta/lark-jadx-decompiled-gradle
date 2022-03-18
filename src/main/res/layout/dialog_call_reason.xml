@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg_call_reason" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="84dp" android:text="@string/Lark_Legacy_UrgentCallFeedbackTitle"/>
+        <EditText android:textSize="16dp" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/et_dialog_reason" android:background="@drawable/dialog_edittext_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="121dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:hint="@string/Lark_Legacy_UrgentCallFeedbackPlaceholder"/>
+        <Button android:enabled="false" android:textSize="17sp" android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/btn_dialog_confirm" android:background="@drawable/phone_query_limit_button_selector" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="28dp" android:text="@string/Lark_Legacy_UrgentCallFeedbackSubmit" android:alpha="0.5"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@+id/btn_dialog_close" android:padding="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_svg_titlebar_close_pressed"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingBottom="160dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <com.larksuite.component.universe_design.emptystate.UDEmptyState android:layout_gravity="center_horizontal" android:id="@+id/mail_aggregation_empty_state" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_empty_descTextColor="@color/text_caption" app:ud_empty_imageSize="100dp"/>
+</LinearLayout>

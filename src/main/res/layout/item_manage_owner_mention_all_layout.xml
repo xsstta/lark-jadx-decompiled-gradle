@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/owner_mention_all_layout" android:background="@drawable/bg_setting_group_item_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cell_subtitle_height" android:paddingEnd="3dp">
+    <ImageView android:id="@+id/arrow_iv" android:layout_width="wrap_content" android:layout_height="16dp" android:src="@drawable/chat_setting_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_marginEnd="17.7dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cell_vertical_margin" android:layout_marginBottom="@dimen/cell_vertical_margin" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="4dp" android:layout_toStartOf="@+id/arrow_iv" android:layout_alignParentStart="true">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_owner_mention_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_GroupManagement_WhoCanAtAll"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/owner_mention_all_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_GroupManagement_EveryoneInThisGroup"/>
+    </LinearLayout>
+</RelativeLayout>

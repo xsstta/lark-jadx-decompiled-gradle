@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="158dp">
+    <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/first_picker" android:layout_width="match_parent" android:layout_height="match_parent" app:ud_timePicker_datePickerMode="4"/>
+    <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/second_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:ud_timePicker_datePickerMode="3" app:ud_timePicker_showDayInfo="false"/>
+</FrameLayout>

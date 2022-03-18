@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+    <Space android:layout_width="@dimen/dp_12" android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/icon_iv" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20"/>
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_14" android:textColor="@drawable/participant_light_text_color_selector" android:layout_gravity="center" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/dp_12"/>
+    <androidx.appcompat.widget.AppCompatImageView android:textSize="@dimen/dp_20" android:layout_gravity="center" android:id="@+id/forbid_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_12" app:srcCompat="@drawable/ud_icon_warning_light_colorful"/>
+    <Space android:layout_width="@dimen/dp_12" android:layout_height="match_parent"/>
+</LinearLayout>

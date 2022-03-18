@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/profileBackground" android:layout_width="match_parent" android:layout_height="@dimen/dp_316">
+        <ImageView android:id="@+id/ivBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="@dimen/dp_100" android:src="@drawable/moments_profile_background_top"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="@dimen/dp_48" android:src="@drawable/moments_profile_background_bottom" android:layout_alignBottom="@+id/profileBackground"/>
+    <FrameLayout android:id="@+id/white" android:layout_width="match_parent" android:layout_height="@dimen/dp_16" android:layout_alignBottom="@+id/profileBackground">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" app:radius="16dp"/>
+    </FrameLayout>
+    <RelativeLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/profileBackground">
+        <com.ss.android.lark.moments.impl.common.widget.MomentsFollowButton android:gravity="center" android:layout_gravity="end" android:id="@+id/btFollow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="@dimen/dp_24" android:textColor="@color/text_title" android:id="@+id/profileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_42" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/longColumn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:layout_below="@+id/profileName" android:layout_marginStart="@dimen/dp_20">
+            <include android:id="@+id/longDynamic" layout="@layout/moments_profile_item_long_data"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/longDynamicDivider" android:background="#261f2329" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <include android:id="@+id/longFollower" layout="@layout/moments_profile_item_long_data"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/divider_2" android:background="#261f2329" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <include android:id="@+id/longFollowing" layout="@layout/moments_profile_item_long_data"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/shortColumn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16" android:layout_below="@+id/profileName" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+            <include android:id="@+id/shortDynamic" layout="@layout/moments_profile_item_short_data"/>
+            <View android:id="@+id/shortDynamicDivider" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <View android:layout_gravity="center_vertical" android:background="#261f2329" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:id="@+id/shortFollower" layout="@layout/moments_profile_item_short_data"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <View android:layout_gravity="center_vertical" android:background="#261f2329" android:layout_width="@dimen/dp_05" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:id="@+id/shortFollowing" layout="@layout/moments_profile_item_short_data"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-64dp" android:layout_above="@+id/white" android:layout_marginStart="4dp" app:ud_shadow_radius="48dp" style="@style/UDShadow.S4">
+        <com.ss.android.lark.moments.impl.common.widget.BorderOvalImageView android:id="@+id/avatar" android:layout_width="96dp" android:layout_height="96dp" app:border_color="@color/bg_body" app:border_width="@dimen/dp_2" app:oval="true"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</RelativeLayout>

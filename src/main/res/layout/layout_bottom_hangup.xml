@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/ud_N800" android:layout_width="match_parent" android:layout_height="268dp">
+    <TextView android:textSize="14dp" android:textColor="@color/ud_N500" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingLeft="38dp" android:paddingRight="38dp" android:layout_width="match_parent" android:layout_height="66dp" android:text="@string/View_M_LeaveMeetingInfo"/>
+    <TextView android:textSize="16dp" android:textColor="@color/ud_N00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/end_meeting" android:background="@drawable/participant_list_item_selector" android:layout_width="match_parent" android:layout_height="66dp" android:text="@string/View_M_EndMeetingForAll"/>
+    <FrameLayout android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="66dp">
+        <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@drawable/divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="16dp" android:textColor="@color/ud_R500" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/leave_meeting" android:background="@drawable/participant_list_item_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/View_M_LeaveMeetingButton"/>
+    </FrameLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/ud_N00" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/cancel" android:background="@drawable/participant_list_item_selector" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/View_G_CancelButton"/>
+</LinearLayout>

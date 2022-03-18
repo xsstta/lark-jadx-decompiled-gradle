@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UDShadow.S4.Down">
+        <ListView android:layout_gravity="right" android:id="@+id/menu_listview" android:background="@drawable/mail_message_list_layout_more_menu_background" android:padding="@dimen/mail_message_list_more_menu_padding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mail_message_list_more_menu_offy" android:layout_marginRight="@dimen/mail_message_list_more_menu_margin_right" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:dividerHeight="0dp"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</LinearLayout>

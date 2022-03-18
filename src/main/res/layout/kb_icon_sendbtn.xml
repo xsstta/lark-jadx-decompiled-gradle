@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" android:enabled="false" android:id="@+id/btn_send" android:layout_width="40dp" android:layout_height="32dp" android:src="@drawable/ud_icon_send_colorful" android:scaleType="center"/>

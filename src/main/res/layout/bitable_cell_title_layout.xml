@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="@dimen/space_kit_len_8" android:paddingBottom="@dimen/space_kit_len_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/space_kit_font_13" android:textColor="@color/text_caption" android:id="@+id/cell_title_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_22"/>
+    <TextView android:textSize="@dimen/space_kit_font_13" android:textColor="@color/text_caption" android:id="@+id/single_line_temp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="让图标对齐文本第一行" android:layout_marginStart="@dimen/space_kit_len_22"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cell_title_icon" android:layout_width="@dimen/space_kit_len_16" android:layout_height="@dimen/space_kit_len_16" android:tint="@color/icon_n2" app:layout_constraintBottom_toBottomOf="@+id/single_line_temp" app:layout_constraintTop_toTopOf="@+id/single_line_temp" app:srcCompat="@drawable/ud_icon_maybe_outlined"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

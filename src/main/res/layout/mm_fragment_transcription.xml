@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mm.widget.MmKeyboardHideConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:paddingBottom="100dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+    <com.ss.android.lark.mm.widget.MmLoadingView android:id="@+id/transcriptionLoadingView" android:layout_width="match_parent" android:layout_height="match_parent" android:translationY="-44dp"/>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/topReSyncLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:translationX="2dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/UDShadow.S4.Down">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/topReSyncView" android:background="@drawable/mm_bg_resync_seek_position" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="20dp" android:layout_height="20dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_up_top_outlined"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_title" android:id="@+id/topReSyncTextView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MMWeb_G_BackToCurrentPosition" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/bottomReSyncLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:translationX="2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" style="@style/UDShadow.S4.Down">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bottomReSyncView" android:background="@drawable/mm_bg_resync_seek_position" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="20dp" android:layout_height="20dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_down_bottom_outlined"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/text_title" android:id="@+id/bottomReSyncTextView" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MMWeb_G_BackToCurrentPosition" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+    <FrameLayout android:id="@+id/emptyContainer" android:background="@color/lkui_N00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.mm.widget.MmKeyboardHideConstraintLayout>

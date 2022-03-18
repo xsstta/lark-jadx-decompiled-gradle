@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:background="@drawable/mm_bg_live_player_titlebar" android:paddingLeft="84dp" android:paddingTop="12dp" android:paddingRight="84dp" android:layout_width="match_parent" android:layout_height="76dp" android:paddingHorizontal="84dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_back" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/inno_live_video_left"/>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/dp_12"/>
+                <TextView android:textSize="@dimen/dp_10" android:textColor="@color/static_white" android:id="@+id/tv_live" android:background="@drawable/mm_bg_live_player_titlebar_live" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" android:paddingHorizontal="3dp" android:paddingVertical="1dp"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_share" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/inno_live_video_share"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/static_white" android:id="@+id/tv_watch" android:background="@drawable/mm_bg_live_player_title_watch_num" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginStart="@dimen/dp_32" android:paddingHorizontal="@dimen/dp_6" android:paddingVertical="@dimen/dp_2"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/ll_bottom" android:background="@drawable/mm_bg_live_player_toolbar" android:paddingLeft="84dp" android:paddingRight="84dp" android:layout_width="match_parent" android:layout_height="64dp" android:paddingHorizontal="84dp">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="@dimen/dp_16">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/inno_live_layer_toolbar_normal_left"/>
+            <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/inno_live_layer_toolbar_normal_right"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</merge>

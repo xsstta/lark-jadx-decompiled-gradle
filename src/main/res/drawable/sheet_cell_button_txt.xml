@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/space_radius_m"/>
+            <solid android:color="@color/fill_pressed"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/space_radius_m"/>
+            <stroke android:width="@dimen/space_kit_len_1" android:color="@color/line_border_component"/>
+            <solid android:color="@color/udtoken_component_outlined_bg"/>
+        </shape>
+    </item>
+</selector>

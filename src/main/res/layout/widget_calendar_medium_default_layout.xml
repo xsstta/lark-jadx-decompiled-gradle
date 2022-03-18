@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/background" android:background="@drawable/bg_widget_default" android:padding="@dimen/widget_default_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget_default_week" android:background="@drawable/bg_widget_empty_view" android:layout_width="@dimen/widget_default_week_width" android:layout_height="@dimen/widget_default_week_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+    <ImageView android:background="@drawable/bg_widget_empty_logo_medium" android:layout_width="@dimen/widget_loading_icon_size" android:layout_height="@dimen/widget_loading_icon_size" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/widget_medium_default_view_top_margin" android:layout_toRightOf="@+id/widget_default_week" android:layout_marginStart="@dimen/widget_default_week_left_margin" android:layout_toEndOf="@+id/widget_default_week">
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_s_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/widget_medium_loading_event_right_margin" android:layout_weight="1" android:layout_marginEnd="@dimen/widget_medium_loading_event_right_margin"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_m_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_s_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/widget_medium_loading_event_right_margin" android:layout_weight="1" android:layout_marginEnd="@dimen/widget_medium_loading_event_right_margin"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_m_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_s_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_item" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginRight="@dimen/widget_medium_loading_event_right_margin" android:layout_weight="1" android:layout_marginEnd="@dimen/widget_medium_loading_event_right_margin"/>
+    </LinearLayout>
+</RelativeLayout>

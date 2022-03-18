@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/drive_activity_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.wikiv2.wikitreev2.widget.view.SwipeMenuLayout android:id="@+id/swipe_menu_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@+id/focus" android:background="@color/ud_C500" android:visibility="gone" android:layout_width="4dp" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/header" android:paddingLeft="23dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/indicator" android:padding="6dp" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_global_trianglesmall_outlined" android:scaleType="centerInside"/>
+                    <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/loading" android:padding="5dp" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" app:lottie_autoPlay="true" app:lottie_fileName="1252_loading.json" app:lottie_loop="true"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_wikifile_doc_outline_v2" android:scaleType="centerInside" android:layout_marginStart="2dp" android:layout_marginEnd="2dp"/>
+                    <TextView android:textSize="16dp" android:textStyle="normal" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:paddingStart="2dp" android:paddingEnd="@dimen/space_kit_len_16"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <include android:id="@+id/item_menu" layout="@layout/wiki_tree_item_menu_v2"/>
+    </com.bytedance.ee.bear.wikiv2.wikitreev2.widget.view.SwipeMenuLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+</LinearLayout>

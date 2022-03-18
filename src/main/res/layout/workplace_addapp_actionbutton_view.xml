@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/background" android:layout_width="match_parent" android:layout_height="28dp">
+        <TextView android:textSize="14dp" android:textColor="@color/primary_pri_500" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/action_text" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <com.larksuite.component.ui.imageview.LKUILottieAnimationView android:layout_gravity="center" android:id="@+id/loading" android:layout_width="14dp" android:layout_height="14dp"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/microapp_m_feedback_titlebar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/microapp_m_feedback_detail_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="21dp" android:layout_marginRight="25dp" android:layout_marginBottom="20dp">
+                    <ImageView android:background="@drawable/microapp_m_feedback_qa" android:layout_width="59dp" android:layout_height="37dp"/>
+                    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="@color/microapp_m_text_focus" android:id="@+id/microapp_m_feedback_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="19dp" android:text="如何通过发文获得收益"/>
+                </FrameLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxianzi3" android:id="@+id/microapp_m_feedback_detail_answer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="14dp" android:layout_marginBottom="40dp" android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈" android:lineSpacingMultiplier="1.2"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/microapp_m_feedback_detail_layout_useful" android:background="@drawable/microapp_m_feedback_detail_useful" android:padding="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                        <ImageView android:id="@+id/microapp_m_feedback_detail_useful_imageview" android:background="@drawable/microapp_m_feedback_detail_useful_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:rotation="180"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/microapp_m_text_focus" android:id="@+id/microapp_m_feedback_detail_useful_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/microapp_m_feedback_faq_detail_useful"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/microapp_m_feedback_detail_layout_useless" android:background="@drawable/microapp_m_feedback_detail_useful" android:padding="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_weight="1">
+                        <ImageView android:id="@+id/microapp_m_feedback_detail_useless_imageview" android:background="@drawable/microapp_m_feedback_detail_useful_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/microapp_m_text_focus" android:id="@+id/microapp_m_feedback_detail_useless_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/microapp_m_feedback_faq_detail_useless"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/microapp_m_feedback_detail_related_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_text_focus" android:id="@+id/microapp_m_feedback_detail_related_question_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="48dp" android:layout_marginBottom="12dp" android:text="@string/microapp_m_feedback_faq_detail_related_question_tip"/>
+                    <View android:background="@color/microapp_m_dark_divider" android:layout_width="match_parent" android:layout_height="0.25dp" android:layout_marginLeft="15dp"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/microapp_m_feedback_detail_related_question_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View android:background="@color/microapp_m_dark_divider" android:layout_width="match_parent" android:layout_height="0.25dp" android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/microapp_m_feedback_detail_footer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/microapp_m_black_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/microapp_m_feedback_faq_detail_feedback_prefix"/>
+                <TextView android:textSize="14sp" android:textColor="@color/microapp_m_feedback_footer_text_color_blue" android:id="@+id/microapp_m_feedback_detail_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/microapp_m_feedback_faq_detail_feedback"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/drive_selector_record_item" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/drive_history_record_item_normal_height">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/user_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Melvin Clarke" android:singleLine="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/operation_description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true" android:layout_below="@+id/user_name_tv"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/file_info_content_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/operation_description_tv">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/file_type_img" android:layout_width="20dp" android:layout_height="20dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/file_name_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="11sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/file_tag_tv" android:background="@drawable/drive_bg_history_record_item_file_tag" android:paddingLeft="4dp" android:paddingRight="4dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/Drive_Drive_HistoryRecordDeleted" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:gravity="right" android:id="@+id/opt_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/user_name_tv" android:layout_alignParentEnd="true"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

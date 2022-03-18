@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/paramsRv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/confirmBtn" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="确定" android:layout_weight="1" style="@style/SpaceKitBtn1Level1"/>
+        <Button android:id="@+id/clearBtn" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="清空" android:layout_weight="1" style="@style/SpaceKitBtn1Level1"/>
+    </LinearLayout>
+</LinearLayout>

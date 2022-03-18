@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/setting_group_margin" app:tb_title="@string/Lark_Chat_TranslateResultMobile" app:tb_title_color="@color/lkui_N900"/>
+    <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" style="@style/Setting_SettingDividerFull"/>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/option_list_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" style="@style/Setting_SettingDividerFull"/>
+    <RelativeLayout android:id="@+id/specific_language_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height" android:layout_marginTop="@dimen/setting_group_margin" android:onClick="openSpecificDisplaySetting" style="@style/SettingItemLayout">
+        <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Chat_SpecialTranslateLanguageSettingMobile" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+    </RelativeLayout>
+    <TextView android:textColor="@color/lkui_N500" android:id="@+id/specific_language_setting_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Chat_SpecialTranslateLanguageSettingDescription" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+</LinearLayout>

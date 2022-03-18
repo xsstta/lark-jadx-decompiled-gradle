@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_calendar_list_date" android:visibility="gone" android:layout_width="@dimen/dp_57" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_calendar_list_week_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="周五"/>
+        <TextView android:textSize="@dimen/dp_26" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_calendar_list_month_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15"/>
+    </LinearLayout>
+    <com.ss.android.lark.calendar.impl.features.calendarview.widget.EventChipView android:id="@+id/calendar_list_data_chip" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_57" android:layout_marginRight="@dimen/dp_5"/>
+</RelativeLayout>

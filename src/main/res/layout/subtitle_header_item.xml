@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/subtile_his_open" android:layout_width="@dimen/subtitle_header_height" android:layout_height="@dimen/subtitle_header_height">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:background="@drawable/selector_subtitle_his_open" android:visibility="visible" android:layout_width="@dimen/subtitle_header_open_width" android:layout_height="@dimen/subtitle_header_open_width" android:scaleType="center"/>
+    </FrameLayout>
+</FrameLayout>

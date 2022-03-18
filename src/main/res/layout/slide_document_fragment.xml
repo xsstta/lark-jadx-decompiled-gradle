@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.slide.common.widget.SlideWebViewContainer android:id="@+id/contentOuterContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/doc_web_container"/>
+    </com.bytedance.ee.bear.slide.common.widget.SlideWebViewContainer>
+    <com.bytedance.ee.bear.slide.browse.sidebar.SlideSideBar android:id="@+id/slide_side_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/slide_side_bar_margin_top" android:layout_marginBottom="@dimen/slide_side_bar_margin_bottom"/>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/doc_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.slide.browse.navbar.SlideNavBarContainer android:orientation="vertical" android:id="@+id/slide_nav_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/doc_main_title" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:contentDescription="title_bar"/>
+            <com.bytedance.ee.bear.document.DocTipsLayout android:id="@+id/doc_main_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.bytedance.ee.bear.slide.common.font.FontDownloadHintLayout android:id="@+id/slide_font_download_hint_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"/>
+        </com.bytedance.ee.bear.slide.browse.navbar.SlideNavBarContainer>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:id="@+id/doc_main_search" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" layout="@layout/doc_search_titlebar"/>
+    <FrameLayout android:id="@+id/pluginUIContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

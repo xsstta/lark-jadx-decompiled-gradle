@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/load_error_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:paddingStart="@dimen/dp_52">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_warning_outlined" android:tint="@color/ud_R500"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Common_FailedToLoad" android:layout_marginStart="@dimen/dp_25"/>
+    <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_48">
+    <View android:layout_gravity="center" android:id="@+id/sub_toolbar_item_divider" android:background="@color/space_kit_n300" android:layout_width="@dimen/space_kit_len_divider" android:layout_height="@dimen/space_kit_len_28" android:layout_marginStart="7dp" android:layout_marginEnd="7dp"/>
+</FrameLayout>

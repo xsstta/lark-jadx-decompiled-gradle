@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/ud_timepicker_action_panel_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/UDText.Body0" android:textColor="@color/text_title" android:id="@+id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textAppearance="@style/UDText.Body0" android:textColor="@color/text_title" android:id="@+id/leftActionView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="@style/UDText.Body0" android:textColor="@color/primary_pri_500" android:id="@+id/rightActionView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/timePicker" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" app:ud_timePicker_datePickerMode="1" app:ud_timePicker_itemVisibleNum="5"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/editActivityRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/pickerTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Calendar_Common_ShareCalendar"/>
+        <RelativeLayout android:id="@+id/bottomActionContainer" android:background="@color/bg_body" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/selectedCountTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_8" android:layout_toStartOf="@+id/nextActionTv" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:id="@+id/nextActionTv" android:background="@drawable/bg_calendar_chat_picker_next_action" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_4" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Share_NextStep" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/dp_8" android:paddingVertical="@dimen/dp_4"/>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        </RelativeLayout>
+        <com.ss.android.lark.search.widget.CalendarChatterPicker android:id="@+id/chatterPicker" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomActionContainer" android:layout_below="@+id/pickerTitleBar"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

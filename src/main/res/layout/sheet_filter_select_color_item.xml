@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/outer_layer" android:layout_width="@dimen/space_kit_len_34" android:layout_height="@dimen/space_kit_len_34" app:rl_border_color="@color/primary_pri_500" app:rl_border_width="@dimen/space_kit_len_3" app:rl_radius="@dimen/space_radius_l">
+        <com.larksuite.component.ui.layout.LKUIRoundableLayout android:layout_gravity="center" android:id="@+id/inner_layer" android:background="@color/primary_pri_500" android:layout_width="@dimen/space_kit_len_28" android:layout_height="@dimen/space_kit_len_28" app:rl_border_color="@color/bg_body" app:rl_border_width="@dimen/space_kit_len_2" app:rl_radius="@dimen/space_radius_m"/>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+</FrameLayout>

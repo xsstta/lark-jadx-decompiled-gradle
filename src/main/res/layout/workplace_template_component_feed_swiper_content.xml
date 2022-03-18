@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.appcenter.common.bannerview.BannerViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.ss.android.appcenter.common.bannerview.indicator.IndicatorView android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <com.ss.android.appcenter.business.tab.fragmentv3.component.feedswiper.ImageMaskView android:id="@+id/image_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp"/>
+</merge>

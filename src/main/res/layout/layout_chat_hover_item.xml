@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/desktop_hover_wrapper" android:background="@drawable/chat_item_reaction_hover_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/desktop_hover_reaction_wrapper" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/desktop_hover_reaction" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ud_icon_thumbsup_filled" android:tint="@color/icon_n3"/>
+        <View android:layout_gravity="end" android:background="@color/line_border_card" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/desktop_hover_reply_wrapper" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/desktop_hover_reply" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ud_icon_reply_cn_filled" android:tint="@color/icon_n3"/>
+        <View android:layout_gravity="end" android:background="@color/line_border_card" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/desktop_hover_more_operation_wrapper" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/desktop_hover_more_operation" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ud_icon_more_outlined" android:tint="@color/icon_n3"/>
+    </FrameLayout>
+</LinearLayout>

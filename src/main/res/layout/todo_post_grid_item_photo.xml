@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_1" android:layout_marginEnd="@dimen/dp_1">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/ivContent" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" android:layout_marginTop="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5" app:border_width="0.5dp" app:radius="4dp"/>
+    <ImageView android:layout_gravity="end" android:id="@+id/icDelete" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_26" android:src="@drawable/todo_svg_icon_post_delete"/>
+</FrameLayout>

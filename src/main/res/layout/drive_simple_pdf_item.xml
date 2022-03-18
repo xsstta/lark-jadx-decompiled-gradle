@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/simple_pdf_divider" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <com.bytedance.ee.bear.drive.view.widget.RecyclingImageView android:id="@+id/simple_pdf_recycler_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitStart"/>
+</LinearLayout>

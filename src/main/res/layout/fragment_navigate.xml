@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:id="@+id/location_fl_set_location_map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/location_ll_map_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/message_location_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/message_location_iv_back" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="1dp" android:src="@drawable/message_location_ic_back_selector"/>
+            <ImageView android:layout_gravity="right" android:id="@+id/message_location_iv_more" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginRight="1dp" android:src="@drawable/message_location_ic_more_options_selector"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/location_iv_locate_position" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_69" android:layout_marginRight="@dimen/dp_8_5" android:layout_marginBottom="@dimen/dp_10" android:src="@drawable/location_navigate_position_selector"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/location_message_bottom_layout" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_78" android:divider="@color/static_white">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_278" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/location_tv_navigate_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/location_tv_navigate_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:maxLines="1"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/location_iv_go_to_navigate" android:layout_width="@dimen/dp_49" android:layout_height="@dimen/dp_49" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/location_navigate_selector" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

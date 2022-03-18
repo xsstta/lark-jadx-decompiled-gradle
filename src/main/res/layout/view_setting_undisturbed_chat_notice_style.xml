@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/undisturbed_style" android:background="@drawable/bg_setting_group_item_round" android:paddingLeft="@dimen/box_horizontal_padding" android:paddingRight="@dimen/box_horizontal_padding" android:layout_height="@dimen/mine_setting_item_height" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/top_divider" app:layout_constraintVertical_chainStyle="1" style="@style/SettingBoxStyle">
+        <TextView android:gravity="center_vertical" android:id="@+id/undisturbed_style_tv" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Lark_NewSettings_MutedChatsNewMessageNotification" android:layout_weight="1" style="@style/SettingTextStyle"/>
+        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

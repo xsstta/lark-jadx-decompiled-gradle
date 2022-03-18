@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GuideTheme" parent="@style/AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="?0x10104e0">false</item>
+    </style>
+</resources>

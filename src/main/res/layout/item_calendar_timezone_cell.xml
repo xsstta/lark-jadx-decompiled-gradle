@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="end" android:id="@+id/behindViewContainer" android:background="@color/function_danger_500" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_1" android:layout_marginBottom="@dimen/dp_1">
+        <TextView android:textSize="@dimen/dp_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:text="@string/Calendar_Common_Delete" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/frontViewContainer" android:background="@color/bg_body" android:paddingBottom="@dimen/dp_11" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/timezoneInfoZone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/timezoneNameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_10d5" android:maxWidth="@dimen/dp_351" android:maxLines="2"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/timezoneOffsetTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@+id/timezoneNameTV" android:layout_alignLeft="@+id/timezoneNameTV"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/includeCityLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:layout_below="@+id/timezoneOffsetTV" android:layout_alignLeft="@+id/timezoneNameTV"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/selectedIcon" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/ud_icon_list_check_outlined" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_16"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/repeat_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_12"/>
+    <ListView android:id="@+id/lv_repeat_times" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_15" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/line_divider_default" android:dividerHeight="0.5dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_8"/>
+    <RelativeLayout android:id="@+id/ll_self_define_repeat" android:background="@color/bg_body" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_CustomRepeat" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="@color/icon_n3"/>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+</LinearLayout>

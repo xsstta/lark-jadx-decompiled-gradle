@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.mm.widget.BoldTextView android:textSize="16dp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:textFontWeight="500"/>
+    <TextView android:textSize="13dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/tvSubTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/MMWeb_G_AdminConfiguredOption" android:maxLines="1" android:singleLine="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <com.ss.android.lark.mm.module.share.setting.SettingChoice android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/choice1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:share_choice_title="@string/MMWeb_G_Internal"/>
+        <com.ss.android.lark.mm.module.share.setting.SettingChoice android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/choice2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:share_choice_title="@string/MMWeb_G_Anyone"/>
+    </LinearLayout>
+</merge>

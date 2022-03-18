@@ -1,0 +1,133 @@
+<!DOCTYPE html><html moznomarginboxes mozdisallowselectionprint><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>excel preview</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table-container"></div>
+      <div class="spin-indicator" style="display: none;">
+        <div class="spin-indicator-box">
+          <span class="spin-indicator-dots">
+            <i class="spin-indicator-dot1"></i>
+            <i class="spin-indicator-dot2"></i>
+            <i class="spin-indicator-dot3"></i>
+            <i class="spin-indicator-dot4"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <script>
+      function safelyParseJSON(str) {
+        try {
+          var parsedJSON = JSON.parse(str);
+          return parsedJSON;
+        } catch (e) {
+          console.error('parse json error', e);
+          return {};
+        }
+      }
+      // 转码Native传进来的参数
+      function parseNativeData(data) {
+        try {
+          var decodeData = decodeURIComponent(escape(window.atob(data)));
+          return safelyParseJSON(decodeData);
+        } catch (e) {
+          console.error('parse native data error', e);
+          return {};
+        }
+      }
+      // 供android调用的方法
+      function triggerJSEvent(data) {
+        try {
+          var parsedData = parseNativeData(data);
+          switch (parsedData.key) {
+            case 'setCopyable':
+              self.postMessage(parsedData, '*');
+              break;
+            case 'setCachedData':
+              self.postMessage({
+                key: parsedData.key,
+                value: safelyParseJSON(parsedData.value),
+              }, '*');
+              break;
+            default:
+              break;
+          }
+        } catch (e) {
+          console.error('ptriggerJSEvent function error', e);
+        }
+      }
+      // 过滤传进来的index
+      function filterIndexParams(index, tabListLength) {
+        var parsedIndex = Number(index) || 0;
+        var maxTabIndex = Math.max(tabListLength, 1) - 1;
+        return Math.min(Math.max(0, parsedIndex), maxTabIndex);
+      }
+      // 处理传进来的extra字符串
+      function parseExtraData(previewExtraString) {
+        var sheets = [];
+        var extraString = previewExtraString || '{}';
+        try {
+          var parseData = safelyParseJSON(extraString);
+          sheets = parseData.sheets || [];
+        } catch (e) {
+          console.error('parse excel json data error', e);
+        }
+        var tabs = [];
+        var sizes = [];
+        sheets.forEach(function(sheet) {
+          tabs.push(sheet.name);
+          sizes.push(sheet.size || 0);
+        });
+        return {
+          tabList: tabs.length === 1 && tabs[0] === '' ? [] : tabs,
+          sizeList: sizes,
+        };
+      }
+      // 初始化数据获得后
+      function handleInitialDataGot(value) {
+        if (!value) {
+          return;
+        }
+        var parsedExtraData = parseExtraData(value.previewExtra);
+        window.initialData = {
+          apiPrefix: value.apiPrefix || '',
+          resourcePrefix: value.resourcePrefix,
+          tabList: parsedExtraData.tabList,
+          sizeList: parsedExtraData.sizeList,
+          initTabIndex: filterIndexParams(value.index, parsedExtraData.tabList.length),
+          isMobile: value.platform === 'mobile',
+          copyable: value.copyable,
+          perTabMaxSize: Number(value.perTabMaxSize),
+          sizeExceededTipsText: value.sizeExceededTipsText || '',
+        };
+        // 插入js
+        var body = document.getElementsByTagName('body')[0];
+        var scriptTag = document.createElement('script');
+        scriptTag.setAttribute('src', window.initialData.resourcePrefix + 'excel.js');
+        body.appendChild(scriptTag);
+      }
+      // 初始化
+      function loadStart() {
+        if (window.jsObj) {
+          var value = window.jsObj.getInitialData();
+          var decodeData = parseNativeData(value);
+          handleInitialDataGot(decodeData);
+          return;
+        }
+        window.addEventListener('message', function(event) {
+          if (event.data && event.data.key === 'initData') {
+            handleInitialDataGot(event.data.value);
+          }
+        });
+        parent.postMessage({
+          key: 'loadStart',
+        }, '*');
+      }
+
+      loadStart();
+    </script>
+  
+
+</body></html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N50" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:tb_title="@string/Lark_Chat_TranslateLanguageSetting" app:tb_title_color="@color/lkui_N900"/>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/language_list_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <com.ss.android.lark.mine.common.view.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" style="@style/Mine_SettingDividerFull"/>
+</LinearLayout>

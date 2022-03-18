@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activityRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/virtual_status_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_25"/>
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/edit_attendee_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/text_container" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_22" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/text_attendee_numbers" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/text_delete_part_attendee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:text="@string/Calendar_Edit_CanNotDeleteGuest"/>
+        </LinearLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ListView android:id="@+id/lv_edit_attendee" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/groupMemberFrameLayout" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

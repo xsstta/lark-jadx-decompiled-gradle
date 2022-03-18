@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/microapp_m_keyboard_edittext_bg_solid_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/microapp_m_game_titlebar"/>
+    <View android:background="@color/microapp_m_keyboard_edittext_bg_stroke_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.tt.miniapp.view.RoundedImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_microapp_icon" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginTop="35dp" android:scaleType="centerCrop"/>
+                <TextView android:textSize="18sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_microapp_name" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginTop="8dp" android:layout_marginBottom="35dp" android:text="@string/microapp_m_microapp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/microapp_m_about_developer"/>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/tv_microapp_corp_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ly_microapp_domains" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/microapp_m_about_url"/>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/tv_microapp_domains" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ly_microapp_service_category" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/microapp_m_about_service_category"/>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/tv_microapp_service_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/microapp_m_about_version_info"/>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/tv_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/microapp_m_about_update_time"/>
+                <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/tv_update_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

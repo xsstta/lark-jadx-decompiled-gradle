@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout android:id="@+id/keyboardDetectorView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llAssociate">
+        <FrameLayout android:id="@+id/editContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llAssociate" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_200" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:id="@+id/frequentTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" android:text="@string/Lark_Community_RecentTitle" android:layout_marginStart="@dimen/dp_16"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rvAssociate" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

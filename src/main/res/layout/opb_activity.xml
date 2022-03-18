@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/opb_title" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/opb_title_back" android:padding="2dp" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/ud_icon_left_outlined" android:layout_marginStart="18dp" app:tint="@color/icon_n1"/>
+        <TextView android:textSize="17dp" android:textColor="@color/text_title" android:layout_gravity="center" android:id="@+id/opb_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_OpenPlatform_FindMoreTtl" android:textFontWeight="500"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/opb_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/opb_error_wrapper" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/start_line" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.24"/>
+        <ImageView android:id="@+id/img" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/illustration_placeholder_common_load_failed" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/start_line"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/img">
+            <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_OpenPlatform_InputScFailMsg"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/tv_retry" android:background="@drawable/opb_app_index_button_bg_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginTop="16dp" android:minWidth="76dp" android:text="@string/Lark_OpenPlatform_InputScRldBttn"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/opb_empty_wrapper" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/empty_image" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/illustration_empty_neutral_no_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/empty_guideline"/>
+        <TextView android:textSize="@dimen/dp_16" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/Lark_OpenPlatform_ScNoAvailAppsDesc" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/empty_image"/>
+        <TextView android:gravity="center" android:id="@+id/empty_tip_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="58dp" android:layout_marginTop="4dp" android:layout_marginRight="58dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/empty_title"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/empty_guideline" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.25"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

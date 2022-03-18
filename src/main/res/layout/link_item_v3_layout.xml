@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/user_profile_item_style">
+    <TextView android:id="@+id/tv_link_name" style="@style/user_profile_type_style"/>
+    <com.ss.android.lark.ui.ExpandTextView android:textColor="@color/primary_pri_600" android:gravity="end" android:id="@+id/etv_link_value" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:animDuration="100" app:arrowAlign="2" app:arrowPadding="0dp" app:arrowPosition="0" app:maxCollapsedLines="10" style="@style/user_profile_item_text_value_style"/>
+    <View android:id="@+id/line" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

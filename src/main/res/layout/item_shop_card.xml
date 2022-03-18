@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="300dp" android:layout_height="500dp" android:layout_margin="10dp">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center" android:id="@+id/cover_image" android:background="@color/static_black_90" android:layout_width="300dp" android:layout_height="400dp" android:scaleType="centerCrop" app:radius="12dp"/>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_width="match_parent" android:layout_height="168dp" android:layout_marginBottom="-90dp" android:src="@drawable/red_packet_combine_bg_bottom" android:scaleType="fitXY" android:layout_alignBottom="@+id/cover_image" app:radius="12dp"/>
+    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_marginBottom="-40dp" android:src="@drawable/icon_red_packet_open_normal" android:layout_alignBottom="@+id/cover_image" android:layout_alignStart="@+id/cover_image" android:layout_alignEnd="@+id/cover_image"/>
+</RelativeLayout>

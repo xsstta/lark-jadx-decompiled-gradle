@@ -1,0 +1,11 @@
+package com.ss.lark.android.passport.biz.compat.v2.featurec.model;
+
+import com.alibaba.fastjson.annotation.JSONField;
+import com.ss.android.lark.passport.infra.entity.BaseStepInfo;
+import java.io.Serializable;
+
+public class ResetPhoneStepInfo extends BaseStepInfo implements Serializable {
+    @JSONField(name = "subtitle")
+    public String subTitle;
+    public String title;
+}

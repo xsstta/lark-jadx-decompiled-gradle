@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/transparent" app:tb_title="@string/View_G_CallsAndMeetings" app:tb_title_color="@color/text_title"/>
+    <ScrollView android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <include android:id="@+id/notification_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_vc_setting_notification"/>
+            <include android:id="@+id/chimes_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_vc_setting_play_chimes"/>
+            <include android:id="@+id/subtitle_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_vc_setting_subtitle"/>
+            <include android:id="@+id/language_interpretation_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_vc_setting_language_interpretation"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/main_nav_editor_item_container" android:layout_width="match_parent" android:layout_height="48dp" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/main_nav_editor_item_status" android:padding="8dp" android:layout_width="36dp" android:layout_height="36dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/main_nav_editor_item_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/main_nav_editor_item_drag" android:padding="8dp" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="centerInside" app:tint="@color/icon_disable"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="end" android:id="@+id/main_nav_editor_item_remove" android:background="@color/function_danger_500" android:layout_width="80dp" android:layout_height="match_parent" android:text="@string/Lark_Feed_Remove" android:maxLines="1" android:layout_marginEnd="-81dp"/>
+</FrameLayout>

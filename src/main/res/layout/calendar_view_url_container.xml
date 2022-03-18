@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/vc_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_73">
+    <RelativeLayout android:id="@+id/bg_video_meeting" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center" android:id="@+id/rl_video_status_container" android:visibility="visible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16d5" android:layout_marginTop="@dimen/dp_16d5">
+            <ImageView android:id="@+id/img_video_meeting" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ud_icon_video_outlined" android:tint="@color/icon_n3"/>
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/anim_video_meeting_live" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_autoPlay="true" app:lottie_fileName="lottie/calendar_video_meeting_color_anim.json" app:lottie_loop="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_link_normal" android:id="@+id/tv_video_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_44" android:text="@string/Calendar_VideoMeeting_OpenVideoMeeting" android:singleLine="true" android:layout_toRightOf="@+id/rl_video_status_container"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tv_meeting_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_44" android:text="@string/Calendar_VideoMeeting_VCLinkOutofDate" android:singleLine="true" android:layout_below="@+id/tv_video_tip" android:layout_alignLeft="@+id/tv_video_tip"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bg_live_host" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/live_status_container" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16d5" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_live_status" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ud_icon_livestream_outlined" android:tint="@color/icon_n3"/>
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/anim_live_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_autoPlay="true" app:lottie_fileName="lottie/calendar_live_stream_anim.json" app:lottie_loop="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_link_normal" android:id="@+id/tv_live_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_13" android:text="@string/Calendar_Edit_EnterLivestream" android:singleLine="true" android:layout_toRightOf="@+id/live_status_container"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tv_live_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_44" android:singleLine="true" android:layout_below="@+id/tv_live_status" android:layout_alignLeft="@+id/tv_live_status"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+        <RelativeLayout android:id="@+id/img_copy_icon_container" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginRight="@dimen/dp_10" android:layout_centerVertical="true" android:layout_toStartOf="@+id/img_setting_icon_container">
+            <ImageView android:id="@+id/img_copy_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_copy_outlined" android:tint="@color/icon_n2" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/img_setting_icon_container" android:visibility="gone" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10">
+            <ImageView android:id="@+id/img_setting_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_setting_outlined" android:tint="@color/icon_n2" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/video_bottom_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_48" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/dialog_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="64dp" app:tb_back_icon="@drawable/ud_icon_close_small_outlined"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/time_ll" android:layout_width="match_parent" android:layout_height="68dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/start_time_ll" android:background="@drawable/start_time_btn_pressed_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="0dp">
+            <TextView android:textSize="14sp" android:textColor="@color/ud_N00" android:id="@+id/start_time_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/Lark_Search_SearchStartingTimeFilter"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ud_N00" android:id="@+id/start_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/end_time_ll" android:background="@drawable/end_time_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="24dp" android:paddingEnd="0dp">
+            <TextView android:textSize="14sp" android:textColor="@color/ud_N600" android:id="@+id/end_time_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/Lark_Search_SearchEndingTimeFilter"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ud_N900" android:id="@+id/end_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/ud_N900" android:id="@+id/current_month_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/last_month_btn_iv" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_svg_grey6_left_arrow" android:layout_centerVertical="true" android:paddingStart="8dp" android:paddingEnd="0dp" android:layout_toEndOf="@+id/current_month_label_tv"/>
+        <ImageView android:id="@+id/next_month_btn_iv" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_svg_grey6_right_arrow" android:layout_centerVertical="true" android:paddingStart="0dp" android:paddingEnd="8dp" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/last_month_btn_iv"/>
+        <RelativeLayout android:id="@+id/time_select_no_limit_rl" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="16dp" android:layout_alignParentEnd="true">
+            <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/time_select_no_limit_cb" android:layout_width="18dp" android:layout_height="18dp" android:checked="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/ud_N900" android:id="@+id/time_select_no_limit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_AnyTime" android:layout_centerVertical="true" android:layout_marginStart="7.5dp" android:layout_toEndOf="@+id/time_select_no_limit_cb"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.ss.android.lark.widget.timepicker.monthview.MonthViewContainer android:id="@+id/monthViewContainer" android:layout_width="match_parent" android:layout_height="253dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/webView_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.webapp.CustomTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar android:id="@+id/web_load_progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:progress="0" android:progressDrawable="@drawable/lark_webapp_progress_bar_bg" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/view_stub" android:layout="@layout/lark_webapp_tab_status_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/lark_webapp_no_authorized"/>
+</FrameLayout>

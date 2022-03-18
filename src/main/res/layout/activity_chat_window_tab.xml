@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" android:background="@color/imtoken_message_bg_chat" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/chat_tab_container" android:background="@color/imtoken_message_bg_chat" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/chat_titlebar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</com.larksuite.component.ui.layout.LKUIFrameLayout>

@@ -1,0 +1,20 @@
+[
+  {
+    "_comment": "这是一个占位Dynamic feature插件，用于打出AAB包，勿删",
+    "packageName": "com.larksuite.suite.so_resource",
+    "aabName": "so_resource"
+  },
+
+  {
+    "_comment": "一个测试Demo插件，供大家开发Dynamic Feature功能时参考，勿删",
+    "packageName": "com.larksuite.suite.aab_demo_plugin",
+    "aabName": "aab_demo"
+  },
+
+  {
+    "_comment": "海外ttoffice插件",
+    "packageName": "com.bytedance.ee.plugin.ttoffice",
+    "aabName": "ttoffice"
+  }
+
+]

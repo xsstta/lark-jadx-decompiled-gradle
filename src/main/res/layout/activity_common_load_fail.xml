@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_layout" android:paddingTop="70dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illustration_placeholder_common_no_preview"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="middle" android:id="@+id/fail_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="@string/Lark_Legacy_QrCodeDeviceError" android:singleLine="true"/>
+</LinearLayout>

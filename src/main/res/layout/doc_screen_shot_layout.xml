@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.doc.screenshot.DocShotView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/screen_shot_title" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:contentDescription="title_bar"/>
+    <View android:id="@+id/screen_shot_title_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:id="@+id/screen_shot_layout" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+            <com.bytedance.ee.bear.screenshot.SubsamplingScaleImageView android:id="@+id/screen_shot_bitmap" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/screen_shot_loading" android:layout_marginTop="-37dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_bottom" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.bizwidget.shareview.ExternalShareView android:id="@+id/external_share_view" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:shareItemBackground="@color/bg_body_overlay"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/share_btn" android:background="@drawable/facade_round_around_20" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="11.5dp" android:layout_marginBottom="12dp" android:backgroundTint="@color/primary_pri_500">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_download_outlined" android:tint="@color/icon_n1" android:layout_marginStart="10dp" android:layout_marginEnd="5dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/static_white" android:ellipsize="end" android:id="@+id/share_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.bytedance.ee.bear.doc.screenshot.DocShotView>

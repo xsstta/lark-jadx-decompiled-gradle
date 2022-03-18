@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/tip_triangle_down" android:layout_width="7dp" android:layout_height="wrap_content">
+    <View android:layout_gravity="center_horizontal" android:background="@color/lkui_N00" android:layout_width="1dp" android:layout_height="24dp"/>
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/common_white_little_circle_bg" android:layout_width="7dp" android:layout_height="7dp"/>
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/common_grayc4_little_circle_bg" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="12dp"/>
+</LinearLayout>

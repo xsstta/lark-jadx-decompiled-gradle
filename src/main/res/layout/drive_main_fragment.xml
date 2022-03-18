@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.drive.view.preview.block.DriveMainRootLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_page_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/main_page_holder_view_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/main_page_holder_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.bytedance.ee.bear.drive.view.preview.imageviewer.DrivePreviewViewPager android:id="@+id/drive_sdk_preview_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/drive_sdk_main_title_bar_root_fl" android:layout_alignWithParentIfMissing="true"/>
+            <FrameLayout android:id="@+id/drive_sdk_main_title_bar_root_fl" android:layout_width="match_parent" android:layout_height="@dimen/drive_main_page_title_bar_height" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.bytedance.ee.bear.drive.view.preview.block.DriveMainRootLayout>

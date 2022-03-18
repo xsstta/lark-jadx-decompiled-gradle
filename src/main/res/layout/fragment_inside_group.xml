@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.search.widget.ChatterPicker android:id="@+id/inside_group_chatter_picker" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:id="@+id/show_bottom" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="49dp">
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/function_info_500" android:id="@+id/select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_SelectedZeroPeople" android:layout_centerVertical="true" android:layout_marginStart="15dp"/>
+        <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/static_white" android:gravity="center" android:id="@+id/confirm" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ConfirmTip" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" android:paddingVertical="4dp" app:ud_backgroundColor="@color/ud_button_blue_bg" style="@style/UDButton.Small.Primary"/>
+    </RelativeLayout>
+</LinearLayout>

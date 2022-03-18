@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/custom_repeat_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <TextView android:id="@+id/tv_repeat_rule" android:layout_below="@+id/custom_repeat_title_bar" style="@style/AppendViewItemTitleText"/>
+    <View android:id="@+id/title_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_below="@+id/tv_repeat_rule"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wheel_container" android:background="@color/bg_body" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_divider">
+        <TextView android:textSize="@dimen/dp_20" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_66" android:text="@string/Calendar_RRule_Every"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_repeat_num" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_repeat_frequency_unit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_below="@+id/wheel_container"/>
+    <View android:id="@+id/bottom_container_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_above="@+id/custom_repeat_bottom_container"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.CustomRepeatBottomContainer android:id="@+id/custom_repeat_bottom_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <GridView android:id="@+id/custom_repeat_weekly" android:background="@color/lkui_N300" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_225" android:horizontalSpacing="@dimen/dp_05" android:verticalSpacing="@dimen/dp_05" android:numColumns="3"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/monthly_tab_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <GridView android:id="@+id/custom_repeat_monthly" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_250" android:horizontalSpacing="@dimen/dp_05" android:verticalSpacing="@dimen/dp_05" android:numColumns="7"/>
+                <com.ss.android.lark.calendar.impl.features.events.edit.widget.ControlChildViewClickableLayout android:id="@+id/choose_repeat_weeks_container" android:background="@color/lkui_N00" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_repeat_week_no" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_repeat_weeks" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </com.ss.android.lark.calendar.impl.features.events.edit.widget.ControlChildViewClickableLayout>
+            </FrameLayout>
+            <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <LinearLayout android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:divider="0x7f0804c6" android:showDividers="middle">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_B400" android:gravity="center" android:id="@+id/switch_date" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Calendar_Common_Ondate" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N400" android:gravity="center" android:id="@+id/switch_week" android:layout_width="0dp" android:layout_height="@dimen/dp_50" android:text="@string/Calendar_RRule_WeeklyMobile" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.CustomRepeatBottomContainer>
+</RelativeLayout>

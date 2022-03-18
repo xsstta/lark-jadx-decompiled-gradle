@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/share_content_sub_dialog" android:background="@color/bg_float_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/iconfont_white_icon_selector2" android:id="@+id/go_back" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_close" android:layout_centerVertical="true" android:layout_marginStart="11dp"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_VM_ShareButton" android:layout_centerInParent="true" app:ux_line_height="24dp"/>
+    </RelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" layout="@layout/vc_share_screen_viewholder_item_layout"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/vc_bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.vc.meeting.module.multi.viewpager.InMeetingViewPager android:id="@+id/viewPager" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="3.5dp" android:layout_marginTop="0.5dp" android:layout_marginRight="3.5dp" android:layout_marginBottom="3.5dp" android:layout_weight="1"/>
+        <ViewStub android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/stub_instagram_dot" android:layout="@layout/stub_in_meeting_dot_view" android:inflatedId="@+id/vp_instagram_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.5dp"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/desktop_scroll_btns_viewstub" android:layout="@layout/desktop_scroll_btns_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/container_fv" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_6" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_1" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

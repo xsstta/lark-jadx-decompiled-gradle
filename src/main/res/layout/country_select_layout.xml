@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_body" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/country_select_title" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="44dp">
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="24dp" android:textColor="@color/iconfont_black_icon_n800_selector" android:id="@+id/country_select_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/iconfont_icon_arrow_left" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17dp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_InternationalCallingCodes" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/country_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/country_select_title"/>
+    <com.ss.android.vc.meeting.module.meetingdialog.pstn.country.quickbar.QuickSideBarView android:id="@+id/country_index" android:visibility="gone" android:layout_width="20dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_marginEnd="4dp"/>
+    <FrameLayout android:id="@+id/load_status_container" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/country_select_title">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/loading_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ss.android.vc.common.widget.EfficientLoadingLottieView android:id="@+id/loading_anim_view" android:layout_width="36dp" android:layout_height="36dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/View_VM_Loading"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_SomethingWentWrong"/>
+            <TextView android:textSize="16dp" android:textColor="@color/primary_pri_400" android:id="@+id/error_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/View_G_TryAgain"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

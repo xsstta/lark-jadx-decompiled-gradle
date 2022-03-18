@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_body" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <com.ss.android.lark.keyboard.plugin.input.RichTextEmojiconEditText android:textSize="16dp" android:textColor="@color/text_title" android:textColorHighlight="@color/transparent" android:textColorHint="@color/text_caption" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/edit_description" android:background="@color/transparent" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44dp" android:inputType="textMultiLine"/>
+    <FrameLayout android:id="@+id/todo_description_at_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

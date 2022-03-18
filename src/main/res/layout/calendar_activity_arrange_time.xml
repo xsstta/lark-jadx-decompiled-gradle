@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/arrangeActivityRoot" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerLinearLayout android:orientation="vertical" android:id="@+id/attendeeChipContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_46">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_width="@dimen/dp_56" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_10" layout="@layout/view_enter_time_zone"/>
+                <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.OverHorizScrollView android:id="@+id/headerScrollView" android:paddingBottom="@dimen/dp_10" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.AttendeeInfoContainer android:orientation="horizontal" android:id="@+id/attendeeContainer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.OverHorizScrollView>
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.SmoothScrollView android:id="@+id/contentScrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TimeBarLine android:id="@+id/timeBar" android:layout_width="@dimen/dp_56" android:layout_height="wrap_content" app:showTimeBar="true" app:showTimeLine="false" app:showWorkHour="false"/>
+                        <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.ChipDragHandleLayer android:id="@+id/chipDragHandleLayer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.OverHorizScrollView android:id="@+id/contentHorizScrollView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never">
+                                <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.dragdrop.EventChipsDragLayer android:id="@+id/chipsDragLayer" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TimeBarLine android:id="@+id/timeLineLayer" android:layout_width="match_parent" android:layout_height="wrap_content" app:showTimeBar="false" app:showTimeLine="true" app:showWorkHour="true"/>
+                                    <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.gridline.EventChipsViewLayer android:id="@+id/chipsLayer" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                                    <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.gridline.CurrentTimeLine android:id="@+id/currentTimeLine" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                                </com.ss.android.lark.calendar.impl.features.arrange.arrangelook.dragdrop.EventChipsDragLayer>
+                            </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.OverHorizScrollView>
+                        </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.ChipDragHandleLayer>
+                    </LinearLayout>
+                </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.SmoothScrollView>
+                <View android:layout_gravity="bottom" android:background="@drawable/bg_shadow_up" android:layout_width="match_parent" android:layout_height="@dimen/dp_4"/>
+            </FrameLayout>
+        </LinearLayout>
+        <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.FooterMessageView android:orientation="horizontal" android:id="@+id/footerMessageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerLinearLayout>
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TitleTimeBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerFrameLayout>

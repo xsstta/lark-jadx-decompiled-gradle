@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.framework.ui.SpareLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="left" android:layout_gravity="center" android:id="@+id/tv_thread_title" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_right_arrow" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ud_icon_expand_right_filled" android:tint="@color/icon_n1" android:layout_marginStart="4dp"/>
+    </com.larksuite.framework.ui.SpareLayout>
+    <TextView android:textSize="@dimen/dp_11" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_thread_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/icon_right_arrow_gray" android:drawablePadding="2dp"/>
+</LinearLayout>

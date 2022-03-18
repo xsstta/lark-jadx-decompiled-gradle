@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/custom_status_home_page" app:startDestination="@+id/customStatusFragment">
+    <fragment android:label="PersonalStatusFragment" android:name="com.ss.android.lark.mine.impl.custom_status.my_status.UserCustomStatusFragment" android:id="@+id/customStatusFragment">
+        <action android:id="@+id/action_modify_custom_status_from_home" app:destination="@+id/modifyCustomStatusFragment" app:enterAnim="@anim/translate_from_bottom" app:popEnterAnim="@anim/activity_enter_from_bottom" app:popExitAnim="@anim/activity_close_to_bottom"/>
+        <action android:id="@+id/action_new_custom_status_from_home" app:destination="@+id/newCustomStatusFragment" app:enterAnim="@anim/translate_from_bottom" app:popEnterAnim="@anim/activity_enter_from_bottom" app:popExitAnim="@anim/activity_close_to_bottom"/>
+        <action android:id="@+id/action_setting_custom_status_from_home" app:destination="@+id/customStatusSettingFragment" app:enterAnim="@anim/slide_right_in" app:exitAnim="@anim/lark_base_hold" app:popEnterAnim="@anim/lark_base_hold" app:popExitAnim="@anim/slide_right_out"/>
+        <action android:id="@+id/action_on_boarding" app:destination="@+id/onBoardingDialogFragment" app:enterAnim="@anim/activity_enter_from_bottom" app:exitAnim="@anim/activity_close_to_bottom"/>
+    </fragment>
+    <fragment android:label="ModifyPersonalStatusFragment" android:name="com.ss.android.lark.mine.impl.custom_status.ModifyCustomStatusFragment" android:id="@+id/modifyCustomStatusFragment">
+        <argument android:name="id" app:argType="long"/>
+    </fragment>
+    <fragment android:label="NewPersonalStatusFragment" android:name="com.ss.android.lark.mine.impl.custom_status.NewCustomStatusFragment" android:id="@+id/newCustomStatusFragment"/>
+    <fragment android:label="PersonalStatusSettingFragment" android:name="com.ss.android.lark.mine.impl.custom_status.setting.UserCustomStatusSettingFragment" android:id="@+id/customStatusSettingFragment">
+        <action android:id="@+id/action_new_custom_status_from_setting" app:destination="@+id/newCustomStatusFragment" app:enterAnim="@anim/activity_enter_from_bottom" app:exitAnim="@anim/activity_close_to_bottom" app:popEnterAnim="@anim/activity_enter_from_bottom" app:popExitAnim="@anim/activity_close_to_bottom"/>
+        <action android:id="@+id/action_modify_custom_status_from_setting" app:destination="@+id/modifyCustomStatusFragment" app:enterAnim="@anim/activity_enter_from_bottom" app:exitAnim="@anim/activity_close_to_bottom" app:popEnterAnim="@anim/activity_enter_from_bottom" app:popExitAnim="@anim/activity_close_to_bottom"/>
+    </fragment>
+    <dialog android:label="OnBoardingDialogFragment" android:name="com.ss.android.lark.mine.impl.custom_status.my_status.OnBoardingDialogFragment" android:id="@+id/onBoardingDialogFragment">
+        <action android:id="@+id/action_setting_from_guide" app:destination="@+id/customStatusSettingFragment" app:enterAnim="@anim/activity_enter_from_bottom"/>
+    </dialog>
+</navigation>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.notice.UDNotice xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mail_send_status_tips" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_notice_text="@string/Mail_Send_SentDone" app:ud_notice_textBtn="@string/Mail_Send_Refresh" style="@style/UDNotice.Info"/>

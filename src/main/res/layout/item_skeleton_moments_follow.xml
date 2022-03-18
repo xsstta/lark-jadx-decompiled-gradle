@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <View android:background="@drawable/moments_skeleton_n200_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="0dp" android:layout_height="17dp" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="122dp"/>
+        <View android:background="@drawable/moments_skeleton_n200_rectangle" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_28" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

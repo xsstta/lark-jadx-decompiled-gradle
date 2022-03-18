@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/facade_round_top_xxl" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/bg_body">
+    <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/select_title" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/Doc_Facade_New" android:paddingStart="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/select_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/upload_title" android:layout_width="match_parent" android:layout_height="40dp" android:text="上传" android:paddingStart="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/upload_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_half"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/Doc_Facade_Cancel"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:height="11dp" android:width="11dp" android:drawable="@drawable/signin_sdk_right_arrow_vector_press" android:top="2dp"/>
+    <item android:height="11dp" android:width="11dp" android:drawable="@drawable/signin_sdk_right_arrow_vector" android:top="2dp"/>
+</layer-list>

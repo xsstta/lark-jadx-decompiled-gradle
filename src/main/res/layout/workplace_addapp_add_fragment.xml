@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="44dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/back" android:padding="4dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="12dp" android:src="@drawable/ud_icon_left_outlined" app:tint="@color/icon_n1"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/OpenPlatform_AppCenter_AddAppTitle"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/search" android:padding="4dp" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="12dp" android:src="@drawable/ud_icon_search_outlined" app:tint="@color/icon_n1"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.appcenter.business.activity.appaddv2.view.AppBar android:id="@+id/app_bar" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="56dp"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@string/OpenPlatform_AppCenter_AllApp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/taglayout_wrapper" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="6dp">
+                    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/tab_layout" android:layout_width="0dp" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="48dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:ud_tab_backgroundColor="@color/bg_body" app:ud_tab_edgeShadowEnabled="true" app:ud_tab_gravity="2" app:ud_tab_indicatorFullWidth="false" app:ud_tab_mode="0" app:ud_tab_paddingEnd="0dp" app:ud_tab_paddingStart="0dp" app:ud_tab_tabMargin="24dp" app:ud_tab_titleSize="14dp"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@+id/category" android:background="@color/bg_body" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="48dp" android:layout_height="39dp" android:src="@drawable/ud_icon_menu_outlined" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:tint="@color/icon_n1"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <com.ss.android.appcenter.common.view.biz.WorkplaceLoadingView android:id="@+id/loading" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+        <com.ss.android.appcenter.common.view.biz.WorkplaceErrorView android:id="@+id/error" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+    </FrameLayout>
+</LinearLayout>

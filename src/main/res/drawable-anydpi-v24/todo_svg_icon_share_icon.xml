@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="64dp" android:width="64dp" android:viewportWidth="64" android:viewportHeight="64">
+    <path android:fillColor="@drawable/$todo_svg_icon_share_icon__0" android:pathData="M0,0h64v64h-64z"/>
+    <path android:fillColor="#ffffff" android:pathData="M41.5652,22.2361C41.1096,21.7804 40.3709,21.7804 39.9153,22.2361L25.0573,37.094C24.6017,37.5496 24.6017,38.2883 25.0573,38.7439L28.3571,42.0437C28.8128,42.4994 29.5515,42.4994 30.0071,42.0437L44.865,27.1858C45.3206,26.7302 45.3206,25.9915 44.865,25.5359L41.5652,22.2361Z"/>
+    <path android:fillColor="#ffffff" android:pathData="M23.4077,27.1942C22.9521,26.7385 22.2134,26.7385 21.7578,27.1942L18.4579,30.494C18.0023,30.9496 18.0023,31.6883 18.4579,32.1439L21.7578,35.4437C22.2134,35.8993 22.9521,35.8993 23.4077,35.4437L26.7075,32.1439C27.1631,31.6883 27.1631,30.9496 26.7075,30.494L23.4077,27.1942Z"/>
+</vector>

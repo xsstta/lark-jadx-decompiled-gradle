@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="32dp">
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/tv_item" android:background="@drawable/list_edit_filter_default_bg" android:paddingTop="5dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/microapp_m_video_top_layout" android:background="@drawable/microapp_m_black_desc_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true">
+    <ImageView android:gravity="center_vertical" android:id="@+id/microapp_m_video_fullscreen_back" android:paddingLeft="@dimen/microapp_m_activity_horizontal_margin" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/microapp_m_lefterbackicon_titlebar_dark" android:scaleType="center" android:layout_centerVertical="true"/>
+</RelativeLayout>

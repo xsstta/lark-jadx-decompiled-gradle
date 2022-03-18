@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.contact.widget.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/contact_item_layout" android:background="@drawable/contact_item_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="64dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/contact_avatar" android:background="@drawable/icon_circle_bg" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="16dp" app:oval="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:layout_toStartOf="@+id/confirm_btn" android:layout_toEndOf="@+id/contact_avatar">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="17sp" android:textColor="@color/text_title" android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="17sp" android:textColor="@color/text_title" android:id="@+id/contact_tenant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="6dp" android:drawableStart="@drawable/contact_bot_separator" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+            <com.ss.android.lark.inv.export.ui.EmptyGoneTextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/contact_extra_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/confirm_btn" android:background="@drawable/contact_external_or_new_item_bg" android:layout_width="wrap_content" android:layout_height="28dp" android:minWidth="60dp" android:text="@string/Lark_Legacy_Agree" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</com.ss.android.lark.contact.widget.HoverEventDisallowLinearLayout>

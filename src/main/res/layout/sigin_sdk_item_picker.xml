@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/ll_content" android:background="@drawable/sign_sdk_item_pressed" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/signin_sdk_font_size_16" android:textColor="@color/signin_sdk_picker_text_color" android:id="@+id/tv_content" android:padding="@dimen/signin_sdk_dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_check" android:layout_centerVertical="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_check" android:visibility="invisible" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginRight="@dimen/signin_sdk_dp_16" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ud_icon_msgcard_rectangle_outlined" app:tint="@color/primary_pri_500"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/signin_sdk_dp_16"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<script src="http://s3a.bytecdn.cn/ies/jsbridge-1.0.0.umd.js"></script>
+
+<form id="form1">
+    <table border="0">
+        <tr>
+            <td>
+                姓名：
+            </td>
+            <td>
+                <input id="name" name="name" type="text"/>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<script>
+function writeText(v1,v2)
+{
+  alert(document.getElementById("name").value)
+  document.getElementById("name").value="hello"
+}
+
+function readText(v1,v2)
+{
+    alert(document.getElementById("name").value)
+}
+
+function faceliveness()
+{
+
+
+}
+
+function startface()
+{
+    document.getElementById("name").value="1"
+    var v={}
+
+    ToutiaoJSBridge.call( "faceliveness" , v ,function(){
+
+    document.getElementById("name").value="2"},"1.0.0")
+
+}
+
+
+
+</script>
+
+
+<body>
+<button onclick="writeText('a','b')">写文本框</button>
+<button onclick="readText('a','b')">读文本框</button>
+<button onclick="startface()">启动人脸</button>
+</body>

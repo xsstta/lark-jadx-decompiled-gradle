@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@+id/top_bar_status_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/top_bar_status_icons" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16">
+        <com.ss.android.vc.common.widget.AdaptiveWidthTextView android:textSize="@dimen/dp_10" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/time" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="00:00" android:includeFontPadding="false" android:lineHeight="@dimen/dp_13"/>
+        <ViewStub android:id="@+id/time_limit_view_stub" android:layout="@layout/top_bar_time_limit_view_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <View android:layout_gravity="center" android:id="@+id/break_room_divider_bar" android:background="@drawable/divider_color" android:visibility="gone" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_8" android:layout_marginStart="@dimen/dp_8"/>
+        <ViewStub android:id="@+id/breakout_room_title" android:layout="@layout/top_bar_breakout_room_view_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:layout_gravity="center" android:id="@+id/vc_divider_bar" android:background="@drawable/divider_color" android:visibility="gone" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_8" android:layout_marginStart="@dimen/dp_8"/>
+        <ViewStub android:id="@+id/lock_view_stub" android:layout="@layout/top_bar_lock_view_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/record_area_stub" android:layout="@layout/top_bar_record_area_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/language_interpretation_area_stub" android:layout="@layout/top_bar_language_interpretation_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/live_area_stub" android:layout="@layout/top_bar_live_area_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/network_area_stub" android:layout="@layout/top_bar_network_area_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/top_bar_prompt_stub" android:layout="@layout/top_bar_prompt_layout" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</FrameLayout>

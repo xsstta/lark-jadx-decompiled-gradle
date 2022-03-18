@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@drawable/ud_bg_action_panel_item_corners" android:paddingLeft="@dimen/ud_action_panel_item_padding_left_right" android:paddingTop="@dimen/ud_action_panel_item_padding_top_bottom" android:paddingRight="@dimen/ud_action_panel_item_padding_left_right" android:paddingBottom="@dimen/ud_action_panel_item_padding_top_bottom" android:layout_width="match_parent" android:layout_height="@dimen/ud_action_panel_item_height">
+    <TextView android:textAppearance="@style/UDText.Title4" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/ud_dialog_content_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

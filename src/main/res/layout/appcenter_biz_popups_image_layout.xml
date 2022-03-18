@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="8dp" app:cardElevation="0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false">
+    <androidx.core.widget.NestedScrollView android:scrollbarThumbVertical="@drawable/appcenter_scrollbars_thumb_bg" android:id="@+id/sv_img_container" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:fadeScrollbars="true" android:overScrollMode="never">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:id="@+id/ll_img_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_img_biz_popups" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" app:tint="@color/fill_img_mask" app:tintMode="src_over"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+    <com.ss.android.appcenter.business.tab.fragmentv3.component.status.TemplateLoadingView android:id="@+id/loading_img_biz_popups" android:background="@drawable/workplace_badget_widget_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.appcenter.business.tab.fragmentv3.component.status.TemplateErrorView android:id="@+id/error_img_biz_popups" android:background="@drawable/workplace_badget_widget_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.cardview.widget.CardView>

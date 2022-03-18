@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/save_image_toast_bg" android:paddingLeft="21dp" android:paddingTop="10dp" android:paddingRight="21dp" android:paddingBottom="10dp" android:layout_width="150dp" android:layout_height="110dp">
+    <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:id="@+id/spin_kit" android:visibility="visible" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerVertical="true" app:SpinKit_Color="@color/lkui_N00" app:SpinKit_Color_Alpha="0.7"/>
+    <TextView android:textSize="15sp" android:textColor="@color/lkui_N300" android:ellipsize="end" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.5dp" android:text="@string/Lark_Legacy_LoadingWait" android:lines="1"/>
+</LinearLayout>

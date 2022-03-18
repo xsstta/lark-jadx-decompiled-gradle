@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="24dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/export_item_Excel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/space_kit_len_48" android:layout_height="@dimen/space_kit_len_48" android:layout_marginTop="@dimen/dp_4" app:srcCompat="@drawable/ud_icon_file_round_excel_colorful"/>
+        <TextView android:textSize="12sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/Doc_Document_ExportExcel" android:maxLines="2" android:minLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/export_item_long_image" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="4dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/space_kit_len_48" android:layout_height="@dimen/space_kit_len_48" android:layout_marginTop="@dimen/dp_4" app:srcCompat="@drawable/ud_icon_file_round_image_colorful"/>
+        <TextView android:textSize="12sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/Doc_Document_ExportLongImage" android:maxLines="2" android:minLines="1"/>
+    </LinearLayout>
+</LinearLayout>

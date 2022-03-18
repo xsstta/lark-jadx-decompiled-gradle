@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/v_root" android:background="@drawable/bg_interpretation_switch" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="46dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/left_container" android:background="@drawable/bg_channel_switch_selected" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="72dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/left_item" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.ss.android.vc.meeting.module.interpretation.widget.LanguageLabel android:id="@+id/txt_left_label" android:visibility="visible" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_centerVertical="true" tools:text="EN"/>
+            <TextView android:textSize="@dimen/dp_14" android:gravity="center" android:id="@+id/txt_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:maxLines="1" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/right_container" android:background="@drawable/bg_channel_switch_selected" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="72dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/right_item" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.ss.android.vc.meeting.module.interpretation.widget.LanguageLabel android:id="@+id/txt_right_label" android:visibility="visible" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_centerVertical="true" tools:text="EN"/>
+            <TextView android:textSize="@dimen/dp_14" android:gravity="center" android:id="@+id/txt_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:maxLines="1" android:layout_centerVertical="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

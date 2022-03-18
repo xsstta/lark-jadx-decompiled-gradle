@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/webView_root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/webview_titlebar_action" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.larksuite.component.webview.container.impl.WebTitleBar android:id="@+id/webview_titlebar_nonaction" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar android:id="@+id/web_load_progressbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:progress="0" android:progressDrawable="@drawable/webview_progress_bar_bg" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+</FrameLayout>

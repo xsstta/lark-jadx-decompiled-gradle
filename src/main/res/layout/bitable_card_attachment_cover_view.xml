@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/placeholder_container" android:layout_width="match_parent" android:layout_height="match_parent" app:rl_radius="@dimen/space_kit_len_4">
+        <ImageView android:layout_gravity="center" android:id="@+id/placeholder_icon" android:layout_width="@dimen/space_kit_len_48" android:layout_height="@dimen/space_kit_len_48"/>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/cover_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:radius="@dimen/space_kit_len_5"/>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/cover_border" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:border_color="@color/line_border_card" app:border_width="@dimen/space_kit_len_1" app:radius="@dimen/space_kit_len_4"/>
+    <ImageView android:id="@+id/play_video_icon" android:visibility="gone" android:layout_width="@dimen/space_kit_len_40" android:layout_height="@dimen/space_kit_len_40" android:src="@drawable/icon_play_video_nor" android:layout_centerInParent="true"/>
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/upload_progress_container" android:background="@color/black_alpha_40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:rl_radius="@dimen/space_kit_len_4">
+        <com.larksuite.component.universe_design.progress.UDProgress android:layout_gravity="center" android:id="@+id/upload_progress_bar" android:layout_width="@dimen/space_kit_len_58" android:layout_height="wrap_content" android:max="100" android:progress="0" app:ud_progress_indicatorColor="@color/ud_B500" app:ud_progress_indicatorCornerRadius="4dp" app:ud_progress_thickness="@dimen/space_kit_len_8" app:ud_progress_trackColor="@color/upload_progress_bar_track_color" app:ud_progress_type="0"/>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+</RelativeLayout>

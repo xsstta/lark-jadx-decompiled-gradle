@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.events.edit.widget.ListenableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/chooseTimeRootView" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/editFragmentTitleBar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_18" android:src="@drawable/ud_icon_time_outlined" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_Allday" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_48"/>
+        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/allDaySwitchView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.EditFragmentTimeContainer android:orientation="horizontal" android:id="@+id/editFragmentTimeContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_68"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <FrameLayout android:id="@+id/timePickerContainer" android:background="@color/bg_body" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <RelativeLayout android:id="@+id/timeZoneContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_18" android:src="@drawable/ud_icon_time_zone_outlined" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/currentTimeZoneName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_48"/>
+        <ImageView android:layout_width="@dimen/dp_13" android:layout_height="@dimen/dp_13" android:src="@drawable/ud_icon_right_outlined" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" app:tint="@color/icon_n3"/>
+    </RelativeLayout>
+    <View android:id="@+id/timeZoneContainerDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <TextView android:id="@+id/timeZoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_4" android:text="@string/Calendar_Timezone_LocalTime" android:layout_marginStart="@dimen/dp_16"/>
+    <View android:id="@+id/timeZoneTitleBottomDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/timeZoneAttendeeRv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.calendar.impl.features.events.edit.widget.ListenableLinearLayout>

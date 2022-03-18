@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.appcenter.business.tab.fragmentv3.component.header.CommonHeader android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/feed_background" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.appcenter.business.tab.fragmentv3.component.feedswiper.FeedSwiperContent android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ss.android.appcenter.business.tab.fragmentv3.component.status.TemplateSkeletonLoadingView android:id="@+id/loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ss.android.appcenter.business.tab.fragmentv3.component.status.TemplateErrorView android:id="@+id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

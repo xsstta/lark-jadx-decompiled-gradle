@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/space_kit_n00" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/doc_icon_select_title_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/space_kit_len_16" android:layout_marginStart="@dimen/space_kit_len_8" android:layout_marginEnd="@dimen/space_kit_len_8">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/rv_icon_container" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:nestedScrollingEnabled="false"/>
+            <com.bytedance.ee.bear.facade.common.empty.EmptyView android:id="@+id/emptyView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

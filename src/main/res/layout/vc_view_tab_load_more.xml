@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dp_42">
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/container_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.vc.common.widget.LoadingLottieView android:id="@+id/lottie_loading" android:layout_width="@dimen/dp_16" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_size_14dp" android:textColor="@color/lkui_N500" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/View_VM_Loading" android:layout_centerHorizontal="true" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_14dp" android:textColor="@color/lkui_N500" android:gravity="center" android:id="@+id/tv_retry" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/View_MV_LoadingFailedClickContinue" android:layout_marginStart="4dp"/>
+</FrameLayout>

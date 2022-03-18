@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/chatpin_menu_item_bg_selector" android:layout_width="match_parent" android:layout_height="66dp">
+    <TextView android:textSize="17sp" android:textColor="@color/pin_menu_item_read_text_selector" android:gravity="center" android:layout_gravity="center" android:id="@+id/lkui_dialog_content_item_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

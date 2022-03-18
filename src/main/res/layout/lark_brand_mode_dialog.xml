@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/lark_brand_mode_dialog_bg" android:paddingLeft="20dp" android:paddingTop="28dp" android:paddingRight="20dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="17sp" android:textColor="#18263c" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:maxLines="3"/>
+    <TextView android:textSize="16sp" android:textColor="#69758a" android:ellipsize="end" android:id="@+id/content" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="13dp">
+        <TextView android:textSize="17sp" android:textColor="#ff18263c" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+        <TextView android:textSize="17sp" android:textColor="#ff006aff" android:layout_gravity="right" android:id="@+id/confirm" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.drive.biz.upload.filepicker.filelist.FileSelectView android:id="@+id/navigation_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/select_info_content" android:layout_width="match_parent" android:layout_height="44dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btn_select_all" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentStart="true">
+            <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/checkbox_select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_marginStart="2dp" app:ud_checkbox_size="1"/>
+            <TextView android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Drive_FilePicker_SelectAll"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_confirm" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:minWidth="66dp" android:text="@string/Drive_FilePicker_Upload" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@style/SpaceKitBtn1Level1"/>
+        <TextView android:textColor="@color/primary_pri_500" android:id="@+id/btn_cur_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180dp" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/btn_confirm"/>
+    </RelativeLayout>
+</LinearLayout>

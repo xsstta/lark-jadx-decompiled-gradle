@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="66dp">
+    <com.larksuite.component.ui.avatar.v2.LarkAvatarView android:layout_gravity="center_vertical" android:id="@+id/user_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:tint="@color/fill_img_mask"/>
+    <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="68dp" android:layout_marginRight="32dp" android:singleLine="true"/>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/user_delete" android:visibility="visible" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="16dp"/>
+    <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/user_more" android:visibility="gone" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/ud_icon_more_reaction_outlined" android:tint="@color/icon_n3"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="68dp"/>
+</FrameLayout>

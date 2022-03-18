@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/iesnRootRl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/iesnContentLl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/iesnContentMailLl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="54dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Lark_UserGrowth_SearchNoResultReceiver"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp">
+                        <EditText android:textSize="16sp" android:textColor="@color/text_title" android:textColorHighlight="@color/primary_pri_500" android:textColorHint="@color/text_placeholder" android:id="@+id/iesnMailToEt" android:background="@null" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:inputType="textEmailAddress" android:imeOptions="actionSend" android:textCursorDrawable="@drawable/inv_shape_cursor"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/function_danger_500" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/iesnMailToErrorTv" android:background="@drawable/inv_search_drawer_error" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px"/>
+                <LinearLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="54dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Lark_UserGrowth_SearchNoResultSubject"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:text="@string/Lark_UserGrowth_InvitePeopleContactsShareLinkTitle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/iesnContentMobileLl" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="54dp">
+                <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/iesnCountryCodeTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/inv_down_delta" android:drawablePadding="18dp"/>
+                <View android:background="@color/line_divider_default" android:layout_width="1px" android:layout_height="22dp" android:layout_marginLeft="12dp"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp">
+                    <EditText android:textSize="16sp" android:textColor="@color/text_title" android:textColorHighlight="@color/primary_pri_500" android:textColorHint="@color/text_placeholder" android:id="@+id/iesnMobileEt" android:background="@null" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:inputType="phone" android:imeOptions="actionSend" android:textCursorDrawable="@drawable/inv_shape_cursor"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/function_danger_500" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/iesnMobileErrorTv" android:background="@drawable/inv_search_drawer_error" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                </FrameLayout>
+            </LinearLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:id="@+id/iesnContentTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:lineSpacingExtra="3dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iesnSendIv" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="8dp" android:src="@drawable/inv_search_send" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

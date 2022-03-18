@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/message_list_container" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.mail.impl.message.framework.tabcontainer.MailViewPager android:id="@+id/mail_messagelist_viewpager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <com.ss.android.lark.mail.impl.view.titlebar.OperationTitleBar android:id="@+id/message_list_operation_title_bar" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="@dimen/mail_operation_title_bar_height"/>
+    <ViewStub android:id="@+id/mail_readmail_search_top" android:visibility="invisible" android:layout="@layout/mail_message_list_searchtopbar" android:inflatedId="@+id/mail_readmail_search_top_v" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentTop="true"/>
+    <ScrollView android:id="@+id/mail_readmail_search_bottom_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="46dp">
+            <ViewStub android:id="@+id/mail_readmail_search_bottom" android:layout="@layout/mail_message_list_searchbottombar" android:inflatedId="@+id/mail_readmail_search_bottom_v" android:layout_width="wrap_content" android:layout_height="46dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

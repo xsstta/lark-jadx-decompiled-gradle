@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/chat_audio_draft" android:background="@drawable/chat_bubble_self_bg_selector" android:paddingLeft="15dp" android:layout_width="117dp" android:layout_height="40dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/recording_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_play"/>
+    </FrameLayout>
+</FrameLayout>

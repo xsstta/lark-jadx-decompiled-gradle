@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="68dp" android:animateLayoutChanges="true">
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/selectbox" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" app:ud_checkbox_type="0"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/single_avator" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:scaleType="centerCrop" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="right" android:id="@+id/image_close" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/guanbi"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/name_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/icon_container" android:layout_alignParentLeft="true">
+                <com.larksuite.framework.ui.SpareLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+                    <TextView android:textColor="@color/lkui_B500" android:layout_gravity="center_vertical" android:id="@+id/chat_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="6dp" style="@style/TagTextViewStyle"/>
+                    <TextView android:textColor="@color/lkui_R500" android:gravity="center" android:id="@+id/workday_leave" android:background="@drawable/mine_leave_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="@style/TagTextViewStyle"/>
+                    <LinearLayout android:gravity="center_vertical" android:id="@+id/local_time_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="10dp">
+                        <ImageView android:id="@+id/time_zone_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/icon_local_time"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/local_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_4"/>
+                    </LinearLayout>
+                    <com.ss.android.lark.widget.status.UserStatusLinearLayout android:id="@+id/user_status" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/bot_tag" android:visibility="gone" android:layout_width="33dp" android:layout_height="16dp" android:layout_marginLeft="6dp" android:src="0x7f0802ee" android:scaleType="fitCenter"/>
+                    <TextView android:textColor="@color/lkui_N500" android:layout_gravity="center_vertical" android:id="@+id/unregister_flag" android:background="@drawable/contact_unregister_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/Lark_Legacy_TagUnregistered" android:layout_marginStart="8dp" style="@style/TagTextViewStyle"/>
+                </com.larksuite.framework.ui.SpareLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:id="@+id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="16dp" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:id="@+id/emailHitTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="16dp" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </FrameLayout>
+</LinearLayout>

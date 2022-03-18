@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/bg_float" android:paddingLeft="16dp" android:paddingTop="24dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="16dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/drive_sdk_downloading_close" android:layout_centerVertical="true">
+            <TextView android:textColor="@color/text_title" android:id="@+id/drive_sdk_downloading_tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.larksuite.component.universe_design.progress.UDProgress android:id="@+id/progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.8dp" android:progress="0" app:ud_progress_indicatorColor="@color/ud_B500" app:ud_progress_indicatorCornerRadius="2dp" app:ud_progress_thickness="4dp" app:ud_progress_trackColor="@color/ud_N300" app:ud_progress_type="0"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/drive_sdk_downloading_close" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/drive_download_close" android:tint="@color/icon_n2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

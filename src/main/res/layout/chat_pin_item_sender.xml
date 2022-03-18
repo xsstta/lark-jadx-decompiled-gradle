@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_name_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pin_item_sender_text_margin_top"/>
+</merge>

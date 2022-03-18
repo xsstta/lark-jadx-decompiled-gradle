@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/view_arrow" android:layout_width="14dp" android:layout_height="7dp" android:scaleType="fitXY" android:rotation="180" android:layout_marginStart="250dp" app:srcCompat="@drawable/vc_tab_guide_arrow"/>
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@+id/settings_guide_content" android:background="@drawable/subtitle_tip_body_bg" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:paddingHorizontal="20dp">
+            <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/static_white" android:id="@+id/tv_guide_txt" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:text="@string/View_G_TrySubtitles" android:lineSpacingExtra="4dp"/>
+            <RelativeLayout android:id="@+id/layout_guide_op" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="24dp">
+                <TextView android:textSize="14dp" android:textColor="@color/static_white" android:id="@+id/tv_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                <TextView android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/btn_next" android:background="@drawable/bg_guide_btn" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="72dp" android:text="@string/View_G_NextOne" android:layout_alignParentEnd="true" android:paddingHorizontal="16dp" android:paddingVertical="8dp"/>
+                <TextView android:textSize="14dp" android:textColor="@color/static_white" android:id="@+id/btn_skip" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_SkipButton" android:layout_centerVertical="true" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/btn_next"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

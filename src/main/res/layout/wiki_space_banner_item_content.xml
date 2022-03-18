@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wiki_banner_card_view" android:layout_width="105dp" android:layout_height="140dp" app:cardCornerRadius="@dimen/space_radius_l" app:cardElevation="0dp">
+    <RelativeLayout android:id="@+id/wiki_banner_content" android:background="@drawable/wiki_list_view_item_border_new" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/wiki_banner_background_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <TextView android:textSize="@dimen/space_kit_font_15" android:textStyle="bold" android:textColor="@color/static_black" android:ellipsize="end" android:id="@+id/tv_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:maxLines="4" android:layout_marginStart="9dp" android:layout_marginEnd="9dp"/>
+        <ImageView android:id="@+id/iv_banner_star" android:layout_width="31dp" android:layout_height="36dp" android:layout_marginTop="-5dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

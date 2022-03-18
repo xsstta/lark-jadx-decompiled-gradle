@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="4dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/web_image_icon" android:layout_width="52dp" android:layout_height="52dp"/>
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/badge_red_bot" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="-1dp" android:src="@color/function_danger_500" android:scaleType="centerCrop" android:layout_marginEnd="-1dp" app:oval="true"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/text_caption" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/text_icon_name" android:layout_width="@dimen/web_menu_name_width" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="2" android:minLines="2"/>
+</LinearLayout>

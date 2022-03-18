@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/ll_bottom_bar" android:background="@color/lkui_N900" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="52dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/tv_back" android:padding="14dp" android:focusable="true" android:clickable="true" android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/photo_editor_back" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/photo_editor_ok_bg" android:paddingLeft="4dp" android:paddingRight="4dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:minWidth="60dp" android:minHeight="28dp" android:text="@string/Lark_Legacy_DoneNow" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_marginStart="4dp" android:layout_marginEnd="12dp" android:layout_alignParentEnd="true" android:layout_marginVertical="10dp" android:paddingHorizontal="4dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/tv_save" android:layout_toRightOf="@+id/tv_back">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_plugin_icon_container" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_bottom_bar">
+        <ImageView android:id="@+id/iv_origin" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <FrameLayout android:id="@+id/fl_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/rl_top_bar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="16sp" android:id="@+id/tv_close" android:background="@drawable/photo_editor_close" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/microapp_m_black_7" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginTop="13dp" android:layout_marginBottom="10dp">
+        <FrameLayout android:layout_width="22dp" android:layout_height="22dp">
+            <CheckBox android:id="@+id/cb_permission" android:layout_width="22dp" android:layout_height="22dp" android:checked="true" android:button="@null"/>
+            <ImageView android:id="@+id/iv_permission_checkbox_fg" android:layout_width="22dp" android:layout_height="22dp" android:src="0x7f080f65" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_black" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="22dp" android:maxLines="1" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

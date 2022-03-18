@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/page_turner_layer" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/left_page_turner" android:background="@drawable/bg_lkp_meeting_page_turner_left" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_lkp_arrow_left"/>
+    <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/right_page_turner" android:background="@drawable/bg_lkp_meeting_page_turner_right" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/ic_lkp_arrow_right"/>
+</FrameLayout>

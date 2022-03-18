@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/mContainerView" android:background="@color/bg_float" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dp_16">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/chatDialogTitleZone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/calendar_icon_bg_circle_b500" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_chat_trans_filled" android:tint="@color/static_white"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="left" android:layout_gravity="center" android:id="@+id/tvMinTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Legacy_ConvertToGroupReminder_PopupTitle" android:layout_weight="1" android:layout_marginStart="@dimen/dp_8"/>
+        <ImageView android:id="@+id/ivDialogClose" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_marginLeft="@dimen/dp_16" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n1" android:layout_weight="0"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/chatDialogTextZone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/chatBannerZone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tvDialogContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Setting_ConvertGroupBanner" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/tvConfirm" android:background="@drawable/bg_blue_corner_r4" android:layout_width="match_parent" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_16" android:text="@string/Calendar_Setting_TransformToNormalGroup"/>
+    </LinearLayout>
+</LinearLayout>

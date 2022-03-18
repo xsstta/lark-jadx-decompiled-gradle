@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_back_icon="@drawable/titlebar_close_bg_selector" app:tb_title_color="@color/text_title"/>
+    <LinearLayout android:gravity="center" android:background="@color/bg_body" android:paddingLeft="16dp" android:paddingTop="7.5dp" android:paddingRight="16dp" android:paddingBottom="7.5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:id="@+id/search_bar" android:background="@drawable/search_bar_chat_doc_select_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_in_search_view" android:tint="@color/icon_n3" android:layout_marginStart="8dp"/>
+            <com.bytedance.ee.bear.widgets.universedesign.SpaceEditText android:textSize="14sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_et" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:hint="@string/Lark_Legacy_Search" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4dp" style="@style/UDEditText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/inbox_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:lkui_ptr_duration_to_close_either="500" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_mode="2" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="0.5" app:lkui_ptr_resistance="1.7">
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_result_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+        <include android:id="@+id/load_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_common_load_empty"/>
+        <include android:id="@+id/load_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_common_load_fail"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/show_bottom" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="49dp">
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/primary_pri_500" android:id="@+id/select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/Lark_Legacy_SelectedZeroPeople" android:layout_centerVertical="true"/>
+        <Button android:textSize="14sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/docs_selector_chat_photo_send_bg_selector" android:layout_width="64dp" android:layout_height="28dp" android:layout_marginRight="15dp" android:text="@string/Lark_Legacy_Send" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0.4" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</LinearLayout>

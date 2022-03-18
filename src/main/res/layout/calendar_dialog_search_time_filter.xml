@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dialog_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/mTitleBar" android:layout_width="match_parent" android:layout_height="64dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="68dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/mStartTimeLayout" android:background="@drawable/calendar_bg_start_time_btn_pressed" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="0dp">
+            <TextView android:textSize="14dp" android:textColor="@color/ud_N00" android:id="@+id/mStartTimeLabelTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/Lark_Search_SearchStartingTimeFilter"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/ud_N00" android:id="@+id/mStartTimeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/mEndTimeLayout" android:background="@drawable/calendar_bg_end_time_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="24dp" android:paddingEnd="0dp">
+            <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/mEndTimeLabelTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/Lark_Search_SearchEndingTimeFilter"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/mEndTimeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/mCurrentMonthTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="100dp" android:singleLine="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/mLastMonthBtnIV" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true" android:paddingStart="8dp" android:paddingEnd="0dp" android:layout_toEndOf="@+id/mCurrentMonthTV"/>
+        <ImageView android:id="@+id/mNextMonthBtnIV" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true" android:paddingStart="0dp" android:paddingEnd="8dp" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/mLastMonthBtnIV"/>
+        <RelativeLayout android:id="@+id/mTimeSelectNoLimitRL" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="16dp" android:layout_alignParentEnd="true">
+            <CheckBox android:id="@+id/mTimeSelectNoLimitCB" android:background="@drawable/calendar_item_selector" android:layout_width="18dp" android:layout_height="18dp" android:checked="true" android:button="@null" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/time_select_no_limit_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_AnyTime" android:layout_centerVertical="true" android:layout_marginStart="7.5dp" android:layout_toEndOf="@+id/mTimeSelectNoLimitCB"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.ss.android.lark.calendar.impl.features.search.time.TimeFilterMonthContainer android:id="@+id/mMonthViewContainer" android:layout_width="match_parent" android:layout_height="253dp"/>
+</LinearLayout>

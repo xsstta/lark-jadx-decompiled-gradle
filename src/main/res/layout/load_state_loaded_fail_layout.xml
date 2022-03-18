@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/list_state_loaded_fail_root" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/list_state_loaded_fail_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/list_state_loaded_fail_master_tip" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_16"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:gravity="center" android:layout_gravity="center" android:id="@+id/list_state_loaded_fail_slave_tip" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_8"/>
+    <Button android:layout_gravity="center" android:id="@+id/list_state_loaded_fail_master_btn" android:visibility="visible" android:layout_width="@dimen/space_kit_len_180" android:layout_marginTop="@dimen/space_kit_len_20" style="@style/SpaceKitBtn2Level1"/>
+    <Button android:layout_gravity="center" android:id="@+id/list_state_loaded_fail_slave_btn" android:visibility="visible" android:layout_width="@dimen/space_kit_len_180" android:layout_marginTop="@dimen/space_kit_len_12" style="@style/SpaceKitBtn2Level2"/>
+</LinearLayout>

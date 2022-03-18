@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="6dp"/>
+    <stroke android:width="@dimen/mail_gray_line_height" android:color="@color/line_border_card"/>
+    <solid android:color="@color/static_white"/>
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/toolbar" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="44dp" android:minHeight="?attr/actionBarSize" app:popupTheme="?attr/actionBarPopupTheme"/>
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_container" android:background="@color/lkui_N50" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="@dimen/dp_68" android:layout_weight="1">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tv_location_name" android:layout_width="@dimen/dp_281" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/dp_12" android:layout_weight="1" android:drawableStart="@drawable/ud_icon_local_outlined" app:drawableTint="@color/icon_n3"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tv_location_desc" android:layout_width="@dimen/dp_281" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:maxLines="1" android:layout_below="@+id/tv_location_name"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_location_current" android:layout_width="@dimen/dp_16" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/ud_icon_done_outlined" app:tint="@color/primary_pri_500"/>
+</LinearLayout>

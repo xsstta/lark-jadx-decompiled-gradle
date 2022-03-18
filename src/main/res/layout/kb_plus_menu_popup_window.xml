@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/dialog_round_bottom_triangle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/menu_list" android:scrollbars="none" android:layout_width="135dp" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/bg_detail_reply_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="center" android:id="@+id/scrollDragBt" android:background="@drawable/bg_scroll_drag" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_24"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/timeTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/dp_16"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/attendeeRecycleView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout>
+</FrameLayout>

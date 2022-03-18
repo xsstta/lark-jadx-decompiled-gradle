@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="10dp">
+    <TextView android:textColor="@color/text_title" android:id="@+id/lkui_dialog_btn_left" android:visibility="gone" style="@style/LKUI_Dialog_newButtonText"/>
+    <TextView android:id="@+id/lkui_dialog_btn_center" android:visibility="gone" style="@style/LKUI_Dialog_newButtonText"/>
+    <TextView android:textColor="@color/function_info_500" android:id="@+id/lkui_dialog_btn_right" android:visibility="gone" style="@style/LKUI_Dialog_newButtonText"/>
+</LinearLayout>

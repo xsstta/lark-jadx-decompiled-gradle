@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/memberRootView" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/titlePaddingView" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_25"/>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/titlePaddingView" app:tb_title="@string/Calendar_Share_SharedWith"/>
+    <View android:id="@+id/topFirstDivider" android:background="@color/ud_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_below="@+id/titleBar"/>
+    <View android:id="@+id/topSecondDivider" android:background="@color/ud_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_7" android:layout_below="@+id/topFirstDivider"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sharedMemberRv" android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/topSecondDivider"/>
+    <FrameLayout android:id="@+id/childFragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

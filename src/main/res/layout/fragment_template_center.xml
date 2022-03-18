@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_List_AllTemplateTitle"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/groupIndicator" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+        <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider"/>
+    </FrameLayout>
+    <com.bytedance.ee.bear.facade.common.widget.MainViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

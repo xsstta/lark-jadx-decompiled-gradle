@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="52dp" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <TextView android:textSize="16dp" android:textColor="@color/text_link_normal" android:id="@+id/pass_install" android:layout_width="wrap_content" android:layout_height="20dp" android:text="@string/Onboarding_Pass_Install_App" android:layout_marginEnd="13dp"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/contentView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout" android:layout_below="@+id/tab_layout">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="30dp">
+                    <ImageView android:layout_gravity="right" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="58dp" android:layout_marginRight="106dp" android:src="@drawable/workplace_onboarding_small_icon"/>
+                </FrameLayout>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:lineSpacingExtra="6dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="30dp">
+                    <ImageView android:layout_gravity="right" android:layout_width="98dp" android:layout_height="98dp" android:layout_marginRight="-7dp" android:src="@drawable/workplace_onboarding_bit_icon"/>
+                </FrameLayout>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View android:background="@drawable/workplace_onboarding_footer_gradient" android:layout_width="match_parent" android:layout_height="4dp" android:layout_above="@+id/bottom_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="72dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/check_all_icon" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/appcenter_appadd_checkbox_icon_selector" android:layout_centerVertical="true" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/select_all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:text="@string/Onboarding_Select_All_App" android:layout_centerVertical="true" android:layout_marginStart="12dp" app:layout_constraintStart_toEndOf="@+id/check_all_icon" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/select_app_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13dp" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/select_all_text" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/check_all_icon"/>
+            <com.larksuite.component.universe_design.button.UDButton android:textSize="14sp" android:textColor="@color/static_white" android:id="@+id/submit" android:paddingLeft="8dp" android:paddingRight="8dp" android:text="@string/Onboarding_Install_Apps" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:ud_backgroundColor="@color/ud_button_blue_bg" app:ud_radius="2" style="@style/UDButton.Small.Primary"/>
+            <View android:id="@+id/divider_bottom" android:background="@color/line_divider_default" android:layout_width="0dp" android:layout_height="1px" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/select_app_count"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/permission_tips" android:layout_width="match_parent" android:layout_height="48dp" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/subtitle_copy_popwindow_bg" android:layout_width="wrap_content" android:layout_height="36dp">
+        <TextView android:textSize="14sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/copy" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Lark_Legacy_Copy" android:layout_weight="1"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:background="@drawable/black_down_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

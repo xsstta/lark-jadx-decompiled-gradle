@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.appcenter.business.tab.fragmentv3.component.header.CommonHeader android:id="@+id/blockit_inside_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.appcenter.business.tab.business.blockit.part.BlockitStatusView android:id="@+id/blockit_status_view" android:layout_width="match_parent" android:layout_height="150dp">
+        <com.ss.android.appcenter.business.tab.business.blockit.part.BlockitSlot android:id="@+id/blockit_mount_slot" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.appcenter.business.tab.business.blockit.part.BlockitStatusView>
+</merge>

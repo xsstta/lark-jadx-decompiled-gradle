@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/bg_pick_spoken_lang" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/tv_language" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1"/>
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="12dp" android:textColor="@color/icon_n3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="16dp" android:text="@string/iconfont_icon_arrow_down"/>
+    </LinearLayout>
+</FrameLayout>

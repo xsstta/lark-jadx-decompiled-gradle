@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#161c1e" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/microapp_m_top" layout="@layout/microapp_m_picker_actionbar"/>
+    <RelativeLayout android:id="@+id/microapp_m_footer" android:background="#21282c" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+        <Button android:textSize="15sp" android:textColor="@color/static_white" android:id="@+id/microapp_m_preview" android:background="@null" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="1dp" android:minHeight="1dp" android:text="@string/microapp_m_preview" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <Button android:textSize="15sp" android:textColor="@color/microapp_m_default_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/microapp_m_category_btn" android:background="@null" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/microapp_m_all_dir_name" android:drawableRight="@drawable/microapp_m_text_indicator" android:drawablePadding="5dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/microapp_m_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/microapp_m_footer" android:layout_below="@+id/microapp_m_top"/>
+</RelativeLayout>

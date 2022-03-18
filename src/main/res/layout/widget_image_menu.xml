@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.RecursionSetEnableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center_vertical" android:paddingLeft="@dimen/widget_menu_half_margin" android:paddingRight="@dimen/widget_menu_half_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/widgetTitleMenuImg" android:layout_width="@dimen/widget_menu_img_size" android:layout_height="@dimen/widget_menu_img_size" android:contentDescription="menuImg"/>
+        <com.larksuite.component.universe_design.badge.UDBadgeView android:id="@+id/widgetTitleMenuBadgePoint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19dp" android:layout_marginTop="-5dp" style="@style/UDBadge.Dot.StrongReminder.Medium"/>
+        <com.larksuite.component.universe_design.badge.UDBadgeView android:id="@+id/widgetTitleMenuBadgeNumFrame" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginStart="16dp" app:ud_badge_text="99" app:ud_badge_textMaxLength="2" style="@style/UDBadge.Text.Red"/>
+    </FrameLayout>
+</com.bytedance.ee.bear.widgets.RecursionSetEnableFrameLayout>

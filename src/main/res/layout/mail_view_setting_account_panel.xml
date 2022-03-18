@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:text="@string/Mail_SharedEmail_AccountsTitle" style="@style/EmailSettingTopTip"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mail_setting_account_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/mail_setting_account_panel_tips" android:layout_marginLeft="@dimen/mail_setting_item_left_padding" style="@style/EmailSettingBottomTip"/>
+    <View android:id="@+id/mail_setting_item_blank" android:visibility="gone" style="@style/EmailSettingBlank"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lock_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/lock_icon" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_8" app:srcCompat="@drawable/ud_icon_lock_outlined" app:tint="@color/icon_n2"/>
+</LinearLayout>

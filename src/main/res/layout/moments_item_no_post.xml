@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivFollowEmpty" android:paddingTop="@dimen/dp_40" android:layout_width="120dp" android:layout_height="160dp" android:src="@drawable/illustration_empty_neutral_no_content"/>
+    <ImageView android:id="@+id/ivPostEmpty" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/illustration_empty_neutral_no_posts"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/Lark_Community_ShareAPost"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:id="@+id/tvCreatePost" android:background="@drawable/moments_create_post_bt_bg" android:paddingLeft="@dimen/dp_40" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_40" android:paddingBottom="@dimen/dp_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/Lark_Community_ShareAPostButton"/>
+</LinearLayout>

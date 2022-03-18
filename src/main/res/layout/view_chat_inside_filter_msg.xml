@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/filter_msg_ll" android:layout_width="match_parent" android:layout_height="32dp" android:paddingStart="16dp" android:paddingEnd="0dp">
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_N600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_FilterMobile" android:layout_marginEnd="4dp"/>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/filter_msg_rv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <TextView android:enabled="false" android:textSize="14sp" android:textColor="@drawable/search_btn_reset_color" android:layout_gravity="center_vertical" android:id="@+id/filter_msg_reset_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_ResetFilter" android:paddingStart="8dp" android:paddingEnd="16dp"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/PlacesAutocompleteErrorMessageText" android:gravity="center" android:id="@+id/places_autocomplete_error_message" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:includeFontPadding="false"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="11dp" android:paddingRight="8dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginBottom="7dp">
+        <Button android:textAppearance="@style/PlacesAutocompleteErrorButtonText" android:id="@+id/places_autocomplete_try_again" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/places_try_again" android:includeFontPadding="false"/>
+        <ProgressBar android:id="@+id/places_autocomplete_error_progress" android:padding="3dp" android:visibility="gone" android:layout_width="@dimen/places_autocomplete_progress_size" android:layout_height="@dimen/places_autocomplete_progress_size" android:indeterminate="true" android:indeterminateTint="#4184f3" android:indeterminateTintMode="src_atop"/>
+    </LinearLayout>
+</merge>

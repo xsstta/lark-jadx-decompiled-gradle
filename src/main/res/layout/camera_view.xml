@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/static_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <VideoView android:id="@+id/video_play" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <VideoView android:id="@+id/video_preview" android:layout_width="0dp" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="H, 16:9" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/image_photo" android:background="@color/static_black" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_flash" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" app:srcCompat="@drawable/ic_svg_flash_on"/>
+        <ImageView android:id="@+id/image_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" app:srcCompat="@drawable/ic_svg_camera"/>
+    </LinearLayout>
+    <com.ss.android.lark.cameraview.CaptureLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/capture_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.cameraview.FoucsView android:layout_gravity="center" android:id="@+id/fouce_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

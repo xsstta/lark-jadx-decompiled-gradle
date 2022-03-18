@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/recorder_title" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginTop="9.5dp">
+        <TextView android:textSize="15dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/recorder_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_StartVoiceRecord" android:layout_centerInParent="true"/>
+        <com.ss.android.lark.keyboard.plugin.tool.voice.legacy.LarkVoiceLineView android:id="@+id/recorder_left_volume" android:visibility="gone" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginRight="11.8dp" android:layout_toLeftOf="@+id/recorder_title_tv" app:orientation="horizontal"/>
+        <com.ss.android.lark.keyboard.plugin.tool.voice.legacy.LarkVoiceLineView android:id="@+id/recorder_right_volume" android:visibility="gone" android:layout_width="30dp" android:layout_height="25dp" android:layout_marginLeft="11.8dp" android:layout_toRightOf="@+id/recorder_title_tv" app:orientation="vertical"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/voice_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.5dp" android:layout_below="@+id/recorder_title" android:layout_centerHorizontal="true">
+        <com.ss.android.lark.keyboard.plugin.tool.voice.legacy.LarkRecorderCircle android:id="@+id/recorder_btn" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/recorder_tips_iv" android:background="@drawable/kb_voice_trash_voice" android:visibility="gone" android:layout_width="88dp" android:layout_height="88dp" android:src="@drawable/trash_voice" android:scaleType="center"/>
+    </LinearLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/text_caption" android:layout_gravity="center_horizontal" android:id="@+id/recorder_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:text="@string/Lark_Legacy_VoiceIndicatorCancel" android:layout_below="@+id/voice_container" android:layout_centerInParent="true"/>
+</RelativeLayout>

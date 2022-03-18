@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.lark.android.passport.biz.widget.layout.BlockedNestedScrollView android:id="@+id/signin_sdk_widget_scrollable_content_container" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:overScrollMode="never" app:layout_constraintBottom_toTopOf="@+id/signin_sdk_widget_footer_container" app:layout_constraintTop_toTopOf="@+id/signin_sdk_widget_title_bar_container">
+        <LinearLayout android:orientation="vertical" android:id="@+id/signin_sdk_widget_content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Space android:id="@+id/signin_sdk_widget_space_title_bar" android:layout_width="0dp" android:layout_height="0dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/signin_sdk_widget_header_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:visibility="gone" style="@style/SignInWidget.Title"/>
+                <TextView android:visibility="gone" style="@style/SignInWidget.SubTitle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ss.lark.android.passport.biz.widget.layout.BlockedNestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/signin_sdk_widget_title_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <View android:id="@+id/signin_sdk_widget_space_status_bar" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.ss.android.lark.passport.infra.widget.CommonTitleBar android:id="@+id/signin_sdk_widget_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_right_text_color="@color/primary_pri_500" app:tb_right_text_size="@dimen/signin_sdk_font_size_16"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/signin_sdk_widget_footer_container" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/signin_sdk_widget_scrollable_content_container">
+        <Button android:visibility="gone" style="@style/SignInWidget.FooterButton"/>
+    </LinearLayout>
+</merge>

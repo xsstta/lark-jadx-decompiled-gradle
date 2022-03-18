@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_17" android:textColor="@color/lkui_N900" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/shape_chat_window_intention_dialog_bg" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/Lark_Legacy_Cancel"/>
+</LinearLayout>

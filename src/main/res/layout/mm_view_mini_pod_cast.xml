@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/mini_audio_record_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_radius="12dp" style="@style/UDShadow.S3.Down">
+    <RelativeLayout android:background="@drawable/mm_shape_float_round_mini" android:layout_width="90dp" android:layout_height="121dp">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/containerCover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_centerHorizontal="true">
+            <com.ss.android.lark.mm.widget.avatar.Avatar android:layout_gravity="center" android:id="@+id/ivCover" android:layout_width="0dp" android:layout_height="0dp" app:avatar_borderStyle="0" app:avatar_sizeType="-1" app:srcCompat="@drawable/mm_ic_default_mini_podcast"/>
+            <com.ss.android.lark.mm.module.floatwindow.view.progress.Progress android:layout_gravity="center" android:id="@+id/progressBar" android:layout_width="68dp" android:layout_height="68dp" app:progress_indicatorCornerRadius="1.5dp" app:progress_indicatorEndColor="@color/ud_B500" app:progress_indicatorStartColor="@color/ud_T500" app:progress_thickness="3dp" app:progress_trackColor="@color/line_divider_default" app:progress_trackThicknessFraction="0.17" app:progress_type="1"/>
+        </FrameLayout>
+        <com.ss.android.lark.mm.widget.BoldTextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:gravity="center_horizontal" android:id="@+id/tvProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:minWidth="72dp" android:maxLines="1" android:layout_below="@+id/containerCover" android:layout_centerHorizontal="true" android:textFontWeight="400"/>
+    </RelativeLayout>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

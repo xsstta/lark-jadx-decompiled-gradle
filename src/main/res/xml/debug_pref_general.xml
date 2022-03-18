@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <Preference android:title="App version" android:key="app_version" android:defaultValue="0.2"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="log output" android:key="category_log">
+        <PreferenceScreen android:title="分享日志" android:key="share_log"/>
+        <CheckBoxPreference android:title="是否开启敏感日志" android:key="sensitive_log_enable" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="BlockCanary" android:key="category_block">
+        <CheckBoxPreference android:title="BlockCanary 开关" android:key="blockCanary" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="前端配置中心">
+        <CheckBoxPreference android:title="是否展示打开文档时信息" android:key="appDebugConfig" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="是否开启前端ET埋点验证" android:key="enableFrontendEtTest" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Enable Analytic in debug mode">
+        <CheckBoxPreference android:title="debug模式上报统计数据" android:key="enable_statistics" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Bitable Category ">
+        <CheckBoxPreference android:title="是否支持附件字段" android:key="attachment_type_support" android:defaultValue="true" android:summaryOn="支持" android:summaryOff="不支持"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="离线化" android:key="category_offline">
+        <Preference android:title="离线化资源版本号" android:key="scm_info"/>
+        <CheckBoxPreference android:title="自动下载完整包" android:key="offline_auto_download_full_res" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <EditTextPreference android:title="点击输入离线资源版本号" android:key="offline_res_version" android:summary="无离线资源版本号" android:dialogTitle="请输入离线资源版本号"/>
+        <Preference android:title="Bitable资源版本号" android:key="bitable_jsbundle_info"/>
+        <CheckBoxPreference android:title="支持离线包放置 SD 卡" android:key="offline_support_change_resource" android:defaultValue="false" android:summaryOn="关闭" android:summaryOff="开启"/>
+        <CheckBoxPreference android:title="允许热更" android:key="initGecko" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="文档加速" android:key="renderAccelerate" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="资源拦截" android:key="resourceIntercept" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <EditTextPreference android:title="请输入前端网络代理(ip:port)" android:key="ip_proxy" android:dialogTitle="点击请输入前端代理(ip:port)"/>
+        <CheckBoxPreference android:title="代理模式复用模版" android:key="firstRenderNotAccelerate" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <EditTextPreference android:title="sidercar 后缀(无需输入#)" android:key="http_request_id" android:summary="" android:dialogTitle="sidercar"/>
+        <CheckBoxPreference android:title="后台文档同步" android:key="syncDocs" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="离线数据加密" android:key="offline_encrypt" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="doze模式" android:key="rn_doze" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="RN调试 for Bitable" android:key="rn_debug_for_bitable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="RN调试" android:key="rn_debug" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="RN预加载" android:key="rn_preload" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="Docs RN同步" android:key="doc_rn_enabled" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="启用新域名" android:key="domain_enable" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="启用图片识别" android:key="ocr_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="使用TTwebview" android:key="ttwebview_enable" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="使用TTwebview-M62内核版本" android:key="ttwebview_m62_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="开启类预加载" android:key="docs_preload_class" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <Preference android:title="放置到SD卡根目录sdcard/" android:key="baseBundle_path"/>
+        <CheckBoxPreference android:title="启用sd卡路径的baseBundle" android:key="replace_base_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <PreferenceScreen android:title="获取文档缓存数据大小" android:key="get_doc_cache_size"/>
+        <PreferenceScreen android:title="清除文档缓存数据" android:key="clean_doc_cache"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="auto test">
+        <CheckBoxPreference android:title="自动化测试" android:key="test_switch" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <MultiSelectListPreference android:entries="@array/doc_types" android:title="白名单" android:key="doc_types" android:summary="自动化测试文档类型" android:entryValues="@array/doc_types"/>
+        <EditTextPreference android:title="点击输入测试文件夹目录token" android:key="folder_token" android:summary="目录token" android:dialogTitle="请输入测试文件夹目录token"/>
+        <PreferenceScreen android:title="主动清理内存" android:key="memory_gc"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="wiki auto test">
+        <CheckBoxPreference android:title="wiki自动化测试" android:key="wiki_test_switch" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="build variant">
+        <ListPreference android:entries="@array/debug_build_login" android:title="登陆模式" android:key="build_login" android:summary="input" android:entryValues="@array/debug_build_login"/>
+        <ListPreference android:entries="@array/debug_build_server" android:title="调试环境" android:key="build_server" android:summary="publish" android:entryValues="@array/debug_build_server"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="DB操作">
+        <PreferenceScreen android:title="复制data目录到/sdcard/Docs" android:key="copy_data_to_sd"/>
+        <CheckBoxPreference android:title="数据库加密" android:key="database_encrypt" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Drive">
+        <PreferenceScreen android:title="清除Drive缓存数据" android:key="clean_drive_cache"/>
+        <PreferenceScreen android:title="清除cleanableDrive缓存数据" android:key="clean_cleanable_cache"/>
+        <PreferenceScreen android:title="获取cleanableDrive缓存大小" android:key="get_cleanable_cache_size"/>
+        <PreferenceScreen android:title="打开Drive业务测试页面" android:key="open_drive_test_activity"/>
+        <CheckBoxPreference android:title="打开西瓜视频sdk日志进行调试" android:key="tt_video_log_enable" android:defaultValue="false" android:summaryOn="打开" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Wiki">
+        <CheckBoxPreference android:title="打开wiki目录树协同" android:key="wikitree_collab_enable" android:defaultValue="true" android:summaryOn="打开" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="显示wiki目录树areaId" android:key="wikitree_show_areaId" android:defaultValue="true" android:summaryOn="打开" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="显示wiki目录树status" android:key="wikitree_show_status" android:defaultValue="true" android:summaryOn="打开" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Slide">
+        <PreferenceScreen android:title="清除slide字体缓存数据" android:key="clean_slide_font_cache"/>
+        <CheckBoxPreference android:title="wifi下开启字体下载提示" android:key="font_download_hint_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <CheckBoxPreference android:title="slide内存占用统计" android:key="mem_usage_analytic_for_auto_test_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Rust" android:key="rust">
+        <CheckBoxPreference android:title="rust网络通道" android:key="rust_net_enable" android:defaultValue="true" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <EditTextPreference android:title="请输入rust网络代理(ip:port)" android:key="ip_proxy_rust" android:dialogTitle="点击请输入rust代理(ip:port)"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="首页引导">
+        <CheckBoxPreference android:maxLines="3" android:title="是否显示飞书文档新手引导，重启后生效" android:key="lark_docs_newer_guide_switch" android:defaultValue="false" android:summaryOn="显示" android:summaryOff="不显示"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="引导播放模式">
+        <CheckBoxPreference android:title="是否进入Dev模式，重启后生效" android:key="global_onboarding_enable" android:defaultValue="false" android:summaryOn="Dev模式：跳过引导状态检查，总是播放引导" android:summaryOff="非Dev模式：检查引导状态，未完成时才播放引导" android:disableDependentsState="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="引导数据存储模式">
+        <CheckBoxPreference android:title="是否进入本地存储模式，重启后生效" android:key="global_onboarding_native_only_enable" android:dependency="global_onboarding_enable" android:defaultValue="false" android:summaryOn="本地存储：引导状态数据仅在本地读写" android:summaryOff="非本地存储：同步服务器上的引导状态"/>
+        <PreferenceScreen android:title="清除本地引导缓存数据" android:key="clear_onboarding_cache" android:dependency="global_onboarding_enable"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="FG 预览" android:key="fg_scan">
+        <PreferenceScreen android:title="点击查看fg" android:key="fg_preview"/>
+        <PreferenceScreen android:title="Mock FG" android:key="fg_mock"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="模版优化4.1 ab test">
+        <CheckBoxPreference android:title="是否跳过ab test" android:key="template_v4_ab_test" android:defaultValue="false" android:summaryOn="跳过" android:summaryOff="不跳过"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="请求header中添加参数">
+        <CheckBoxPreference android:title="是否在请求header中添加参数" android:key="header_append_params_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <PreferenceScreen android:title="添加/修改参数" android:key="header_append_params"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="admin权限管控mock">
+        <CheckBoxPreference android:title="是否mock关闭数据" android:key="admin_permission_mock" android:defaultValue="false" android:summaryOn="强制关闭" android:summaryOff="正常拉取"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="水印配置">
+        <CheckBoxPreference android:title="是否开启水印" android:key="watermark_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="more红点">
+        <PreferenceScreen android:title="清除More红点数据" android:key="clear_more_badge"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Sheet模板">
+        <EditTextPreference android:title="定制sheet preload模板地址" android:key="sheet_preload_template" android:summary="preload模板地址" android:dialogTitle="请输入sheet preload模板地址"/>
+        <EditTextPreference android:title="定制sheet 模板地址" android:key="sheet_template" android:summary="sheet模板地址" android:dialogTitle="请输入sheet模板地址"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="网络请求记录">
+        <CheckBoxPreference android:title="是否记录网络请求" android:key="net_interceptable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+        <PreferenceScreen android:title="主进程网络请求" android:key="net_main_process"/>
+        <PreferenceScreen android:title="p0进程网络请求" android:key="net_p0_process"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="一键提单工具">
+        <CheckBoxPreference android:title="一键提单工具 开关" android:key="bug_tool_enable" android:defaultValue="false" android:summaryOn="开启" android:summaryOff="关闭"/>
+    </PreferenceCategory>
+</PreferenceScreen>

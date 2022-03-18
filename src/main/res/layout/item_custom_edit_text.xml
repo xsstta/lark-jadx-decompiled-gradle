@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/sp_16" android:textColor="@color/lkui_N1000" android:textColorHint="@color/lkui_N500" android:gravity="center_vertical" android:id="@+id/edit_text" android:background="@color/lkui_N00" android:paddingLeft="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/settings_item_height"/>

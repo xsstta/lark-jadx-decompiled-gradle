@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.inv.export.util.InvErrorView android:id="@+id/ipnErrorView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/ipnTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/color_transparent" app:tb_title="@string/Lark_Education_InviteParents"/>
+    <ScrollView android:id="@+id/ipnContentSv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/ipnTitleBar" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.ss.android.lark.invitation.v2.feat.edu.nonDirectional.InviteParentNonDirectionShareCardView android:id="@+id/ipnShareCardView" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="12sp" android:textColor="@color/lkui_N600" android:id="@+id/ipnBottomTipTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/Lark_Education_ShareTeamQRCodeTip" android:lineSpacingExtra="2dp" app:layout_constraintTop_toBottomOf="@+id/ipnShareCardView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

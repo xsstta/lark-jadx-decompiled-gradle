@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/microapp_m_media_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:id="@+id/microapp_m_mask_view" android:background="@color/fill_img_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/microapp_m_check_image" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="5.5dp" android:layout_marginRight="5.5dp" android:src="@drawable/microapp_m_btn_unselected"/>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/microapp_m_video_info" android:background="#6e000000" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:text="@string/microapp_m_video"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/microapp_m_textView_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="6dp" android:layout_marginBottom="3dp" android:text="" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activityRoot" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCalendarsContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llNoContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dp_44">
+            <ImageView android:id="@+id/noAccountIv" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:src="@drawable/illustration_placeholder_common_no_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tvContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/tvGrey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_GoogleCal_NoCalendars"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/tvBlue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_GoogleCal_MayImportOtherCal"/>
+                <TextView android:textSize="@dimen/dp_16" android:gravity="center" android:id="@+id/tvBoth" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

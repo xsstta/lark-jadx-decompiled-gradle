@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/calendarTypeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/calendarCheckState" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16"/>
+    <ImageView android:id="@+id/calendarCheckState" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_list_check_outlined" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/bottomDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16"/>
+</RelativeLayout>

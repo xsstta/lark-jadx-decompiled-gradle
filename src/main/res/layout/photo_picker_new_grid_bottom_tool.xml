@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_original_photo" android:background="@color/bg_body" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/origin_zone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/cb_original_photo" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="28dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white_text_enable_selector" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/cb_original_photo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-7dp" android:minHeight="28dp" android:text="@string/Lark_Legacy_OriginPic" android:maxLines="12" android:layout_toRightOf="@+id/cb_original_photo"/>
+    </RelativeLayout>
+    <View android:layout_width="8dp" android:layout_height="1dp"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_photo_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="28dp" android:text="预览" android:maxLines="10" android:textAllCaps="false"/>
+    </FrameLayout>
+    <View android:layout_width="8dp" android:layout_height="1dp"/>
+    <FrameLayout android:id="@+id/layout_photo_send" android:paddingRight="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14dp" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_photo_send" android:background="@drawable/chat_photo_send_bg_selector" android:paddingLeft="2.5dp" android:paddingRight="2.5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="64dp" android:minHeight="28dp" android:text="@string/Lark_Legacy_PickerSend" android:maxLines="10" android:textAllCaps="false"/>
+    </FrameLayout>
+</LinearLayout>

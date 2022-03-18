@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/n600" android:id="@+id/error_msg" android:paddingLeft="45dp" android:paddingRight="45dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/Lark_Legacy_LoadFailedRetryTip" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_common_loading_failed" android:layout_above="@+id/error_msg" android:layout_centerHorizontal="true"/>
+    <com.ss.android.lark.ui.RotateLoadingView android:id="@+id/fragment_loading" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerInParent="true" app:rotate_src="@drawable/share_profile_qrcode_loading"/>
+</RelativeLayout>

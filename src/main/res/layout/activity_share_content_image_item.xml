@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.joooonho.SelectableRoundedImageView android:layout_gravity="center" android:id="@+id/share_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:sriv_left_bottom_corner_radius="2dp" app:sriv_left_top_corner_radius="2dp" app:sriv_oval="false" app:sriv_right_bottom_corner_radius="2dp" app:sriv_right_top_corner_radius="2dp"/>
+</LinearLayout>

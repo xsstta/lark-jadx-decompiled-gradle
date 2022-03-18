@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/item" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/animoji_img" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:scaleType="centerCrop"/>
+        <include layout="@layout/labs_effect_loading_layout"/>
+    </FrameLayout>
+</FrameLayout>

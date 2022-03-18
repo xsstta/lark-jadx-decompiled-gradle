@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.photo_picker.gallery.LargeImageView android:id="@+id/scale_image_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/error_image" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ud_icon_loadfail_filled" android:adjustViewBounds="true"/>
+    <TextView android:textColor="@color/static_white" android:layout_gravity="bottom" android:id="@+id/failed_path_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:maxLines="2"/>
+    <com.ss.android.lark.ui.RotateLoadingView android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:tint="@color/static_white" app:rotate_src="@drawable/ud_icon_chat_loading_outlined"/>
+</FrameLayout>

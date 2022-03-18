@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_root" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/feed_title_height" android:layout_marginTop="-60.5dp"/>
+    <include android:id="@+id/search_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_layout" layout="@layout/search_bar_item"/>
+    <include android:id="@+id/search_container_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_bar_layout" layout="@layout/search_result_no_titlebar"/>
+</RelativeLayout>

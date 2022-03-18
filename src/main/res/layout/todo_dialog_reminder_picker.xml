@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/menuContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/bg_body" app:cardCornerRadius="@dimen/dp_12" app:cardElevation="@dimen/dp_0">
+        <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_54">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/reminder_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="@string/Todo_Common_Cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/reminder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Settings_TaskDefaultAlertTimeMobile" android:layout_centerInParent="true"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/ud_B500" android:id="@+id/reminder_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:text="@string/Todo_Common_DoneButton" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer android:id="@+id/reminder_wheel_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.larksuite.component.universe_design.timepicker.impl.base.WheelView android:id="@+id/reminder_wheel_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8"/>
+            </com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

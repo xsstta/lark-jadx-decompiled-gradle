@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/imTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/imTabLayout" android:layout_width="match_parent" android:layout_height="40dp" app:ud_tab_mode="1"/>
+    <FrameLayout android:id="@+id/imContentFl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/imViewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <View android:id="@+id/imShadowView" android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:gravity="center" android:id="@+id/avatar" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bg_activity_banner" app:civ_radius="4dp"/>
+    <ImageView android:textColor="@color/black" android:id="@+id/inviterBannerClose" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/icon_close_banner" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/file_reader_title" android:layout_width="match_parent" android:layout_height="@dimen/attachment_titlebar_height" app:widget_widgets_tb_divider_visible="false"/>
+    <FrameLayout android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/file_reader_tbsreader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center_horizontal" android:id="@+id/file_reader_loading" android:visibility="gone" android:layout_marginTop="160dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/file_reader_other" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/file_reader_file_icon" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="93.5dp" android:src="@drawable/icon_file_default"/>
+            <TextView android:textSize="17sp" android:textColor="@color/space_kit_black" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/file_reader_file_name" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:maxLines="3"/>
+            <TextView android:textSize="12sp" android:textColor="@color/space_kit_n50" android:layout_gravity="center_horizontal" android:id="@+id/file_reader_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="14M"/>
+            <TextView android:textSize="17sp" android:textColor="@color/space_kit_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/file_reader_btn_jump" android:background="@drawable/attachment_file_reader_jump_bg_selector" android:layout_width="180dp" android:layout_height="44dp" android:layout_marginTop="125dp" android:text="@string/Doc_Facade_OpenInOtherApp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

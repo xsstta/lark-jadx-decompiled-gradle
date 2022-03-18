@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <com.ss.android.lark.ui.CommonTitleBar android:layout_gravity="top" android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/message_view" android:paddingBottom="18dp" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:listSelector="@color/lkui_transparent" android:choiceMode="singleChoice" android:layout_weight="1" android:overScrollMode="never"/>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/multi_select_menu_stub" android:layout="@layout/thread_merge_forward_multi_select_layout" android:layout_width="match_parent" android:layout_height="90dp"/>
+</LinearLayout>

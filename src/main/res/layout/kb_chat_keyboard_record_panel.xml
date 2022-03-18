@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.keyboard.plugin.tool.voice.DisallowScrollEventViewPager android:id="@+id/audio_viewpager" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.keyboard.plugin.tool.voice.widget.SmartTabLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/viewpager_indicator" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:stl_defaultTabTextColor="@color/text_title" app:stl_defaultTabTextHorizontalPadding="24dp" app:stl_defaultTabTextSize="16sp" app:stl_dividerColor="@color/lkui_transparent" app:stl_indicatorAlwaysInCenter="true" app:stl_indicatorColor="@color/text_title" app:stl_indicatorCornerRadius="1.5dp" app:stl_indicatorInterpolation="0" app:stl_indicatorThickness="3dp" app:stl_indicatorWidth="10dp" app:stl_underlineThickness="0dp"/>
+</FrameLayout>

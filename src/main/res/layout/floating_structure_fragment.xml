@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/contentExcludeKeyboard" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.bytedance.ee.bear.doc.structure.ParagraphLayout android:orientation="vertical" android:id="@+id/paragraphContainer" android:background="@drawable/floating_structure_paragraphs_bg" android:paddingLeft="21dp" android:paddingRight="43dp" android:clickable="true" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0">
+            <include layout="@layout/floating_structure_item"/>
+        </com.bytedance.ee.bear.doc.structure.ParagraphLayout>
+        <FrameLayout android:id="@+id/dragHandleContainer" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="50dp" android:layout_marginBottom="50dp" app:layout_constraintEnd_toEndOf="0">
+            <ImageView android:id="@+id/dragHandle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/floating_structure_handle" app:layout_constraintEnd_toEndOf="0"/>
+        </FrameLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/text_link_hover" android:gravity="center" android:id="@+id/showFixedStructure" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/doc_bottom_action_bar_height" android:text="@string/Doc_Doc_Open_Structure" android:elevation="10dp" app:layout_constraintBottom_toBottomOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.bytedance.ee.bear.document.widget.KeyboardPlaceholderView android:layout_width="match_parent" android:layout_height="0dp"/>
+</LinearLayout>

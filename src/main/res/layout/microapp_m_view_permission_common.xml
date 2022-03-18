@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/microapp_m_text_size_18" android:textColor="@color/microapp_m_black" android:ellipsize="end" android:id="@+id/tv_permission_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-medium"/>
+    <TextView android:textSize="@dimen/microapp_m_text_size_14" android:textColor="@color/microapp_m_black_4" android:ellipsize="end" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1" android:maxEms="23" android:layout_below="@+id/tv_permission_name"/>
+</RelativeLayout>

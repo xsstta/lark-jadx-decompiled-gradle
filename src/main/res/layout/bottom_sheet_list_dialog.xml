@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <View android:id="@+id/touch_outside" android:layout_width="match_parent" android:layout_height="match_parent" android:soundEffectsEnabled="false" android:importantForAccessibility="no"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="@drawable/bg_radius_corner_white" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_peekHeight="240dp" app:layout_behavior="@string/bottom_sheet_behavior" style="?attr/bottomSheetStyle">
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/bottom_sheet_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/bottom_sheet_dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp"/>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/bottom_sheet_dialog_content_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp">
+        <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@+id/float_selector_left_btn" android:layout_width="0dp" android:layout_height="49dp" android:layout_weight="1"/>
+        <View android:background="@color/line_divider_default" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <TextView android:textColor="@color/btn_text_selector" android:gravity="center" android:id="@+id/float_selector_right_btn" android:layout_width="0dp" android:layout_height="49dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

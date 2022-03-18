@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/instanceActivityRoot" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.common.widget.infinitescroller.SnapScrollView android:id="@+id/roomInsScrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48" android:layout_marginBottom="@dimen/dp_88"/>
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TitleTimeBar android:id="@+id/titleCalendarBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/bg_detail_reply_bottom" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_400">
+        <ImageView android:layout_gravity="center" android:id="@+id/dragImg" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:src="@drawable/bg_gray_rectangle_n300"/>
+        <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout>
+</FrameLayout>

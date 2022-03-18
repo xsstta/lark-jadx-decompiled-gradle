@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/color_transparent"/>
+    <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/IgnitionSettingGroup">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_due_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_68">
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1" android:layout_marginStart="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Settings_DailyNotification" style="@style/TodoSettingViewItemText"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/todo_setting_reminder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_RecentTodoTaskDesc" style="@style/TodoSettingSubtitleText"/>
+            </LinearLayout>
+            <com.ss.android.lark.todo.impl.features.setting.widget.TodoSwitchView android:id="@+id/reminderSwitchView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_16"/>
+        </LinearLayout>
+    </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+    <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:id="@+id/ll_badge_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/IgnitionSettingGroup">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:text="@string/Todo_Settings_BadgeCountTitle" android:layout_weight="1" android:layout_marginStart="16dp" style="@style/TodoSettingViewItemText"/>
+            <TextView android:id="@+id/tv_badge_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TodoSettingSubtitleText"/>
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_16"/>
+        </LinearLayout>
+    </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+    <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/IgnitionSettingGroup">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_reminder_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_reminder" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1" android:layout_marginStart="16dp" android:layout_marginEnd="@dimen/dp_8">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Settings_TaskDefaultAlertTime" style="@style/TodoSettingViewItemText"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/reminder_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Todo_Settings_TaskDefaultAlertTimeDesc"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_reminder_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TodoSettingSubtitleText"/>
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+</LinearLayout>

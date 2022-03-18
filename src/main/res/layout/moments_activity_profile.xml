@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:id="@+id/activityProfile" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout android:id="@+id/ptrLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.moments.impl.personal.MomentsProfileZoomRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/rvFeed" android:background="@color/bg_body" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+        <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:paddingTop="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/refreshIcon" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_10" ptr:lottie_colorFilter="@color/ud_N00" ptr:lottie_fileName="lottie/request_loading_anim.json" ptr:lottie_loop="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/titleBar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/dp_44">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/icBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ud_icon_left_outlined" android:layout_marginStart="@dimen/dp_20"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/transparent" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_44"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/page_error_container" android:background="@color/bg_body" android:paddingBottom="@dimen/dp_44" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/error_titlebar" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <ImageView android:id="@+id/page_error_iv" android:layout_width="120dp" android:layout_height="120dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/page_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_below="@+id/page_error_iv" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

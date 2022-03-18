@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="55dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/mine_device_item_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="19.5dp" android:layout_toLeftOf="@+id/mine_device_item_switch_zone" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/mine_device_item_switch_zone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.ss.android.lark.widget.switch_button.SwitchButton android:id="@+id/mine_device_item_switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true" style="@style/SwitchButtonMD"/>
+            <com.ss.android.lark.widget.SwitcherLoadingView android:id="@+id/mine_device_item_switcher_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/mine_device_item_switcher" android:layout_alignTop="@+id/mine_device_item_switcher" android:layout_alignRight="@+id/mine_device_item_switcher" android:layout_alignBottom="@+id/mine_device_item_switcher"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

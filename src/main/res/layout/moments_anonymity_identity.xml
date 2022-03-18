@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="40dp">
+    <com.ss.android.lark.moments.impl.common.widget.BorderOvalImageView android:id="@+id/avatar" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="17dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp"/>
+    <ImageView android:id="@+id/indicator" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ud_icon_expand_down_filled" android:layout_marginStart="5dp" android:layout_marginEnd="@dimen/dp_16"/>
+</LinearLayout>

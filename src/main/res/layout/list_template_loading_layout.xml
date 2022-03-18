@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:id="@+id/ll_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:id="@+id/lark_loading_view" android:layout_centerInParent="true" ptr:lottie_autoPlay="true" ptr:lottie_loop="true" ptr:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+</RelativeLayout>

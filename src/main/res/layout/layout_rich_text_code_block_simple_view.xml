@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.richtext2.widget.codeblock.CodeBlockSimpleView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_simple_code_block" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/code_block_font_size_default" android:textColor="@color/lkui_N600" android:id="@+id/simple_code_view" android:padding="@dimen/code_block_horizontal_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="@dimen/code_block_font_size_default" android:textStyle="bold" android:textColor="@color/lkui_B500" android:gravity="center" android:id="@+id/simple_button_button" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/Lark_Legacy_ViewAll" android:layout_below="@+id/simple_code_view"/>
+</com.ss.android.lark.widget.richtext2.widget.codeblock.CodeBlockSimpleView>

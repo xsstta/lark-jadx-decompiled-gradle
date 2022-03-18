@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/microapp_m_tab_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/microapp_m_diver" android:background="@color/microapp_m_tab_diver_black" android:layout_width="match_parent" android:layout_height="@dimen/microapp_m_tab_diver_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/microapp_m_tab_item_height">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/microapp_m_tab_icon_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/middle_view" android:layout_width="0px" android:layout_height="0px" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/microapp_m_tab_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="5dp" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/microapp_m_red_dot" android:visibility="gone" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="5dp" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/middle_view"/>
+            <TextView android:textSize="12sp" android:textColor="@color/microapp_m_white" android:gravity="center" android:id="@+id/microapp_m_red_dot_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="1.5dp" android:includeFontPadding="false" android:paddingStart="4dp" android:paddingEnd="4dp" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/middle_view"/>
+            <ImageView android:id="@+id/microapp_m_red_dot_number_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:src="0x7f080f10" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/middle_view"/>
+        </RelativeLayout>
+        <TextView android:textSize="10dp" android:textColor="@color/microapp_m_black_2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/microapp_m_tab_tv" android:layout_width="wrap_content" android:layout_height="12dp" android:singleLine="true" android:includeFontPadding="false"/>
+    </LinearLayout>
+</LinearLayout>

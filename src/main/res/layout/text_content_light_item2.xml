@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ss.android.lark.chatbase.view.TextChatView2 android:id="@+id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ViewStub android:id="@+id/text_translate_content" android:layout="@layout/text_translate_light_content2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/stub_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/translate_content">
+        <ViewStub android:id="@+id/url_preview_stub" android:layout="@layout/chat_message_preview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/doc_card_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/url_net_preview_margin_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+            <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/url_net_preview_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

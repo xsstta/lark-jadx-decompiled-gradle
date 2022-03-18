@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/function_danger_500" app:tb_title="@string/Lark_RedPacket_PacketTheme" app:tb_title_color="@color/static_white"/>
+    <com.larksuite.component.ui.loading.LKUILoadingView android:layout_gravity="center_horizontal" android:id="@+id/loading_view" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="150dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/cover_theme_rv" android:paddingBottom="20dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

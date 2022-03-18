@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+    <ViewStub android:id="@+id/widget" android:layout="@layout/workplace_fragment_adapter_widget_item_stub" android:inflatedId="@+id/widget" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/block_view_stub" android:layout="@layout/workplace_block_wrapper" android:inflatedId="@+id/block_view_stub" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

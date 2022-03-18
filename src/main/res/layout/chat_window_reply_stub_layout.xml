@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.chatwindow.view.widget.WidthLimitRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/reply_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.framework.ui.SpareLayout android:id="@+id/reply_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@+id/reply_bubble" android:background="@drawable/chat_chat_bubble_reply_mark_bg" android:layout_width="2dp" android:layout_height="14dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/reply_name" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/reply_image_container" android:background="@color/lkui_N00" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/reply_content_image" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp"/>
+        </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    </com.larksuite.framework.ui.SpareLayout>
+    <FrameLayout android:id="@+id/reply_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/reply_left_layout">
+        <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/reply_content_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="14sp" android:textColor="@color/lkui_B500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/reply_content_thread" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:maxLines="1"/>
+    </FrameLayout>
+</com.ss.android.lark.chatwindow.view.widget.WidthLimitRelativeLayout>

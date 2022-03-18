@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_white_cal_perm" android:layout_width="wrap_content" android:layout_height="@dimen/dp_262">
+    <ImageView android:id="@+id/iv_no_perm_close" android:layout_width="@dimen/dp_27" android:layout_height="@dimen/dp_27" android:layout_marginLeft="@dimen/dp_130" android:layout_marginTop="@dimen/dp_6" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n1"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+        <ImageView android:id="@+id/img_bot_replying" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:src="@drawable/icon_no_permission"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:id="@+id/tv_no_perm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_13" android:text="@string/Calendar_Setting_NoEnoughAccess"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="center_horizontal" android:id="@+id/tv_no_perm_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/Calendar_Alert_GoToAppSetting" android:lineSpacingExtra="@dimen/dp_6"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_20"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/primary_pri_500" android:id="@+id/tv_open_private_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginBottom="@dimen/dp_14" android:text="@string/Calendar_Setting_OpenPrivacySetting"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="36dp" app:cardCornerRadius="18dp" app:cardElevation="4dp" app:cardPreventCornerOverlap="true">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_rating" android:background="@drawable/float_action_bg" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="4dp" android:paddingEnd="4dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_like" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="8dp" android:paddingEnd="8dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_thumbUp" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_thumbup_unchecked"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/tv_upCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/line_divider_default" android:layout_width="1dp" android:layout_height="12dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_thumbDown" android:padding="8dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_thumbdown_unchecked"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

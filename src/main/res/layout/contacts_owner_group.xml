@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:paddingStart="7dp" android:paddingEnd="7dp">
+        <TextView android:textSize="15sp" android:textColor="@color/primary_pri_500" android:id="@+id/tv_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Contacts_Contacts" android:layout_marginStart="8dp"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/contacts_nextlevel_arrow" android:tint="@color/icon_n3" android:layout_marginStart="8dp"/>
+        <TextView android:textSize="15sp" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Groups_MyGroups" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:id="@+id/contact_sub_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

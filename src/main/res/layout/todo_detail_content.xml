@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/layout_revoke_assignee" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/message_revoke_assignee" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Todo_Task_AddedAsAssignee" android:layout_weight="1" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/primary_pri_500" android:gravity="center_vertical" android:id="@+id/text_revoke_assignee" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Todo_Common_Revoke" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/summary_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_weight="1">
+            <com.ss.android.lark.keyboard.plugin.input.RichTextEmojiconEditText android:textSize="20dp" android:textStyle="bold" android:textColor="@color/text_title" android:textColorHighlight="@null" android:textColorHint="@color/text_placeholder" android:id="@+id/todo_richText_summary" android:background="@color/bg_body" android:paddingTop="24dp" android:paddingBottom="6dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Todo_Task_AddTask" android:inputType="textMultiLine"/>
+            <com.ss.android.lark.todo.impl.features.detail.common.InterceptScrollContainer android:id="@+id/description_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.ss.android.lark.keyboard.plugin.input.RichTextEmojiconEditText android:textSize="16dp" android:textColor="@color/text_title" android:textColorHighlight="@color/transparent" android:textColorHint="@color/text_placeholder" android:ellipsize="end" android:id="@+id/todo_description" android:background="@color/bg_body" android:paddingTop="6dp" android:paddingBottom="12dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Todo_Task_AddNotesPlaceholder" android:maxLines="8" android:inputType="textMultiLine" app:layout_constraintTop_toTopOf="@+id/description_container"/>
+                <View android:layout_gravity="bottom" android:id="@+id/description_gradient_mask" android:background="@drawable/todo_bg_gradient_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="10dp" app:layout_constraintBottom_toBottomOf="@+id/todo_description"/>
+                <TextView android:textSize="14dp" android:textColor="@color/primary_pri_500" android:id="@+id/description_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_ShowMore" android:paddingStart="6dp" android:paddingEnd="6dp" app:layout_constraintRight_toRightOf="@+id/todo_description" app:layout_constraintTop_toBottomOf="@+id/description_gradient_mask"/>
+            </com.ss.android.lark.todo.impl.features.detail.common.InterceptScrollContainer>
+            <include android:id="@+id/todo_merge_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:animateLayoutChanges="true" layout="@layout/todo_merge_message_content_item"/>
+            <FrameLayout android:id="@+id/todo_block_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/todo_origin_view" android:background="@drawable/todo_bg_detail_source" android:paddingLeft="12dp" android:paddingTop="2dp" android:paddingRight="12dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:minHeight="22dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:paddingHorizontal="12dp" android:paddingVertical="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/detail_assignee_container" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="6dp">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_member_outlined" android:tint="@color/icon_n3" android:layout_marginStart="16dp" android:layout_marginEnd="12dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_gravity="center_vertical" android:id="@+id/layout_assignee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/todo_detail_pick_item_assignees"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/text_add_assignee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_AddAssignee"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/detail_time_container" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_calendar_outlined" android:tint="@color/icon_n3" android:layout_marginStart="16dp" android:layout_marginEnd="12dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/text_add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_AddDueTime"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <HorizontalScrollView android:layout_gravity="center_vertical" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:overScrollMode="never">
+                    <include android:id="@+id/todo_detail_time_section" android:layout_width="wrap_content" android:layout_height="match_parent" layout="@layout/todo_detail_time_sub_section"/>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/detail_follower_container" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_subscribe_add_outlined" android:tint="@color/icon_n3" android:layout_marginStart="16dp" android:layout_marginEnd="12dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_gravity="center_vertical" android:id="@+id/layout_follower" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/todo_keyboard_pick_item_attendee"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/text_add_follower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_AddFollower"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/commentTitleLl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="4dp" android:text="@string/Todo_Task_Comment" android:layout_marginHorizontal="16dp"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/creator_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_8">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:src="@drawable/todo_circle_icon_detail_create" android:layout_marginStart="@dimen/dp_26"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/creator_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Task_ChangeLogUserCreatedTask" android:singleLine="false" android:layout_marginStart="@dimen/dp_54"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/commentShowMoreLl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="16dp" android:minHeight="24dp" android:layout_marginStart="12dp">
+            <ImageView android:id="@+id/commentShowMoreIv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/todo_svg_icon_loading" android:layout_marginEnd="8dp"/>
+            <TextView android:textColor="@color/text_placeholder" android:id="@+id/commentShowMoreTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_LoadingNow"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/commentSkeletonFl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/comment_load_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_28">
+            <ImageView android:id="@+id/comment_load_status_iv" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:src="@drawable/illustration_placeholder_common_load_failed"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/comment_load_status_tv" android:layout_width="216.5dp" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/Todo_Task_LoadFailedTryAgainLater"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

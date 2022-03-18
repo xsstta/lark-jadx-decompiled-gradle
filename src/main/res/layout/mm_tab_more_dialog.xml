@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.framework.ui.AlignParentWidthRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/chatlist_popup_content" android:background="@drawable/mm_popupwindow_round_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.framework.ui.CompatDrawableTextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/trashMenu" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="48dp" android:minWidth="140dp" android:text="@string/MMWeb_G_Trash_TabTitle" android:drawablePadding="12dp" android:layout_alignParentLeft="true" app:drawableStartCompat="@drawable/mm_ic_delete"/>
+</com.larksuite.framework.ui.AlignParentWidthRelativeLayout>

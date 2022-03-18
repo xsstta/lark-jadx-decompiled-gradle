@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/record_card_delete_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/function_danger_500" android:gravity="center" android:id="@+id/tv_bitable_cell_delete" android:background="@drawable/bitable_record_delete_btn_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_40" android:layout_marginTop="@dimen/space_kit_len_60" android:text="@string/Doc_Block_DeleteRecord"/>
+</FrameLayout>

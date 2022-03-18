@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="0" android:id="@+id/mail_undo_duration_layout" android:backgroundTint="@color/mail_item_bg_color_selector_c11" style="@style/EmailSettingSingleLineBoxStyle">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/mail_undo_duration_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/mail_undo_duration_selected_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mail_setting_item_right_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:ud_checkbox_type="2"/>
+    <View android:id="@+id/mail_undo_duration_divider" android:layout_alignParentBottom="true" style="@style/EmailSettingDivider"/>
+</RelativeLayout>

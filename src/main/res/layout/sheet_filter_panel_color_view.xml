@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/checkbox_container" android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_4" app:ud_checkbox_size="1" app:ud_checkbox_type="1"/>
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/checkbox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_2"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.widgets.BaseRecyclerView android:id="@+id/color_recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:foregroundGravity="left"/>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/sheet_divider_height" android:layout_marginStart="@dimen/space_kit_len_16"/>
+</LinearLayout>

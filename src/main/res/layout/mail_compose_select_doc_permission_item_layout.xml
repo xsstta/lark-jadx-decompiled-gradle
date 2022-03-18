@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="66dp">
+    <TextView android:textSize="17sp" android:textColor="@color/mail_compose_select_doc_permission_item_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/lkui_dialog_content_item_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/searchIndicator" android:layout_width="match_parent" android:layout_height="@dimen/dp_40"/>
+    <View android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/searchViewPager" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

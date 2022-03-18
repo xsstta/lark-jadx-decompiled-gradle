@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:id="@+id/message_list_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout android:id="@+id/chat_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/list_bottom_view" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/chat_message_list_view" android:paddingBottom="10dp" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+        <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/list_bottom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:layout_gravity="bottom" android:id="@+id/chat_window_p2p_build_group_stub" android:visibility="gone" android:layout="@layout/chat_window_p2p_build_group_layout" android:layout_width="match_parent" android:layout_height="49dp"/>
+        <ViewStub android:layout_gravity="bottom" android:id="@+id/multi_select_menu_stub" android:visibility="gone" android:layout="@layout/chat_window_multi_select_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="@color/text_placeholder" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/chat_window_p2p_chatter_is_deactivied_tip" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/p2p_chatter_is_dimission_tip_height" android:text="@string/Lark_Legacy_ChatterResignPermissionMask"/>
+    </LinearLayout>
+</com.larksuite.component.ui.layout.LKUIRelativeLayout>

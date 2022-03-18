@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="132dp" android:layout_height="match_parent">
+    <ImageView android:id="@+id/search_swipe_menu_more" android:background="@color/fill_disable" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ud_icon_more_outlined" android:scaleType="centerInside" android:tint="@color/static_white" android:layout_weight="1"/>
+    <ImageView android:id="@+id/search_swipe_menu_share" android:background="@color/fill_disable" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ud_icon_share_label_outlined" android:scaleType="centerInside" android:tint="@color/static_white" android:layout_weight="1"/>
+</LinearLayout>

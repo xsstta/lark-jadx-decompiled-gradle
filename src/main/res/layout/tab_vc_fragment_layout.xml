@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.meeting.module.tab.history.view.VideoChatMainTabRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/view_root" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetStart="0dp" app:layout_scrollFlags="1">
+                <include android:id="@+id/layout_bt" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tab_vc_top_view_layout"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/smart_refresh_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ss.android.vc.meeting.module.tab.history.view.VCTabRefreshHeader android:id="@+id/tab_rv_header" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_48"/>
+            <com.ss.android.vc.meeting.module.tab.history.view.VcTabPageView android:id="@+id/tag_page_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.ss.android.vc.meeting.module.tab.widgets.PageLoadErrorView android:id="@+id/vc_tab_load_error_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="210dp" android:layout_marginBottom="@dimen/dp_150"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.ss.android.vc.meeting.module.tab.history.view.VideoChatMainTabRelativeLayout>

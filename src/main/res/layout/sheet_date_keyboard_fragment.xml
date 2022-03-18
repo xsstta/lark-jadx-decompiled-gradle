@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.larksuite.component.universe_design.timepicker.UDTimePicker android:layout_gravity="center_vertical" android:id="@+id/timepicker_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:backgroundTint="@color/date_picker_bg" app:ud_timePicker_datePickerMode="4" app:ud_timePicker_itemVisibleNum="5"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/sheet_date_keyboard_selector_height" android:paddingStart="@dimen/sheet_date_keyboard_selector_margin_start">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/date_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:ud_checkbox_size="1"/>
+                <TextView android:textSize="@dimen/sheet_date_keyboard_selector_text_size" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Sheet_DateKeyboardDate"/>
+                <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/time_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" app:ud_checkbox_size="1"/>
+                <TextView android:textSize="@dimen/sheet_date_keyboard_selector_text_size" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Sheet_DateKeyboardTime"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sheet_date_keyboard_selector_text_size" android:textColor="@color/date_keyboard_text_color" android:gravity="center_vertical" android:id="@+id/tv_clear" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Doc_Doc_ColorSelectClear" android:paddingStart="@dimen/sheet_date_keyboard_selector_margin_around" android:paddingEnd="@dimen/sheet_date_keyboard_selector_space_between"/>
+            <TextView android:textSize="@dimen/sheet_date_keyboard_selector_text_size" android:textColor="@color/date_keyboard_text_color" android:gravity="center_vertical" android:id="@+id/tv_confirm" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Doc_Sheet_DateKeyboardConfirm" android:paddingStart="@dimen/sheet_date_keyboard_selector_margin_around" android:paddingEnd="@dimen/sheet_date_keyboard_selector_margin_around"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

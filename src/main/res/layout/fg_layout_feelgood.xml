@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/webviewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/ll_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0806b8"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/fg_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fg_fail"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fg_dark_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/fg_tips"/>
+            <TextView android:textSize="14sp" android:textColor="@color/fg_white_color" android:id="@+id/tv_refresh" android:background="@drawable/fg_button_bg" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="30dp" android:text="@string/fg_refresh" android:paddingHorizontal="15dp" android:paddingVertical="5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="32dp" android:layout_height="32dp" android:indeterminateDrawable="@drawable/fg_progress_circle_shape"/>
+</FrameLayout>

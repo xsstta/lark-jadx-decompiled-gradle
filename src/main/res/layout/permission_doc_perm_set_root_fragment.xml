@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_background="@color/transparent" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_Share_SettingTitle"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/space_kit_len_16" android:layout_marginRight="@dimen/space_kit_len_16" android:animateLayoutChanges="true">
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:textColor="@color/text_placeholder" android:id="@+id/externalShareTitle" android:text="@string/CreationMobile_ECM_Permission_ExternalSharing" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:itemBackgroundColor="@color/facade_selector_item_body">
+                <LinearLayout android:id="@+id/externalAccessLayout" android:minHeight="@dimen/space_kit_len_52" style="@style/ShareSettingTitleFrameLayout">
+                    <com.bytedance.ee.bear.widgets.FlowLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp">
+                        <TextView android:id="@+id/externalAccessText" android:layout_width="wrap_content" android:text="@string/CreationDoc_Minutes_permissions_settings_ExternalShare_toggle" android:layout_marginEnd="4dp" style="@style/ShareSettingTextTitle"/>
+                        <com.bytedance.ee.bear.widgets.universedesign.SimpleTagTextView android:id="@+id/externalAccessTagView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" app:text="@string/CreationMobile_Wiki_Perm_ExternalShare_Current_tag"/>
+                    </com.bytedance.ee.bear.widgets.FlowLayout>
+                    <com.larksuite.component.universe_design.p1166switch.UDSwitch android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/externalAccessSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/shareLayout" android:minHeight="@dimen/space_kit_len_52" style="@style/ShareSettingTitleFrameLayout">
+                    <TextView android:id="@+id/shareText" android:text="@string/CreationMobile_ECM_Permission_External_FullAccess" android:layout_weight="1" android:layout_marginEnd="10dp" style="@style/ShareSettingTextTitle"/>
+                    <com.larksuite.component.universe_design.p1166switch.UDSwitch android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/shareSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+                </LinearLayout>
+            </com.bytedance.ee.bear.widgets.universedesign.SpaceSettingGroupLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:textColor="@color/text_placeholder" android:id="@+id/managerCollaboratorTitle" android:text="@string/CreationMobile_ECM_Permission_AddCollaborator_title" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:id="@+id/managerCollaboratorLayout" android:background="@drawable/facade_round_around_xl" android:minHeight="@dimen/space_kit_len_52" android:backgroundTint="@color/facade_selector_item_body" style="@style/ShareSettingTitleFrameLayout">
+                <TextView android:id="@+id/managerCollaboratorText" android:text="@string/CreationMobile_ECM_Permission_Comment_option" android:layout_weight="1" style="@style/ShareSettingTextTitle"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_ECM_Permission_Change_btn"/>
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:textColor="@color/text_placeholder" android:id="@+id/securityTitle" android:text="@string/CreationMobile_common_whocan" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:id="@+id/securityLayout" android:background="@drawable/facade_round_around_xl" android:minHeight="@dimen/space_kit_len_52" android:backgroundTint="@color/facade_selector_item_body" style="@style/ShareSettingTitleFrameLayout">
+                <TextView android:id="@+id/securityText" android:text="@string/CreationMobile_ECM_Permission_Comment_option" android:layout_weight="1" style="@style/ShareSettingTextTitle"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/securityModifyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_ECM_Permission_Change_btn"/>
+                <ImageView android:id="@+id/securityArrow" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+            <com.bytedance.ee.bear.middleground.permission.widget.DividerTextView android:textColor="@color/text_placeholder" android:id="@+id/commentTitle" android:text="@string/CreationMobile_Minutes_permissions_settings_comment" app:bottomLine="false" app:topLine="false" style="@style/DividerTextTitle"/>
+            <LinearLayout android:id="@+id/commentLayout" android:background="@drawable/facade_round_around_xl" android:minHeight="@dimen/space_kit_len_52" android:backgroundTint="@color/facade_selector_item_body" style="@style/ShareSettingTitleFrameLayout">
+                <TextView android:id="@+id/commentText" android:text="@string/CreationMobile_ECM_Permission_Comment_option" android:layout_weight="1" style="@style/ShareSettingTextTitle"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/commentModifyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_ECM_Permission_Change_btn"/>
+                <ImageView android:id="@+id/commentArrow" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

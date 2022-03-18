@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/orientation_tip" android:background="@drawable/orientation_switcher_bg" android:visibility="gone" android:layout_width="@dimen/sheet_orientation_tip_size" android:layout_height="@dimen/sheet_orientation_tip_size" android:elevation="8dp">
+    <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_screen_rotation_outlined" android:tint="@color/static_white"/>
+</FrameLayout>

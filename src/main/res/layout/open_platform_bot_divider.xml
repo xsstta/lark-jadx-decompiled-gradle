@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="7.5dp"/>
+    <View android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:background="@color/bg_body" android:paddingTop="15.5dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="41.5dp" android:text="@string/Lark_GroupBot_Recommend" android:paddingStart="16dp"/>
+</LinearLayout>

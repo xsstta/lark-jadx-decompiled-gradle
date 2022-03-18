@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/permission_title_bar" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="3">
+            <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:layout_gravity="center_horizontal" android:id="@+id/no_data_empty_state" android:layout_width="332dp" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_access" app:ud_empty_title="@string/Doc_Permission_AdminNotAuthorizeCross" style="@style/SpaceEmptyStatusStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

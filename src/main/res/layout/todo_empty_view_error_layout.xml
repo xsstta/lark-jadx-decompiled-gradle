@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/list_state_loaded_fail_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/list_state_loaded_fail_empty_state" android:layout_marginTop="@dimen/space_kit_len_16" app:ud_empty_desc="@string/Doc_Facade_EmptyDocumentTips" app:ud_empty_imageRes="@drawable/illustration_empty_negative_no_wifi" style="@style/SpaceEmptyStatusStyle"/>
+</LinearLayout>

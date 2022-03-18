@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/lkui_N900" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_bottom_bar" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:id="@+id/tv_cancel" android:background="@drawable/photo_editor_close" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="24.5dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17sp" android:textColor="@color/lkui_N00" android:id="@+id/tv_text_clip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ClipEditRotateAndCrop" android:layout_centerInParent="true"/>
+        <TextView android:id="@+id/tv_finish" android:background="@drawable/photo_editor_ok_unpressed" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="22dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_rotate_and_back" android:background="@color/lkui_N900" android:layout_width="match_parent" android:layout_height="40.3dp" android:layout_above="@+id/rl_bottom_bar">
+        <TextView android:id="@+id/tv_rotate" android:background="@drawable/photo_editor_clip_rotation" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="26dp"/>
+        <TextView android:id="@+id/tv_reset" android:background="@drawable/photo_editor_back" android:clickable="true" android:layout_width="21.5dp" android:layout_height="21.5dp" android:layout_marginRight="26dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.ss.android.photoeditor.crop_rotate.PhotoClipView android:id="@+id/photo_clip_view" android:background="@color/lkui_N900" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_rotate_and_back"/>
+</RelativeLayout>

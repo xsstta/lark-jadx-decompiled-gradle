@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/mail_messagelist_reset_fortab" android:background="@color/bg_body" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mail_web_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.ss.android.lark.mail.impl.uiframework.view.actionbar.ActionBar android:id="@+id/mail_messagelist_bottombar" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+    <View android:id="@+id/mail_messagelist_bottombar_line" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintBottom_toTopOf="@+id/mail_messagelist_bottombar"/>
+    <FrameLayout android:id="@+id/msglist_loading" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mail_messagelist_tips_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/mail_error_tips_img" android:layout_width="130dp" android:layout_height="130dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Mail_Common_NetworkError"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

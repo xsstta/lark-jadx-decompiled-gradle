@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:id="@+id/keyBoardFrameLayout" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/ud_N900" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.keyboard.plugin.input.postinput.DragShrinkLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/thread_group_select_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_gravity="center_horizontal" android:id="@+id/selectDialogTitle" android:background="@drawable/post_topic_dialog_title" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_18"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/groupPtrLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_mode="2" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+                <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/groupRv" android:paddingBottom="18dp" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/lkui_transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+            </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/skeletonLoadingRv" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </com.ss.android.lark.keyboard.plugin.input.postinput.DragShrinkLayout>
+</FrameLayout>

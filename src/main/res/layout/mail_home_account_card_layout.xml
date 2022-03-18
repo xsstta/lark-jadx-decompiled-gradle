@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mail_account_card_header" android:layout_width="match_parent" android:layout_height="46dp">
+    <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/mail_account_card_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/mail_account_card_right_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mail_account_card_right_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="18dp" android:src="@drawable/ud_icon_switch_outlined" android:tint="@color/icon_n2" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <com.larksuite.component.universe_design.badge.UDBadgeView android:id="@+id/mail_account_card_hint_dot" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="-3dp" android:layout_marginRight="12dp" android:layout_alignTop="@+id/mail_account_card_right_icon" android:layout_alignParentRight="true" style="@style/UDBadge.Dot.StrongReminder.Small"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/mail_divider_height" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

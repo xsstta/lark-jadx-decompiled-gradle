@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/drive_upload_list_swipe_menu_width" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/swipe_menu_delete" android:background="@color/function_danger_500" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/swipe_menu_del_confirm" android:background="@color/function_danger_500" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+</RelativeLayout>

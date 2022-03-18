@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/ud_N600" android:pathData="M15.3096,5H7.0167C6.7405,5 6.5167,5.2239 6.5167,5.5V18.5C6.5167,18.7761 6.7405,19 7.0167,19H17.0167C17.2928,19 17.5167,18.7761 17.5167,18.5V7.2071C17.5167,7.0745 17.464,6.9473 17.3702,6.8535L15.6631,5.1465C15.5693,5.0527 15.4422,5 15.3096,5ZM16.3166,17.8001H7.7166V6.2001H14.5167V7.825C14.5167,7.9216 14.595,8 14.6917,8H16.3166V17.8001Z"/>
+    <path android:fillColor="#00000000" android:pathData="M11.5,14.0737H11.1667H10.6667V14.5737V15.9495V16.0391H9.5833V10.75H10.6667V11.0361V11.8223V12.1084V12.3223V12.6084V13.3945V13.8945H11.1667H11.5V14.0737ZM13.3526,13.3945V13.1084V12.8945V12.6084V11.8223V11.3223H12.8526H12.5V11.0361V10.75H14.4167V16.0391H13.3333V15.9495V14.6807H13.3526V14.1807V13.3945Z" android:strokeColor="@color/ud_N600" android:strokeWidth="1"/>
+    <path android:fillColor="@color/ud_N600" android:pathData="M9.6667,10.25h1.1667v5.8333h-1.1667z"/>
+    <path android:fillColor="@color/ud_N600" android:pathData="M12,10.8333h1.1667v0.5833h-1.1667z"/>
+    <path android:fillColor="@color/ud_N600" android:pathData="M10.25,13.75h1.1667v0.5833h-1.1667z"/>
+    <path android:fillColor="@color/ud_N600" android:pathData="M13.1667,10.8333h1.1667v5.25h-1.1667z"/>
+</vector>

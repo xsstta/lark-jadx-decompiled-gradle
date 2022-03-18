@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="36dp">
+    <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Mail_Label_FilterUnreadEmailsToast" android:singleLine="true"/>
+</FrameLayout>

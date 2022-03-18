@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@+id/card_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="@color/bg_body" app:cardCornerRadius="8dp" app:cardElevation="5dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/recordcard_top_bar" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/recordcard_title_ll" android:layout_width="match_parent" android:layout_height="42dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <ImageView android:id="@+id/recordcard_close" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_minimize_outlined" android:tint="@color/icon_n1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <com.bytedance.ee.bear.bitable.card.view.title.BitableCardTitleView android:id="@+id/recordcard_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="34dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/add_record_titlebar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_42" android:paddingStart="@dimen/space_kit_len_12" android:paddingEnd="@dimen/space_kit_len_12">
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/add_record_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Bitable_AdvancedPermission_AddRecordButtonCancel" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Bitable_AdvancedPermission_AddRecordTitle" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/primary_pri_500" android:id="@+id/add_record_confirm_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Bitable_AdvancedPermission_AddRecordButtonAdd" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/recordcard_banner" android:background="@color/function_warning_100" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_feed_failed" android:layout_marginStart="10dp" android:layout_marginEnd="4dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/function_warning_500" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/Doc_Block_RecordFilteredTip" android:layout_weight="1"/>
+            <ImageView android:id="@+id/recordcard_banner_close" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_feed_close" android:layout_marginStart="4dp" android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+        <View android:id="@+id/recordcard_border" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recordcard_content_recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/no_permission_placeholder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/space_kit_len_110" android:layout_height="@dimen/space_kit_len_110" android:src="@drawable/bitable_permission_limited_view"/>
+        <TextView android:textSize="@dimen/font_size_17" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_12" android:text="@string/Bitable_Relation_NoPermissionToAccessRecord"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

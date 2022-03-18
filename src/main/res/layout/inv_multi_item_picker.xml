@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="16dp" android:src="@drawable/ud_icon_close_outlined" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:tint="@color/icon_n3"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title"/>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/tv_title" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="-1dp" android:layout_below="@+id/ll_tab"/>
+    <com.ss.android.lark.invitation.v2.feat.member.welcome.NoScrollViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="300dp" android:layout_below="@+id/ll_tab"/>
+</RelativeLayout>

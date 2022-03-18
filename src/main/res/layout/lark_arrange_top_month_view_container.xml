@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.timepicker.monthview.MonthViewLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lookMonthLayout" android:background="@color/bg_float" android:layout_width="match_parent" android:layout_height="242dp">
+    <com.ss.android.lark.widget.timepicker.monthview.ListCalendarWeekIndicator android:orientation="horizontal" android:id="@+id/lookWeekIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_weight="0"/>
+    <com.ss.android.lark.widget.timepicker.monthview.MonthViewPager android:id="@+id/lookMonthViewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+</com.ss.android.lark.widget.timepicker.monthview.MonthViewLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/media_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_1" android:layout_marginEnd="@dimen/dp_1">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/media_cover" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" android:layout_marginTop="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5" app:border_width="0.5dp" app:radius="4dp"/>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/shadow" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" android:layout_marginTop="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5" app:radius="4dp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_ic_play" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_2d5" android:src="@drawable/ud_icon_play_filled" android:layout_marginEnd="@dimen/dp_2d5"/>
+    <ImageView android:id="@+id/iv_state" android:padding="4dp" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="34dp" android:layout_marginStart="29dp"/>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="end" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@color/bg_body" app:oval="true"/>
+    <ImageView android:layout_gravity="end" android:id="@+id/icDelete" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_22" android:layout_margin="@dimen/dp_1" android:src="@drawable/ud_icon_close_filled"/>
+</FrameLayout>

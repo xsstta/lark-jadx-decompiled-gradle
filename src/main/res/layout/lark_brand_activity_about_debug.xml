@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/titleBar_content" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/page_close" android:background="@null" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <TextView android:textSize="17sp" android:textColor="#222222" android:ellipsize="end" android:gravity="center" android:id="@+id/page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="150dp" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/open_debug_log_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/open_debug_log_sw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/open_debug_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/open_debug_sw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/lark_brand_launch_tracing" android:layout_weight="1"/>
+                    <Switch android:id="@+id/enable_launch_tracing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/open_appid_ly" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/lark_brand_open_appid"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/appid_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/editor_url_ly" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="editor load url"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/editorUrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/open_shema_ly" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/open_shema" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/lark_brand_use_schema"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/schema_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/replace_zip_ly" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/lark_brand_replace_zip"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/zip_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/forceUpdateAppbrand" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/update_Appbrand_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/current_version" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/current_version_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/forceUpdateJssdk" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/update_Jssdk_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/assign_jssdk" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/lark_brand_useassign_jssdk"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/jssdk_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/useStableJssdk" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/needstable_Jssdk_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/noCompressJssdk" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/nocompress_Jssdk_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/use_ok_http" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <Switch android:id="@+id/use_ok_http_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Enable Snapshot" android:layout_weight="1"/>
+                    <Switch android:id="@+id/enable_snapshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Enable Standard Snapshot" android:layout_weight="1"/>
+                    <Switch android:id="@+id/enable_standard_snapshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/lark_brand_switch_on" android:track="@drawable/lark_brand_switch_track" android:switchMinWidth="51dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/clean_snapshot" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Clean Snapshot"/>
+                </LinearLayout>
+                <TextView android:textColor="#222222" android:id="@+id/currentDeviceId" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/copy_lark_session" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/lark_session_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/lark_brand_copy_session"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/microapp_m_ssxinheihui3" android:id="@+id/lark_session" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:singleLine="true" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="0x7f080ed4"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/microapp_m_white" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/force_falcon_engine" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <RadioGroup android:orientation="vertical" android:id="@+id/falcon_config" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RadioButton android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/use_falcon_fg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/force_open_falcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onRadioButtonClicked"/>
+                        <RadioButton android:textSize="15sp" android:textColor="@color/microapp_m_ssxinheihui1" android:id="@+id/force_close_falcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onRadioButtonClicked"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView android:textColor="#222222" android:id="@+id/show_js_version" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#222222" android:id="@+id/show_miniapp_version" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#222222" android:id="@+id/is_ssb_model" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#222222" android:id="@+id/is_falcon_js_engine" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#222222" android:id="@+id/show_component_version" android:paddingLeft="15dp" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/debug_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Release Environment"/>
+</FrameLayout>

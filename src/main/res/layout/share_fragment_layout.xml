@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/facade_round_top_xxl" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/bg_float_base">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/share_title_bar" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_back_icon="@drawable/ud_icon_close_small_outlined" app:widget_widgets_tb_background="@color/color_transparent" app:widget_widgets_tb_divider_height="@dimen/ud_divider_size" app:widget_widgets_tb_divider_visible="true" app:widget_widgets_tb_title="@string/Doc_Facade_Share"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/shareContainer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.bytedance.ee.bear.bizwidget.shareview.ExternalShareView android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/shareExternalView" android:background="@color/color_transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

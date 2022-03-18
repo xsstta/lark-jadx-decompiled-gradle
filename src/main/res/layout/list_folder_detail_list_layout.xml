@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.list.homepage.HomeCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/list_layout_root" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/collapsing_tool_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_home_title_bar_height_max" app:layout_scrollFlags="1">
+            <com.bytedance.ee.bear.facade.common.widget.NoNetworkView android:id="@+id/no_net_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_home_title_bar_height_max"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/list_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:srlEnableLoadmore="false" app:srlEnableOverScrollBounce="false" app:srlEnableOverScrollDrag="false" app:srlEnablePreviewInEditMode="true" app:srlEnableRefresh="true">
+        <com.bytedance.ee.bear.facade.common.widget.recyclerview.DigitDanceHeader android:id="@+id/list_refresh_header" android:layout_width="match_parent" android:layout_height="@dimen/list_default_digital_dance_height" android:layout_marginTop="10dp"/>
+        <com.bytedance.ee.bear.facade.common.widget.recyclerview.ListRecyclerView android:id="@+id/list_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.bytedance.ee.bear.list.loadstateview.LoadStateView android:id="@+id/list_state_view_root" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.bytedance.ee.bear.list.homepage.HomeCoordinatorLayout>

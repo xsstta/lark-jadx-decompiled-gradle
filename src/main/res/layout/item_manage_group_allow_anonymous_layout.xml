@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/group_allow_anonymity_layout" android:background="@drawable/bg_setting_group_item_round_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cell_height" android:paddingStart="16dp" android:paddingEnd="3dp">
+    <TextView android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+    <com.larksuite.component.ui.button.LKUISwitchButton android:id="@+id/group_allow_anonymity_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="17.5dp" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cell_vertical_margin" android:layout_marginBottom="@dimen/cell_vertical_margin" android:layout_centerVertical="true" android:layout_toStartOf="@+id/group_allow_anonymity_button" android:layout_alignParentStart="true">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/group_allow_anonymity_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Groups_MgmtAllowAnonymity"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/group_allow_anonymity_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Groups_MgmtAllowAnonymityDesc" android:maxLines="2"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/drive_place_holder_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.32">
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/drive_place_holder_icon" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_preview" style="@style/SpaceEmptyStatusStyle"/>
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/drive_place_holder_lottie_view" android:visibility="gone" app:lottie_autoPlay="true" app:lottie_loop="true" style="@style/BearLottieView"/>
+    </FrameLayout>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/drive_place_holder_message" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/drive_place_holder_container" app:ud_empty_imageRes="@null" style="@style/SpaceEmptyStatusStyle"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/drive_place_holder_open_external" android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/drive_place_holder_message" app:ud_empty_imageRes="@null" app:ud_empty_primaryText="@string/Drive_Drive_OpenWithOtherApps" style="@style/SpaceEmptyStatusStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

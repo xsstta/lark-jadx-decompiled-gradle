@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/microapp_m_shape_round_corner_4dp_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/microapp_m_modal_dialog_minimum_height">
+    <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_desc" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:maxLines="2" android:lineSpacingExtra="5dp" android:letterSpacing="0"/>
+    <ImageView android:id="@+id/iv_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="0dp" android:scaleType="fitXY"/>
+    <View android:id="@+id/div_above_buttons" android:background="@color/microapp_m_black_7" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_red" android:gravity="center" android:id="@+id/tv_confirm" android:layout_width="match_parent" android:layout_height="48dp"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@+id/content_view" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_horizontal" android:id="@+id/guide_dot_top" android:background="@color/ud_B100" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="8dp"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@+id/guide_triangle_top" android:layout_width="20dp" android:layout_height="10dp" android:rotation="180" android:elevation="5dp" app:srcCompat="@drawable/calendar_ic_calendar_detail_guide_triangle" app:tint="@color/primary_pri_400"/>
+        <androidx.cardview.widget.CardView android:id="@+id/guide_card" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginStart="13dp" android:layout_marginEnd="13dp" app:cardBackgroundColor="@color/primary_pri_400" app:cardCornerRadius="8dp" app:cardElevation="5dp">
+            <androidx.constraintlayout.widget.ConstraintLayout android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/guide_image" android:layout_width="260dp" android:layout_height="160dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/calendar_ic_calendar_detail_guide"/>
+                <TextView android:textSize="16dp" android:textColor="@color/ud_N00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/Calendar_Onboarding_OnboardDesc" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/guide_image"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@+id/guide_triangle_bottom" android:layout_width="20dp" android:layout_height="wrap_content" android:elevation="5dp" app:srcCompat="@drawable/calendar_ic_calendar_detail_guide_triangle"/>
+        <View android:layout_gravity="center_horizontal" android:id="@+id/guide_dot_bottom" android:background="@color/ud_B100" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</FrameLayout>

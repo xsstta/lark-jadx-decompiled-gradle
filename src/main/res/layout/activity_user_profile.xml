@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mRootViewGroup" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/mAppBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionName="picture" app:layout_behavior="com.ss.android.lark.profile.func.user_profile.header.HeaderBehavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/mToolBarLayout" android:layout_width="match_parent" android:layout_height="330dp" android:minHeight="180dp" app:layout_collapseParallaxMultiplier="0.6" app:layout_scrollFlags="3"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.larksuite.framework.ui.StableNestedScrollView android:id="@+id/mProfileScrollView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="64dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/mDestopProfileHeaderContainer" android:layout_width="match_parent" android:layout_height="225dp"/>
+                <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/mInfoRv" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/mPlaceholder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="150dp">
+                    <com.larksuite.component.universe_design.emptystate.UDEmptyState android:orientation="vertical" android:id="@+id/mEmptyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:ud_empty_desc="@string/Lark_NewContacts_ProfileNoInfo" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/UDEmptyState.Negative"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.larksuite.framework.ui.StableNestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/mTitleBar" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_divider_visible="false"/>
+    <TextView android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/mFriendRequestBtn" android:background="@drawable/contacts_friend_request_btn_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/mTipsTv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="38dp" android:text="@string/Lark_Server_SystemContent_BlockedTipInChat" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" app:layout_constraintBottom_toTopOf="@+id/mFriendRequestBtn" app:layout_goneMarginBottom="55dp"/>
+</com.larksuite.component.ui.layout.LKUIRelativeLayout>

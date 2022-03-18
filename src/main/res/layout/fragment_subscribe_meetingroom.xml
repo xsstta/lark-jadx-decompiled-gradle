@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/subscribeTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/subscribeTitleBar">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/meetingRoomRecycleView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.widget.CalendarLoadingView android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</RelativeLayout>

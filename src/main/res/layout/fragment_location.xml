@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/location_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.locationmessage.widget.SearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/fl_set_location_map" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_110">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_110" app:layout_scrollFlags="3">
+                    <FrameLayout android:id="@+id/location_fl_map_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="0.5">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/map_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_280"/>
+                        <ImageView android:layout_gravity="center" android:id="@+id/iv_location_icon" android:visibility="gone" android:layout_width="@dimen/dp_22" android:layout_height="@dimen/dp_34" android:src="@drawable/location_icon_event_location"/>
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/location_iv_locate_position" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_69" android:layout_marginRight="@dimen/dp_8_5" android:layout_marginBottom="@dimen/dp_6" android:src="@drawable/location_navigate_position_selector" app:layout_anchor="@+id/appbar" app:layout_anchorGravity="800055"/>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.larksuite.framework.ui.StableNestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.ss.android.lark.locationmessage.widget.LoadingView android:id="@+id/location_nearby_loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12"/>
+                    <ListView android:id="@+id/lv_nearby" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/location_position_item_divider_line" android:dividerHeight="@dimen/dp_0_5"/>
+                </FrameLayout>
+            </com.larksuite.framework.ui.StableNestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/location_fl_recommend" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.locationmessage.widget.LoadingView android:id="@+id/location_recommend_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/location_ll_recommend" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@+id/location_line_recommend" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/dp_0_5"/>
+            <ListView android:id="@+id/lv_recommend" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/location_position_item_divider_line" android:dividerHeight="@dimen/dp_0_5"/>
+        </LinearLayout>
+        <include layout="@layout/location_empty_view"/>
+    </FrameLayout>
+</LinearLayout>

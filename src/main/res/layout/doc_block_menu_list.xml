@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:id="@+id/menu_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.bytedance.ee.bear.shadow.ShadowLinearLayout android:layout_gravity="bottom" android:id="@+id/menu_parent" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:borderColor="@color/space_kit_n300" app:borderWidth="1dp" app:radius="4dp" app:shadowAlpha="0.6" app:shadowElevation="3dp" app:showBorderOnlyBeforeL="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/menu_list" android:padding="8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="86dp"/>
+    </com.bytedance.ee.bear.shadow.ShadowLinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ud_dialog_root" android:background="@null" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/ud_bg_action_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/ud_dialog_header_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/ud_action_panel_header_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size"/>
+        <FrameLayout android:id="@+id/ud_dialog_content_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ud_dialog_footer_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ud_action_panel_padding_cancel"/>
+</LinearLayout>

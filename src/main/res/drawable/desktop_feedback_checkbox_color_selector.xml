@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/ud_B500"/>
+    <item android:color="@color/ud_B500" android:state_hovered="true"/>
+    <item android:color="@color/ud_N500"/>
+</selector>

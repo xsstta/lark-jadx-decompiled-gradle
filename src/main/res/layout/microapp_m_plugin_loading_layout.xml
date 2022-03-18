@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/microapp_m_video_loading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tt.miniapp.video.view.widget.RotateImageView android:id="@+id/microapp_m_video_loading_progress" android:layout_width="@dimen/microapp_m_video_loading_image_size" android:layout_height="@dimen/microapp_m_video_loading_image_size" android:src="@drawable/microapp_m_video_loading" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/microapp_m_video_loading_retry" android:background="@color/microapp_m_material_black_87" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="14sp" android:textColor="@color/microapp_m_white" android:id="@+id/microapp_m_video_retry_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="@string/microapp_m_video_retry_tips"/>
+            <TextView android:textSize="14sp" android:textColor="@color/microapp_m_white" android:gravity="center" android:id="@+id/microapp_m_video_retry" android:background="@drawable/microapp_m_material_video_retry_bg" android:layout_width="84dp" android:layout_height="32dp" android:text="@string/microapp_m_click_to_retry" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

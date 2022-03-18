@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:layout_width="42dp" android:layout_height="52dp">
+    <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:id="@+id/itemEmoji" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="32dp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_28" android:textColor="@color/icon_n2" android:id="@+id/itemEmoji_iconfont" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_more_add" android:layout_centerInParent="true" android:rotation="45"/>
+</RelativeLayout>

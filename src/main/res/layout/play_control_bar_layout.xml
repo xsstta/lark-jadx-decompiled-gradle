@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="1dp">
+        <CheckBox android:id="@+id/play_btn" android:background="@null" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:button="@drawable/ic_play_selector"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/loading_progress" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminateDrawable="@drawable/play_control_loading_bg"/>
+    </FrameLayout>
+    <SeekBar android:id="@+id/play_seekbar" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="1dp" android:progressDrawable="@drawable/seekbar_progress" android:thumb="@drawable/seekbar_thumb_selector" android:thumbOffset="5dp" android:layout_weight="1" android:paddingStart="11dp" android:paddingEnd="8dp" android:splitTrack="false"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/lkui_N600" android:id="@+id/duration_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:36"/>
+</LinearLayout>

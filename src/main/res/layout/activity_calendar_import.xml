@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activityRoot" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/importGoogleLl" android:background="@drawable/unsubscribe_item_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:layout_marginTop="@dimen/dp_16">
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_google_colorful" android:layout_marginStart="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/importGoogleTv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_GoogleCal_Title" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12"/>
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginEnd="@dimen/dp_15"/>
+        </LinearLayout>
+        <View android:id="@+id/googleCalendarLine" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_44"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/importExchangeLl" android:background="@drawable/unsubscribe_item_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_exchange_colorful" android:layout_marginStart="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/importExchangeTv" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Sync_ExchangeCalendar" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12"/>
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginEnd="@dimen/dp_15"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/importExchangeTips" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_Sync_ExchangeCalendarDescription" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/importLocalLl" android:background="@drawable/unsubscribe_item_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_phone_colorful" android:layout_marginStart="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Setting_LocalCalendars" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12"/>
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginEnd="@dimen/dp_15"/>
+        </LinearLayout>
+        <View android:id="@+id/localCalendarLine" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_44"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

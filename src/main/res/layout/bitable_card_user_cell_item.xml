@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.larksuite.component.universe_design.image.UDAvatar android:layout_gravity="center_vertical" android:id="@+id/user_avatar" android:layout_width="@dimen/space_kit_len_20" android:layout_height="@dimen/space_kit_len_20" android:layout_margin="4dp" app:ud_avatar_borderWidth="0dp" app:ud_avatar_size="-4" style="@style/UDAvatar.Circle"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_title" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginStart="2dp" android:layout_marginEnd="8dp"/>
+</merge>

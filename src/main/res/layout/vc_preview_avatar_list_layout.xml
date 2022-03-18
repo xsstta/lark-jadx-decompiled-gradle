@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.vc.common.widget.avatarlist.VcCrescentPhotoRecyclerView android:id="@+id/video_meeting_card_participant" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/video_meeting_card_last_participant" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="2dp" android:layout_marginEnd="2dp" app:civ_oval="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/video_meeting_card_participant_number" android:background="@drawable/videomeeting_card_participant_number_preview" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:text="12" android:layout_marginStart="2dp" android:layout_marginEnd="2dp" android:lineHeight="20dp"/>
+</merge>

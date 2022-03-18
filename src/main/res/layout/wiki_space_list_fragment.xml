@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_45" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_Wiki_Home_Title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.wikiv2.searchv2.WikiSearchView2 android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_48">
+            <com.bytedance.ee.bear.wikiv2.home.viewall.WikiSpaceListRvView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/empty_view" android:visibility="gone" android:layout_marginTop="206dp" app:ud_empty_desc="@string/Doc_Wiki_Network_Error" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/SpaceEmptyStatusStyle"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12dp" android:textColor="@color/ud_G600" android:gravity="center" android:background="@drawable/vc_banner_num_bg" android:layout_width="@dimen/vc_banner_avatar_size" android:layout_height="@dimen/vc_banner_avatar_size"/>

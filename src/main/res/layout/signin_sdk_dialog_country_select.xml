@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_root" android:background="@drawable/signin_sdk_dialog_bottom_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <com.ss.android.lark.passport.infra.widget.CommonTitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="44dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:tb_left_icon="@drawable/signin_sdk_titlebar_close_black_bg_selector" app:tb_left_padding="16dp" app:tb_left_type="0" app:tb_title_color="@color/text_title" app:tb_title_text="@string/Lark_Login_TitleOfCountryCode" app:tb_title_text_size="17sp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_country" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

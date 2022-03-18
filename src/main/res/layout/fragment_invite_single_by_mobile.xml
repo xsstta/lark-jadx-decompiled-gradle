@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.lark_chat_keyboard.widget.KeyboardDetectorFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_view" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/invite_single_by_mobile_content" android:background="@color/lkui_N00" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:layout_centerHorizontal="true">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:gravity="center" android:id="@+id/invite_single_by_mobile_area_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.5dp" android:layout_marginBottom="10dp" android:minWidth="40dp" android:text="+86"/>
+                <EditText android:textSize="16sp" android:textColor="@color/lkui_N900" android:textColorHint="@color/lkui_N500" android:id="@+id/invite_single_by_mobile_num" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:hint="@string/Lark_Legacy_PhoneNumber" android:maxEms="20" android:singleLine="true" android:layout_weight="1" android:inputType="text" android:imeOptions="actionDone"/>
+            </LinearLayout>
+            <View android:id="@+id/invite_single_by_mobile_bottom_divider" android:background="@color/lkui_N300" android:layout_width="240dp" android:layout_height="0.5dp"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/above_keyboard_layout" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_below="@+id/invite_single_by_mobile_content" android:layout_centerHorizontal="true">
+            <FrameLayout android:id="@+id/invite_single_by_mobile_tip_layout" android:layout_width="190dp" android:layout_height="125dp" android:layout_marginTop="20dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/invite_single_by_mobile_tip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/invite_for_teamwork"/>
+            </FrameLayout>
+            <TextView android:textColor="@color/lkui_N600" android:gravity="center" android:id="@+id/invite_single_by_mobile_tip_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/Lark_UserGrowth_InviteTenantViaPhone" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/invite_single_by_mobile_tip_layout"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.larksuite.component.ui.button.LKUIButton android:id="@+id/invite_single_by_mobile_confirm_invite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="40dp" android:text="@string/Lark_UserGrowth_InviteTenantClickShare" android:layout_below="@+id/above_keyboard_layout" android:layout_centerHorizontal="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:button_style="1"/>
+    </RelativeLayout>
+</com.ss.android.lark.widget.lark_chat_keyboard.widget.KeyboardDetectorFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="20dp">
+    <ImageView android:id="@+id/iv_play" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_pause_livestream_outlined" app:tint="@color/static_white"/>
+    <ImageView android:id="@+id/iv_refresh" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="14dp" android:src="@drawable/ud_icon_replace_outlined" app:tint="@color/static_white"/>
+    <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center_vertical" android:id="@+id/tv_playtime" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginStart="14dp"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="44dp" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.universe_design.datepicker.UDDatePicker android:id="@+id/month_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp"/>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Todo_Task_SetDueTime"/>
+                <com.larksuite.component.universe_design.p1166switch.UDSwitch android:gravity="right" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/time_hour_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:checked="true"/>
+            </FrameLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp"/>
+            <FrameLayout android:id="@+id/due_hour_time_container" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Todo_Task_DueAt"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_caption" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/due_hour_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+                <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp"/>
+            </FrameLayout>
+            <com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer android:id="@+id/hour_time_wheel_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/time_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" app:ud_timePicker_datePickerMode="3" app:ud_timePicker_minuteInternal="15"/>
+                <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer>
+            <FrameLayout android:id="@+id/reminder_text_container" android:layout_width="match_parent" android:layout_height="60dp">
+                <TextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Todo_Task_SetAlertTime"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_caption" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/alert_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+                <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp"/>
+            </FrameLayout>
+            <com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer android:id="@+id/reminder_wheel_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.larksuite.component.universe_design.timepicker.impl.base.WheelView android:id="@+id/reminder_wheel_all_day" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+                <com.larksuite.component.universe_design.timepicker.impl.base.WheelView android:id="@+id/reminder_wheel_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+                <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </com.ss.android.lark.todo.impl.features.detail.time.WheelViewContainer>
+            <View android:layout_width="match_parent" android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

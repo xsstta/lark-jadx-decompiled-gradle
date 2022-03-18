@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivIcon" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_centerVertical="true" android:layout_marginStart="48dp">
+        <com.ss.android.lark.mm.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:ux_line_height="22dp"/>
+        <com.ss.android.lark.mm.widget.LineHeightTextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvSubTitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineHeight="18dp"/>
+    </LinearLayout>
+    <com.larksuite.component.universe_design.p1166switch.UDSwitch android:id="@+id/ivSwitch" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:layout_marginStart="48dp"/>
+</RelativeLayout>

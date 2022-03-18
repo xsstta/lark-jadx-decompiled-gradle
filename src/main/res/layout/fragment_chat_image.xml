@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/layout_content_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/inbox_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="500" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_mode="2" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="0.5" ptr:lkui_ptr_resistance="1.7">
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/content" android:paddingTop="@dimen/dp_4" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+        <com.ss.android.lark.album.image.decoration.StickyHeadContainer android:id="@+id/sticky_header_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/ud_N900" android:id="@+id/tv_sticky_content" android:paddingLeft="12dp" android:paddingTop="@dimen/dp_6" android:paddingRight="12dp" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:includeFontPadding="false"/>
+        </com.ss.android.lark.album.image.decoration.StickyHeadContainer>
+        <include layout="@layout/view_image_result_empty"/>
+    </FrameLayout>
+    <include layout="@layout/view_loading_image"/>
+</RelativeLayout>

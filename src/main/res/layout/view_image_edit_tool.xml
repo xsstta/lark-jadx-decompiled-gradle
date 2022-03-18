@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/ud_N00_90" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_graffiti_menu" android:paddingLeft="20dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_graffiti_menu" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_pen_outlined" android:tint="@color/icon_n1"/>
+        <TextView android:textSize="10dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/tv_graffiti_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="16dp" android:text="@string/Lark_ImageViewer_Draw"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_text_menu" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_text_menu" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_text_outlined" android:tint="@color/icon_n1"/>
+        <TextView android:textSize="10dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/tv_text_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="16dp" android:text="@string/Lark_ImageViewer_Text"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_crop_menu" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_crop_menu" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_rotate_slice_outlined" android:tint="@color/icon_n1"/>
+        <TextView android:textSize="10dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/tv_crop_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="16dp" android:text="@string/Lark_ImageViewer_Crop"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_mosaic_menu" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_mosaic_menu" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_mosaic_outlined" android:tint="@color/icon_n1"/>
+        <TextView android:textSize="10dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/tv_mosaic_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:minHeight="16dp" android:text="@string/Lark_ImageViewer_Pixelate"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14dp" android:textColor="@color/lkui_N00" android:id="@+id/btn_finish" android:background="@drawable/bg_action_btn" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_ImageViewer_Done"/>
+    </LinearLayout>
+</LinearLayout>

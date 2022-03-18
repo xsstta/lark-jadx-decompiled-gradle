@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/number_keyboard_bg_color" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.sheet.inputbar.subpanel.SheetNumKeyboardView android:layout_gravity="center" android:id="@+id/keyboard_view" android:background="@color/number_keyboard_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:shadowRadius="0" android:keyBackground="@drawable/number_keyboard_btn_center_selector" android:keyTextSize="@dimen/sheet_number_keyboard_text_size" android:keyTextColor="@color/text_title"/>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center" android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_centerVertical="true"/>
+    <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/static_white" android:id="@+id/tvAction" android:clickable="false" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:ud_backgroundColor="@color/ud_button_blue_bg" style="@style/UDButton.Small.Circle"/>
+</merge>

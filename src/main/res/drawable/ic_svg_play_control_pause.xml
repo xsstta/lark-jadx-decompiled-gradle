@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <size android:height="20dp" android:width="20dp"/>
+            <solid android:color="@color/imtoken_message_icon_voice_grey_bg"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_icon_pause_filled_white" android:left="5dp" android:top="5dp" android:right="5dp" android:bottom="5dp"/>
+</layer-list>

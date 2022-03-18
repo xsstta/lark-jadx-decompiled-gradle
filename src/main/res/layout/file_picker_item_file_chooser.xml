@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/file_picker_item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="64dp">
+    <FrameLayout android:id="@+id/layout_file_select" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.larksuite.component.ui.button.LKUICheckBox android:layout_gravity="center_vertical" android:id="@+id/checkbox_file_select" android:focusable="false" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="12dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_file_icon" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_file_icon" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/right_remove_image_layout" android:paddingLeft="5dp" android:paddingRight="15dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_remove_image" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_close_outlined" app:tint="@color/ud_N500"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_remove_image_layout" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="middle" android:id="@+id/text_file_name" android:layout_width="match_parent" android:layout_height="21dp" android:singleLine="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/desc_layout" android:layout_width="match_parent" android:layout_height="16.5dp" android:layout_marginTop="4dp">
+                <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/text_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/text_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

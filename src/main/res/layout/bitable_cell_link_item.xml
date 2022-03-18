@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@drawable/bitable_card_field_attachment_bg" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bitable_cell_min_height">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/link_field_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_6" android:layout_marginBottom="@dimen/space_kit_len_2"/>
+        <FrameLayout android:id="@+id/add_link_record_button_fl" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_36">
+            <ImageView android:layout_gravity="center" android:id="@+id/add_link_record_button" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <View android:id="@+id/bottom_space_holder" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_4"/>
+    </LinearLayout>
+</LinearLayout>

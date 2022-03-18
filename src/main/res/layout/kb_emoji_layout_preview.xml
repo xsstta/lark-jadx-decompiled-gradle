@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/preview_bg_ll" android:background="@drawable/emoji_preview_bg" android:paddingLeft="9dp" android:paddingTop="9dp" android:paddingRight="9dp" android:paddingBottom="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/bg_float">
+        <com.ss.android.lark.widget.AutoRecycleGifImageView android:id="@+id/preview_iv" android:layout_width="115dp" android:layout_height="115dp" android:scaleType="fitCenter"/>
+        <ImageView android:id="@+id/preview_iv_normal" android:visibility="gone" android:layout_width="115dp" android:layout_height="115dp" android:scaleType="fitCenter"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/content_tv" android:visibility="gone" android:layout_width="115dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:lines="1"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

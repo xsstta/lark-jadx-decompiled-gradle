@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="120dp" android:width="120dp" android:viewportWidth="120" android:viewportHeight="120">
+    <path android:fillColor="#0c296e" android:pathData="M12.415 62.695v9.345c-4.83 4.083-7.602 9.643-7.602 12.575V72.8c0-3.078 3.337-7.174 7.602-10.105zm94.089-7.005v-8.764c4.904 0.354 9.247 4.156 9.247 7.509 0 1.524-0.807 3.002-2.192 5.257 0-4.002-7.055-4.002-7.055-4.002z"/>
+    <path android:fillColor="#0c296e" android:pathData="M13 37.121c-3.266 1.27-6 3.739-6 8.186v9.934c0.038-5.96 3.088-8.554 6-9.67v-8.45z" android:fillType="1"/>
+    <path android:fillColor="#0c296e" android:pathData="M16.416 34.654H37.19a3 3 0 0 1 2.308 1.084l7.31 8.804a5 5 0 0 0 3.848 1.806h49.447a3 3 0 0 1 3 3v52.619a3 3 0 0 1-3 3H16.416a3 3 0 0 1-3-3V37.654a3 3 0 0 1 3-3zm0-1a4 4 0 0 0-4 4v64.313a4 4 0 0 0 4 4h83.686a4 4 0 0 0 4-4V49.348a4 4 0 0 0-4-4H50.655a4 4 0 0 1-3.078-1.445l-7.31-8.804a4 4 0 0 0-3.078-1.445H16.416z"/>
+    <path android:fillColor="#0c296e" android:pathData="M32.892 41.04a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm2 3a2 2 0 1 0-4 0 2 2 0 0 0 4 0zm-11.915-3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm2 3a2 2 0 1 0-4 0 2 2 0 0 0 4 0z"/>
+    <path android:fillColor="#ffc60a" android:pathData="M23.027 74.818a3 3 0 0 1 2.832-2.01h86.698a2 2 0 0 1 1.888 2.66l-9.963 28.485a3 3 0 0 1-2.832 2.009H14.952a2 2 0 0 1-1.888-2.66l9.963-28.484z"/>
+    <path android:fillColor="#3370ff" android:pathData="M4.813 72.283v11.943c0 5.935 6.91 16.482 48.535 19.287V94.55C10.258 91.19 4.813 78.498 4.813 72.283z"/>
+    <path android:fillColor="#00d6b9" android:pathData="M115.737 66.075V53.631c0 5.365-7.737 12.295-16.737 13.618v9.596c8.5-1.419 15.023-6.518 16.737-10.77zM7 44v11.248c0 5.027 8.072 10.337 19.935 12.393v-8.093C14.545 57.12 7 51.538 7 44z"/>
+    <path android:fillColor="#3370ff" android:pathData="M54 12a2 2 0 0 0-2 2v34.926h-6.952c-1.812 0-2.69 2.216-1.37 3.457L63.63 71.138a2 2 0 0 0 2.74 0l19.952-18.755c1.32-1.24 0.442-3.457-1.37-3.457H78V14a2 2 0 0 0-2-2H54z"/>
+</vector>

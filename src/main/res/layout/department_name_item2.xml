@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.ui.ExpandTextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/department_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" app:animDuration="100" app:arrowAlign="2" app:arrowPadding="0dp" app:arrowPosition="0" app:collapseDrawable="@drawable/description_close" app:expandDrawable="@drawable/description_more" app:maxCollapsedLines="1"/>
+</FrameLayout>

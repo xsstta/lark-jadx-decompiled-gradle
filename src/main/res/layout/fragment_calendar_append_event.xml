@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/shadow_container" android:paddingTop="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_radius="24dp" style="@style/UDShadow.S4.Down.Pri">
+        <ImageView android:id="@+id/append_event" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="16dp" android:src="@drawable/calendar_create_event_bt" android:layout_marginEnd="16dp"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</merge>

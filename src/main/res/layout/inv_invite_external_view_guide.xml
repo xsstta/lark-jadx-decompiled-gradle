@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/iegTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_back_icon="@drawable/titlebar_close_bg_selector"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/iegStartAddTv">
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Guide_ExternalContactsPopupTitle"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="44dp">
+            <ImageView android:id="@+id/iegCoverIv" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/illustration_empty_positive_add_external_contact" android:layout_centerInParent="true"/>
+            <View android:id="@+id/placeholder" android:layout_width="64dp" android:layout_height="125dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/udtoken_tag_text_blue" android:background="@drawable/inv_ieg_cover_txt_bg" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/Lark_Status_ExternalTag" android:layout_toRightOf="@+id/placeholder" android:layout_alignBottom="@+id/iegCoverIv"/>
+        </RelativeLayout>
+        <TextView android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/iegTipTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44dp" android:text="@string/Lark_Guide_ExternalContactsPopupContent"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/Lark_Guide_ExternalContactsPopupContentReminder"/>
+    </LinearLayout>
+    <TextView android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/iegStartAddTv" android:background="@drawable/inv_btn_blue_bg" android:paddingTop="12dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:text="@string/Lark_Guide_ExternalContactsPopupButton" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

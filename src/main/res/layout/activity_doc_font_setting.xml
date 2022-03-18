@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingTop="26dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="26dp" android:paddingEnd="26dp">
+    <TextView android:textColor="@color/ud_N900" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_PreviewTextSizeDocs" app:layout_constraintTop_toTopOf="0" style="@style/UDText.Title0"/>
+    <TextView android:textColor="@color/ud_N900" android:id="@+id/text_explain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/Lark_NewSettings_TextSizeAdjustForDocs" app:layout_constraintTop_toBottomOf="@+id/text_title" style="@style/UDText.Body0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_preview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" app:layout_constraintTop_toBottomOf="@+id/text_explain">
+        <ImageView android:id="@+id/dot_above" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/dot_doc"/>
+        <TextView android:textColor="@color/ud_N900" android:id="@+id/text_preview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_TextSizePreviewDocs1" android:layout_marginStart="@dimen/dp_8" style="@style/UDText.Body0"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_preview_another" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" app:layout_constraintTop_toBottomOf="@+id/layout_preview">
+        <ImageView android:id="@+id/dot_below" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:src="@drawable/dot_doc"/>
+        <TextView android:textColor="@color/ud_N900" android:id="@+id/text_preview_another" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_TextSizePreviewDocs2" android:layout_marginStart="@dimen/dp_8" style="@style/UDText.Body0"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_feedback" android:background="@drawable/activity_doc_font_setting_feedback_bg" android:padding="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" app:layout_constraintTop_toBottomOf="@+id/layout_preview_another">
+        <ImageView android:id="@+id/image_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_welcome"/>
+        <TextView android:textColor="@color/ud_N900" android:id="@+id/text_welcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_NewSettings_TextSizePreviewDocsFeedback" android:layout_marginStart="@dimen/dp_8" style="@style/UDText.Body0"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

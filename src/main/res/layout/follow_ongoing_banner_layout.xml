@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/function_info_200" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12dp">
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="12dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/follow_ongoing_banner_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="16dp"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="12dp" android:textColor="@color/ud_N00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/follow_ongoing_banner_btn" android:background="@drawable/bg_follow_btn_open_follow_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:text="@string/View_G_OpenButton" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

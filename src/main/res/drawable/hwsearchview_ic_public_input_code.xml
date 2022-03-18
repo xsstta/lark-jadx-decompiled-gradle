@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="18dp" android:width="18dp" android:viewportWidth="72" android:viewportHeight="72">
+    <path android:fillColor="#cccccc" android:pathData="M 34 20 H 39 V 25 H 34 V 20 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 40 52 H 45 V 57 H 40 V 52 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 52 52 H 57 V 57 H 52 V 52 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 34 58 H 39 V 63 H 34 V 58 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 46 58 H 51 V 63 H 46 V 58 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 58 58 H 63 V 63 H 58 V 58 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 40 40 H 45 V 45 H 40 V 40 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 52 40 H 57 V 45 H 52 V 40 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 34 46 H 39 V 51 H 34 V 46 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 46 46 H 51 V 51 H 46 V 46 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 58 46 H 63 V 51 H 58 V 46 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 34 34 H 39 V 39 H 34 V 34 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 22 33 H 27 V 38 H 22 V 33 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 46 34 H 51 V 39 H 46 V 34 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M 58 34 H 63 V 39 H 58 V 34 Z"/>
+    <path android:fillColor="#cccccc" android:pathData="M58,14v10H48V14H58M61,9H45c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h16           c1.1,0,2-0.9,2-2V11C63,9.9,62.1,9,61,9L61,9z"/>
+    <path android:fillColor="#cccccc" android:pathData="M24,14v10H14V14H24M27,9H11c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h16           c1.1,0,2-0.9,2-2V11C29,9.9,28.1,9,27,9L27,9z"/>
+    <path android:fillColor="#cccccc" android:pathData="M24,48v10H14V48H24M27,43H11c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h16           c1.1,0,2-0.9,2-2V45C29,43.9,28.1,43,27,43L27,43z"/>
+</vector>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.bytedance.ee.bear.fileselector.view.FilePanelDragView android:id="@+id/file_dragview" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="@dimen/file_panel_dragview_height" android:layout_marginTop="0dp" android:layout_alignParentBottom="true" app:panel_show_drag_handler="true" app:panel_show_titlebar="false"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.threaddetail.view.StatisticKeyboardDetectorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/thread_detail_root" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/thread_detail_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/thread_detail_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+            <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:id="@+id/thread_detail_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+        <View android:layout_gravity="bottom" android:id="@+id/keyboard_shadow" android:background="@drawable/chat_keyboard_shadow" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginTop="-5dp"/>
+    </LinearLayout>
+    <com.ss.android.lark.chatwindow.view.tip.NewMessageTip android:layout_gravity="top|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/new_message_top_tip" android:background="@drawable/background_message_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp"/>
+    <com.ss.android.lark.chatwindow.view.tip.NewMessageTip android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/new_message_bottom_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/keyboard_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/multi_select_menu_stub" android:visibility="gone" android:layout="@layout/thread_detail_multi_select_layout" android:layout_width="match_parent" android:layout_height="90dp"/>
+</com.ss.android.lark.threaddetail.view.StatisticKeyboardDetectorLayout>

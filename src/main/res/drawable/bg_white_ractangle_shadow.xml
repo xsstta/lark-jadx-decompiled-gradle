@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_01"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_0" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_02"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_0" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_03"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_04"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_05"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_06"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_07"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_08"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_09"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_1" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_0A"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_0" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_0B"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_0" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/dp_8"/>
+                    <solid android:color="@color/cal_banner_dialog_shadow_0C"/>
+                    <padding android:left="@dimen/dp_1" android:top="@dimen/dp_0" android:right="@dimen/dp_1" android:bottom="@dimen/dp_1"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_8"/>
+            <solid android:color="@color/bg_float"/>
+        </shape>
+    </item>
+</layer-list>

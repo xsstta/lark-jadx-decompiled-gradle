@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:textColor="@color/microapp_m_zi6" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/microapp_m_text1" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/microapp_m_alert_dialog_item_min_hight"/>

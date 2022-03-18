@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/language_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/select_state" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_checkbox_type="0" style="@style/SettingItemImageSingleSelected"/>
+    <com.ss.android.lark.setting.SettingDividerView android:id="@+id/language_divider" android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+</RelativeLayout>

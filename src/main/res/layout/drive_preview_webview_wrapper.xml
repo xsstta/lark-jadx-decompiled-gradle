@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/document_view_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.drive.view.widget.DriveWebView android:scrollbarSize="4dp" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/drive_document_webview" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollbarFadeDuration="0" android:fadeScrollbars="false"/>
+</merge>

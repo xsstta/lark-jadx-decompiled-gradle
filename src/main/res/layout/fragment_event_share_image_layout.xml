@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/imageContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/shareImageView" android:background="@drawable/bg_event_share_image" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:layout_marginBottom="@dimen/dp_40" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/eventShareZone" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/eventShareZone" android:background="@drawable/calendar_rectangle_grey_top_r8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/eventShareRv" android:paddingTop="@dimen/dp_18" android:paddingBottom="@dimen/dp_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/cancelTv" android:paddingTop="@dimen/dp_19" android:paddingBottom="@dimen/dp_19" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Common_Cancel"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/loadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_event_share_loading_view"/>
+</FrameLayout>

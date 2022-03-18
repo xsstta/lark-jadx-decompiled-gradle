@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="right" android:orientation="vertical" android:id="@+id/player_picker_holder" android:background="#c0000000" android:paddingTop="33dp" android:paddingBottom="36dp" android:layout_width="208dp" android:layout_height="match_parent">
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="2" app:show_value="true" app:value="3"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="2" app:show_value="true" app:value="2"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="0" app:value="1.5"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="0" app:value="1.25"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="2" app:show_value="true" app:value="1"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="0" app:value="0.75"/>
+    <com.ss.android.lark.mm.module.player.core.widget.PlayerSpeedItem android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:bar_size="1" app:show_value="true" app:value="0.5"/>
+</LinearLayout>

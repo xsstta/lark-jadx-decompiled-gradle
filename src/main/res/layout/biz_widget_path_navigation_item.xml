@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="44dp">
+    <TextView android:textSize="15sp" android:textColor="@color/text_caption" android:gravity="center_vertical" android:id="@+id/navigationNodeName" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/navigationNodeNext" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/biz_widget_navigation_arrow_nor" android:tint="@color/icon_n2" android:contentDescription="@null" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+</LinearLayout>

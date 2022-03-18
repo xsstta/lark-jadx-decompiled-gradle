@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/imageContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/shareImageView" android:background="@drawable/bg_event_share_image" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_64" android:layout_marginBottom="@dimen/dp_76" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@+id/bottomContainer" android:layout_marginStart="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_24"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottomContainer" android:background="@drawable/calendar_rectangle_white_top_r10" android:paddingTop="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/share2TimeLineContainer" android:background="@drawable/bg_event_share_timeline_text" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:paddingStart="@dimen/dp_49" android:paddingEnd="@dimen/dp_50">
+                <ImageView android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_wechat_friend_filled" android:tint="@color/static_white" android:layout_marginEnd="@dimen/dp_4"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/static_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Share_WechatMomentsCTA"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/cancelTv" android:background="@color/bg_body" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Share_Later"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@+id/loadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_event_share_loading_view"/>
+</FrameLayout>

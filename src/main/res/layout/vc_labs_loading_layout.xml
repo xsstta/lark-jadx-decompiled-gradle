@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:id="@+id/labs_loading_image" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginEnd="@dimen/dp_8" android:indeterminateTint="@color/primary_pri_500"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/labs_loading_text" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:text="@string/View_MV_LoadingSpecialEffects"/>
+</LinearLayout>

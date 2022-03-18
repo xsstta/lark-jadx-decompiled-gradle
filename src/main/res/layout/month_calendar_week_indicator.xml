@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/week_sunday" android:text="@string/Calendar_StandardTime_WeekdaySunAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_monday" android:text="@string/Calendar_StandardTime_WeekdayMonAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_tuesday" android:text="@string/Calendar_StandardTime_WeekdayTueAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_wednesday" android:text="@string/Calendar_StandardTime_WeekdayWedAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_thursday" android:text="@string/Calendar_StandardTime_WeekdayThuAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_friday" android:text="@string/Calendar_StandardTime_WeekdayFriAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+    <TextView android:id="@+id/week_saturday" android:text="@string/Calendar_StandardTime_WeekdaySatAbbr" style="@style/MonthCalendarWeekIndicatorStyle"/>
+</merge>

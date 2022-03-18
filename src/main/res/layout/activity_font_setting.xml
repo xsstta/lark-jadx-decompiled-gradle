@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_NewSettings_TextSizeTitle" app:tb_title_color="@color/text_title"/>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/font_setting_vp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/dot_layout" android:layout_below="@+id/titleBar"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dot_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:layout_above="@+id/shadow" android:elevation="2dp">
+        <ImageView android:id="@+id/dot_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ellipse_10"/>
+        <ImageView android:id="@+id/dot_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:src="@drawable/ic_ellipse_10" android:tint="@color/text_placeholder"/>
+    </LinearLayout>
+    <View android:id="@+id/shadow" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="2dp" android:layout_above="@+id/slide_font_size_setting"/>
+    <com.ss.android.lark.setting.page.content.common.impl.font.FontSizeSettingView android:id="@+id/slide_font_size_setting" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

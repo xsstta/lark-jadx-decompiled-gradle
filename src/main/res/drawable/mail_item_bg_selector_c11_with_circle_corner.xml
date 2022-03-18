@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/mail_bg_rectangle_bg_filler_with_circle_corner"/>
+    <item android:state_selected="true" android:drawable="@drawable/mail_bg_rectangle_bg_filler_with_circle_corner"/>
+    <item android:drawable="@drawable/mail_bg_rectangle_bg_body_with_circle_corner"/>
+</selector>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="44dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:padding="4dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="10dp" android:src="@drawable/ud_icon_left_outlined" app:tint="@color/icon_n1"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Block预览"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/iv_setting" android:padding="4dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="10dp" android:src="@drawable/ud_icon_setting_outlined" app:tint="@color/icon_n1"/>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp">
+                <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+            </LinearLayout>
+            <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp">
+                <com.ss.android.appcenter.business.tab.business.blockit.BlockWrapperView android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="应用分组 1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:weightSum="4">
+                    <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                    <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                    <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                </LinearLayout>
+                <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="应用分组 2"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:weightSum="4">
+                    <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                    <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/workplace_fragment_adapter_app_skeleton_item"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_45" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_Wiki_Home_Title"/>
+    <com.bytedance.ee.bear.wikiv2.searchv2.enh.WikiSearchbar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48"/>
+    <com.bytedance.ee.bear.wikiv2.home.viewall_multitab.WikiSpaceTabViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

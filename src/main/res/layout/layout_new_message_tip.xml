@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/back_to_bottom_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="4dp" android:layout_marginStart="12dp" android:layout_marginEnd="8dp" app:ud_shadow_color="@color/ud_N900_05" app:ud_shadow_radius="24dp" app:ud_shadow_size="3">
+        <ImageView android:id="@+id/back_to_bottom_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_back_to_bottom_tip"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/new_messages_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:layout_marginStart="12dp" android:layout_marginEnd="10dp" app:ud_shadow_color="@color/ud_N900_08" app:ud_shadow_radius="24dp" app:ud_shadow_size="3">
+        <FrameLayout android:id="@+id/new_messages_bg" android:background="@drawable/new_messages_tip_white_bg" android:layout_width="wrap_content" android:layout_height="40dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/new_messages_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginHorizontal="12dp" android:paddingVertical="10dp">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/state_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/state" android:layout_width="18dp" android:layout_height="18dp"/>
+                    <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:indeterminateDrawable="@drawable/chat_window_tip_loading"/>
+                </FrameLayout>
+                <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center_vertical" android:id="@+id/image" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerCrop" android:layout_marginStart="4dp" app:oval="true"/>
+                <TextView android:textSize="16sp" android:textColor="@color/primary_pri_500" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginStart="4.5dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</RelativeLayout>

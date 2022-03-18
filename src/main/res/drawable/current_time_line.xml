@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/line" android:height="1dp" android:width="100dp" android:top="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="0.5dp"/>
+            <solid android:color="@color/lkui_R400"/>
+        </shape>
+    </item>
+    <item android:id="@+id/circle" android:height="5dp" android:width="5dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/lkui_R400"/>
+        </shape>
+    </item>
+</layer-list>

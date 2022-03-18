@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/signin_sdk_dp_12" android:topRightRadius="@dimen/signin_sdk_dp_12"/>
+    <solid android:color="@color/primary_pri_500"/>
+</shape>

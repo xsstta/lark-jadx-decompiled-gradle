@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/splash_abnormity_bar_stub" android:visibility="gone" android:layout="@layout/splash_ad_abnormity_bar" android:layout_width="match_parent" android:layout_height="27dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/splash_display_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/banner_space">
+            <com.ss.android.ad.splash.core.BDASplashImageView android:id="@+id/splash_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <com.ss.android.ad.splash.core.video2.BDASplashVideoView android:id="@+id/splash_video_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/splash_open_app_area" android:background="@color/splash_ad_app_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignBottom="@+id/splash_display_view">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20dp" android:textColor="@color/splash_ad_white" android:ellipsize="end" android:id="@+id/splash_open_app_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:text="@string/splash_ad_app_button_text" android:lines="1" android:layout_centerVertical="true"/>
+                <ImageView android:paddingTop="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/splash_ad_arrow" android:layout_toRightOf="@+id/splash_open_app_text" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/ad_splash_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="14dp" android:layout_alignParentStart="true"/>
+        <android.widget.Space android:id="@+id/banner_space" android:background="@color/splash_ad_white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="12dp" android:textColor="#ffffff" android:id="@+id/ad_splash_has_wifi_loaded_text" android:padding="3dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="9dp" android:shadowColor="#7f000000" android:shadowRadius="12" android:layout_toLeftOf="@+id/ad_ignore" android:layout_alignParentTop="true" android:layout_marginEnd="9dp" android:layout_toStartOf="@+id/ad_ignore"/>
+        <FrameLayout android:id="@+id/ad_ignore" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/splash_ad_ignore" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+            <TextView android:textSize="12dp" android:textColor="@color/splash_ad_ssxinzi7" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_skip_text" android:background="@drawable/splash_ad_ignore_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/splash_ad_ignore" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/ad_skip_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        </FrameLayout>
+        <include layout="@layout/layout_splash_ad_ab_wifiprload"/>
+        <include layout="@layout/layout_splash_ad_ab_skip"/>
+        <RelativeLayout android:id="@+id/splash_video_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/splash_video_frame" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

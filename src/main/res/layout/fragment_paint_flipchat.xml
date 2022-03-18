@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前效果：" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="15sp" android:id="@+id/effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 未选中 " android:layout_toRightOf="@+id/text" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="15sp" android:id="@+id/text_strokeSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 画笔大小： " android:layout_below="@+id/text" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="15sp" android:id="@+id/value_strokeSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0 " android:layout_toRightOf="@+id/text_strokeSize" android:layout_below="@+id/text" android:layout_toEndOf="@+id/text_strokeSize"/>
+    <SeekBar android:id="@+id/seekbar_strokeSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@+id/value_strokeSize" android:layout_below="@+id/text" android:layout_toEndOf="@+id/value_strokeSize"/>
+    <Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="确认画笔参数" android:layout_below="@+id/seekbar_strokeSize"/>
+    <Button android:id="@+id/undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="undo" android:layout_toRightOf="@+id/button" android:layout_below="@+id/seekbar_strokeSize" android:layout_toEndOf="@+id/button"/>
+    <Button android:id="@+id/redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="redo" android:layout_toRightOf="@+id/undo" android:layout_below="@+id/seekbar_strokeSize" android:layout_toEndOf="@+id/undo"/>
+    <Button android:id="@+id/clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="clear" android:layout_toRightOf="@+id/redo" android:layout_below="@+id/seekbar_strokeSize" android:layout_toEndOf="@+id/redo"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="end" android:orientation="vertical" android:id="@+id/controls_thumbnail_slider_thumbview" android:visibility="gone" android:layout_width="160dp" android:layout_height="160dp" android:minWidth="60dp" android:minHeight="100dp" android:layout_marginEnd="55dp" android:elevation="8dp">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/thumbview_thumb_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:layout_centerInParent="true">
+                <com.bytedance.ee.bear.drive.view.widget.RadiusImageView android:layout_gravity="center" android:id="@+id/drive_controls_thumbnail_slider_thumbview_thumb" android:background="@drawable/drive_bg_pdf_thumb_grid_solid" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/drive_controls_thumbnail_slider_thumbview_pagenumber" android:background="@drawable/drive_bg_pdf_thumb_pop_text_selector" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+    </FrameLayout>
+</FrameLayout>

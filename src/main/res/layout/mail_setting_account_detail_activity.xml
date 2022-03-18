@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/bg_base" app:tb_title="@string/Mail_Setting_Title" app:tb_title_color="@color/text_title"/>
+    <com.larksuite.component.universe_design.notice.UDNotice android:id="@+id/account_tip_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_notice_backgroundColor="@color/primary_pri_100" app:ud_notice_icon="@drawable/ud_icon_info_colorful" app:ud_notice_text="@string/Mail_Mailbox_PublicMailboxSettingSync" app:ud_notice_textColor="@color/text_title"/>
+    <ScrollView android:paddingTop="24dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MailSettingPage">
+            <LinearLayout android:orientation="vertical" android:id="@+id/mail_account_panel" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.ss.android.lark.mail.impl.widget.MailDefaultAvatarView android:layout_gravity="center_horizontal" android:id="@+id/mail_account_default_avatar_tv" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginBottom="12dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:mda_size="3"/>
+                <TextView android:textAppearance="@style/UDText.Title4" android:textColor="@color/text_title" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/account_name_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textAppearance="@style/UDText.Body2" android:textColor="@color/text_placeholder" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/account_address_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:textAppearance="@style/UDText.Body2" android:textColor="@color/function_danger_500" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/account_delink_tips_tv" android:paddingTop="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Mail_Mailbox_PleaseLinkAgain"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/mail_setting_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

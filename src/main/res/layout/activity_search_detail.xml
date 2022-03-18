@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/search_detail_root_ll" android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/search_detail_title_iv" android:background="@color/ud_N00" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="-54dp"/>
+    <include layout="@layout/view_search_detail_bar"/>
+    <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/search_detail_ptr_fl" android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="500" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_mode="2" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="0.5" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_detail_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="110dp" layout="@layout/view_search_result_empty"/>
+</LinearLayout>

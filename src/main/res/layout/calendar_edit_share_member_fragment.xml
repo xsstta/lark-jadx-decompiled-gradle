@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N100" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/editTitleBar" android:layout_width="match_parent" android:layout_height="@dimen/dp_45"/>
+    <RelativeLayout android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/memberAvatar" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="@dimen/dp_16" app:sriv_border_color="@color/lkui_N00" app:sriv_border_width="0dp" app:sriv_left_bottom_corner_radius="90dp" app:sriv_left_top_corner_radius="90dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="90dp" app:sriv_right_top_corner_radius="90dp"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_76" android:layout_marginEnd="@dimen/dp_16">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:ellipsize="end" android:id="@+id/memberName" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:id="@+id/capacityTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <View android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="@dimen/dp_8"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <RelativeLayout android:id="@+id/ownerGroup" android:background="@color/lkui_N00" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/ownerTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_14" android:text="@string/Calendar_Setting_OwnersRight" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_16"/>
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/ownerImage" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true" app:ud_checkbox_type="2"/>
+        <View android:background="@color/lkui_N300" android:layout_width="wrap_content" android:layout_height="@dimen/dp_05" android:layout_below="@+id/ownerTv" android:layout_marginStart="@dimen/dp_16"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/editorGroup" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:id="@+id/editorTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_11" android:maxWidth="@dimen/dp_308" android:text="@string/Calendar_Setting_Writer" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N500" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:text="@string/Calendar_Setting_WritersRight" android:layout_below="@+id/editorTv" android:layout_alignStart="@+id/editorTv"/>
+        <ImageView android:id="@+id/editorImage" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ud_icon_list_check_colorful" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        <View android:background="@color/lkui_N300" android:layout_width="wrap_content" android:layout_height="@dimen/dp_05" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/editorTv"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/subscriberGroup" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:id="@+id/subscriberTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_11" android:maxWidth="@dimen/dp_308" android:text="@string/Calendar_Setting_Reader" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N500" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:text="@string/Calendar_Setting_ReaderRight" android:layout_below="@+id/subscriberTv" android:layout_alignStart="@+id/subscriberTv"/>
+        <ImageView android:id="@+id/subscriberImage" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ud_icon_list_check_colorful" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        <View android:background="@color/lkui_N300" android:layout_width="wrap_content" android:layout_height="@dimen/dp_05" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/subscriberTv"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/visitorGroup" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:id="@+id/visitorTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_11" android:maxWidth="@dimen/dp_308" android:text="@string/Calendar_Setting_FreebusyReader" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N500" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:text="@string/Calendar_Setting_FreebusyReaderRight" android:layout_below="@+id/visitorTv" android:layout_alignStart="@+id/visitorTv"/>
+        <ImageView android:id="@+id/privateImage" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ud_icon_list_check_colorful" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <View android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="@dimen/dp_12"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_R500" android:gravity="center" android:id="@+id/deleteMember" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:text="@string/Calendar_Setting_DeleteMember"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+</LinearLayout>

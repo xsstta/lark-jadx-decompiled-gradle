@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.wikiv2.home.viewall_multitab.WikiSpaceListView android:id="@+id/space_list_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bytedance.ee.bear.wikiv2.searchv2.enh.WikiSearchListView android:id="@+id/search_list_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/month_root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.universe_design.datepicker.impl.header.MonthPickerDefaultHead android:id="@+id/month_picker_head" android:layout_width="match_parent" android:layout_height="49dp"/>
+    <com.larksuite.component.universe_design.datepicker.impl.week.WeekIndicator android:id="@+id/month_picker_week" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="7dp" android:layout_below="@+id/month_picker_head"/>
+    <com.larksuite.component.universe_design.datepicker.impl.MonthViewPager android:id="@+id/month_viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/month_picker_week"/>
+</merge>

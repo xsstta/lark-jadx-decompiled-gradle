@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/result_layout" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_8" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/search_result_head_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+    <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/search_result_ptr_fl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/search_result_head_container" app:lkui_ptr_duration_to_close_either="200" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_mode="2" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="1.2" app:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_result_rv" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/search_result_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32">
+        <ImageView android:id="@+id/search_result_loading_img" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginEnd="@dimen/dp_8"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/search_result_loading_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Loading"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/view_search_empty"/>
+</RelativeLayout>

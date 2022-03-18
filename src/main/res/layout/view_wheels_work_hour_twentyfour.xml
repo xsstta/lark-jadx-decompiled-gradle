@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_left" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="6"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_middle" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="6"/>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+    </LinearLayout>
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.pickerview.WheelView android:id="@+id/wheel_right" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="6"/>
+    <LinearLayout android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

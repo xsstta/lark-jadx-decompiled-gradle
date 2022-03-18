@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@drawable/todo_bg_guide_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/dp_295" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_10">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N00" android:id="@+id/tvTodoGuide" android:layout_width="@dimen/dp_194" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20"/>
+        <View android:background="@color/lkui_N600" android:layout_width="@dimen/dp_1" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16"/>
+        <LinearLayout android:gravity="center" android:id="@+id/llEnterTodo" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N00" android:id="@+id/tvEnterTodo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_Chat_ViewButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_top_bar" android:background="@drawable/bg_top_bar" android:layout_width="match_parent" android:layout_height="240dp">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="20dp" android:paddingTop="54dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_svg_white_back" android:layout_alignParentLeft="true"/>
+        <ImageView android:id="@+id/iv_undo" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:src="@drawable/ic_svg_undo" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.ss.android.photoeditor.ve.view.AnimationRelativeLayout android:id="@+id/seek_bar_container" android:background="@drawable/bg_paint_seek_bar" android:layout_width="match_parent" android:layout_height="240dp" android:layout_above="@+id/tool_bar_container">
+        <com.ss.android.photoeditor.ve.paint.view.PaintSizeSeekBar android:id="@+id/paint_size_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </com.ss.android.photoeditor.ve.view.AnimationRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tool_bar_container" android:background="@color/ud_N00_90" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_mosaic_style" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_mosaic_style_normal" android:background="@drawable/bg_color_selected" android:layout_width="46dp" android:layout_height="26dp" android:layout_marginRight="14dp" android:src="@drawable/ic_svg_mosaic_style_normal" android:scaleType="center"/>
+            <LinearLayout android:gravity="center" android:id="@+id/mosaic_style_glass_container" android:layout_width="46dp" android:layout_height="26dp">
+                <ImageView android:id="@+id/iv_mosaic_style_glass" android:layout_width="40dp" android:layout_height="20dp" android:src="@drawable/mosaic_style_glass" android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_mosaic_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/rg_mosaic_type" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:textSize="10dp" android:textColor="@color/ve_edit_name_color" android:gravity="center" android:id="@+id/rb_mosaic_draw" android:background="@color/lkui_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/Lark_ImageViewer_DrawPixelate" android:drawableTop="@drawable/ud_icon_mosaic_smear_outlined" android:drawablePadding="6dp"/>
+                <RadioButton android:textSize="10dp" android:textColor="@color/ve_edit_name_color" android:gravity="center" android:id="@+id/rb_mosaic_rect" android:background="@color/lkui_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:checked="false" android:button="@null" android:text="@string/Lark_ImageViewer_SelectPixelate" android:drawableTop="@drawable/ud_icon_mosaic_box_outlined" android:drawablePadding="6dp"/>
+            </RadioGroup>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/lkui_N00" android:id="@+id/tv_confirm" android:background="@drawable/bg_action_btn" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="确定"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.ss.android.photoeditor.ve.view.PaintCircleView android:id="@+id/paint_circle_view" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

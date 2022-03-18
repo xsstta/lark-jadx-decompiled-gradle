@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/home_title_bar" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/wiki_title_bar_height_min" app:largeHeight="@dimen/wiki_title_bar_height_min" app:smallHeight="@dimen/wiki_title_bar_height_min" class="com.bytedance.ee.bear.wikiv2.home.DemoWikiTitleBar"/>

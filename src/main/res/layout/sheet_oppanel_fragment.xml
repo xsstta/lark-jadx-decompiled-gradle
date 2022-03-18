@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.bytedence.ee.bear.fabview.FabView android:id="@+id/sheet_keyboard_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp" android:layout_alignParentEnd="true" app:fabImage="@drawable/ud_icon_keyboard_outlined" app:fabImageTint="@color/primary_pri_500" app:fabType="0"/>
+    <com.bytedance.ee.bear.sheet.common.SheetDragView android:id="@+id/fab_dragview" android:layout_width="match_parent" android:layout_height="@dimen/sheet_panel_dragview_height" android:layout_marginTop="-9dp" android:layout_below="@+id/sheet_keyboard_fab" app:panel_show_drag_handler="true" app:panel_show_titlebar="false">
+        <FrameLayout android:id="@+id/oppanel_container" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/oppanel_tab_layout" layout="@layout/sheet_oppanel_tab_layout"/>
+                <androidx.viewpager.widget.ViewPager android:id="@+id/sub_fragment_vp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </FrameLayout>
+    </com.bytedance.ee.bear.sheet.common.SheetDragView>
+</RelativeLayout>

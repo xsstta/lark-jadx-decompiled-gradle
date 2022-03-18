@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ss.android.lark.contact.widget.DesktopContactsTitle android:id="@+id/desktop_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/contact_group_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="38dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_link_normal" android:gravity="center" android:id="@+id/my_manage_group" android:paddingLeft="2dp" android:paddingTop="7dp" android:paddingRight="2dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/my_join_group" android:paddingLeft="2dp" android:paddingTop="7dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:id="@+id/highlight_view" android:background="@color/function_info_500" android:layout_width="wrap_content" android:layout_height="2dp"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/group_vp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

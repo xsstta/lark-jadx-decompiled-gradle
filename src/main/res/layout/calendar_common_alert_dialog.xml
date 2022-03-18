@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="0x7f0804ba" android:paddingTop="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_19d5">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/dialogTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_12" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="center_horizontal" android:id="@+id/dialogContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:lineSpacingExtra="@dimen/dp_3d5"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/checkboxContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_26" android:paddingEnd="@dimen/dp_20">
+            <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/checkbox" android:clickable="false" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginTop="@dimen/dp_2d5"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/checkboxDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_3d5" android:layout_marginStart="@dimen/dp_7"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/dialog_content_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/doubleBtnContainer" android:background="@drawable/dialog_white_corner6_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/lkui_N900" android:gravity="center" android:id="@+id/cancelBtn" android:background="@drawable/common_dialog_left_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:maxEms="3" android:layout_weight="1"/>
+        <View android:background="@color/lkui_N300" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/lkui_R500" android:gravity="center" android:id="@+id/confirmBtn" android:background="@drawable/common_dialog_right_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:maxEms="3" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

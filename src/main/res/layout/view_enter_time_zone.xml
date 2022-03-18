@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.calendarview.timezone.TimeZoneEnterView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/timeZoneEnterview" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/contentLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_11" android:textColor="@color/lkui_N500" android:gravity="center" android:id="@+id/timeZoneTV" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/switchIcon" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:layout_marginLeft="@dimen/dp_1d5" android:src="@drawable/ud_icon_scroll_filled" android:tint="@color/icon_n3"/>
+    </LinearLayout>
+</com.ss.android.lark.calendar.impl.features.calendarview.timezone.TimeZoneEnterView>

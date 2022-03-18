@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="13sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/excel_header_itemName" android:background="@color/bg_body_overlay" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200dp" android:singleLine="true"/>
+    <View android:background="@color/line_border_card" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+</LinearLayout>

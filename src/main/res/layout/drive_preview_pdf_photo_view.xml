@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.drive.view.preview.imageviewer.photoview.PhotoView android:id="@+id/photo_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bytedance.ee.bear.drive.biz.comment.CommentRectLayout android:id="@+id/drive_comment_rect_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

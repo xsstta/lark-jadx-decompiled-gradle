@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:enabled="false" android:id="@+id/ivCheck" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:checked="true" app:ud_checkbox_size="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13dp" android:textColor="@color/text_placeholder" android:id="@+id/tvTimeTop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        <com.ss.android.lark.mm.widget.BoldTextView android:textSize="16dp" android:textColor="@color/ud_N700" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ivChoice"/>
+        <TextView android:textSize="13dp" android:textColor="@color/text_placeholder" android:id="@+id/tvTimeBottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</merge>

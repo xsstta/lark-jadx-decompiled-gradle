@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@color/bg_body"/>
+    <item android:state_pressed="true" android:drawable="@drawable/calendar_list_item_pressed"/>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/bg_filler"/>
+            <corners android:radius="@dimen/ud_radius_l"/>
+        </shape>
+    </item>
+    <item android:state_hovered="true">
+        <shape>
+            <solid android:color="@color/bg_filler"/>
+            <corners android:radius="@dimen/ud_radius_l"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/bg_body"/>
+            <corners android:radius="@dimen/ud_radius_l"/>
+        </shape>
+    </item>
+</selector>

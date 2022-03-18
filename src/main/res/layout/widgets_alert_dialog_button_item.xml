@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/btn_text" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52" android:paddingStart="@dimen/space_kit_len_20" android:paddingEnd="@dimen/space_kit_len_20"/>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/lsclRootRl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/lsc_link_card_bg" android:layout_width="327dp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" android:layout_centerHorizontal="true" android:elevation="6dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lsclHeadLl" android:paddingTop="16dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.joooonho.SelectableRoundedImageView android:id="@+id/lsclAvatarIv" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerCrop" android:layout_marginStart="18dp" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="18dp">
+                <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/lsclNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/lsclDescTv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/lark_share_container_link_loading_view"/>
+            <include layout="@layout/lark_share_container_link_error_view"/>
+            <include layout="@layout/lark_share_container_link_disable_view"/>
+            <include layout="@layout/lark_share_container_link_view"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <TextView android:enabled="false" android:textSize="17sp" android:textColor="@color/lsc_white_btn_text_color" android:gravity="center" android:id="@+id/lsclCopyTv" android:background="@drawable/lsc_white_btn_corner_border_bg" android:layout_width="150dp" android:layout_height="match_parent" android:text="@string/Lark_Legacy_Copy"/>
+        <TextView android:enabled="false" android:textSize="17sp" android:textColor="@color/lsc_blue_btn_text_color" android:gravity="center" android:id="@+id/lsclShareTv" android:background="@drawable/lsc_blue_btn_bg" android:layout_width="150dp" android:layout_height="match_parent" android:layout_marginLeft="26dp" android:text="@string/Lark_Legacy_QrCodeShare" android:layout_marginStart="26dp"/>
+    </LinearLayout>
+</RelativeLayout>

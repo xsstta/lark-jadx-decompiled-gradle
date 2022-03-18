@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/sticker_set_root_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/sticker_set_view_manager_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:tb_back_icon="@drawable/titlebar_close_bg_selector" app:tb_title="@string/Lark_Chat_StickerPackMySticker" app:tb_title_color="@color/text_title"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@+id/sticker_set_view_manager_titlebar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="7.5dp"/>
+            <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/sticker_set_rl_single" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="54dp">
+                <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.7dp" android:text="@string/Lark_Chat_StickerPackSingleSticker" android:drawableLeft="@drawable/ic_icon_sticker_set_collect" android:drawablePadding="7.7dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" android:src="@drawable/sticker_set_ic_right_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="@color/icon_n3"/>
+            </RelativeLayout>
+            <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="14dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/sticker_set_tv_chat_panel" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_Chat_StickerPackTitle" android:paddingStart="17dp"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="3.5dp"/>
+            <View android:id="@+id/sticker_set_manager_recv_top" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/sticker_set_recv_stickers" android:background="@color/bg_body" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+            <View android:id="@+id/sticker_set_manager_recv_bottom" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

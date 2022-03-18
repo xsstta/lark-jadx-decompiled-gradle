@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/ll_content" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_content" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_check" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_check" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ud_icon_list_check_outlined" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" app:tint="@color/primary_pri_500"/>
+    <View android:background="@color/bg_filler" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

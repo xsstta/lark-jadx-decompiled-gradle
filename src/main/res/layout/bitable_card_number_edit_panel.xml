@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bitable_cell_edit_panel_shadow" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/bg_float" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="43.5dp" android:paddingEnd="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/bitable_cell_edit_panel_text_color" android:gravity="center" android:id="@+id/confirm_tv" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Doc_Block_EditTextComplete" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="center" android:background="@color/ud_N400" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="207dp">
+            <com.bytedance.ee.bear.bitable.card.view.cell.number.STNumberKeyboardView android:layout_gravity="center" android:id="@+id/number_keyboard_view" android:background="@color/ud_N400" android:layout_width="match_parent" android:layout_height="match_parent" android:shadowRadius="0" android:keyBackground="@drawable/number_keyboard_btn_center_selector" android:keyTextSize="24sp" android:keyTextColor="@color/text_title"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

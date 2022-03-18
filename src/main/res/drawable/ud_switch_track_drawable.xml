@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/ud_switch_track_padding" android:bottom="@dimen/ud_switch_track_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/ud_switch_track_radius"/>
+            <solid android:color="@color/bg_body"/>
+            <size android:height="@dimen/ud_switch_track_height" android:width="@dimen/ud_switch_track_width"/>
+        </shape>
+    </item>
+</layer-list>

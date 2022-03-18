@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/mTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" ptr:layout_constraintEnd_toEndOf="0" ptr:layout_constraintStart_toStartOf="0" ptr:layout_constraintTop_toTopOf="0" ptr:tb_background="@android:color/transparent"/>
+    <com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout android:id="@+id/layout_ptr_reFresh" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" ptr:layout_constraintBottom_toBottomOf="0" ptr:layout_constraintEnd_toEndOf="0" ptr:layout_constraintStart_toStartOf="0" ptr:layout_constraintTop_toBottomOf="@+id/mTitleBar" ptr:lkui_ptr_duration_to_close_either="500" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_mode="2" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="0.5" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/mList" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>
+    <include android:id="@+id/mCover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" ptr:layout_constraintBottom_toBottomOf="0" ptr:layout_constraintEnd_toEndOf="0" ptr:layout_constraintStart_toStartOf="0" ptr:layout_constraintTop_toBottomOf="@+id/mTitleBar" layout="@layout/item_holder_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

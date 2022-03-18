@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRoundableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/head_roundable_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rl_radius_left_top="10dp" app:rl_radius_right_top="10dp">
+    <include layout="@layout/calendar_bot_item"/>
+</com.larksuite.component.ui.layout.LKUIRoundableLayout>

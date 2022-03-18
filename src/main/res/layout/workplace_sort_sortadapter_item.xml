@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="56dp">
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:id="@+id/shadow_view" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UDShadow.None">
+        <FrameLayout android:id="@+id/content_view_wrapper" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="16dp" android:layout_marginTop="0dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="14dp" android:textColor="@color/static_white" android:gravity="center" android:layout_gravity="right" android:id="@+id/delete_bt" android:background="@color/function_danger_500" android:layout_width="70dp" android:layout_height="match_parent" android:text="@string/OpenPlatform_AppCenter_RemoveBttn"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/content" android:background="@drawable/workplace_adapter_item_round_mid_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/delete" android:visibility="visible" android:layout_width="18dp" android:layout_height="match_parent" android:layout_marginRight="12dp" android:src="@drawable/ud_icon_delete_colorful" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <com.larksuite.component.ignition.widget.squircle.SquircleImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="12dp" app:border_color="@color/workplace_common_icon_border_color" app:border_width="@dimen/workplace_mid_icon_border_width" app:radius="@dimen/workplace_middle_icon_radius" app:tint="@color/fill_img_mask" app:tintMode="src_over"/>
+                <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:maxLines="1" android:layout_weight="1"/>
+                        <TextView android:layout_gravity="center_vertical" android:id="@+id/tag" android:layout_width="wrap_content" android:layout_height="18dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/sort_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="12dp" android:src="@drawable/ud_icon_tuodong_outlined" app:tint="@color/icon_n3"/>
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:id="@+id/bottom_divide" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="90dp"/>
+        </FrameLayout>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+</LinearLayout>

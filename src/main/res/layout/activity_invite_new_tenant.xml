@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/invite_all_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/invite_all_layout" android:background="@drawable/item_invite_bg" android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageView android:id="@+id/invite_all_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/invite_all_icon"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp">
+                <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/invite_all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_UserGrowth_InviteTenantViaLinkMobile"/>
+                <View android:layout_gravity="bottom" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="1px"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/invite_person_layout" android:background="@drawable/item_invite_bg" android:layout_width="match_parent" android:layout_height="54dp">
+            <ImageView android:id="@+id/person_invite_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/invite_single_icon"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp">
+                <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/person_invite_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_UserGrowth_InviteTenantFromFriend"/>
+                <View android:layout_gravity="bottom" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="1px"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

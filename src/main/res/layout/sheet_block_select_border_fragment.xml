@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:panel_custom_left_icon="@drawable/ud_icon_left_small_ccm_outlined">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.sheet.borderline.BorderLinePanelView android:id="@+id/border_line_panel_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>

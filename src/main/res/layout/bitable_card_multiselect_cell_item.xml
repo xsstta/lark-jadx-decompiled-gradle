@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.bitable.card.view.cell.select.SelectTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rtv="http://schemas.android.com/apk/res-auto" android:textSize="13sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/selected_item" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_24" android:layout_margin="4dp" android:layout_centerVertical="true"/>

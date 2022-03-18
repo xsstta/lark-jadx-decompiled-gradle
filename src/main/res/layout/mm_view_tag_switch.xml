@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/containerCollapsed" android:layout_width="wrap_content" android:layout_height="22dp">
+        <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tvCollapsed" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/MMWeb_G_More" android:layout_centerVertical="true"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="8dp" android:tint="@color/icon_n1" android:layout_toRightOf="@+id/tvCollapsed" android:layout_centerVertical="true" app:srcCompat="@drawable/ud_icon_av_set_down_outlined"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/containerExpanded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22dp">
+        <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tvExpanded" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/MMWeb_G_Less" android:layout_centerVertical="true"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="8dp" android:tint="@color/icon_n1" android:layout_toRightOf="@+id/tvExpanded" android:layout_centerVertical="true" app:srcCompat="@drawable/ud_icon_av_set_up_outlined"/>
+    </RelativeLayout>
+</merge>

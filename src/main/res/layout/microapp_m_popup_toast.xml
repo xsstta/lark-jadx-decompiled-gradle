@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@drawable/microapp_m_bg_slide_hint" android:paddingLeft="14dp" android:paddingTop="20dp" android:paddingRight="14dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/microapp_m_icon" android:visibility="gone" android:layout_width="26dp" android:layout_height="26dp" app:tint="@color/static_white"/>
+    <ProgressBar android:id="@+id/microapp_m_loading_progress" android:visibility="gone" android:layout_width="26dp" android:layout_height="26dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/microapp_m_loading_progress" style="?android:attr/progressBarStyleSmall"/>
+    <TextView android:id="@+id/microapp_m_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="@style/microapp_m_popup_toast_text"/>
+</LinearLayout>

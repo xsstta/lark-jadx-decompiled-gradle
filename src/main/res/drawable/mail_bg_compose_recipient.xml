@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/mail_bg_compose_recipient_illegal_default" android:state_activated="true"/>
+    <item android:state_selected="true" android:drawable="@drawable/mail_bg_compose_recipient_selected"/>
+    <item android:drawable="@drawable/mail_bg_compose_recipient_default"/>
+</selector>

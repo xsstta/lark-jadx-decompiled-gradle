@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/color_picker_item_outer_area" android:layout_width="@dimen/ud_color_picker_item_outer_width_height" android:layout_height="@dimen/ud_color_picker_item_outer_width_height">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/color_picker_item_inner_area" android:layout_width="@dimen/ud_color_picker_item_inner_width_height" android:layout_height="@dimen/ud_color_picker_item_inner_width_height">
+        <ImageView android:layout_gravity="center" android:id="@+id/color_picker_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

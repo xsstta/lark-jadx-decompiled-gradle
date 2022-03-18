@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/dp_6" android:paddingBottom="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8">
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/name" android:background="@drawable/moments_category_edit_item_normal_bg" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"/>
+</FrameLayout>

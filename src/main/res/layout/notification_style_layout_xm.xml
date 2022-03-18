@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/push_notification_style_root_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+    <LinearLayout android:id="@+id/push_inner_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="4dp" android:layout_marginEnd="4dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/parent_push_notification_small_icon" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:id="@+id/push_notification_small_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/push_notification_small_picture" android:layout_centerVertical="true" android:layout_marginStart="8dp">
+                <TextView android:textSize="13.5sp" android:textColor="#131313" android:ellipsize="end" android:id="@+id/push_notification_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                <TextView android:textSize="13sp" android:textColor="#4e4e4e" android:ellipsize="end" android:id="@+id/push_notification_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/push_notification_small_picture" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="4dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

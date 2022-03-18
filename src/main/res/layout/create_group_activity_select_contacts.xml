@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" tb_back_icon="@drawable/titlebar_close_bg_selector"/>
+    <com.ss.android.lark.search.widget.ChatterPicker android:id="@+id/p2p_create_group_chatter_picker" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_N00" android:id="@+id/p2p_build_group_tip" android:background="@drawable/p2p_build_group_tip_bg" android:paddingLeft="21dp" android:paddingTop="14dp" android:paddingRight="21dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8dp" android:text="@string/Lark_Legacy_GuideSyncRecordHint" android:layout_marginStart="4dp"/>
+    <FrameLayout android:id="@+id/show_bottom" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="49dp">
+        <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_gravity="start" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="15sp" android:textColor="@color/function_info_500" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/Lark_Legacy_SelectedZeroPeople" android:maxLines="1"/>
+                <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/sync_msg_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/sync_msg_cb" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" app:ud_checkbox_type="0"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/function_info_500" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/Lark_Legacy_CreateGroupChatSyncChatRecord" android:maxLines="1"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="end" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N00" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/confirm" android:background="@drawable/common_corner3dp_color_c12" android:paddingLeft="18dp" android:paddingRight="18dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginRight="15dp" android:text="@string/Lark_Legacy_ConfirmTip" android:maxLines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

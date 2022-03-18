@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/digit_dance_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="-10dp"/>
+    <TextView android:textSize="13sp" android:textColor="@color/space_kit_n500" android:gravity="center" android:id="@+id/digit_dance_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/divider_up" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_invite" android:paddingLeft="15dp" android:paddingRight="17dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="54dp" android:paddingStart="15dp" android:paddingEnd="17dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="top" android:id="@+id/tv_invite" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Lark_Education_InviteParents" android:maxLines="2" android:drawableLeft="@drawable/icon_school_invite" android:drawablePadding="16dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/image_in" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/contacts_nextlevel_arrow" android:tint="@color/icon_n3"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_down" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <com.ss.android.lark.widget.crumbs.DepartmentBreadcrumbsView android:id="@+id/breadcrumbs_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:id="@+id/department_rv_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ss.android.lark.contact.impl.department.detail.frame.list.DepartmentListView android:id="@+id/department_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_node_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illustration_empty_neutral_no_content"/>
+            <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_node_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29sp" android:layout_marginTop="@dimen/dp_40" android:layout_marginRight="29sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/lkui_button_text_size_14" android:textColor="#9ca2a9" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_school_info_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="80dp"/>
+</LinearLayout>

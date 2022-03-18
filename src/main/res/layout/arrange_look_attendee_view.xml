@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/targetAvatarContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.joooonho.SelectableRoundedImageView android:id="@+id/ivTargetAvatar" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_8" app:sriv_border_color="@color/bg_body" app:sriv_border_width="2dp" app:sriv_left_bottom_corner_radius="90dp" app:sriv_left_top_corner_radius="90dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="90dp" app:sriv_right_top_corner_radius="90dp"/>
+            <ImageView android:id="@+id/ivOtherAttendeeSecondIcon" android:visibility="invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_40" android:src="@drawable/icon_arrange_busy_wrap"/>
+            <ImageView android:id="@+id/ivOtherAttendeeSingleIcon" android:visibility="invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_32" android:layout_marginTop="@dimen/dp_40" android:src="@drawable/ud_icon_work_time_colorful"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlTargetTextContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_60" android:layout_toRightOf="@+id/targetAvatarContainer" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvTargetName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:layout_marginBottom="@dimen/dp_2" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvTargetTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@+id/tvTargetName"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <RelativeLayout android:id="@+id/meAvatarContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.joooonho.SelectableRoundedImageView android:id="@+id/ivMeAvatar" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_8" app:sriv_border_color="@color/bg_body" app:sriv_border_width="2dp" app:sriv_left_bottom_corner_radius="90dp" app:sriv_left_top_corner_radius="90dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="90dp" app:sriv_right_top_corner_radius="90dp"/>
+            <ImageView android:id="@+id/ivMeAttendeeSecondIcon" android:visibility="invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_27" android:layout_marginTop="@dimen/dp_40" android:src="@drawable/icon_arrange_busy_wrap"/>
+            <ImageView android:id="@+id/ivMeAttendeeSingleIcon" android:visibility="invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_31" android:layout_marginTop="@dimen/dp_40" android:src="@drawable/ud_icon_work_time_colorful"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rlMeTextContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_60" android:layout_toRightOf="@+id/meAvatarContainer" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvMeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:layout_marginBottom="@dimen/dp_2" android:text="@string/Calendar_View_MyName" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvMeTime" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@+id/tvMeName"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

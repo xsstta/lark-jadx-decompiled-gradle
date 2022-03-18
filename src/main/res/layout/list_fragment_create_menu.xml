@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/facade_round_top_xxl" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/bg_body">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_menu_create_recycler_view" android:paddingTop="20dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="12dp" android:paddingEnd="12dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/list_recommend_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" app:layout_constraintTop_toBottomOf="@+id/list_menu_create_recycler_view"/>
+    <FrameLayout android:id="@+id/recentTemplatesFragment" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/list_recommend_divider"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

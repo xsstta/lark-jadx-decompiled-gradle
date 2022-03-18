@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/screeenshot_root" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/space_kit_len_36" android:paddingEnd="@dimen/space_kit_len_36">
+        <LinearLayout android:orientation="vertical" android:id="@+id/image_alert_content_container" android:background="@drawable/sheet_image_alert_card_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/image_alert_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_20" android:layout_marginBottom="@dimen/space_kit_len_10" android:layout_marginStart="@dimen/space_kit_len_20" android:layout_marginEnd="@dimen/space_kit_len_20"/>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/image_alert_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_20" android:layout_marginEnd="@dimen/space_kit_len_20"/>
+            <FrameLayout android:id="@+id/screenshot_image_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_20" android:layout_marginBottom="@dimen/space_kit_len_20" android:layout_marginStart="@dimen/space_kit_len_20" android:layout_marginEnd="@dimen/space_kit_len_20">
+                <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/iv_screenshot_loading" android:layout_width="@dimen/space_kit_len_24" android:layout_height="@dimen/space_kit_len_24" app:lottie_autoPlay="true" app:lottie_fileName="screenshot_loading.json" app:lottie_loop="true"/>
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:layout_gravity="center_vertical" android:id="@+id/ssiv_screenshot_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_50">
+                <TextView android:textSize="@dimen/space_kit_font_17" android:textColor="@color/sheet_image_alert_btn_save_text_color" android:gravity="center" android:id="@+id/image_alert_save" android:background="@drawable/sheet_image_alert_save_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Facade_Save" android:layout_weight="1"/>
+                <View android:background="@color/line_divider_default" android:layout_width="@dimen/space_kit_len_divider" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/space_kit_font_17" android:textColor="@color/sheet_image_alert_btn_share_text_color" android:gravity="center" android:id="@+id/image_alert_share" android:background="@drawable/sheet_image_alert_share_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Facade_Share" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_alert_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_20" android:src="@drawable/icon_more_close_outlined" android:tint="@color/static_white"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/external_share_view_container" android:background="@color/bg_mask" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.bizwidget.shareview.ExternalShareView android:layout_gravity="bottom" android:id="@+id/image_alert_external_share_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

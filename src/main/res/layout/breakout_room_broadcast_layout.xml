@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.meeting.module.follow.common.VCShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/shadow_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:sl_shadow_angle="0" app:sl_shadow_color="@color/shadow_default_md" app:sl_shadow_distance="0dp" app:sl_shadow_radius="4dp">
+    <RelativeLayout android:background="@drawable/bg_breakout_room_normal" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_18" android:paddingEnd="@dimen/dp_18">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_size_14dp" android:textColor="@color/text_title" android:id="@+id/bd_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@+id/icon_close" android:layout_toEndOf="@+id/icon_announce"/>
+            <FrameLayout android:id="@+id/icon_close" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_alignParentEnd="true">
+                <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_14" android:textColor="@color/icon_n2" android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginTop="@dimen/dp_2" android:text="@string/iconfont_icon_close"/>
+            </FrameLayout>
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_14" android:textColor="@color/function_success_500" android:gravity="center" android:id="@+id/icon_announce" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginTop="@dimen/dp_2" android:text="@string/iconfont_icon_announce_solid" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.ss.android.vc.meeting.module.follow.common.VCShadowLayout>

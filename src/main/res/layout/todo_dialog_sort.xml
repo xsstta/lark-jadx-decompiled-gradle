@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.todo.impl.features.mainview.widget.sort.VerticalDragLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/todo_bg_sort_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/dragImg" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/todo_bg_gray_rectangle_n400"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/Todo_Menu_Sort"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_18"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/sortListZone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/dueTimeSortRl" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/dueTimeSortTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="@string/Todo_Menu_SortByDueTime" android:maxLines="1" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/dueTimeSelectIv" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/todo_svg_sort_selected" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_16" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/createTimeSortRl" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/createTimeSortTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="@string/Todo_Menu_SortByCreatedTime" android:maxLines="1" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/createTimeSelectIv" android:visibility="gone" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/todo_svg_sort_selected" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true"/>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_16" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.ss.android.lark.todo.impl.features.mainview.widget.sort.VerticalDragLayout>
+</FrameLayout>

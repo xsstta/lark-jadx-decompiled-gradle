@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:background="@drawable/mm_bg_translate_loading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/largeLoadingLayout" android:visibility="gone" android:layout_width="128dp" android:layout_height="84dp">
+        <ProgressBar android:id="@+id/progressbar" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="20dp" android:indeterminate="true" android:indeterminateTint="@color/lkui_N00" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/crossIcon" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginEnd="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/mm_ic_cross_white"/>
+        <TextView android:textSize="15dp" android:textColor="@color/static_white" android:id="@+id/loadingTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/progressbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/smallLoadingLayout" android:visibility="gone" android:layout_width="84dp" android:layout_height="84dp">
+        <ProgressBar android:layout_gravity="center" android:layout_width="36dp" android:layout_height="36dp" android:indeterminate="true" android:indeterminateTint="@color/static_white" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </FrameLayout>
+</FrameLayout>

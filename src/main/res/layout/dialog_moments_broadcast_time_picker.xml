@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textColor="@color/primary_pri_500" android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:text="@string/Lark_Community_Cancel" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="16dp" android:textColor="@color/primary_pri_500" android:id="@+id/btn_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:text="@string/Lark_Community_Confirm" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:weightSum="4" android:layout_below="@+id/btn_cancel">
+        <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/wheel_year" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3" app:ud_timePicker_datePickerMode="4" app:ud_timePicker_showDayInfo="false"/>
+        <com.larksuite.component.universe_design.timepicker.impl.base.WheelView android:id="@+id/wheel_hour" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

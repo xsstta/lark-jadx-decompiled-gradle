@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/timepicker" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/blank_left" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.25"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/year_zh" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.27"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/month_zh" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/day_zh" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.1"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/date_zh" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.4"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/week_zh" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/week_en" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/month_en" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.31"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/day_en" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/year_en" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.29"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/date_en" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/hour" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/minute" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+    <com.bytedance.ee.bear.widgets.wheelview.view.WheelView android:id="@+id/second" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+    <View android:id="@+id/blank_right" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.25"/>
+</LinearLayout>

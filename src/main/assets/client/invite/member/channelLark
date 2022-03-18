@@ -1,0 +1,119 @@
+{
+  "step": {
+    "step_id": "client/invite/member/channelLark",
+    "step_name": "channelLark",
+    "slots": {
+      "header_cover": {
+        "slot_id": "header_cover",
+        "element_id": "header_cover"
+      },
+      "header_content": {
+        "slot_id": "header_content",
+        "element_id": "header_content"
+      },
+      "item_0_icon": {
+        "slot_id": "item_0_icon",
+        "element_id": "item_link_icon"
+      },
+      "item_0_title": {
+        "slot_id": "item_0_title",
+        "element_id": "item_link_title"
+      },
+      "item_0_subtitle": {
+        "slot_id": "item_0_subtitle",
+        "element_id": "item_link_subtitle"
+      },
+      "item_1_icon": {
+        "slot_id": "item_1_icon",
+        "element_id": "item_contact_icon"
+      },
+      "item_1_title": {
+        "slot_id": "item_1_title",
+        "element_id": "item_contact_title"
+      },
+      "item_1_subtitle": {
+        "slot_id": "item_1_subtitle"
+      },
+      "item_2_icon": {
+        "slot_id": "item_2_icon",
+        "element_id": "item_direct_icon"
+      },
+      "item_2_title": {
+        "slot_id": "item_2_title",
+        "element_id": "item_direct_title"
+      },
+      "item_2_subtitle": {
+        "slot_id": "item_2_subtitle"
+      },
+      "item_3_icon": {
+        "slot_id": "item_3_icon",
+        "element_id": "item_in_lark_icon"
+      },
+      "item_3_title": {
+        "slot_id": "item_3_title",
+        "element_id": "item_in_lark_title"
+      },
+      "item_3_subtitle": {
+        "slot_id": "item_3_subtitle"
+      }
+    }
+  },
+  "elements": {
+    "header_cover": {
+      "id": "header_cover",
+      "type": 2,
+      "element_data": {
+        "image_data": "https://sf1-ttcdn-tos.pstatp.com/obj/tos-cn-o-0000/c6af95a9095d4a838df31bc88c296727",
+        "image_type": 1
+      }
+    },
+    "header_content": {
+      "id": "header_content",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersIntro",
+        "text_type": 2
+      }
+    },
+    "item_link_title": {
+      "id": "item_link_title",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersTeamLinkInvite",
+        "text_type": 1
+      }
+    },
+    "item_link_subtitle": {
+      "id": "item_link_subtitle",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersTeamLinkDes",
+        "text_type": 1
+      }
+    },
+    "item_contact_title": {
+      "id": "item_contact_title",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersImportContactsNew",
+        "text_type": 1
+      }
+    },
+    "item_direct_title": {
+      "id": "item_direct_title",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersEnterContacts",
+        "text_type": 1
+      }
+    },
+    "item_in_lark_title": {
+      "id": "item_in_lark_title",
+      "type": 1,
+      "element_data": {
+        "text": "Lark_Invitation_AddMembersInviteInLark",
+        "text_type": 1
+      }
+    }
+  }
+}

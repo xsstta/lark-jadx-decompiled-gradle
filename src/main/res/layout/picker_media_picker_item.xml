@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mediapicker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/picker_media_picker_item_bg" android:padding="1.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <FrameLayout android:id="@+id/video_info_container" android:background="@drawable/picker_video_grid_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="17dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12sp" android:textColor="@color/picker_white" android:layout_gravity="right" android:id="@+id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/picker_video_label"/>
+    </FrameLayout>
+    <CheckBox android:textSize="16dp" android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/v_selected" android:background="@drawable/picker_chekbox_select_picture_selector" android:clickable="true" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:checked="false" android:button="@null" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/v_mask" android:background="@color/picker_a60_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="1dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+</com.ss.android.lark.mediapicker.widget.SquareItemLayout>

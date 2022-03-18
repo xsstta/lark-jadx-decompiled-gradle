@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/language_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_centerVertical="true"/>
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/language_selected_image" android:padding="0dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_checkbox_type="2" style="@style/SettingItemImageSingleSelected"/>
+    <RelativeLayout android:id="@+id/rl_retry_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="7dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="14sp" android:textColor="@color/function_danger_500" android:id="@+id/tv_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Settings_Retry" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/download_refrest" android:background="0x7f080ade" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="2dp" android:layout_toRightOf="@+id/tv_retry" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.larksuite.component.ui.imageview.LKUILottieAnimationView android:id="@+id/language_loading_lottie" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="7dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

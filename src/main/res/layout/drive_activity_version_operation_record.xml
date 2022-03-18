@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/common_title_bar" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_divider_visible="false"/>
+    <FrameLayout android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/list_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableLoadmore="false" app:srlEnableOverScrollBounce="false" app:srlEnableOverScrollDrag="false" app:srlEnablePreviewInEditMode="true" app:srlEnableRefresh="true">
+            <com.bytedance.ee.bear.facade.common.widget.recyclerview.DigitDanceHeader android:visibility="gone" android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginTop="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/record_recy_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.bytedance.ee.bear.facade.common.empty.EmptyView android:id="@+id/list_no_data_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

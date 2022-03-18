@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="right" android:id="@+id/tab" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:overScrollMode="never" app:tabBackground="@color/transparent" app:tabGravity="0" app:tabIndicatorHeight="0dp" app:tabMinWidth="0dp" app:tabMode="0" app:tabPaddingEnd="0dp" app:tabPaddingStart="0dp" app:tabRippleColor="@color/transparent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/category_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="right" android:background="@drawable/workplace_template_tab_mask" android:layout_width="6dp" android:layout_height="28dp"/>
+        <FrameLayout android:id="@+id/category_click_wrapper" android:background="@color/bg_float" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <FrameLayout android:id="@+id/category_icon_wrapper" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/category_icon" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="-2dp" android:src="@drawable/workplace_template_category_icon" app:tint="@color/icon_n1"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

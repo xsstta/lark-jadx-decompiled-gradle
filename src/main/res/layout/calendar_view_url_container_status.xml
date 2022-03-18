@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/vc_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/view_url_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/video_live_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+            <com.larksuite.component.universe_design.button.UDButton android:textStyle="normal" android:textColor="@color/primary_pri_500" android:id="@+id/video_live_btn" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_16" android:text="@string/Calendar_VideoMeeting_OpenVideoMeeting" android:stateListAnimator="@null" app:ud_radius="2" app:ud_strokeColor="@color/primary_pri_500" app:ud_strokeWidth="@dimen/dp_1" style="@style/UDButton.Middle.Primary"/>
+            <RelativeLayout android:id="@+id/video_meeting_time_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_12" android:layout_toRightOf="@+id/video_live_btn" android:layout_alignTop="@+id/video_live_btn">
+                <View android:id="@+id/tv_live_btn_divide" android:background="@color/line_divider_default" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_10"/>
+                <Chronometer android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/video_meeting_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_5" android:format="%s"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginRight="@dimen/dp_17" android:layout_alignParentEnd="true">
+                <RelativeLayout android:id="@+id/img_copy_icon_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_36" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/img_copy_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_copy_outlined" android:tint="@color/icon_n2" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/img_phone_icon_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32" android:layout_marginLeft="@dimen/dp_23" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/img_phone_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_down_outlined" android:tint="@color/icon_n2" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/video_live_status_container" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16d5" android:layout_marginTop="@dimen/dp_28">
+                <ImageView android:id="@+id/img_video_live_meeting" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ud_icon_video_outlined" android:tint="@color/icon_n3"/>
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/anim_video_live_meeting_live" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_autoPlay="true" app:lottie_fileName="lottie/calendar_video_meeting_color_anim.json" app:lottie_loop="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/url_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_22" android:layout_marginTop="@dimen/dp_4" android:layout_below="@+id/video_live_container">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tv_video_live_url" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_48" android:layout_marginRight="@dimen/dp_16" android:text="@string/Calendar_VideoMeeting_VCLinkOutofDate" android:singleLine="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/video_url_bottom_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_12" android:layout_below="@+id/url_container"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/calendar_phone_container" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_118" android:layout_marginTop="@dimen/dp_12" android:layout_below="@+id/view_url_container">
+        <RelativeLayout android:id="@+id/default_phone_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_48">
+            <TextView android:textSize="@dimen/dp_16" android:textStyle="normal" android:textColor="@color/text_link_normal" android:id="@+id/phone_dial_in" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_16" android:text="@string/Calendar_Edit_DialIn"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/phone_number" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:layout_marginTop="@dimen/dp_40"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/more_phone_number_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_16" android:layout_below="@+id/default_phone_container">
+            <ImageView android:id="@+id/more_phone_number_arrow" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:layout_centerInParent="true" android:layout_alignParentEnd="true" app:tint="@color/icon_n3"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/more_phone_number" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Calendar_Edit_MorePhoneNumbers"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/calendar_video_setting_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_49" android:layout_below="@+id/calendar_phone_container">
+        <RelativeLayout android:id="@+id/video_setting_text_container" android:layout_width="match_parent" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_48" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12">
+            <ImageView android:id="@+id/video_setting_arrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:layout_centerInParent="true" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/video_setting_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Calendar_Edit_JoinSettings"/>
+        </RelativeLayout>
+        <View android:id="@+id/videoSettingBottomdivider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_below="@+id/video_setting_text_container" android:layout_alignLeft="@+id/video_setting_text_container"/>
+    </RelativeLayout>
+</RelativeLayout>

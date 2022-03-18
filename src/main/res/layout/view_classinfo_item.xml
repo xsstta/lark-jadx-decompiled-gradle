@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="54dp">
+    <FrameLayout android:id="@+id/class_name_wrapper" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/tv_group_state" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_vertical" android:id="@+id/tv_class_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="16dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_B500" android:id="@+id/tv_group_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:drawablePadding="8dp" android:drawableEnd="@drawable/ic_svg_grey6_right_arrow" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/class_name_wrapper" app:layout_constraintTop_toTopOf="0"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/contacts_tenant_info" android:background="@drawable/contact_item_bg_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="54dp">
+        <ImageView android:id="@+id/contacts_tenant_avatar_iv" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="8dp"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/contacts_tenant_name_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_link_normal" android:id="@+id/contacts_tenant_manage_entry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/Lark_Contacts_Manage" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/department_header" android:background="@drawable/contact_item_bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="62dp">
+        <ImageView android:id="@+id/contacts_department_header_iv" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="16dp" android:src="@drawable/ud_icon_organization_outlined" android:tint="@color/ud_W500" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_department_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_Legacy_StructureDepartments" android:layout_toRightOf="@+id/contacts_department_header_iv" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/subordinate_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/doc_icon_image_bg" android:layout_width="@dimen/space_kit_len_48" android:layout_height="@dimen/space_kit_len_48">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_icon_image" android:layout_width="@dimen/space_kit_len_40" android:layout_height="@dimen/space_kit_len_32" android:src="@drawable/ud_icon_delete_trash_outlined" android:scaleType="fitCenter"/>
+</FrameLayout>

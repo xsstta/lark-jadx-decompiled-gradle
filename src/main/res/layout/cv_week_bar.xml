@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/ll_week" android:background="#ffffff" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="40dp" android:minHeight="40dp">
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sun" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/mon" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/tue" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/wed" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/thu" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/fri" android:layout_weight="1"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/sat" android:layout_weight="1"/>
+</merge>

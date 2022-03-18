@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/ipslRootLl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/ipsSearchRl">
+    <com.ss.android.lark.ui.RotateLoadingView android:id="@+id/ieLoadingRlv" android:layout_width="14dp" android:layout_height="14dp" app:rotate_src="@drawable/share_profile_qrcode_loading"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/ieLoadingTv" android:layout_width="wrap_content" android:layout_height="54dp" android:layout_marginLeft="8dp" android:text="@string/Lark_Legacy_LoadingTip"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/flContent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@+id/actionMenu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="96dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/mergeForward" android:layout_width="84dp" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:id="@+id/mergeForwardIcon" android:background="@drawable/oval_n300_stroke_bg" android:padding="@dimen/dp_12" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="14dp" android:src="@drawable/ic_svg_image_com_forward" android:scaleType="center"/>
+                <TextView android:textSize="10dp" android:textColor="@color/lkui_N900" android:gravity="center_horizontal" android:id="@+id/mergeForwardText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:minHeight="14dp" android:text="@string/Lark_Legacy_CombineAndForwardPhotos"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/forwardLayout" android:layout_width="84dp" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:id="@+id/forwardIcon" android:background="@drawable/oval_n300_stroke_bg" android:padding="@dimen/dp_12" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="14dp" android:src="@drawable/ic_svg_image_forward" android:scaleType="center"/>
+                <TextView android:textSize="10dp" android:textColor="@color/lkui_N900" android:gravity="center_horizontal" android:id="@+id/forwardText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:minHeight="14dp" android:text="@string/Lark_Legacy_OneByOneForwardPhotos"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/downloadLayout" android:layout_width="84dp" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:id="@+id/downloadIcon" android:background="@drawable/oval_n300_stroke_bg" android:padding="@dimen/dp_12" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="14dp" android:src="@drawable/ic_svg_image_download" android:scaleType="center"/>
+                <TextView android:textSize="10dp" android:textColor="@color/lkui_N900" android:gravity="center_horizontal" android:id="@+id/downloadText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:minHeight="14dp" android:text="@string/Lark_Legacy_DownloadButton"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/deleteLayout" android:layout_width="84dp" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:id="@+id/deleteIcon" android:background="@drawable/oval_n300_stroke_bg" android:padding="@dimen/dp_12" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="14dp" android:src="@drawable/ic_svg_image_delete" android:scaleType="center"/>
+                <TextView android:textSize="10dp" android:textColor="@color/lkui_N900" android:gravity="center_horizontal" android:id="@+id/deleteText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:minHeight="14dp" android:text="@string/Lark_Legacy_DeleteButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/lkui_dialog_btn_center" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/Lark_Legacy_MsgCardCancel"/>
+</LinearLayout>

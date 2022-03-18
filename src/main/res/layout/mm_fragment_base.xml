@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/mm_bg_dialog_bottom_sheet_r6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.mm.module.share.invite.MmInviteTitleBar android:id="@+id/titleBar" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <com.ss.android.lark.searchcommon.view.SearchInputView android:id="@+id/searchBar" android:background="@drawable/mm_bg_search_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="2dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:layout_below="@+id/titleBar" android:layout_centerVertical="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvThumbnail" android:paddingLeft="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/searchBar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvUserList" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_above="@+id/containerAction" android:layout_below="@+id/rvThumbnail"/>
+    <FrameLayout android:id="@+id/containerAction" android:background="@color/lkui_N00" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/emptyContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

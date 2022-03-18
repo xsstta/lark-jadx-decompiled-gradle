@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/dp_48">
+    <com.ss.android.vc.meeting.module.reaction.view.reaction.LongClickReactionView android:layout_gravity="center" android:id="@+id/long_click_reaction" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

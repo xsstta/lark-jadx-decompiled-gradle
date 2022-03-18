@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/universal_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/universal_loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/universal_refresh_layout" android:background="@color/text_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="59dp" android:textColor="@color/icon_n1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_warning"/>
+            <TextView android:textSize="17dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="22dp" android:layout_marginTop="27dp" android:text="@string/View_VM_CouldNotLoadTryReloading"/>
+            <Button android:textSize="14dp" android:textColor="@color/static_white" android:layout_gravity="center" android:id="@+id/universal_refresh_btn" android:background="@drawable/bg_follow_btn_to_presenter_selector" android:layout_width="96dp" android:layout_height="40dp" android:layout_marginTop="24dp" android:text="@string/View_VM_Refresh"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

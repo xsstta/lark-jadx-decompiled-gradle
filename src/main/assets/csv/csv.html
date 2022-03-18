@@ -1,0 +1,64 @@
+<!DOCTYPE html><html moznomarginboxes mozdisallowselectionprint><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>csv preview</title>
+  </head>
+  <body>
+    <div id="htmlout" class="common-style-block"></div>
+    <div id="init-placeholder" class="common-style-block"></div>
+    <div class="spin-indicator">
+      <div class="spin-indicator-box">
+        <span class="spin-indicator-dots">
+          <i class="spin-indicator-dot1"></i>
+          <i class="spin-indicator-dot2"></i>
+          <i class="spin-indicator-dot3"></i>
+          <i class="spin-indicator-dot4"></i>
+        </span>
+      </div>
+    </div>
+
+  <script>
+    function safelyParseJSON(str) {
+      try {
+        var parsedJSON = JSON.parse(str);
+        return parsedJSON;
+      } catch (e) {
+        console.error('parse json error', e);
+        return {};
+      }
+    }
+    // 转码Native传进来的参数
+    function parseNativeData(data) {
+      try {
+        var decodeData = decodeURIComponent(escape(window.atob(data)));
+        return safelyParseJSON(decodeData);
+      } catch (e) {
+        console.error('parse native data error', e);
+        return {};
+      }
+    }
+    // 供android调用的方法
+    function triggerJSEvent(data) {
+      try {
+        var parsedData = parseNativeData(data);
+        switch (parsedData.key) {
+          case 'setCopyable':
+            self.postMessage(parsedData, '*');
+            break;
+          case 'srcData':
+            self.postMessage({
+              key: parsedData.key,
+              value: safelyParseJSON(parsedData.value),
+            }, '*');
+            break;
+          default:
+            break;
+        }
+      } catch (e) {
+        console.error('triggerJSEvent function error', e);
+      }
+    }
+  </script>
+
+<script type="text/javascript" src="csv-4f17b0839318cc88577e6b4e314e2a96.js"></script>
+</body></html>

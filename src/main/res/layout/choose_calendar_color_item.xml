@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_root_container" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36"/>
+    <View android:layout_gravity="center" android:id="@+id/v_tick" android:background="@drawable/ud_icon_list_check_outlined" android:visibility="visible" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" android:backgroundTint="@color/static_white"/>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mm.widget.InterceptableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rootDialog" android:background="@drawable/mm_bg_record_toolbar" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvWave" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_marginTop="14dp" android:layout_alignParentRight="true"/>
+    <com.ss.android.lark.mm.widget.BoldTextView android:textSize="24dp" android:textColor="@color/text_title" android:gravity="center_horizontal" android:id="@+id/tvDuration" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_below="@+id/rvWave" android:textFontWeight="600"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/containerAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tvDuration" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@+id/ivMore" android:background="@drawable/mm_bg_btn_like" android:layout_width="52dp" android:layout_height="52dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/icon_n2" app:srcCompat="@drawable/ud_icon_more_outlined"/>
+        </FrameLayout>
+        <FrameLayout android:visibility="gone" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginLeft="44dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivReaction" android:layout_width="52dp" android:layout_height="52dp" app:srcCompat="@drawable/mm_bg_btn_like"/>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/mm_record_reaction" android:layout_width="32dp" android:layout_height="32dp" app:lottie_rawRes="@raw/mm_like_record_sponsor"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/containerControl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_below="@+id/containerAction">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/btnLanguage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_toLeftOf="@+id/ivResumePause" android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivLanguage" android:layout_width="20dp" android:layout_height="20dp" app:srcCompat="@drawable/mm_ic_record_language"/>
+            <TextView android:textSize="15dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="-1dp" android:maxLines="1" android:layout_toRightOf="@+id/ivLanguage"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivArrow" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="4dp" android:layout_alignParentRight="true" app:srcCompat="@drawable/mm_ic_record_language_arrow"/>
+        </LinearLayout>
+        <com.ss.android.lark.mm.widget.BoldTextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/ivResumePause" android:background="@drawable/mm_btn_record_status_pause" android:visibility="invisible" android:layout_width="140dp" android:layout_height="52dp" android:text="@string/MMWeb_G_Resume" android:layout_centerHorizontal="true"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivStop" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="24dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/mm_ic_record_stop"/>
+    </RelativeLayout>
+    <com.ss.android.lark.mm.module.record.detail.menu.LanguagePopup android:orientation="vertical" android:id="@+id/languagePopup" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="-31dp" android:layout_above="@+id/containerControl"/>
+</com.ss.android.lark.mm.widget.InterceptableRelativeLayout>

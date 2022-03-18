@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="17sp" android:textColor="@color/text_title" android:ellipsize="marquee" android:gravity="center" android:id="@+id/ud_dialog_content_item_tv" android:background="@drawable/lark_gadget_actionsheet_item_bg" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="64dp" android:singleLine="true"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="200" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_mode="2" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="0.5" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+    <ImageView android:id="@+id/empty_hint_img" android:visibility="gone" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="153.5dp" android:src="@drawable/illustration_placeholder_common_no_preview" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/empty_hint_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/empty_hint_img" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

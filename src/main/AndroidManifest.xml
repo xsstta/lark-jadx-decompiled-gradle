@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="50286" android:versionName="5.2.8" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.larksuite.suite" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="30"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <permission android:name="com.larksuite.suite.permission.SAFE_EXPORTED_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.larksuite.suite.permission.SAFE_EXPORTED_PROVIDER"/>
+    <permission android:name="com.larksuite.suite.user.READ_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.larksuite.suite.user.READ_PROVIDER"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false"/>
+    <uses-permission android:name="com.larksuite.suite.setting.permissions.UI_MODE_BROADCAST"/>
+    <permission android:name="com.larksuite.suite.setting.permissions.UI_MODE_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="com.larksuite.suite.language.permissions.LANGUAGE_BROADCAST"/>
+    <permission android:name="com.larksuite.suite.language.permissions.LANGUAGE_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.desktop.systemui.TAKE_SCREEN_SHOT"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="lark.file.picker.close"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="com.miui.easygo.permission.READ_PERMISSION"/>
+    <uses-permission android:name="lark.media.picker.close"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.aliyun.homeshell.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.aliyun.homeshell.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lenovo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lenovo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.iLoong.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.iLoong.permission.READ_SETTINGS"/>
+    <uses-permission android:name="cn.nubia.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="cn.nubia.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.smartisanos.launcher.WRITE_DATABASE"/>
+    <uses-permission android:name="com.smartisanos.launcher.READ_DATABASE"/>
+    <uses-permission android:name="com.smartisanos.launcher.data.ExportDataProvider"/>
+    <uses-permission android:name="com.teslacoilsw.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.teslacoilsw.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.meizu.flyme.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.ztemt.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.ztemt.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zte.lqsoft.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zte.lqsoft.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.baoruan.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.baoruan.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fineos.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fineos.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.ibingo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.ibingo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zui.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.zui.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zte.mifavor.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.zte.mifavor.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.tpwlauncher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.tpwlauncher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.sprdlauncher1.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.sprdlauncher1.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.s.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.s.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zte.mobile.ZteLauncher3D.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.zte.mobile.ZteLauncher3D.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher23.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher23.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.mgyun.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.mgyun.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.asus.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.asus.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.hola.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.hola.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.home.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.home.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.slim.slimlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.slim.slimlauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huaqin.launcherEx.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huaqin.launcherEx.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.epic.launcher.tw.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.epic.launcher.tw.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.lewalauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.lewalauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.Dean.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.Dean.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="app.cobo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="app.cobo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.alphalp.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.alphalp.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lollipop.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lollipop.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.l.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.l.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.dlto.atom.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.dlto.atom.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.sprdlauncher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.sprdlauncher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.konka.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.konka.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.mycheering.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.mycheering.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.microsoft.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.microsoft.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.nicelauncher.lolauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.nicelauncher.lolauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.jui.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.jui.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS"/>
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.modaco.android.launchergb.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.modaco.android.launchergb.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.bbk.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.bbk.launcher2.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.twlauncher.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.twlauncher.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.gau.go.launcherex.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.gau.go.launcherex.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.nd.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.nd.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.mx.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.mx.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.google.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-permission android:name="com.larksuite.suite.miniapp.PROCESS_COMMUNICATION"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <permission android:name="com.larksuite.suite.miniapp.PROCESS_COMMUNICATION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_BADGE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <queries>
+        <package android:name="com.autonavi.minimap"/>
+        <package android:name="com.baidu.BaiduMap"/>
+        <package android:name="com.tencent.map"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.waze"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+    </queries>
+    <permission android:name="com.larksuite.suite.permission.broadcast.metrics" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.larksuite.suite.permission.broadcast.metrics"/>
+    <uses-permission android:name="com.huawei.easygo.permission.READ_PERMISSION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:theme="@style/LarkAppTheme" android:label="@string/Lark_Legacy_AppNameRelease" android:icon="@mipmap/app_launcher" android:name="com.ss.android.lark.app.LarkApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:resizeableActivity="true" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/app_launcher_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:isSplitRequired="true" android:requestLegacyExternalStorage="true" android:allowNativeHeapPointerTagging="false" android:preserveLegacyExternalStorage="true" android:localeConfig="@xml/locales_config">
+        <meta-data android:name="UPDATE_VERSION_CODE" android:value="502851"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="GOOGLE_PLAY_BUILD" android:value="true"/>
+        <meta-data android:name="LARK_RELEASE_CHANNEL" android:value="googleplay"/>
+        <meta-data android:name="IS_KA_PACKAGE" android:value="false"/>
+        <meta-data android:name="DEPLOY_MODE" android:value="saas"/>
+        <meta-data android:name="buildVersionCode" android:value="37946847"/>
+        <meta-data android:name="BUILD_ENV_FEATURE_GATING" android:value="japan_lang:1"/>
+        <meta-data android:name="forceCleanDataVersion" android:value="72"/>
+        <meta-data android:name="EasyGoClient" android:value="true"/>
+        <meta-data android:name="mira_skip_provider_init_plugin_info" android:value="true"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.ss.android.lark.main.app.MainActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.ss.android.lark.platform.lifecycle.AppLifecycle$LifecycleContentProvider" android:exported="false" android:authorities="com.larksuite.suite.provider.applifecycle"/>
+        <provider android:name="com.ss.android.lark.platform.network.ttnet.MultiProcessSharedProvider" android:authorities="com.larksuite.suite.ttnet.share"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.entrance.InvitationEntranceActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.channel.InviteMemberChannelActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.channel.InviteMemberChannelLarkActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.orientation.InviteMemberOrientationActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.contact.InviteMemberContactActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.nonDirectional.InviteMemberNonDirectionalActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.teamCode.InviteMemberTeamCodeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.main.InviteExternalActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.search.InviteExternalSearchActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.contact.v1.InviteExternalContactActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.contact.v2.InviteExternalContactV2Activity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.debug.InviteDebugActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.edu.channel.InviteParentChannelActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.edu.nonDirectional.InviteParentNonDirectionActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.guide.InviteExternalGuideActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.external.main.feishu.InviteExternalFeishuActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.b2b.InviteB2bActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.guide.InviteMemberGuideActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/BlueCursorActivityTheme" android:name="com.ss.android.lark.invitation.v2.feat.member.welcome.WelcomeToLarkActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.v3.edit_profile.EditAliasActivityV3" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.profile.func.medal.wall.MedalWallActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.medal.detail.MedalDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.profile_setting.ProfileSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.add_friend.AddFriendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.user_profile.UserProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.v3.userprofile.UserProfileActivityV3" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.contact_profile.ContactsProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.edit_profile.EditAliasActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.friend_request.ReasonEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.profile.func.share_profile.ShareProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.profile.func.share_profile.inviter_new_member.ShareINMActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.profile.func.group_profile.GroupProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/VideoPreviewFullScreenTheme" android:name="com.ss.android.lark.chat.video.VideoPreviewActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/VideoPreviewFullScreenTheme" android:name="com.ss.android.lark.chat.video.VideoPreviewActivity2" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.chatwindow.ChatWindowActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.chatthread.ChatThreadActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.mergeforward.MergeForwardDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.threadmergeforward.ThreadMergeForwardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.share_group.ShareGroupProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/ThreadChatStatusBarTranslucentTheme" android:name="com.ss.android.lark.threadwindow.ThreadWindowActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.post.PostMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.threaddetail.ThreadDetailActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.favorite.list.FavoriteListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.favorite.detail.FavoriteDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.share_group.RecallGroupChatterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.tour.spotlight.TourSpotlightChatActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.tab.space.tab.add.list.AddSpaceTabListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.tab.space.tab.add.modify.AddSpaceTabModifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.album.ChatAlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/CustomDialogTheme" android:name="com.ss.android.lark.collaboration.applydetail.ApplyCollabDetailActivity" android:excludeFromRecents="true" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.detail.MomentsDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.publish.MomentsPublishActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.personal.MomentsProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.common.widget.keyboard.at.MomentsAtSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.report.MomentsReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.notice.MomentsNotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.broadcast.MomentsBroadcastEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.categorydetail.MomentsCategoryDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.categoryedit.MomentsCategoryEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.nickname.NickIdentityChooseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.setting.MomentsSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.hashtag.MomentsHashTagFeedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.moments.impl.personal.follow.MomentsFollowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.sticker.ui.LarkStickerManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.sticker.ui.emoticon.shop.StickerSetShopActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.sticker.ui.emoticon.preview.StickerPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.sticker.ui.emoticon.manager.StickerSetManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.sticker.ui.emoticon.detail.StickerSetDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.appcenter.scancode.ScanCodeActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.openbusiness.activity.OpbActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/BotActivityCommonTheme" android:name="com.ss.android.openbusiness.bot.list.GroupBotListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/BotActivityCommonTheme" android:name="com.ss.android.openbusiness.bot.addsearch.GroupBotAddSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.locationmessage.ui.navigation.NavigateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.locationmessage.ui.picklocation.LocationActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/TodoCreateDialogTheme" android:name="com.ss.android.lark.todo.impl.features.detail.TodoDetailActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.todo.impl.features.detail.assignee.add.mvvm.TodoAssigneeAddActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.todo.impl.features.chatlist.mvvm.TodoChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.todo.impl.features.setting.TodoSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.todo.impl.features.setting.TodoBadgeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/VoIpCallActivity" android:name="com.ss.android.lark.voip.service.impl.app.VoIpCallActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/VoipFeedbackDialogActivity" android:name="com.ss.android.lark.voip.service.impl.app.feedback.VoIpFeedbackActivity" android:launchMode="singleTask" android:windowEnterAnimation="@anim/voip_activity_bottom_in" android:windowExitAnimation="@anim/voip_activity_bottom_out" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <service android:name="com.ss.android.lark.voip.service.impl.app.VoipForegroundService"/>
+        <receiver android:name="com.ss.android.lark.voip.service.impl.app.KeyguardUnLockReceiver"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.ss.android.lark.main.router.RouterActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lark" android:host="ssoclient"/>
+                <data android:scheme="lark" android:host="client"/>
+                <data android:scheme="feishu" android:host="client"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="applink.larksuite.com"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lark" android:host="applink.larksuite.com"/>
+                <data android:scheme="lark" android:host="applink.feishu.cn"/>
+                <data android:scheme="feishu" android:host="applink.larksuite.com"/>
+                <data android:scheme="feishu" android:host="applink.feishu.cn"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.sdk.snssdk1664"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="snssdk1664"/>
+            </intent-filter>
+            <meta-data android:name="BDPushSchema" android:value="snssdk1664"/>
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:name="com.ss.android.lark.main.splash.SplashAdActivity" android:screenOrientation="portrait" android:configChanges="keyboard|orientation|screenSize"/>
+        <receiver android:label="@string/Lark_Core_FeishuCalendar" android:name="com.ss.android.lark.main.widget.calendar.CalendarSmallWidgetProvider" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="10000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.ss.android.lark.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/calendar_appwidget_info_small"/>
+        </receiver>
+        <receiver android:label="@string/Lark_Core_FeishuCalendar" android:name="com.ss.android.lark.main.widget.calendar.CalendarMediumWidgetProvider" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="10000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.ss.android.lark.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/calendar_appwidget_info_medium"/>
+        </receiver>
+        <service android:name="com.ss.android.lark.main.widget.ui.ListWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":widgetProvider"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.ss.android.lark.main.app.DefaultDualActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <activity android:name="com.ss.android.lark.mm.module.list.base.MinutesListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/MmTheme" android:name="com.ss.android.lark.mm.module.detail.MmDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.mm.module.share.InviteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.mm.module.participant.ParticipantActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.mm.module.record.detail.MmRecordDetailActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.mm.module.podcast.MmPodcastActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.live.web.VcLiveWebActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.ss.android.lark.mm.module.player.notification.MmVideoService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.ss.android.lark.live.VcLiveWebActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.ss.android.lark.mm.module.record.audiorecorder.MmAudioRecordService"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.multi.ByteRTCMeetingActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenThemeForInstance" android:name="com.ss.android.vc.meeting.module.multi.ByteRTCMeetingActivityInstance" android:taskAffinity="com.larksuite.suite.vc" android:multiprocess="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.multi.XByteRTCMeetingActivity" android:process=":p0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.business.bytertc.meeting.ByteRTCMeetingDesktopActivity" android:multiprocess="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.business.bytertc.meeting.XByteRTCMeetingDesktopActivity" android:process=":p0" android:launchMode="singleInstance" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:name="com.ss.android.vc.meeting.module.meetingspace.MeetingSpaceActivity" android:multiprocess="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.enterprisephone.EnterprisePhoneActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.tab.detail.VcTabDetailActivity" android:multiprocess="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.tab3.detail.VcTab3DetailActivity" android:multiprocess="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.sharebox.LocalSharePrepareActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:resizeableActivity="true"/>
+        <activity android:name="com.ss.android.vc.meeting.module.meetingspace.MSNotesActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:resizeableActivity="true"/>
+        <activity android:theme="@style/alertDialogActivity" android:name="com.ss.android.vc.common.widget.globaldialog.PopupDialogActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="behind" android:windowEnterAnimation="@anim/vc_activity_fade_in" android:windowExitAnimation="@anim/activity_fade_out"/>
+        <activity android:name="com.ss.android.vc.lark.setting.VideoChatSettingActivity" android:multiprocess="true" android:windowEnterAnimation="@anim/vc_activity_bottom_in" android:windowExitAnimation="@anim/activity_bottom_out"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.liveroom.LandingPageActivity" android:multiprocess="true" android:launchMode="singleTop"/>
+        <activity android:name="com.ss.android.vc.meeting.module.presetting.MeetingPreSettingActivity" android:multiprocess="true" android:windowEnterAnimation="@anim/vc_activity_bottom_in" android:windowExitAnimation="@anim/activity_bottom_out"/>
+        <activity android:theme="@style/feedbackDialogActivity" android:name="com.ss.android.vc.meeting.module.feedback.MeetingFeedbackDialogActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="behind" android:windowEnterAnimation="@anim/vc_activity_bottom_in" android:windowExitAnimation="@anim/activity_bottom_out" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.multi.MeetingNetDisconnectActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:resizeableActivity="true"/>
+        <service android:name="com.ss.android.vc.meeting.module.foregroundservice.ForegroundService" android:foregroundServiceType="20"/>
+        <service android:name="com.ss.android.vc.meeting.module.foregroundservice.XForegroundService" android:process=":p0" android:foregroundServiceType="20"/>
+        <activity android:name="com.ss.android.vc.lark.message.meeting.cardview.attendee.MeetingAttendeeActivity" android:multiprocess="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.preview.facade.MeetingPreviewActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:resizeableActivity="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.preview.facade.MeetingPreviewDesktopActivity" android:multiprocess="true" android:launchMode="singleInstance" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/VcTransparentTheme" android:name="com.ss.android.vc.common.permission.PermissionActivity" android:multiprocess="true" android:launchMode="singleTask"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.meetingspace.search.MeetingFileSearchActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/LKUI_GlobalDialog_activity" android:name="com.larksuite.component.ui.dialog.XLKUIGlobalDialogActivity" android:multiprocess="true"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.livestream.activity.RealAuthenticationActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.livestream.activity.FaceAuthActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.livestream.activity.AuthFailActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.vc.meeting.module.guest.MiddlePageActivity" android:multiprocess="true" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/FullScreenTheme" android:name="com.ss.android.vc.meeting.module.meetingdialog.meetinginfo.pstn.PstnInvitationDialogActivity" android:multiprocess="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/RVC" android:name="com.ss.android.vc.lark.rvc.RvcActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/MeetingShadowActivityTheme" android:name="com.ss.android.vc.meeting.module.base.MeetingShadowActivity" android:multiprocess="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <provider android:name="com.ss.android.vcxp.provider.MainProvider" android:exported="false" android:authorities="com.larksuite.suite.vcxp.Provider"/>
+        <provider android:name="com.ss.android.vcxp.provider.VCProvider" android:exported="false" android:process=":p0" android:authorities="com.larksuite.suite.vcxp.p0Provider"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.ss.android.vc.meeting.module.xiaomivoip.XiaoMiVoipLaunchActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.global.SearchActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.detail.SearchDetailActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.detail.newchat.SearchChatActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.detail.message.SearchMessageActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.pick.chatpick.PickChatActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.impl.func.pick.chatterpick.PickChatterActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:name="com.ss.android.lark.search.impl.func.chatinside.ChatInsideSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.search.impl.func.chatinside.detail.folderinside.FolderInsideSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.search.redesign.customtab.CustomTabActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.search.impl.func.chatimage.ChatImageResourceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.forward.impl.ForwardPickActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.v2.effect.display.DisplaySettingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.v2.effect.auto.AutoTranslateSettingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.v2.effect.auto.AutoTranslateSettingFacadeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.LanguageAndTranslateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.locale.LanguageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.TranslateSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.TargetLanguageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.AutoTranslateSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.TranslateDisplaySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.SpecificDisplaySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.translate.v2.effect.display.DisplaySettingFacadeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.internal.MineInternalSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.setting.page.v1.MineSystemSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.v2.MineSystemSettingActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.general.GeneralSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.font.FontSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.display.DisplayAppearanceSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.general.feedfilter.FeedMessageFilterActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.general.feedfilter.FeedMessageFilterActivityV2" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.general.feedfilter.AtFeedFilterDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.general.wheniviewachat.WhenIViewAChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.setting.page.content.common.impl.msgalignment.MessageAlignSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mine.impl.index.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mine.impl.info.MineInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mine.impl.status.UserStatusUpdateActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.mine.impl.info.edit_name.MineUpdateNameActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.mine.impl.custom_status.UserCustomStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_focus.SpecialFocusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_email.edit.CardEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_email.BusinessCardsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_group.ContactsMyGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_robot.RobotActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_external.ExternalContactActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.contacts_new.NewContactActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.department.DepartmentStructureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.contact.impl.selected_confirm.SelectedConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.contact.impl.selector.calendar.CalendarAttendeeAddActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.contact.impl.selector.little_app.LittleAppSelectMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.contact.impl.setting.PrivacySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.setting.one_way_contact.privacy_new.PrivacySettingActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.setting.one_way_contact.permission.ChatPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.contact.impl.setting.one_way_contact.block_list.PrivacyBlockListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.contact.impl.invite.InviteInactiveParentListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.contact.feat.contact_recommend.ContactRecDemoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/LarkAppTheme.StaticBlackBackground" android:name="com.ss.android.lark.qrcode.ui.QRCodeScanActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.qrcode.ui.QRScanResultDefaultActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <receiver android:name="com.ss.android.lark.notification.offline.NotificationClickReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.ss.android.lark.notification.receiver"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ss.android.lark.notification.setting.impl.setting.NotificationSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.notification.setting.impl.setting.notification_item.NotificationSettingsItemActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.notification.setting.impl.setting.SpecificMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.notification.setting.impl.badgestyle.BadgeStyleSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.notification.setting.impl.zen.ZenSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.Translucent.NoAnimation" android:name="com.bytedance.ee.bear.basesdk.DocRouteActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop"/>
+        <activity android:theme="@style/DocAppTheme.Translucent.NoAnimation" android:name="com.bytedance.ee.bear.basesdk.DocRouteMainProcActivity" android:exported="false" android:launchMode="singleTop"/>
+        <service android:name="com.bytedance.ee.bear.basesdk.keeplive.KeepLiveService" android:exported="false" android:process="@string/config_doc_process"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar.Transparent.NoAnimation" android:name="com.bytedance.ee.bear.facade.common.CarrierActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar.Transparent.NoAnimation" android:name="com.bytedance.ee.bear.facade.common.CarrierMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.integrator.wiki.WikiHomeActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <service android:name="com.ss.android.lark.multitask.MultitaskRemoteService"/>
+        <service android:name="com.ss.android.lark.multitask.screencapture.MainProcessScreenshotCaptureService"/>
+        <service android:name="com.ss.android.lark.multitask.screencapture.P0ProcessScreenshotCaptureService" android:process=":p0"/>
+        <activity android:theme="@style/MultitaskTranslucentTheme" android:name="com.ss.android.lark.multitask.floating.MultiTaskCheckPermissionActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.ss.android.lark.multitask.tasklist.MultitaskListActivity" android:windowSoftInputMode="adjustNothing"/>
+        <provider android:name="com.ss.android.lark.multitask.task.MultitaskStartTaskEventContentProvider" android:exported="false" android:authorities="com.larksuite.suite.provider.multitask_start_task"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.upload.uploadstatuslist.UploadListActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.upload.uploadstatuslist.UploadListMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.versions.VersionOperationRecordActivity" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.versions.VersionOperationRecordMainProcActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar.Transparent.NoAnimation" android:name="com.bytedance.ee.bear.drive.common.activity.DriveCarrierActivity" android:process="@string/config_doc_process" android:screenOrientation="behind"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar.Transparent.NoAnimation" android:name="com.bytedance.ee.bear.drive.common.activity.DriveCarrierMainProcActivity" android:screenOrientation="behind"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.test.DriveTestActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.test.DriveTestMainProcActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.importfile.DriveImportFileActivity" android:process="@string/config_doc_process" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.biz.importfile.DriveImportFileMainProcActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.Translucent" android:name="com.bytedance.ee.bear.drive.biz.upload.error.DriveUploadErrorTipsActivity" android:process="@string/config_doc_process" android:launchMode="singleTask"/>
+        <activity android:theme="@style/DocAppTheme.Translucent" android:name="com.bytedance.ee.bear.drive.biz.upload.error.DriveUploadErrorTipsMainProcActivity" android:launchMode="singleTask"/>
+        <provider android:name="com.bytedance.ee.bear.drive.biz.upload.filepicker.common.OpenExternalFileProvider" android:exported="false" android:authorities="com.larksuite.suite.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/drivefilepicker_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.core.DriveActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation|screenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.drive.core.DriveMainProcActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation|screenSize|layoutDirection" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.lark.route.SpaceRouteActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|screenSize"/>
+        <activity android:name="com.bytedance.ee.bear.lark.selector.DocSelectorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.bytedance.ee.bear.lark.selector.DocConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.bitable.pro.BitableProActivity" android:exported="false" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.debug.AppendParamsActivity" android:exported="false"/>
+        <activity android:theme="@style/Theme.Holo.Light" android:label="DocsDeveloper" android:name="com.bytedance.ee.bear.debug.DebugActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.bytedance.ee.bear.action.debug.helper"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Holo.Light" android:label="DocsDeveloper" android:name="com.bytedance.ee.bear.debug.DebugMainProcActivity" android:exported="false" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.bytedance.ee.bear.action.debug.helper"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.debug.fgpreview.FGPreviewActivity" android:exported="false"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.debug.net.RequestActivity" android:exported="false"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.debug.net.RequestActivityP0" android:exported="false" android:process="@string/config_doc_process"/>
+        <activity android:name="com.bytedance.ee.bear.debug.bugtool.BugSubmitAcitivity" android:exported="false" android:launchMode="singleTop"/>
+        <service android:name="com.bytedance.ee.bear.debug.bugtool.FloatWindowService" android:exported="false"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.WikiActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.homepage.spacelist.WikiAllSpaceActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.wikitree.WikiTreeActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.wikitree.WikiTreeMainProcActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.spacedetail.WikiSpaceDetailActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wiki.spacedetail.WikiSpaceDetailMainProcActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.home.viewall.WikiSpaceListActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.wikitreev2.WikiTreeActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.wikitreev2.WikiTreeMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.spacedetail.WikiSpaceDetailActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.spacedetail.WikiSpaceDetailMainProcActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.trash.WikiTrashActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.trash.WikiTrashMainProcActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.wikitreev2.main.WikiDefaultRouteActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.WikiActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.wikiv2.WikiMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.templates.center.TemplateCenterActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.DocActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.DocMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.web.SimpleWebActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.web.SimpleWebMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.web.CommonWebActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.web.CommonWebMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.slide.SlideRouteActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.bitable.BitableMainActivity"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.document.DefaultRouteActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <provider android:name="com.ss.android.lark.littleapp.router.LittleAppFileProvider" android:exported="false" android:authorities="com.larksuite.suite.share" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/appbrand_file_paths"/>
+        </provider>
+        <activity android:name="com.ss.android.lark.littleapp.router.MicroAppRouterActivity"/>
+        <activity android:theme="@style/GadgetNoTitleTranslucentAppCompatTheme" android:name="com.ss.android.lark.littleapp.router.LittleAppRouterActivity"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.tab.business.widget.BlockDemoActivity" android:exported="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appprivacy.AppPrivacyActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appdetail.AppDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appsetting.AppSettingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ss.android.appcenter.AppAbout"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appfeedback.AppFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.apppropose.AppProposeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appsort.AppSortActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appaddv2.AddAppActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.tab.business.widget.CardPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActivityCommonTheme" android:name="com.ss.android.appcenter.business.activity.appbadge.AppBadgeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.bytedance.ee.larkbrand.nativeMoudule.photo.PhotoPreviewActivity" android:multiprocess="true" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:name="com.bytedance.ee.larkbrand.nativeMoudule.photo.PickerActivity" android:multiprocess="true" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.bytedance.ee.larkbrand.AboutDebugActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.bytedance.ee.larkbrand.WebViewActivity"/>
+        <provider android:name="com.bytedance.ee.larkbrand.hostbridge.sync.LarkCrossProcessHostDataProvider" android:authorities="com.larksuite.suite.appbrand"/>
+        <provider android:name="com.bytedance.ee.larkbrand.LarkBrandFileProvider" android:exported="false" android:authorities="com.larksuite.suite.brand" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/lark_brand_file_paths"/>
+        </provider>
+        <activity android:name="com.bytedance.ee.webapp.WebAppActivity" android:process=":p0" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.bytedance.ee.ref.card.preview.CardPreviewActivity"/>
+        <activity android:theme="@style/Compose" android:name="com.ss.android.lark.mail.impl.compose.ComposeMailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/Compose" android:name="com.ss.android.lark.mail.impl.compose.MulProComposeMailActivity" android:process=":mailweb" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.mail.impl.message.framework.tabcontainer.MessageListTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.message.framework.MessageListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.search.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.signature.SignatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.signature.EntSignatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.signature.SelectEntSignatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.signature.SignatureMultiProcessActivity" android:process=":mailweb" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.autoreply.AutoReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.autoreply.EditAutoReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.autoreply.EditAutoReplyMultiProcessActivity" android:process=":mailweb" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.signature.EditSignatureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.mainpage.MailSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.accountdetail.AccountDetailSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.client.MigrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.share.ShareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.share.collaborate.CollaborateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.message.recall.sender.detail.RecallDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.message.send.state.SendStatusDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.undo.SendUndoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.replylanguage.ReplyLanguageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.conversationmode.ConversationModeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentActivity" android:name="com.ss.android.lark.mail.impl.message.file.ShareDriveFileInvisibleActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.notification.NotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.settings.subsetting.notification.OldNotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.MailAggregationManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.label.LabelEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.label.LabelSelectLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.label.LabelMultiSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.label.LabelMoveToActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.folder.FolderEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.folder.FolderSelectLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.mail.impl.home.aggregation.folder.FolderMoveToActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.arrange.arrangetime.ArrangeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.preempt.PreemptActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.editor.CalendarCreatorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.arrange.arrangelook.LookActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.events.edit.mail.AddMailAttendeeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.importcalendar.ImportCalendarActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.settings.CalendarSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.events.detail.EventDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.events.edit.EditActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.events.edit.DesktopCreateActivity" android:taskAffinity="lark.calendar.event" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.events.edit.DesktopEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.subscribe.CalendarSubscribeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.selector.CalendarSelectorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.settings.account.AccountManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.search.CalendarSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.meetingroom.profile.MeetingRoomProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.meetingroom.profile.MeetingRoomProfileActivityNew" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.meetingroom.signin.MeetingRoomSignInActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.common.widget.chatterpicker.CalendarChatterPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.meetingroom.instance.RoomInstanceActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CalendarActivityTransparent" android:name="com.ss.android.lark.calendar.impl.features.calendars.sidebar.CalendarSidebarActivity"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.profile.CalendarProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/CalendarShareActivity" android:name="com.ss.android.lark.calendar.impl.features.calendars.share.CalendarShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.share.picker.CalendarMemberPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.picture.SelectOnePictureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.calendar.impl.features.calendars.detail.CalendarDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/DocAppTheme.SearchNoActionBar" android:label="@string/Doc_Facade_Search" android:name="com.bytedance.ee.bear.search.SearchHomeActivity" android:exported="false" android:screenOrientation="behind" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.SearchNoActionBar" android:label="@string/Doc_Facade_Search" android:name="com.bytedance.ee.bear.search.SearchSubActivity" android:exported="false" android:screenOrientation="behind" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.SearchNoActionBar" android:name="com.bytedance.ee.bear.search.SearchSelectTypeActivity" android:exported="false" android:screenOrientation="behind"/>
+        <activity android:theme="@style/DocAppTheme.SearchNoActionBar" android:name="com.bytedance.ee.bear.search.wiki.space.WikiSpaceActivity" android:exported="false" android:screenOrientation="behind"/>
+        <activity android:theme="@style/DocAppTheme.SearchNoActionBar" android:name="com.bytedance.ee.bear.search.space.SpaceSearchActivity" android:exported="false" android:screenOrientation="behind" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.todocenter.ui.TodoCenterActivity" android:exported="false" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.list.folder.FolderListActivity" android:exported="false" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="bytedance.doc.list.folder.content"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.list.folderselect.FolderSelectActivity" android:exported="false" android:screenOrientation="behind">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.list.share.ShareMoreActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.list.route.compat.FolderRouteActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.list.folder.complaint.FolderComplaintActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.filedetail.impl.detail.FileDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:name="com.ss.android.lark.filedetail.impl.open.audio.OpenAudioFileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.filedetail.impl.open.textfile.OpenTextFileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.filedetail.impl.folder.manage.FolderManageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.attachment.filereader.FileReaderActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.attachment.filereader.FileReaderMainDocActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.like.LikeListActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.like.LikeListMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.permission.setting.linkshare.LinkShareSetActivity" android:exported="false" android:multiprocess="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.permission.collaborator.manager.CollaboratorManageActivity" android:exported="false" android:multiprocess="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.permission.setting.doc.DocumentPermissionSetActivity" android:exported="false" android:multiprocess="true" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.record.privacy.PrivacyActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.record.viewhistory.ViewHistoryActivity" android:exported="false" android:process="@string/config_doc_process" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.record.privacy.PrivacyMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.middleground.record.viewhistory.ViewHistoryMainProcActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:exported="false" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent101847873"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.guide.option.OptionResearchActivity" android:exported="false" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/DocAppTheme.Translucent" android:name="com.bytedance.ee.bear.quoto.ExceedQuotaActivity" android:process="@string/config_doc_process" android:launchMode="singleTask"/>
+        <activity android:theme="@style/DocAppTheme.Translucent" android:name="com.bytedance.ee.bear.quoto.ExceedQuotaMainProcActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.lynx.impl.page.CCMLynxPageActivity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/DocAppTheme.NoActionBar" android:name="com.bytedance.ee.bear.photopicker.photo.TakePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.file.picker.impl.page.FilePickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/ActivityTransparentTheme" android:label="@string/Lark_Legacy_AppNameRelease" android:name="com.ss.android.lark.share.impl.systemshare.ShareActivity" android:launchMode="singleInstance" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.lark.android.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lark" android:host="share.lark.com" android:path="/im/forward.html"/>
+                <data android:scheme="lark" android:host="share.lark.com" android:path="/im/send_auth.html"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ss.android.lark.share.impl.systemshare.ShareContentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/GuideTheme" android:name="com.ss.android.lark.guide.landing.general.ui.GuidePageActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.guide.biz.onboarding.tour.page.teamname.SettingTeamNameActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.guide.biz.onboarding.tour.page.member.AddTeamMemberActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.guide.biz.onboarding.tour.page.teamuse.TeamUseActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.guide.landing.vc.VcWelcomeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.ug.dyflow.steps.welcome.WelcomeActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.ug.dyflow.steps.video.FlowVideoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/TranslucentAndNoTitleTheme" android:name="com.ss.android.lark.ug.dyflow.steps.invite.InviteLoadingActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.ug.dyflow.steps.inviteguide.InviteGuideActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/TranslucentAndNoTitleTheme" android:name="com.ss.android.lark.ug.dyflow.steps.addfriends.AddFriendsActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/TranslucentAndNoTitleTheme" android:name="com.ss.android.lark.ug.feat.add_friends.AddRecFriendsActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/TranslucentAndNoTitleTheme" android:name="com.ss.android.lark.guide.biz.onboarding.tour.page.ldr.LdrGuideActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.upgrade.impl.InstallApkActivity"/>
+        <activity android:name="com.ss.android.lark.upgrade.setting.about.AboutActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.ss.android.lark.upgrade.silent.SilentUpgradeJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.ss.lark.android.avatar.ui.AvatarPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:name="com.ss.android.lark.authorization.AuthorizationActivity" android:process=":authorized"/>
+        <activity android:theme="@style/SplashTheme" android:name="com.ss.android.lark.simple.ui.SimpleMainActivity" android:process=":simple" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.simple.ui.SimpleWebActivity" android:process=":simple" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.bytedance.lark.webview.container.impl.WebContainerActivity" android:process="@string/browser_process_name" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.join_leave_history.JoinLeaveHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.sharing.SharingHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.applicant.ApplicantListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.setting.ChatGroupSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.announcement.LarkGroupAnnouncementEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.p2p.ChatP2pSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.info.edit.LarkGroupInfoEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.info.qrcode.GroupQRCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.v1.GroupOwnershipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.v2.GroupOwnershipActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.quit.QuitGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.info.LarkGroupInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.post.PostTypeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.mail.GroupMailSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.share.GroupShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.avatar.AvatarEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.info.time.GroupShareTimeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.group_search.GroupSearchEnableActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.chatsetting.impl.group.ownership.memberlimit.ApplyGroupMemberLimitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.create.groupchat.impl.select_member.GroupCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.create.groupchat.impl.p2p.P2pBuildGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.create.groupchat.impl.type.GroupTypeSelectorActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.create.groupchat.impl.info.InputGroupInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.create.groupchat.impl.f2f.F2FCreateGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.team.page.create_team.CreateTeamActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.picker.TeamPickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.ChatModeSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.create_chat.CreateTeamChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.TeamChatTypeSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.upgrade_chat.UpgradeToTeamActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.setting.TeamSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.setting.TeamAuthorityManageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.TeamNameEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.member.TeamMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.page.TeamInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.team.picker.TeamPickerConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.show_member.team_group.TeamGroupShowMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.add_member.AddGroupMemberActivity"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.show_member.common_group.ShowGroupMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.select_ding_member.SelectDingMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.change_owner.ChangeOwnerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.pick_member.PickWhiteListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.atselector.AtSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.calendar_pick_member.CalendarPickMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.share_contact_card.ShareContactCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.chat_admin.ChatAdminActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.member_manage.impl.chat_admin.add_chat_admin.AddChatAdminActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.search.widget.selectedview.SelectedMoreActivity"/>
+        <activity android:name="com.ss.android.lark.pin.impl.ChatPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:name="com.ss.android.lark.ai.enterpriseTopic.listpage.EntityWordsActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MeegoTheme" android:name="com.ss.android.lark.meego.wrapper.MeegoActivity" android:process=":meego" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:name="com.ss.android.lark.meego.wrapper.debug.MeegoDebugPage" android:exported="false" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/WhiteBackgroundTheme" android:name="com.ss.android.lark.money.redpacket.send.SendRedPacketActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustPan"/>
+        <activity android:theme="@style/ActivityTransparentDialog" android:name="com.ss.android.lark.money.redpacket.detail.RedPacketDetailActivity"/>
+        <activity android:theme="@style/LarkAppTheme" android:name="com.ss.android.lark.money.redpacket.history.RedPacketHistoryActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/LarkAppTheme" android:name="com.ss.android.lark.money.redpacket.cover.RedPacketCoverActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/LarkAppTheme" android:name="com.ss.android.lark.money.redpacket.cover.preview.CoverPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.ss.android.lark.widget.photo_picker.PhotoPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/NoTitleTranslucentAppCompatTheme" android:name="com.ss.android.lark.widget.photo_picker.PhotoPagerActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/NoTitleTranslucentAppCompatTheme" android:name="com.ss.android.lark.widget.photo_picker.DesktopPagerActivity" android:taskAffinity=".photo_picker" android:launchMode="singleInstance" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.ss.android.lark.widget.photo_picker.PhotoPreviewPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.account_provider.debug.PassportDebugActivity"/>
+        <activity android:name="com.larksuite.component.blockit.hashtag.add.AddHashTagActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.larksuite.component.blockit.hashtag.list.HashTagListActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:name="com.ss.android.lark.passport.device.manage.DevicesManageActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/KaLoginTheme" android:name="com.ss.android.lark.passport.ka.KaLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/KaLoginTheme" android:name="com.ss.android.lark.passport.ka.transparent.KaLoadingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/KaSigninTheme" android:name="com.ss.android.lark.passport.kar.KarLoadingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <receiver android:name="com.ss.lark.android.passport.biz.feature.login.onekey_login.OneKeyConfigUpdateReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.ss.android.lark.passport.common.config.update"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.set.SetNewPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.reset_phone_num.RestPhoneNumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.web.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninClearTaskTheme" android:name="com.ss.lark.android.passport.biz.compat.web.WebViewClearTaskActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.login_register_base.LoginRegisterBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.login_input.LoginInputActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.reset_pwd.SetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.real_name.RealNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.company_login.scheme.SSOVerifyActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="passport" android:host="applink.feishu.cn" android:path="/client/passport/sso"/>
+                <data android:scheme="passport" android:host="applink.larksuite.com" android:path="/client/passport/sso"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/SigninClearTaskTheme" android:name="com.ss.lark.android.passport.biz.feature.login.LoginClearTaskActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.verify_code.InputCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.InputCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.create_team.CreateTeamActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.setname.SetNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.user_info.SetUserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.company_login.CompanyLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.join_team.join_way.TenantJoinWayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.account_center.AccountCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.account_center.OfficialEmailListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.join_team.tenant_code.TenantCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.pending_approve.PendingApproveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.country.CountrySelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.login.onekey_login.OneKeyAuthActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.real_name.RealNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.compat.split_flow_page.SplitFlowPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.user_item_list.UserListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.auth_type.AuthTypeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.lark.android.passport.biz.feature.session.TransparentBringAppToFrontActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.bio_auth.BioAuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.set_credential.RecoverAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.lark.android.passport.biz.feature.google_login.GoogleLoginActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.sso.ssosdk.SSOSdkAuthActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.sso.loading.CommonLoadingActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.sso.external.ExternalAuthActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.sso.suite.SuiteConfirmActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.feature.sso.loading.AuthLoadingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentThemeActivity" android:name="com.ss.lark.android.passport.biz.feature.sso.loading.TransparentLoadingActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.lark.android.passport.biz.feature.applink_to_idp.ApplinkIdpActivity" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.lark.android.passport.biz.feature.switch_user.SwitchNextValidFlagActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.lark.android.passport.biz.account.migration.PassportUpgradeActivity" android:process=":upgrade" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/SigninTheme" android:name="com.ss.android.lark.security.set.SetSecurityPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/SecurityVerifyTheme" android:name="com.ss.android.lark.security.verify.VerifySecurityPasswordActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.android.lark.passport.infra.base.architecture.ClearPageStackStartPointActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/NoTitleTranslucentTheme" android:name="com.ss.android.lark.passport.infra.base.architecture.ReturnMarkerBaseActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.ss.android.lark.feed.app.conversationbox.ConversationBoxActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.feed.app.delayed.DelayedFeedActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.feed.app.team.hidded_chat_list.HiddenChatListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.leanmode.ui.close.CloseLeanModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.oncall.ui.LarkOnCallActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ss.android.lark.ding.service.impl.controller.DingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.edu.creategroup.primarypage.CreateEduGroupActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.edu.creategroup.GroupNameModifyActivity"/>
+        <activity android:name="com.ss.android.lark.edu.creategroup.secondarypage.CreateGroupDetailActivity"/>
+        <activity android:name="com.ss.android.lark.readstate.impl.detail.MessageReadStateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.phone.impl.phonequerylimit.PhoneQueryLimitActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ss.android.lark.phone.impl.phoneamountedit.PhoneAmountEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ss.android.lark.invite_new_tenant.rule.InviteActivityRuleActivity"/>
+        <activity android:name="com.ss.android.lark.invite_new_tenant.invite.single.InviteSingleActivity"/>
+        <activity android:name="com.ss.android.lark.invite_new_tenant.invite.all.InviteAllActivity"/>
+        <activity android:name="com.ss.android.lark.invite_new_tenant.invite.InviteNewTenantActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/TranslucentTheme" android:name="com.ss.android.lark.photoeditor.impl.ui.PhotoEditorActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActivityTheme" android:name="com.bytedance.ee.android.file.picker.lib.page.FilePickerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/ActivityTheme" android:name="com.bytedance.ee.android.file.picker.lib.local.LocalFileConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <receiver android:name="com.bytedance.ee.android.file.picker.lib.receiver.CloseReceiver" android:permission="lark.file.picker.close" android:exported="false"/>
+        <provider android:name="com.bytedance.ee.android.file.picker.lib.provider.FilePickerProvider" android:exported="false" android:authorities="com.larksuite.suite.common.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_picker_file_paths"/>
+        </provider>
+        <activity android:name="com.ss.android.lark.thirdshare.container.impl.LarkShareContainerActivity" android:multiprocess="true" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.larksuite.component.safemode.ui.SafeModeActivity" android:exported="false" android:process=":safemode" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/PermissionConfirmTransparent" android:name="com.ss.android.lark.dfcore.utils.PermissionConfirmBlankActivity"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.ss.android.lark.thirdshare.base.export.TransActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.larksuite.suite.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDkHlBAlM1WRuge9dbcdCA-oveoLE2EZ4c"/>
+        <uses-library android:name="com.miui.easygo" android:required="false"/>
+        <activity android:name="com.ss.android.lark.mediapicker.album.base.AlbumGridActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mediapicker.preview.base.MediaPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ss.android.lark.mediapicker.player.VideoPlayerActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.ss.android.lark.mediapicker.fileprovider.PickerFileProvider" android:exported="false" android:authorities="com.larksuite.suite.picker.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/picker_file_paths"/>
+        </provider>
+        <receiver android:name="com.ss.android.lark.mediapicker.receiver.CloseReceiver" android:permission="lark.media.picker.close" android:exported="false"/>
+        <activity android:name="com.bytedance.lark.lynxlib.bullet.BulletContainerActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.ss.android.lark.wschannelprocess.WschannelLaunchService" android:enabled="true" android:exported="false" android:process=":wschannel">
+            <intent-filter>
+                <action android:name="com.ss.android.lark.wschannel.WschannelLaunchService"/>
+                <category android:name="com.larksuite.suite"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity0" android:process=":miniapp0" android:taskAffinity="com.larksuite.suite.MiniAppUI0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity5" android:taskAffinity="com.larksuite.suite.MiniAppUI5" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity0" android:process=":miniapp0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity5" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService0" android:process=":miniapp0" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService5" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity1" android:process=":miniapp1" android:taskAffinity="com.larksuite.suite.MiniAppUI1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity1" android:process=":miniapp1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity6" android:taskAffinity="com.larksuite.suite.MiniAppUI6" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity6" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService1" android:process=":miniapp1" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService6" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity2" android:process=":miniapp2" android:taskAffinity="com.larksuite.suite.MiniAppUI2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity2" android:process=":miniapp2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity7" android:taskAffinity="com.larksuite.suite.MiniAppUI7" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity7" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService2" android:process=":miniapp2" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService7" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity3" android:process=":miniapp3" android:taskAffinity="com.larksuite.suite.MiniAppUI3" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity3" android:process=":miniapp3" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity8" android:taskAffinity="com.larksuite.suite.MiniAppUI8" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity8" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService3" android:process=":miniapp3" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService8" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity4" android:process=":miniapp4" android:taskAffinity="com.larksuite.suite.MiniAppUI4" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity4" android:process=":miniapp4" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabActivity9" android:taskAffinity="com.larksuite.suite.MiniAppUI9" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity_main_process" android:name="com.tt.miniapphost.placeholder.MiniappTabHostStackActivity9" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService4" android:process=":miniapp4" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.placeholder.MiniappService9" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.process.HostCrossProcessCallService" android:exported="false" android:stopWithTask="true"/>
+        <service android:name="com.tt.miniapphost.feedback.FeedbackRecordService" android:process=":miniapp100" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.chooser.PickerActivity" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.chooser.PreviewActivity" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.map.AppbrandMapActivity" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.permission.PermissionSettingActivity" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.settings.ProjectSettingsActivity" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false"/>
+        <activity android:theme="@style/microapp_i_mini_app_feedback_activity" android:name="com.tt.miniapp.feedback.entrance.FAQActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.about.AboutActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.about.MicroAppSubjectInfoActivity" android:launchMode="singleTop" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false"/>
+        <activity android:theme="@style/microapp_i_transparentWindow" android:name="com.tt.miniapp.feedback.FeedbackRecordActivity" android:process=":miniapp100" android:launchMode="singleInstance" android:configChanges="orientation|screenSize" android:allowTaskReparenting="false"/>
+        <activity android:theme="@style/microapp_m_TransparentWindow" android:name="com.tt.miniapp.activity.OpenSchemaMiddleActivity" android:configChanges="screenLayout|screenSize"/>
+        <activity android:theme="@style/microapp_i_move_host_front_activity" android:name="com.tt.miniapp.activity.MoveHostFrontActivity" android:configChanges="screenLayout|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxServiceStub0" android:process=":oryx0" android:stopWithTask="true"/>
+        <service android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxServiceStub1" android:process=":oryx1" android:stopWithTask="true"/>
+        <service android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxServiceStub2" android:process=":oryx2" android:stopWithTask="true"/>
+        <service android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxServiceStub3" android:process=":oryx3" android:stopWithTask="true"/>
+        <service android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxServiceStub4" android:process=":oryx4" android:stopWithTask="true"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxActivityStub00" android:process=":oryx0" android:taskAffinity=".oryx0.stub0" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxHostActivityStub00" android:process=":oryx0" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxActivityStub01" android:process=":oryx1" android:taskAffinity=".oryx0.stub1" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxHostActivityStub01" android:process=":oryx1" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxActivityStub02" android:process=":oryx2" android:taskAffinity=".oryx0.stub2" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxHostActivityStub02" android:process=":oryx2" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxActivityStub03" android:process=":oryx3" android:taskAffinity=".oryx0.stub3" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxHostActivityStub03" android:process=":oryx3" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxActivityStub04" android:process=":oryx4" android:taskAffinity=".oryx0.stub4" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/microapp_i_mini_app_activity" android:name="com.bytedance.ee.lark.oryxgadget.host.stub.OryxHostActivityStub04" android:process=":oryx4" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/CipherErrorTheme" android:name="com.ss.android.lark.diskmanage.cipher.CipherErrorTipsActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.ss.android.lark.mediarecorder.recorder.MediaRecorderActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.ss.android.lark.mediarecorder.fileprovider.MediaRecorderFileProvider" android:exported="false" android:authorities="com.larksuite.suite.recorder.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/recorder_provider_paths"/>
+        </provider>
+        <provider android:name="com.ss.android.lark.provider.spprovider.SPContentProvider" android:exported="false" android:authorities="com.larksuite.suite.spprovider"/>
+        <meta-data android:name="APPKEY" android:value="100036031"/>
+        <meta-data android:name="delivery_metrics_exported_to_big_query_enabled" android:value="true"/>
+        <provider android:name="com.ss.lark.android.module.offlinepush.MultiProcessSharedProvider" android:permission="com.larksuite.suite.permission.SAFE_EXPORTED_PROVIDER" android:exported="true" android:authorities="com.larksuite.suite.multiprocess.SHARE_PROVIDER_AUTHORITY1161"/>
+        <provider android:name="com.ss.lark.android.module.offlinepush.account.AccountProvider" android:exported="false" android:authorities="com.larksuite.suite.account.AccountProvider1161" android:syncable="true"/>
+        <service android:name="com.ss.lark.android.module.offlinepush.MessageHandler" android:exported="false">
+            <intent-filter>
+                <action android:name="com.ss.android.message"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.lark.message.cache.action"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ss.android.lark.message.notify.delete.action"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.message.log.LogService" android:exported="false" android:process=""/>
+        <provider android:name="com.ss.lark.android.module.offlinepush.MultiProcessSharedProvider" android:permission="com.larksuite.suite.permission.SAFE_EXPORTED_PROVIDER" android:exported="true" android:authorities="com.larksuite.suite.multiprocess.SHARE_PROVIDER_AUTHORITY1161"/>
+        <service android:name="com.ss.lark.android.module.offlinepush.account.AccountSyncService" android:exported="false">
+            <intent-filter>
+                <action android:name="android.shareText.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.shareText.SyncAdapter" android:resource="@xml/syncadapter"/>
+        </service>
+        <service android:name="com.ss.lark.android.module.offlinepush.account.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true" android:process=":wschannel">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.ss.android.lark"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.ss.android.pushmanager.setting.PushMultiProcessSharedProvider" android:exported="false" android:process=":wschannel" android:authorities="com.larksuite.suite.push.SHARE_PROVIDER_AUTHORITY"/>
+        <service android:name="com.fcm.push.service.SSGcmListenerService" android:process=":wschannel"/>
+        <service android:name="com.fcm.push.service.SSInstanceIDListenerService" android:process=":wschannel"/>
+        <service android:name="com.fcm.service.SSGcmListenerService" android:process=":wschannel">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true" android:process=":wschannel">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true" android:process=":wschannel">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.lark.wschannelnotification.offline.WschannelMessageHandler" android:process=":wschannel">
+            <intent-filter>
+                <action android:name="com.ss.android.fcm.message"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.ss.android.lark.http.netstate.NetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.bytedance.ee.bear.permission.PermissionGuideActivity" android:exported="false" android:process="@string/config_doc_process" android:screenOrientation="behind"/>
+        <activity android:theme="@style/LKUI_GlobalDialog_activity" android:name="com.larksuite.component.ui.dialog.LKUIGlobalDialogActivity"/>
+        <activity android:theme="@style/LKPluginNoTitleTranslucentAppCompatTheme" android:name="com.larksuite.framework.apiplugin.core.LKTransActivity"/>
+        <provider android:name="com.larksuite.framework.utils.CommonFileProvider" android:exported="false" android:authorities="com.larksuite.suite.common.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/common_file_paths"/>
+        </provider>
+        <service android:name="com.larksuite.framework.utils.sharedmemory.FileDescriptorService" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.FaceLiveSDKActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.FaceLivePreActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.SDKWebActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.OCRTakePhotoActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.WebFailedActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/byted_AppTheme" android:name="com.ss.android.bytedcert.activities.NewPageActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <provider android:name="com.bytedance.ee.bear.service.remote.TokenContentProvider" android:exported="false" android:process="@string/config_token_center_process" android:authorities="com.larksuite.suite.TOKEN_CENTER.main"/>
+        <provider android:name="com.bytedance.ee.bear.service.remote.TokenContentProvider0" android:exported="false" android:process="@string/config_token_center_process0" android:authorities="com.larksuite.suite.TOKEN_CENTER.p0"/>
+        <provider android:name="com.bytedance.ee.bear.service.remote.TokenContentProvider1" android:exported="false" android:process="@string/config_token_center_process1" android:authorities="com.larksuite.suite.TOKEN_CENTER.p1"/>
+        <provider android:name="com.bytedance.ee.bear.service.remote.TokenContentProvider2" android:exported="false" android:process="@string/config_token_center_process2" android:authorities="com.larksuite.suite.TOKEN_CENTER.p2"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:theme="@style/twice_verify.ActivityDialogStyle" android:name="com.bytedance.bdturing.twiceverify.TwiceVerifyWebActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.larksuite.suite.androidx-startup">
+            <meta-data android:name="com.zackratos.ultimatebarx.ultimatebarx.UltimateBarXInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="com.fcm.service.FcmRegistrationJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/PlacesAutocompleteOverlay" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <provider android:name="com.bytedance.apm.battery.dao.MonitorContentProvider" android:exported="false" android:authorities="com.larksuite.suite.apm"/>
+        <service android:name="com.bytedance.common.wschannel.server.WsChannelService" android:exported="false" android:process=":push"/>
+        <service android:name="com.bytedance.common.wschannel.client.WsClientService" android:exported="false"/>
+        <provider android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider" android:exported="false" android:authorities="com.larksuite.suite.WsChannelMultiProcessSharedProvider"/>
+        <provider android:name="com.ss.android.lark.eetroublecapture.contentprovider.CaptureProvider" android:exported="false" android:authorities="com.larksuite.suite.eetroublecapture" android:syncable="true"/>
+        <service android:name="com.ss.android.message.NotifyService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.ss.android.message.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/ByteDancePush_AppTheme.BG.TRS" android:name="com.bytedance.push.notification.PushActivity" android:launchMode="singleTask" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="com.larksuite.suite.pushsdk.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ByteDancePush_AppTheme.BG.TRS" android:name="com.bytedance.push.notification.PassThoughActivity" android:exported="false" android:launchMode="singleTask" android:screenOrientation="behind"/>
+        <receiver android:name="com.ss.android.push.DefaultReceiver"/>
+        <service android:name="com.ss.android.push.DefaultService"/>
+        <provider android:name="com.ss.android.push.PushFileProvider" android:exported="false" android:authorities="com.larksuite.suite.push.file_provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/push_provider_paths"/>
+        </provider>
+        <activity android:theme="@style/EasyPermissions.Transparent" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:exported="false"/>
+        <receiver android:name="com.bytedance.applog.collector.Collector" android:enabled="true" android:exported="false"/>
+        <provider android:name="com.bytedance.push.settings.storage.PushProvider" android:exported="false" android:authorities="com.larksuite.suite.push.settings"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.larksuite.suite.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="com.bytedance.ug.sdk.share.impl.provider.ShareSdkProvider" android:exported="false" android:authorities="com.larksuite.suite.ug.sdk.share.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ug_sdk_share_filepaths"/>
+        </provider>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.larksuite.suite.lifecycle-process"/>
+        <receiver android:name="com.bytedance.raphael.RaphaelReceiver">
+            <intent-filter>
+                <action android:name="com.bytedance.raphael.ACTION_START"/>
+                <action android:name="com.bytedance.raphael.ACTION_STOP"/>
+                <action android:name="com.bytedance.raphael.ACTION_PRINT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.huawei.hms.client.service.name:site" android:value="site:5.1.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:site:site" android:value="8"/>
+        <activity android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:label="@string/SearchActivity" android:name="com.huawei.hms.site.widget.SearchActivity" android:exported="false"/>
+        <uses-library android:name="com.huawei.easygo" android:required="false"/>
+        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:exported="false" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"/>
+        <activity android:theme="@style/NoTitleTranslucentThemeH5ProxyActivity" android:name="com.larksuite.component.dybrid.h5core.core.H5TranslateProxyActivity" android:launchMode="singleInstance"/>
+        <service android:name="com.larksuite.component.dybrid.h5core.ipc.H5MainProcessMessenger"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.larksuite.component.dybrid.h5core.core.H5JumpForResultActivity"/>
+        <meta-data android:name="com.bytedance.org.chromium.content.browser.SANDBOXED_SERVICES_NAME" android:value="com.bytedance.org.chromium.content.app.SandboxedProcessService"/>
+        <meta-data android:name="com.bytedance.org.chromium.content.browser.NUM_SANDBOXED_SERVICES" android:value="10"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService0" android:exported="false" android:process=":sandboxed_process1"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService1" android:exported="false" android:process=":sandboxed_process2"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService2" android:exported="false" android:process=":sandboxed_process3"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService3" android:exported="false" android:process=":sandboxed_process4"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService4" android:exported="false" android:process=":sandboxed_process5"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService5" android:exported="false" android:process=":sandboxed_process6"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService6" android:exported="false" android:process=":sandboxed_process7"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService7" android:exported="false" android:process=":sandboxed_process8"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService8" android:exported="false" android:process=":sandboxed_process9"/>
+        <service android:name="com.bytedance.org.chromium.content.app.SandboxedProcessService9" android:exported="false" android:process=":sandboxed_process10"/>
+        <activity android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:enabled="false" android:exported="false" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true" android:launchMode="singleInstance"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:enabled="false" android:exported="false" android:stateNotNeeded="true"/>
+        <service android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService" android:enabled="false" android:exported="true"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:location" android:value="location:SDK-VERSION"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:location:location" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.bi.setting" android:value="true"/>
+        <meta-data android:name="com.huawei.hms.client.channel.androidMarket" android:value="false"/>
+        <meta-data android:name="com.huawei.hms.map.version" android:value="5.0.1.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:maps" android:value="maps:5.1.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:maps:huawei_module_maps" android:value="6"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:maps:huawei_module_huaweimaps" android:value="6"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:5.0.5.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.15.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="4"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <provider android:name="com.huawei.hms.update.provider.UpdateProvider" android:exported="false" android:authorities="com.larksuite.suite.hms.update.provider" android:grantUriPermissions="true"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.huawei.hms.activity.BridgeActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="behind" android:configChanges="locale|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale" android:hardwareAccelerated="true">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:exported="false" android:authorities="com.larksuite.suite.AGCInitializeProvider"/>
+        <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:exported="false" android:configChanges="orientation|screenSize">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <provider android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider" android:exported="false" android:authorities="com.larksuite.suite.updateSdk.fileProvider" android:grantUriPermissions="true"/>
+        <meta-data android:name="com.qihoo360.plugin.name" android:value="ttoffice"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider0" android:enabled="true" android:exported="false" android:process=":miniapp2" android:authorities="com.larksuite.suite.IPC.miniapp2IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider1" android:enabled="true" android:exported="false" android:authorities="com.larksuite.suite.IPC.IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider2" android:enabled="true" android:exported="false" android:process=":miniapp3" android:authorities="com.larksuite.suite.IPC.miniapp3IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider3" android:enabled="true" android:exported="false" android:process=":miniapp4" android:authorities="com.larksuite.suite.IPC.miniapp4IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider4" android:enabled="true" android:exported="false" android:process=":wschannel" android:authorities="com.larksuite.suite.IPC.wschannelIPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider5" android:enabled="true" android:exported="false" android:process=":p0" android:authorities="com.larksuite.suite.IPC.p0IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider6" android:enabled="true" android:exported="false" android:process=":miniapp0" android:authorities="com.larksuite.suite.IPC.miniapp0IPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider7" android:enabled="true" android:exported="false" android:process=":mailweb" android:authorities="com.larksuite.suite.IPC.mailwebIPCProvider"/>
+        <provider android:name="ee.android.framework.manis.base.stub.ManisStubProvider8" android:enabled="true" android:exported="false" android:process=":miniapp1" android:authorities="com.larksuite.suite.IPC.miniapp1IPCProvider"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

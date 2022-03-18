@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_reaction" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16">
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tv_reaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_M_AllowLivestreamLiveChat" android:layout_centerVertical="true"/>
+        <com.larksuite.component.ui.button.LKUISwitchButton android:id="@+id/btn_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

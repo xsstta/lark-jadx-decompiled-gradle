@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bg_pstn_invite_item_selector" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tv_country_desc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp"/>
+    <View android:id="@+id/line_separator" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp" android:layout_alignParentBottom="true"/>
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="20dp" android:textColor="@color/primary_pri_500" android:id="@+id/icon_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/iconfont_icon_done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

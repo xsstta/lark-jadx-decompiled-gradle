@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/common_dialog_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/extra_region" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/title_region" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/content_region" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/button_region" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+</LinearLayout>

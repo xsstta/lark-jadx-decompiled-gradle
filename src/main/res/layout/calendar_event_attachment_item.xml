@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.common.widget.attachment.AttachmentView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/attachmentView" android:background="@drawable/bg_calendar_attachment_rectangle" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="@dimen/dp_56" android:layout_marginTop="@dimen/dp_8">
+    <ImageView android:id="@+id/typeIcon" android:layout_width="@dimen/dp_29" android:layout_height="@dimen/dp_29"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_8">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:id="@+id/attachmentNameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/attachmentSizeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:id="@+id/unknownAttachmentTV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_180" android:text="@string/Calendar_Attachment_Unsupported" android:singleLine="true"/>
+    </LinearLayout>
+</com.ss.android.lark.calendar.impl.features.common.widget.attachment.AttachmentView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <com.tt.miniapp.component.nativeview.game.RoundedImageView android:id="@+id/microapp_m_item_icon" android:background="@color/microapp_m_transparent" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="13sp" android:textColor="@color/microapp_m_white" android:ellipsize="end" android:id="@+id/microapp_m_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/microapp_m_item_icon"/>
+    <TextView android:textSize="11sp" android:textColor="#99ffffff" android:ellipsize="end" android:id="@+id/microapp_m_item_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:layout_below="@+id/microapp_m_item_title" android:layout_toEndOf="@+id/microapp_m_item_icon"/>
+</RelativeLayout>

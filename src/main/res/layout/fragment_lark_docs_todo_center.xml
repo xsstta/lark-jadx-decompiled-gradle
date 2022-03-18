@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/list_sub_menu_layout" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.bytedance.ee.bear.list.homepage.FlingBehavior">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/list_collapsing_layout" android:layout_width="match_parent" android:layout_height="@dimen/list_home_title_bar_height_min" app:layout_scrollFlags="5"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:name="com.bytedance.ee.bear.todocenter.ui.TodoCenterFragment" android:id="@+id/todo_center_fragment" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

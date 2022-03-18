@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dp_126">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_19">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/dp_16" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/roomName" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="@color/lkui_R500" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvNeedApproval" android:background="@drawable/tv_border_red" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_16" android:text="@string/Calendar_Approval_Tag" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/roomInfoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_group_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/capacityTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+                <View android:layout_gravity="center_vertical" android:id="@+id/infoDivider" android:background="@color/lkui_N400" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_12"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/equipmentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/roomRightArrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_weight="0"/>
+    </LinearLayout>
+    <com.ss.android.lark.calendar.impl.features.calendarview.room.widget.TimeBarView android:id="@+id/roomBusyView" android:layout_width="match_parent" android:layout_height="@dimen/dp_42" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    <View android:layout_gravity="bottom" android:id="@+id/roomDivider" android:background="@color/line_divider_default" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_16"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/loading_image" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_horizontal" android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+    <io.supercharge.shimmerlayout.ShimmerLayout android:id="@+id/shimmer_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0" app:shimmer_auto_start="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/calendar_holder_instance_list_skeleton"/>
+            <include layout="@layout/calendar_holder_instance_list_skeleton"/>
+            <include layout="@layout/calendar_holder_instance_list_skeleton"/>
+        </LinearLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_Profile_PersonalStatus"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/dp_14" android:text="@string/Lark_Profile_CurrentStatus_Text" style="@style/SettingGroupTitle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/custom_status_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:nestedScrollingEnabled="false"/>
+            <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp" style="@style/IgnitionSettingGroup">
+                <include android:id="@+id/new_custom_status" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/item_user_custom_status_setting"/>
+            </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/Lark_Profile_AutoSync" style="@style/SettingGroupTitle"/>
+            <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:orientation="vertical" android:id="@+id/auto_sync_setting_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="36dp" style="@style/IgnitionSettingGroup">
+                <com.ss.android.lark.mine.impl.custom_status.setting.SettingSwitchItemView android:id="@+id/on_leave" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint_text="@string/Lark_Profile_AutoSyncOnLeaveDesc" app:title_text="@string/Lark_Profile_AutoSyncOnLeave"/>
+                <com.ss.android.lark.mine.impl.custom_status.setting.SettingSwitchItemView android:id="@+id/on_meeting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint_text="@string/Lark_Profile_AutoSyncMeetingsDesc" app:title_text="@string/Lark_Profile_AutoSyncMeetings"/>
+                <com.ss.android.lark.mine.impl.custom_status.setting.SettingSwitchItemView android:id="@+id/on_calendar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint_text="@string/Lark_Profile_AutoSyncEventDesc" app:title_text="@string/Lark_Profile_AutoSyncCurrentEvent"/>
+            </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

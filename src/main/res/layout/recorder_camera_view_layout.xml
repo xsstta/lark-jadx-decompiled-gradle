@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mediarecorder.view.JCameraView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/jcameraview" android:layout_width="match_parent" android:layout_height="match_parent" app:recorder_duration_max="10000" app:recorder_iconLeft="@drawable/recorder_camera_close" app:recorder_iconMargin="20dp" app:recorder_iconRight="@drawable/recorder_camera_flip" app:recorder_iconSize="30dp" app:recorder_iconSrc="@drawable/recorder_ic_camera"/>

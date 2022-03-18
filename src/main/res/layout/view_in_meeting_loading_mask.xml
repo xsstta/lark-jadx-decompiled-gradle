@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/loadingMask" android:background="@color/vc_bg_body" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ss.android.vc.common.widget.LoadingLottieView android:id="@+id/loadingView" android:layout_width="40dp" android:layout_height="40dp"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/View_VM_UnstableConnection"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/View_G_TryingToReconnect"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textColor="@color/function_danger_500" android:gravity="center" android:id="@+id/loading_exit_btn" android:background="@drawable/bg_red_border_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginTop="24dp" android:minWidth="76dp" android:text="@string/View_M_LeaveMeetingButton"/>
+    </LinearLayout>
+</FrameLayout>

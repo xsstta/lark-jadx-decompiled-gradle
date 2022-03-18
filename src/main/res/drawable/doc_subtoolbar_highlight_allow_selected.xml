@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/doc_toolbar_subitem_hover_radius"/>
+                    <solid android:color="@color/ud_neutral_color_4"/>
+                    <padding android:right="26dp"/>
+                </shape>
+            </item>
+            <item android:gravity="start">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/doc_toolbar_subitem_hover_radius"/>
+                    <solid android:color="@color/ud_neutral_color_3"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:drawable="@color/space_kit_trans"/>
+</selector>

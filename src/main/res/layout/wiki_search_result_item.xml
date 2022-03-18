@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_68">
+    <RelativeLayout android:id="@+id/wiki_search_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/space_kit_len_16" android:layout_marginRight="@dimen/space_kit_len_16">
+        <ImageView android:id="@+id/wiki_result_image_view" android:layout_width="@dimen/space_kit_len_24" android:layout_height="@dimen/space_kit_len_24" android:layout_marginTop="11dp" android:src="@drawable/icon_wikifile_doc_outline" android:tint="@color/icon_n2"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/wiki_search_result_name" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_22" android:layout_marginLeft="@dimen/space_kit_len_2" android:layout_marginTop="@dimen/space_kit_len_12" android:layout_marginRight="@dimen/space_kit_len_42" android:layout_toRightOf="@+id/wiki_result_image_view"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/wiki_search_parent_name" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_20" android:layout_marginLeft="@dimen/space_kit_len_26" android:layout_marginTop="@dimen/space_kit_len_38" android:layout_marginRight="@dimen/space_kit_len_9" android:singleLine="true"/>
+    </RelativeLayout>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/space_kit_len_16" android:layout_marginRight="@dimen/space_kit_len_16" android:layout_alignBottom="@+id/wiki_search_item" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

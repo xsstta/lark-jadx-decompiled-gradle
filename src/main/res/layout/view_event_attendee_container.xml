@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_invite_attendee_icon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_group_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_attendee_heads_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_16" android:layout_toRightOf="@+id/iv_invite_attendee_icon">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_attendee_heads" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_invite_attendee" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ud_icon_round_add_outlined" android:tint="@color/icon_n2"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_invite_attendee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:text="@string/Calendar_Edit_AddGuest" android:layout_toRightOf="@+id/iv_invite_attendee_icon" android:layout_centerVertical="true" style="@style/CalendarAppendViewItemText"/>
+    <TextView android:textAppearance="@style/CalendarChooseWeekText" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_invite_attendee_count" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@+id/iv_invite_attendee_arrow" android:layout_toRightOf="@+id/ll_attendee_heads_container" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_invite_attendee_arrow" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_5" android:src="@drawable/ud_icon_right_outlined" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="@color/icon_n3"/>
+</merge>

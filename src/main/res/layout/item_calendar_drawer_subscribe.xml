@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/ivSubscribeCalendar" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_16d5" android:src="@drawable/ud_icon_more_add_outlined" android:tint="@color/primary_pri_500"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_500" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tvSubscribeCalendar" android:paddingLeft="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Calendar_Common_SubscribedCalendar"/>
+    </LinearLayout>
+</LinearLayout>

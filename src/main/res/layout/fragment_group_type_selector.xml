@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activityRoot" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/group_type_select_layout" layout="@layout/group_type_select_layout"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/info_type_tip_tv" android:background="@color/bg_base" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_Group_CreateGroup_Mode_Title"/>
+    <View android:id="@+id/info_type_tip_divider_line" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@+id/info_type_layout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.create.groupchat.impl.widget.GroupModeSelector android:id="@+id/modeSelector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/modeTipsTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="15dp" android:layout_marginRight="16dp" android:text="@string/Lark_Group_CreateGroup_Mode_Topic_Description" app:layout_constraintTop_toBottomOf="@+id/modeSelector"/>
+        <com.larksuite.component.universe_design.shadow.UDShadowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginHorizontal="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/modeTipsTv" style="@style/UDShadow.S4.Down">
+            <ImageView android:id="@+id/mExample_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+        </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+        <View android:background="@drawable/mask_bg" android:layout_width="match_parent" android:layout_height="80dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_apply_group_limit" app:startDestination="@+id/frag_apply_group_member">
+    <fragment android:name="com.ss.android.lark.chatsetting.impl.group.ownership.memberlimit.page.SelectMemberLimitFragment" android:id="@+id/frag_select_apply_options"/>
+    <fragment android:name="com.ss.android.lark.chatsetting.impl.group.ownership.memberlimit.page.ApplyGroupMemberLimitFragment" android:id="@+id/frag_apply_group_member">
+        <action android:id="@+id/action_nav_to_select_page" app:destination="@+id/frag_select_apply_options" app:enterAnim="@anim/nav_enter_anim" app:exitAnim="@anim/nav_nothing" app:popExitAnim="@anim/nav_exit_anim"/>
+    </fragment>
+</navigation>

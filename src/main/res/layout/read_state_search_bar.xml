@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/search_layout" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_titlebar_left" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:src="@drawable/sousuo"/>
+    <FrameLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/feed_title_search_height">
+        <FrameLayout android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_search_bg" android:background="@drawable/bg_search_text" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_in_search_view" android:layout_marginStart="8dp"/>
+            <EditText android:textSize="14sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/search_txt" android:background="@null" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:hint="@string/Lark_Legacy_Search" android:singleLine="true" android:textCursorDrawable="@drawable/text_cursor_drawable" android:layout_marginStart="28dp"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/search_del" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/close_search_icon"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/loadingLayout" android:background="@color/file_picker_lkui_grey_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/lark_fail_iv" android:visibility="gone" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginTop="136dp" android:src="@drawable/icon_web_loading_failed"/>
+    <com.ss.android.lark.ui.LoadingView android:layout_gravity="center" android:id="@+id/lark_loading_iv" android:visibility="gone" android:layout_width="150dp" android:layout_height="120dp" android:layout_marginTop="136dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/file_picker_lkui_grey_8" android:layout_gravity="center" android:id="@+id/lark_load_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/Lark_Legacy_InLoading"/>
+</LinearLayout>

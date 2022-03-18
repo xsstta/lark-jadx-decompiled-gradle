@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/background_recycler" android:visibility="invisible" android:clipChildren="false" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/back_view" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/back_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_marginStart="22.5dp" app:layout_constraintEnd_toStartOf="@+id/background_recycler" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_left_outlined" android:scaleType="centerCrop" app:tint="@color/icon_n2"/>
+        <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="@color/icon_n2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="@dimen/dp_13" android:layout_marginTop="20dp" android:text="@string/View_G_Back"/>
+    </LinearLayout>
+    <com.ss.android.vc.meeting.module.meetingdialog.labs.widget.LabsLoading android:id="@+id/labs_loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

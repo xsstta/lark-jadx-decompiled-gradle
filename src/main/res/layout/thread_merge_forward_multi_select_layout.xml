@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/multi_select_menu_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/multi_forward_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:background="@drawable/chat_option_bg_selector" android:padding="12.5dp" android:layout_width="47dp" android:layout_height="47dp" android:layout_marginTop="13.5dp" app:srcCompat="@drawable/ud_icon_forward_com_outlined" app:tint="@color/icon_n1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/text_title" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Lark_Legacy_MenuMergeForward"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/one_by_one_forward_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:background="@drawable/chat_option_bg_selector" android:padding="13.5dp" android:layout_width="47dp" android:layout_height="47dp" android:layout_marginTop="13.5dp" app:srcCompat="@drawable/ud_icon_forward_outlined" app:tint="@color/icon_n1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/text_title" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Lark_Chat_OneByOneForwardButton"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/multi_save_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:background="@drawable/chat_option_bg_selector" android:padding="12.5dp" android:layout_width="47dp" android:layout_height="47dp" android:layout_marginTop="13.5dp" app:srcCompat="@drawable/ud_icon_collection_outlined" app:tint="@color/icon_n1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/text_title" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/Lark_Legacy_CombineFavorite"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

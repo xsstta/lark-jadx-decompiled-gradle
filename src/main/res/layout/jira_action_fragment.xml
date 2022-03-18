@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/jira_action_drag_view" android:background="@drawable/facade_card_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/jira_action_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/facade_dragview_handler" android:layout_width="40dp" android:layout_height="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="4dp"/>
+            <LinearLayout android:orientation="horizontal" android:tag="Jira" android:paddingTop="5dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginTop="5dp" android:layout_marginBottom="2dp" android:src="@drawable/icon_mobile_jira" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="24dp">
+                    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/space_kit_n900" android:ellipsize="end" android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:tag="title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/space_kit_font_12" android:textColor="@color/space_kit_n600" android:ellipsize="end" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:tag="desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/space_kit_n100" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <FrameLayout android:tag="OpenJira" android:background="@drawable/jira_actionsheet_item_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/icon_tool_switchitem_nor" android:layout_marginStart="12dp"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/space_kit_n900" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:tag="text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="48dp" android:layout_marginEnd="12dp"/>
+            <View android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:background="@color/space_kit_n300" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_marginStart="48dp"/>
+        </FrameLayout>
+        <FrameLayout android:tag="SyncJira" android:background="@drawable/jira_actionsheet_item_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_refresh_outlined" android:layout_marginStart="12dp"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/space_kit_n900" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:tag="text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="48dp" android:layout_marginEnd="12dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

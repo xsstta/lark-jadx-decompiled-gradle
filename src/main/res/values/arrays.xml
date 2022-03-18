@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Lark_Calendar_MonthAbbr">
+        <item>@string/Calendar_StandardTime_MonthJanAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthFebAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMarAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAprAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMayAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJuneAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJulyAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAugAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthSeptAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthOctAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthNovAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthDecAbbr</item>
+    </array>
+    <array name="Lark_Calendar_WeekAbbr">
+        <item>@string/Calendar_StandardTime_WeekdaySunShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriShort</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatShort</item>
+    </array>
+    <array name="UDRatingBar_LabelTexts">
+        <item>@string/UDRatingBar_LabelText1</item>
+        <item>@string/UDRatingBar_LabelText2</item>
+        <item>@string/UDRatingBar_LabelText3</item>
+        <item>@string/UDRatingBar_LabelText4</item>
+        <item>@string/UDRatingBar_LabelText5</item>
+    </array>
+    <array name="View_Calendar_WeekAbbr">
+        <item>@string/Calendar_TimeFormat_SundayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_MondayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_TuesdayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_WednesdayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_ThursdayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_FridayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_SaturdayAndroidAbbr</item>
+    </array>
+    <array name="audio2text_option_array">
+        <item>@string/Lark_Chat_AudioToChinese</item>
+        <item>@string/Lark_Chat_AudioToEnglish</item>
+    </array>
+    <array name="branch_integer_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </array>
+    <array name="branch_string_array">
+        <item>酉</item>
+        <item>戌</item>
+        <item>亥</item>
+        <item>子</item>
+        <item>丑</item>
+        <item>寅</item>
+        <item>卯</item>
+        <item>辰</item>
+        <item>巳</item>
+        <item>午</item>
+        <item>未</item>
+        <item>申</item>
+    </array>
+    <array name="byted_liveness_actions">
+        <item>Blink your eyes</item>
+        <item>Open your mouth</item>
+        <item>Nod your head</item>
+        <item>Shake your head</item>
+    </array>
+    <array name="byted_liveness_prompt_info">
+        <item>Verification failed</item>
+        <item>Verifying…</item>
+        <item>Look at the screen without any cover on your face</item>
+        <item>Move your face closer to the screen</item>
+        <item>Move slower</item>
+        <item>Look at the screen without any cover on your face</item>
+        <item />
+        <item>Make sure there&apos;s only one face in the frame</item>
+        <item>Look at the screen with your eyes open</item>
+        <item>Move your face further away from the screen</item>
+        <item>Position your face within the frame</item>
+        <item>Make sure you&apos;re under bright light</item>
+        <item>Avoid overexposing your face to the light</item>
+        <item>Keep your mouth closed</item>
+        <item>Make sure to position your real face in the frame</item>
+    </array>
+    <array name="calendar_alternate_setting">
+        <item>@string/Calendar_Alternate_No</item>
+        <item>@string/Calendar_Alternate_Chinese</item>
+    </array>
+    <array name="client_mode_values">
+        <item>主播模式</item>
+        <item>观众模式</item>
+    </array>
+    <array name="custom_repeat_days">
+        <item>@string/Calendar_StandardTime_Day1</item>
+        <item>@string/Calendar_StandardTime_Day2</item>
+        <item>@string/Calendar_StandardTime_Day3</item>
+        <item>@string/Calendar_StandardTime_Day4</item>
+        <item>@string/Calendar_StandardTime_Day5</item>
+        <item>@string/Calendar_StandardTime_Day6</item>
+        <item>@string/Calendar_StandardTime_Day7</item>
+        <item>@string/Calendar_StandardTime_Day8</item>
+        <item>@string/Calendar_StandardTime_Day9</item>
+        <item>@string/Calendar_StandardTime_Day10</item>
+        <item>@string/Calendar_StandardTime_Day11</item>
+        <item>@string/Calendar_StandardTime_Day12</item>
+        <item>@string/Calendar_StandardTime_Day13</item>
+        <item>@string/Calendar_StandardTime_Day14</item>
+        <item>@string/Calendar_StandardTime_Day15</item>
+        <item>@string/Calendar_StandardTime_Day16</item>
+        <item>@string/Calendar_StandardTime_Day17</item>
+        <item>@string/Calendar_StandardTime_Day18</item>
+        <item>@string/Calendar_StandardTime_Day19</item>
+        <item>@string/Calendar_StandardTime_Day20</item>
+        <item>@string/Calendar_StandardTime_Day21</item>
+        <item>@string/Calendar_StandardTime_Day22</item>
+        <item>@string/Calendar_StandardTime_Day23</item>
+        <item>@string/Calendar_StandardTime_Day24</item>
+        <item>@string/Calendar_StandardTime_Day25</item>
+        <item>@string/Calendar_StandardTime_Day26</item>
+        <item>@string/Calendar_StandardTime_Day27</item>
+        <item>@string/Calendar_StandardTime_Day28</item>
+        <item>@string/Calendar_StandardTime_Day29</item>
+        <item>@string/Calendar_StandardTime_Day30</item>
+        <item>@string/Calendar_StandardTime_Day31</item>
+    </array>
+    <array name="custom_repeat_weekly">
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_RRule_Weekday</item>
+        <item>@string/Calendar_Edit_Weekend</item>
+    </array>
+    <array name="debug_build_login">
+        <item>direct</item>
+        <item>input</item>
+    </array>
+    <array name="debug_build_server">
+        <item>inner</item>
+        <item>staging</item>
+        <item>prePublish</item>
+        <item>oversea</item>
+        <item>oversea-staging</item>
+        <item>publish</item>
+    </array>
+    <array name="displayRule_option">
+        <item>@string/Lark_Chat_TranslationAndOriginalMessage</item>
+        <item>@string/Lark_Chat_TranslationOnly</item>
+    </array>
+    <array name="displayRule_option_v2">
+        <item>@string/Lark_Chat_TranslationAndOriginalMessage</item>
+        <item>@string/Lark_Chat_TranslationOnly</item>
+    </array>
+    <array name="doc_types">
+        <item>doc</item>
+        <item>sheet</item>
+        <item>bitable</item>
+        <item>mindnote</item>
+        <item>file</item>
+        <item>slide</item>
+    </array>
+    <array name="function_btn_ids">
+        <item>@id/function_btn_1</item>
+        <item>@id/function_btn_2</item>
+        <item>@id/function_btn_3</item>
+        <item>@id/function_btn_4</item>
+        <item>@id/function_btn_5</item>
+        <item>@id/function_btn_6</item>
+        <item>@id/function_btn_7</item>
+        <item>@id/function_btn_8</item>
+    </array>
+    <array name="language_option">
+        <item>@string/Lark_Legacy_LanguageChineseSimplified</item>
+        <item>@string/Lark_Legacy_LanguageEnglish</item>
+        <item>@string/Lark_Legacy_LanguageJapanese</item>
+    </array>
+    <array name="lark_Feed_FilterActionArray">
+        <item>@string/Lark_Feed_EditCategory</item>
+        <item>@string/Lark_Feed_UpSettings</item>
+    </array>
+    <array name="lunar_first_of_month">
+        <item>春节</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>冬月</item>
+        <item>腊月</item>
+    </array>
+    <array name="lunar_str">
+        <item>初一</item>
+        <item>初二</item>
+        <item>初三</item>
+        <item>初四</item>
+        <item>初五</item>
+        <item>初六</item>
+        <item>初七</item>
+        <item>初八</item>
+        <item>初九</item>
+        <item>初十</item>
+        <item>十一</item>
+        <item>十二</item>
+        <item>十三</item>
+        <item>十四</item>
+        <item>十五</item>
+        <item>十六</item>
+        <item>十七</item>
+        <item>十八</item>
+        <item>十九</item>
+        <item>二十</item>
+        <item>廿一</item>
+        <item>廿二</item>
+        <item>廿三</item>
+        <item>廿四</item>
+        <item>廿五</item>
+        <item>廿六</item>
+        <item>廿七</item>
+        <item>廿八</item>
+        <item>廿九</item>
+        <item>三十</item>
+    </array>
+    <array name="mail_Calendar_MonthAbbr">
+        <item>@string/Calendar_TimeFormat_JanAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_FebAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_MarAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_AprAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_MayAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_JuneAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_JulyAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_AugAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_SeptAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_OctAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_NovAndroidAbbr</item>
+        <item>@string/Calendar_TimeFormat_DecAndroidAbbr</item>
+    </array>
+    <array name="mail_MonthNumAbbr">
+        <item>@string/Calendar_TimeFormat_JanAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_FebAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_MarAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_AprAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_MayAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_JuneAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_JulyAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_AugAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_SeptAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_OctAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_NovAndroidNumAbbr</item>
+        <item>@string/Calendar_TimeFormat_DecAndroidNumAbbr</item>
+    </array>
+    <array name="mail_month_big">
+        <item>@string/Calendar_TimeFormat_MonthNum1</item>
+        <item>@string/Calendar_TimeFormat_MonthNum3</item>
+        <item>@string/Calendar_TimeFormat_MonthNum5</item>
+        <item>@string/Calendar_TimeFormat_MonthNum7</item>
+        <item>@string/Calendar_TimeFormat_MonthNum8</item>
+        <item>@string/Calendar_TimeFormat_MonthNum10</item>
+        <item>@string/Calendar_TimeFormat_MonthNum12</item>
+    </array>
+    <array name="mail_month_little">
+        <item>@string/Calendar_TimeFormat_MonthNum4</item>
+        <item>@string/Calendar_TimeFormat_MonthNum6</item>
+        <item>@string/Calendar_TimeFormat_MonthNum9</item>
+        <item>@string/Calendar_TimeFormat_MonthNum11</item>
+    </array>
+    <array name="mail_weeks">
+        <item>@string/Calendar_RRule_SundayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_MondayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_TuesdayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_WednesdayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_ThursdayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_FridayAndroidAbbr</item>
+        <item>@string/Calendar_RRule_SaturdayAndroidAbbr</item>
+    </array>
+    <array name="month">
+        <item>@string/Calendar_StandardTime_MonthJanFull</item>
+        <item>@string/Calendar_StandardTime_MonthFebFull</item>
+        <item>@string/Calendar_StandardTime_MonthMarFull</item>
+        <item>@string/Calendar_StandardTime_MonthAprFull</item>
+        <item>@string/Calendar_StandardTime_MonthMayFull</item>
+        <item>@string/Calendar_StandardTime_MonthJuneFull</item>
+        <item>@string/Calendar_StandardTime_MonthJulyFull</item>
+        <item>@string/Calendar_StandardTime_MonthAugFull</item>
+        <item>@string/Calendar_StandardTime_MonthSeptFull</item>
+        <item>@string/Calendar_StandardTime_MonthOctFull</item>
+        <item>@string/Calendar_StandardTime_MonthNovFull</item>
+        <item>@string/Calendar_StandardTime_MonthDecFull</item>
+    </array>
+    <array name="month_big">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+    </array>
+    <array name="month_little">
+        <item>4</item>
+        <item>6</item>
+        <item>9</item>
+        <item>11</item>
+    </array>
+    <array name="month_long">
+        <item>@string/Calendar_StandardTime_MonthJanFull</item>
+        <item>@string/Calendar_StandardTime_MonthFebFull</item>
+        <item>@string/Calendar_StandardTime_MonthMarFull</item>
+        <item>@string/Calendar_StandardTime_MonthAprFull</item>
+        <item>@string/Calendar_StandardTime_MonthMayFull</item>
+        <item>@string/Calendar_StandardTime_MonthJuneFull</item>
+        <item>@string/Calendar_StandardTime_MonthJulyFull</item>
+        <item>@string/Calendar_StandardTime_MonthAugFull</item>
+        <item>@string/Calendar_StandardTime_MonthSeptFull</item>
+        <item>@string/Calendar_StandardTime_MonthOctFull</item>
+        <item>@string/Calendar_StandardTime_MonthNovFull</item>
+        <item>@string/Calendar_StandardTime_MonthDecFull</item>
+    </array>
+    <array name="month_short">
+        <item>@string/Calendar_StandardTime_MonthJanAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthFebAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMarAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAprAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMayAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJuneAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJulyAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAugAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthSeptAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthOctAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthNovAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthDecAbbr</item>
+    </array>
+    <array name="month_string_array">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </array>
+    <array name="msg_card_month">
+        <item>@string/Lark_Legacy_MsgCardJan</item>
+        <item>@string/Lark_Legacy_MsgCardFeb</item>
+        <item>@string/Lark_Legacy_MsgCardMar</item>
+        <item>@string/Lark_Legacy_MsgCardApr</item>
+        <item>@string/Lark_Legacy_MsgCardMay</item>
+        <item>@string/Lark_Legacy_MsgCardJune</item>
+        <item>@string/Lark_Legacy_MsgCardJuly</item>
+        <item>@string/Lark_Legacy_MsgCardAug</item>
+        <item>@string/Lark_Legacy_MsgCardSept</item>
+        <item>@string/Lark_Legacy_MsgCardOct</item>
+        <item>@string/Lark_Legacy_MsgCardNov</item>
+        <item>@string/Lark_Legacy_MsgCardDec</item>
+    </array>
+    <array name="msg_card_month_abbr">
+        <item>@string/Lark_Legacy_MsgCardJanAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardFebAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardMarAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardAprAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardMayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardJuneAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardJulyAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardAugAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardSeptAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardOctAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardNovAbbr</item>
+        <item>@string/Lark_Legacy_MsgCardDecAbbr</item>
+    </array>
+    <array name="msg_card_week_abbr">
+        <item>@string/Lark_Legacy_MsgCard_SundayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCard_MondayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCard_TuesdayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCard_WednesdayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCard_TimeFormat_Thursday</item>
+        <item>@string/Lark_Legacy_MsgCard_FridayAbbr</item>
+        <item>@string/Lark_Legacy_MsgCard_SaturdayAbbr</item>
+    </array>
+    <array name="pin_chat_menu_items">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Pin_PinViewInChat</item>
+        <item>@string/Lark_Pin_ForwardButton</item>
+        <item>@string/Lark_Pin_CopyButton</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="pin_chat_menu_items_without_copy">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Pin_PinViewInChat</item>
+        <item>@string/Lark_Pin_ForwardButton</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="pin_chat_menu_items_without_forward_copy">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Pin_PinViewInChat</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="pin_thread_menu_items">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Chat_TopicImageJumpToTopic</item>
+        <item>@string/Lark_Pin_ForwardButton</item>
+        <item>@string/Lark_Pin_CopyButton</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="pin_thread_menu_items_without_copy">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Chat_TopicImageJumpToTopic</item>
+        <item>@string/Lark_Pin_ForwardButton</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="pin_thread_menu_items_without_forward_copy">
+        <item>@string/Lark_Pin_UnpinButton</item>
+        <item>@string/Lark_Chat_TopicImageJumpToTopic</item>
+        <item>@string/Lark_Pin_CancelButton</item>
+    </array>
+    <array name="quickSideBarLetters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <array name="rating_label">
+        <item>@string/Lark_Chat_TranslationFeedbackOneStar</item>
+        <item>@string/Lark_Chat_TranslationFeedbackTwoStars</item>
+        <item>@string/Lark_Chat_TranslationFeedbackThreeStars</item>
+        <item>@string/Lark_Chat_TranslationFeedbackFourStars</item>
+        <item>@string/Lark_Chat_TranslationFeedbackFiveStarsDesc</item>
+    </array>
+    <array name="saturday_first_repeat_weekly">
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriFull</item>
+        <item>@string/Calendar_RRule_Weekday</item>
+        <item>@string/Calendar_Edit_Weekend</item>
+    </array>
+    <array name="shielded_post_title">
+        <item>无标题帖子</item>
+        <item>无标题</item>
+        <item>Untitled Post</item>
+        <item>Untitled post</item>
+        <item>タイトル</item>
+        <item>タイトルなし</item>
+    </array>
+    <array name="signin_sdk_quick_sidebar_letters">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+    <array name="solar_festival">
+        <item>0101元旦</item>
+        <item>0214情人节</item>
+        <item>0308妇女节</item>
+        <item>0312植树节</item>
+        <item>0315消权日</item>
+        <item>0401愚人节</item>
+        <item>0422地球日</item>
+        <item>0501劳动节</item>
+        <item>0504青年节</item>
+        <item>0601儿童节</item>
+        <item>0701建党节</item>
+        <item>0801建军节</item>
+        <item>0910教师节</item>
+        <item>1001国庆节</item>
+        <item>1031万圣节</item>
+        <item>1111光棍节</item>
+        <item>1224平安夜</item>
+        <item>1225圣诞节</item>
+    </array>
+    <array name="solar_term">
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+    </array>
+    <array name="special_festivals">
+        <item>母亲节</item>
+        <item>父亲节</item>
+        <item>感恩节</item>
+    </array>
+    <array name="start_of_week">
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+    </array>
+    <array name="string_array_bit_rate">
+        <item>80</item>
+        <item>160</item>
+        <item>200</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+    </array>
+    <array name="string_array_frame_rate">
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+        <item>15</item>
+    </array>
+    <array name="string_array_resolutions">
+        <item>160x120</item>
+        <item>320x180</item>
+        <item>320x240</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>1280x720</item>
+    </array>
+    <array name="sunday_first_repeat_weekly">
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+        <item>@string/Calendar_RRule_Weekday</item>
+        <item>@string/Calendar_Edit_Weekend</item>
+    </array>
+    <array name="tradition_festival">
+        <item>除夕</item>
+        <item>0101春节</item>
+        <item>0115元宵</item>
+        <item>0505端午</item>
+        <item>0707七夕</item>
+        <item>0815中秋</item>
+        <item>0909重阳</item>
+    </array>
+    <array name="translate_option">
+        <item>@string/Lark_Chat_TurnOffAutoTranslate</item>
+        <item>@string/Lark_Chat_TranslateMessage</item>
+        <item>@string/Lark_Chat_TranslateMessageAndDocsComment</item>
+        <item>@string/Lark_Chat_TranslateMessageAndDocs</item>
+    </array>
+    <array name="translate_option_v2">
+        <item>@string/Lark_Chat_TranslateMessage</item>
+        <item>@string/Lark_Chat_TranslateMessageAndDocsComment</item>
+        <item>@string/Lark_Chat_TranslateMessageAndDocs</item>
+        <item>@string/Lark_Chat_SetWebAutoTranslate</item>
+    </array>
+    <array name="trunk_integer_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </array>
+    <array name="trunk_string_array">
+        <item>辛</item>
+        <item>壬</item>
+        <item>癸</item>
+        <item>甲</item>
+        <item>乙</item>
+        <item>丙</item>
+        <item>丁</item>
+        <item>戊</item>
+        <item>己</item>
+        <item>庚</item>
+    </array>
+    <array name="ud_timePicker_monthAbbr">
+        <item>@string/Calendar_StandardTime_MonthJanAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthFebAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMarAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAprAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthMayAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJuneAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthJulyAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthAugAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthSeptAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthOctAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthNovAbbr</item>
+        <item>@string/Calendar_StandardTime_MonthDecAbbr</item>
+    </array>
+    <array name="ud_timePicker_weeks">
+        <item>@string/Calendar_StandardTime_WeekdaySunShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriShort</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatShort</item>
+    </array>
+    <array name="ud_timePicker_weeks_abbreviation">
+        <item>@string/Calendar_StandardTime_WeekdaySunAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatAbbr</item>
+    </array>
+    <array name="week">
+        <item>@string/Lark_Legacy_Sunday</item>
+        <item>@string/Lark_Legacy_Monday</item>
+        <item>@string/Lark_Legacy_Tuesday</item>
+        <item>@string/Lark_Legacy_Wednesday</item>
+        <item>@string/Lark_Legacy_Thursday</item>
+        <item>@string/Lark_Legacy_Friday</item>
+        <item>@string/Lark_Legacy_Saturday</item>
+    </array>
+    <array name="week_long">
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+    </array>
+    <array name="week_min">
+        <item>@string/Calendar_StandardTime_WeekdaySunAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatAbbr</item>
+    </array>
+    <array name="week_no">
+        <item>@string/Calendar_RRule_First</item>
+        <item>@string/Calendar_RRule_Second</item>
+        <item>@string/Calendar_RRule_Third</item>
+        <item>@string/Calendar_RRule_Fourth</item>
+        <item>@string/Calendar_RRule_Fifth</item>
+    </array>
+    <array name="week_short">
+        <item>@string/Calendar_StandardTime_WeekdaySunShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriShort</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatShort</item>
+    </array>
+    <array name="week_string_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+    <array name="week_text">
+        <item>@string/Calendar_RRule_SundayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_MondayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_TuesdayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_WednesdayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_ThursdayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_FridayAndroidAbbr2</item>
+        <item>@string/Calendar_RRule_SaturdayAndroidAbbr2</item>
+    </array>
+    <array name="weekly">
+        <item>@string/Calendar_StandardTime_WeekdaySunFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuFull</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriFull</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatFull</item>
+    </array>
+    <array name="weeks_abbr">
+        <item>@string/Calendar_StandardTime_WeekdaySunAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriAbbr</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatAbbr</item>
+    </array>
+    <array name="weeks_short">
+        <item>@string/Calendar_StandardTime_WeekdaySunShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayMonShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayTueShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayWedShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayThuShort</item>
+        <item>@string/Calendar_StandardTime_WeekdayFriShort</item>
+        <item>@string/Calendar_StandardTime_WeekdaySatShort</item>
+    </array>
+    <array name="year_view_week_string_array">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </array>
+</resources>

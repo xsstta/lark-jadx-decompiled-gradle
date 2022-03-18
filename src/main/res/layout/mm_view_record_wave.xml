@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/volume" android:background="@drawable/mm_bg_record_wave" android:layout_width="2dp" android:layout_height="match_parent" android:layout_marginLeft="1.5dp" android:layout_marginRight="1.5dp" android:layout_centerInParent="true"/>
+</merge>

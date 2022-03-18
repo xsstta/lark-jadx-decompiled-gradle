@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/lkui_N00" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/country_select_title" android:layout_width="match_parent" android:layout_height="44dp">
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="24dp" android:textColor="@color/lkui_N800" android:id="@+id/country_select_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_arrow_left" android:layout_centerVertical="true" android:layout_marginStart="6dp"/>
+        <TextView android:textSize="17dp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_InternationalCallingCodes" android:layout_centerInParent="true"/>
+        <View android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:alpha="0.16"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/meeting_id_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:layout_below="@+id/country_select_title" android:layout_marginHorizontal="@dimen/dp_16">
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/lkui_N600" android:ellipsize="end" android:paddingTop="@dimen/dp_4" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_M_DialInInfo" android:maxLines="2" android:paddingVertical="@dimen/dp_4"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/lkui_N900" android:id="@+id/meeting_id_tv" android:paddingTop="@dimen/dp_4" android:paddingBottom="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_View_MeetingIdColon" android:paddingVertical="@dimen/dp_4"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/country_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/meeting_id_container"/>
+    <com.ss.android.vc.meeting.module.meetingdialog.pstn.country.quickbar.QuickSideBarView android:id="@+id/country_index" android:visibility="gone" android:layout_width="20dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginEnd="4dp" android:layout_alignParentEnd="true"/>
+    <FrameLayout android:id="@+id/load_status_container" android:background="@color/lkui_N00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/country_select_title">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/loading_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ss.android.vc.common.widget.EfficientLoadingLottieView android:id="@+id/loading_anim_view" android:layout_width="36dp" android:layout_height="36dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/lkui_N900" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/View_VM_Loading"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textColor="@color/lkui_N900" android:id="@+id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_SomethingWentWrong"/>
+            <TextView android:textSize="16dp" android:textColor="@color/lkui_B400" android:id="@+id/error_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/View_G_TryAgain"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

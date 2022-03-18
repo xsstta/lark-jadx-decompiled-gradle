@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/black_alpha_30" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/mm_fore_play_layer_top_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <View android:background="@drawable/mm_fore_play_layer_bottom_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.ss.android.lark.mm.widget.avatar.Avatar android:id="@+id/topVideoThumbnailView" android:visibility="gone" android:layout_width="160dp" android:layout_height="90dp" android:layout_marginTop="12dp" android:layout_alignParentTop="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true" app:avatar_borderStyle="1" app:avatar_cornerRadius="6dp"/>
+    <com.ss.android.lark.mm.widget.avatar.Avatar android:id="@+id/bottomVideoThumbnailView" android:layout_width="160dp" android:layout_height="90dp" android:layout_marginBottom="38dp" android:layout_alignParentBottom="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true" app:avatar_borderStyle="1" app:avatar_cornerRadius="6dp"/>
+</merge>

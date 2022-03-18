@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:swipe="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.blockit.hashtag.widget.SwipeLayout android:id="@+id/swipeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" swipe:leftEdgeSwipeOffset="0dp" swipe:rightEdgeSwipeOffset="0dp">
+        <ImageView android:layout_gravity="right" android:id="@+id/ivDeleteHashTag" android:background="@color/lkui_R500" android:padding="@dimen/dp_18" android:layout_width="60dp" android:layout_height="match_parent" android:src="@drawable/ic_svg_delete_hash_tag" android:minHeight="60dp" android:layout_weight="1" android:foregroundGravity="center"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/hashTagContainer" android:background="@drawable/avatar_item_bg_selector" android:paddingLeft="16dp" android:paddingTop="19dp" android:paddingRight="16dp" android:paddingBottom="19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16dp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="start" android:id="@+id/tvTagName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tvTeamWorker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" android:drawableStart="@drawable/pano_tag_temwork"/>
+        </LinearLayout>
+    </com.larksuite.component.blockit.hashtag.widget.SwipeLayout>
+</LinearLayout>

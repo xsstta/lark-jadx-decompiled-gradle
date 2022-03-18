@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/lscQrcodeRl" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/lscqLine" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ImageView android:id="@+id/lscqQrcodeIv" android:layout_width="240dp" android:layout_height="240dp" android:layout_marginTop="16dp" android:layout_below="@+id/lscqLine" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/lscqExpiredTipTv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="16dp" android:layout_marginRight="40dp" android:layout_below="@+id/lscqQrcodeIv"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/lscqTipTv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/lscqExpiredTipTv" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/search_feedback_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="45dp">
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_search_feedback_windowtitle" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_feedback_ic_window_close" android:layout_centerVertical="true" android:layout_marginEnd="25dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="56dp" android:layout_height="56dp" android:layout_marginBottom="24dp" android:src="@drawable/ud_icon_succeed_hollow_filled" android:tint="@color/ud_G500"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/Lark_Search_FeedbackSurveyThanksTitle"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_FeedbackSurveyThanksDesc"/>
+        </LinearLayout>
+        <com.larksuite.component.ui.button.LKUIButton android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/confirm_btn" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="22.5dp" android:text="@string/Lark_Legacy_IKnow" app:button_corner_radius="4dp" app:button_disable_color="@color/ud_N400" app:button_normal_color="@color/ud_B500"/>
+    </LinearLayout>
+</LinearLayout>

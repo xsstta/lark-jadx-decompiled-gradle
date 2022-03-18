@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:paddingLeft="16dp" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/reply_desc" android:background="@color/bg_body" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/Lark_Chat_Topic_DetailPage_Replies_Title" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:id="@+id/system_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_42" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12"/>
+</LinearLayout>

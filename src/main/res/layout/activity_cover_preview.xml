@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/static_black_90" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent"/>
+    <Space android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="5"/>
+    <com.ss.android.lark.money.redpacket.cover.preview.discretescrollview.DiscreteScrollView android:id="@+id/item_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Space android:layout_width="wrap_content" android:layout_height="8dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/static_white" android:layout_gravity="center_horizontal" android:id="@+id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20">
+        <Button android:textColor="@color/text_caption" android:id="@+id/btn_smooth_scroll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+    <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/imtoken_red_envelope_text" android:id="@+id/confirm_btn" android:layout_marginBottom="42dp" android:text="@string/Lark_RedPacket_Button_Use" app:ud_backgroundColor="@color/ud_button_red_bg" app:ud_radius="3" style="@style/UDButton.Big.Column"/>
+</LinearLayout>

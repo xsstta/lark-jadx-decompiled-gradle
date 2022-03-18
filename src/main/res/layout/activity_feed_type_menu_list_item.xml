@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/feed_type_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="56dp" android:alpha="0.5"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_gravity="center_vertical" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:text="@string/Lark_Legacy_FeedDrawerInboxLabel"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.larksuite.component.ui.imageview.LKUIBadgeView android:layout_gravity="center_vertical" android:id="@+id/message_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" app:badgeBackground="@drawable/badge_orange_single_count_bg_stroke" app:badgePadding="1dp" app:textColor="@color/lkui_N00" app:textSize="@dimen/sp_11"/>
+    </LinearLayout>
+</LinearLayout>

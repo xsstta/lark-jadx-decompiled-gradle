@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/slide_export_title" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_50"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/slide_export_loading_container" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/slide_export_loading_view" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+    </LinearLayout>
+    <View android:id="@+id/slide_export_title_divider" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_4"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/slide_export_select_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/slide_export_pdf" android:background="@drawable/slide_export_ll_selector" android:padding="@dimen/space_kit_len_14" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tool_pdf_nor" android:tint="@color/icon_n1" android:layout_marginEnd="@dimen/space_kit_len_10"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_24" android:text="PDF"/>
+        </LinearLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/space_kit_len_48"/>
+        <LinearLayout android:id="@+id/slide_export_long_picture" android:background="@drawable/slide_export_ll_selector" android:padding="@dimen/space_kit_len_14" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tool_long_picture_nor" android:tint="@color/icon_n1" android:layout_marginEnd="@dimen/space_kit_len_10"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_24" android:text="@string/Slide_Slide_Export_Long_Image"/>
+        </LinearLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/space_kit_len_48"/>
+        <LinearLayout android:id="@+id/slide_export_multi_picture" android:background="@drawable/slide_export_ll_selector" android:padding="@dimen/space_kit_len_14" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_tool_image_nor" android:tint="@color/icon_n1" android:layout_marginEnd="@dimen/space_kit_len_10"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_24" android:text="@string/Slide_Slide_Export_Multi_Image"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

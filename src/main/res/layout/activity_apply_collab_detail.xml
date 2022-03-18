@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:layout_width="match_parent" android:layout_height="450dp" android:layout_marginTop="100dp" android:layout_marginStart="38dp" android:layout_marginEnd="38dp" app:rl_radius="8dp">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title_color="@color/lkui_N900"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/contact_list" android:background="@color/lkui_N200" android:paddingTop="@dimen/dp_14" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.larksuite.component.ui.layout.LKUIRoundLinearLayout>

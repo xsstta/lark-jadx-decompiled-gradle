@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/export_root" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout android:layout_gravity="bottom" android:id="@+id/panel_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:panel_enable_drag="true" app:panel_title="@string/Doc_Document_Export">
+            <FrameLayout android:id="@+id/export_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_kit_len_24"/>
+        </com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>
+    </FrameLayout>
+</FrameLayout>

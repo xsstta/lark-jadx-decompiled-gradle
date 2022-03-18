@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.bytedance.ee.bear.todocenter.ui.TodoCenterFragment" android:id="@+id/todo_center_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/list_home_title_bar_height_min"/>
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/titleBar" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="@dimen/list_home_title_bar_height_min" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/CreationMobile_Docs_TaskCenter_Title"/>
+</FrameLayout>

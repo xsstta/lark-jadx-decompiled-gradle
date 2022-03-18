@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/share_screen_container" android:background="@color/vc_bg_cam_off" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/shareScreenContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/sharePlaceHolder" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_screen_share_placeholder"/>
+</FrameLayout>

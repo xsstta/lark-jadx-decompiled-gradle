@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ll_boardroom_content" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_base" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/boardroom_building_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.calendar.impl.features.meetingroom.append.widget.AppendResourceTitleBar android:id="@+id/boardroom_building_title_bar_2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.calendar.impl.features.calendarview.widget.SearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/searchBarBottomDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <View android:id="@+id/filterTopDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_8"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.meetingroomfilter.MeetingRoomSearchFilters android:id="@+id/meetingRoomFilter" android:background="@color/bg_body" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/dp_60"/>
+        <View android:id="@+id/meetingRoomFilterDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <FrameLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.ss.android.lark.calendar.impl.features.meetingroom.append.widget.AppendBuildingView android:id="@+id/appendBuildingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.ss.android.lark.calendar.impl.features.meetingroom.append.multilevel.MultiLevelView android:id="@+id/multiLevelView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.ss.android.lark.calendar.impl.features.meetingroom.append.widget.BuildingAppendSearchView android:id="@+id/searchRoomsResultView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.ss.android.lark.calendar.impl.features.events.edit.widget.CalendarLoadingView android:id="@+id/calendar_loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/load_status_bar" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:paddingStart="@dimen/dp_19">
+                <RelativeLayout android:id="@+id/building_loading_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ProgressBar android:id="@+id/progress_bar" android:layout_width="@dimen/dp_15" android:layout_height="@dimen/dp_15" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_LoadingCommon" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_18" android:layout_toEndOf="@+id/progress_bar"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/fetch_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_FailedToLoad" android:layout_marginStart="@dimen/dp_33"/>
+                <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_33"/>
+            </FrameLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/selectAllContainer" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/selectAllDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.EditSelectStateView android:id="@+id/selectAllBt" android:padding="0dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" android:layout_below="@+id/selectAllDivider" android:layout_marginStart="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/text_title" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/Calendar_Common_SelectAll" android:singleLine="true" android:layout_below="@+id/selectAllDivider" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_16" android:layout_toEndOf="@+id/selectAllBt"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/child_fragment_container" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

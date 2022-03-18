@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <inset android:drawable="@drawable/kb_ic_svg_chat_menu_zoom_in_checked" android:insetLeft="0dp" android:insetRight="0dp"/>
+    </item>
+    <item android:state_hovered="true">
+        <inset android:drawable="@drawable/kb_ic_svg_chat_menu_zoom_in_checked" android:insetLeft="0dp" android:insetRight="0dp"/>
+    </item>
+    <item android:state_hovered="false">
+        <inset android:drawable="@drawable/kb_ic_svg_chat_menu_zoom_in_normal" android:insetLeft="0dp" android:insetRight="0dp"/>
+    </item>
+    <item>
+        <inset android:drawable="@drawable/kb_ic_svg_chat_menu_zoom_in_normal" android:insetLeft="0dp" android:insetRight="0dp"/>
+    </item>
+</selector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:background="@color/bg_body" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="44dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@drawable/lkui_navigation_back" android:layout_marginStart="12dp" app:tint="@color/icon_n1"/>
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/OpenPlatform_AppCenter_ProblemDesc"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="8dp" android:layout_height="9dp" android:layout_marginTop="6dp" android:src="@drawable/appcenter_attention_icon" android:layout_marginStart="3dp" app:tint="@color/function_danger_500"/>
+        </LinearLayout>
+        <EditText android:id="@+id/edit" android:background="@drawable/appcenter_feedback_edit_bg" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="12dp" android:hint="@string/OpenPlatform_AppCenter_ProblemPlaceholder" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/AppCenter_EditText_Style"/>
+        <TextView android:textSize="14sp" android:textColor="@color/function_danger_500" android:id="@+id/warn" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="3dp" android:text="@string/OpenPlatform_AppCenter_FeedbackWarn" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginTop="16dp" android:text="@string/OpenPlatform_AppCenter_AddImage" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginTop="4dp" android:text="@string/OpenPlatform_AppCenter_AddImageTips" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginStart="16dp"/>
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.larksuite.component.universe_design.button.UDButton android:textSize="17sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/submit" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="32dp" android:text="@string/OpenPlatform_AppCenter_FeedbackSubmit" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:ud_backgroundColor="@color/ud_button_blue_bg" app:ud_radius="2" style="@style/UDButton.Small.Primary"/>
+    </LinearLayout>
+</FrameLayout>

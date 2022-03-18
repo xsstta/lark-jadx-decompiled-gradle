@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.meeting.module.tab3.widgets.StickyRecyclerView android:scrollbarThumbVertical="@drawable/vc_tab_scrollbar" android:id="@+id/tab_vc_rv" android:background="@color/bg_body" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    <com.ss.android.vc.meeting.module.tab3.widgets.PageLoadingView android:id="@+id/loading_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.vc.meeting.module.tab3.widgets.PageErrorView android:id="@+id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.vc.meeting.module.tab3.widgets.PageEmptyView android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" ptr:lottie_autoPlay="true" ptr:lottie_loop="true" ptr:lottie_rawRes="@raw/loading_anim" ptr:lottie_repeatMode="2" style="@style/BearLottieView"/>
+</LinearLayout>

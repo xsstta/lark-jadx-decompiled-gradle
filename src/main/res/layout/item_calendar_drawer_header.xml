@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_20" android:layout_marginStart="@dimen/dp_20" layout="@layout/item_divider"/>
+    <View android:id="@+id/margin_top_space" android:layout_width="match_parent" android:layout_height="@dimen/dp_44"/>
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_14">
+        <FrameLayout android:orientation="vertical" android:id="@+id/avatar_back" android:background="@color/bg_body" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_alignParentStart="true">
+            <com.joooonho.SelectableRoundedImageView android:layout_gravity="center" android:id="@+id/avatar" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" app:sriv_border_color="@color/ud_N00" app:sriv_border_width="2dp" app:sriv_left_bottom_corner_radius="90dp" app:sriv_left_top_corner_radius="90dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="90dp" app:sriv_right_top_corner_radius="90dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/calendar_kind_iv" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/dp_16" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_marginStart="@dimen/dp_52" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</LinearLayout>

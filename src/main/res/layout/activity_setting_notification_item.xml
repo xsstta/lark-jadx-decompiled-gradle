@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_Legacy_Notification" app:tb_title_color="@color/text_title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/settings_zone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_Legacy_MineSettingNotificationVolume" android:layout_weight="1"/>
+            <com.larksuite.component.ui.button.LKUISwitchButton android:id="@+id/mine_setting_sound" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="16dp"/>
+        <LinearLayout android:gravity="center_vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_Legacy_MineSettingNotificationVibrate" android:layout_weight="1"/>
+            <com.larksuite.component.ui.button.LKUISwitchButton android:id="@+id/mine_setting_vibrate" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

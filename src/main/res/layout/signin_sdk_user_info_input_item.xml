@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.lark.android.passport.biz.widget.PhoneInput android:id="@+id/phone_input" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <com.ss.lark.android.passport.biz.widget.MailInput android:id="@+id/mail_input" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <com.ss.lark.android.passport.biz.widget.CommonEditInput android:id="@+id/name_input_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+</LinearLayout>

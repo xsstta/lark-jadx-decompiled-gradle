@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/modify_avatar_custom_popupwindow_round5_bg" android:paddingTop="28dp" android:paddingBottom="30dp" android:layout_width="120dp" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/popup_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/modify_avatar_success"/>
+        <TextView android:textSize="14sp" android:textColor="@color/lkui_N00" android:layout_gravity="center_horizontal" android:id="@+id/popup_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息"/>
+    </LinearLayout>
+</LinearLayout>

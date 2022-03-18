@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/wiki_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wiki_title_bar_height_min">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:paddingTop="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Wiki_SpaceDetail_IntroductionTitle" android:layout_marginStart="18dp"/>
+                <com.bytedance.ee.bear.wikiv2.common.widget.ExpandableTextView android:orientation="vertical" android:id="@+id/expand_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:animDuration="200" app:maxCollapsedLines="4">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/expandable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="12dp" android:layout_marginStart="18dp" android:layout_marginEnd="20dp" android:lineHeight="24dp"/>
+                    <com.bytedance.ee.bear.wikiv2.common.widget.ExpandButton android:id="@+id/expand_collapse" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </com.bytedance.ee.bear.wikiv2.common.widget.ExpandableTextView>
+                <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/tv_member_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:layout_marginStart="18dp"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/wiki_header_toolbar" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" app:contentInsetStart="0dp" app:layout_collapseMode="1">
+                <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/wiki_space_detail_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/wiki_title_bar_height_min" app:widget_widgets_tb_divider_visible="false"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/layout_loading_empty_state" android:visibility="gone" android:layout_marginTop="120dp" android:layout_centerHorizontal="true" app:ud_empty_desc="@string/Doc_Facade_NetworkInterrutedRetry" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/SpaceEmptyStatusStyle"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/wiki_member_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

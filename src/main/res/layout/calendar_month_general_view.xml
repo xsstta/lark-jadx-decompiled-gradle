@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/calendar_month_week_container" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_6" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ss.android.lark.calendar.impl.features.calendarview.month.view.MonthCalendarWeekIndicator android:orientation="horizontal" android:id="@+id/calendar_month_week_indicator" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_18">
+        <com.ss.android.lark.calendar.impl.features.calendarview.month.view.MonthPageBodyView android:id="@+id/view_calendar_month_body" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.calendar.impl.features.calendarview.month.view.MonthDayViewPager android:id="@+id/calendar_month_day_view_pager" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.ss.android.lark.calendar.impl.features.calendarview.month.view.MonthPageBodyView>
+    </FrameLayout>
+    <View android:id="@+id/month_week_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_21"/>
+</merge>

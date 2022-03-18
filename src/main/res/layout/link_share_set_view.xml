@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/share_link_share_root" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/share_link_title" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_back_icon="@drawable/ud_icon_close_small_outlined" app:widget_widgets_tb_background="@color/bg_body_overlay" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Doc_Share_LinkTitle"/>
+    <com.larksuite.component.universe_design.notice.UDNotice android:id="@+id/banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_notice_icon="@drawable/ud_icon_warning_colorful" app:ud_notice_text="@string/CreationMobile_Wiki_SharePanel_ExternalOffOrgDesc" style="@style/UDNotice.Info"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/share_link_share_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

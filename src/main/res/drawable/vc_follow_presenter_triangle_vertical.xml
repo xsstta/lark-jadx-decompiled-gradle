@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="32">
+    <group>
+        <clip-path android:pathData="M0,0 L0,32 L20,16 L0,0 Z"/>
+        <path android:fillColor="@color/vc_follow_to_presenter_orange" android:pathData="M0 0V32H20V0"/>
+    </group>
+</vector>

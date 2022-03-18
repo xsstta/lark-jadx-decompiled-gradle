@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/video_view_root" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="@dimen/drive_progress_bar_height">
+    <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:maxHeight="4dp" android:progressDrawable="@drawable/drive_progressbar_bg_video" android:minHeight="4dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/start_pause_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+            <ImageView android:id="@+id/start" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/drive_progressbar_play_black" android:scaleType="fitStart"/>
+            <ImageView android:id="@+id/pause" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/drive_progressbar_pause_black" android:scaleType="fitStart"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/static_black" android:gravity="left" android:id="@+id/current" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="14dp" android:textColor="@color/space_kit_n00" android:gravity="center" android:id="@+id/length_split" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / "/>
+            <TextView android:textSize="14dp" android:textColor="@color/static_black" android:gravity="center" android:id="@+id/length" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.bytedance.ee.bear.drive.view.widget.VolumeView android:id="@+id/drive_video_player_volume_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/static_black" android:gravity="center" android:id="@+id/resolution_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+        <ImageView android:id="@+id/block_enter_full" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" android:src="@drawable/ud_icon_magnify_outlined" android:tint="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

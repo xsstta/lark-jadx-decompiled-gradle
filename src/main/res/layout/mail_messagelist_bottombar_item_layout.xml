@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/mail_item_bg_selector_c11_with_circle_corner" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="@dimen/mail_message_list_bottom_bar_height">
+    <ImageView android:id="@+id/mail_messagelist_bottombar_icon" android:layout_width="18dp" android:layout_height="18dp" android:scaleType="fitCenter"/>
+    <TextView android:textSize="10dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/mail_messagelist_bottombar_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:adjustViewBounds="true" android:lines="1" android:singleLine="true" android:includeFontPadding="false"/>
+</LinearLayout>

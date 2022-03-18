@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="8dp">
+        <color android:color="#e4e5e6"/>
+    </item>
+    <item android:bottom="0.5dp">
+        <shape>
+            <corners android:topLeftRadius="8dp" android:topRightRadius="8dp"/>
+            <solid android:color="@color/space_kit_divider_color"/>
+        </shape>
+    </item>
+</layer-list>

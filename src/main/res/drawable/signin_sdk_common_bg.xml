@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/bg_body"/>
+    </item>
+    <item android:gravity="top" android:drawable="@drawable/signin_sdk_common_bg_part"/>
+</layer-list>

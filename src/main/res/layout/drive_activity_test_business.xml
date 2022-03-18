@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/drive_business_test_main" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Drive业务测试"/>
+    <TextView android:textColor="@color/text_caption" android:id="@+id/drive_test_activity_info_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/drive_test_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

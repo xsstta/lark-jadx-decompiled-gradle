@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.appcenter.business.tab.fragmentv3.component.status.TemplateSkeletonLoadingView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/iv_blockit_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>

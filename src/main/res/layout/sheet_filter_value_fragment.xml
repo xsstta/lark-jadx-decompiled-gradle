@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/sheet_filter_subfragment_top_layout"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sheet_filter_search_layout" android:background="@drawable/facade_edit_bg_shape" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_36" android:layout_marginTop="@dimen/space_kit_len_8" android:layout_marginBottom="@dimen/space_kit_len_8" android:layout_marginStart="@dimen/space_kit_len_12" android:layout_marginEnd="@dimen/space_kit_len_12">
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEditText android:textSize="@dimen/space_kit_font_16" android:id="@+id/search_et" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/Doc_Facade_Search" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:imeOptions="actionDone" android:layout_marginStart="@dimen/space_kit_len_8" android:layout_marginEnd="@dimen/space_kit_len_8" app:ud_editText_iconHeight="@dimen/space_kit_len_18" app:ud_editText_iconWidth="@dimen/space_kit_len_18" app:ud_editText_leftIcon="@drawable/ud_icon_search_outlined" app:ud_editText_leftIconTint="@color/icon_n3" style="@style/UDEditText"/>
+        <ImageView android:id="@+id/search_clear_icon" android:visibility="gone" android:layout_width="@dimen/space_kit_len_18" android:layout_height="@dimen/space_kit_len_18" android:src="@drawable/ud_icon_close_filled" android:tint="@color/icon_n3" android:layout_marginEnd="@dimen/space_kit_len_8"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/select_all_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.larksuite.component.universe_design.checkbox.UDCheckBox android:layout_gravity="center_vertical" android:id="@+id/select_all_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_4" app:ud_checkbox_size="1"/>
+                <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Sheet_SelectAll" android:layout_marginStart="@dimen/space_kit_len_2"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ("/>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:id="@+id/filter_value_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")"/>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/search" android:layout_width="@dimen/space_kit_len_20" android:layout_height="@dimen/space_kit_len_20" android:src="@drawable/ud_icon_search_outlined" android:tint="@color/icon_n2" android:layout_marginEnd="@dimen/space_kit_len_16"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.bytedance.ee.bear.widgets.BaseRecyclerView android:id="@+id/value_list_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

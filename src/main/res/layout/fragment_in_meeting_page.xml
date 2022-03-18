@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_grid_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/row_top" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.ss.android.vc.meeting.module.multi.InMeetingGridView android:id="@+id/grid1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <com.ss.android.vc.meeting.module.multi.InMeetingGridView android:id="@+id/grid2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/row_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.ss.android.vc.meeting.module.multi.InMeetingGridView android:id="@+id/grid3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <com.ss.android.vc.meeting.module.multi.InMeetingGridView android:id="@+id/grid4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub android:id="@+id/stub_share_screen" android:layout="@layout/layout_in_meeting_share" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

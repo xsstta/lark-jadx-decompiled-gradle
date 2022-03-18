@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/share_collaborator_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:text="@string/Doc_Permission_Manager" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.bytedance.ee.bear.facade.common.widget.InterceptTouchEventLinearLayout android:orientation="horizontal" android:id="@+id/share_manager_switch_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.larksuite.component.universe_design.p1166switch.UDSwitch android:enabled="false" android:id="@+id/share_manager_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true"/>
+    </com.bytedance.ee.bear.facade.common.widget.InterceptTouchEventLinearLayout>
+    <View android:id="@+id/list_divider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

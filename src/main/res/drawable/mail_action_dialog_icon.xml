@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/ud_I500"/>
+            <size android:height="40dp" android:width="40dp"/>
+        </shape>
+    </item>
+    <item android:id="@+id/mail_action_dialog_inner_icon" android:drawable="@drawable/ud_icon_mail_filled" android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp"/>
+</layer-list>

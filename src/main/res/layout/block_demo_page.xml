@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="44dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:padding="2dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="10dp" android:src="@drawable/titlebar_back_black_bg_selector" app:tint="@color/icon_n1"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/block_root_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/oncall_item_selector_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/oncall_avatar" android:background="@drawable/bg_oncall_avatar" android:visibility="visible" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="16dp" android:scaleType="centerCrop" app:sriv_oval="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:id="@+id/oncall_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="11sp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="遇到系统功能问题了吗？有任何产品建议吗？欢迎" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

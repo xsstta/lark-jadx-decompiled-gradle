@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/dialog_content_drawer" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@+id/dialog_content_layout" android:background="@color/ud_N00" android:focusable="true" android:clickable="true" android:layout_width="294dp" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="46dp">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/ud_N900" android:ellipsize="end" android:id="@+id/drawer_dialog_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_M_Event" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+                <com.ss.android.vc.common.widget.IconFontView android:textSize="15dp" android:textColor="@color/iconfont_gray_icon_selector" android:id="@+id/calendar_header_close" android:layout_width="15dp" android:layout_height="15dp" android:text="@string/iconfont_icon_close" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:layout_gravity="center_horizontal" android:background="@color/ud_N500" android:layout_width="262dp" android:layout_height="1dp" app:backgroundAlpha="0.3"/>
+            <FrameLayout android:layout_gravity="end" android:id="@+id/dialog_content_layer" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</FrameLayout>

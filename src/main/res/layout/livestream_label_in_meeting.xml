@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/live_icon" android:background="@drawable/ic_live_en" android:layout_width="30dp" android:layout_height="14dp" android:layout_marginRight="4dp"/>
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:textColor="@color/ud_N00" android:gravity="center" android:id="@+id/title_livestream_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:ux_line_height="@dimen/dp_16"/>
+</LinearLayout>

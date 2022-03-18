@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="1">
+        <View android:background="@drawable/guest_ellipse_rb1" android:layout_width="187dp" android:layout_height="187dp" android:layout_marginBottom="-80dp" android:alpha="0.6" android:layout_marginEnd="-100dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="1">
+        <View android:background="@drawable/guest_ellipse_rb2" android:layout_width="187dp" android:layout_height="187dp" android:layout_marginBottom="-107dp" android:layout_marginEnd="-69dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+        <View android:background="@drawable/guest_ellipse_lt1" android:layout_width="99dp" android:layout_height="99dp" android:layout_marginTop="-17dp" android:alpha="0.6" android:layout_marginStart="-35dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+        <View android:background="@drawable/guest_ellipse_lt2" android:layout_width="187dp" android:layout_height="187dp" android:layout_marginTop="-61dp" android:layout_marginStart="-79dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+        <View android:background="@drawable/guest_ellipse_lt3" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="96dp" android:layout_marginStart="-21dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/space_kit_font_26" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/middle_page_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Login_GuideForthPageTitle" android:textFontWeight="500"/>
+        <TextView android:textSize="@dimen/font_size_14dp" android:textColor="@color/text_caption" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_16" android:text="@string/Lark_UserGrowth_GuideSecondPageContent"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="326dp" android:layout_height="224dp" android:layout_marginTop="@dimen/space_kit_len_60" app:srcCompat="@drawable/illustration_initialization_function_vc"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/drive_sdk_preview_action_error_empty_state" android:layout_centerInParent="true" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_preview" app:ud_empty_title="@string/Drive_Drive_File_Preview_Failed" style="@style/SpaceEmptyStatusStyle"/>
+</RelativeLayout>

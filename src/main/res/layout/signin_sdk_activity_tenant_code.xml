@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/signin_sdk_margin_16" android:paddingRight="@dimen/signin_sdk_margin_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.lark.android.passport.biz.widget.teamcode.TeamCodeEditText android:textSize="@dimen/signin_sdk_font_size_16" android:id="@+id/et_tenant_code" android:background="@null" android:paddingLeft="12dp" android:paddingRight="30dp" android:hint="@string/Lark_Login_V3_Input_TenantName_Placeholder" android:singleLine="true" style="@style/SignInputStyle"/>
+    <TextView android:textStyle="normal" android:textColor="@color/text_caption" android:id="@+id/tvChangeQr" android:singleLine="false" style="@style/SignBelowInputStyle"/>
+</LinearLayout>

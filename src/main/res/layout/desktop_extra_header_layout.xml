@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp" android:layout_marginBottom="4dp">
+    <LinearLayout android:id="@+id/tip_holder" android:background="@drawable/feed_extra_header_bg_desktop" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_32">
+        <TextView android:textSize="12sp" android:textColor="@color/lkui_Y500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_delayed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:maxWidth="100dp" android:maxLines="1" android:drawableLeft="@drawable/feed_menu_delay_solid" android:drawablePadding="8dp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/mm_bg_player_option_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/inno_live_close" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="17dp" android:textColor="@color/text_title" android:layout_gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

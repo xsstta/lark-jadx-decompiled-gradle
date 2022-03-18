@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:enabled="true" android:textSize="15sp" android:textColor="@color/ud_N1000" android:id="@+id/pure_text_item_view" android:focusable="true" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textIsSelectable="true"/>

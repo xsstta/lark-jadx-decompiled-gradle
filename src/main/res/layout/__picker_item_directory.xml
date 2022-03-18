@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/__picker_bg_material_item" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="10dp">
+        <ImageView android:id="@+id/iv_dir_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <View android:background="@color/fill_img_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_title" android:id="@+id/tv_dir_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textColor="@color/text_caption" android:id="@+id/tv_dir_count" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceShadowLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/doc_search_top_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UDShadow.S2.Down">
+        <include android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:layout_marginTop="0dp" android:layout_marginStart="0dp" android:layout_marginEnd="0dp" layout="@layout/doc_search_titlebar"/>
+    </com.bytedance.ee.bear.widgets.universedesign.SpaceShadowLayout>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceShadowLayout android:layout_gravity="bottom" android:id="@+id/doc_search_bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UDShadow.S4.Up">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:layout_marginStart="0dp" android:layout_marginEnd="0dp" layout="@layout/doc_search_toolbar"/>
+    </com.bytedance.ee.bear.widgets.universedesign.SpaceShadowLayout>
+</FrameLayout>

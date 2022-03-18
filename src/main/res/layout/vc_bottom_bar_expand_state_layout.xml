@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/expand_area" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_bottom_bar_arrow_expand" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginBottom="@dimen/dp_4" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ud_icon_vc_toolbar_down_filled" app:tint="@color/static_white"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_function_and_host_control" android:background="@drawable/vc_bg_bottom_bar_expand_top_corner14" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="74dp" android:layout_marginBottom="@dimen/dp_0" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_function_and_host_control_without_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.vc.meeting.module.bottombar.function.BottomBarFunctionRv android:id="@+id/rv_function_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+            <ViewStub android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/stub_dot" android:layout="@layout/stub_in_meeting_dot_view" android:layout_width="wrap_content" android:layout_height="4dp" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_4" android:layout_marginVertical="@dimen/dp_4"/>
+            <Space android:layout_width="match_parent" android:layout_height="12dp"/>
+            <ViewStub android:id="@+id/stub_host_area" android:layout="@layout/meeting_dialog_host_control2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/reaction_send_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/iv_bottom_bar_arrow_expand" android:paddingStart="7.5dp" android:paddingEnd="7.5dp"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginStart="@dimen/list_item_left_margin" android:layout_marginEnd="@dimen/list_home_sub_title_margin">
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Doc_List_MainTabHomeRecent" android:maxLines="1" android:layout_weight="1"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_filter" android:padding="@dimen/space_kit_len_2" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ud_icon_filter_outlined" android:layout_marginStart="@dimen/space_kit_len_8"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_switch" android:padding="@dimen/space_kit_len_2" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ud_icon_borders_outlined" android:layout_marginStart="@dimen/list_home_sub_title_margin"/>
+</LinearLayout>

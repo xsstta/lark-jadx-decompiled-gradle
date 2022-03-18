@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/primary_pri_500"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/lkui_grey_1_50"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/primary_pri_500"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/lkui_grey_8_05"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/primary_pri_500"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>

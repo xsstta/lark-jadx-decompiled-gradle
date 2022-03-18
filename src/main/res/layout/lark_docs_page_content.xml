@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/list_home_drive_root" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/list_refresh_layout" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableLoadmore="false" app:srlEnableOverScrollBounce="false" app:srlEnableOverScrollDrag="false" app:srlEnablePreviewInEditMode="true" app:srlEnableRefresh="true">
+        <com.bytedance.ee.bear.facade.common.widget.recyclerview.PlaceholderHeader android:id="@+id/list_refresh_header" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_60" android:layout_marginTop="@dimen/space_kit_len_35"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/list_home_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/list_sub_menu_layout" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="com.bytedance.ee.bear.list.homepage.FlingBehavior">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/list_collapsing_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_home_title_bar_height_min" app:layout_scrollFlags="d">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/list_header_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.bytedance.ee.bear.list.homepage.tab.HomeViewPager android:id="@+id/list_home_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.bytedance.ee.bear.widgets.button.CommonCreateButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/common_create_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

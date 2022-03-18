@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <shape android:shape="oval">
+            <size android:height="9dp" android:width="9dp"/>
+            <corners android:radius="90dp"/>
+            <solid android:color="@color/lkui_N600"/>
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <size android:height="9dp" android:width="9dp"/>
+            <corners android:radius="90dp"/>
+            <solid android:color="@color/lkui_B500"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_56">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/drive_horizontal_video_resolution_layout" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_54">
+        <ImageView android:layout_gravity="center" android:id="@+id/drive_horizontal_video_resolution_image" android:layout_width="@dimen/space_kit_len_16" android:layout_height="@dimen/space_kit_len_16" android:layout_marginLeft="@dimen/space_kit_len_32" android:src="@drawable/drive_video_checkmark" android:tint="@color/primary_pri_500"/>
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/drive_horizontal_video_resolution_text" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_20" android:layout_marginLeft="@dimen/space_kit_len_12" android:text="320p" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <View android:id="@+id/drive_horizontal_video_resolution_divider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

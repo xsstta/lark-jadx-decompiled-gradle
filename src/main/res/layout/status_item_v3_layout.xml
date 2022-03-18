@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/user_profile_item_v3_style">
+    <TextView android:id="@+id/tv_status_name" android:text="@string/Lark_Legacy_ProfileUserStatus" style="@style/user_profile_field_name_style"/>
+    <com.ss.android.lark.widget.status.UserStatusLinearLayout android:id="@+id/ll_status_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_status_name"/>
+    <view android:id="@+id/line" app:layout_constraintTop_toBottomOf="@+id/ll_status_value" style="@style/user_profile_line_style"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

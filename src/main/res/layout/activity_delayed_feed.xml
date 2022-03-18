@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/common_title_bar" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <com.ss.android.lark.feed.app.view.DesktopSecondaryTitleView android:id="@+id/desktop_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <FrameLayout android:id="@+id/content_fl" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/box_feed_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

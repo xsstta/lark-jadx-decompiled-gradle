@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="rectangle">
+            <corners android:radius="36dp"/>
+            <size android:height="72dp" android:width="72dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/comment_icon_voice_play" android:left="24dp" android:top="24dp" android:right="24dp" android:bottom="24dp"/>
+</layer-list>

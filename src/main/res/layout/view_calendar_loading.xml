@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/title_bar_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_tip_panel" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/tv_error_image" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:src="@drawable/illustration_empty_negative_load_failed"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_error_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/Calendar_Common_FailToLoad3"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_panel" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.larksuite.component.ui.loading.LKUILoadingView android:layout_gravity="center_horizontal" android:id="@+id/loading_view" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:layout_gravity="center_horizontal" android:id="@+id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_Loading"/>
+    </LinearLayout>
+</merge>

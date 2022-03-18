@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/red_packet_iv" android:layout_width="wrap_content" android:layout_height="94dp" android:src="0x7f081238"/>
+    <TextView android:textSize="16dp" android:textColor="@color/imtoken_red_envelope_card_text_title_yellow" android:ellipsize="end" android:id="@+id/subject_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:maxWidth="192dp" android:text="恭喜发财，步步高升" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12dp" android:textColor="@color/imtoken_red_envelope_card_text_placeholder_yellow" android:id="@+id/receive_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Legacy_HongbaoReceiveHongbao" android:layout_below="@+id/subject_tv" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

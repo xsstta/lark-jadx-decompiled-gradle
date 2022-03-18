@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/facade_selector_item_body">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/ud_N900" android:ellipsize="end" android:id="@+id/code_language_type" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/space_kit_len_16" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/selected_icon" android:visibility="gone" android:layout_width="@dimen/space_kit_len_20" android:layout_height="@dimen/space_kit_len_20" android:src="@drawable/ud_icon_done_outlined" android:tint="@color/space_kit_b500" android:layout_marginEnd="@dimen/space_kit_len_20"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@color/space_kit_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_marginStart="@dimen/space_kit_len_16"/>
+</LinearLayout>

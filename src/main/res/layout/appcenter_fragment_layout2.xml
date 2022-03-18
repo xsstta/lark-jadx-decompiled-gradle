@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.appcenter.business.activity.appsort.TouchDetectFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/workplace_fragment_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp">
+        <TextView android:textSize="17dp" android:textColor="@color/text_title" android:id="@+id/text_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/OpenPlatform_AppCenter_Loading" android:layout_centerInParent="true"/>
+        <com.ss.android.appcenter.common.view.biz.WorkplaceGuideView android:id="@+id/guide" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+        <com.ss.android.appcenter.common.view.biz.WorkplaceErrorView android:id="@+id/error" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+        <com.ss.android.appcenter.common.adapter.groupadapter.StickyHeaderLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.appcenter.common.view.BannerRecyclerView android:id="@+id/recycler" android:visibility="gone" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.ss.android.appcenter.common.adapter.groupadapter.StickyHeaderLayout>
+        <com.ss.android.appcenter.common.view.biz.WorkplaceLoadingView android:id="@+id/loading" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+    </RelativeLayout>
+    <com.ss.android.appcenter.business.tab.business.onboarding.OnboardingView android:id="@+id/install_onboarding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.appcenter.business.activity.appsort.TouchDetectFrameLayout>

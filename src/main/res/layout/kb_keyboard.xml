@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/input_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/toolbar_region" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolbar_region" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp" app:layout_constraintBottom_toTopOf="@+id/kb_observer_layout">
+        <FrameLayout android:id="@+id/tool_menu_wrapper" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ss.android.lark.keyboard.widget.KBPluginContainerView android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tool_menu" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="end" android:id="@+id/btn_send_region" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.ss.android.lark.keyboard.base.KeyBoardObserveFrameLayout android:id="@+id/kb_observer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <com.ss.android.lark.keyboard.base.NestScrollFrameLayout android:id="@+id/plugin_container" android:layout_width="match_parent" android:layout_height="100dp"/>
+    </com.ss.android.lark.keyboard.base.KeyBoardObserveFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

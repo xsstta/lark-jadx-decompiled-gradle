@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/chat_banner_icon" android:background="@drawable/calendar_orange_round_icon" android:padding="@dimen/dp_10" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_11" android:layout_marginBottom="@dimen/dp_11"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/chat_banner_text_zone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_11" android:layout_marginBottom="@dimen/dp_11" android:layout_weight="1">
+        <TextView android:textSize="@dimen/dp_17" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/event_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/event_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:ellipsize="end" android:id="@+id/event_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/event_banner_close" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n2" android:layout_marginStart="@dimen/dp_8"/>
+</LinearLayout>

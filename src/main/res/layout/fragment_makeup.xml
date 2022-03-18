@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/itemrv">
+        <RelativeLayout android:id="@+id/value_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="当前效果：" android:layout_alignParentTop="true" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="15sp" android:id="@+id/effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 未选中 " android:layout_toRightOf="@+id/text" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 未选中 " android:layout_toRightOf="@+id/effect" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/effect"/>
+            <TextView android:textSize="15sp" android:id="@+id/value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强度： " android:layout_below="@+id/text"/>
+            <TextView android:textSize="15sp" android:id="@+id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0 " android:layout_toRightOf="@+id/value_text" android:layout_below="@+id/text"/>
+            <SeekBar android:id="@+id/seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@+id/value" android:layout_below="@+id/command" android:layout_toEndOf="@+id/value"/>
+            <TextView android:textSize="15sp" android:id="@+id/text_R" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" R： " android:layout_below="@+id/seekbar" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/value_R" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 1 " android:layout_toRightOf="@+id/text_R" android:layout_below="@+id/seekbar" android:layout_toEndOf="@+id/text_R"/>
+            <SeekBar android:id="@+id/seekbar_R" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@+id/value_R" android:layout_below="@+id/seekbar" android:layout_toEndOf="@+id/value_R"/>
+            <TextView android:textSize="15sp" android:id="@+id/text_G" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" G： " android:layout_below="@+id/text_R" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/value_G" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 1 " android:layout_toRightOf="@+id/text_G" android:layout_below="@+id/value_R" android:layout_toEndOf="@+id/text_G"/>
+            <SeekBar android:id="@+id/seekbar_G" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@+id/value_G" android:layout_below="@+id/seekbar_R" android:layout_toEndOf="@+id/value_G"/>
+            <TextView android:textSize="15sp" android:id="@+id/text_B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" B： " android:layout_below="@+id/text_G" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="15sp" android:id="@+id/value_B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 1 " android:layout_toRightOf="@+id/text_B" android:layout_below="@+id/value_G" android:layout_toEndOf="@+id/text_B"/>
+            <SeekBar android:id="@+id/seekbar_B" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_toRightOf="@+id/value_B" android:layout_below="@+id/seekbar_G" android:layout_toEndOf="@+id/value_B"/>
+            <Button android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="button" android:layout_below="@+id/seekbar_B"/>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/itemrv" android:layout_width="match_parent" android:layout_height="40dp" android:layout_above="@+id/rv"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

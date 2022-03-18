@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ud_N200" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/share_title" android:layout_width="match_parent" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_44">
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/icon_n1" android:id="@+id/box_share_back" android:padding="@dimen/dp_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_arrow_left" android:layout_marginStart="@dimen/dp_2"/>
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/icon_n1" android:id="@+id/box_share_close" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_close" android:layout_marginStart="@dimen/dp_2"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/share_content" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/dp_24" android:paddingEnd="@dimen/dp_24">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/view_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.ss.android.vc.common.widget.LoadingLottieView android:id="@+id/loadingView" android:layout_width="32dp" android:layout_height="32dp"/>
+            <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="14dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/View_VM_Loading"/>
+        </LinearLayout>
+        <include android:id="@+id/iv_content_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/layout_share_box_content"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/busy_ringing_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/stub_loading_mask" android:layout="@layout/view_in_meeting_loading_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

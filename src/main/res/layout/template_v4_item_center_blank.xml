@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.shadow.ShadowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_148" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="18dp" app:radius="@dimen/space_radius_m" app:shadowAlpha="0.5" app:shadowElevation="8dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/blankIcon" android:background="@drawable/ud_icon_add_outlined" android:layout_width="40dp" android:layout_height="40dp" android:backgroundTint="@color/primary_pri_500"/>
+        <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:ellipsize="end" android:gravity="center" android:id="@+id/blankLabelTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/CreationMobile_Template_Doc_Blanklabel" android:maxLines="1" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+    </LinearLayout>
+</com.bytedance.ee.bear.shadow.ShadowLinearLayout>

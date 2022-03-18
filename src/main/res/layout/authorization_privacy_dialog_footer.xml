@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <com.larksuite.component.universe_design.button.UDButton android:textSize="16sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/lkui_dialog_btn_right" android:layout_width="match_parent" android:layout_height="42dp" android:text="@string/Lark_Login_V3_Lark_PrivacyButtonagree" android:lineHeight="24dp" app:ud_backgroundColor="@color/ud_button_blue_bg" app:ud_radius="2" style="@style/UDButton.Big"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:layout_gravity="center_horizontal" android:id="@+id/lkui_dialog_btn_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="20dp" android:text="@string/Lark_Login_V3_Lark_PrivacyButtondisagree"/>
+</LinearLayout>

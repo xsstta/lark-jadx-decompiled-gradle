@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/spacekit_res_item_selector" android:layout_width="match_parent" android:layout_height="56dp">
+    <com.bytedance.ee.bear.facade.common.widget.RoundImageView android:id="@+id/attachment_item_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginStart="14dp" android:layout_marginEnd="12dp" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="17sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/attachment_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@+id/attachment_item_size" android:layout_toEndOf="@+id/attachment_item_icon"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/attachment_item_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/sheet_divider_height" android:layout_alignParentBottom="true" android:layout_marginStart="16dp"/>
+</RelativeLayout>

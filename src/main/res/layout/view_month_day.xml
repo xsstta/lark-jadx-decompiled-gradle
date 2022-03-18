@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/month_day_list" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_month_day_no_event" android:background="@color/bg_base" android:paddingTop="@dimen/dp_93" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp_125" android:layout_height="@dimen/dp_125" android:src="@drawable/illustration_placeholder_common_no_content"/>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_NoEvents"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/primary_pri_500" android:id="@+id/tv_append_event" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_TipToCreate"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

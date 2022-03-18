@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="oval">
+                    <solid android:color="@color/fill_pressed"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:drawable="@drawable/ud_icon_maybe_outlined" android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+</layer-list>

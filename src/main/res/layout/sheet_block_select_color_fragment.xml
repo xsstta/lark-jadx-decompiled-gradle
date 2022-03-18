@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:panel_custom_left_icon="@drawable/ud_icon_left_small_ccm_outlined">
+    <com.bytedance.ee.bear.widgets.colorpicker.CommonColorSchemeView android:id="@+id/color_scheme_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+</com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>

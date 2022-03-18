@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@drawable/bg_red_icon_normal"/>
+    <item android:state_pressed="true" android:drawable="@drawable/bg_red_icon_pressed" android:alpha="0.5"/>
+    <item android:drawable="@drawable/bg_red_icon_hover" android:alpha="0.5" android:state_hovered="true"/>
+</selector>

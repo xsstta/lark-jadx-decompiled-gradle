@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_Legacy_SaveFavoriteItems"/>
+    <ViewStub android:id="@+id/desktop_title_stub" android:layout="@layout/view_favorite_desktop_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/save_message_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/inbox_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:lkui_ptr_duration_to_close_either="500" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_mode="2" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="0.5" app:lkui_ptr_resistance="1.7">
+                <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/save_message_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty" android:background="@color/bg_body" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illustration_placeholder_common_no_favorites"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/Lark_Legacy_FavoriteEmpty"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

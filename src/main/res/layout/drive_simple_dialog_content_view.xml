@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/facade_dialog_loading_bg" android:layout_width="303dp" android:layout_height="wrap_content">
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:layout_marginRight="15dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="24dp"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/drive_divider_size"/>
+    <RelativeLayout android:id="@+id/btn_content_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/cancel_tv" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <View android:id="@+id/btn_divider_view" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/drive_divider_size" android:layout_below="@+id/cancel_tv"/>
+        <TextView android:textSize="17sp" android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/confirm_tv" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/btn_divider_view"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mail_folder_select_location_title_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mail_aggregation_close" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="10dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ud_icon_left_outlined" android:scaleType="fitCenter" android:tint="@color/mail_ic_back_selector_color" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/mail_aggregation_title_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/mail_folder_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/mail_folder_select_location_title_panel"/>
+</RelativeLayout>

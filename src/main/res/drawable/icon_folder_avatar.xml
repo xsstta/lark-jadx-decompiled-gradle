@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="48dp" android:width="48dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/transparent"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="40dp" android:width="40dp" android:drawable="@drawable/ud_icon_file_folder_colorful"/>
+</layer-list>

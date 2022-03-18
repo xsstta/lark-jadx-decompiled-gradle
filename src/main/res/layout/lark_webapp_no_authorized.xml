@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/no_authorized" android:background="@color/N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/start_line" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.33"/>
+    <ImageView android:id="@+id/img" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/lark_webapp_no_authorized" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/start_line"/>
+    <TextView android:textSize="16sp" android:textColor="@color/N500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/Lark_Legacy_MiniMode_AppForbid_Detail" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/img"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

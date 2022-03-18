@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/time_limit_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="10dp" android:textColor="@color/text_caption" android:gravity="center_vertical" android:id="@+id/time_limit_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_NumberMinutes"/>
+</LinearLayout>

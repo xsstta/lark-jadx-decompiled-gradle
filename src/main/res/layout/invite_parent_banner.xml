@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/lkui_B100" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="16dp" android:layout_marginTop="15dp" android:layout_marginRight="8dp" android:layout_marginBottom="15dp" android:src="@drawable/ud_icon_info_colorful"/>
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_N700" android:layout_gravity="center_vertical" android:id="@+id/tips_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:layout_weight="1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/lkui_B500" android:layout_gravity="center_vertical" android:id="@+id/invite_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/Lark_Education_GoRemind"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/close_iv" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginRight="16dp" android:layout_marginBottom="14dp" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n2"/>
+</LinearLayout>

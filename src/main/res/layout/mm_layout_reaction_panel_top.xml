@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.reaction.widget.hover.HoverEventDisallowConstrainLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:background="#efefef" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.mm.module.reaction.panel.MmReactionPanel android:id="@+id/emoji_panel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+</com.ss.android.lark.reaction.widget.hover.HoverEventDisallowConstrainLayout>

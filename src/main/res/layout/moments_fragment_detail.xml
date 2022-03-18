@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.moments.impl.common.widget.ScrollerConflictPtrFrameLayout android:id="@+id/ptrLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_44">
+        <com.ss.android.lark.widget.recyclerview.PointRecoderRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+    </com.ss.android.lark.moments.impl.common.widget.ScrollerConflictPtrFrameLayout>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="44dp"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/momentsKeyboardContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/page_error_container" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_44">
+        <ImageView android:id="@+id/page_error_iv" android:layout_width="120dp" android:layout_height="120dp" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/page_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_below="@+id/page_error_iv" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout>

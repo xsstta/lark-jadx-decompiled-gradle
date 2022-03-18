@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_back_icon="@drawable/titlebar_close_bg_selector"/>
+    <RelativeLayout android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/content_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

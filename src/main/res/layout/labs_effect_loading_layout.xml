@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@+id/loading_layout" android:background="@drawable/labs_loading_mask_bg" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/effect_loading" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:indeterminateTint="@color/static_white"/>
+</FrameLayout>

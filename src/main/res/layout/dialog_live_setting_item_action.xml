@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_container" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/action_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <FrameLayout android:id="@+id/layout_action" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_16" android:textColor="@drawable/bg_livestream_txt_selector" android:gravity="center" android:id="@+id/btn_start" android:background="@drawable/bg_livestream_btn_start_selector" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/View_M_StartLivestreamingNew"/>
+            <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_16" android:textColor="@drawable/bg_livestream_txt_selector" android:gravity="center" android:id="@+id/btn_finish" android:background="@drawable/bg_livestream_btn_finish_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/View_M_StopLivestreamingNew"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="12dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/tv_protocal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="12dp" android:layout_marginRight="@dimen/dp_16"/>
+</LinearLayout>

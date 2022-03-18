@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bitable_cell_edit_panel_shadow" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <FrameLayout android:background="@color/bg_float" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_44">
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Bitable_AttachmentField_ChoosePictureOrVideo" android:layout_marginStart="@dimen/space_kit_len_16"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

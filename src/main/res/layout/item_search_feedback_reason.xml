@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:textColor="@color/search_feedback_reason_item_selector_txt_color" android:ellipsize="end" android:background="@drawable/search_feedback_reason_item_selector_bg" android:paddingLeft="@dimen/dp_12" android:paddingTop="3dp" android:paddingRight="@dimen/dp_12" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="15" android:singleLine="true"/>

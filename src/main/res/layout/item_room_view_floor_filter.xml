@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/cellRootView" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_51" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/floorNameTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="@dimen/dp_4"/>
+        <ImageView android:id="@+id/selectIV" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_list_check_outlined" android:tint="@color/primary_pri_500"/>
+    </LinearLayout>
+    <View android:id="@+id/divideView" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_16"/>
+</LinearLayout>

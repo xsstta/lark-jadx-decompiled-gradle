@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="@dimen/signin_sdk_margin_16" android:paddingRight="@dimen/signin_sdk_margin_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/phoneMailInput" android:layout_width="match_parent" android:layout_height="@dimen/signin_sdk_input_height" android:layout_marginTop="@dimen/signin_sdk_dp_30" app:layout_constraintTop_toTopOf="0">
+        <com.ss.lark.android.passport.biz.widget.PhoneInput android:id="@+id/phone_input" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ss.lark.android.passport.biz.widget.MailInput android:id="@+id/mail_input" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_Legacy_AppNameRelease"/>
+    <com.ss.android.lark.share.impl.systemshare.widget.AdaptiveMaxHeightScrollView android:id="@+id/share_text_sv" android:visibility="gone" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never">
+        <com.ss.android.lark.widget.linked_emojicon.widget.LinkEmojiTextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/share_text_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:drawablePadding="8dp" android:lineSpacingExtra="2.5dp" app:emojiconSize="19sp"/>
+    </com.ss.android.lark.share.impl.systemshare.widget.AdaptiveMaxHeightScrollView>
+    <com.joooonho.SelectableRoundedImageView android:layout_gravity="center" android:id="@+id/share_image_iv" android:visibility="gone" android:layout_width="145dp" android:layout_height="220dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:scaleType="centerCrop" app:sriv_left_bottom_corner_radius="2dp" app:sriv_left_top_corner_radius="2dp" app:sriv_oval="false" app:sriv_right_bottom_corner_radius="2dp" app:sriv_right_top_corner_radius="2dp"/>
+    <GridView android:id="@+id/share_image_gv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:horizontalSpacing="7.5dp" android:verticalSpacing="7.5dp" android:numColumns="3"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_to_myself" android:background="@drawable/item_bg_selector_c11" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:src="@drawable/ud_icon_member_outlined" android:tint="@color/ud_B500"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/Lark_Legacy_ShareToSelf"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="16dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_to_chat" android:background="@drawable/item_bg_selector_c11" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:src="@drawable/ud_icon_chat_outlined" android:tint="@color/ud_W500"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/Lark_Legacy_ShareToChat"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="16dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/share_to_toutiaoquan" android:background="@drawable/item_bg_selector_c11" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="52dp">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="15dp" android:src="@drawable/share_to_toutiao"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/Lark_Legacy_ShareToByteMoments"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="47dp"/>
+</LinearLayout>

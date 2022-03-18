@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.facade.common.widget.recyclerview.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="66dp">
+    <include android:id="@+id/item_infomation" layout="@layout/drive_uploadlist_recycler_item_content"/>
+    <include android:id="@+id/item_menu1" layout="@layout/drive_uploadlist_recycler_item_menu"/>
+</com.bytedance.ee.bear.facade.common.widget.recyclerview.SwipeMenuLayout>

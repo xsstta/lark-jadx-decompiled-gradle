@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/border" android:padding="@dimen/dp_4" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/background_img" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="centerCrop"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/background_loading_bg" android:background="@drawable/labs_loading_mask_bg" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.larksuite.component.ui.imageview.LKUILottieAnimationView android:layout_gravity="center" android:id="@+id/background_loading_lottie" android:visibility="visible" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/primary_pri_500" app:lottie_loop="true" app:lottie_rawRes="@raw/videochat_loading"/>
+        <com.ss.android.vc.meeting.module.follow.common.VCShadowLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/icon_delete" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10dp" android:layout_marginEnd="-10dp" app:sl_shadow_angle="0" app:sl_shadow_color="@color/shadow_default_sm" app:sl_shadow_distance="0dp" app:sl_shadow_radius="4dp">
+            <FrameLayout android:background="@drawable/icon_circle_stroke_bg_selector" android:clipChildren="false" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20">
+                <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:visibility="visible" android:layout_width="10dp" android:layout_height="10dp" android:scaleType="centerCrop" app:srcCompat="@drawable/ud_icon_close_outlined" app:tint="@color/icon_n2"/>
+            </FrameLayout>
+        </com.ss.android.vc.meeting.module.follow.common.VCShadowLayout>
+    </FrameLayout>
+</FrameLayout>

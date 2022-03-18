@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:paddingLeft="15.5dp" android:layout_width="match_parent" android:layout_height="116dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/sticker_set_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:lines="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/sticker_set_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="80dp" android:maxWidth="196dp" android:lines="1" android:layout_below="@+id/sticker_set_item_title"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sticker_set_ll_image_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="12dp" android:layout_below="@+id/sticker_set_desc">
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sticker_ic_icon_sticker_item_default" android:scaleType="fitCenter"/>
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:src="@drawable/sticker_ic_icon_sticker_item_default" android:scaleType="fitCenter"/>
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:src="@drawable/sticker_ic_icon_sticker_item_default" android:scaleType="fitCenter"/>
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:src="@drawable/sticker_ic_icon_sticker_item_default" android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/sticker_set_iv_delete" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="4dp" android:src="@drawable/ic_icon_sticker_set_delete" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="@color/function_danger_500"/>
+    <ImageView android:id="@+id/sticker_set_iv_sort" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="4dp" android:src="@drawable/ic_icon_sticker_set_drag" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/sticker_set_view_bottom_line" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

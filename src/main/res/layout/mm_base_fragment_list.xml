@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.mm.module.list.widget.MmListStickyLayout android:id="@+id/rootStickLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/tabSwitchArea" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp" app:layout_constraintBottom_toTopOf="@+id/bottomGap" app:layout_constraintTop_toTopOf="0">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/myListTvLayout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ud_icon_file_folder_colorful"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/myListTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MMWeb_G_MyContent" android:layout_marginStart="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sharedListTvLayout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="32dp" android:layout_height="32dp" android:translationY="-1dp" app:srcCompat="@drawable/ud_icon_sharedspace_colorful"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/sharedListTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/MMWeb_G_SharedContent" android:layout_marginStart="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/bottomGap" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp" app:layout_constraintBottom_toBottomOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/filterLayout" android:layout_width="match_parent" android:layout_height="44dp" app:layout_constraintTop_toBottomOf="@+id/tabSwitchArea">
+            <com.ss.android.lark.mm.widget.BoldTextView android:textSize="16dp" android:textStyle="bold" android:textColor="@drawable/mm_color_sort_title_text" android:id="@+id/filterTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:textFontWeight="500" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/sortArrow" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="4dp" app:layout_constraintBottom_toBottomOf="@+id/filterTitle" app:layout_constraintStart_toEndOf="@+id/filterTitle" app:layout_constraintTop_toTopOf="@+id/filterTitle"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/filterIcon" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginEnd="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/mm_list_filter_selector"/>
+            <View android:id="@+id/filterDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size" app:layout_constraintBottom_toBottomOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@+id/contentAreaLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/filterLayout">
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/ptrLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvList" android:paddingTop="8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+            <com.larksuite.component.universe_design.notice.UDNotice android:id="@+id/tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" app:ud_notice_icon="@drawable/ud_icon_close_filled" app:ud_notice_text="@string/MMWeb_G_NoConnection" style="@style/UDNotice.Error"/>
+        </FrameLayout>
+    </com.ss.android.lark.mm.module.list.widget.MmListStickyLayout>
+    <FrameLayout android:id="@+id/emptyContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="128dp" app:layout_constraintBottom_toBottomOf="0"/>
+    <com.ss.android.lark.mm.widget.MmLoadingView android:id="@+id/loadingView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="128dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ud_dialog_root" android:background="@android:color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/ud_dialog_action_sheet_outside_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ud_dialog_action_sheet_peek" android:background="@color/bg_float" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_peekHeight="200dp" app:layout_behavior="@string/bottom_sheet_behavior" style="?attr/bottomSheetStyle">
+        <FrameLayout android:id="@+id/ud_dialog_header_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/ud_dialog_content_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/ud_dialog_footer_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

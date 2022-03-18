@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:width="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="@color/file_picker_icon_expand_bg" android:pathData="M11.4239,18.7025L2.6789,7.8C2.4404,7.503 2.4404,7.021 2.6789,6.7235C2.7934,6.5805 2.9489,6.5005 3.1104,6.5005H20.8899C21.2269,6.5005 21.5004,6.8415 21.5004,7.262C21.5004,7.464 21.4359,7.657 21.3214,7.8L12.5764,18.703C12.2584,19.0995 11.7424,19.0995 11.4244,18.703L11.4239,18.7025Z"/>
+</vector>

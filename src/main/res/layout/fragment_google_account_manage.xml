@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:gravity="center_vertical" android:id="@+id/accountTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_4" android:text="@string/Calendar_GoogleCal_Title" android:layout_marginStart="@dimen/dp_16"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+        <ImageView android:id="@+id/calendarIcon" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="@dimen/dp_18" android:layout_marginBottom="@dimen/dp_18" android:src="@drawable/ud_icon_google_colorful" android:layout_marginStart="@dimen/dp_16"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvAccount" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_12"/>
+        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switchBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_12"/>
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/function_danger_500" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/cancelBt" android:background="@drawable/unsubscribe_item_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/dp_52" android:text="@string/Calendar_GoogleCal_CancelImport"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginBottom="@dimen/dp_12"/>
+</LinearLayout>

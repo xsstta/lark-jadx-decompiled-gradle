@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/toolbarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/shadow" android:background="@drawable/toolbar_top_shadow" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_menu_height">
+            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <com.bytedance.ee.bear.edit.component.toolbar2.HorizontalOverScrollView android:id="@+id/horizontal_scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/topLevelItems" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <include layout="@layout/toolbar_top_level_item"/>
+                        <include layout="@layout/toolbar_top_level_item"/>
+                        <include layout="@layout/toolbar_top_level_item"/>
+                        <include layout="@layout/toolbar_top_level_item"/>
+                    </LinearLayout>
+                </com.bytedance.ee.bear.edit.component.toolbar2.HorizontalOverScrollView>
+                <View android:layout_gravity="end" android:id="@+id/mark" android:background="@drawable/toolbar_keyboard_mark" android:layout_width="@dimen/space_kit_len_52" android:layout_height="match_parent" android:backgroundTint="@color/bg_body"/>
+                <View android:layout_gravity="end" android:id="@+id/separator" android:background="@drawable/doc_toolar_v2_divider" android:layout_width="@dimen/space_kit_len_3" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/keyboardSwitch" android:layout_width="@dimen/toolbar_menu_height" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/keyboardSwitchIcon" android:background="@drawable/doc_toolbar_keyboard_bg_selector" android:padding="@dimen/space_kit_len_6" android:layout_width="@dimen/space_kit_len_36" android:layout_height="@dimen/space_kit_len_36" android:tint="@color/icon_n1" app:srcCompat="@drawable/doc_toolbar_keyboard_selector" style="@style/EditToolbarTopLevelIcon"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:background="@color/line_border_component" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.bytedance.ee.bear.document.widget.KeyboardPlaceholderView android:id="@+id/keyboardPlaceholder" android:background="@color/bg_body" android:layout_width="1dp" android:layout_height="wrap_content"/>
+</LinearLayout>

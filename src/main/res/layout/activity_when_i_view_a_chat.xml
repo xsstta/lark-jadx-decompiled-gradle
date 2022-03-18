@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_NewSettings_StartFrom"/>
+    <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/IgnitionSettingGroup">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/recent_left_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/recent_left_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_checkbox_type="1"/>
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/Lark_NewSettings_WhenILeftOff" style="@style/SettingTextStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/newest_unread_layout" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/newest_unread_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_checkbox_type="1"/>
+            <TextView android:textSize="16sp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/Lark_NewSettings_TheMostRecentUnreadMessage" style="@style/SettingTextStyle"/>
+        </LinearLayout>
+    </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+</LinearLayout>

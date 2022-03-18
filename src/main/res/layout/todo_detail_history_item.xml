@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/round_dot_container" android:background="@drawable/todo_svg_icon_round_bg" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="19dp">
+            <View android:layout_gravity="center" android:id="@+id/history_dot_first" android:background="@drawable/todo_svg_icon_round_fg" android:layout_width="8dp" android:layout_height="8dp"/>
+            <View android:layout_gravity="center" android:background="@drawable/todo_svg_icon_round_fg" android:layout_width="4dp" android:layout_height="4dp"/>
+        </FrameLayout>
+        <TextView android:textSize="12dp" android:textColor="@color/text_title" android:id="@+id/history_item_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <View android:id="@+id/history_line" android:background="@color/line_divider_default" android:layout_width="2dp" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:layout_marginBottom="4dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="20dp" android:layout_marginBottom="24dp">
+            <TextView android:textSize="14dp" android:textColor="@color/text_title" android:id="@+id/history_item_content" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+            <com.ss.android.lark.widget.richtext.RichTextView android:textSize="14dp" android:textColor="@color/text_title" android:id="@+id/history_item_rich_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

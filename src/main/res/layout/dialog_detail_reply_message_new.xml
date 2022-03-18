@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/keyBoardFrameLayout" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="bottom" android:id="@+id/keyBoardBottomBg" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/viewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.calendar.impl.features.events.detail.widget.DragShrinkLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/bg_detail_reply_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/sendContainer">
+            <com.ss.android.lark.calendar.impl.features.events.detail.widget.FooterRSVPView android:id="@+id/rsvpContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ScrollView android:fitsSystemWindows="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+                <EditText android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="top" android:id="@+id/messageEditText" android:background="@color/bg_body" android:paddingTop="@dimen/dp_16" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingExtra="@dimen/dp_3" android:inputType="textMultiLine" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"/>
+            </ScrollView>
+        </com.ss.android.lark.calendar.impl.features.events.detail.widget.DragShrinkLayout>
+        <RelativeLayout android:id="@+id/sendContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_38" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/sendBt" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/ud_icon_send_filled" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

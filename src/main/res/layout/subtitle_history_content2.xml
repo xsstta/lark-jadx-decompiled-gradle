@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/subtitle_his_header" android:layout_width="match_parent" android:layout_height="44dp" android:paddingStart="6dp" android:paddingEnd="6dp">
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="22dp" android:textColor="@color/icon_n1" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/history_close" android:focusable="true" android:clickable="true" android:layout_width="44dp" android:layout_height="44dp" android:scaleType="center" android:text="@string/iconfont_icon_close"/>
+            <TextView android:textSize="17dp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/View_M_Subtitles"/>
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="24dp" android:textColor="@color/icon_n1" android:layout_gravity="right" android:id="@+id/iv_subtitle_setting" android:focusable="true" android:clickable="true" android:layout_width="44dp" android:layout_height="44dp" android:scaleType="center" android:text="@string/iconfont_icon_setting"/>
+        </FrameLayout>
+        <include layout="@layout/subtitle_history_search_layout"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.ss.android.vc.meeting.module.subtitle.LottieLoadingView android:layout_gravity="center_horizontal" android:id="@+id/loading_tag" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/lottie_loading" app:view_color="@color/primary_pri_500"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/bt_back_to_bottom" android:background="@drawable/bg_back_to_bottom" android:paddingLeft="15dp" android:paddingRight="12dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginBottom="16dp">
+                <com.ss.android.vc.common.widget.IconFontView android:textColor="@color/primary_pri_500" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="13dp" android:layout_height="13dp" android:text="@string/iconfont_icon_move_bottom"/>
+                <TextView android:textSize="12dp" android:textColor="@color/primary_pri_500" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="@string/View_G_BackToBottom"/>
+            </LinearLayout>
+            <View android:background="@drawable/vc_general_shadow" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </FrameLayout>
+        <View android:id="@+id/bottom_divider" android:background="@drawable/vc_general_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" android:rotation="180"/>
+        <RelativeLayout android:id="@+id/history_search_tool_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="20dp" android:textColor="@drawable/selector_history_search_arrow_icon" android:gravity="center" android:id="@+id/history_search_down_icon" android:layout_width="30dp" android:layout_height="20dp" android:layout_marginRight="16dp" android:text="@string/iconfont_icon_arrow_down" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="20dp" android:textColor="@drawable/selector_history_search_arrow_icon" android:gravity="center" android:id="@+id/history_search_up_icon" android:layout_width="30dp" android:layout_height="20dp" android:layout_marginRight="16dp" android:text="@string/iconfont_icon_arrow_up" android:layout_toLeftOf="@+id/history_search_down_icon" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ss.android.vc.meeting.module.tab.history.view.VcTabGuideView android:id="@+id/view_guide" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="66dp"/>
+</merge>

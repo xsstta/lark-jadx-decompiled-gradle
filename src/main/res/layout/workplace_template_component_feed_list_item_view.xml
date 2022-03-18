@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/workplace_template_component_feed_item_bg2" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center_vertical" android:id="@+id/feed_image" android:layout_width="120dp" android:layout_height="80dp" android:layout_marginRight="12dp" android:scaleType="centerCrop" app:tint="@color/fill_img_mask" app:tintMode="src_over"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/feed_text_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="top" android:id="@+id/feed_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:ellipsize="end" android:gravity="top" android:id="@+id/feed_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1"/>
+        <View android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12dp" android:textColor="@color/text_caption" android:id="@+id/feed_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

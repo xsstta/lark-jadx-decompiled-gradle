@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle2">
+    <include layout="@layout/chat_pin_item_sender2"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/image_iv_layout" android:background="@color/bg_body" android:layout_width="wrap_content" android:layout_height="wrap_content" app:rl_border_color="@color/line_border_card" app:rl_border_width="1dp" app:rl_radius="4dp">
+            <ImageView android:id="@+id/image_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/play_label" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/video_play"/>
+        </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    </LinearLayout>
+    <include layout="@layout/chat_pin_footer_layout"/>
+    <include layout="@layout/chat_pin_item_sender"/>
+</com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout>

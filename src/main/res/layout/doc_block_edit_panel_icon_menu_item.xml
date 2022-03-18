@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/editPanelMenuItemImg" android:background="@drawable/shape_corners_radius_8" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48" android:scaleType="centerInside" android:tint="@color/doc_block_edit_panel_item_tint"/>

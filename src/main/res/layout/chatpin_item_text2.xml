@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle2">
+    <include layout="@layout/chat_pin_item_sender2"/>
+    <include layout="@layout/chatpin_item_divider"/>
+    <com.ss.android.lark.widget.richtext.RichTextView android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" app:richTextColor="@color/text_title" app:richTextSize="16sp"/>
+    <include layout="@layout/chat_pin_docs_layout2"/>
+    <include layout="@layout/chat_pin_preview_layout2"/>
+    <include layout="@layout/chat_pin_footer_layout"/>
+    <include layout="@layout/chat_pin_item_sender"/>
+</com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout>

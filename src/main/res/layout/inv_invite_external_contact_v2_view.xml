@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.inv.export.util.InvErrorView android:id="@+id/iecErrorView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/iecTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_Contacts_MobileContacts"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/iecSearchRl" android:background="@drawable/inv_rect_grey_bg" android:paddingLeft="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_below="@+id/iecTitleBar">
+        <com.ss.android.lark.inv.export.ui.SearchEditText android:textSize="14sp" android:textColor="@color/text_title" android:textColorHighlight="@color/primary_pri_500" android:textColorHint="@color/text_placeholder" android:id="@+id/iecSearchEt" android:background="@null" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Lark_Legacy_SearchHint" android:singleLine="true" android:drawableLeft="@drawable/icon_in_search_view" android:drawablePadding="8dp" android:layout_toLeftOf="@+id/iecSearchClearIv" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/inv_shape_cursor"/>
+        <ImageView android:id="@+id/iecSearchClearIv" android:padding="9dp" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="3dp" android:src="@drawable/ud_icon_close_banner_filled" android:tint="@color/icon_n3" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/iecIndicator" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:layout_below="@+id/iecSearchRl"/>
+    <FrameLayout android:id="@+id/iecContentFl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/iecIndicator">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/iecViewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <View android:id="@+id/iecShadowView" android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/dialog_round_bg" android:layout_width="303dp" android:layout_height="206dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="36dp">
+        <ImageView android:background="@drawable/ic_phone" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginLeft="73dp"/>
+        <View android:id="@+id/upload_dot1" android:background="@drawable/uplpad_dot" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="24dp"/>
+        <View android:id="@+id/upload_dot2" android:background="@drawable/uplpad_dot" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="4dp" android:layout_marginTop="24dp" android:alpha="0.6"/>
+        <View android:id="@+id/upload_dot3" android:background="@drawable/uplpad_dot" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="4dp" android:layout_marginTop="24dp" android:alpha="0.6"/>
+        <View android:id="@+id/upload_dot4" android:background="@drawable/uplpad_dot" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginLeft="4dp" android:layout_marginTop="24dp" android:alpha="0.6"/>
+        <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_computer"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/space_kit_n500" android:layout_gravity="center_horizontal" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/Doc_Facade_Uploading"/>
+    <View android:background="@color/space_kit_n300" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_marginTop="16dp"/>
+    <TextView android:textSize="17sp" android:textColor="@color/space_kit_b500" android:gravity="center" android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Doc_Facade_CancleUpload"/>
+</LinearLayout>

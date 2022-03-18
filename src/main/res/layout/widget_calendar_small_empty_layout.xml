@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/background" android:background="@drawable/bg_widget_default" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:background="@drawable/feishu_logo_color" android:layout_width="@dimen/widget_medium_logo_size" android:layout_height="@dimen/widget_medium_logo_size" android:layout_marginTop="@dimen/widget_default_padding" android:layout_marginRight="@dimen/widget_default_padding"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/widget_small_empty_view_size" android:layout_height="@dimen/widget_small_empty_view_size" android:src="@drawable/illustration_im_empty_positive_widget_no_schedule" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/widget_text_x_small_size" android:textColor="@color/widget_hint_color" android:id="@+id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_empty_tip_top_margin" android:text="@string/Lark_Core_NoEventsToday" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineHeight="@dimen/widget_text_x_small_height"/>
+    </LinearLayout>
+</FrameLayout>

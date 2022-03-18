@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/ad_ab_bottom_skip_root_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/splash_ad_ab_ignore_marginRight" android:layout_above="@+id/ad_ab_banner_space" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/splash_ad_ab_ignore_marginRight" android:layout_alignParentEnd="true">
+        <TextView android:textSize="14sp" android:textColor="@color/splash_ad_ab_skip_normal_text_color" android:gravity="center" android:id="@+id/ad_ab_bottom_skip_view" android:background="@drawable/splash_ad_ab_ignore_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/splash_ad_ab_ignore_height" android:text="@string/splash_ad_ab_ignore" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    </FrameLayout>
+    <android.widget.Space android:id="@+id/ad_ab_banner_space" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginRight="@dimen/splash_ad_ab_ignore_marginRight" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</merge>

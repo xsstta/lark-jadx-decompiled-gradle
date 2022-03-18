@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/inv_invite_member_success_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/illustration_empty_positive_complete" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="24dp"/>
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/imsdhTitleTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="39dp" android:layout_marginTop="12dp" android:layout_marginRight="39dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/imsdhMsgTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="10dp" android:layout_marginRight="22dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/imsdhFinishTv" android:background="@drawable/inv_invite_member_success_dialog_left_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Lark_Invitation_AddMembersFinishInvitation" android:layout_weight="1"/>
+        <View android:background="@color/line_divider_default" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="17sp" android:textColor="@color/primary_pri_500" android:gravity="center" android:id="@+id/imsdhAddMoreTv" android:background="@drawable/inv_invite_member_success_dialog_right_btn_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Lark_Invitation_AddMembersInviteMore" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

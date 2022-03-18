@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0"/>
+    <FrameLayout android:id="@+id/v_bg" android:background="@drawable/facade_round_top_xxl" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="387dp" android:backgroundTint="@color/bg_body">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center" android:id="@+id/comment_top_divider" android:background="@drawable/facade_dragview_handler" android:visibility="visible" android:layout_width="40dp" android:layout_height="4dp" android:layout_marginTop="8dp" android:layout_centerHorizontal="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/wiki_panel_title"/>
+            <com.bytedance.ee.bear.wiki.common.widget.WikiPanelTitleView android:textSize="@dimen/space_kit_font_24" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/wiki_panel_title" android:layout_width="match_parent" android:layout_height="65dp" android:lines="1" android:layout_alignParentTop="true" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintTop_toTopOf="0"/>
+            <com.bytedance.ee.bear.wiki.wikitree.tree.view.WikiTreeViewImpl android:id="@+id/wiki_tree" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/wiki_panel_title" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/wiki_panel_title"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

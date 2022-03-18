@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/containerAction" app:layout_constraintTop_toTopOf="0">
+        <com.ss.android.lark.mm.module.share.invite.MmInviteTitleBar android:id="@+id/titleBar" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <com.ss.android.lark.searchcommon.view.SearchInputView android:id="@+id/searchBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <View android:id="@+id/divider" android:background="@color/ud_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/selectedMembersLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvThumbnail" android:paddingLeft="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/addVirtualMemberLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/addVirtualMemberTopGap" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/addVirtualMemberTv" android:layout_width="match_parent" android:layout_height="52dp" android:drawablePadding="16dp" android:drawableStart="@drawable/mm_ic_member_add" android:layout_marginStart="16dp"/>
+            <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvUserList" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/containerAction" android:background="@color/bg_body" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+    <View android:id="@+id/divider" android:background="@color/ud_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size" app:layout_constraintBottom_toTopOf="@+id/containerAction"/>
+    <TextView android:textSize="18dp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/emptyContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/MMWeb_G_MyContentEmpty"/>
+    <com.ss.android.lark.mm.widget.MmLoadingView android:id="@+id/loadingView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

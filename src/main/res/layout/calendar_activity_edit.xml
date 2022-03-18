@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/editActivityRoot" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.ControlChildViewClickableLayout android:orientation="vertical" android:id="@+id/ll_event_content" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.EditDetailView android:id="@+id/append_event_detail_view" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.lark.calendar.impl.features.events.edit.widget.ControlChildViewClickableLayout>
+    <FrameLayout android:id="@+id/event_feature_fragment_container" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

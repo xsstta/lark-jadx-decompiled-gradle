@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_selected="true" android:drawable="@drawable/space_kit_circle_tick_cb_disable_select_bg"/>
+    <item android:state_enabled="false" android:state_selected="false" android:drawable="@drawable/space_kit_circle_tick_cb_disable_select_bg"/>
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/space_kit_circle_tick_cb_enable_select_bg"/>
+    <item android:state_enabled="true" android:state_selected="false" android:drawable="@drawable/space_kit_circle_tick_cb_enable_unselect_bg"/>
+</selector>

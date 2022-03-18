@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/search_bar_root_ll" android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@color/ud_N00" android:layout_width="match_parent" android:layout_height="34dp">
+        <FrameLayout android:id="@+id/search_bar_fl" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/search_bg_tv" android:background="@drawable/bg_search_text" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="14sp" android:textColor="@color/ud_N900" android:textColorHint="@color/ud_N500" android:layout_gravity="center_vertical" android:id="@+id/search_edit_et" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:textCursorDrawable="@drawable/text_cursor_drawable" android:layout_marginStart="36dp"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/search_delete_iv" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_close_filled" android:tint="@color/icon_n3" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_title_bar_back_iv" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/icon_n1" android:layout_marginStart="8dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/ud_N500" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_edit_hint_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" android:layout_marginStart="42dp"/>
+        </FrameLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/ud_B500" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/search_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Cancel" android:layout_marginEnd="-32dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/microapp_m_game_follow_dialog_bg" android:layout_width="270dp" android:layout_height="290dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/microapp_m_ll_cancel" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/microapp_m_abp_ic_micro_close"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="66dp" android:layout_height="66dp" android:layout_marginTop="8dp">
+                <ImageView android:id="@+id/microapp_m_iv_user_avatar" android:visibility="visible" android:layout_width="66dp" android:layout_height="66dp" android:scaleType="centerInside"/>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/microapp_m_iv_user_verify_view" android:layout_width="14dp" android:layout_height="14dp"/>
+            </FrameLayout>
+            <TextView android:textSize="18dp" android:textColor="#222222" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/microapp_m_tv_user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:maxLines="1" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="14dp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@+id/microapp_m_tv_mp_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="2" android:lineSpacingExtra="7dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/microapp_m_tv_confirm" android:background="@drawable/microapp_m_game_follow_btn_bg" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/microapp_m_follow" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

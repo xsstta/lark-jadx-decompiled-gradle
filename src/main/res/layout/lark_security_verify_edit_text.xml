@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="28dp">
+    <EditText android:textSize="0dp" android:textColor="@color/color_transparent" android:id="@+id/et_pwd" android:background="@android:color/transparent" android:layout_width="174dp" android:layout_height="match_parent" android:cursorVisible="false" android:layout_alignParentBottom="true" android:inputType="number" android:imeOptions="actionDone"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_code" android:background="@android:color/transparent" android:layout_width="190dp" android:layout_height="36dp"/>
+    <CheckBox android:id="@+id/iv_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@drawable/lark_security_verify_preview_cb_bg" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

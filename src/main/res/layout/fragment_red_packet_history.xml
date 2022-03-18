@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <RelativeLayout android:id="@+id/content_root" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="230dp" app:layout_scrollFlags="1">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/avatar" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginTop="32dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:civ_border_width="0dp" app:civ_oval="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/total_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:includeFontPadding="false" android:layout_below="@+id/avatar" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="48dp" android:typeface="monospace" android:textStyle="bold" android:textColor="@color/lkui_Y600" android:id="@+id/total_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:includeFontPadding="false" android:layout_below="@+id/total_num_tv" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="14dp" android:textColor="@color/lkui_Y600" android:id="@+id/total_amount_label_tv" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_WalletUnit" android:includeFontPadding="false" android:layout_toRightOf="@+id/total_amount_tv" android:layout_alignBottom="@+id/total_amount_tv"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/year_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <TextView android:textSize="16dp" android:textColor="@color/text_title" android:id="@+id/year_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/year_iv" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="2dp" android:tint="@color/icon_n2" android:tintMode="src_atop" app:srcCompat="@drawable/ud_icon_down_outlined"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/ptr_layout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/recyclerView" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

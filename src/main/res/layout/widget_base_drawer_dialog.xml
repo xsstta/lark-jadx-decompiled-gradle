@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wbddRootFl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/wbddScrollFl" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/widget_drawer_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/wbddFocusEt" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0"/>
+            <FrameLayout android:id="@+id/wbddThumbFl" android:layout_width="match_parent" android:layout_height="32dp">
+                <View android:layout_gravity="center" android:background="@drawable/widget_drawer_thumb" android:layout_width="30dp" android:layout_height="4dp"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/wbddContentFl" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

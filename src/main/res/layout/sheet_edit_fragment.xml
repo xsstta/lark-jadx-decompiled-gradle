@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:id="@+id/sheet_edit_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/toolbar_top_shadow" android:layout_width="match_parent" android:layout_height="30dp" android:layout_above="@+id/sheet_edit_input_box"/>
+    <com.bytedence.ee.bear.fabview.FabView android:id="@+id/sheet_operation_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_above="@+id/sheet_edit_input_box" android:layout_alignParentEnd="true" app:fabColor="@color/primary_pri_500" app:fabImage="@drawable/ud_icon_style_outlined" app:fabImageTint="@color/static_white" app:fabType="0"/>
+    <com.bytedance.ee.bear.sheet.inputbar.editor.SheetEditorLayout android:id="@+id/sheet_edit_input_box" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/sheet_edit_toolbar"/>
+    <include android:id="@+id/sheet_edit_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/sub_panel_container" layout="@layout/sheet_edit_toolbar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/sub_panel_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

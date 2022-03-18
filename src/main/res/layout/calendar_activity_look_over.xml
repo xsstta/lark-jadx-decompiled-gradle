@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lookRootView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerLinearLayout android:orientation="vertical" android:id="@+id/attendeeChipContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_46">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/attendeeInfoContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_54" layout="@layout/view_enter_time_zone"/>
+            <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.widget.AttendeeInfoView android:orientation="horizontal" android:id="@+id/attendeeContainer" android:layout_width="match_parent" android:layout_height="@dimen/dp_72"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.widget.LookViewPager android:id="@+id/lookEventViewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            <View android:layout_gravity="top" android:background="@drawable/bg_shadow" android:layout_width="match_parent" android:layout_height="@dimen/dp_4"/>
+            <View android:layout_gravity="bottom" android:id="@+id/footerShadow" android:background="@drawable/bg_shadow_up" android:layout_width="match_parent" android:layout_height="@dimen/dp_4"/>
+        </FrameLayout>
+        <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.widget.LookFooterMessageView android:orientation="horizontal" android:id="@+id/lookFooterMessageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0"/>
+    </com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerLinearLayout>
+    <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TitleTimeBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TouchListenerFrameLayout>

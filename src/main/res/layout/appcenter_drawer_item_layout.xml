@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/appcenter_drawer_item_bg" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="16dp">
+    <TextView android:textSize="12dp" android:textColor="@drawable/appcenter_drawer_item_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:maxLines="2"/>
+</FrameLayout>

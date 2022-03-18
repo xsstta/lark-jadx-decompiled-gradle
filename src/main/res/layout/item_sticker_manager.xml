@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="75dp">
+    <com.ss.android.lark.widget.AutoRecycleGifImageView android:id="@+id/sticker" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    <View android:background="@color/fill_img_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/sticker" android:layout_alignBottom="@+id/sticker" android:layout_alignStart="@+id/sticker" android:layout_alignEnd="@+id/sticker"/>
+    <View android:id="@+id/mask" android:background="@color/static_white_pressed" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/unselect_label" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="6dp" android:src="@drawable/ic_icon_select_picture_normal" android:layout_alignParentTop="true" android:layout_marginEnd="6dp" android:layout_alignParentEnd="true"/>
+    <TextView android:textColor="@color/static_white" android:gravity="center" android:id="@+id/select_index" android:background="@drawable/ic_icon_select_picture_ok_bg" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="6dp" android:layout_alignParentTop="true" android:layout_marginEnd="6dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

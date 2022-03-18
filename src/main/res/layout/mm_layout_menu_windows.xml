@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/mm_bg_text_long_click_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="14dp" android:paddingEnd="14dp">
+    <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/tv_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/MMWeb_G_Copy"/>
+    <View android:id="@+id/divider" android:background="@color/static_white" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginStart="14dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/tv_comment" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MMWeb_G_Comment" android:layout_marginStart="14dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/tv_view_origin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MMWeb_G_SeeOriginal" android:layout_marginStart="14dp"/>
+</LinearLayout>

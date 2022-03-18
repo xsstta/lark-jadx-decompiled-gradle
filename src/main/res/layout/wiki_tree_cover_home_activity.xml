@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.wiki.search.WikiSearchView android:id="@+id/wiki_search_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bytedance.ee.bear.wiki.wikitree.WikiCoverCoordinatorLayout android:id="@+id/wiki_page_coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/wiki_appbar_layout" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+                <RelativeLayout android:id="@+id/wiki_space_header_layout" android:layout_width="match_parent" android:layout_height="210dp">
+                    <ImageView android:id="@+id/iv_wiki_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_collapseMode="2"/>
+                    <View android:id="@+id/cover_mask_view" android:background="@color/wiki_tree_home_cover_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/wiki_main_title" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:layout_alignParentTop="true"/>
+                    <TextView android:textSize="30sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_wiki_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="22dp" android:maxLines="2" android:layout_above="@+id/iv_wiki_detail" android:layout_below="@+id/wiki_main_title" android:layout_marginStart="28dp" android:layout_marginEnd="28dp"/>
+                    <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:layout_gravity="center_vertical" android:id="@+id/iv_wiki_detail" android:background="@color/static_black" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginBottom="16dp" android:src="@drawable/icon_tool_detail_nor" android:layout_alignParentBottom="true" android:layout_marginEnd="66dp" android:layout_alignParentEnd="true" app:backgroundAlpha="0.5" app:civ_radius="15dp"/>
+                    <FrameLayout android:layout_width="42dp" android:layout_height="42dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_marginEnd="14dp" android:layout_alignParentEnd="true">
+                        <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:layout_gravity="center" android:id="@+id/iv_wiki_star_background" android:background="@color/static_black" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/icon_tool_uncollected_nor" app:backgroundAlpha="0.5" app:civ_radius="15dp"/>
+                        <ImageView android:layout_gravity="center" android:id="@+id/iv_wiki_star" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/icon_tool_uncollected_nor"/>
+                    </FrameLayout>
+                    <View android:background="@color/space_kit_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <androidx.appcompat.widget.Toolbar android:id="@+id/wiki_header_toolbar" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:alpha="0" app:contentInsetStart="0dp" app:layout_collapseMode="1">
+                    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/wiki_main_title_floating" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height"/>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.bytedance.ee.bear.wiki.wikitree.tree.view.WikiTreeViewImpl android:id="@+id/wiki_tree_view_ctrl" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </com.bytedance.ee.bear.wiki.wikitree.WikiCoverCoordinatorLayout>
+</FrameLayout>

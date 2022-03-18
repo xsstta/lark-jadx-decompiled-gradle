@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/microapp_m_dialog_list_padding_vertical_material" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/microapp_m_list_item_back" android:cacheColorHint="@null" android:divider="@null" android:overScrollMode="ifContentScrolls"/>

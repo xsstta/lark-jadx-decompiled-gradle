@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/image_wrapper" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="105dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center" android:id="@+id/group_avatar" android:layout_width="72dp" android:layout_height="72dp" android:src="@color/__picker_text_80"/>
+    </FrameLayout>
+    <FrameLayout android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="64dp" app:layout_constraintBottom_toBottomOf="0">
+        <Button android:textColor="@color/lkui_N00" android:layout_gravity="center" android:id="@+id/btn_confirm_create_group" android:background="@drawable/confirm_btn_bg_edu" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/Lark_Education_CreateGroupButton" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/group_name_wrapper" android:background="@drawable/item_slector_bg" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/image_wrapper">
+        <FrameLayout android:id="@+id/group_tv_wrapper" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_weight="1" app:layout_constraintStart_toEndOf="@+id/des_group_name" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N500" android:layout_gravity="end" android:id="@+id/tv_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="8dp" android:drawableEnd="@drawable/icon_right_arrow" android:layout_marginEnd="20dp"/>
+        </FrameLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:id="@+id/des_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_GroupName" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toLeftOf="@+id/group_tv_wrapper" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

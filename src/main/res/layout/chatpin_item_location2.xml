@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle2">
+    <include layout="@layout/chat_pin_item_sender2"/>
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:orientation="vertical" android:id="@+id/pin_location_bubble" android:layout_width="match_parent" android:layout_height="wrap_content" app:rl_border_color="@color/line_border_card" app:rl_border_mode="1" app:rl_border_width="1dp" app:rl_radius="4dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/pin_location_title" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="12dp" android:paddingEnd="21dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/pin_location_desc" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dp" android:maxLines="1" android:includeFontPadding="false"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:id="@+id/pin_location_image" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="70dp" android:scaleType="centerCrop"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pin_location_image_loading" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:indeterminateDrawable="@drawable/progressbar_round"/>
+            </FrameLayout>
+        </LinearLayout>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    <include layout="@layout/chat_pin_footer_layout"/>
+    <include layout="@layout/chat_pin_item_sender"/>
+</com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="68dp" android:animateLayoutChanges="true">
+    <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/selectbox" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp" app:ud_checkbox_type="0"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/single_avator" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="right" android:id="@+id/image_close" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_icon_close_outlined" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/name_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/icon_container" android:layout_alignParentLeft="true">
+                <com.larksuite.framework.ui.SpareLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp">
+                    <TextView android:textSize="17sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+                    <TextView android:textColor="@color/udtoken_tag_text_s_blue" android:layout_gravity="center_vertical" android:id="@+id/chat_tag" android:background="@drawable/blue_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="6dp" android:text="@string/Lark_Legacy_TagDepartment" style="@style/TagTextViewStyle"/>
+                    <TextView android:textColor="@color/udtoken_tag_text_s_red" android:gravity="center" android:id="@+id/workday_leave" android:background="@drawable/mine_leave_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="@style/TagTextViewStyle"/>
+                    <com.ss.android.lark.widget.status.UserStatusLinearLayout android:id="@+id/user_status" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/bot_tag" android:visibility="gone" android:layout_width="33dp" android:layout_height="16dp" android:layout_marginLeft="6dp" android:src="0x7f0802ee" android:scaleType="fitCenter"/>
+                    <TextView android:textColor="@color/udtoken_tag_neutral_text_solid" android:layout_gravity="center_vertical" android:id="@+id/unregister_flag" android:background="@drawable/contact_unregister_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:text="@string/Lark_Legacy_TagUnregistered" android:layout_marginStart="8dp" style="@style/TagTextViewStyle"/>
+                </com.larksuite.framework.ui.SpareLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="16dp" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </FrameLayout>
+</LinearLayout>

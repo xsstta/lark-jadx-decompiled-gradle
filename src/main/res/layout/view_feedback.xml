@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/shadow" android:background="@drawable/feedback_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/shadow_height"/>
+    <include android:id="@+id/header" android:visibility="gone" layout="@layout/item_card_header"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/content" android:background="@drawable/item_search_feedback_selector_bg" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textColor="@color/text_title" android:id="@+id/txt_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="@string/Lark_Search_ResultFeedback" android:layout_marginEnd="6dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_link_normal" android:ellipsize="marquee" android:id="@+id/txt_feedback" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Search_GiveFeedbackForQuestion" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+    </LinearLayout>
+    <include android:id="@+id/footer" android:visibility="gone" layout="@layout/item_card_footer"/>
+</LinearLayout>

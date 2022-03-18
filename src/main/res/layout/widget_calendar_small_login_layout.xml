@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/background" android:background="@drawable/bg_widget_default" android:padding="@dimen/widget_default_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/feishu_logo_color" android:layout_width="@dimen/widget_medium_logo_size" android:layout_height="@dimen/widget_medium_logo_size" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/widget_login_btn_size" android:textColor="@color/white" android:gravity="center" android:id="@+id/widget_btn_login" android:background="@drawable/bg_widget_login_btn" android:layout_width="@dimen/widget_medium_login_btn_width" android:layout_height="@dimen/widget_medium_login_btn_height" android:layout_marginBottom="@dimen/widget_small_login_btn_bottom_margin" android:text="@string/Lark_Core_LogIn" android:layout_above="@+id/widget_login_tip" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/widget_text_small_size" android:textColor="@color/widget_remind_time_color" android:gravity="center" android:id="@+id/widget_login_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/widget_small_login_tip_bottom_margin" android:text="@string/Lark_Core_LogInDesc" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineHeight="@dimen/widget_text_small_height"/>
+    </RelativeLayout>
+</FrameLayout>

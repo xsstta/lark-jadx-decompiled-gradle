@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=UTF-8 content=width=device-width,initial-scale=1/>
+    <link rel="stylesheet" href="file:///android_asset/highlight/styles/drive_atom-one-light.css">
+    <link rel="stylesheet" href="file:///android_asset/markdown/styles/drive_markdown.css">
+    <title></title>
+    <script src=file:///android_asset/markdown/drive_marked.min.js></script>
+    <script src="file:///android_asset/highlight/drive_highlight.min.js"></script>
+    <script src="file:///android_asset/drive_purify.min.js"></script>
+    <script src="file:///android_asset/drive_base64.min.js"></script>
+    <style>
+        *{word-wrap: break-word}
+        table,table tr th, table tr td { border:1px solid #DEE0E3; }
+        table { width: 100px; line-height: 25px; border-collapse: collapse ;overflow-x:auto;}
+        pre {width:90%; overflow-x:auto ; background: #F8F9FA; padding: 15px;}
+        img {max-width: 100%; height:auto}
+    </style>
+    <script>
+
+        function setMarkDownString(markdownStr){
+            var contentElement = document.getElementById('content');
+            marked.setOptions({
+                renderer: new marked.Renderer(),
+                highlight: function (code) {
+                    return hljs.highlightAuto(code).value;
+                },
+                pedantic: false,
+                gfm: true,
+                tables: true,
+                breaks: false,
+                sanitize: true,
+                smartLists: true,
+                smartypants: false,
+                xhtml: false,
+            });
+            contentElement.innerHTML = DOMPurify.sanitize(marked(decode(markdownStr)));
+
+            return Date.now();
+        }
+
+        function decode(markdownStr){
+            return Base64.decode(markdownStr);
+        }
+
+        jsObj.javaScriptFinishLoaded();
+
+    </script>
+</head>
+<body>
+<div id=content></div>
+</body>
+</html>

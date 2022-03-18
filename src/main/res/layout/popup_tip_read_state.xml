@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/lkui_transparent" android:layout_width="223dp" android:layout_height="wrap_content">
+    <include android:id="@+id/read_state_hint_leading_circle_up" android:visibility="gone" layout="@layout/read_state_hint_leading_circle_up"/>
+    <include android:id="@+id/read_state_hint_ru" layout="@layout/read_state_hint_ru"/>
+    <include android:id="@+id/read_state_hint_leading_circle_down" android:visibility="gone" layout="@layout/read_state_hint_leading_circle_down"/>
+</LinearLayout>

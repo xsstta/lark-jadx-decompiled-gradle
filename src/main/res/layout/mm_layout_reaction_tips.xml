@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mm.widget.MmViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/id_mm_reaction_flip" android:background="@drawable/mm_shape_reation_toast_bg" android:layout_width="224dp" android:layout_height="36dp" android:layout_marginBottom="8dp"/>

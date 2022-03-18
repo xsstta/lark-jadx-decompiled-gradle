@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tt.miniapp.view.FullScreenVideoLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/microapp_m_video_full_screen_container" android:background="@color/microapp_m_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>

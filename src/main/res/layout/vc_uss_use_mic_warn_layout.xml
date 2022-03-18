@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/new_message_container" android:background="@drawable/vc_bg_uss_use_mic_warn" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="12dp" android:textColor="@color/static_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/View_MV_AllowUseUltrasound" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" app:layout_constraintHorizontal_bias="0" app:ux_line_height="18dp"/>
+    </FrameLayout>
+    <View android:id="@+id/down_triangle" android:background="@drawable/bg_down_triangle" android:layout_width="10dp" android:layout_height="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/new_message_container"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

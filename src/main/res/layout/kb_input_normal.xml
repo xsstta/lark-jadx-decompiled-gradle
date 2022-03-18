@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/input_and_reply_zone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_container">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_reply" android:background="@color/bg_body_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_replay_content" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+                <ImageView android:id="@+id/btn_close_reply" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/reply_close"/>
+                <View android:id="@+id/divider_vertical" android:background="@color/line_border_card" android:layout_width="0.5dp" android:layout_height="14dp"/>
+                <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:textColorHint="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_root_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Reply" android:maxLines="1" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/input_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/normal_message_et_layout" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/et_container" android:background="@drawable/kb_input_round_bg" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="4dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+                    <com.ss.android.lark.keyboard.plugin.input.RichTextEmojiconEditText android:textSize="16sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="left" android:id="@+id/toolbox_et_message" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxHeight="80dp" android:maxLength="10000" android:layout_weight="1" android:inputType="textMultiLine" android:textCursorDrawable="@drawable/text_cursor_drawable"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/post_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/combined_btn" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/kb_icon_color_selector" app:srcCompat="@drawable/ud_icon_magnify_outlined"/>
+                        <ImageView android:layout_gravity="top" android:id="@+id/post_draft_dot" android:visibility="invisible" android:layout_width="8dp" android:layout_height="6dp" android:src="@drawable/kb_post_draft_dot"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/img_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:layout_marginStart="@dimen/dp_16"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/images_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/bottom_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <com.ss.android.lark.widget.slidingup.SlidingUpPanelLayout android:gravity="bottom" android:id="@+id/top_drawer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_container" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <View android:id="@+id/content" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ss.android.lark.widget.slidingup.SlidingUpPanelLayout>
+</RelativeLayout>

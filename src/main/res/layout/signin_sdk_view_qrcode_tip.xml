@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/lkui_button_text_size_14" android:textColor="@color/signin_sdk_white" android:id="@+id/tv_get_team_code_tip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp"/>
+</FrameLayout>

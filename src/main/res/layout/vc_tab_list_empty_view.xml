@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/error_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:gravity="center_horizontal" android:id="@+id/img" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" app:srcCompat="@drawable/illustration_vc_empty_positive_no_meetings"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textAppearance="@style/UDText.Body2" android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/tv_try_reloading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/View_MV_CollaborativeExp" android:maxLines="2" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+</merge>

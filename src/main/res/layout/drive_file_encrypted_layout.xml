@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/password_encrypt_container" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:layout_gravity="center" android:id="@+id/file_encrypted_state" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_preview" app:ud_empty_primaryText="@string/Drive_Drive_OpenWithOtherApps" app:ud_empty_title="@string/CreationMobile_Docs_decompress_encrypted" style="@style/SpaceEmptyStatusStyle"/>
+</FrameLayout>

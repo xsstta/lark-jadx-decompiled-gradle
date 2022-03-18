@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/imtoken_message_bg_album" android:layout_width="58dp" android:layout_height="match_parent">
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:id="@+id/camera_btn" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/kb_ic_keyboard_camera"/>
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/btn_photo_album" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/kb_ic_keyboard_picture"/>
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:orientation="horizontal" android:id="@+id/recyclerview_photo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/photo_permission_denied_layout" android:paddingTop="40dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/tv_photo_permission_denied" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/Lark_Legacy_PhotoPermissionDeniedLint"/>
+                <TextView android:textSize="14sp" android:textColor="@color/function_info_500" android:gravity="center" android:id="@+id/btn_photo_permission_denied" android:background="@color/lkui_transparent" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_OpenPhotoPermission"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/chat_menu_post" android:background="@color/bg_body" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_original_photo" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/cb_original_photo" android:paddingLeft="12dp" android:paddingTop="0dp" android:paddingRight="12dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="28dp" app:ud_checkbox_type="0"/>
+            <TextView android:textSize="15sp" android:textColor="@color/black_text_enable_selector" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/original_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-5dp" android:minHeight="28dp" android:text="@string/Lark_Legacy_OriginPic" android:maxLines="12" android:layout_toRightOf="@+id/cb_original_photo"/>
+        </RelativeLayout>
+        <View android:layout_width="8dp" android:layout_height="1dp"/>
+        <FrameLayout android:id="@+id/preview_container" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0">
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_photo_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minHeight="28dp" android:maxLines="12" android:textAllCaps="false"/>
+        </FrameLayout>
+        <View android:layout_width="8dp" android:layout_height="1dp"/>
+        <FrameLayout android:id="@+id/layout_photo_send" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14dp" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_photo_send" android:background="@drawable/chat_photo_send_bg_selector" android:paddingLeft="2.5dp" android:paddingRight="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:minWidth="64dp" android:minHeight="28dp" android:text="@string/Lark_Legacy_PickerSend" android:maxLines="10" android:textAllCaps="false"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

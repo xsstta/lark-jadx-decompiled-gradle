@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+    <View android:background="@drawable/inv_bulk_failed_dot" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="10dp" android:layout_marginTop="9dp" android:layout_marginRight="6dp"/>
+    <TextView android:textSize="16dp" android:textColor="@color/text_caption" android:layout_gravity="center_horizontal" android:id="@+id/imbfItemTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+</LinearLayout>

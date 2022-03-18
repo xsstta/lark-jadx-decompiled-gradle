@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.guide.ui.view.ArrowView android:id="@+id/iv_arrow" android:layout_width="24dp" android:layout_height="8dp"/>
+    <TextView android:textSize="16dp" android:textColor="@color/static_white" android:id="@+id/tv_content" android:background="@drawable/workplace_bubble_view_text_bg" android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8dp"/>
+</LinearLayout>

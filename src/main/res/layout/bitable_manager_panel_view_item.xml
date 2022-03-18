@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.facade.common.widget.RoundFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="@dimen/bitable_manager_panel_item_height" android:backgroundTint="@color/bitable_panel_view_item_tint">
+    <com.bytedance.ee.bear.bitable.managerpanel.BitableSwipeMenuLayout android:id="@+id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@+id/tag" android:background="@color/primary_pri_500" android:visibility="invisible" android:layout_width="@dimen/space_kit_len_4" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/icon" android:layout_width="@dimen/space_kit_len_18" android:layout_height="@dimen/space_kit_len_18" android:tint="@color/icon_n1" android:layout_marginStart="@dimen/space_kit_len_61" android:layout_marginEnd="@dimen/space_kit_len_7"/>
+            <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_marginEnd="@dimen/space_kit_len_16"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/menu_more" android:background="@color/icon_n3" android:layout_width="@dimen/space_kit_len_56" android:layout_height="match_parent" android:src="@drawable/ud_icon_more_outlined" android:scaleType="centerInside" android:tint="@color/static_white"/>
+    </com.bytedance.ee.bear.bitable.managerpanel.BitableSwipeMenuLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_half" android:layout_marginStart="@dimen/space_kit_len_44"/>
+</com.bytedance.ee.bear.facade.common.widget.RoundFrameLayout>

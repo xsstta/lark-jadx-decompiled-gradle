@@ -1,0 +1,22 @@
+package com.ss.android.lark.search.impl.func.chatinside.view.filter.viewholder;
+
+import com.ss.android.lark.search.impl.entity.viewdata.filter.SearchFilterViewData;
+import java.util.ArrayList;
+
+/* renamed from: com.ss.android.lark.search.impl.func.chatinside.view.filter.viewholder.c */
+public class C53545c implements AbstractC53547e {
+    @Override // com.ss.android.lark.search.impl.func.chatinside.view.filter.viewholder.AbstractC53547e
+    /* renamed from: a */
+    public void mo182773a(SearchFilterViewData searchFilterViewData, SearchFilterViewHolder searchFilterViewHolder) {
+        m207346b(searchFilterViewData, searchFilterViewHolder);
+    }
+
+    /* renamed from: b */
+    private void m207346b(SearchFilterViewData searchFilterViewData, SearchFilterViewHolder searchFilterViewHolder) {
+        if (searchFilterViewData.mo182357g() == null) {
+            searchFilterViewHolder.mSearchFilterView.setUnSelectedText(searchFilterViewData.mo182356f());
+        } else {
+            searchFilterViewHolder.mSearchFilterView.mo200827a(searchFilterViewData.mo182356f(), new ArrayList());
+        }
+    }
+}

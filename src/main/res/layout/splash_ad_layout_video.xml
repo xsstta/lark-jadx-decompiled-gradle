@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.ad.splash.core.video.SSRenderSurfaceView android:id="@+id/video_surface" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/ad_splash_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="12dp" android:textColor="#ffffff" android:id="@+id/ad_splash_has_wifi_loaded_text" android:padding="3dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="9dp" android:shadowColor="#7f000000" android:shadowRadius="12" android:layout_toLeftOf="@+id/ad_splash_ignore" android:layout_alignParentTop="true"/>
+    <FrameLayout android:id="@+id/ad_splash_ignore" android:layout_width="wrap_content" android:layout_height="@dimen/splash_ad_ignore" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="12sp" android:textColor="@color/splash_ad_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/ad_splash_jump_btn" android:background="@drawable/splash_ad_ignore_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/splash_ad_ignore"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ad_splash_skip_loading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <include layout="@layout/layout_splash_ad_ab_wifiprload"/>
+    <include layout="@layout/layout_splash_ad_ab_skip"/>
+    <ProgressBar android:id="@+id/video_loading_progress" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:indeterminateDrawable="@drawable/splash_ad_video_loading_progressbar" android:indeterminateDuration="1200" android:layout_centerInParent="true"/>
+</RelativeLayout>

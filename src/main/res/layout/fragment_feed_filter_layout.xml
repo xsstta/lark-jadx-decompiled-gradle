@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/filter_messages_rl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:paddingStart="16dp" android:paddingEnd="6dp">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/filter_messages_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Feed_MessageFilter" android:layout_centerVertical="true"/>
+            <com.larksuite.component.ui.button.LKUISwitchButton android:id="@+id/filter_messages_btn" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView android:gravity="center_vertical" android:id="@+id/filter_messages_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Feed_MessageFilterDesc" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/filter_sort_entry_rl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="14dp" android:paddingStart="16dp" android:paddingEnd="6dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/filter_sort_entry_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Feed_EditCategory" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/filter_sort_arrow" android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/SettingItemImageForward"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/at_me_filter_rl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="14dp" android:paddingStart="16dp" android:paddingEnd="6dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/at_me_filter_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Messenger_AtMeMessageGrouping_Subtitle" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/at_me_filter_arrow" android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/SettingItemImageForward"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/mute_filter_rl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:paddingStart="16dp" android:paddingEnd="6dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/mute_filter_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Feed_TurnOnMutedFilter" android:layout_centerVertical="true"/>
+        <com.larksuite.component.universe_design.p1166switch.UDSwitch android:id="@+id/mute_filter_switch_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:gravity="center_vertical" android:id="@+id/mute_filter_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Feed_TurnOnMutedFilterDesc" android:layout_marginStart="16dp"/>
+</LinearLayout>

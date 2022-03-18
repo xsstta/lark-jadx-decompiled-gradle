@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="14sp" android:textColor="@color/ud_N900" android:id="@+id/header" android:background="@color/bg_body" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:slm_headerDisplay="11" app:slm_isHeader="true" app:slm_section_headerMarginStart="0dp"/>

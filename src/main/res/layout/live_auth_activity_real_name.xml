@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.meeting.module.livestream.widget.KeyboardDetectorConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/login_content_frame_container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/icon_n1" android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_16" android:text="@string/iconfont_icon_arrow_left" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/login_content_frame_without_title" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_16" android:layout_weight="1">
+            <TextView android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_G_RealNameAuthentication" style="@style/LiveAuthTitleStyle"/>
+            <TextView android:id="@+id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_16" android:text="@string/View_G_RealNameAuthenticationInfo" style="@style/LiveAuthSubTitleStyle"/>
+            <com.ss.android.vc.meeting.module.livestream.widget.CommonEditInput android:textSize="@dimen/dp_16" android:id="@+id/et_username" android:singleLine="true" app:layout_constraintTop_toBottomOf="@+id/tv_sub_title" style="@style/LiveAuthInputStyle"/>
+            <com.ss.android.vc.meeting.module.livestream.widget.CommonEditInput android:id="@+id/et_id_code" android:singleLine="true" android:inputType="number" app:layout_constraintTop_toBottomOf="@+id/tv_sub_title" style="@style/LiveAuthInputStyle"/>
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                <androidx.appcompat.widget.AppCompatCheckBox android:gravity="center_vertical" android:id="@+id/checkBoxPolicy" android:background="@null" android:paddingTop="0dp" android:paddingRight="4dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/live_auth_policy_check"/>
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_caption" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/tvPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16">
+            <LinearLayout android:gravity="center" android:id="@+id/llNextStep" android:layout_width="match_parent" android:layout_marginBottom="@dimen/dp_16" style="@style/LiveAuthButtonStyle">
+                <TextView android:textSize="@dimen/dp_17" android:textColor="@color/static_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/View_G_NextStep"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.ss.android.vc.meeting.module.livestream.widget.KeyboardDetectorConstraintLayout>

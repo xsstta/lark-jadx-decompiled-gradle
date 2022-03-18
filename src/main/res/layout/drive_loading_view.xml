@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/loading_root" android:background="@color/bg_base" android:paddingBottom="68dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/placeholder" android:layout_width="64dp" android:layout_height="64dp"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.3dp" android:text="@string/Drive_Drive_LoadingIn"/>
+    <com.larksuite.component.universe_design.progress.UDProgress android:id="@+id/progress_bar" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="16.8dp" android:progress="0" app:layout_constraintBottom_toBottomOf="0" app:ud_progress_indicatorColor="@color/ud_B500" app:ud_progress_indicatorCornerRadius="2dp" app:ud_progress_thickness="4dp" app:ud_progress_trackColor="@color/ud_N300" app:ud_progress_type="0"/>
+</LinearLayout>

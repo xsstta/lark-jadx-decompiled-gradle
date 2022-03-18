@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:layout_gravity="bottom" android:background="@color/microapp_m_transparent_30" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/microapp_m_menu_container" android:background="@color/microapp_m_white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/microapp_m_divider_menu_item" android:showDividers="middle"/>
+    </LinearLayout>
+</ScrollView>

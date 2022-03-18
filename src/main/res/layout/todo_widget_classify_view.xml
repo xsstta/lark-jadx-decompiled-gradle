@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_16" android:paddingBottom="@dimen/dp_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llFirstLine" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llToBeCompleted" android:background="@drawable/todo_bg_classify_btn_clicked" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="@dimen/dp_28" android:layout_marginLeft="@dimen/dp_10">
+            <TextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:textColor="@color/primary_pri_500" android:id="@+id/tvToBeCompleted" android:layout_width="0dp" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_120" android:text="@string/Todo_Task_TasksToBeDone" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:textColor="@color/primary_pri_500" android:id="@+id/tvToBeCompletedCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/llSecondLine" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10"/>
+    <LinearLayout android:id="@+id/llThirdLine" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10"/>
+</LinearLayout>

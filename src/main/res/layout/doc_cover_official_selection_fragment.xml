@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/loading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center_horizontal" android:layout_marginTop="@dimen/space_kit_len_198" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+        <TextView android:textSize="@dimen/space_kit_font_14" android:textColor="@color/text_caption" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_18" android:text="@string/Doc_Facade_Loading"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/load_failed_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:layout_gravity="center_horizontal" android:id="@+id/empty_state" android:layout_marginTop="@dimen/space_kit_len_196" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/SpaceEmptyStatusStyle"/>
+    </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/cover_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableLoadmore="false" app:srlEnableRefresh="false">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/cover_series_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

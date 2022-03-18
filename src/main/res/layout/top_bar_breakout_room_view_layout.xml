@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/room_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_10" android:textColor="@color/text_caption" android:ellipsize="end" android:id="@+id/room_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dp_13" android:maxWidth="@dimen/dp_200" android:singleLine="true" android:layout_marginStart="@dimen/dp_8"/>
+</LinearLayout>

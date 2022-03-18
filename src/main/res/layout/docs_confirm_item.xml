@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/group_avatar" android:background="@drawable/icon_circle_bg" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:scaleType="centerCrop" app:civ_oval="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_weight="1">
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="group_name" android:maxLines="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/item_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="group_name" android:maxLines="1"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rm_btn" android:layout_width="44.4dp" android:layout_height="match_parent" android:layout_marginTop="9.5dp">
+            <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_svg_file_close_outlined" android:tint="@color/icon_n3" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="76dp" android:layout_marginTop="9.5dp"/>
+</LinearLayout>

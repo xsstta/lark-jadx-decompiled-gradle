@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/calendar_dialog_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N900" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/calendar_dialog_text" android:background="@drawable/calendar_detail_shape_text" android:padding="@dimen/dp_30" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_120" android:maxHeight="@dimen/dp_305" android:text="本周产品开发例会本周产品开发例会本周产品开发例会本周产品开发例会本周产品开发例会本周产品开发例会本周产品开发例会本周产品开发例会"/>
+</LinearLayout>

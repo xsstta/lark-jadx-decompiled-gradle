@@ -1,0 +1,22 @@
+package com.ss.android.lark.core.p1772j;
+
+import android.content.Context;
+import com.ss.android.lark.core.p1772j.C36149a;
+import com.ss.android.lark.main.p2231a.AbstractC44136a;
+import com.ss.android.lark.maincore.AbstractC44548e;
+import com.ss.android.lark.maincore.AbstractC44552i;
+import com.ss.android.lark.maincore.ITitleController;
+
+/* renamed from: com.ss.android.lark.core.j.-$$Lambda$a$1$TcgOeT0LpbvQlwIPXzs7DCT_mZE  reason: invalid class name */
+/* compiled from: lambda */
+public final /* synthetic */ class $$Lambda$a$1$TcgOeT0LpbvQlwIPXzs7DCT_mZE implements AbstractC44136a.C44142ac.AbstractC44145c {
+    public static final /* synthetic */ $$Lambda$a$1$TcgOeT0LpbvQlwIPXzs7DCT_mZE INSTANCE = new $$Lambda$a$1$TcgOeT0LpbvQlwIPXzs7DCT_mZE();
+
+    private /* synthetic */ $$Lambda$a$1$TcgOeT0LpbvQlwIPXzs7DCT_mZE() {
+    }
+
+    @Override // com.ss.android.lark.main.p2231a.AbstractC44136a.C44142ac.AbstractC44145c
+    public final AbstractC44552i createTabPageSpec(Context context, AbstractC44548e eVar, ITitleController iTitleController) {
+        return C36149a.C361501.m142165b(context, eVar, iTitleController);
+    }
+}

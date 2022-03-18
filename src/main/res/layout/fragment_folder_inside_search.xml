@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <com.ss.android.lark.searchcommon.view.SearchInputView android:id="@+id/chat_inside_search_input" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/primary_pri_500" android:id="@+id/chat_inside_cancel_search_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Cancel" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/Lark_Legacy_AllFilesTitle" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12dp"/>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/chat_inside_search_filter_fl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="9dp"/>
+    <com.ss.android.lark.searchcommon.view.SearchResultView android:id="@+id/chat_inside_search_result_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/chat_inside_search_default_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/search_default_iv" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/empty_search" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:ellipsize="middle" android:id="@+id/search_default_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_SearchNoAnyResult" android:singleLine="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/search_default_iv"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/ll_load_more_container" android:background="@color/bg_body" android:paddingLeft="@dimen/dp_48" android:layout_width="match_parent" android:layout_height="@dimen/dp_52">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_400" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Common_LoadMoreMobile"/>
+</LinearLayout>

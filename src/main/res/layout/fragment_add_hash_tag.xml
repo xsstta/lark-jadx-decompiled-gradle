@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/lkui_N50" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/flSearchContainer" android:background="@color/lkui_N00" android:paddingLeft="@dimen/dp_16" android:paddingTop="6dp" android:paddingRight="@dimen/dp_16" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="46dp">
+        <View android:background="@drawable/bg_search_hash_tag" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <EditText android:textSize="14dp" android:textColor="@color/lkui_N900" android:textColorHint="@color/lkui_N500" android:layout_gravity="center_vertical" android:id="@+id/etSearchHashTag" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Lark_Pano_SearchOrCreatTopic" android:singleLine="true" android:inputType="text" android:textCursorDrawable="@drawable/hash_tag_cursor_drawable" android:layout_marginStart="34dp" android:layout_marginEnd="34dp" android:importantForAutofill="2"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ic_svg_search_hash_tag" android:contentDescription="@string/Lark_Legacy_Search" android:layout_marginStart="12dp"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ivSearchDelete" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_svg_search_delete" android:contentDescription="@string/Lark_Legacy_Cancel" android:layout_marginEnd="8dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvRecommendDesc" android:background="@color/lkui_N00" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:minHeight="@dimen/dp_40" android:text="推荐主题" android:includeFontPadding="false"/>
+    <FrameLayout android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/rvHashTags" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/search_empty_container" android:background="@color/lkui_N00" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="121dp">
+            <ImageView android:id="@+id/iv_search_empty" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/empty_search"/>
+            <TextView android:textSize="@dimen/dp_14" android:gravity="center" android:id="@+id/tv_search_empty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minHeight="22dp" android:text="未搜索到“项目”相关结果"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

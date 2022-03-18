@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mail.impl.view.titlebar.OperationTitleBar xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/multiTitleBar" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/mail_home_multi_title_bar_height"/>

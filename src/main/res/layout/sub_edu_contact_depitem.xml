@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/contact_item_bg_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/contacts_item_prefix" android:tint="@color/icon_n2" android:layout_marginStart="32dp"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/department_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.5dp" android:layout_marginRight="38dp" android:layout_marginBottom="14.5dp" android:maxLines="2" android:layout_centerVertical="true"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/department_info"/>
+        <ImageView android:background="@drawable/contact_go_icon" android:layout_width="7dp" android:layout_height="13dp" android:layout_marginRight="22dp" android:tint="@color/icon_n3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/title_bar_layout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/title_height" app:widget_widgets_tb_divider_visible="false"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/common_error_state" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar_layout" app:layout_constraintVertical_bias="0.4" app:ud_empty_desc="@string/CreationMobile_ECM_SiteUnavailableDesc" app:ud_empty_imageRes="@drawable/illustration_ccm_empty_neutral_400_403" style="@style/SpaceEmptyStatusStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

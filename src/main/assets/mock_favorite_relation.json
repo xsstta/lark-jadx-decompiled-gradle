@@ -1,0 +1,32 @@
+{
+      "root_list": [
+          "wikcn1",
+          "wikcn2"
+       ],
+      "nodes": {
+          "wikcn1": {    
+            "space_id": "6917*****227", 
+            "wiki_token": "wikcn1", 
+            "obj_token": "docbcn******hWhkiezRe", 
+            "obj_type": 2, 
+            "title": "wikcn1",
+            "parent_wiki_token": "",
+            "sort_id": 256, 
+            "wiki_node_type": 0,
+            "origin_wiki_token": "wikbcMA5z******2kyu7Rg",
+            "origin_space_id": "691755******9486227"
+          },
+          "wikcn2": {
+            "space_id": "6917555935099486227",
+            "wiki_token": "wikcn2",
+            "obj_token": "docbcnnXrKihi8cd5UhWhkiezRe",
+            "obj_type": 2,
+            "title": "wikcn2",
+            "parent_wiki_token": "",
+            "sort_id": 256,
+            "wiki_node_type": 0,
+            "origin_wiki_token": "wikbcMA5zd8mqXcmMMjQ2kyu7Rg",
+            "origin_space_id": "6917555935099486227"
+        }
+      }
+}

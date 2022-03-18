@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/save_item_corner_bg" android:layout_width="match_parent" android:layout_height="69dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/play_zone" android:background="@drawable/save_item_corner_dark_bg" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="12dp">
+            <ImageView android:id="@+id/voice_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_play" android:scaleType="fitStart" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12"/>
+    </LinearLayout>
+</FrameLayout>

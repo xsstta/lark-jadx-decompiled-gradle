@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_56">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/dp_30" android:paddingRight="@dimen/dp_4" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/iv_group_member_avatar" android:focusable="false" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:layout_marginRight="@dimen/dp_8" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:sriv_left_bottom_corner_radius="5dp" app:sriv_left_top_corner_radius="5dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="5dp" app:sriv_right_top_corner_radius="5dp"/>
+        <ImageView android:id="@+id/iv_group_member_status" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tv_attendee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_11"/>
+        <TextView android:textSize="@dimen/dp_11" android:textStyle="bold" android:textColor="@color/primary_pri_500" android:id="@+id/tv_organizer" android:background="@drawable/tv_border_blue" android:paddingLeft="@dimen/dp_4" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_4" android:paddingBottom="@dimen/dp_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="@string/Calendar_Detail_Organizer"/>
+        <TextView android:id="@+id/tv_item_outer_user" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

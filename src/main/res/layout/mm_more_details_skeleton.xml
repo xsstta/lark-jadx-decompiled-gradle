@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mm_shape_more_details_skeleton" android:layout_width="80dp" android:layout_height="14dp"/>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/wiki_loading_preview_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/wiki_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5">
+            <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/wiki_main_title" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:contentDescription="title_bar"/>
+            <com.bytedance.ee.bear.document.DocTipsLayout android:id="@+id/wiki_main_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.bytedance.ee.bear.document.loading.LoadingLayout android:id="@+id/wiki_loading_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

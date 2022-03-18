@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:background="@color/bg_base" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_size_17" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/table_title" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_44" android:maxLines="1" android:singleLine="true"/>
+        <com.bytedance.ee.bear.bitable.card.view.table.BitableCardDragLayout android:id="@+id/drag_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_18" android:layout_marginBottom="@dimen/space_kit_len_15">
+            <com.bytedance.ee.bear.widgets.viewpager.FixPageTransformerViewPager android:layout_gravity="bottom" android:id="@+id/bitable_card_view_pager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/bitable_viewpager_padding" android:paddingEnd="@dimen/bitable_viewpager_padding"/>
+        </com.bytedance.ee.bear.bitable.card.view.table.BitableCardDragLayout>
+    </LinearLayout>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/st_multi_text_toolbar_view_stub" android:layout="@layout/bitable_multi_text_tool_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp"/>
+</FrameLayout>

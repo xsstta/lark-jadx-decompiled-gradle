@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/dialog_white_corner6_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_update_fail_btn_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="17sp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/feed_back_tv" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/Lark_Legacy_Feedback" android:layout_weight="1"/>
+            <TextView android:background="@color/line_divider_default" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="17sp" android:textColor="@color/text_link_normal" android:gravity="center" android:id="@+id/retry_tv" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/Lark_Legacy_Retry" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_update_fine_btn_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/update_ignore_btn" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/Lark_Legacy_UpgradeLater" android:layout_weight="1"/>
+            <TextView android:id="@+id/tv_update_ignore_divide_line" android:background="@color/line_divider_default" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_link_normal" android:gravity="center" android:id="@+id/update_now_btn" android:layout_width="0dp" android:layout_height="50dp" android:text="@string/Lark_Legacy_immediate" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_update_background_btn_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/text_link_normal" android:gravity="center" android:id="@+id/update_background_btn" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/Lark_Legacy_background"/>
+    </LinearLayout>
+</LinearLayout>

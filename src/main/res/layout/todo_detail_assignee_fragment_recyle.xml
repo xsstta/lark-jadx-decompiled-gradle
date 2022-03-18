@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/assignee_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty_container" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_160">
+            <ImageView android:id="@+id/img_empty" android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_108" android:src="@drawable/illustration_placeholder_common_default"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/tv_empty_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Todo_AssigneePage_AllAssigneesHaveComleted_EmptyState" android:layout_below="@+id/img_empty"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

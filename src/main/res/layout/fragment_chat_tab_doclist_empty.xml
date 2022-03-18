@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/empty_icon" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/icon_no_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="16sp" android:textColor="@color/lkui_N500" android:ellipsize="middle" android:id="@+id/empty_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_PullEmptyResult" android:singleLine="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/empty_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

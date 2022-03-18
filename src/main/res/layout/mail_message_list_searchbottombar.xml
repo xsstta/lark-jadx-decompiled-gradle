@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mail_readmail_search_bottom_v" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="44dp" android:fillViewport="true">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mai_icon_readmail_search_left" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/mail_icon_color_selector_n1_disable" android:layout_toLeftOf="@+id/mai_icon_readmail_search_right" android:layout_centerVertical="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mai_icon_readmail_search_right" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/mail_icon_color_selector_n1_disable" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

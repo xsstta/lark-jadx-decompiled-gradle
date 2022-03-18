@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_shadow_radius="12dp" style="@style/UDShadow.S">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/todo_overall_reminder_shape" android:paddingBottom="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutDisplay" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <ImageView android:background="@drawable/todo_svg_icon_overall_reminder" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24"/>
+                <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/Todo_Task_TaskAssistantBot"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/multilineReminder" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tvReminderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tvReminderTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/singleLineReminder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvTodoReminder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_36">
+                <View android:id="@+id/center_placeholder" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerHorizontal="true"/>
+                <com.larksuite.component.universe_design.button.UDButton android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tvCloseReminder" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Todo_common_Close" android:layout_toLeftOf="@+id/center_placeholder" android:layout_marginEnd="@dimen/dp_8" app:ud_backgroundColor="@color/ud_button_white_grey_bg" app:ud_strokeColor="@color/line_border_component" app:ud_strokeWidth="1dp" style="@style/UDButton.Default"/>
+                <com.larksuite.component.universe_design.button.UDButton android:textSize="@dimen/dp_16" android:textColor="@color/static_white" android:id="@+id/tvReminderDetail" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Todo_Task_ViewDetails" android:layout_toRightOf="@+id/center_placeholder" android:layout_marginStart="@dimen/dp_8" app:ud_backgroundColor="@color/ud_button_blue_bg" style="@style/UDButton.Default"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

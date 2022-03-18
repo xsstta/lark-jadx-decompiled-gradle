@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="17dp" android:textColor="@color/static_white" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/speedItem" android:padding="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/tools_3x" android:layout_weight="1"/>

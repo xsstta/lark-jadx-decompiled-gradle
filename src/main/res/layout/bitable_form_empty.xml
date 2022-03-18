@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14sp" android:textColor="@color/text_disable" android:gravity="center" android:background="@drawable/bitable_form_empty_bg" android:paddingTop="31.5dp" android:paddingBottom="31.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Bitable_Form_NoEditableItem"/>

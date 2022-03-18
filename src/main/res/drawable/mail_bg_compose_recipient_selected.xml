@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="0dp" android:right="0dp">
+        <shape>
+            <solid android:color="@color/mail_compose_default_bubble_bg_selected"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</layer-list>

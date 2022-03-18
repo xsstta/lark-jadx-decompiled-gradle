@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/toolbar_item_horizontal_width" android:layout_height="@dimen/toolbar_item_horizontal_height">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/sub_toolbar_item_icon" android:background="@drawable/doc_toolbar_v2_subitem_all_selector" android:padding="6dp" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="centerInside" android:tint="@color/toolbar_item_tint"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/red_packet_title_bar" android:background="@color/ud_R500" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="17dp" android:textColor="@color/imtoken_red_envelope_text" android:layout_gravity="center" android:id="@+id/red_packet_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_History"/>
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/red_packet_back_iv" android:paddingLeft="19dp" android:paddingTop="10dp" android:paddingRight="19dp" android:paddingBottom="10dp" android:layout_width="62dp" android:layout_height="44dp" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/imtoken_red_envelope_text"/>
+    </FrameLayout>
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/red_packet_tab_layout" android:layout_width="match_parent" android:layout_height="40dp" app:ud_tab_indicatorColor="@color/ud_R500" app:ud_tab_titleColor="@color/red_packet_history_tab_title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+    </FrameLayout>
+</LinearLayout>

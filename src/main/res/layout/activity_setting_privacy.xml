@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_NewSettings_Privacy" app:tb_title_color="@color/text_title"/>
+    <include layout="@layout/view_title_privacy_setting_desktop"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_ding" android:background="@drawable/bg_setting_group_item_round" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_find_me" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="32dp" android:text="@string/Lark_NewSettings_FindMeVia" style="@style/SettingGroupTitle"/>
+                <com.ss.android.lark.contact.impl.setting.widget.FindMeSettingView android:orientation="vertical" android:id="@+id/view_find_me" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/IgnitionSettingGroup"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/view_find_me_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp" android:layout_marginRight="16dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_find_me_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/Lark_PrivacySettings_ContactInfovsLoginCredentials_Difference"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/text_add_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="32dp" android:text="@string/Lark_NewSettings_AddMeVia" style="@style/SettingGroupTitle"/>
+            <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:orientation="vertical" android:id="@+id/layout_add_me" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="@style/IgnitionSettingGroup">
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_name_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_token" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+            <TextView android:id="@+id/text_add_scene" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="32dp" android:text="@string/Lark_NewSettings_AddMeFrom" style="@style/SettingGroupTitle"/>
+            <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:orientation="vertical" android:id="@+id/layout_add_me_scene" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" style="@style/IgnitionSettingGroup">
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_chat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_schedule" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_document" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_meeting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.ss.android.lark.contact.impl.setting.widget.SwitchSettingView android:id="@+id/view_setting_mail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

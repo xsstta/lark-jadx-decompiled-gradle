@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/feed_back" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/feed_back_body" android:background="@drawable/voip_feedback_dialog_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/feed_back_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:src="@drawable/vc_feedback_close_icon" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center_horizontal" android:id="@+id/question_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:text="@string/View_G_FeedbackTitle"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/feed_back_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2" android:layout_below="@+id/question_tip">
+            <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@+id/feed_back_awesome" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/View_G_GoodButton" android:drawableTop="@drawable/vc_feedback_awesome_normal" android:drawablePadding="12dp" android:layout_weight="1"/>
+            <View android:layout_gravity="center_vertical" android:id="@+id/feed_back_parting_line" android:background="@color/line_divider_default" android:layout_width="0.5dp" android:layout_height="47dp"/>
+            <TextView android:textColor="@color/text_title" android:gravity="center" android:id="@+id/feed_back_bad" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/View_G_BadButton" android:drawableTop="@drawable/vc_feedback_bad_normal" android:drawablePadding="12dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/feed_back_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/feed_back_container">
+            <TextView android:textSize="12dp" android:textColor="@color/text_caption" android:gravity="center" android:id="@+id/feed_back_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginBottom="40dp" android:text="@string/View_G_HelpUsImprove"/>
+            <RelativeLayout android:id="@+id/feed_back_tag_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/negative_feedback_reasons" android:background="@drawable/voip_feedback_grayrect_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/tag_first_row" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/feed_back_tag_goes_on_and_off" android:text="@string/View_G_SoundStuttering" style="@style/FeedbackTagStyle"/>
+                        <TextView android:id="@+id/feed_back_tag_cannot_hear" android:layout_marginLeft="11dp" android:text="@string/View_G_NoSound" style="@style/FeedbackTagStyle"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/tag_second_row" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tag_first_row">
+                        <TextView android:id="@+id/feed_back_tag_not_clear_and_noisy" android:text="@string/View_G_NoiseOrEcho" style="@style/FeedbackTagStyle"/>
+                        <TextView android:id="@+id/feed_back_tag_hung_up_unexpectedly" android:layout_marginLeft="11dp" android:text="@string/View_G_EndedUnexpectedly" style="@style/FeedbackTagStyle"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <EditText android:textSize="12dp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:ellipsize="start" android:gravity="top" android:id="@+id/comment" android:background="@drawable/bg_voip_feedback_custom_tag" android:padding="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/View_G_OtherProblems" android:cursorVisible="true" android:singleLine="false" android:maxLength="256" android:layout_below="@+id/negative_feedback_reasons" android:lineSpacingExtra="1.5dp" android:textCursorDrawable="@drawable/voip_feedback_cursor_color" android:focusedByDefault="false"/>
+                <Button android:textSize="17dp" android:textColor="@color/static_white" android:id="@+id/confirm_feed_back" android:background="@drawable/voip_feedback_confirm_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="32dp" android:text="@string/Lark_Legacy_ConfirmTip" android:layout_below="@+id/comment" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

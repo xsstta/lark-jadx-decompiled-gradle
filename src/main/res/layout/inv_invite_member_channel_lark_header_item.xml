@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="44dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/imclHeaderIv" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/imclHeaderTv" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44dp" android:layout_marginRight="44dp" android:maxLines="2"/>
+</FrameLayout>

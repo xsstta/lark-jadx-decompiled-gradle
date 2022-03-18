@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.larksuite.framework.ui.ObservedScrollView android:id="@+id/rootScrollView" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/meetingRoomBaseInfoContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_26" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/meetingRoomName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" android:layout_toStartOf="@+id/meetingRoomStateView" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/buildingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_below="@+id/meetingRoomName" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" android:layout_toStartOf="@+id/meetingRoomStateView" android:layout_alignParentStart="true"/>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_16" android:layout_below="@+id/buildingName"/>
+                <com.ss.android.lark.calendar.impl.features.meetingroom.profile.widget.MeetingRoomStateView android:id="@+id/meetingRoomStateView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <include android:id="@+id/blockContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16" layout="@layout/meeting_room_blocker_layout"/>
+            <RelativeLayout android:id="@+id/incompatibleContainer" android:paddingTop="@dimen/dp_24" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/ud_icon_warning_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/incompatibleRuleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_6" android:layout_marginStart="@dimen/dp_32"/>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginTop="@dimen/dp_24" android:layout_below="@+id/incompatibleRuleTv"/>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/capacityContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/icon_group_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/meetingRoomCapacityTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/equipmentContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/ud_icon_info_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/meetingRoomEquipmentTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ruleContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/ud_icon_boards_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/meetingRoomRuleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/dp_6" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/descriptionContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_3" android:src="@drawable/ud_icon_describe_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/meetingRoomDescriptionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/imageContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+                <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_image_outlined" android:tint="@color/icon_n3"/>
+                <com.joooonho.SelectableRoundedImageView android:id="@+id/meetingRoomImageView" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_16" app:sriv_left_bottom_corner_radius="@dimen/dp_4" app:sriv_left_top_corner_radius="@dimen/dp_4" app:sriv_oval="false" app:sriv_right_bottom_corner_radius="@dimen/dp_4" app:sriv_right_top_corner_radius="@dimen/dp_4"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.larksuite.framework.ui.ObservedScrollView>
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.CalendarLoadingView android:id="@+id/loadingView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titleBar"/>
+</RelativeLayout>

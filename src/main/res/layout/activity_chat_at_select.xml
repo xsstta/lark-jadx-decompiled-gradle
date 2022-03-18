@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_back_icon="@drawable/titlebar_close_bg_selector" app:tb_title_color="@color/text_title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/at_select_chatter_layout" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:background="@color/bg_body" android:paddingTop="7.5dp" android:paddingBottom="7.5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/search_bar" android:background="@drawable/at_search_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_in_search_view" android:layout_marginStart="8dp"/>
+                <EditText android:textSize="14sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/search_et" android:background="@null" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="7.5dp" android:layout_marginBottom="6.5dp" android:hint="@string/Lark_Legacy_Search" android:maxLines="1" android:singleLine="true" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/recyclerview_layout" android:background="@drawable/search_bar_bg" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp">
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/select_at_chat" android:layout_width="match_parent" android:layout_height="30dp" android:overScrollMode="never"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/contactView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                <com.ss.android.lark.widget.quick_sidebar.QuickSideBarTipsView android:id="@+id/quickSideBarTipsView" android:layout_width="@dimen/height_quicksidebartips" android:layout_height="match_parent" android:layout_toLeftOf="@+id/quickSideBarView" app:sidebarBackgroundColor="@color/primary_pri_500" app:sidebarTextColor="@color/static_white" app:sidebarTextSize="20dp"/>
+                <com.ss.android.lark.widget.quick_sidebar.QuickSideBarView android:id="@+id/quickSideBarView" android:layout_width="20dp" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:sidebarItemHeight="@dimen/height_quicksidebaritem" app:sidebarTextColor="@color/text_placeholder" app:sidebarTextColorChoose="@color/function_info_500" app:sidebarTextSize="10sp" app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose"/>
+                <View android:id="@+id/quickSideBarViewCover" android:background="@color/bg_float" android:visibility="visible" android:layout_width="15dp" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+                <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/inbox_ptr_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lkui_ptr_duration_to_close_either="500" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_mode="2" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="0.5" app:lkui_ptr_resistance="1.7">
+                    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_result_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+                <include android:id="@+id/load_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_common_load_empty"/>
+                <include android:id="@+id/load_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_common_load_fail"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

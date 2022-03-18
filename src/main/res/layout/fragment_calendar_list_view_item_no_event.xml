@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_calendar_list_date" android:layout_width="@dimen/dp_57" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/dp_12" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_calendar_list_week_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="周五"/>
+        <TextView android:textSize="@dimen/dp_26" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_calendar_list_month_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_calendar_list_data" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_65" android:layout_marginRight="@dimen/dp_5">
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N500" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_NoEvents"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_B500" android:layout_gravity="center_vertical" android:id="@+id/tv_calendar_list_item_create_event" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_1" android:text="@string/Calendar_Common_CreateEvent"/>
+    </LinearLayout>
+</RelativeLayout>

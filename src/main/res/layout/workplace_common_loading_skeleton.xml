@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/container" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/v_skeleton_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/workplace_component_skeleton_bg" android:layout_width="match_parent" android:layout_height="14dp"/>
+    </FrameLayout>
+    <View android:id="@+id/v_skeleton_1" android:background="@drawable/workplace_component_skeleton_bg" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="12dp"/>
+    <View android:id="@+id/v_skeleton_2" android:background="@drawable/workplace_component_skeleton_bg" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="12dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/v_skeleton_3" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="12dp" android:weightSum="3">
+        <View android:background="@drawable/workplace_component_skeleton_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

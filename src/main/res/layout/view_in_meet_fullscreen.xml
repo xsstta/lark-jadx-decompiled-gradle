@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.meeting.module.multi.InMeetingFullScreenView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/inmeeting_fullscreen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>

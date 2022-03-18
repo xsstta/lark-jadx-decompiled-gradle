@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/date_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/date_content" android:background="@color/space_kit_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:editable="false" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium"/>
+        <ImageView android:id="@+id/date_content_reminder" android:layout_width="@dimen/space_kit_len_18" android:layout_height="@dimen/space_kit_len_18" android:src="@drawable/ud_icon_alarm_clock_filled" android:tint="@color/primary_pri_500" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_8" android:layout_toEndOf="@+id/date_content"/>
+        <ImageView android:id="@+id/bitable_cell_date_drop_triangle" android:visibility="gone" android:layout_width="@dimen/space_kit_len_16" android:layout_height="@dimen/space_kit_len_16" android:layout_marginTop="@dimen/space_kit_len_12" android:src="@drawable/icon_global_droptriangle_nor" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_8" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

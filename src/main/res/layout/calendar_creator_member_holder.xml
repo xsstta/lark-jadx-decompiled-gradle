@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/memberAvatar" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:layout_marginStart="@dimen/dp_16" app:sriv_border_color="@color/bg_body" app:sriv_border_width="0dp" app:sriv_left_bottom_corner_radius="90dp" app:sriv_left_top_corner_radius="90dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="90dp" app:sriv_right_top_corner_radius="90dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/memberNameContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_12">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/memberName" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/capacityTv" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:singleLine="true"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="end" android:id="@+id/memberStatusContainer" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_24">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/memberStatus" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="@dimen/dp_3d5" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/memberRightArrow" android:visibility="visible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginEnd="@dimen/dp_16"/>
+    </LinearLayout>
+    <View android:id="@+id/memberDivider" android:background="@color/line_divider_default" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginStart="@dimen/dp_76"/>
+</LinearLayout>

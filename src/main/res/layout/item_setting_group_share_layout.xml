@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_share_group_region_new" android:background="@drawable/item_bg_selector_c11" android:paddingLeft="16dp" android:paddingRight="18dp" android:paddingBottom="14.5dp" android:layout_width="match_parent" android:layout_height="@dimen/cell_height">
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_share_group_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ShareGroup" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/chat_setting_right_arrow" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

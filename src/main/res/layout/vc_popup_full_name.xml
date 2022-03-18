@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_gravity="center_horizontal" android:id="@+id/full_name_tv" android:background="@drawable/bg_solid_n00" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginHorizontal="16dp" android:paddingHorizontal="16dp" android:paddingVertical="16dp"/>
+</LinearLayout>

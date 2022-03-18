@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/collapse_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <FrameLayout android:id="@+id/fl_collapse_bottom_bar_title" android:background="@drawable/vc_bg_bottom_bar_collapse_top_corner12" android:layout_width="match_parent" android:layout_height="26dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_bottom_bar_arrow_collapse" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="2dp" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ud_icon_vc_toolbar_up_filled" app:tint="@color/icon_n3"/>
+            <View android:id="@+id/bottombar_has_notify" android:background="@drawable/shape_oval_r400" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="2dp" android:includeFontPadding="false" android:layout_alignTop="@+id/iv_bottom_bar_arrow_collapse" android:layout_marginStart="-3dp" android:layout_toEndOf="@+id/iv_bottom_bar_arrow_collapse"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <include layout="@layout/vc_bottom_bar_collapse_area_btns_layout"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/iefRootRl" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/iefTitleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_UserGrowth_InvitePeopleContacts"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/iefTitleBar" android:overScrollMode="never">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/iefSearchLl" android:background="@drawable/inv_rect_grey_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="12dp" android:src="@drawable/ud_icon_search_outline_outlined" android:tint="@color/icon_n3"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_title" android:textColorHighlight="@color/primary_pri_500" android:textColorHint="@color/text_placeholder" android:id="@+id/iefSearchTv" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:hint="@string/Lark_NewContacts_ProfileSearchUsersPlaceholder" android:singleLine="true" android:drawablePadding="8dp" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/inv_shape_cursor"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/iefMyQrcodeRl" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/iefSearchLl">
+                <TextView android:textSize="14sp" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/Lark_Legacy_MyQrCode" android:drawablePadding="4dp"/>
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_qr_outlined" android:tint="@color/ud_W500" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <View android:id="@+id/iefSplitView" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp" app:layout_constraintTop_toBottomOf="@+id/iefMyQrcodeRl"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/iefRv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layout_constraintTop_toBottomOf="@+id/iefSplitView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

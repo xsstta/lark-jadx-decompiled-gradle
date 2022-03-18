@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5">
+            <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/wiki_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:contentDescription="title_bar" app:widget_widgets_tb_divider_visible="false"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.wikiv2.searchv2.WikiSearchView2 android:id="@+id/wiki_search_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.bytedance.ee.bear.wikiv2.wikitreev2.widget.view.WikiTreeCtrlView android:id="@+id/wiki_tree_ctrl_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_48"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/mm_video_play_bar_shadow" android:layout_width="match_parent" android:layout_height="6dp" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/primary_pri_500" android:layout_width="10dp" android:layout_height="3dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/rightMockBar" android:background="@color/line_border_component" android:layout_width="10dp" android:layout_height="3dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@+id/mmVideoToolbarSeekbar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="3dp" android:progressDrawable="@drawable/mm_video_seekbar_layer_progress" android:minHeight="3dp" android:thumb="@drawable/mm_video_shape_thumb" android:thumbOffset="6.5dp" android:paddingStart="6.5dp" android:paddingEnd="6.5dp" android:splitTrack="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

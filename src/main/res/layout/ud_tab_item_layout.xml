@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/ud_tab_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/ud_tab_title_warpper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/UDText.Body2" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/ud_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <TextView android:textAppearance="@style/UDText.Body2" android:textStyle="bold" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/ud_tab_title_bold" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+    </FrameLayout>
+</merge>

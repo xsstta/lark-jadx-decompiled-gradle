@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/space_kit_n00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/contentOuterContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/loading" android:layout="@layout/doc_stub_web_loading" android:inflatedId="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/doc_appbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/doc_main_title" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:contentDescription="title_bar"/>
+            <com.bytedance.ee.bear.document.DocTipsLayout android:id="@+id/doc_main_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/pluginUIContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

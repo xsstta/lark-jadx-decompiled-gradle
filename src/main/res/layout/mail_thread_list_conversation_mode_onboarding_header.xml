@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/ud_dialog_padding_top" android:paddingBottom="@dimen/ud_dialog_padding_title_content" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/ud_dialog_padding_left_right" android:paddingEnd="@dimen/ud_dialog_padding_left_right">
+    <TextView android:textAppearance="@style/UDText.Title3" android:textColor="@color/text_title" android:id="@+id/ud_dialog_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

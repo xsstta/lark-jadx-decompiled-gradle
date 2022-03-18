@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.reaction.widget.detailwindow.scroller.ScrollableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollable_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/reaction_popup_placeholder" android:background="@color/reaction_pager_popup_placeholder_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="64dp"/>
+    <FrameLayout android:id="@+id/reaction_facade_title_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/reaction_facade_title_masker" android:background="@color/reaction_pager_popup_placeholder_bg" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/reaction_facade_title" android:background="@drawable/reaction_top_corner9_color_c11" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ReactionDetailTitile" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/reaction_facade_close" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_svg_reaction_titlebar_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="Close" android:alpha="0.5" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/reaction_facade_title_desktop" android:background="@color/bg_float" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ReactionDetailTitile" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/reaction_facade_close_desktop" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_svg_reaction_titlebar_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="Close" android:alpha="0.5" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/reaction_facade_body" android:background="@color/bg_float" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/reaction_facade_indicator" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginTop="3dp" android:layout_marginBottom="12dp"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/reaction_facade_vp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.ss.android.lark.reaction.widget.detailwindow.scroller.ScrollableLayout>

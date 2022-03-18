@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.larksuite.component.ui.avatar.v2.LarkAvatarView android:id="@+id/avatar" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" app:border_color="@color/line_border_card" app:oval="true"/>
+        <com.larksuite.component.ui.layout.LKUIRoundableLayout android:layout_gravity="center_horizontal" android:id="@+id/round_layout" android:background="@color/fill_disable" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" app:rl_border_color="@color/line_border_card" app:rl_border_width="1dp" app:rl_radius="25dp">
+            <TextView android:textSize="14sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/remain_counts" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:singleLine="true"/>
+</LinearLayout>

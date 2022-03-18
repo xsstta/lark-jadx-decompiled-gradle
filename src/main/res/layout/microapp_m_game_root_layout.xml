@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tt.miniapp.view.keyboard.KeyboardLayout android:id="@+id/microapp_m_game_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/microapp_m_game_titlebar"/>
+    </com.tt.miniapp.view.keyboard.KeyboardLayout>
+    <include android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/microapp_m_layout_anchor"/>
+    <FrameLayout android:id="@+id/microapp_m_top_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

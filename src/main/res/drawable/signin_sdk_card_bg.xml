@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="@dimen/signin_sdk_card_stroke_width" android:color="@color/line_border_card"/>
+            <solid android:color="@color/fill_pressed"/>
+            <corners android:radius="@dimen/signin_sdk_card_radius"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="@dimen/signin_sdk_card_stroke_width" android:color="@color/line_border_card"/>
+            <solid android:color="@color/bg_body"/>
+            <corners android:radius="@dimen/signin_sdk_card_radius"/>
+        </shape>
+    </item>
+</selector>

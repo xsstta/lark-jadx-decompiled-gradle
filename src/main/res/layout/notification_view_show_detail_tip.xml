@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/notification_ic_whether_show_detail" android:layout_width="@dimen/whether_show_detail_width" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_lark_logo" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:layout_marginTop="7dp" android:src="@drawable/feishu_logo_color"/>
+    <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_lark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="@string/Lark_App_Name" android:layout_toRightOf="@+id/iv_lark_logo" android:layout_alignTop="@+id/iv_lark_logo"/>
+    <View android:id="@+id/v_middle_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="28dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_receive_message" android:layout_width="123dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/Lark_Settings_Badgestylepicturepreviewg" android:layout_below="@+id/v_middle_divider"/>
+</RelativeLayout>

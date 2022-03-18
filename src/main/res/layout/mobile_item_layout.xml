@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/user_profile_item_style">
+    <TextView android:id="@+id/mTypeNameTv" style="@style/user_profile_type_style"/>
+    <TextView android:textSize="14sp" android:textColor="@color/primary_pri_600" android:id="@+id/mShowTv" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Profile_PhoneV6" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/primary_pri_600" android:id="@+id/mPhoneNumberTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/mShowTv" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="@dimen/phone_number_text_view_margin_right"/>
+    <View android:id="@+id/mLine" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

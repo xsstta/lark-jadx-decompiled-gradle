@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/bg_mine_status_update_input" android:layout_width="match_parent" android:layout_height="136dp" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16">
+            <com.ss.android.lark.widget.linked_emojicon.base.EmojiconEditText android:textSize="16sp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:gravity="top" android:id="@+id/ed_input" android:background="@null" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="8dp" android:hint="@string/Lark_Profile_EnterYourSignature" android:maxLines="3" android:inputType="textMultiLine" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:lines="1" android:layout_below="@+id/ed_input" android:layout_alignParentRight="true" android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="4dp" android:text="@string/Lark_Legacy_MineStatusHistory" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/rv_history_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/drive_sdk_preview_action_error_empty_state" android:layout_marginTop="260dp" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" style="@style/SpaceEmptyStatusStyle"/>
+</LinearLayout>

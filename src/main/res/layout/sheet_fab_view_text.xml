@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sheet_fab" android:background="@drawable/fab_multiple_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="3dp">
+    <TextView android:textSize="18sp" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/fab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:maxLines="1" android:singleLine="true"/>
+</LinearLayout>

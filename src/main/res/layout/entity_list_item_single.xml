@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:textColor="@color/text_title" android:id="@+id/tv_abbr_name" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/tv_abbr_desc" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:lineSpacingExtra="5dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_abbr_name"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/tv_abbr_alias" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:lineSpacingExtra="5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_abbr_desc"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_item_top" android:layout_width="match_parent" android:layout_height="20dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_item_left" android:layout_width="0dp" android:layout_height="0.5dp" android:src="@color/line_divider_default" android:layout_weight="0" android:paddingStart="0dp" android:paddingEnd="4dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_item_right" android:layout_width="0dp" android:layout_height="0.5dp" android:src="@color/line_divider_default" android:layout_weight="1" android:paddingStart="4dp" android:paddingEnd="0dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_item_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/ll_item_top"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_cp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="16dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <ImageView android:id="@+id/iv_cp_icon" android:layout_width="53.5dp" android:layout_height="16dp" android:src="@drawable/ic_toutiao_baike" android:scaleType="fitStart" android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/ll_more" android:background="@drawable/text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textColor="@color/text_title" android:id="@+id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_ASL_EntryDetails"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icon_right"/>
+    </LinearLayout>
+</LinearLayout>

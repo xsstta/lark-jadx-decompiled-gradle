@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:layout_weight="1">
+            <com.ss.android.lark.calendar.impl.features.events.detail.widget.TimeShowTextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:id="@+id/tvSelectDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvResultStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_16" android:maxLines="1"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llWorkHourFormat" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_16">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvGuestStart" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Workinghours_Explain" android:maxLines="1"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/llWorkHourIconContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/imgNotWork" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginLeft="@dimen/dp_6" android:src="@drawable/icon_arrange_not_work"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvNotWork" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:text="@string/Calendar_Workinghours_Notworking" android:maxLines="1"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/tvDivider" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/"/>
+                    <ImageView android:id="@+id/imgBusy" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_marginLeft="@dimen/dp_6" android:src="@drawable/ud_icon_time_filled" android:tint="@color/ud_R400"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvBusy" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:text="@string/Calendar_Workinghours_Busy" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivFinish" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginTop="@dimen/dp_24" android:layout_marginRight="@dimen/dp_28" android:src="@drawable/ud_icon_yes_outlined" android:tint="@color/primary_pri_500" android:layout_weight="0"/>
+    </LinearLayout>
+</LinearLayout>

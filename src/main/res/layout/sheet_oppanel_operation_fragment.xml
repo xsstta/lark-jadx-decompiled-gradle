@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/oppanel_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/oppanel_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/space_kit_len_16" android:paddingBottom="@dimen/space_kit_len_8" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/space_kit_len_16" android:paddingEnd="@dimen/space_kit_len_16">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/sheet_list_item_height">
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="addRowUp" android:contentDescription="addRowUp" app:icon="@drawable/ud_icon_insert_row_up_outlined" app:position="floating" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="addRowDown" android:contentDescription="addRowDown" app:icon="@drawable/ud_icon_insert_row_down_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="addColLeft" android:contentDescription="addColLeft" app:icon="@drawable/ud_icon_insert_column_left_outlined" app:position="atThumb" style="@style/SheetAttrItem"/>
+                <View android:layout_width="@dimen/sheet_attr_divider_width" android:layout_height="match_parent"/>
+                <com.bytedance.ee.bear.sheet.panel.panelcell.SheetAttrItemView android:tag="addColRight" android:contentDescription="addColRight" app:icon="@drawable/ud_icon_insert_column_right_outlined" app:position="aboveThumb" style="@style/SheetAttrItem"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/operation_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_8"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

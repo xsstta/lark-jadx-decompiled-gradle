@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/doc_input_divider_height"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="48dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/select_font_back_button" android:paddingLeft="16dp" android:layout_width="40dp" android:layout_height="24dp" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/icon_n1" android:layout_centerVertical="true"/>
+        <TextView android:textAppearance="@style/UDText.Title3" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/fontList" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

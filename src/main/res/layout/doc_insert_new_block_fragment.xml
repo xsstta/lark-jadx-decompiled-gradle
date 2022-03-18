@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/inb_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/inb_drag" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.universe_design.shadow.UDShadowLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/UDShadow.L.Up">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/facade_round_top_xxl" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="0dp" android:backgroundTint="@color/bg_body">
+                    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/inb_all_title" android:layout_width="match_parent" android:layout_height="48dp" app:widget_widgets_tb_back_icon="@drawable/ud_icon_close_small_outlined" app:widget_widgets_tb_background="@color/color_transparent" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/app_name"/>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size"/>
+                </LinearLayout>
+            </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

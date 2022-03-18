@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/leave_group_message_setting" android:background="@drawable/bg_setting_group_item_rectangle" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cell_subtitle_height" android:paddingStart="16dp">
+    <TextView android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/arrow_1" android:layout_width="wrap_content" android:layout_height="16dp" android:src="@drawable/chat_setting_right_arrow" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginStart="17.5dp" android:layout_marginEnd="17.7dp" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cell_vertical_margin" android:layout_marginBottom="@dimen/cell_vertical_margin" android:layout_centerVertical="true" android:layout_toStartOf="@+id/arrow_1" android:layout_alignParentStart="true">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_leave_group_message_setting_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_GroupManagement_WhoWIllBeNotifiedLeave"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/leave_group_message_setting_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Lark_Legacy_NotifyAllMembersInChat" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

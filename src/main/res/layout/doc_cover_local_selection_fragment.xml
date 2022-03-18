@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/album" android:background="@drawable/doc_cover_selection_item_background" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48" android:layout_marginTop="@dimen/space_kit_len_12">
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/album_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_Docs_DocCover_SelectFromAlbum_Button" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_16"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/space_kit_len_16"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/take_photo" android:background="@drawable/doc_cover_selection_item_background" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48">
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/take_photo_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CreationMobile_Docs_DocCover_TakePictures_Button" android:layout_centerVertical="true" android:layout_marginStart="@dimen/space_kit_len_16"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/space_kit_len_16"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/space_kit_font_12" android:textColor="@color/text_caption" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_kit_len_16" android:text="@string/CreationMobile_Docs_DocCover_MaxSize_Desc"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/school_header" android:background="@drawable/contact_item_bg_selector" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="54.5dp">
+        <ImageView android:id="@+id/contacts_school_header_iv" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="16dp" android:src="@drawable/icon_contact_school_parent" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_school_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_Education_SchoolParentContacts" android:layout_toRightOf="@+id/contacts_school_header_iv" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        <ImageView android:layout_width="7dp" android:layout_height="13dp" android:layout_marginRight="22dp" android:src="@drawable/contact_go_icon" android:tint="@color/icon_n3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/school_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

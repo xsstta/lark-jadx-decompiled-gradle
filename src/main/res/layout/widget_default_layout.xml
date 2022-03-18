@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/background" android:background="@drawable/bg_widget_default" android:padding="@dimen/widget_default_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:background="@drawable/bg_widget_empty_view" android:layout_width="@dimen/widget_default_week_width" android:layout_height="@dimen/widget_default_week_height"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/bg_widget_empty_view" android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_height" android:layout_marginTop="@dimen/widget_small_event_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_view" android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_height" android:layout_marginTop="@dimen/widget_small_event_top_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_view" android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_height" android:layout_marginTop="@dimen/widget_small_event_top_margin" android:layout_marginEnd="@dimen/widget_small_event_right_margin"/>
+        <ImageView android:background="@drawable/bg_widget_empty_view" android:layout_width="match_parent" android:layout_height="@dimen/widget_medium_loading_event_height" android:layout_marginTop="@dimen/widget_small_event_top_margin" android:layout_marginEnd="@dimen/widget_small_event_right_margin"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:background="@drawable/bg_widget_empty_logo_medium" android:layout_width="@dimen/widget_loading_icon_size" android:layout_height="@dimen/widget_loading_icon_size"/>
+</FrameLayout>

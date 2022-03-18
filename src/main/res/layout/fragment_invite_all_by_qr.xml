@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/invite_all_by_qrcode_layout" android:background="@drawable/invite_all_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24.5dp" android:layout_marginRight="24dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView android:id="@+id/invite_all_by_qrcode_contact_avatar" android:background="@drawable/icon_circle_bg" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="20dp" android:scaleType="fitCenter" android:layout_marginStart="20dp" app:civ_oval="true"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/lkui_N900" android:id="@+id/invite_all_by_qrcode_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="300dp">
+            <RelativeLayout android:id="@+id/invite_all_by_qrcode_loading_wrapper" android:layout_width="230dp" android:layout_height="230dp" android:layout_marginTop="20dp" android:layout_centerInParent="true">
+                <com.ss.android.lark.ui.RotateLoadingView android:layout_gravity="center" android:id="@+id/invite_all_by_qrcode_loading" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/invite_all_by_qrcode_iv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.larksuite.component.ui.button.LKUIButton android:enabled="false" android:id="@+id/invite_all_by_qrcode_save_to_album_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/Lark_Legacy_PersoncardQrButton" android:layout_alignParentBottom="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:button_style="1"/>
+</RelativeLayout>

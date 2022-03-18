@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/lkui_dialog_btn_divider1" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <TextView android:textSize="17sp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="center" android:id="@+id/lkui_dialog_btn_cancel" android:background="@drawable/lkui_list_item_click_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="62dp"/>
+</LinearLayout>

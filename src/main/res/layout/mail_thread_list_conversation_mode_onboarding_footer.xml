@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/ud_dialog_primary_btn_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/ud_button_blue_text" android:id="@+id/ud_dialog_btn_primary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" app:ud_backgroundColor="@color/ud_dialog_default_button_bg" app:ud_radius="0" style="@style/UDButton.Big.Primary"/>
+    <View android:id="@+id/ud_dialog_secondary_btn_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/ud_button_grey_text" android:id="@+id/ud_dialog_btn_secondary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" app:ud_backgroundColor="@color/ud_dialog_default_button_bg" app:ud_radius="0" style="@style/UDButton.Big"/>
+    <View android:id="@+id/ud_dialog_secondary_btn_divider2" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/ud_divider_size"/>
+    <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/ud_button_grey_text" android:id="@+id/ud_dialog_btn_secondary2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" app:ud_backgroundColor="@color/ud_dialog_default_button_bg" app:ud_radius="0" style="@style/UDButton.Big"/>
+</LinearLayout>

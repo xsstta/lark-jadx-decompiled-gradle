@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/UDText.Body0" android:textColor="@color/text_title" android:id="@+id/color_picker_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ud_color_picker_padding_left_right" android:paddingEnd="@dimen/ud_color_picker_padding_left_right"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/color_picker_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ud_color_picker_recycle_margin_top" android:layout_marginBottom="@dimen/ud_color_picker_recycle_margin_bottom" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+</LinearLayout>

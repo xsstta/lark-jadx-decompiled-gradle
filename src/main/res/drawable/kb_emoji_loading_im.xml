@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:shape="ring" android:useLevel="false" android:thickness="1.5dp">
+    <size android:height="15dp" android:width="15dp"/>
+    <gradient android:startColor="@color/primary_pri_400" android:endColor="@color/primary_pri_400" android:angle="0" android:type="sweep" android:centerColor="@color/primary_pri_300" app:endColorAlpha="0.64" app:startColorAlpha="0"/>
+</shape>

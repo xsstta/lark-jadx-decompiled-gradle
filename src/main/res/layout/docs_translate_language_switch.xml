@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/doc_common_btn_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp">
+    <TextView android:textSize="16sp" android:textColor="@color/primary_pri_500" android:ellipsize="end" android:gravity="center" android:id="@+id/originalLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:minHeight="@dimen/doc_bottom_action_bar_height" android:text="@string/Doc_Translate_ViewOriginal" android:maxLines="1" android:includeFontPadding="false" android:elevation="5dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/doc_translate_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:minHeight="@dimen/doc_bottom_action_bar_height" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/doc_translate_switch_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doc_translate_hint" android:scaleType="centerCrop"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/translateLanguage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:maxLines="1" android:includeFontPadding="false"/>
+        <ImageView android:id="@+id/doc_translate_choose_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/doc_translate_choose" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</RelativeLayout>

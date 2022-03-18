@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/imcContentDividerTop" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <View android:id="@+id/imcContentDividerView" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="52dp"/>
+    <View android:id="@+id/imcContentDividerLarkView" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="16dp"/>
+    <RelativeLayout android:id="@+id/imcContentLayout" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="58dp">
+        <View android:id="@+id/imcContentIconView" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_centerVertical="true"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imcContentGo" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" android:src="@drawable/ud_icon_right_bold_outlined" android:tint="@color/icon_n3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/imcContentWithIconLl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/imcContentGo" android:layout_toRightOf="@+id/imcContentIconView" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/imcContentWithIconTitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <com.ss.android.lark.inv.export.ui.EmptyGoneTextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/imcContentWithIconSubTitleTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/imcContentWithoutIconLl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/imcContentGo" android:layout_toRightOf="@+id/imcContentIconView" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="middle" android:id="@+id/imcContentWithoutIconLeftTv" android:layout_width="100dp" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/function_info_500" android:id="@+id/imcContentWithoutIconRightTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/imcContentDividerBottom" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</LinearLayout>

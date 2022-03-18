@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_shadow_radius="12dp" style="@style/UDShadow.S5">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/overall_reminder_bg" android:padding="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginRight="@dimen/dp_16">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_display" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/calendar_orange_round_icon" android:padding="@dimen/dp_5" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24"/>
+                    <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="@string/Calendar_Bot_CalAssistant"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Alert_Title" style="@style/OverallReminderTextStyle"/>
+                    <TextView android:ellipsize="end" android:id="@+id/tv_event_title_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="@dimen/dp_16" style="@style/OverallReminderTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Alert_Time" style="@style/OverallReminderTextStyle"/>
+                    <TextView android:id="@+id/tv_event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" style="@style/OverallReminderTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_event_meeting_room" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Alert_Room" style="@style/OverallReminderTextStyle"/>
+                    <TextView android:id="@+id/tv_event_meeting_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" style="@style/OverallReminderTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_event_location" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Alert_Location" style="@style/OverallReminderTextStyle"/>
+                    <TextView android:id="@+id/tv_event_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" style="@style/OverallReminderTextStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+                <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/text_title" android:id="@+id/tv_close_reminder" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:text="@string/Calendar_Common_Close" android:layout_weight="1" android:layout_marginEnd="@dimen/dp_8" app:ud_backgroundColor="@color/ud_button_white_grey_bg" app:ud_radius="3" app:ud_strokeColor="@color/line_border_component" app:ud_strokeWidth="@dimen/dp_1" style="@style/UDButton.Big.Primary"/>
+                <com.larksuite.component.universe_design.button.UDButton android:textColor="@color/static_white" android:id="@+id/tv_detail_reminder" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:text="@string/Calendar_Edit_ViewDetail" android:layout_weight="1" android:layout_marginStart="@dimen/dp_8" app:ud_backgroundColor="@color/ud_button_blue_bg" app:ud_radius="3" style="@style/UDButton.Big.Primary"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/doc_subtoolbar_highlight_selected" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_48">
+    <FrameLayout android:id="@+id/fl_text_highlight" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/iv_text_highlight" android:background="@drawable/shape_corners_radius_3" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:scaleType="centerInside" android:tint="@color/icon_n1" android:backgroundTint="@color/primary_pri_100"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_arrow" android:background="@drawable/shape_right_corners_radius_8" android:layout_width="@dimen/space_kit_len_32" android:layout_height="match_parent" android:src="@drawable/ud_icon_expand_down_filled" android:scaleType="fitCenter" android:tint="@color/icon_n2" android:paddingStart="9dp" android:paddingEnd="9dp" android:backgroundTint="@color/primary_pri_500"/>
+</merge>

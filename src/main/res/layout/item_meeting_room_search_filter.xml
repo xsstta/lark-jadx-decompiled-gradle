@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_filter_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/startPlaceholder" android:visibility="gone" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_32"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_5" android:paddingEnd="@dimen/dp_5">
+        <com.ss.android.lark.calendar.impl.features.search.filter.SearchFilterView android:id="@+id/searchFilterView" android:layout_width="wrap_content" android:layout_height="@dimen/dp_32"/>
+    </LinearLayout>
+    <View android:id="@+id/endPlaceholder" android:visibility="gone" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_32"/>
+</LinearLayout>

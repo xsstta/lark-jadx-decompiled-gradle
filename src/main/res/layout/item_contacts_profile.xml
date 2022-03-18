@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/custom_field_wrapper" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+    <TextView android:id="@+id/tv_custom_field_name" style="@style/ProfileInfoItemLabel"/>
+    <TextView android:id="@+id/tv_custom_field_value" android:layout_marginLeft="16dp" android:text="@string/Lark_Legacy_ProfileInfoPlaceholder" android:maxLines="2" android:singleLine="false" android:layout_toRightOf="@+id/tv_custom_field_name" style="@style/ProfileInfoItemDescCustom"/>
+</RelativeLayout>

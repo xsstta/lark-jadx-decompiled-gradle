@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/red_packet_empty_list_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="54dp" android:src="@drawable/icon_common_loading_failed_v2"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:layout_gravity="center_horizontal" android:id="@+id/red_packet_empty_list_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/Lark_Legacy_ImageDownloadFailedLog"/>
+</LinearLayout>

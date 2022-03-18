@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="38dp">
+    <ImageView android:id="@+id/video_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="38dp" android:src="@drawable/inno_live_video_left"/>
+    <com.ss.android.lark.inno.player.widget.VcTitleView android:id="@+id/video_title_item" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_centerVertical="true" android:layout_toStartOf="@+id/video_share" android:layout_toEndOf="@+id/video_left"/>
+    <ImageView android:id="@+id/video_share" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="38dp" android:src="@drawable/inno_live_video_share" android:layout_alignParentEnd="true"/>
+</merge>

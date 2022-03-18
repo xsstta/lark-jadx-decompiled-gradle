@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/bug_tool_shape_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="4dp">
+    <Button android:id="@+id/bug_tool_btn_submit_bug" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="提单" android:layout_weight="1"/>
+    <Button android:id="@+id/bug_tool_btn_config" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="配置" android:layout_weight="1"/>
+    <Button android:id="@+id/bug_tool_btn_close" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="关闭" android:layout_weight="1"/>
+</LinearLayout>

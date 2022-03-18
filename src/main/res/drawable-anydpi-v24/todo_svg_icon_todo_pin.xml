@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="32dp" android:width="32dp" android:viewportWidth="32" android:viewportHeight="32">
+    <path android:fillColor="@drawable/$todo_svg_icon_todo_pin__0" android:pathData="M16,0L16,0A16,16 0,0 1,32 16L32,16A16,16 0,0 1,16 32L16,32A16,16 0,0 1,0 16L0,16A16,16 0,0 1,16 0z"/>
+    <path android:fillColor="#ffffff" android:pathData="M21.4658,10.4208C21.2055,10.1605 20.7834,10.1605 20.523,10.4208L12.0328,18.9111C11.7724,19.1714 11.7724,19.5936 12.0328,19.8539L13.9184,21.7395C14.1787,21.9999 14.6008,21.9999 14.8612,21.7395L23.3514,13.2493C23.6118,12.9889 23.6118,12.5668 23.3514,12.3065L21.4658,10.4208Z"/>
+    <path android:fillColor="#ffffff" android:pathData="M11.0901,13.254C10.8297,12.9937 10.4076,12.9937 10.1473,13.254L8.2617,15.1397C8.0013,15.4 8.0013,15.8221 8.2617,16.0825L10.1473,17.9681C10.4076,18.2284 10.8297,18.2284 11.0901,17.9681L12.9757,16.0825C13.2361,15.8221 13.2361,15.4 12.9757,15.1397L11.0901,13.254Z"/>
+</vector>

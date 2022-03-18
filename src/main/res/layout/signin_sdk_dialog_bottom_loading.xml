@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:background="@drawable/signin_sdk_dialog_bottom_loading_bg" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="20dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:layout_marginBottom="120dp" android:minWidth="100dp" android:minHeight="40dp">
+        <com.larksuite.component.ui.imageview.LKUILottieAnimationView android:layout_gravity="center_vertical" android:id="@+id/lottie_loading" android:layout_width="16dp" android:layout_height="16dp" android:scaleType="centerCrop" app:lottie_autoPlay="true" app:lottie_fileName="lottie/loading_white_24dp.json" app:lottie_loop="true"/>
+        <TextView android:textSize="@dimen/signin_sdk_font_size_14" android:textColor="@color/lkui_N00" android:id="@+id/ud_dialog_content_message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="2dp" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</FrameLayout>

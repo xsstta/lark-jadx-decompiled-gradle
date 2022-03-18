@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainSearchContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5">
+            <RelativeLayout android:background="@drawable/calendar_calendar_subscribe_search_bg" android:layout_width="0dp" android:layout_height="@dimen/dp_34" android:layout_weight="1" android:layout_marginStart="16dp">
+                <ImageView android:id="@+id/ivBack" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ud_icon_left_outlined" android:tint="@color/icon_n3" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/ivBack">
+                    <EditText android:textSize="14sp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/etSearch" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:textCursorDrawable="@drawable/calendar_text_cursor_drawable"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/ivSearchDelete" android:visibility="gone" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@drawable/ud_icon_close_filled" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/searchBarTint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_4" android:layout_toEndOf="@+id/ivBack">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_calendar_outlined" android:tint="@color/icon_n3"/>
+                    <TextView android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="@string/Calendar_EventSearch_Event"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_500" android:layout_gravity="center_vertical" android:id="@+id/tvCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_Cancel" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvFilter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:overScrollMode="never"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/resultListContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dp_20">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/resultList" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/flNoResult" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_116" android:layout_height="@dimen/dp_116" android:layout_marginTop="@dimen/dp_80" android:src="@drawable/illustration_placeholder_common_search_failed"/>
+            <TextView android:textSize="@dimen/dp_14" android:layout_gravity="center_horizontal" android:id="@+id/tvNoResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_206"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/categoryIndicator" android:background="@color/bg_body" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="56dp" android:paddingEnd="10dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/divider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" app:layout_constraintTop_toBottomOf="@+id/categoryIndicator"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/categoryIndicator" app:srlEnableRefresh="false">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@+id/topContainer" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="1"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/templateGroupList" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.bytedance.ee.bear.list.loadstateview.LoadStateView android:id="@+id/loadStateView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_percent="0.7" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

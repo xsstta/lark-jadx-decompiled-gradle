@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/video_view_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/silent" android:visibility="gone" android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/icon_tool_volume_off_in_dark"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/vocal" android:visibility="visible" android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/icon_tool_volume_on_in_dark"/>
+</FrameLayout>

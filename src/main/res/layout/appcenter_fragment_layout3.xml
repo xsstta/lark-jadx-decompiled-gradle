@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/workplace_fragment_container" android:background="@color/bg_body" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.appcenter.common.view.biz.WorkplaceErrorView android:id="@+id/error" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+    <com.ss.android.appcenter.common.view.biz.WorkplaceLoadingView android:id="@+id/loading" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+    <com.ss.android.appcenter.common.view.biz.WorkplaceUpgradeView android:id="@+id/upgrade" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:workplaceTopMarginPercent="0.24"/>
+</FrameLayout>

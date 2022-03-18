@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_root" android:background="@color/space_kit_trans" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout android:layout_gravity="bottom" android:id="@+id/panel" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:panel_custom_right_icon="@drawable/ud_icon_keyboard_outlined" app:panel_title="@string/Doc_Sheet_Dropdown">
+        <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="@dimen/space_kit_len_4" android:scrollbarThumbVertical="@drawable/dropdown_thumb_scroll_bar" android:id="@+id/rv_sheet_cell_dropdown" android:background="@color/color_transparent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>
+</FrameLayout>

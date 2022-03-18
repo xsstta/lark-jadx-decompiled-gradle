@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/chat_keyboard_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+        <FrameLayout android:id="@+id/chat_message_list_container" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/chat_keyboard_extend_container" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <FrameLayout android:id="@+id/chat_keyboard_extend_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/chat_message_list_container"/>
+        <androidx.constraintlayout.widget.Barrier android:id="@+id/barrier_line" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="2" app:constraint_referenced_ids="chat_keyboard_container"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout>

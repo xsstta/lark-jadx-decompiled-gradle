@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/recycle_view_action_sheet" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="20sp" android:textColor="@color/lkui_B500" android:gravity="center" android:id="@+id/text_action_sheet_cancel" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/Lark_Legacy_CancelTip"/>
+</LinearLayout>

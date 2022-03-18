@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/tabLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_tab_mode="1"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/buildingViewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

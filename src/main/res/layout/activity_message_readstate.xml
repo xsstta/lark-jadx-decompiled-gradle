@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/read_state_search_bar"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/lkp_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+                <TextView android:textSize="20sp" android:textColor="@color/text_title" android:id="@+id/read_title_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="12dp" app:layout_constraintHorizontal_chainStyle="2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/read_title_tv" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_title" android:id="@+id/read_title_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="6dp" app:layout_constraintLeft_toRightOf="@+id/read_title_count_tv" app:layout_constraintRight_toLeftOf="@+id/unread_title_count_tv" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="20sp" android:textColor="@color/text_title" android:id="@+id/unread_title_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_marginStart="12dp" app:layout_constraintLeft_toRightOf="@+id/read_title_tv" app:layout_constraintRight_toLeftOf="@+id/unread_title_tv" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_title" android:id="@+id/unread_title_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="6dp" app:layout_constraintLeft_toRightOf="@+id/unread_title_count_tv" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <View android:id="@+id/line_view" android:background="@color/line_border_card" android:layout_width="0.5dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/read_fragment_container" app:layout_constraintRight_toLeftOf="@+id/unread_fragment_container" app:layout_constraintTop_toTopOf="@+id/read_fragment_container"/>
+                <FrameLayout android:id="@+id/read_fragment_container" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/line_view" app:layout_constraintTop_toBottomOf="@+id/read_title_count_tv"/>
+                <FrameLayout android:id="@+id/unread_fragment_container" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintLeft_toRightOf="@+id/line_view" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/read_title_count_tv"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/indicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp"/>
+            <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <View android:background="@drawable/indicator_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+            </FrameLayout>
+            <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/search_result_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:id="@+id/load_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_common_load_empty"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

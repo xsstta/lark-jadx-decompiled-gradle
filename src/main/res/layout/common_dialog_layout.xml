@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/dialog_title_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="0x7f0804ba" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/lkui_N900" android:ellipsize="end" android:id="@+id/dialog_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:maxLines="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N600" android:gravity="center_horizontal" android:id="@+id/dialog_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:lineSpacingExtra="3.5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/dialog_content_container" android:background="@color/lkui_N00" android:paddingTop="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/dialog_content_divider_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom" android:id="@+id/default_divider" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="19.5dp">
+            <View android:id="@+id/dialog_content_divider" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/dialog_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_white_corner6_bottom_bg" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="17sp" android:textColor="@color/lkui_N900" android:gravity="center" android:id="@+id/dialog_btn_left" android:background="@drawable/common_dialog_left_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:maxEms="3" android:layout_weight="1"/>
+            <View android:id="@+id/dialog_vertical_divider" android:background="@color/lkui_N300" android:visibility="gone" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="17sp" android:textColor="@color/lkui_B500" android:gravity="center" android:id="@+id/dialog_btn_right" android:background="@drawable/common_dialog_right_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:maxEms="3" android:layout_weight="1"/>
+            <TextView android:textSize="17sp" android:textColor="@color/lkui_B500" android:gravity="center" android:id="@+id/dialog_single_btn" android:background="@drawable/common_dialog_single_btn_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/dialog_bottom_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/dialog_bottom_holder_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="right" android:background="@color/lkui_transparent" android:visibility="invisible" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginTop="10dp" android:src="@drawable/common_dialog_close_picture"/>
+            <View android:id="@+id/dialog_bottom_holder_for_statusbar" android:visibility="invisible" android:layout_width="200dp" android:layout_height="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

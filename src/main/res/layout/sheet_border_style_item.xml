@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/border_style_icon" android:padding="@dimen/space_kit_len_14" android:layout_width="wrap_content" android:layout_height="@dimen/sheet_list_item_height" android:tint="@color/sheet_attr_item_icon_tint_selector"/>
+</FrameLayout>

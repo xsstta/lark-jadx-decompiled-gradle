@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:widget_widgets_tb_background="@color/bg_base" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Bitable_AdvancedPermission_Setting"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/defaultRoleLayout" android:background="@drawable/facade_round_around_xl" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:backgroundTint="@color/bg_body">
+                <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/defaultRoleTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Bitable_AdvancedPermission_DefaultViewPermissionTitle"/>
+                <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/defaultRoleDesc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/Bitable_AdvancedPermission_DefaultViewPermissionDesc"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Bitable_AdvancedPermission_PermissionName" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/roleNameTv" android:background="@drawable/facade_round_around_xl" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:backgroundTint="@color/bg_body"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/Bitable_AdvancedPermission_TablePermission" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/tableRoleRecycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

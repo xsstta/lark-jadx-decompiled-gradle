@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_update" android:layout_width="match_parent" android:layout_height="45dp" android:text="更新卡片数据"/>
+    <Button android:id="@+id/btn_local" android:layout_width="match_parent" android:layout_height="45dp" android:text="加载本地卡片"/>
+    <Button android:id="@+id/btn_install" android:layout_width="match_parent" android:layout_height="45dp" android:text="预安装卡片"/>
+    <FrameLayout android:id="@+id/block_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

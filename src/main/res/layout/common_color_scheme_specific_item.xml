@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="@dimen/space_kit_len_48">
+    <View android:id="@+id/outer_layer" android:background="@drawable/common_specific_color_outer_middle_layer" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/check_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_color_checked_nor"/>
+</FrameLayout>

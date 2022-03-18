@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_privilege" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="8dp"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_live_privilege_internal" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:layout_marginStart="16dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/cb_live_privilege_internal" android:padding="@dimen/dp_0" android:clickable="false" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_marginEnd="12dp" app:ud_checkbox_type="1"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/tv_hint_live_privilege_internal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_M_PermissionsOnlySameCompany"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_live_privilege_all" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:layout_marginStart="16dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/cb_live_privilege_all" android:padding="@dimen/dp_0" android:clickable="false" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:layout_marginEnd="12dp" app:ud_checkbox_type="1"/>
+        <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/tv_hint_live_privilege_all" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_M_PermissionsAnyone"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

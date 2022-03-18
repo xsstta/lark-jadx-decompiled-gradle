@@ -1,0 +1,1174 @@
+package com.ss.android.lark.calendar.impl.features.events.detail.viewdata;
+
+import android.text.TextUtils;
+import com.bytedance.lark.pb.calendar.v1.CalendarEventDisplayInfo;
+import com.bytedance.lark.pb.calendar.v1.EventAttendeeInfo;
+import com.larksuite.framework.utils.CollectionUtils;
+import com.larksuite.suite.R;
+import com.ss.android.lark.calendar.api.entity.CalendarPstnDetailInfo;
+import com.ss.android.lark.calendar.impl.features.common.widget.attachment.AttachmentItemData;
+import com.ss.android.lark.calendar.impl.features.events.detail.EventDetailSource;
+import com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact;
+import com.ss.android.lark.calendar.impl.features.events.detail.fragment.transfer.TransferEventData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.IAttendeeFragmentData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.IDialogData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.IFooterData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.RSVPStatus;
+import com.ss.android.lark.calendar.impl.features.events.detail.idata.VideoMeetingVisibility;
+import com.ss.android.lark.calendar.impl.features.events.detail.utils.AttendeeUtil;
+import com.ss.android.lark.calendar.impl.features.events.detail.utils.AuthorityUtil;
+import com.ss.android.lark.calendar.impl.features.events.detail.utils.RsvpUtil;
+import com.ss.android.lark.calendar.impl.features.events.edit.utils.OperationUtils;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.Calendar;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEvent;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventAttachment;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventAttendee;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarLocation;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarSchemaCollection;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.DirtyType;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.DoVideoMeeting;
+import com.ss.android.lark.calendar.impl.rustadapter.doentity.EventInviteOperator;
+import com.ss.android.lark.calendar.impl.utils.C32634ae;
+import com.ss.android.lark.calendar.impl.utils.SchemaHelper;
+import com.ss.android.lark.calendar.p1430a.C30022a;
+import com.ss.android.lark.calendar.p1430a.p1431a.AbstractC30054s;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+@Metadata(bv = {1, 0, 3}, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005J\b\u0010\b\u001a\u00020\tH\u0016J\b\u0010\n\u001a\u00020\u000bH\u0016J\b\u0010\f\u001a\u00020\rH\u0016J\b\u0010\u000e\u001a\u00020\u000fH\u0016J\b\u0010\u0010\u001a\u00020\u0011H\u0016J\b\u0010\u0012\u001a\u00020\u0013H\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData;", "Lcom/ss/android/lark/calendar/impl/features/events/detail/viewdata/BaseEventViewData;", "Lcom/ss/android/lark/calendar/impl/features/events/detail/ICalendarDetailContact$IDetailViewData;", "model", "Lcom/ss/android/lark/calendar/impl/features/events/detail/ICalendarDetailContact$IDetailModel;", "(Lcom/ss/android/lark/calendar/impl/features/events/detail/ICalendarDetailContact$IDetailModel;)V", "isCalendarResignedEnabled", "", "getAttendeeFragmentData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IAttendeeFragmentData;", "getBodyData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData;", "getDialogData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IDialogData;", "getFooterData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IFooterData;", "getHeaderData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IHeaderData;", "getTitleViewData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/ITitleData;", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+/* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e */
+public final class NormalEventViewData extends BaseEventViewData implements ICalendarDetailContact.IDetailViewData {
+
+    /* renamed from: b */
+    public final ICalendarDetailContact.IDetailModel f79207b;
+
+    /* renamed from: c */
+    private final boolean f79208c = C30022a.f74883b.mo112710r();
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000{\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000f*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u000e\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003H\u0016J\u0018\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\b\u0012\u0004\u0012\u00020\u0007`\bH\u0016J\b\u0010\t\u001a\u00020\nH\u0016J\b\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\f\u001a\u00020\rH\u0016J\b\u0010\u000e\u001a\u00020\nH\u0016J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\b\u0010\u0011\u001a\u00020\nH\u0016J\b\u0010\u0012\u001a\u00020\nH\u0016J\b\u0010\u0013\u001a\u00020\nH\u0016J\u000f\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0016¢\u0006\u0002\u0010\u0016J\u000f\u0010\u0017\u001a\u0004\u0018\u00010\u0015H\u0016¢\u0006\u0002\u0010\u0016J\u000f\u0010\u0018\u001a\u0004\u0018\u00010\u0015H\u0016¢\u0006\u0002\u0010\u0016J\b\u0010\u0019\u001a\u00020\u0010H\u0016J\b\u0010\u001a\u001a\u00020\nH\u0016J\b\u0010\u001b\u001a\u00020\nH\u0016J\b\u0010\u001c\u001a\u00020\u001dH\u0016J\b\u0010\u001e\u001a\u00020\nH\u0016J\b\u0010\u001f\u001a\u00020 H\u0016J\b\u0010!\u001a\u00020\nH\u0016J\b\u0010\"\u001a\u00020\nH\u0016J\b\u0010#\u001a\u00020\nH\u0016J\b\u0010$\u001a\u00020%H\u0016J\u000e\u0010&\u001a\b\u0012\u0004\u0012\u00020'0\u0003H\u0016J\n\u0010(\u001a\u0004\u0018\u00010)H\u0016J\b\u0010*\u001a\u00020\nH\u0016J\n\u0010+\u001a\u0004\u0018\u00010,H\u0016J\b\u0010-\u001a\u00020.H\u0016J\n\u0010/\u001a\u0004\u0018\u000100H\u0016J\b\u00101\u001a\u00020\u0010H\u0016J\b\u00102\u001a\u00020\u0010H\u0016J\b\u00103\u001a\u00020\u0010H\u0016J\b\u00104\u001a\u00020\u0010H\u0016J\b\u00105\u001a\u00020\u0010H\u0016J\b\u00106\u001a\u00020\u0010H\u0016J\b\u00107\u001a\u00020\u0010H\u0016J\b\u00108\u001a\u00020\u0010H\u0016J\b\u00109\u001a\u00020\u0010H\u0016J\b\u0010:\u001a\u00020\u0010H\u0016J\b\u0010;\u001a\u00020\u0010H\u0016J\b\u0010<\u001a\u00020\u0010H\u0016J\b\u0010=\u001a\u00020\u0010H\u0016J\b\u0010>\u001a\u00020\u0010H\u0016¨\u0006?"}, d2 = {"com/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData$getBodyData$1", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData;", "getAttachmentDatas", "", "Lcom/ss/android/lark/calendar/impl/features/common/widget/attachment/AttachmentItemData;", "getAttendeeDatas", "Ljava/util/ArrayList;", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData$IAttendeeDetailData;", "Lkotlin/collections/ArrayList;", "getAttendeeNumDetailText", "", "getAttendeeNumText", "getAttendeeVisiblility", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData$AttendeeVisibility;", "getCalendarSummary", "getCanEditEvent", "", "getCreatorDisplayName", "getDescriptionRichData", "getDescriptionTextData", "getDueTime", "", "()Ljava/lang/Long;", "getDueTimeClientReqStartTime", "getDueTimeServerReqTime", "getEventIsCrossTenant", "getEventScopeText", "getEventServerId", "getEventSource", "Lcom/ss/android/lark/calendar/impl/rustadapter/doentity/CalendarEvent$Source;", "getEventStartTime", "getEventType", "Lcom/ss/android/lark/calendar/impl/rustadapter/doentity/CalendarEvent$Type;", "getFragmentAttendeeNumText", "getFreeBusyText", "getLiveEventId", "getLocationData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData$ILocationData;", "getMeetingRoomDatas", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData$IMeetingRoomData;", "getOrganizerData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IBodyData$IOrganizerData;", "getReminderText", "getVideoMeeting", "Lcom/ss/android/lark/calendar/impl/rustadapter/doentity/DoVideoMeeting;", "getVideoMeetingVisibility", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/VideoMeetingVisibility;", "getVideoPstnDetailInfo", "Lcom/ss/android/lark/calendar/api/entity/CalendarPstnDetailInfo;", "isCreatorResigned", "isShowAttachment", "isShowCalendarResignedLabel", "isShowCalendarSummary", "isShowCreator", "isShowEventScope", "isShowFreeBusy", "isShowLocation", "isShowMeetingRoom", "isShowNotOrganizerTip", "isShowOrganizer", "isShowReminder", "isShowRichDescription", "isShowTextDescription", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+    /* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e$a */
+    public static final class C31280a implements IBodyData {
+
+        /* renamed from: a */
+        final /* synthetic */ NormalEventViewData f79209a;
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: A */
+        public boolean mo113633A() {
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: P */
+        public String mo113648P() {
+            return this.f79209a.mo113593k();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: b */
+        public List<IBodyData.IMeetingRoomData> mo113650b() {
+            return this.f79209a.mo113594l();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: d */
+        public IBodyData.ILocationData mo113652d() {
+            return this.f79209a.mo113595m();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: i */
+        public ArrayList<IBodyData.IAttendeeDetailData> mo113657i() {
+            return this.f79209a.mo113598p();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: k */
+        public String mo113659k() {
+            return this.f79209a.mo113599q();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: m */
+        public String mo113661m() {
+            return this.f79209a.mo113600r();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: q */
+        public List<AttachmentItemData> mo113665q() {
+            return this.f79209a.mo113601s();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: z */
+        public IBodyData.IOrganizerData mo113674z() {
+            return this.f79209a.mo113602t();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: D */
+        public VideoMeetingVisibility mo113636D() {
+            return this.f79209a.f79207b.mo113428k();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: F */
+        public CalendarPstnDetailInfo mo113638F() {
+            return this.f79209a.f79207b.mo113420d();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: H */
+        public Long mo113640H() {
+            return this.f79209a.f79207b.mo113424g();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: I */
+        public Long mo113641I() {
+            return this.f79209a.f79207b.mo113422e();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: J */
+        public Long mo113642J() {
+            return this.f79209a.f79207b.mo113425h();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: N */
+        public String mo113646N() {
+            return this.f79209a.f79207b.mo113395D();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: O */
+        public String mo113647O() {
+            return this.f79209a.f79207b.mo113397F();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: o */
+        public String mo113663o() {
+            String b = C32634ae.m125182b(R.string.Calendar_Detail_Free);
+            Intrinsics.checkExpressionValueIsNotNull(b, "ResUtil.getString(string.Calendar_Detail_Free)");
+            return b;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: B */
+        public boolean mo113634B() {
+            CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) == null || !calendarEventDisplayInfo.isEventCreatorShow()) {
+                return false;
+            }
+            return true;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: C */
+        public String mo113635C() {
+            CalendarEventAttendee creator;
+            String localizedDisplayName;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (creator = c.getCreator()) == null || (localizedDisplayName = creator.getLocalizedDisplayName()) == null) {
+                return "";
+            }
+            return localizedDisplayName;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: E */
+        public DoVideoMeeting mo113637E() {
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c != null) {
+                return c.getVideoMeeting();
+            }
+            return null;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: G */
+        public boolean mo113639G() {
+            Boolean isEditable;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (isEditable = c.getIsEditable()) == null) {
+                return false;
+            }
+            return isEditable.booleanValue();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: K */
+        public boolean mo113643K() {
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c != null) {
+                return c.isCrossTenant();
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: L */
+        public CalendarEvent.Type mo113644L() {
+            CalendarEvent.Type type;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (type = c.getType()) == null) {
+                return CalendarEvent.Type.DEFAULT_TYPE;
+            }
+            return type;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: M */
+        public CalendarEvent.Source mo113645M() {
+            CalendarEvent.Source source;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (source = c.getSource()) == null) {
+                return CalendarEvent.Source.UNKNOWN_SOURCE;
+            }
+            return source;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: t */
+        public String mo113668t() {
+            String description;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (description = c.getDescription()) == null) {
+                return "";
+            }
+            return description;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: u */
+        public String mo113669u() {
+            String docsDescription;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null || (docsDescription = c.getDocsDescription()) == null) {
+                return "";
+            }
+            return docsDescription;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: w */
+        public boolean mo113671w() {
+            Calendar j = this.f79209a.f79207b.mo113427j();
+            if (j == null || !j.isResignedCalendar()) {
+                return false;
+            }
+            return true;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: x */
+        public String mo113672x() {
+            String noteOrLocalizeSummary;
+            Calendar j = this.f79209a.f79207b.mo113427j();
+            if (j == null || (noteOrLocalizeSummary = j.getNoteOrLocalizeSummary()) == null) {
+                return "";
+            }
+            return noteOrLocalizeSummary;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: c */
+        public boolean mo113651c() {
+            CalendarLocation calendarLocation;
+            if (this.f79209a.f79207b.mo113393B()) {
+                return false;
+            }
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            CalendarSchemaCollection calendarSchemaCollection = null;
+            if (c != null) {
+                calendarLocation = c.getLocation();
+            } else {
+                calendarLocation = null;
+            }
+            if (calendarLocation == null) {
+                return false;
+            }
+            SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+            CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+            if (c2 != null) {
+                calendarSchemaCollection = c2.getCalendarSchemaCollection();
+            }
+            if (aVar.mo120313a("Location", calendarSchemaCollection)) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: f */
+        public String mo113654f() {
+            Boolean bool;
+            EventAttendeeInfo eventAttendeeInfo;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            DirtyType dirtyType = null;
+            if (c == null || (eventAttendeeInfo = c.getEventAttendeeInfo()) == null) {
+                bool = null;
+            } else {
+                bool = eventAttendeeInfo.all_individual_attendee;
+            }
+            if (Intrinsics.areEqual((Object) bool, (Object) false)) {
+                CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+                if (c2 != null) {
+                    dirtyType = c2.getDirtyType();
+                }
+                if (dirtyType != DirtyType.NONE_DIRTY_TYPE) {
+                    return "";
+                }
+            }
+            return this.f79209a.mo113596n();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: j */
+        public boolean mo113658j() {
+            if (this.f79209a.f79207b.mo113393B()) {
+                return false;
+            }
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null) {
+                return false;
+            }
+            if (!CollectionUtils.isNotEmpty(c.getReminders()) || !SchemaHelper.f83746a.mo120313a("Reminder", c.getCalendarSchemaCollection())) {
+                return false;
+            }
+            return true;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: n */
+        public boolean mo113662n() {
+            CalendarEvent c;
+            CalendarSchemaCollection calendarSchemaCollection;
+            if (this.f79209a.f79207b.mo113393B() || (c = this.f79209a.f79207b.mo113417c()) == null || !c.isFree()) {
+                return false;
+            }
+            SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+            CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+            if (c2 != null) {
+                calendarSchemaCollection = c2.getCalendarSchemaCollection();
+            } else {
+                calendarSchemaCollection = null;
+            }
+            if (aVar.mo120313a("FreeBusy", calendarSchemaCollection)) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: p */
+        public boolean mo113664p() {
+            List<CalendarEventAttachment> list;
+            if (this.f79209a.f79207b.mo113393B()) {
+                return false;
+            }
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            CalendarSchemaCollection calendarSchemaCollection = null;
+            if (c != null) {
+                list = c.getAttachment();
+            } else {
+                list = null;
+            }
+            if (!CollectionUtils.isNotEmpty(list)) {
+                return false;
+            }
+            SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+            CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+            if (c2 != null) {
+                calendarSchemaCollection = c2.getCalendarSchemaCollection();
+            }
+            if (aVar.mo120313a("Attachment", calendarSchemaCollection)) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: r */
+        public boolean mo113666r() {
+            CalendarEvent c;
+            if (!this.f79209a.f79207b.mo113393B() && (c = this.f79209a.f79207b.mo113417c()) != null && !TextUtils.isEmpty(c.getDescription()) && SchemaHelper.f83746a.mo120313a("Description", c.getCalendarSchemaCollection())) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: s */
+        public boolean mo113667s() {
+            CalendarEvent c;
+            if (!this.f79209a.f79207b.mo113393B() && (c = this.f79209a.f79207b.mo113417c()) != null && !TextUtils.isEmpty(c.getDocsDescription()) && SchemaHelper.f83746a.mo120313a("Description", c.getCalendarSchemaCollection())) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: v */
+        public boolean mo113670v() {
+            String str;
+            Calendar j = this.f79209a.f79207b.mo113427j();
+            CalendarSchemaCollection calendarSchemaCollection = null;
+            if (j != null) {
+                str = j.getNoteOrLocalizeSummary();
+            } else {
+                str = null;
+            }
+            if (!TextUtils.isEmpty(str)) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c = this.f79209a.f79207b.mo113417c();
+                if (c != null) {
+                    calendarSchemaCollection = c.getCalendarSchemaCollection();
+                }
+                if (aVar.mo120313a("Calendar", calendarSchemaCollection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: y */
+        public boolean mo113673y() {
+            CalendarEvent c;
+            CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            if (!this.f79209a.f79207b.mo113393B() && (c = this.f79209a.f79207b.mo113417c()) != null && (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) != null && calendarEventDisplayInfo.isEventOrganizerShow()) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (!aVar.mo120313a("OrganizerOrCreator", calendarSchemaCollection)) {
+                    return false;
+                }
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: a */
+        public boolean mo113649a() {
+            List<CalendarEventAttendee> list;
+            if (this.f79209a.f79207b.mo113393B()) {
+                return false;
+            }
+            AttendeeUtil aVar = AttendeeUtil.f79151a;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            CalendarSchemaCollection calendarSchemaCollection = null;
+            if (c != null) {
+                list = c.getAttendees();
+            } else {
+                list = null;
+            }
+            if (!CollectionUtils.isNotEmpty(aVar.mo113568a(list))) {
+                return false;
+            }
+            SchemaHelper.Companion aVar2 = SchemaHelper.f83746a;
+            CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+            if (c2 != null) {
+                calendarSchemaCollection = c2.getCalendarSchemaCollection();
+            }
+            if (aVar2.mo120313a("MeetingRoom", calendarSchemaCollection)) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: g */
+        public String mo113655g() {
+            Boolean bool;
+            EventAttendeeInfo eventAttendeeInfo;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            DirtyType dirtyType = null;
+            if (c == null || (eventAttendeeInfo = c.getEventAttendeeInfo()) == null) {
+                bool = null;
+            } else {
+                bool = eventAttendeeInfo.all_individual_attendee;
+            }
+            if (Intrinsics.areEqual((Object) bool, (Object) false)) {
+                CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+                if (c2 != null) {
+                    dirtyType = c2.getDirtyType();
+                }
+                if (dirtyType != DirtyType.NONE_DIRTY_TYPE) {
+                    String b = C32634ae.m125182b(R.string.Calendar_Common_Guests);
+                    Intrinsics.checkExpressionValueIsNotNull(b, "ResUtil.getString(R.string.Calendar_Common_Guests)");
+                    return b;
+                }
+            }
+            return this.f79209a.mo113597o();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: l */
+        public boolean mo113660l() {
+            CalendarEvent.Visibility visibility;
+            CalendarEvent.Visibility visibility2;
+            if (this.f79209a.f79207b.mo113393B()) {
+                return false;
+            }
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            CalendarSchemaCollection calendarSchemaCollection = null;
+            if (c != null) {
+                visibility = c.getVisibility();
+            } else {
+                visibility = null;
+            }
+            if (visibility != CalendarEvent.Visibility.PUBLIC) {
+                CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+                if (c2 != null) {
+                    visibility2 = c2.getVisibility();
+                } else {
+                    visibility2 = null;
+                }
+                if (visibility2 != CalendarEvent.Visibility.PRIVATE) {
+                    return false;
+                }
+            }
+            SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+            CalendarEvent c3 = this.f79209a.f79207b.mo113417c();
+            if (c3 != null) {
+                calendarSchemaCollection = c3.getCalendarSchemaCollection();
+            }
+            if (aVar.mo120313a("Scope", calendarSchemaCollection)) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: e */
+        public IBodyData.AttendeeVisibility mo113653e() {
+            CalendarSchemaCollection calendarSchemaCollection;
+            int i;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            if (c == null) {
+                return IBodyData.AttendeeVisibility.GONE;
+            }
+            Calendar j = this.f79209a.f79207b.mo113427j();
+            if (j == null) {
+                return IBodyData.AttendeeVisibility.GONE;
+            }
+            if (this.f79209a.f79207b.mo113392A()) {
+                return IBodyData.AttendeeVisibility.GONE;
+            }
+            if (c.getDisplayType() == CalendarEvent.DisplayType.LIMITED || !AuthorityUtil.f79153a.mo113576b(c, j)) {
+                return IBodyData.AttendeeVisibility.HIDDEN;
+            }
+            if (AuthorityUtil.f79153a.mo113576b(c, j) && CollectionUtils.isNotEmpty(AttendeeUtil.f79151a.mo113566a(c))) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79209a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("Attendee", calendarSchemaCollection)) {
+                    CalendarEvent c3 = this.f79209a.f79207b.mo113417c();
+                    if (c3 != null) {
+                        i = c3.getAttendeeNum();
+                    } else {
+                        i = 0;
+                    }
+                    if (i <= 1) {
+                        return IBodyData.AttendeeVisibility.SHOWINLINE;
+                    }
+                    return IBodyData.AttendeeVisibility.SHOW;
+                }
+            }
+            return IBodyData.AttendeeVisibility.GONE;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IBodyData
+        /* renamed from: h */
+        public String mo113656h() {
+            EventAttendeeInfo eventAttendeeInfo;
+            boolean z;
+            CalendarEvent c = this.f79209a.f79207b.mo113417c();
+            String str = "";
+            if (c == null || (eventAttendeeInfo = c.getEventAttendeeInfo()) == null) {
+                return str;
+            }
+            Integer num = eventAttendeeInfo.accept_no;
+            Integer num2 = eventAttendeeInfo.decline_no;
+            Integer num3 = eventAttendeeInfo.tentative_no;
+            Integer num4 = eventAttendeeInfo.need_action_no;
+            boolean z2 = true;
+            if (Intrinsics.compare(num.intValue(), 0) > 0) {
+                str = str + C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_NumberOfGuestAcccepted, "acceptNum", String.valueOf(num.intValue()));
+                z = true;
+            } else {
+                z = false;
+            }
+            if (Intrinsics.compare(num2.intValue(), 0) > 0) {
+                if (z) {
+                    str = str + "，";
+                }
+                str = str + C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_NumberOfGuestRejected, "rejectNum", String.valueOf(num2.intValue()));
+                z = true;
+            }
+            if (Intrinsics.compare(num3.intValue(), 0) > 0) {
+                if (z) {
+                    str = str + "，";
+                }
+                str = str + C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_NumberOfGuestTentative, "tentativeNum", String.valueOf(num3.intValue()));
+            } else {
+                z2 = z;
+            }
+            if (Intrinsics.compare(num4.intValue(), 0) <= 0) {
+                return str;
+            }
+            if (z2) {
+                str = str + "，";
+            }
+            return str + C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_NumberOfGuestNoAction, "needActionNum", String.valueOf(num4.intValue()));
+        }
+
+        /* JADX WARN: Incorrect args count in method signature: ()V */
+        C31280a(NormalEventViewData eVar) {
+            this.f79209a = eVar;
+        }
+    }
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u00001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0015\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016J\b\u0010\u0004\u001a\u00020\u0003H\u0016J\b\u0010\u0005\u001a\u00020\u0003H\u0016J\b\u0010\u0006\u001a\u00020\u0007H\u0016J\b\u0010\b\u001a\u00020\u0003H\u0016J\b\u0010\t\u001a\u00020\u0003H\u0016J\b\u0010\n\u001a\u00020\u000bH\u0016J\b\u0010\f\u001a\u00020\rH\u0016J\b\u0010\u000e\u001a\u00020\rH\u0016J\b\u0010\u000f\u001a\u00020\u0010H\u0016J\b\u0010\u0011\u001a\u00020\u0010H\u0016J\b\u0010\u0012\u001a\u00020\rH\u0016J\b\u0010\u0013\u001a\u00020\rH\u0016¨\u0006\u0014"}, d2 = {"com/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData$getHeaderData$1", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IHeaderData;", "getEventServerId", "", "getEventStartTime", "getEventSummary", "getHeaderColor", "", "getRuleText", "getTimeText", "getVideoMeetingVisibility", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/VideoMeetingVisibility;", "isHasChatGroup", "", "isHasMeetingMinute", "isShowChatGroupIcon", "Lcom/bytedance/lark/pb/calendar/v1/CalendarEventDisplayInfo$ButtonDisplayType;", "isShowMeetingMinuteIcon", "isShowRule", "isStartAndEndSameDay", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+    /* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e$d */
+    public static final class C31283d implements IHeaderData {
+
+        /* renamed from: a */
+        final /* synthetic */ NormalEventViewData f79212a;
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: a */
+        public int[] mo113680a() {
+            return this.f79212a.mo113590h();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: c */
+        public String mo113682c() {
+            return this.f79212a.mo113591i();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: d */
+        public boolean mo113683d() {
+            return this.f79212a.mo113592j();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: b */
+        public String mo113681b() {
+            return this.f79212a.f79207b.mo113437t();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: f */
+        public String mo113685f() {
+            String rRule;
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c == null || (rRule = c.getRRule()) == null) {
+                return "";
+            }
+            return rRule;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: g */
+        public boolean mo113686g() {
+            CalendarEvent.Type type;
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c != null) {
+                type = c.getType();
+            } else {
+                type = null;
+            }
+            if (type == CalendarEvent.Type.MEETING) {
+                return true;
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: h */
+        public boolean mo113687h() {
+            String str;
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c != null) {
+                str = c.getMeetingMinuteUrl();
+            } else {
+                str = null;
+            }
+            return !TextUtils.isEmpty(str);
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: e */
+        public boolean mo113684e() {
+            String str;
+            if (this.f79212a.f79207b.mo113393B()) {
+                return false;
+            }
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c != null) {
+                str = c.getRRule();
+            } else {
+                str = null;
+            }
+            return !TextUtils.isEmpty(str);
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: i */
+        public CalendarEventDisplayInfo.ButtonDisplayType mo113688i() {
+            CalendarEventDisplayInfo.ButtonDisplayType buttonDisplayType;
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c != null) {
+                if (this.f79212a.f79207b.mo113400a() == EventDetailSource.FROM_MEETING_CHAT_CARD || !SchemaHelper.f83746a.mo120313a("MeetingChatIcon", c.getCalendarSchemaCollection())) {
+                    buttonDisplayType = CalendarEventDisplayInfo.ButtonDisplayType.HIDDEN;
+                } else {
+                    com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo = c.getCalendarEventDisplayInfo();
+                    if (calendarEventDisplayInfo != null) {
+                        buttonDisplayType = calendarEventDisplayInfo.getMeetingChatBtnDisplayType();
+                    } else {
+                        buttonDisplayType = null;
+                    }
+                }
+                if (buttonDisplayType != null) {
+                    return buttonDisplayType;
+                }
+            }
+            return CalendarEventDisplayInfo.ButtonDisplayType.HIDDEN;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IHeaderData
+        /* renamed from: j */
+        public CalendarEventDisplayInfo.ButtonDisplayType mo113689j() {
+            CalendarEventDisplayInfo.ButtonDisplayType buttonDisplayType;
+            CalendarEvent c = this.f79212a.f79207b.mo113417c();
+            if (c != null) {
+                if (c.getCalendarEventDisplayInfo() == null || !SchemaHelper.f83746a.mo120313a("MeetingMinutesIcon", c.getCalendarSchemaCollection())) {
+                    buttonDisplayType = CalendarEventDisplayInfo.ButtonDisplayType.HIDDEN;
+                } else {
+                    buttonDisplayType = c.getCalendarEventDisplayInfo().getMeetingMinutesBtnDisplayType();
+                }
+                if (buttonDisplayType != null) {
+                    return buttonDisplayType;
+                }
+            }
+            return CalendarEventDisplayInfo.ButtonDisplayType.HIDDEN;
+        }
+
+        /* JADX WARN: Incorrect args count in method signature: ()V */
+        C31283d(NormalEventViewData eVar) {
+            this.f79212a = eVar;
+        }
+    }
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000'\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\n*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016J\b\u0010\u0004\u001a\u00020\u0005H\u0016J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0007\u001a\u00020\u0005H\u0016J\n\u0010\b\u001a\u0004\u0018\u00010\tH\u0016J\b\u0010\n\u001a\u00020\u000bH\u0016J\b\u0010\f\u001a\u00020\u000bH\u0016J\b\u0010\r\u001a\u00020\u000bH\u0016J\b\u0010\u000e\u001a\u00020\u000bH\u0016J\b\u0010\u000f\u001a\u00020\u000bH\u0016J\b\u0010\u0010\u001a\u00020\u000bH\u0016J\b\u0010\u0011\u001a\u00020\u000bH\u0016J\b\u0010\u0012\u001a\u00020\u000bH\u0016J\b\u0010\u0013\u001a\u00020\u000bH\u0016J\b\u0010\u0014\u001a\u00020\u000bH\u0016¨\u0006\u0015"}, d2 = {"com/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData$getTitleViewData$1", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/ITitleData;", "getEventDeleteAbility", "", "getEventServerID", "", "getEventStartTime", "getEventSummary", "getTransferEventData", "Lcom/ss/android/lark/calendar/impl/features/events/detail/fragment/transfer/TransferEventData;", "isEditIconDisable", "", "isShowEditIcon", "isShowExchangeIcon", "isShowExternalIcon", "isShowGoogleIcon", "isShowHint", "isShowLocalIcon", "isShowReportIcon", "isShowSharableIcon", "isShowTransferIcon", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+    /* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e$e */
+    public static final class C31284e implements ITitleData {
+
+        /* renamed from: a */
+        final /* synthetic */ NormalEventViewData f79213a;
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: e */
+        public boolean mo113694e() {
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: f */
+        public boolean mo113695f() {
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: g */
+        public boolean mo113696g() {
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: j */
+        public boolean mo113699j() {
+            return this.f79213a.mo113605w();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: o */
+        public boolean mo113704o() {
+            return this.f79213a.mo113604v();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: a */
+        public String mo113690a() {
+            return this.f79213a.f79207b.mo113437t();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: b */
+        public String mo113691b() {
+            return this.f79213a.f79207b.mo113395D();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: c */
+        public String mo113692c() {
+            return this.f79213a.f79207b.mo113397F();
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: d */
+        public boolean mo113693d() {
+            boolean z;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (c == null) {
+                return false;
+            }
+            if (c.getDisplayType() == CalendarEvent.DisplayType.LIMITED) {
+                z = true;
+            } else {
+                z = false;
+            }
+            if (!c.isCrossTenant()) {
+                return false;
+            }
+            AbstractC30054s g = this.f79213a.mo113589g();
+            Intrinsics.checkExpressionValueIsNotNull(g, "loginDependency");
+            if (g.mo108270b() || z) {
+                return false;
+            }
+            return true;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: h */
+        public boolean mo113697h() {
+            com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (!(c == null || (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) == null || !calendarEventDisplayInfo.isSharableBtnShow())) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("ForwardIcon", calendarSchemaCollection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: i */
+        public boolean mo113698i() {
+            com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (!(c == null || (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) == null || !calendarEventDisplayInfo.isEditableBtnShow())) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("EditIcon", calendarSchemaCollection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: k */
+        public boolean mo113700k() {
+            com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (!(c == null || (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) == null || !calendarEventDisplayInfo.isTransferBtnShow())) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("TransferIcon", calendarSchemaCollection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: l */
+        public TransferEventData mo113701l() {
+            String calendarId;
+            CalendarEvent c;
+            String key;
+            String str;
+            CalendarEventAttendee organizer;
+            CalendarEventAttendee organizer2;
+            CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+            String str2 = null;
+            if (!(c2 == null || (calendarId = c2.getCalendarId()) == null || (c = this.f79213a.f79207b.mo113417c()) == null)) {
+                long originalTime = c.getOriginalTime();
+                CalendarEvent c3 = this.f79213a.f79207b.mo113417c();
+                if (!(c3 == null || (key = c3.getKey()) == null)) {
+                    CalendarEvent c4 = this.f79213a.f79207b.mo113417c();
+                    if (c4 == null || (organizer2 = c4.getOrganizer()) == null || (str = organizer2.getLocalizedDisplayName()) == null) {
+                        str = "";
+                    }
+                    CalendarEvent c5 = this.f79213a.f79207b.mo113417c();
+                    if (!(c5 == null || (organizer = c5.getOrganizer()) == null)) {
+                        str2 = organizer.getUserId();
+                    }
+                    return new TransferEventData(calendarId, key, originalTime, this.f79213a.f79207b.mo113443z(), str, str2);
+                }
+            }
+            return null;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: m */
+        public boolean mo113702m() {
+            com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (c != null && (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) != null && calendarEventDisplayInfo.isReportBtnShow() && C30022a.f74883b.mo112693a() && C30022a.f74885d.mo112720b()) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("ReportIcon", calendarSchemaCollection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.ITitleData
+        /* renamed from: n */
+        public int mo113703n() {
+            com.ss.android.lark.calendar.impl.rustadapter.doentity.CalendarEventDisplayInfo calendarEventDisplayInfo;
+            CalendarSchemaCollection calendarSchemaCollection;
+            CalendarEvent c = this.f79213a.f79207b.mo113417c();
+            if (!(c == null || (calendarEventDisplayInfo = c.getCalendarEventDisplayInfo()) == null || !calendarEventDisplayInfo.isDeletableBtnShow())) {
+                SchemaHelper.Companion aVar = SchemaHelper.f83746a;
+                CalendarEvent c2 = this.f79213a.f79207b.mo113417c();
+                if (c2 != null) {
+                    calendarSchemaCollection = c2.getCalendarSchemaCollection();
+                } else {
+                    calendarSchemaCollection = null;
+                }
+                if (aVar.mo120313a("DeleteIcon", calendarSchemaCollection)) {
+                    if (OperationUtils.f80189a.mo114889f(this.f79213a.f79207b.mo113417c())) {
+                        return 1;
+                    }
+                    if (OperationUtils.f80189a.mo114890g(this.f79213a.f79207b.mo113417c())) {
+                        return 2;
+                    }
+                }
+            }
+            return 0;
+        }
+
+        /* JADX WARN: Incorrect args count in method signature: ()V */
+        C31284e(NormalEventViewData eVar) {
+            this.f79213a = eVar;
+        }
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: a */
+    public ITitleData mo113559a() {
+        return new C31284e(this);
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: b */
+    public IHeaderData mo113560b() {
+        return new C31283d(this);
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: c */
+    public IBodyData mo113561c() {
+        return new C31280a(this);
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: d */
+    public IFooterData mo113562d() {
+        return new C31282c(this);
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: e */
+    public IDialogData mo113563e() {
+        return new C31281b(this);
+    }
+
+    @Override // com.ss.android.lark.calendar.impl.features.events.detail.ICalendarDetailContact.IDetailViewData
+    /* renamed from: f */
+    public IAttendeeFragmentData mo113564f() {
+        return mo113606x();
+    }
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, d2 = {"com/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData$getDialogData$1", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IDialogData;", "getOrganizerName", "", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+    /* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e$b */
+    public static final class C31281b implements IDialogData {
+
+        /* renamed from: a */
+        final /* synthetic */ NormalEventViewData f79210a;
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IDialogData
+        /* renamed from: a */
+        public String mo113675a() {
+            return AttendeeUtil.f79151a.mo113571d(this.f79210a.f79207b.mo113417c());
+        }
+
+        /* JADX WARN: Incorrect args count in method signature: ()V */
+        C31281b(NormalEventViewData eVar) {
+            this.f79210a = eVar;
+        }
+    }
+
+    @Metadata(bv = {1, 0, 3}, d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016J\b\u0010\u0004\u001a\u00020\u0005H\u0016J\b\u0010\u0006\u001a\u00020\u0007H\u0016J\b\u0010\b\u001a\u00020\tH\u0016¨\u0006\n"}, d2 = {"com/ss/android/lark/calendar/impl/features/events/detail/viewdata/NormalEventViewData$getFooterData$1", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IFooterData;", "getFooterType", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/IFooterData$FooterType;", "getRSVPStatus", "Lcom/ss/android/lark/calendar/impl/features/events/detail/idata/RSVPStatus;", "getRsvpBotCardReplyStatus", "", "isShowRsvpCommentIcon", "", "calendar-impl_release"}, mo238835k = 1, mv = {1, 1, 16})
+    /* renamed from: com.ss.android.lark.calendar.impl.features.events.detail.e.e$c */
+    public static final class C31282c implements IFooterData {
+
+        /* renamed from: a */
+        final /* synthetic */ NormalEventViewData f79211a;
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IFooterData
+        /* renamed from: b */
+        public RSVPStatus mo113677b() {
+            CalendarEvent c = this.f79211a.f79207b.mo113417c();
+            if (c != null) {
+                return RsvpUtil.f79159a.mo113579a(c.getSelfAttendeeStatus());
+            }
+            return RSVPStatus.NEEDS_ACTION;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IFooterData
+        /* renamed from: a */
+        public IFooterData.FooterType mo113676a() {
+            CalendarEvent c = this.f79211a.f79207b.mo113417c();
+            if (c == null) {
+                return IFooterData.FooterType.GONE;
+            }
+            Calendar j = this.f79211a.f79207b.mo113427j();
+            if (j == null) {
+                return IFooterData.FooterType.GONE;
+            }
+            if (this.f79211a.f79207b.mo113400a() == EventDetailSource.FROM_RSVP_COMMENT_BOT && SchemaHelper.f83746a.mo120313a("RSVP", c.getCalendarSchemaCollection())) {
+                return IFooterData.FooterType.REPLY;
+            }
+            if (!AuthorityUtil.f79153a.mo113575a(c, j) || !SchemaHelper.f83746a.mo120313a("RSVP", c.getCalendarSchemaCollection())) {
+                return IFooterData.FooterType.GONE;
+            }
+            return IFooterData.FooterType.RSVP;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IFooterData
+        /* renamed from: c */
+        public boolean mo113678c() {
+            String str;
+            String str2;
+            CalendarEvent c = this.f79211a.f79207b.mo113417c();
+            if (c == null) {
+                return false;
+            }
+            EventInviteOperator userInviteOperator = c.getUserInviteOperator();
+            String str3 = null;
+            if (userInviteOperator != null) {
+                str = userInviteOperator.getUserInviteOperatorId();
+            } else {
+                str = null;
+            }
+            if (TextUtils.isEmpty(str)) {
+                return false;
+            }
+            if (userInviteOperator != null) {
+                str2 = userInviteOperator.getUserInviteOperatorId();
+            } else {
+                str2 = null;
+            }
+            if (!(!Intrinsics.areEqual("0", str2))) {
+                return false;
+            }
+            if (userInviteOperator != null) {
+                str3 = userInviteOperator.getUserInviteOperatorLocalizedName();
+            }
+            if (TextUtils.isEmpty(str3) || !SchemaHelper.f83746a.mo120313a("RsvpReply", c.getCalendarSchemaCollection()) || !C30022a.f74883b.mo112718z()) {
+                return false;
+            }
+            return true;
+        }
+
+        @Override // com.ss.android.lark.calendar.impl.features.events.detail.idata.IFooterData
+        /* renamed from: d */
+        public String mo113679d() {
+            String str;
+            CalendarEventAttendee.Status l = this.f79211a.f79207b.mo113429l();
+            if (l != null) {
+                int i = C31285f.f79214a[l.ordinal()];
+                if (i == 1) {
+                    str = C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_Acceptedrsvp, "name", this.f79211a.f79207b.mo113430m());
+                } else if (i == 2) {
+                    str = C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_Rejectrsvp, "name", this.f79211a.f79207b.mo113430m());
+                } else if (i != 3) {
+                    str = "";
+                } else {
+                    str = C30022a.f74882a.utilsDependency().mo108195a(R.string.Calendar_Detail_Maybersvp, "name", this.f79211a.f79207b.mo113430m());
+                }
+                if (str != null) {
+                    return str;
+                }
+            }
+            return "";
+        }
+
+        /* JADX WARN: Incorrect args count in method signature: ()V */
+        C31282c(NormalEventViewData eVar) {
+            this.f79211a = eVar;
+        }
+    }
+
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public NormalEventViewData(ICalendarDetailContact.IDetailModel aVar) {
+        super(aVar);
+        Intrinsics.checkParameterIsNotNull(aVar, "model");
+        this.f79207b = aVar;
+    }
+}

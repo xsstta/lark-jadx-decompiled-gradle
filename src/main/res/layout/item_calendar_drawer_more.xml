@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_calendar_show_more" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" android:src="@drawable/ud_icon_down_round_outlined" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_20"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_calendar_show_more" android:layout_width="wrap_content" android:layout_height="@dimen/dp_42" android:maxWidth="@dimen/dp_190" android:text="@string/Calendar_Edit_ShowMore" android:singleLine="true" android:layout_marginStart="@dimen/dp_8"/>
+    </LinearLayout>
+</LinearLayout>

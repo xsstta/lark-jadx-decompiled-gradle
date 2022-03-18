@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/export_image_preview_titleBar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" app:widget_widgets_tb_divider_visible="false"/>
+        <View android:background="@drawable/doc_search_titlebar_shadow" android:layout_width="match_parent" android:layout_height="@dimen/searchbar_shadow_height"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/export_image_preview_loading_container" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_50">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center_horizontal" android:id="@+id/export_image_preview_loading" android:layout_marginTop="250dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+    </FrameLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/share_text_container" android:background="@color/bg_base" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/space_kit_len_50" app:srlEnableLoadmore="false" app:srlEnableRefresh="false">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/share_text" android:padding="@dimen/space_kit_len_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/space_kit_font_8" android:textIsSelectable="true"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/toolbar_top_shadow" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <com.bytedance.ee.bear.bizwidget.shareview.ExternalShareView android:id="@+id/export_image_preview_sharePanel" android:background="@color/bg_body" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:shareItemBackground="@color/bg_body_overlay"/>
+    </LinearLayout>
+</FrameLayout>

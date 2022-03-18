@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#eee" android:layout_width="match_parent" android:layout_height="12dp"/>
+        <Button android:textColor="@android:color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/pull_ttwebview" android:background="@android:color/white" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="强制拉取内核"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/use_online_so" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="使用线上内核"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/enable_debug" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="开启调试开关"/>
+        <TextView android:id="@+id/version_info" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="TTWebView 0620010001"/>
+        <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <View android:background="#eee" android:layout_width="match_parent" android:layout_height="12dp"/>
+        <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/use_ttwebview" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启TTWebView"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/render_process" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启多进程"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/render_in_browser" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启同层渲染"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/select_menu" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启长按菜单"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/warm_up" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启多进程预热"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/warm_up_render_process_host" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启多进程预热(render process)"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/clamp_heap" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="clamp jvm heap"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/media_ttmp" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启ttmp"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/upload_event" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启event日志上报"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/upload_data" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="开启Date日志上报"/>
+        <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Switch android:id="@+id/unmap_webview_reserved" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="unmap系统webview预留的虚存"/>
+        <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <View android:background="#eee" android:layout_width="match_parent" android:layout_height="12dp"/>
+        <View android:background="#dedede" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Button android:textColor="@android:color/holo_red_light" android:id="@+id/reboot" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="重启"/>
+        <View android:background="#eee" android:layout_width="match_parent" android:layout_height="12dp"/>
+    </LinearLayout>
+</ScrollView>

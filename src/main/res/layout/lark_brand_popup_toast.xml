@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/toast_ly" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/microapp_m_popup_toast_layout">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/real_toast" android:background="@drawable/lark_brand_toast_bg" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp">
+        <ImageView android:id="@+id/icon" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp"/>
+        <ProgressBar android:id="@+id/loading_progress" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="8dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/microapp_m_loading_progress" style="?android:attr/progressBarStyleSmall"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="left" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6dp"/>
+    </LinearLayout>
+</FrameLayout>

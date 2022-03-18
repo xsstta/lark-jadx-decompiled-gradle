@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/selectableItemBackground" android:paddingTop="@dimen/space_kit_len_15" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_more_dialog_item_icon" android:layout_width="@dimen/space_kit_len_20" android:layout_height="@dimen/space_kit_len_20" android:scaleType="centerInside" android:layout_marginStart="@dimen/space_kit_len_16"/>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_title" android:id="@+id/tv_more_dialog_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/space_kit_len_15" android:layout_marginStart="@dimen/space_kit_len_12" android:layout_marginEnd="@dimen/space_kit_len_16" android:layout_toEndOf="@+id/iv_more_dialog_item_icon"/>
+    <View android:id="@+id/more_dialog_item_divider" android:background="@color/line_border_card" android:layout_width="10dp" android:layout_height="@dimen/space_kit_len_divider" android:layout_below="@+id/tv_more_dialog_item_text"/>
+</RelativeLayout>

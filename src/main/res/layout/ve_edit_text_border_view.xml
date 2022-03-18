@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/ve_image_edit_border" android:background="@color/lkui_transparent" android:layout_width="100dp" android:layout_height="100dp">
+        <View android:background="#2596ff" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp"/>
+        <View android:layout_gravity="right" android:background="#2596ff" android:layout_width="2dp" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp"/>
+        <View android:background="#2596ff" android:layout_width="2dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+        <View android:layout_gravity="bottom" android:background="#2596ff" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp"/>
+        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:scaleType="center" app:srcCompat="@drawable/text_sticker_border_dot"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="center" app:srcCompat="@drawable/text_sticker_border_dot"/>
+        <ImageView android:layout_gravity="right" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="center" app:srcCompat="@drawable/text_sticker_border_dot"/>
+        <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:layout_width="30dp" android:layout_height="30dp" android:scaleType="center" app:srcCompat="@drawable/text_sticker_border_dot"/>
+    </FrameLayout>
+</LinearLayout>

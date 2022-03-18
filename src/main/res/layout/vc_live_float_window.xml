@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_radius="@dimen/dp_8" style="@style/UDShadow.M.Down">
+    <androidx.cardview.widget.CardView android:layout_width="142dp" android:layout_height="80dp" app:cardCornerRadius="8dp" app:cardElevation="0dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false">
+        <FrameLayout android:id="@+id/flContainer" android:layout_width="142dp" android:layout_height="80dp"/>
+        <View android:id="@+id/v_bg_border" android:background="@drawable/vc_bg_float_window_border" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_15" android:layout_margin="6dp">
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="6dp">
+                <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="@color/static_white" android:ellipsize="end" android:gravity="center" android:background="@drawable/vc_bg_live_float" android:paddingLeft="@dimen/dp_3" android:paddingRight="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="@dimen/dp_15" android:text="@string/Common_G_Player_Live_Label" android:maxLines="1" android:paddingHorizontal="@dimen/dp_3"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/bt_close_live" android:focusable="true" android:clickable="true" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/vc_icon_close_outlined"/>
+        </LinearLayout>
+        <View android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/v_close_delegate" android:layout_width="32dp" android:layout_height="32dp"/>
+    </androidx.cardview.widget.CardView>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

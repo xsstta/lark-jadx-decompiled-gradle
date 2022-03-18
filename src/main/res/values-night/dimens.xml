@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recording_type_refresh_height">56dp</dimen>
+    <dimen name="recording_type_refresh_layout_margin">16dp</dimen>
+    <dimen name="recording_type_refresh_left_padding">14dp</dimen>
+    <dimen name="recording_type_refresh_right_padding">20dp</dimen>
+    <dimen name="recording_type_refresh_translationY">-3dp</dimen>
+    <dimen name="shadow_height">12dp</dimen>
+    <dimen name="space_background_dim_amount">0.7</dimen>
+    <dimen name="ud_dialog_background_dim_amount">0.7</dimen>
+</resources>

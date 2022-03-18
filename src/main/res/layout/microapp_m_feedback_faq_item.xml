@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/microapp_m_common_margin" android:layout_width="match_parent" android:layout_height="@dimen/microapp_m_feedback_faq_item_width">
+    <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_text_focus" android:id="@+id/tv_faq_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <ImageView android:background="0x7f080ef6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/microapp_m_common_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/split_view_bottom" android:background="@color/microapp_m_dark_divider" android:layout_width="match_parent" android:layout_height="0.25dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

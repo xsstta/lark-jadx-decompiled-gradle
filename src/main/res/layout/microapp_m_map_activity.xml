@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/microapp_m_parent_view_map" android:background="@android:color/holo_red_dark" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/microapp_m_map_close" android:background="@drawable/microapp_m_map_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/microapp_m_lefterbackicon_titlebar_dark"/>
+    </FrameLayout>
+    <ImageView android:gravity="center_vertical" android:id="@+id/microapp_m_map_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="18dp" android:src="0x7f080f2c" android:layout_above="@+id/microapp_m_map_bottom" android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/microapp_m_map_bottom" android:background="@drawable/microapp_m_map_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_weight="1" android:layout_alignParentLeft="true">
+            <TextView android:textSize="19dp" android:textColor="@color/microapp_m_ssxinzi1" android:ellipsize="end" android:id="@+id/microapp_m_map_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="14dp" android:textColor="@color/microapp_m_ssxianzi3" android:ellipsize="end" android:id="@+id/microapp_m_map_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+            <TextView android:textSize="19dp" android:textColor="@color/microapp_m_ssxinzi1" android:id="@+id/microapp_m_map_position" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/microapp_m_location"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/microapp_m_map_nav" android:background="0x7f080f2b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:layout_weight="0"/>
+    </LinearLayout>
+</RelativeLayout>

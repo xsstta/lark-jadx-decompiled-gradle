@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.MaxSizeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/round_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="180dp" android:elevation="10dp" app:maxHeight="423dp">
+    <FrameLayout android:id="@+id/originalTitle" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/space_kit_n900" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/Doc_Translate_OriginalTitle" android:paddingStart="29.5dp" android:paddingEnd="0dp"/>
+        <View android:layout_gravity="center_horizontal" android:id="@+id/divider" android:background="@drawable/facade_dragview_handler" android:layout_width="40dp" android:layout_height="4dp" android:layout_marginTop="8dp"/>
+    </FrameLayout>
+    <View android:background="@color/space_kit_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ScrollView android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="@color/space_kit_n900" android:id="@+id/original" android:paddingLeft="29.5dp" android:paddingTop="13dp" android:paddingRight="29.5dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2"/>
+    </ScrollView>
+</com.bytedance.ee.bear.widgets.MaxSizeLinearLayout>

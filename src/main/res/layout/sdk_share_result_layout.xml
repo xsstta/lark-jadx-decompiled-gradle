@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/lkui_dialog_btn_image" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="30dp" android:layout_marginBottom="12dp" android:src="@drawable/forward_sdk_result_picture" android:scaleType="centerInside"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/lkui_dialog_text_success" android:layout_width="match_parent" android:layout_height="24dp" android:text="@string/Lark_Legacy_ShareSuccess" android:maxLines="1"/>
+</LinearLayout>

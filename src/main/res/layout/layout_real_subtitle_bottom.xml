@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/subtitle_container" android:background="@color/vc_bg_body" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/subtitle_content" android:layout_width="match_parent" android:layout_height="@dimen/subtitle_bottom_view_height"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/meeting_loading_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/divider_view" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="15dp" android:textColor="@color/icon_n2" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/close_subtitle_view" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="10dp" android:text="@string/iconfont_icon_close" android:layout_marginEnd="18dp"/>
+</FrameLayout>

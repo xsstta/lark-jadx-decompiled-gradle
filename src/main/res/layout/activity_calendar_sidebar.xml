@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.calendars.sidebar.widget.SidebarScrollLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/sidebarRootView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/shadowLayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentLayout" android:background="@color/bg_body" android:paddingTop="@dimen/dp_44" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/calendarsRV" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/settingZone" android:layout_width="match_parent" android:layout_height="@dimen/dp_54">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Calendar_Common_CalendarSettings" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/dp_16"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_20" android:layout_height="match_parent" android:src="@drawable/ud_icon_right_outlined" android:tint="@color/icon_n3" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.calendar.impl.features.calendars.sidebar.widget.SidebarScrollLayout>

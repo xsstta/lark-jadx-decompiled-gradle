@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@android:color/transparent" app:tb_title="@string/Lark_NewSettings_Efficiency" app:tb_title_color="@color/text_title"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+            <include layout="@layout/view_title_mine_desktop"/>
+            <include android:id="@+id/filter_messages_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_setting_filter_messages"/>
+            <include android:id="@+id/audio_2_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_setting_auto_audio_2_text"/>
+            <include android:id="@+id/workout_leave_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" layout="@layout/view_setting_auto_leave_label"/>
+            <include android:id="@+id/when_i_view_a_chat_container" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height" android:layout_marginBottom="16dp" layout="@layout/view_setting_when_i_view_a_chat"/>
+            <include android:id="@+id/urgent_detect_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_setting_urgent_phone_detect"/>
+            <include android:id="@+id/smart_reply_box_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_setting_smart_reply"/>
+            <include android:id="@+id/smart_compose_box_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_setting_smart_compose"/>
+            <include android:id="@+id/enterprise_topic_box_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_as_setting_entity_word"/>
+            <include android:id="@+id/error_correction_box_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" layout="@layout/view_correction_setting"/>
+            <include android:id="@+id/custom_status_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" layout="@layout/view_setting_personal_status"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

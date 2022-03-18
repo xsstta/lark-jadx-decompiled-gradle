@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="130dp" android:width="375dp" android:viewportWidth="375" android:viewportHeight="130">
+    <group>
+        <clip-path android:pathData="M0,0h375v130h-375z"/>
+        <path android:fillColor="@drawable/$calendar_ic_calendar_detail_bg_cover__0" android:pathData="M401.712,39L342.922,274.609L163,102.952L401.712,39Z" android:strokeAlpha="0.2" android:fillAlpha="0.2"/>
+        <path android:fillColor="@drawable/$calendar_ic_calendar_detail_bg_cover__1" android:pathData="M281.889,35L223.1,270.608L43.178,98.952L281.889,35Z" android:strokeAlpha="0.2" android:fillAlpha="0.2"/>
+    </group>
+</vector>

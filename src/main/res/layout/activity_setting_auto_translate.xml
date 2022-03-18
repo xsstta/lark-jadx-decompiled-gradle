@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_title="@string/Lark_Chat_UntranslateLanguageMobile" app:tb_title_color="@color/text_title"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/disable_auto_translate_layout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:minHeight="54dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/disable_auto_translate_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/text_placeholder" android:id="@+id/disable_auto_translate_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Lark_Chat_UntranslateLanguageTips" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_marginTop="@dimen/dp_14" style="@style/Setting_SettingDividerFull"/>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/language_list_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" style="@style/Setting_SettingDividerFull"/>
+</LinearLayout>

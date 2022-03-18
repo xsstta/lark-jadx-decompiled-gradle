@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_72">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/listZone" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72">
+            <ImageView android:id="@+id/listIv" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ud_icon_view_task_outlined"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/lkui_N600" android:id="@+id/listTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_View_AgendaView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dayZone" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72">
+            <ImageView android:id="@+id/dayIv" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ud_icon_view_day_outlined"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/lkui_N600" android:id="@+id/dayTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_View_DayView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/threeDayZone" android:background="@drawable/bg_view_switcher_selected" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72">
+            <ImageView android:id="@+id/threeDayIv" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ud_icon_view_3day_outlined"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/lkui_B500" android:id="@+id/threeDayTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_View_ThreeDayView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/monthZone" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72">
+            <ImageView android:id="@+id/monthIv" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/ud_icon_view_month_outlined"/>
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/lkui_N600" android:id="@+id/monthTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_View_MonthView"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

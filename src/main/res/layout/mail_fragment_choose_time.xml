@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.mail.impl.widget.time.ListenableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/chooseTimeRootView" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/editFragmentTitleBar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/editFragmentAllDayLayout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:src="@drawable/mail_icon_edit_event_time" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_AllDay" android:layout_centerVertical="true" android:layout_marginStart="48dp"/>
+        <com.ss.android.lark.mail.impl.widget.time.SwitchView android:id="@+id/allDaySwitchView" android:layout_width="51dp" android:layout_height="31dp" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@style/SwitchButtonMD"/>
+    </RelativeLayout>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <com.ss.android.lark.mail.impl.widget.time.TimeContainer android:orientation="horizontal" android:id="@+id/eventTimeContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="68dp"/>
+    <View android:id="@+id/eventTimeContainerDivider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <FrameLayout android:id="@+id/timePickerContainer" android:background="@color/bg_body" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <RelativeLayout android:id="@+id/timeZoneContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:src="@drawable/mail_icon_edit_time_zone" android:layout_marginStart="16dp"/>
+        <TextView android:textAppearance="@style/UDText.Body0" android:textColor="@color/text_title" android:id="@+id/currentTimeZoneName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="48dp"/>
+        <ImageView android:layout_width="13dp" android:layout_height="13dp" android:src="@drawable/mail_icon_right_arrow" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/timeZoneContainerDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:id="@+id/timeZoneTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" android:text="@string/Calendar_Timezone_LocalTime" android:layout_marginStart="16dp"/>
+    <View android:id="@+id/timeZoneTitleBottomDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/timeZoneAttendeeRv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.mail.impl.widget.time.ListenableLinearLayout>

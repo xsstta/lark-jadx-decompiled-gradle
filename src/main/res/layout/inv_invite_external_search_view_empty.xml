@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ipseRootFl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ipsSearchRl">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/ipseSearchRl" android:layout_width="match_parent" android:layout_height="54dp">
+        <View android:id="@+id/ipseAddContactIconView" android:background="@drawable/ud_icon_member_add_outlined" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_centerVertical="true" android:backgroundTint="@color/ud_B500"/>
+        <TextView android:textSize="16sp" android:textColor="@color/primary_pri_500" android:id="@+id/ipseTipsTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/Lark_UserGrowth_InvitePeopleSearchCTA" android:layout_toRightOf="@+id/ipseAddContactIconView" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/ipseSearchContentTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:maxLines="1" android:layout_toRightOf="@+id/ipseTipsTv" android:layout_centerVertical="true"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ipseInviteFl" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <View android:background="@drawable/illustration_placeholder_common_search_failed" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="40dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/ipseNoResultsTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/Lark_Contacts_NoExternalContactSearchResults"/>
+        <com.larksuite.component.ui.button.LKUIButton android:id="@+id/ipseInviteBtn" android:layout_width="248dp" android:layout_height="48dp" android:layout_marginTop="30dp" android:text="@string/Lark_Legacy_InviteToUserLark" app:button_style="1"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/microapp_m_titleBar_content" android:layout_width="match_parent" android:layout_height="44dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/microapp_m_page_close" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="32dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:src="@drawable/ud_icon_left_outlined" android:scaleType="centerInside" android:layout_alignParentBottom="true" app:tint="@color/icon_n1"/>
+    <LinearLayout android:id="@+id/microapp_m_titlebar_home_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="@dimen/microapp_m_capsule_margin_right" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/microapp_m_titlebar_home" android:layout_width="42dp" android:layout_height="32dp" android:scaleType="centerInside" app:tint="@color/icon_n1"/>
+    </LinearLayout>
+    <com.tt.miniapp.view.TitleBarProgressView android:id="@+id/microapp_m_titlebar_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginRight="@dimen/microapp_m_capsule_margin_right" android:layout_toLeftOf="@+id/microapp_m_page_title" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="17dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center" android:id="@+id/microapp_m_page_title" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginRight="210dp" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/fl_title_bar_capsule_right" android:layout_width="wrap_content" android:layout_height="@dimen/microapp_m_capsule_parent_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/microapp_m_capsule_margin_right">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/microapp_m_titlebar_capsule" android:paddingLeft="10dp" android:layout_width="@dimen/microapp_m_capsule_width" android:layout_height="@dimen/microapp_m_capsule_height" android:layerType="hardware">
+                <RelativeLayout android:id="@+id/microapp_m_titlebar_capsule_more_layout" android:layout_width="20dp" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/microapp_m_titlebar_capsule_more" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ud_icon_more_outlined" android:scaleType="centerInside" app:tint="@color/icon_n1"/>
+                    <ImageView android:id="@+id/microapp_m_titlebar_red_dot" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginTop="8dp" android:src="@drawable/microapp_dialog_icon_reddot" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+                <View android:id="@+id/microapp_m_titlebar_capsule_divider" android:background="@color/lkui_transparent" android:layout_width="20dp" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginBottom="7dp"/>
+                <ImageView android:id="@+id/microapp_m_titlebar_capsule_back" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/ud_icon_close_outlined" android:scaleType="centerInside" app:tint="@color/icon_n1"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/byted_black" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_resolution" android:background="@color/byted_black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/ocr_take_photo_surface_root_container" android:clickable="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="7">
+            <FrameLayout android:id="@+id/ocr_take_photo_surface_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.ss.android.bytedcert.view.camera.MyPreview android:id="@+id/ocr_take_photo_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mask_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+                <FrameLayout android:id="@+id/center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="60dp" android:layout_marginBottom="60dp" android:layout_weight="6">
+                    <ImageView android:layout_gravity="center" android:id="@+id/ocr_take_photo_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" android:text="@string/byted_take_photo"/>
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ocr_take_photo_bar" android:background="@color/byted_black" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/ocr_take_photo_led" android:background="@color/byted_black" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="6dp" android:layout_marginTop="10dp" android:layout_marginRight="0dp" android:src="@mipmap/byted_poweron"/>
+            </LinearLayout>
+            <TextView android:textSize="15sp" android:textColor="@color/byted_white" android:layout_gravity="center" android:id="@+id/ocr_take_photo_ver_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/byted_ocr_take_front" android:rotation="90"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_take_btn_container" android:background="@color/byted_black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <Button android:textColor="@color/byted_white" android:layout_gravity="center" android:id="@+id/ocr_take_photo_cancle" android:background="@color/byted_black" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/byted_cancle" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/ocr_take_photo_take" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:src="@mipmap/byted_take" android:text="@string/byted_take_photo" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+            <Button android:textColor="@color/byted_white" android:layout_gravity="center" android:id="@+id/ocr_take_photo_txt" android:background="@color/byted_black" android:layout_width="0dp" android:layout_height="30dp" android:text="" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

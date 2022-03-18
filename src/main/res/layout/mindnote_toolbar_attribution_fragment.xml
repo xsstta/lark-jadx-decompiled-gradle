@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                <FrameLayout android:tag="bold" android:background="@drawable/mindnote_toolbar_subitem_left" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_bold_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+                <FrameLayout android:tag="italic" android:background="@drawable/mindnote_toolbar_subitem_none" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_italic_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+                <FrameLayout android:tag="underline" android:background="@drawable/mindnote_toolbar_subitem_right" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_underline_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                <FrameLayout android:tag="h1" android:background="@drawable/mindnote_toolbar_subitem_left" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h1_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+                <FrameLayout android:tag="h2" android:background="@drawable/mindnote_toolbar_subitem_none" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h2_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+                <FrameLayout android:tag="h3" android:background="@drawable/mindnote_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                    <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ud_icon_h3_outlined" style="@style/MindNoteAttrIcon"/>
+                </FrameLayout>
+            </LinearLayout>
+            <com.bytedance.ee.bear.widgets.colorpicker.CommonColorPicker android:id="@+id/colorpicker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginStart="14dp" android:layout_marginEnd="14dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

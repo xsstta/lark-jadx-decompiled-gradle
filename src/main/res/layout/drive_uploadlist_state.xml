@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.larksuite.component.universe_design.progress.UDProgress android:id="@+id/upload_item_progress_bar" android:visibility="gone" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:progress="0" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:ud_progress_indicatorColor="@color/ud_B500" app:ud_progress_indicatorCornerRadius="1dp" app:ud_progress_thickness="2dp" app:ud_progress_trackColor="@color/ud_N300" app:ud_progress_type="1"/>
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/uploadlist_lottie" android:visibility="gone" android:clickable="false" android:layout_width="26dp" android:layout_height="26dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/upload_finish_image" android:visibility="gone" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17dp" android:textColor="@color/drive_retry_upload_text_press_color" android:id="@+id/retry_text_view" android:visibility="gone" android:layout_width="46dp" android:layout_height="22dp" android:text="@string/Drive_Drive_Retry" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

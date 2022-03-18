@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/recall_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" app:tb_back_icon="@drawable/titlebar_close_bg_selector" app:tb_title="@string/Lark_Group_RevokeSelectMemberTitle" app:tb_title_color="@color/lkui_N900"/>
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/recall_chatter_rv" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/space_kit_len_divider" android:layout_height="@dimen/toolbar_item_horizontal_height">
+    <View android:layout_gravity="center" android:id="@+id/sub_toolbar_item_divider" android:background="@color/fill_disable" android:layout_width="match_parent" android:layout_height="24dp"/>
+</FrameLayout>

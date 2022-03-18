@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/loadingContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_56" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/ivLoading" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Groups_RefreshLoading" android:layout_marginStart="@dimen/dp_4"/>
+    </LinearLayout>
+</RelativeLayout>

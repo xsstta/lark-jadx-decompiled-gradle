@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tips_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/active_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="@string/Lark_Education_GoRemind"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" app:srcCompat="@drawable/ud_icon_right_outlined" app:tint="@color/icon_n3"/>
+    </LinearLayout>
+    <View android:id="@+id/bottom_divider" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="8dp"/>
+</LinearLayout>

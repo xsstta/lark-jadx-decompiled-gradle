@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/doc_type" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="4dp" android:tint="@color/ud_B500" android:layout_centerHorizontal="true" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.ss.android.lark.mm.widget.LineHeightTextView android:textSize="16dp" android:textColor="@color/ud_B500" android:ellipsize="end" android:id="@+id/doc_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/doc_type" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginEnd="0dp" app:ux_line_height="22dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

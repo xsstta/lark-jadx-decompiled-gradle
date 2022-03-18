@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="12dp">
+    <ImageView android:id="@+id/sticker_iv_item_view_sticker_pic" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/sticker_ic_icon_sticker_item_default" android:scaleType="centerCrop"/>
+</RelativeLayout>

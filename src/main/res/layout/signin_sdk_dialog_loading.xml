@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/signin_sdk_loading_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ProgressBar android:background="@color/signin_sdk_color_transparent" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="@dimen/signin_sdk_margin_20" android:indeterminateTint="@color/static_white"/>
+</RelativeLayout>

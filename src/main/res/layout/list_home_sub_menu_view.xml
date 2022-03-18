@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/list_item_left_margin" android:layout_marginEnd="@dimen/list_home_sub_title_margin">
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/list_home_navigator" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_kit_len_6"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_filter" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_filter_outlined" android:scaleType="center" android:layout_marginStart="20dp"/>
+    <ImageView android:id="@+id/iv_switch" android:background="@drawable/ud_icon_borders_outlined" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:scaleType="center" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+</LinearLayout>

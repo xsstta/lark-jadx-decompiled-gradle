@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rootView" android:background="@drawable/mm_bg_detail_more_menu" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="72dp">
+        <com.ss.android.lark.mm.widget.avatar.Avatar android:id="@+id/ivIcon" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="12dp" app:avatar_borderStyle="1" app:avatar_cornerRadius="3dp" app:avatar_sizeType="-3" app:srcCompat="@drawable/mm_ic_list_video"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="12dp" android:layout_toStartOf="@+id/actionClose" android:layout_toEndOf="@+id/ivIcon">
+            <com.ss.android.lark.mm.widget.BoldTextView android:textSize="17dp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tvTopic" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:textFontWeight="500"/>
+            <com.ss.android.lark.mm.widget.BoldTextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tvSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:singleLine="true"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/actionClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_alignParentTop="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/mm_icon_close_circle"/>
+    </RelativeLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/panelView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout android:id="@+id/deleteMenu" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" style="@style/IgnitionSettingGroup">
+        <TextView android:textSize="17dp" android:textColor="@color/ud_R500" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/MMWeb_G_Delete"/>
+    </com.larksuite.component.ignition.widget.setting_group.SettingGroupLayout>
+</LinearLayout>

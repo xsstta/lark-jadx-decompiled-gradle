@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_page_holder_view" android:background="@color/bg_body" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/main_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/drive_main_page_title_bar_height" app:widget_widgets_tb_divider_visible="false"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/import_generating_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bytedance.ee.bear.facade.common.widget.BearLottieView android:layout_gravity="center" android:id="@+id/drive_generating_anim" android:layout_marginTop="176dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_anim" style="@style/BearLottieView"/>
+        <TextView android:textColor="@color/text_placeholder" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/Drive_Drive_FileImporting"/>
+    </LinearLayout>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/ud_empty_state_view" android:visibility="gone" android:layout_height="match_parent" app:ud_empty_desc="@string/Drive_Drive_NumberExceededQuotaTips" app:ud_empty_imageRes="@drawable/illustration_empty_negative_load_failed" app:ud_empty_primaryText="@string/Drive_Drive_Retry" app:ud_empty_title="@string/Drive_Drive_ImportFailedRetry" style="@style/SpaceEmptyStatusStyle"/>
+</RelativeLayout>

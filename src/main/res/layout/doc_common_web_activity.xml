@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/common_title" android:layout_width="match_parent" android:layout_height="50dp" app:widget_widgets_tb_divider_visible="false"/>
+    <FrameLayout android:id="@+id/common_fl_webview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/common_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layerType="hardware"/>
+        <com.bytedance.ee.bear.document.loading.LoadingLayout android:id="@+id/common_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/common_empty_state" android:visibility="gone" android:layout_height="match_parent" app:ud_empty_desc="@string/Doc_Doc_NetException" app:ud_empty_imageRes="@drawable/illustration_empty_negative_no_wifi" style="@style/SpaceEmptyStatusStyle"/>
+</LinearLayout>

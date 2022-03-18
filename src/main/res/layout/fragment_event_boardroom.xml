@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/boardroom_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/dp_22" android:textStyle="bold" android:textColor="@color/text_title" android:background="@color/lkui_N00" android:padding="@dimen/dp_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_ChooseRoom"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/lv_boardroom" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.widget.CalendarLoadingView android:id="@+id/calendar_loading_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/switch_view_usable_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_50" android:layout_alignParentBottom="true">
+        <com.larksuite.component.universe_design.udswitch.UDSwitch android:id="@+id/switch_view_usable_boardroom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_14" android:text="@string/Calendar_Edit_DisplayAvaliableRoomOnly" android:layout_toLeftOf="@+id/switch_view_usable_boardroom" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

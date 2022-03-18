@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/places_autocomplete_overlay_root" android:padding="@dimen/places_autocomplete_overlay_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/places_autocomplete_overlay_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/places_autocomplete_search_bar"/>
+            <View android:background="@color/places_autocomplete_separator" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/places_autocomplete_list" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/white"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/places_autocomplete_error" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="192dp" android:layout_height="120dp" android:layout_marginTop="48dp" app:srcCompat="@drawable/quantum_ic_cloud_off_vd_theme_24"/>
+                <include layout="@layout/places_autocomplete_error_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/dialog_framelayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/loading" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/loading_ic"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="6dp" app:cardPreventCornerOverlap="false" app:cardUseCompatPadding="false">
+        <com.bytedance.bdturing.VerifyWebView android:id="@+id/verify_webview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/view_feedback" android:background="#ffffffff" android:visibility="gone" android:layout_width="300dp" android:layout_height="304dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textColor="#ff999999" android:id="@+id/text_feedback_content" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="128dp" android:text=""/>
+                <Button android:textSize="14sp" android:id="@+id/btn_feedback" android:background="@drawable/shap_btn" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="20dp" android:minWidth="60dp" android:text="feedback" android:textAllCaps="false"/>
+            </LinearLayout>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="16dp" android:text="Feedback"/>
+            <Button android:id="@+id/btn_feedback_close" android:background="@mipmap/ic_close_black_online" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

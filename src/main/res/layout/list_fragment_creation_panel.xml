@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/placeView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:id="@+id/wrapContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/closeBtn" android:background="@drawable/list_create_menu_cancel_selector" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/Doc_Facade_Cancel"/>
+</LinearLayout>

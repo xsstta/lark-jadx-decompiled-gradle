@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_header" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/file_picker_white_button_selector" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/image_file_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.8dp" android:src="@drawable/file_picker_icon_file_choose_arrow_right"/>
+        <TextView android:textSize="16sp" android:textColor="@color/lkui_N900" android:id="@+id/text_file_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp"/>
+    </LinearLayout>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

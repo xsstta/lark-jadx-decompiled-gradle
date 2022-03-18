@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@color/byted_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:orientation="horizontal" android:id="@+id/bar" android:background="@color/byted_white" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/return_back" android:background="@mipmap/byted_return" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="12dp" android:layout_marginTop="10dp"/>
+            <TextView android:textSize="17sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@+id/bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/line" android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <WebView android:id="@+id/new_page_webview" android:padding="0dp" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</FrameLayout>

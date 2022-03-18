@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="44dp">
+    <TextView android:textSize="15sp" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/tv_folder_name" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_next" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_drive_breadcrumbnavigation_arrow_nor" android:tint="@color/icon_n2"/>
+</LinearLayout>

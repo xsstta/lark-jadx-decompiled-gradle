@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="0dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="start" android:id="@+id/lkui_dialog_content_message_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Lark_PrivacyPolicy_WhatsFeishu_PopupText"/>
+    </ScrollView>
+    <TextView android:textSize="14sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/privacy_link_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_32" android:text="@string/Lark_Login_ServiceTermPrivacyPolicy"/>
+</LinearLayout>

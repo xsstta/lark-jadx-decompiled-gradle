@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/drive_cache_manager_folder_title_bar" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentTop="true" android:contentDescription="title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/drive_cache_manager_select_folder_path_layout" android:layout_width="match_parent" android:layout_height="60dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/drive_cache_manager_last_folder" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="6">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp">
+                <TextView android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择的路径" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp">
+                <TextView android:textColor="@color/text_caption" android:id="@+id/drive_cache_manager_select_folder_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/drive_cache_manager_folder_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

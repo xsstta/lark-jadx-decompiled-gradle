@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/keyboard_detector_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/edit_keyboard_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/group_select_fragment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ss.android.lark.keyboard.widget.SysKeyBoardObserveFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sheet_filter_subfragment_top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/sheet_subfragment_title_layout"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_56">
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/sheet_filter_col" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/space_kit_len_16"/>
+        <TextView android:enabled="true" android:textSize="@dimen/space_kit_font_12" android:textColor="@color/sheet_attr_item_text_tint_selector" android:gravity="center" android:id="@+id/sheet_filter_col_pre" android:background="@drawable/sheet_filter_col_pre_selector" android:clickable="true" android:layout_width="@dimen/space_kit_len_64" android:layout_height="@dimen/space_kit_len_32" android:text="@string/Doc_Sheet_PreColumn"/>
+        <TextView android:enabled="true" android:textSize="@dimen/space_kit_font_12" android:textColor="@color/sheet_attr_item_text_tint_selector" android:gravity="center" android:id="@+id/sheet_filter_col_next" android:background="@drawable/sheet_filter_col_next_selector" android:clickable="true" android:layout_width="@dimen/space_kit_len_64" android:layout_height="@dimen/space_kit_len_32" android:text="@string/Doc_Sheet_NextColumn" android:layout_marginStart="-1dp" android:layout_marginEnd="@dimen/space_kit_len_16"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/sheet_divider_height"/>
+</LinearLayout>

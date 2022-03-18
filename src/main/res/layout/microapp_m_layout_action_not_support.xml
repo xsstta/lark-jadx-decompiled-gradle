@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <View android:layout_width="1px" android:layout_height="0dp" android:layout_weight="3"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="7">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/microapp_m_app_not_support_action"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginTop="12dp" android:layout_marginRight="60dp" android:text="@string/Lark_OpenPlatform_InputScVerUpdtMsg"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp">
+            <View android:id="@+id/middle" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerHorizontal="true"/>
+            <Button android:textSize="14sp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/btn_ignore" android:background="@drawable/microapp_m_btn_white_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="36dp" android:minWidth="76dp" android:text="@string/Lark_OpenPlatform_InputScUpdtLaterBttn" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/middle" style="?android:attr/borderlessButtonStyle"/>
+            <Button android:textSize="14sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/btn_update" android:background="@drawable/microapp_m_btn_blue_selector" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="36dp" android:minWidth="76dp" android:text="@string/Lark_OpenPlatform_InputScUpdtBttn" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/middle" style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

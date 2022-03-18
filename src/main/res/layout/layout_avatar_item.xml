@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="68dp">
+    <com.larksuite.component.ui.button.LKUICheckBox android:id="@+id/avatar_item_checkbox" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginStart="16dp"/>
+    <com.larksuite.component.ui.avatar.v2.LarkAvatarView android:id="@+id/avatar_item_avatar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="16dp"/>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="12dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="16dp">
+            <com.larksuite.framework.ui.SpareLayout android:layout_width="match_parent" android:layout_height="24dp">
+                <TextView android:textSize="17dp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/avatar_item_title" android:layout_width="wrap_content" android:layout_height="24dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+                <TextView android:textSize="12dp" android:textColor="@color/lkui_N500" android:gravity="center_vertical" android:id="@+id/avatar_item_localtime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:includeFontPadding="false" android:drawableLeft="@drawable/icon_local_time" android:drawablePadding="4dp" android:layout_marginStart="8dp"/>
+            </com.larksuite.framework.ui.SpareLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/avatar_item_subtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="4dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+            <TextView android:textSize="12dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/avatar_item_summary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@+id/avatar_item_divider" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </FrameLayout>
+</LinearLayout>

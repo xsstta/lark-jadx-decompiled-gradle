@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.widgets.AppLayoutCenterContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/loading_container" android:layout_width="match_parent" android:layout_height="match_parent" app:appBarLayoutId="@+id/doc_appbar_layout" app:scrollContentId="@+id/contentOuterContainer">
+    <FrameLayout android:id="@+id/doc_webview_cover" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/loading" android:background="@color/bg_body" android:layout="@layout/doc_stub_web_loading" android:inflatedId="@+id/loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.bytedance.ee.bear.widgets.AppLayoutCenterContentFrameLayout>

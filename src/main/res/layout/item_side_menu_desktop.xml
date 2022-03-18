@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="50dp" android:layout_height="42dp">
+        <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/image_side_menu" android:layout_width="@dimen/keyboard_icon_desktop" android:layout_height="@dimen/keyboard_icon_desktop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:oval="false"/>
+        <com.larksuite.component.ui.imageview.LKUIBadgeView android:id="@+id/badgeView" android:visibility="gone" android:layout_width="8dp" android:layout_height="8dp" android:scaleX="0.8" android:scaleY="0.8" app:layout_constraintCircle="@+id/image_side_menu" app:layout_constraintCircleAngle="45" app:layout_constraintCircleRadius="13dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/lkui_N600" android:id="@+id/text_side_menu" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:singleLine="true"/>
+</LinearLayout>

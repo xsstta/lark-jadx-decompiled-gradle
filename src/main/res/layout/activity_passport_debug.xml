@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/toolbar" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="56dp" android:minHeight="?attr/actionBarSize"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.8">
+        <com.larksuite.framework.ui.flowlayout.FlowLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_ttnet_boe" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.larksuite.framework.ui.flowlayout.FlowLayout>
+    </ScrollView>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/display_area" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

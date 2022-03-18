@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.framework.desktop.widget.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rootView" android:background="@drawable/selector_list_item" android:layout_width="match_parent" android:layout_height="@dimen/dp_54">
+    <View android:id="@+id/divideView" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_48"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/accountManager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_GoogleCal_AccountManagement" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="@dimen/dp_4"/>
+        <ImageView android:id="@+id/invalidationIcon" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_warning_outlined" android:tint="@color/ud_error_color_6"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/ud_R500" android:ellipsize="end" android:id="@+id/invalidationTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Sync_SyncExpiredShort" android:singleLine="true" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_14"/>
+        <ImageView android:id="@+id/managerIcon" android:layout_width="@dimen/dp_16" android:layout_height="wrap_content" android:src="@drawable/ud_icon_right_outlined" app:tint="@color/icon_n3"/>
+    </LinearLayout>
+</com.ss.android.lark.calendar.impl.framework.desktop.widget.HoverEventDisallowLinearLayout>

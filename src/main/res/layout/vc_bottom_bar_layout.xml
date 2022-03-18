@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+    <FrameLayout android:id="@+id/bottom_bar_shadow" android:background="@color/vc_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:id="@+id/bottom_sheet" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_expand_state_height_as_unhost" app:behavior_hideable="false" app:behavior_peekHeight="@dimen/bottom_bar_collapse_state_height" app:layout_behavior="com.ss.android.vc.meeting.module.bottombar.BottomBarBottomSheetBehavior">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/vc_bottom_bar_expand_state_layout"/>
+            <include layout="@layout/vc_bottom_bar_collapse_state_layout"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/function_num_notify_container" android:background="@drawable/shape_oval_r500_8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="0dp" android:layout_marginBottom="66dp" android:minWidth="16dp" android:layout_alignTop="@+id/iv_bottom_bar_arrow_collapse" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="0dp" android:layout_toEndOf="@+id/iv_bottom_bar_arrow_collapse" android:lineHeight="12dp">
+        <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/bottombar_num_notify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1px" android:minWidth="16dp" android:paddingStart="4dp" android:paddingEnd="4dp" android:lastBaselineToBottomHeight="4dp"/>
+    </LinearLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/stub_new_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="78dp" android:layout_marginStart="48dp" android:layout_marginEnd="48dp" layout="@layout/layout_new_message"/>
+    <include android:layout_gravity="bottom" android:id="@+id/stub_breakout_help_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="78dp" android:layout_marginStart="48dp" android:layout_marginEnd="48dp" layout="@layout/layout_breakout_room_host_help_layout"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

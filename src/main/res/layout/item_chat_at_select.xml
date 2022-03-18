@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="64dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="64dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/at_select_box" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" app:ud_checkbox_type="0"/>
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/single_avator" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="11dp" android:layout_marginBottom="12dp" android:scaleType="centerCrop" android:layout_alignParentBottom="true" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_weight="1">
+            <com.larksuite.framework.ui.PriorityLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_name_tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:priority="2">
+                    <TextView android:textSize="15sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:text="name" android:maxLines="1"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:gravity="bottom" android:id="@+id/text_owner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Creator"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/custom_status" android:visibility="gone" android:layout_width="@dimen/status_icon_size" android:layout_height="@dimen/status_icon_size" android:layout_marginLeft="@dimen/status_icon_left_margin" app:priority="2"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/tag_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:layout_toEndOf="@+id/ll_name_tag_container" app:priority="3"/>
+                <TextView android:textColor="@color/function_danger_500" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/workday_leave" android:background="@drawable/mine_leave_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/tag_wrapper" android:layout_centerVertical="true" app:priority="3" style="@style/TagTextViewStyle"/>
+                <com.ss.android.lark.widget.status.UserStatusLinearLayout android:layout_gravity="center_vertical" android:id="@+id/user_status" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginLeft="6dp" android:layout_marginRight="24dp" android:layout_toRightOf="@+id/workday_leave" android:layout_centerVertical="true" app:priority="1"/>
+            </com.larksuite.framework.ui.PriorityLayout>
+            <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/shadow" android:background="@drawable/white_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0.5dp"/>
+</FrameLayout>

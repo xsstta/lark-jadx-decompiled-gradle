@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_container" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.RotateLoadingView android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="42dp" android:layout_height="42dp"/>
+</FrameLayout>

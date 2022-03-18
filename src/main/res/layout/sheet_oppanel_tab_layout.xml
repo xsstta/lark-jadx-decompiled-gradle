@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/sheet_panel_title_height">
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/oppanel_tab_indicator" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="21"/>
+    <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+</LinearLayout>

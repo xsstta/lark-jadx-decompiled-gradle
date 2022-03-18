@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/lkui_navigation_default_height">
+    <TextView android:textSize="26sp" android:textStyle="bold" android:textColor="@color/lkui_N900" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp"/>
+    <ImageView android:id="@+id/leftIcon" android:layout_width="10dp" android:layout_height="10dp" android:layout_centerVertical="true" android:layout_marginStart="9dp" android:layout_toEndOf="@+id/title"/>
+    <ImageView android:id="@+id/rightIcon1" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/rightIcon2" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginEnd="24dp" android:layout_toStartOf="@+id/rightIcon1"/>
+    <ImageView android:id="@+id/rightIcon3" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginEnd="24dp" android:layout_toStartOf="@+id/rightIcon2"/>
+    <ImageView android:id="@+id/rightIcon4" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerVertical="true" android:layout_marginEnd="24dp" android:layout_toStartOf="@+id/rightIcon3"/>
+</RelativeLayout>

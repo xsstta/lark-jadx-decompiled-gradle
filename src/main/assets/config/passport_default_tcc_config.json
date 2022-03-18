@@ -1,0 +1,142 @@
+{
+  "feishu": {
+    "email_regex": ".+@.+\\..+",
+    "default_region_code": "+86",
+    "default_register_region_code": "+86",
+    "default_host_domain": "feishu.cn",
+    "enable_login_join_type": false,
+    "enable_languages_before_login": false,
+    "enable_register_join_type": true,
+    "enable_region_code_change": false,
+    "enable_mobile_register": true,
+    "enable_email_register": false,
+    "idp_switch": {
+      "apple_id": false,
+      "facebook": false,
+      "google": false
+    },
+    "client_biz_config_list": {
+      "recover_scene": "passport_account_recovery",
+      "recover_appid": "161471",
+      "bioauth_scene": "passport_bio_auth",
+      "bioauth_appid": "161471",
+      "onekey_login_config": {
+        "sdk_config": {
+          "onekey_login_config": {
+            "cm_config": {
+              "is_enable": 1,
+              "need_data": 0,
+              "timeout_sec": 3
+            },
+            "ct_config": {
+              "is_enable": 1,
+              "need_data": 1,
+              "timeout_sec": 3
+            },
+            "cu_config": {
+              "is_enable": 1,
+              "need_data": 1,
+              "timeout_sec": 3
+            }
+          }
+        },
+        "policy_urls": {
+          "mobile": "https://wap.cmpassport.com/resources/html/contract.html",
+          "telecom": "https://e.189.cn/sdk/agreement/detail.do?hidetop=true",
+          "unicom": "https://opencloud.wostore.cn/authz/resource/html/disclaimer.html?fromsdk=true"
+        },
+        "need_prefetch": {
+          "mobile": true,
+          "unicom": false,
+          "telecom": true
+        }
+      },
+      "h5_url_config": {
+        "account_security_center": "/accounts/security/page/?op_platform_service=hide_navigator",
+        "account_management": "/accounts/security/page/account_management/?op_platform_service=hide_navigator",
+        "password_setting": "/accounts/security/page/password_setting/?op_platform_service=hide_navigator",
+        "security_password_setting": "/accounts/security/page/security_password_setting/?op_platform_service=hide_navigator"
+      },
+      "join_team_host_whitelist": [
+        "feishu.cn",
+        "feishu-staging.cn",
+        "feishu-pre.cn",
+        "larksuite.com",
+        "larksuite-staging.com",
+        "larksuite-pre.com",
+        "feishu-boe.cn",
+        "larksuite-boe.com"
+      ]
+    }
+  },
+  "lark": {
+    "default_region_code": "+1",
+    "default_register_region_code": "+1",
+    "default_host_domain": "larksuite.com",
+    "enable_login_join_type": false,
+    "enable_register_join_type": true,
+    "enable_languages_before_login": true,
+    "enable_region_code_change": true,
+    "enable_mobile_register": true,
+    "enable_email_register": true,
+    "email_regex": ".+@.+\\..+",
+    "idp_switch": {
+      "apple_id": true,
+      "facebook": false,
+      "google": true
+    },
+    "client_biz_config_list": {
+      "recover_scene": "passport_account_recovery",
+      "recover_appid": "161471",
+      "bioauth_scene": "passport_bio_auth",
+      "bioauth_appid": "161471",
+      "onekey_login_config": {
+        "sdk_config": {
+          "onekey_login_config": {
+            "cm_config": {
+              "is_enable": 0,
+              "need_data": 0,
+              "timeout_sec": 3
+            },
+            "ct_config": {
+              "is_enable": 0,
+              "need_data": 1,
+              "timeout_sec": 3
+            },
+            "cu_config": {
+              "is_enable": 0,
+              "need_data": 1,
+              "timeout_sec": 3
+            }
+          }
+        },
+        "policy_urls": {
+          "mobile": "https://wap.cmpassport.com/resources/html/contract.html",
+          "telecom": "https://e.189.cn/sdk/agreement/detail.do?hidetop=true",
+          "unicom": "https://opencloud.wostore.cn/authz/resource/html/disclaimer.html?fromsdk=true"
+        },
+        "need_prefetch": {
+          "mobile": true,
+          "unicom": false,
+          "telecom": true
+        }
+      },
+      "h5_url_config": {
+        "account_security_center": "/accounts/security/page/?op_platform_service=hide_navigator",
+        "account_management": "/accounts/security/page/account_management/?op_platform_service=hide_navigator",
+        "password_setting": "/accounts/security/page/password_setting/?op_platform_service=hide_navigator",
+        "security_password_setting": "/accounts/security/page/security_password_setting/?op_platform_service=hide_navigator"
+      },
+      "join_team_host_whitelist": [
+        "feishu.cn",
+        "feishu-staging.cn",
+        "feishu-pre.cn",
+        "larksuite.com",
+        "larksuite-staging.com",
+        "larksuite-pre.com",
+        "feishu-boe.cn",
+        "larksuite-boe.com"
+      ]
+    }
+  }
+}

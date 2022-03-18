@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/mail_item_bg_selector_c11" android:layout_width="match_parent" android:layout_height="48dp">
+    <View android:id="@+id/left_indentation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+    <ImageView android:id="@+id/lable_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/left_indentation" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/mail_aggregation_action_panel" android:layout_toRightOf="@+id/lable_icon" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/lable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/mail_aggregation_action_panel" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/lable_edit" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="24dp" android:src="@drawable/ud_icon_edit_outlined" android:tint="@color/mail_icon_edit_aggregation_selector_color"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/lable_remove" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="16dp" android:src="@drawable/ud_icon_delete_trash_outlined" android:tint="@color/mail_icon_delete_aggregation_selector_color"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mail_aggregation_select_iv" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="14dp" android:src="@drawable/ud_icon_done_outlined" android:tint="@color/primary_pri_500"/>
+        <ImageView android:id="@+id/mail_aggregation_select_cb" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="14dp" android:src="@drawable/mail_icon_uncheck" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+</RelativeLayout>

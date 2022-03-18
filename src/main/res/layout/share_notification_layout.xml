@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_54">
+    <ImageView android:id="@+id/icon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_bell_outlined" android:tint="@color/icon_n1" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/shareNotificationTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Share_MessageNotify" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/icon"/>
+    <com.larksuite.component.universe_design.p1166switch.UDSwitch android:id="@+id/shareNotificationSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/space_kit_len_16" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_alignParentBottom="true" android:layout_marginStart="48dp"/>
+</RelativeLayout>

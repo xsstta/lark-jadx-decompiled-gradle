@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/lkui_dialog_list_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_empty_search_notification" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="125dp" android:layout_height="125dp" android:layout_marginTop="123dp" android:layout_marginBottom="10dp" android:src="@drawable/illustration_placeholder_common_search_failed"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="middle" android:gravity="center" android:id="@+id/tv_empty_tip" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/Lark_Legacy_MsgCardNoresult" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

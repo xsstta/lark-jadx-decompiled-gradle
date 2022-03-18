@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_oncall_region_new" android:background="@drawable/bg_setting_group_item_round" android:paddingLeft="16dp" android:paddingRight="18dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_margin_horizontal" android:layout_marginTop="@dimen/setting_item_margin_top" android:layout_marginRight="@dimen/setting_item_margin_horizontal" android:minHeight="@dimen/cell_subtitle_height" android:layout_marginHorizontal="@dimen/setting_item_margin_horizontal">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" android:layout_marginBottom="2dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_oncall_about_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_HelpDesk_TitleofDesc"/>
+        <ImageView android:id="@+id/iv_right_arrow_oncall_new" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/chat_setting_right_arrow" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/tv_oncall_describe_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4"/>
+</LinearLayout>

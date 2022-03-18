@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="40dp">
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Sunday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Monday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Tuesday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Wedsday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Thursday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Friday" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/reminder_week_size" android:textColor="@color/reminder_week_color" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Doc_Reminder_Saturday" android:layout_weight="1"/>
+</merge>

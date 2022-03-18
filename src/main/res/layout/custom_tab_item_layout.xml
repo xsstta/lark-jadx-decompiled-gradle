@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/custom_tab_editor_item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="16dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/custom_tab_editor_item_status" android:padding="8dp" android:layout_width="34dp" android:layout_height="34dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/custom_tab_editor_item_icon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginEnd="4dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/custom_tab_editor_item_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="testtest" android:layout_weight="1" android:layout_marginEnd="8dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/custom_tab_editor_item_drag" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:src="@drawable/ic_nav_tab_edit_drag_setting" android:scaleType="centerInside" android:tint="@color/icon_n2"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/ud_N00" android:ellipsize="end" android:gravity="center" android:layout_gravity="end" android:id="@+id/custom_tab_editor_item_remove" android:background="@color/ud_R500" android:layout_width="80dp" android:layout_height="match_parent" android:text="@string/Lark_Legacy_Remove" android:maxLines="1" android:layout_marginEnd="-80dp"/>
+    <View android:layout_gravity="bottom" android:id="@+id/custom_tab_editor_item_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="42dp"/>
+</FrameLayout>

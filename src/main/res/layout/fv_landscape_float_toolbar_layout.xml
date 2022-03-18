@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.vc.common.widget.VCFloatLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fv_landscape_folder" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:id="@+id/fv_landscape_folder_content_layout" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ss.android.vc.meeting.module.follow.common.VCShadowLayout android:id="@+id/fv_landscape_folder_expand_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_shadow_angle="270" app:sl_shadow_color="@color/shadow_default_md" app:sl_shadow_distance="0dp" app:sl_shadow_radius="@dimen/dp_4">
+            <View android:layout_gravity="center" android:background="@drawable/bg_follow_mic_container_bgview" android:layout_width="40dp" android:layout_height="40dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/fv_landscape_folder_expand_icon" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:scaleType="centerCrop" app:srcCompat="@drawable/ud_icon_expand_outlined" app:tint="@color/primary_pri_500"/>
+        </com.ss.android.vc.meeting.module.follow.common.VCShadowLayout>
+        <View android:id="@+id/fv_landscape_folder_divider" android:layout_width="1dp" android:layout_height="8dp"/>
+        <com.ss.android.vc.meeting.module.follow.common.VCShadowLayout android:id="@+id/fv_landscape_folder_mic_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_shadow_angle="270" app:sl_shadow_color="@color/shadow_default_md" app:sl_shadow_distance="0dp" app:sl_shadow_radius="@dimen/dp_4">
+            <View android:layout_gravity="center" android:background="@drawable/bg_follow_mic_container_bgview" android:layout_width="40dp" android:layout_height="40dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/mic_icon_container" android:layout_width="40dp" android:layout_height="40dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/fv_landscape_floater_mic_icon" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginTop="10dp" android:scaleType="centerCrop" app:srcCompat="@drawable/ud_icon_mic_off_filled" app:tint="@color/function_danger_500"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/fv_landscape_floater_mic_warning" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="-10dp" android:scaleType="centerCrop" android:layout_marginStart="20.5dp" app:srcCompat="@drawable/ud_icon_warning_light_colorful"/>
+            </LinearLayout>
+        </com.ss.android.vc.meeting.module.follow.common.VCShadowLayout>
+    </LinearLayout>
+</com.ss.android.vc.common.widget.VCFloatLayout>

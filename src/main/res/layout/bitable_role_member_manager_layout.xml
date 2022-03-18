@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/titleBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" app:widget_widgets_tb_divider_visible="false" app:widget_widgets_tb_title="@string/Bitable_AdvancedPermission_SetCollaborator"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/memberRecycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/emptyLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-50dp">
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/emptyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_empty_desc="@string/Bitable_AdvancedPermission_CollaboratorIsEmpty" app:ud_empty_imageRes="@drawable/illustration_placeholder_common_no_contact" app:ud_empty_primaryText="@string/Bitable_AdvancedPermission_AddCollaborator"/>
+    </LinearLayout>
+</LinearLayout>

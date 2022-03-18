@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.mm.module.share.setting.SettingSwitch android:id="@+id/shareSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <com.ss.android.lark.mm.module.share.setting.SettingItem android:orientation="vertical" android:id="@+id/shareWho" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:share_setting_choice1="@string/MMWeb_G_Internal" app:share_setting_choice2="@string/MMWeb_G_Anyone" app:share_setting_title="@string/MMWeb_G_LinkSharingScope"/>
+    <com.ss.android.lark.mm.module.share.setting.SettingItem android:orientation="vertical" android:id="@+id/shareWhat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:share_setting_choice1="@string/MMWeb_G_ViewShare" app:share_setting_choice2="@string/MMWeb_G_EditShare" app:share_setting_title="@string/MMWeb_G_LinkSharingActions"/>
+</LinearLayout>

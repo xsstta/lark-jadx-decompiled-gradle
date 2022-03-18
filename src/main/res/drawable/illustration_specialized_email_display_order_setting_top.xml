@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="116dp" android:width="240dp" android:viewportWidth="240" android:viewportHeight="116">
+    <path android:fillColor="#fff" android:pathData="M0 0h240v116H0z"/>
+    <path android:fillColor="#1f2329" android:pathData="M46 0h1v116h-1zm66 17h1v99h-1zm0-1h1V0h-1zm-65 1h193v-1H47zm0 50h65v-1H47zm0-25h65v-1H47zm66 8h127v-1H113zm0 34h127v-1H113zm-66 8h65v-1H47z" android:fillAlpha="0.15"/>
+    <path android:pathData="M16 10.5h14a7.5 7.5 0 0 1 7.5 7.5 7.5 7.5 0 0 1-7.5 7.5H16A7.5 7.5 0 0 1 8.5 18a7.5 7.5 0 0 1 7.5-7.5z" android:strokeColor="#1f2329" android:strokeWidth="1" android:strokeAlpha="0.15"/>
+    <path android:fillColor="#eff0f1" android:pathData="M12 34h22a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z"/>
+    <path android:fillColor="#bbbfc4" android:pathData="M113 17h127v32H113z"/>
+    <path android:fillColor="#eff0f1" android:pathData="M59 49h41a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H59a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4zm0-25h41a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H59a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4zm0 50h41a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H59a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4zm0 25h41a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H59a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z"/>
+    <path android:fillColor="#fff" android:pathData="M140.5 23h87a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-87a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5zm-16 13h103a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-103a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5z"/>
+    <path android:fillColor="#eff0f1" android:pathData="M140.5 57h87a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-87a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5zm-16 13h103a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-103a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5z"/>
+    <path android:fillColor="#fff" android:pathData="M126 22a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5z"/>
+    <path android:fillColor="#eff0f1" android:pathData="M126 55a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zm14.5 35h87a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-87a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5zm-16 13h103a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-103a3.5 3.5 0 0 1-3.5-3.5 3.5 3.5 0 0 1 3.5-3.5zm1.5-14a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zM12 52h22a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4zm0 18h22a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4z"/>
+</vector>

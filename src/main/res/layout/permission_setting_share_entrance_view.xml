@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_52">
+    <ImageView android:id="@+id/icon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_setting_outlined" android:scaleType="centerInside" android:tint="@color/icon_n1" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+    <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/text_title" android:id="@+id/sharePermSetEntranceTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Permission_PublicPermissionSetting" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/icon"/>
+    <ImageView android:id="@+id/sharePermSetEntranceIcon" android:layout_width="@dimen/space_kit_len_20" android:layout_height="@dimen/space_kit_len_20" android:src="@drawable/ud_icon_right_outlined" android:scaleType="centerInside" android:tint="@color/text_placeholder" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/space_kit_len_16" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

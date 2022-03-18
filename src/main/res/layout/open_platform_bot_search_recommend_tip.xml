@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/lkui_N900" android:gravity="bottom" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="26dp" android:text="@string/Lark_GroupBot_NoBots" android:paddingStart="16dp"/>

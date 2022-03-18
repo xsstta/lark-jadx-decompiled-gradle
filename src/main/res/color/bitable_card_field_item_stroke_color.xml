@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="@color/primary_pri_500"/>
+    <item android:color="@color/primary_pri_500" android:state_activated="true"/>
+    <item android:color="@color/recordcard_border"/>
+</selector>

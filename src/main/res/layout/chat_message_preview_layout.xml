@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/url_preview_layout" android:background="@color/lkui_transparent" android:paddingTop="7.5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_preview" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/preview_container" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_url_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/url_icon" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/url_preview_icon"/>
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/text_title" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/url_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/url_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="6"/>
+            <com.larksuite.component.ui.layout.LKUIRoundableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:rl_radius="4dp">
+                <com.ss.android.lark.widget.RatioImageView android:id="@+id/video_preview" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:transitionName="show_video_share_element" app:ratio="1.7778"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/play_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/media_play"/>
+            </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

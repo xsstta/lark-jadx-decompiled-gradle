@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/title_bar" android:background="@color/bg_body" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/iconfont_white_icon_selector2" android:id="@+id/go_back" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_close" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+        <TextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_VM_ShareButton" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar">
+        <com.ss.android.vc.common.widget.LoadingLottieView android:id="@+id/loading_lottie_view" android:layout_width="32dp" android:layout_height="28dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/loading_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/View_VM_Loading" android:includeFontPadding="false"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

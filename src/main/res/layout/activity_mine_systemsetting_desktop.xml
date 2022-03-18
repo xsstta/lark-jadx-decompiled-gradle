@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/lkui_N100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/lkui_N100" app:tb_title="@string/Lark_Legacy_SystemSetting" app:tb_title_color="@color/lkui_N900"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_group_margin" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/account_and_security_settinng" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_text_margin_left" android:text="@string/Lark_NewSettings_AccountAndSecurityMobile" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+            </RelativeLayout>
+            <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" style="@style/SettingDividerLeftBlank"/>
+            <RelativeLayout android:id="@+id/setting_written_language_layout" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_NewSettings_GeneralMobile" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+            </RelativeLayout>
+            <com.ss.android.lark.setting.page.v1.view.NotificationEntranceView android:id="@+id/notification_setting_entrance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_group_margin" android:minHeight="@dimen/mine_setting_item_height_desktop"/>
+            <RelativeLayout android:id="@+id/setting_private" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_NewSettings_Privacy" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_calendar" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Calendar_NewSettings_Calendar" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_email" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Mail_Setting_Email" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_video_chat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/View_G_CallsAndMeetings" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_todo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Todo_Task_Tasks" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_moments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:id="@+id/setting_moments_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/setting_general" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_NewSettings_Efficiency" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+            </RelativeLayout>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="@dimen/setting_group_margin"/>
+            <RelativeLayout android:id="@+id/internal_settings" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_NewSettings_InternalSettings" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+                <com.ss.android.lark.setting.SettingDividerView android:layout_width="match_parent" android:layout_height="@dimen/setting_divider_height" android:layout_alignParentBottom="true" style="@style/SettingDividerLeftBlank"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/about_lark" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" style="@style/SettingItemLayout">
+                <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:id="@+id/about_lark_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/Lark_NewSettings_AboutFeishuMobile" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/image_version_tip" android:background="0x7f0819ff" android:visibility="visible" android:layout_width="42.5dp" android:layout_height="16dp" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/about_lark_forward" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/about_lark_forward" android:layout_width="@dimen/mine_setting_item_image_forward_size" android:layout_height="@dimen/mine_setting_item_image_forward_size" style="@style/SettingItemImageForward"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:id="@+id/logout" android:layout_width="match_parent" android:layout_height="@dimen/mine_setting_item_height_desktop" android:layout_marginTop="@dimen/setting_group_margin" style="@style/SettingItemLogout"/>
+            <TextView android:textSize="12sp" android:textColor="@color/lkui_N500" android:gravity="center" android:id="@+id/setting_app_version_tv" android:layout_width="match_parent" android:layout_height="17dp" android:layout_marginLeft="16dp" android:layout_marginTop="@dimen/setting_group_margin" android:layout_marginRight="16dp" android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

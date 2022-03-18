@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:verticalGap="@dimen/sheet_number_keyboard_vertical_gap">
+    <Row>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:codes="1001" android:keyLabel="¥"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="55" android:keyLabel="7"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="56" android:keyLabel="8"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="57" android:keyLabel="9"/>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/ud_icon_delete_outlined"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:codes="1002" android:keyLabel="%"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="52" android:keyLabel="4"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="53" android:keyLabel="5"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="54" android:keyLabel="6"/>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="1006" android:keyIcon="@drawable/ud_icon_insert_right_outlined"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:codes="1003" android:keyLabel="/"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="49" android:keyLabel="1"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="50" android:keyLabel="2"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="51" android:keyLabel="3"/>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_max_height" android:horizontalGap="2%p" android:codes="1007" android:keyIcon="@drawable/ud_icon_insert_down_outlined"/>
+    </Row>
+    <Row>
+        <Key android:keyWidth="14%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:codes="1004" android:keyLabel="±"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="1005" android:keyLabel="00"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="48" android:keyLabel="0"/>
+        <Key android:keyWidth="20%p" android:keyHeight="@dimen/sheet_number_keyboard_key_height" android:horizontalGap="2%p" android:codes="1008" android:keyLabel="."/>
+    </Row>
+</Keyboard>

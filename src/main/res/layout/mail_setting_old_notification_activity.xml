@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/bg_base" app:tb_title="@string/Mail_Setting_NewEmailNotification" app:tb_title_color="@color/text_title"/>
+    <FrameLayout android:id="@+id/mail_notification_setting_list_loading" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/titlebar"/>
+    <ScrollView android:orientation="vertical" android:paddingTop="@dimen/mail_setting_page_top_margin" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/mail_notification_setting_list" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MailSettingPage"/>
+    </ScrollView>
+</LinearLayout>

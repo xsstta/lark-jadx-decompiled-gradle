@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/panel_root" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout android:layout_gravity="bottom" android:id="@+id/panel_container" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:panel_enable_drag="true" app:panel_show_drag_handler="true" app:panel_show_left_icon="false">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:id="@+id/recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_fixed_container" android:layout_alignParentTop="true" android:paddingStart="@dimen/space_kit_len_16" android:paddingEnd="@dimen/space_kit_len_16"/>
+            <FrameLayout android:id="@+id/bottom_fixed_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_80" android:layout_alignParentBottom="true">
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider"/>
+                <com.larksuite.component.universe_design.button.UDButton android:textSize="@dimen/space_kit_font_17" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/bottom_fixed_btn" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_48" android:layout_margin="@dimen/space_kit_len_16" app:ud_backgroundColor="@color/ud_button_white_grey_bg" app:ud_radius="3" app:ud_strokeColor="@color/line_border_component" app:ud_strokeWidth="@dimen/space_kit_len_1" style="@style/UDButton"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout>
+</FrameLayout>

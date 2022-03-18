@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.member_manage.impl.atselector.list.AtFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/item_bg_selector_blue" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/at_select_container" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/at_select_box" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" app:ud_checkbox_type="0"/>
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/single_avator" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:scaleType="centerCrop" android:layout_alignParentBottom="true" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_name_tag_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="13sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:text="name" android:maxLines="1"/>
+            </LinearLayout>
+            <TextView android:textSize="11sp" android:textColor="@color/text_caption" android:id="@+id/text_owner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/Lark_Legacy_Creator" android:layout_toRightOf="@+id/ll_name_tag_container" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/tag_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/text_owner" android:layout_centerVertical="true"/>
+            <TextView android:textColor="@color/function_danger_500" android:gravity="center" android:id="@+id/workday_leave" android:background="@drawable/mine_leave_tag_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/tag_wrapper" android:layout_centerVertical="true" style="@style/TagTextViewStyle"/>
+            <com.ss.android.lark.widget.status.UserStatusLinearLayout android:id="@+id/user_status" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginLeft="6dp" android:layout_marginRight="24dp" android:layout_toRightOf="@+id/workday_leave" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/divider" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/shadow" android:background="@drawable/white_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0.5dp"/>
+</com.ss.android.lark.member_manage.impl.atselector.list.AtFrameLayout>

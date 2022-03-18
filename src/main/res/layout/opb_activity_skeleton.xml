@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@drawable/opb_skelon_shape" android:layout_width="80dp" android:layout_height="16dp" android:layout_marginTop="20dp" android:layout_marginStart="16dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/opb_item_border" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.ignition.widget.squircle.SquircleImageView android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp" android:src="@color/bg_filler" app:radius="10dp"/>
+            <View android:background="@drawable/opb_skelon_shape" android:layout_width="100dp" android:layout_height="16dp" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/opb_item_border" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp" android:src="@color/bg_filler" app:radius="8dp"/>
+            <View android:background="@drawable/opb_skelon_shape" android:layout_width="100dp" android:layout_height="16dp" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/opb_item_border" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp" android:src="@color/bg_filler" app:radius="8dp"/>
+            <View android:background="@drawable/opb_skelon_shape" android:layout_width="100dp" android:layout_height="16dp" android:layout_marginStart="16dp"/>
+        </LinearLayout>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+        <View android:background="@drawable/opb_skelon_shape" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="9dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="40dp" android:width="50dp" android:viewportWidth="50" android:viewportHeight="40">
+    <path android:fillColor="@drawable/$moments_feed_tabs_shadow__0" android:pathData="M0,0h50v40h-50z"/>
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.drive.view.widget.RecyclingImageView android:id="@+id/page_view" android:background="@color/static_black" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <FrameLayout android:id="@+id/presentation_nav_bar" android:background="@color/bg_base" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="43.5dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:id="@+id/back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_close_small_outlined" android:tint="@color/icon_n1"/>
+            <TextView android:textSize="17dp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/Drive_Drive_PresentationEnd"/>
+        </LinearLayout>
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/indicator_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp"/>
+        <View android:layout_gravity="bottom" android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </FrameLayout>
+</merge>

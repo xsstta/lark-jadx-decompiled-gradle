@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.shadow.UDShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_radius="8dp" style="@style/UDShadow.S5">
+    <com.larksuite.framework.ui.AlignParentWidthRelativeLayout android:orientation="vertical" android:background="@drawable/moments_popup_window_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/btn_copy_link" android:background="@drawable/moments_popup_window_btn_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentStart="true">
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ud_icon_link_copy_outlined" android:tint="@color/icon_n2"/>
+            <TextView android:textSize="16dp" android:textColor="@color/text_title" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/Lark_Community_CopyLink" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+    </com.larksuite.framework.ui.AlignParentWidthRelativeLayout>
+</com.larksuite.component.universe_design.shadow.UDShadowLayout>

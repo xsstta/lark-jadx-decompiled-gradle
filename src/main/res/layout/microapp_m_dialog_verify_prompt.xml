@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/microapp_m_shape_round_corner_4dp_white" android:layout_width="290dp" android:layout_height="wrap_content" android:minHeight="@dimen/microapp_m_modal_dialog_minimum_height">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textStyle="bold" android:textColor="@color/microapp_m_black_2" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="5dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <ImageButton android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/ib_close" android:background="@color/microapp_m_transparent" android:padding="6dp" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="6dp"/>
+    </FrameLayout>
+    <ScrollView android:scrollbarThumbHorizontal="@drawable/microapp_m_scroll_indicator" android:scrollbarThumbVertical="@drawable/microapp_m_scroll_indicator" android:id="@+id/sv_container" android:paddingTop="8dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_black_3" android:gravity="center" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5dp" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    </ScrollView>
+    <View android:id="@+id/btn_up_div" android:background="@color/microapp_m_black_7" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_black_2" android:gravity="center" android:id="@+id/btn_left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/btn_middle_div" android:background="@color/microapp_m_black_7" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_black_2" android:gravity="center" android:id="@+id/btn_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

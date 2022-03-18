@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tip_real_body" android:background="@drawable/widget_common_color_white_conner6_bg" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/read_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.5dp">
+                <TextView android:textSize="17sp" android:textColor="@color/primary_pri_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_HintSomebody1"/>
+                <View android:background="@drawable/common_grayc4_little_circle_bg" android:layout_width="5dp" android:layout_height="5dp"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_HintNotRead" android:lines="1"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.5dp">
+                <TextView android:textSize="17sp" android:textColor="@color/primary_pri_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_HintSomebody2"/>
+                <View android:background="@drawable/common_green_little_circle_bg" android:layout_width="5dp" android:layout_height="5dp"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_HintHaveRead" android:lines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/hint_i_had_know" android:background="@drawable/common_color_bluec1_conner4_bg" android:layout_width="93dp" android:layout_height="32dp" android:layout_marginTop="16dp" android:layout_below="@+id/read_layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14sp" android:textColor="@color/primary_pri_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_HintIHadKnow"/>
+    </RelativeLayout>
+</RelativeLayout>

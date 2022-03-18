@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/user_profile_item_style">
+    <TextView android:id="@+id/tv_type_name" android:text="@string/Lark_Legacy_MineDataDepartment" style="@style/user_profile_type_style"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_sub_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:layout_centerVertical="true" android:layout_marginStart="114dp" android:layout_alignParentEnd="true" android:nestedScrollingEnabled="false"/>
+    <View android:id="@+id/divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

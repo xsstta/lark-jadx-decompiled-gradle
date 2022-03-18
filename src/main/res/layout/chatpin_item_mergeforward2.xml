@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/item_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle2">
+    <include layout="@layout/chat_pin_item_sender2"/>
+    <include layout="@layout/chatpin_item_divider"/>
+    <include layout="@layout/chat_pin_merge_forward_item"/>
+    <include layout="@layout/chat_pin_footer_layout"/>
+    <include layout="@layout/chat_pin_item_sender"/>
+</com.ss.android.lark.pin.impl.view.hoverevent.HoverEventDisallowLinearLayout>

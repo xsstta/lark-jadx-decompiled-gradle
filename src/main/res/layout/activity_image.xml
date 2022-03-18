@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/viewpager" android:layout_alignParentTop="true"/>
+    <com.ss.android.ttve.app.image.RectView android:id="@+id/rectView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/viewpager" android:layout_alignParentTop="true"/>
+    <com.ss.android.ttve.app.image.CropImageView android:id="@+id/cropimage_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/viewpager" android:layout_alignParentTop="true"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <Button android:id="@+id/add_new_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="add_new"/>
+            <Button android:id="@+id/replace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="replace"/>
+            <Button android:id="@+id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导出图片"/>
+            <Button android:id="@+id/confrim_params" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认参数"/>
+            <Button android:id="@+id/confrim_render" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确认渲染"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/surface_view">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <Button android:id="@+id/undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="undo"/>
+            <Button android:id="@+id/redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="redo"/>
+            <Button android:id="@+id/constract_oringinal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对比原图"/>
+            <Button android:id="@+id/constract_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对比上一次"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <com.ss.android.ttve.app.image.CustomViewPager android:id="@+id/viewpager" android:layout_width="wrap_content" android:layout_height="150dp" android:layout_margin="10dp" android:layout_above="@+id/tablayout"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tablayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

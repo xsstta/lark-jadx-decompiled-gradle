@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/labs_seekbar_layout_bg" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginTop="@dimen/dp_20">
+        <com.ss.android.vc.meeting.module.meetingdialog.labs.widget.LabsSeekBar android:id="@+id/beautify_seek" android:background="@null" android:paddingLeft="24dp" android:paddingTop="33dp" android:paddingRight="24dp" android:paddingBottom="23dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="4dp" android:max="@integer/vc_labs_beautify_seek_bar_max_val" android:progressDrawable="@drawable/labs_beautify_seek_progress" android:thumb="@drawable/labs_beautify_seek_thumb" android:splitTrack="false"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/seek_indicator_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_38" android:layout_marginStart="@dimen/dp_24">
+        <TextView android:textSize="12dp" android:textColor="@color/static_white" android:gravity="center_horizontal" android:id="@+id/seek_indicator" android:background="@drawable/vc_bg_effect_tips" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/vc_effect_tips_down_arrow" android:layout_width="@dimen/dp_16" android:layout_height="6dp"/>
+    </LinearLayout>
+</merge>

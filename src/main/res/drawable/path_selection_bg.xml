@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="30dp" android:width="35dp"/>
+                    <solid android:color="@color/lkui_transparent"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:drawable="@drawable/ic_path_selection"/>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="30dp" android:width="35dp"/>
+                    <stroke android:width="2px" android:color="@color/photo_edit_selection_mode"/>
+                    <corners android:radius="4dp"/>
+                    <solid android:color="@color/lkui_B500"/>
+                </shape>
+            </item>
+            <item android:gravity="center" android:drawable="@drawable/ic_path_selection"/>
+        </layer-list>
+    </item>
+</selector>

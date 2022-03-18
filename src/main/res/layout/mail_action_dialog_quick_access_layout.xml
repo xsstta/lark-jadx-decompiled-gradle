@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/action_dialog_quick_access_list" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/mail_action_dialog_quick_access_list_height" android:overScrollMode="never"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="@dimen/mail_action_dialog_quick_access_list_boarder_line_height"/>
+    <View android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/mail_action_dialog_quick_access_list_bottom_space_height"/>
+</LinearLayout>

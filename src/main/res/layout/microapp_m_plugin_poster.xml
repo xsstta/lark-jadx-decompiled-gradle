@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/video_poster_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/microapp_m_video_poster_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/microapp_m_video_poster_play" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/microapp_m_material_play" android:scaleType="center" android:layout_centerInParent="true"/>
+</RelativeLayout>

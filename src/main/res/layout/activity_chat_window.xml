@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/side_menu_drawer_layout" android:background="@color/lkui_N00" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.larksuite.component.ui.layout.LKUIRelativeLayout android:id="@+id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout android:id="@+id/inbox_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/list_bottom_view" android:layout_alignParentTop="true" app:lkui_ptr_duration_to_close_either="100" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="1.2" app:lkui_ptr_resistance="1.7">
+            <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.ss.android.lark.widget.recyclerview.FocusDisableRecycler android:id="@+id/message_view" android:paddingBottom="10dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            <com.ss.android.lark.widget.ChatWindowPtrLoadingHeader android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/list_bottom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/view_chat_timezone_tip"/>
+            <FrameLayout android:id="@+id/fl_chat_smart_reply_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_48"/>
+            <View android:id="@+id/keyboard_hoder" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <ViewStub android:layout_gravity="bottom" android:id="@+id/chat_window_p2p_build_group_stub" android:visibility="gone" android:layout="@layout/chat_window_p2p_build_group_layout" android:layout_width="match_parent" android:layout_height="49dp"/>
+            <ViewStub android:layout_gravity="bottom" android:id="@+id/multi_select_menu_stub" android:visibility="gone" android:layout="@layout/chat_window_multi_select_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textColor="@color/text_placeholder" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/chat_window_p2p_chatter_is_deactivied_tip" android:background="@color/bg_body" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/p2p_chatter_is_dimission_tip_height" android:text="@string/Lark_Legacy_ChatterResignPermissionMask"/>
+        </LinearLayout>
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/titlebar_divider" android:background="@color/line_border_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="48dp"/>
+        <ImageView android:id="@+id/hide_back" android:background="@drawable/chat_window_back_bg_selector" android:paddingTop="6dp" android:paddingBottom="18dp" android:layout_width="52dp" android:layout_height="52dp" android:scaleType="center"/>
+        <com.ss.android.lark.chatwindow.view.widget.TitleBarRedDotView android:id="@+id/slide_fab" android:layout_width="52dp" android:layout_height="52dp" android:layout_marginRight="1dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" app:badgeSize="@dimen/dp_13"/>
+        <FrameLayout android:id="@+id/chat_window_float_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/list_bottom_view">
+            <LinearLayout android:orientation="vertical" android:id="@+id/banner_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/chat_window_keyboard_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </com.larksuite.component.ui.layout.LKUIRelativeLayout>
+</com.larksuite.component.ui.layout.LKUILinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/inb_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.larksuite.component.ignition.widget.squircle.SquircleImageView android:id="@+id/inb_icon" android:background="@drawable/doc_toolbar_subitem_all" android:layout_width="@dimen/space_kit_len_48" android:layout_height="@dimen/space_kit_len_48" android:layout_margin="@dimen/space_kit_len_2" android:scaleType="centerInside" app:radius="@dimen/space_kit_len_8" app:srcCompat="@drawable/ud_icon_disorder_list_outlined"/>
+        <com.larksuite.component.universe_design.badge.UDBadgeView android:layout_gravity="end" android:id="@+id/inb_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UDBadge.Dot.StrongReminder.Medium"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/space_kit_font_12" android:textColor="@color/ud_neutral_color_12" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/inb_text" android:paddingTop="@dimen/space_kit_len_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/space_kit_len_48" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@+id/inb_fl" android:layout_centerHorizontal="true"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/func_panel_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/create_new_chat" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_CreateNewChat" android:layout_weight="1"/>
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ud_icon_right_outlined" android:scaleType="fitXY" android:tint="@color/icon_n3"/>
+    </LinearLayout>
+</LinearLayout>

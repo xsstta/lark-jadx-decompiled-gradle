@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <solid android:color="@color/todo_create_button_color_selector"/>
+            <size android:height="48dp" android:width="48dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@+id/add_bold" android:drawable="@drawable/ud_icon_add_outlined" android:left="@dimen/dp_12" android:top="@dimen/dp_12" android:right="@dimen/dp_12" android:bottom="@dimen/dp_12"/>
+</layer-list>

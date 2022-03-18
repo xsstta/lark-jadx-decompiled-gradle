@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/udtoken_component_outlined_bg"/>
+            <stroke android:width="@dimen/dp_1" android:color="@color/ud_N400"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/ud_G100"/>
+            <stroke android:width="@dimen/dp_1" android:color="@color/ud_G600"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/udtoken_component_outlined_bg"/>
+            <stroke android:width="@dimen/dp_1" android:color="@color/ud_G600"/>
+        </shape>
+    </item>
+</selector>

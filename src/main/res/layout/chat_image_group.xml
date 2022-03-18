@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.lark.chatbase.view.ChatImageView android:id="@+id/chat_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    <com.ss.android.lark.widget.AutoRecycleGifImageView android:id="@+id/chat_sticker" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    <com.ss.android.lark.widget.DonutProgress android:layout_gravity="center" android:id="@+id/upload_progress" android:visibility="gone" android:layout_width="55dp" android:layout_height="55dp" android:progress="50" app:donut_background_color="@color/bg_body" app:donut_circle_starting_degree="270" app:donut_finished_color="@color/primary_pri_500" app:donut_finished_stroke_width="2dp" app:donut_text_color="@color/text_title" app:donut_text_size="15sp" app:donut_unfinished_color="@color/line_border_card" app:donut_unfinished_stroke_width="2dp"/>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.chat.preview.components.view.TailDrawableTextView android:textSize="14dp" android:textColor="@color/lkui_N900" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/tv_title">
+        <ImageView android:id="@+id/iv_title" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentLeft="true"/>
+        <FrameLayout android:id="@+id/custom_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/btn_copy" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="16dp" android:src="@drawable/ic_svg_preview_title_copy" android:layout_toLeftOf="@+id/btn_close"/>
+        <ImageView android:id="@+id/btn_close" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_svg_preview_title_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

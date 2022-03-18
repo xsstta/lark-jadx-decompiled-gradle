@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/permission_title_bar" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/empty_state" android:layout_width="272dp" android:layout_marginTop="80dp" app:ud_empty_desc="@string/Doc_More_Owner" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_access" style="@style/SpaceEmptyStatusStyle"/>
+        <View android:layout_gravity="center_horizontal" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="34dp" android:layout_marginTop="36dp" android:layout_marginRight="34dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="20dp" android:layout_marginRight="34dp">
+            <TextView android:textSize="14sp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Facade_ApplyFor"/>
+            <TextView android:textSize="14sp" android:textColor="@color/primary_pri_500" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/permission_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Doc_Facade_Member"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_horizontal" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="34dp" android:layout_marginTop="19dp" android:layout_marginRight="34dp"/>
+        <com.bytedance.ee.bear.widgets.universedesign.SpaceEditText android:textSize="14sp" android:id="@+id/edit_optional" android:paddingTop="20dp" android:paddingBottom="160dp" android:layout_marginLeft="34dp" android:layout_marginRight="34dp" android:hint="@string/Doc_Facade_AddRemarks" android:cursorVisible="true" style="@style/UDEditText"/>
+        <View android:layout_gravity="center_horizontal" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="34dp" android:layout_marginTop="-140dp" android:layout_marginRight="34dp"/>
+        <View android:id="@+id/placeholder_view" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="88dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/static_white" android:gravity="center" android:id="@+id/send_request" android:background="@drawable/facade_send_request_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:text="@string/Doc_Facade_SendRequest"/>
+    </LinearLayout>
+</ScrollView>

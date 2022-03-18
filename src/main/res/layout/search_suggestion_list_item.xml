@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.universe_design.image.UDAvatar android:id="@+id/search_suggest_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginStart="16dp" android:layout_marginEnd="8dp" app:ud_avatar_borderWidth="0dp" app:ud_avatar_size="-4" style="@style/UDAvatar.Circle"/>
+    <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:gravity="center_vertical" android:id="@+id/search_suggest_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/search_suggest_avatar"/>
+    <View android:id="@+id/search_suggest_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/search_suggest_avatar"/>
+</RelativeLayout>

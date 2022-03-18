@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/bitable_cell_edit_panel_shadow" android:layout_width="match_parent" android:layout_height="30dp"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/bg_float" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+            <TextView android:textSize="16sp" android:textColor="@color/bitable_cell_edit_panel_text_color" android:gravity="center" android:id="@+id/clear_tv" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Block_Clear" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/bitable_cell_edit_panel_text_color" android:gravity="center" android:id="@+id/confirm_tv" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Doc_Block_EditTextComplete" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/date_picker_bg" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="210dp">
+            <com.larksuite.component.universe_design.timepicker.UDTimePicker android:id="@+id/date_picker_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="@color/date_picker_bg" app:ud_timePicker_datePickerMode="4" app:ud_timePicker_itemVisibleNum="5"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

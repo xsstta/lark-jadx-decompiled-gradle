@@ -1,0 +1,14 @@
+package com.bytedance.sdk.bytebridge.web.auth.sepc.gecko.model;
+
+public enum GeckoAuthResult {
+    TRUE,
+    FALSE,
+    EXCEPTION_EMPTY_URL,
+    EXCEPTION_NOT_HTTP,
+    EXCEPTION_PARSE_HOST_ERROR,
+    EXCEPTION_BRIDGE_NAME_EMPTY,
+    EXCEPTION_BRIDGE_PRIVILEGE_EMPTY,
+    EXCEPTION_RUNTIME,
+    EXCEPTION_ROLLBACK,
+    EXCEPTION_AUTH_RULE_EMPTY
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/item_bg_selector_c11" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/avatar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginTop="2dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:oval="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:layout_constraintEnd_toStartOf="@+id/source_container" app:layout_constraintStart_toEndOf="@+id/avatar" app:layout_constraintTop_toTopOf="0">
+        <com.ss.android.lark.widget.EllipsizedEmojiconTextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/notification_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.widget.richtext.RichTextView android:id="@+id/notification_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:richTextColor="@color/text_title"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:id="@+id/time_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/source_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="12dp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/notification_source_tv" android:layout_width="54dp" android:layout_height="54dp" android:maxLines="3" android:includeFontPadding="false"/>
+        <FrameLayout android:id="@+id/notification_source_image_container" android:layout_width="54dp" android:layout_height="54dp">
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/notification_source_iv" android:layout_width="54dp" android:layout_height="54dp" android:scaleType="centerCrop" app:border_width="0.5dp" app:radius="4dp"/>
+            <com.larksuite.component.ui.imageview.LKUIRoundedImageView2 android:id="@+id/notification_iv_mask" android:visibility="gone" android:layout_width="54dp" android:layout_height="54dp" android:src="@color/static_black" app:radius="4dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/notification_source_video_holder" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ud_icon_video_filled"/>
+        </FrameLayout>
+        <com.ss.android.lark.moments.impl.common.widget.MomentsFollowButton android:gravity="center" android:id="@+id/follow_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_marginTop="2dp"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

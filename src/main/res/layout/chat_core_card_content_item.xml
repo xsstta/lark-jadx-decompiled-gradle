@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRoundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content" app:rl_radius="4dp">
+    <FrameLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/card_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</com.larksuite.component.ui.layout.LKUIRoundLinearLayout>

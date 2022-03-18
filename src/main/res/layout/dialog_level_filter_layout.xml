@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rootView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/shadowView" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout android:orientation="vertical" android:id="@+id/dragLayout" android:background="@drawable/bg_detail_reply_bottom" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/titleBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:tb_background="@color/transparent" app:tb_title="@string/Calendar_Edit_SelectBuildingTitle"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.crumbs.LevelBreadcrumbsView android:id="@+id/breadCrumb" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/levelRv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <RelativeLayout android:id="@+id/selectAllContainer" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/selectAllDivider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+            <com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.EditSelectStateView android:id="@+id/selectAllBt" android:padding="0dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" android:layout_below="@+id/selectAllDivider" android:layout_marginStart="@dimen/dp_16"/>
+            <TextView android:textSize="@dimen/dp_15" android:textColor="@color/text_title" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="@string/Calendar_Common_SelectAll" android:singleLine="true" android:layout_below="@+id/selectAllDivider" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_16" android:layout_toEndOf="@+id/selectAllBt"/>
+        </RelativeLayout>
+    </com.ss.android.lark.calendar.impl.features.events.edit.fragment.widget.VerticalDragLayout>
+</FrameLayout>

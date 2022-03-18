@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bytedance.ee.bear.facade.common.widget.recyclerview.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_result_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/item_content" layout="@layout/search_result_list_item_no_preview"/>
+    <include android:id="@+id/item_menu" layout="@layout/search_result_item_menu_layout"/>
+</com.bytedance.ee.bear.facade.common.widget.recyclerview.SwipeMenuLayout>

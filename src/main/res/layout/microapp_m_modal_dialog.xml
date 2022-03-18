@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/microapp_m_shape_round_corner_4dp_white" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/microapp_m_modal_dialog_minimum_height">
+    <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/microapp_m_tv_title" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="5dp" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    <ScrollView android:scrollbarThumbHorizontal="@drawable/microapp_m_scroll_indicator" android:scrollbarThumbVertical="@drawable/microapp_m_scroll_indicator" android:id="@+id/microapp_m_sv_content_container" android:paddingTop="11dp" android:paddingBottom="48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/microapp_m_tv_title">
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_80000000" android:gravity="center" android:id="@+id/microapp_m_tv_content" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5dp"/>
+    </ScrollView>
+    <View android:background="@color/microapp_m_black_7" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/microapp_m_ll_buttons_container"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/microapp_m_ll_buttons_container" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignBottom="@+id/microapp_m_sv_content_container">
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/microapp_m_tv_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/microapp_m_div_between_cancel_and_confirm" android:background="@color/microapp_m_black_7" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/microapp_m_text_size_16" android:textColor="@color/microapp_m_red" android:gravity="center" android:id="@+id/microapp_m_tv_confirm" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

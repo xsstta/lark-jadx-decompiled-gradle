@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/lkui_N900" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:backgroundAlpha="0.4">
+    <TextView android:textSize="17sp" android:textColor="@color/lkui_N900" android:id="@+id/tv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.5dp" android:layout_marginTop="30dp" android:text="@string/Lark_Legacy_PhotoEditBack"/>
+    <TextView android:textSize="20sp" android:textColor="@color/lkui_B500" android:id="@+id/tv_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginRight="24.5dp" android:text="@string/Lark_Legacy_DoneNow" android:layout_alignParentRight="true"/>
+    <EditText android:textStyle="bold" android:textColor="@color/lkui_R500" android:id="@+id/et_input" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="21dp" android:layout_marginRight="24dp" android:layout_below="@+id/tv_back" android:textCursorDrawable="@null"/>
+    <com.ss.android.photoeditor.base.view.ColorChoiceView android:id="@+id/text_color_selector" android:layout_width="match_parent" android:layout_height="29dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

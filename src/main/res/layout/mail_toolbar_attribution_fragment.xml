@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_gravity="center" android:id="@+id/toolbarPanelScrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp">
+                <com.ss.android.lark.mail.impl.widget.FontLayout android:id="@+id/selectFontSize" android:focusable="true" android:clickable="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="60dp">
+                    <FrameLayout android:id="@+id/mailFontSmart" android:tag="FontSmall" android:background="@drawable/mail_toolbar_subitem_font_bg" android:layout_height="0dp" android:layout_marginEnd="2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.25" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/mailFontNormal" app:layout_constraintTop_toTopOf="0" style="@style/DocAttrFrame">
+                        <TextView android:textSize="12dp" android:textColor="@color/mail_toolbar_font_selector_color" android:text="@string/Mail_FormatFontSize_SmallSize" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/mailFontNormal" android:tag="FontNormal" android:background="@drawable/mail_toolbar_subitem_font_bg" android:layout_height="0dp" android:layout_marginEnd="2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.25" app:layout_constraintLeft_toRightOf="@+id/mailFontSmart" app:layout_constraintRight_toLeftOf="@+id/mailFontLarge" app:layout_constraintTop_toTopOf="0" style="@style/DocAttrFrame">
+                        <TextView android:textSize="16dp" android:textColor="@color/mail_toolbar_font_selector_color" android:text="@string/Mail_FormatFontSize_NormalSize" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/mailFontLarge" android:tag="FontLarge" android:background="@drawable/mail_toolbar_subitem_font_bg" android:layout_height="0dp" android:layout_marginEnd="2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.25" app:layout_constraintLeft_toRightOf="@+id/mailFontNormal" app:layout_constraintRight_toLeftOf="@+id/mailFontHuge" app:layout_constraintTop_toTopOf="0" style="@style/DocAttrFrame">
+                        <TextView android:textSize="20dp" android:textColor="@color/mail_toolbar_font_selector_color" android:text="@string/Mail_FormatFontSize_BigSize" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/mailFontHuge" android:tag="FontHuge" android:background="@drawable/mail_toolbar_subitem_font_bg" android:layout_height="0dp" android:layout_marginEnd="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintHorizontal_bias="0.25" app:layout_constraintLeft_toRightOf="@+id/mailFontLarge" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/DocAttrFrame">
+                        <TextView android:textSize="24dp" android:textColor="@color/mail_toolbar_font_selector_color" android:text="@string/Mail_FormatFontSize_ExtraBigSize" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <View android:id="@+id/mailFontShadow" android:background="@drawable/mail_toolbar_subitem_all_font_shadow" android:visibility="invisible" android:layout_width="0dp" android:layout_height="80dp"/>
+                </com.ss.android.lark.mail.impl.widget.FontLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="60dp">
+                    <FrameLayout android:tag="bold" android:background="@drawable/mail_toolbar_subitem_left" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_bold_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="italic" android:background="@drawable/mail_toolbar_subitem_middle" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_italic_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="underline" android:background="@drawable/mail_toolbar_subitem_middle" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_underline_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="strikethrough" android:background="@drawable/mail_toolbar_subitem_right" android:layout_marginEnd="0dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_horizontal_line_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginBottom="12dp">
+                    <FrameLayout android:tag="alignLeft" android:background="@drawable/mail_toolbar_subitem_left" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_left_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="alignCenter" android:background="@drawable/mail_toolbar_subitem_middle" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_center_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="alignRight" android:background="@drawable/mail_toolbar_subitem_right" android:layout_marginEnd="12dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_right_alignment_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="unorderedList" android:background="@drawable/mail_toolbar_subitem_left" android:layout_marginEnd="2dp" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_disorder_list_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                    <FrameLayout android:tag="orderedList" android:background="@drawable/mail_toolbar_subitem_right" style="@style/DocAttrFrame">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/icon_n1" app:srcCompat="@drawable/ud_icon_order_list_outlined" style="@style/DocAttrIcon"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/selectFont" android:background="@drawable/mail_general_box_radius_10" android:layout_width="match_parent" android:layout_height="48dp" android:backgroundTint="@color/mail_item_bg_color_selector_c11_overlay">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/Mail_Compose_FontPanel" android:lines="1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/fontFamilyName" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="4dp" android:lines="1" android:includeFontPadding="false" android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="12dp" android:layout_height="12dp" android:layout_marginRight="16dp" android:tint="@color/icon_n3" app:srcCompat="@drawable/ud_icon_hide_toolbar_outlined"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

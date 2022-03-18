@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/simple_pdf_bottom_view_container" android:background="@color/bg_filler" android:layout_width="match_parent" android:layout_height="78dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:id="@+id/simple_pdf_bottom_view_see_all" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Drive_Drive_ClickSeeMore"/>
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/facade_icon_arrow_down" android:tint="@color/icon_n2" android:layout_marginStart="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/multi_text_tool_bar_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/bitable_cell_edit_panel_shadow" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_16"/>
+    <RelativeLayout android:id="@+id/st_text_edit_toolbar" android:background="@color/bg_float" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_44">
+        <View android:id="@+id/toolbar_divider" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/space_kit_len_divider" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/space_kit_font_16" android:textColor="@color/bitable_cell_edit_panel_text_color" android:gravity="center" android:id="@+id/st_text_edit_complete" android:paddingLeft="@dimen/space_kit_len_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/space_kit_len_10" android:text="@string/Doc_Block_EditTextComplete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingEnd="@dimen/space_kit_len_10"/>
+    </RelativeLayout>
+    <com.bytedance.ee.bear.document.widget.KeyboardPlaceholderView android:layout_width="1dp" android:layout_height="wrap_content"/>
+</LinearLayout>

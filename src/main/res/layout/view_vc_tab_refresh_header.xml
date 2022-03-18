@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/vc_tab_refresh_lottie_view" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_centerInParent="true" app:lottie_colorFilter="@color/ud_B500" app:lottie_loop="true" app:lottie_rawRes="@raw/videochat_loading"/>
+    <com.ss.android.vc.common.widget.VcCircleProgressBar android:id="@+id/vc_tab_refresh_progress_bar" android:clickable="false" android:layout_width="22dp" android:layout_height="22dp" android:layout_centerInParent="true" app:background_color="@color/bg_body" app:background_width="1.7dp" app:max_value="100" app:progress_color="@color/primary_pri_500" app:rounded_corners="true" app:stroke_width="1.7dp"/>
+</RelativeLayout>

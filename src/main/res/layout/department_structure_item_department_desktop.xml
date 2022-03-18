@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/department_item_layout" android:background="@drawable/item_bg_selector_c16" android:layout_width="match_parent" android:layout_height="40dp" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="17dp">
+            <TextView android:textSize="14sp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="top" android:id="@+id/department_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="name" android:maxLines="2" android:layout_weight="1"/>
+            <ImageView android:id="@+id/image_in" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/contacts_nextlevel_arrow_svg"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider_next_department" android:background="@color/lkui_N50" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <View android:id="@+id/divider_next_people" android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp"/>
+</LinearLayout>

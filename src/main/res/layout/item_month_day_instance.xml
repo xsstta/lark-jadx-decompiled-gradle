@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selector_monthday_item" android:layout_width="match_parent" android:layout_height="@dimen/dp_48">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_month_day_event_zone" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_event_color" android:clickable="false" android:layout_width="@dimen/dp_7" android:layout_height="@dimen/dp_7" android:layout_marginLeft="@dimen/dp_19" android:layout_marginTop="@dimen/dp_14"/>
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_14">
+            <LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.ss.android.lark.calendar.impl.features.events.detail.widget.EventChipEndSplitTextView android:textSize="@dimen/dp_14" android:textColor="@color/text_title" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/tv_moonth_day_event_summery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:text="lark侧边栏方案讨论lark侧边栏方案讨论lark侧边栏方案讨论lark侧边栏方案讨论lark侧边栏方案讨论" android:singleLine="true" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_month_day_google" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/ud_icon_google_filled" android:tint="@color/icon_n3"/>
+                <ImageView android:id="@+id/iv_month_day_exchange" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/ud_icon_exchange_filled" android:tint="@color/icon_n3"/>
+                <ImageView android:id="@+id/iv_month_day_local" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="@dimen/dp_8" android:src="@drawable/ud_icon_cellphone_filled" android:tint="@color/icon_n3"/>
+            </LinearLayout>
+            <com.ss.android.lark.calendar.impl.features.events.detail.widget.EventChipEndSplitTextView android:textSize="@dimen/dp_12" android:textColor="@color/lkui_N600" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/tv_moonth_day_time_and_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间截止时间" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_finished_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

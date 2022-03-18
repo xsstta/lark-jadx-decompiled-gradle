@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scene2" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:gravity="center_horizontal" android:id="@+id/desc_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/applicants_grid" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </FrameLayout>
+        <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <Button android:textSize="17sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/confirm_button" android:background="@drawable/btn_selector_bg" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="21dp" android:text="@string/Lark_NearbyGroup_EnterChat" android:alpha="0" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

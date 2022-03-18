@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.ui.layout.LKUIRoundableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/nav_tab_roundable_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/text_title" android:id="@+id/navigation_tab_left_title" android:paddingTop="16dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_NavigationMore" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_alignParentStart="true"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/navigation_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/function_info_500" android:id="@+id/navigation_tab_edit" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_Edit" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/nav_tab_container" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</com.larksuite.component.ui.layout.LKUIRoundableLayout>

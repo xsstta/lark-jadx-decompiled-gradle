@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:background="@drawable/mm_bg_live_player_titlebar" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="76dp" android:paddingHorizontal="16dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/dp_10" android:textColor="@color/static_white" android:id="@+id/tv_live" android:background="@drawable/mm_bg_live_player_titlebar_live" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_4" android:paddingHorizontal="3dp" android:paddingVertical="1dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/dp_12" android:textColor="@color/static_white" android:id="@+id/tv_watch" android:background="@drawable/mm_bg_live_player_title_watch_num" android:paddingLeft="@dimen/dp_6" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dp_6" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:paddingHorizontal="@dimen/dp_6" android:paddingVertical="@dimen/dp_2"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/ll_bottom" android:background="@drawable/mm_bg_live_player_toolbar" android:paddingLeft="@dimen/dp_16" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="64dp" android:paddingHorizontal="@dimen/dp_16">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginBottom="8dp">
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/inno_live_layer_toolbar_normal_left"/>
+            <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/inno_live_layer_toolbar_normal_right"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</merge>

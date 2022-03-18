@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.bytedance.ee.bear.widgets.panel.CommonActionPanelLayout android:id="@+id/panel_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:panel_show_divider="true" app:panel_title="@string/CreationMobile_ECM_Delete_Failed_NoPermissions_title"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/bg_body" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/text_caption" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="@string/CreationMobile_ECM_Delete_Failed_NoPermissions_description" android:layout_marginStart="@dimen/list_item_left_margin" android:layout_marginEnd="@dimen/list_item_left_margin"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_users" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/list_item_left_margin" android:layout_marginEnd="@dimen/list_item_left_margin"/>
+        <TextView android:textSize="17sp" android:gravity="center" android:id="@+id/tv_done" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="20dp" android:text="@string/Doc_Facade_OfflineKnow" android:layout_marginStart="@dimen/list_item_left_margin" android:layout_marginEnd="@dimen/list_item_left_margin" style="@style/SpaceKitBtn2Level1"/>
+    </LinearLayout>
+</LinearLayout>

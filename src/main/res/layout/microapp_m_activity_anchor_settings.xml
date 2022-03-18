@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题:"/>
+        <EditText android:id="@+id/et_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:hint="默认为【添加】，最大可见长度为6" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="背景:"/>
+        <EditText android:id="@+id/et_backgroundColor" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:hint="默认为【#F85959】，[#][6|8位十六进制]" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="渠道:"/>
+        <EditText android:id="@+id/et_channel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:hint="默认为【anchor】" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="保存"/>
+</LinearLayout>

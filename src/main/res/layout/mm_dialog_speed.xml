@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/mm_bg_dialog_bottom_sheet_r12" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ss.android.lark.mm.module.player.speed.view.SpeedPicker android:id="@+id/mm_speed_picker" android:layout_width="match_parent" android:layout_height="61dp" android:layout_marginTop="32dp"/>
+    <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivSkip" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="20dp" android:layout_centerVertical="true" app:srcCompat="@drawable/mm_ic_skip_silence_black"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/MMWeb_G_SkipSilentParts" android:layout_toRightOf="@+id/ivSkip" android:layout_centerVertical="true"/>
+        <com.larksuite.component.universe_design.p1166switch.UDSwitch android:id="@+id/mm_silence_switch" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

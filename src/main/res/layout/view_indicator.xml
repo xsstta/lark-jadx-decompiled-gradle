@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:paddingBottom="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="@dimen/calendar_view_indicator_height">
+    <com.larksuite.component.universe_design.tab.UDTabLayout android:id="@+id/viewTab" android:layout_width="wrap_content" android:layout_height="match_parent" app:ud_tab_bottomDividerEnabled="false" app:ud_tab_indicatorFullWidth="false">
+        <com.larksuite.component.universe_design.tab.UDTabItem android:id="@+id/calendarTabItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_CalendarTitle"/>
+        <com.larksuite.component.universe_design.tab.UDTabItem android:id="@+id/roomTabItem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Calendar_Common_Room"/>
+    </com.larksuite.component.universe_design.tab.UDTabLayout>
+    <ImageView android:id="@+id/sidebarEntrance" android:padding="@dimen/dp_6" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/ud_icon_calendar_view_outlined" android:tint="@color/icon_n2" android:layout_marginEnd="@dimen/dp_10" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/sidebarEntranceDot" android:background="@color/ud_R500" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="5dp" android:layout_marginEnd="5dp" app:layout_constraintEnd_toEndOf="@+id/sidebarEntrance" app:layout_constraintTop_toTopOf="@+id/sidebarEntrance"/>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

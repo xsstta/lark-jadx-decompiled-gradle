@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/feed_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activity_chatlist_inbox"/>
+    </FrameLayout>
+    <ViewStub android:layout_gravity="start" android:id="@+id/done_box_stub" android:layout="@layout/donebox_feed_layout" android:inflatedId="@+id/done_box_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/status_blur" android:background="@drawable/status_blur" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentTop="true"/>
+    <ViewStub android:gravity="center_vertical" android:id="@+id/ding_pocket_btn_stub" android:visibility="gone" android:layout="@layout/feed_ding_entrance_tip" android:inflatedId="@+id/ding_pocket_btn" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginBottom="125dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

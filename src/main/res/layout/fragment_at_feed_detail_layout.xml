@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/at_me_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8.5dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/at_me_selector" android:padding="3dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/ud_title_color" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Lark_Messenger_GroupingAtMeMessages_Option" android:layout_weight="1" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+    <View android:id="@+id/navigation_mute_badge_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="48dp" app:layout_constraintEnd_toEndOf="0"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/at_all_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.larksuite.component.universe_design.checkbox.UDCheckBox android:id="@+id/at_all_selector" android:padding="3dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/ud_title_color" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Lark_Messenger_GroupingAtAllMessages_Option" android:layout_weight="1" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+</LinearLayout>

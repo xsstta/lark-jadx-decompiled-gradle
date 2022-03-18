@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/upgrade_dialog_title_bg_pic" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="120dp">
+        <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/static_white" android:ellipsize="end" android:id="@+id/dialog_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+</LinearLayout>

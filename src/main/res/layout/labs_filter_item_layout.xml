@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/item" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/effect_img" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:scaleType="centerCrop"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/icon_desc" android:padding="@dimen/dp_14" android:visibility="gone" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:scaleType="centerCrop"/>
+        <include layout="@layout/labs_effect_loading_layout"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="@color/vc_labs_effect_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/name" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dp_13" android:layout_marginTop="@dimen/dp_2"/>
+    <View android:layout_gravity="center_horizontal" android:id="@+id/effect_selected_state" android:background="@drawable/vc_bg_labs_effect_corners_selector" android:visibility="gone" android:layout_width="@dimen/dp_4" android:layout_height="@dimen/dp_4" android:layout_marginTop="@dimen/dp_6"/>
+</LinearLayout>

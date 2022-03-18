@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_popup_window_white_corner4" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="132dp">
+        <com.ss.android.vc.meeting.module.meetingdialog.participantmanage.InMeetingControlPopItemLayout android:id="@+id/ll_copy_meeting_info" android:layout_width="match_parent" android:layout_height="wrap_content" app:pop_color_style="0" app:pop_image_res="@drawable/ud_icon_copy_outlined" app:pop_title_text="@string/View_M_CopyJoiningInfo"/>
+        <com.ss.android.vc.meeting.module.meetingdialog.participantmanage.InMeetingControlPopItemLayout android:id="@+id/ll_share_to_chat" android:layout_width="match_parent" android:layout_height="wrap_content" app:pop_color_style="0" app:pop_image_res="@drawable/ud_icon_forward_outlined" app:pop_title_text="@string/View_M_ShareToChat"/>
+    </LinearLayout>
+    <Space android:layout_width="@dimen/dp_16" android:layout_height="match_parent"/>
+</LinearLayout>

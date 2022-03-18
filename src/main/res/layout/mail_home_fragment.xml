@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.mail.impl.home.threadlist.MailSmartRefreshLayout android:id="@+id/mail_refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.mail.impl.home.threadlist.MailFeedRecyclerView android:id="@+id/mailTabRecycleView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.ss.android.lark.mail.impl.home.threadlist.MailSmartRefreshLayout>
+    <FrameLayout android:id="@+id/label_loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/mail_home_empty_hint_container" android:layout="@layout/mail_home_empty_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/multiTitleBar" android:layout="@layout/mail_home_mutliselect_titlebar" android:layout_width="match_parent" android:layout_height="@dimen/mail_home_multi_title_bar_height" app:layout_constraintTop_toTopOf="0"/>
+    <com.larksuite.component.universe_design.shadow.UDShadowLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:ud_shadow_color="@color/shadow_pri_md" app:ud_shadow_direction="0" app:ud_shadow_radius="24dp" style="@style/UDShadow.S4.Down">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/mail_compose_button" android:background="@drawable/mail_icon_new_compose_background_selector" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/ud_icon_add_outlined" android:scaleType="fitCenter" android:tint="@color/static_white"/>
+    </com.larksuite.component.universe_design.shadow.UDShadowLayout>
+    <ViewStub android:id="@+id/mail_migration_dialog" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/mail_oauth_status" android:layout="@layout/mail_oauth_status_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/mail_internal_dialog" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

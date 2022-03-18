@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script>
+        var CUSTOM_PROTOCOL_ID_SCHEME = 'signin';
+        var idIframe;
+        function getMessageIFrame() {
+          if(!idIframe) {
+            var idIframe = document.createElement('iframe');
+            idIframe.style.display = 'none';
+            idIframe = document.documentElement.appendChild(idIframe);
+          }
+          return idIframe;
+        }
+        function onError() {
+            getMessageIFrame().src = CUSTOM_PROTOCOL_ID_SCHEME + "://secure?error=error";
+        }
+        window.onerror=onError;
+
+    </script>
+</head>
+<body>
+<!-- 替换${appId} -->
+<script src="${lark_host}security/device/captcha/device?disableSSL=false&appId=${appId}&requestId=${requestId}" onerror="onError()"
+        type="application/javascript">
+
+</script>
+
+</body>
+</html>

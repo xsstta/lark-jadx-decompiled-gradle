@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.common.widget.LineHeightTextView android:textSize="14dp" android:textColor="@color/text_title" android:id="@+id/full_title_tv" android:background="@drawable/bg_solid_n00" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+</LinearLayout>

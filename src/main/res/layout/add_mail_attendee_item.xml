@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_68">
+        <com.joooonho.SelectableRoundedImageView android:id="@+id/ivAvatar" android:focusable="false" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:scaleType="centerCrop" android:layout_marginStart="@dimen/dp_16" app:sriv_left_bottom_corner_radius="5dp" app:sriv_left_top_corner_radius="5dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="5dp" app:sriv_right_top_corner_radius="5dp"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:id="@+id/tvMail" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/dp_12"/>
+        <ImageView android:id="@+id/ivDelete" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n2" android:layout_marginEnd="@dimen/dp_20"/>
+    </LinearLayout>
+    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="@dimen/dp_05" android:layout_marginStart="@dimen/dp_76"/>
+</LinearLayout>

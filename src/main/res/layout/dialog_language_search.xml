@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_view" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/View_G_SelectLanguage"/>
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="13dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/language_search_manage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/header_view">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_bar_normal" android:background="@drawable/interpreter_searchbar_selector" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+            <com.ss.android.vc.common.widget.IconFontView android:textSize="16dp" android:textColor="@color/icon_n3" android:id="@+id/search_bar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_search_new" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/text_title" android:textColorHint="@color/text_placeholder" android:id="@+id/search_et_normal" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/View_G_SearchLanguages" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/search_bar_image"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/language_outer_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/fl_language_list_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ListView android:id="@+id/language_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/vc_transparent" android:cacheColorHint="#00000000" android:divider="@null"/>
+            </FrameLayout>
+            <RelativeLayout android:id="@+id/search_mask" android:background="@color/ud_N800" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="@+id/search_mask_keyboard_padding" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:gravity="center" android:layout_gravity="center" android:id="@+id/no_result_textview" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/View_M_NoResultsFound"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/language_list_bottom_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="16dp" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/search_list_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/header_view"/>
+</RelativeLayout>

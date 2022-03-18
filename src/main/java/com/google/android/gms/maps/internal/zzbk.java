@@ -1,0 +1,24 @@
+package com.google.android.gms.maps.internal;
+
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.internal.maps.C21936a;
+import com.google.android.gms.internal.maps.zzb;
+import com.google.android.gms.maps.model.StreetViewPanoramaLocation;
+
+public abstract class zzbk extends zzb implements zzbj {
+    public zzbk() {
+        super("com.google.android.gms.maps.internal.IOnStreetViewPanoramaChangeListener");
+    }
+
+    /* access modifiers changed from: protected */
+    @Override // com.google.android.gms.internal.maps.zzb
+    public final boolean dispatchTransaction(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        if (i != 1) {
+            return false;
+        }
+        onStreetViewPanoramaChange((StreetViewPanoramaLocation) C21936a.m79263a(parcel, StreetViewPanoramaLocation.CREATOR));
+        parcel2.writeNoException();
+        return true;
+    }
+}

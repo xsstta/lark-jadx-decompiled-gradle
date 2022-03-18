@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/pager_root_container" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/frame_layout" android:background="@color/lkui_transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/photoPagerHeader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N00" android:layout_gravity="center" android:id="@+id/tvIndex" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/ivDelete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_trash_delete" android:layout_marginEnd="@dimen/dp_16"/>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/photoPagerFooter" android:background="@color/lkui_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.ZoomInScrollView android:id="@+id/zoom_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/header_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/header_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/back_image_default2" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/profile_back_gradient" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/card_wrapper" android:background="@drawable/profile_back_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="-150dp" android:layout_marginRight="0dp" android:minHeight="500dp">
+                <RelativeLayout android:paddingLeft="26dp" android:paddingRight="26dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="96dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="30sp" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/group_name_tv" android:layout_width="wrap_content" android:layout_height="42dp" android:maxLines="1"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:id="@+id/user_allcount_tv" android:layout_width="wrap_content" android:layout_height="16.5dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/group_description_layout" android:background="@color/bg_float" android:paddingLeft="16dp" android:paddingTop="12.5dp" android:paddingRight="16dp" android:paddingBottom="12.5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/group_description_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_GroupDescriptionInfo" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:ellipsize="end" android:id="@+id/group_description_detail_tv" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Lark_Legacy_ShareGroupChatNoDescription" android:layout_below="@+id/group_description_title" android:layout_alignParentLeft="true"/>
+                </RelativeLayout>
+                <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="26dp" android:layout_marginRight="26dp"/>
+                <RelativeLayout android:id="@+id/group_member_layout" android:background="@color/bg_float" android:paddingLeft="16dp" android:paddingTop="22dp" android:paddingRight="16dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/tv_group_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_ChatGroupAdminUser" android:layout_alignParentLeft="true"/>
+                    <com.joooonho.SelectableRoundedImageView android:id="@+id/iv_avator" android:background="@drawable/share_group_icon_bg" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:scaleType="centerCrop" android:layout_below="@+id/tv_group_owner" app:sriv_border_width="0dp" app:sriv_oval="true"/>
+                </RelativeLayout>
+                <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ss.android.lark.widget.ZoomInScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp" android:layout_marginTop="108dp" android:layout_marginRight="10dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/function_info_500" android:gravity="center" android:id="@+id/bt_group_chat_join" android:background="@drawable/widget_item_bg_selector_c11_gray_c6" android:layout_width="match_parent" android:layout_height="44dp"/>
+    </LinearLayout>
+    <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

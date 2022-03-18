@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/drive_list_main_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:gravity="center_vertical" android:id="@+id/upload_list_main_title" android:layout_width="match_parent" android:layout_height="44dp" android:contentDescription="title_bar" app:widget_widgets_tb_divider_visible="false"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/drive_upload_list_rececler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/ud_empty_state_view" android:visibility="gone" android:layout_height="match_parent" app:ud_empty_desc="@string/Drive_Drive_AllUploadCompleted" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_content" style="@style/SpaceEmptyStatusStyle"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/player_half_holder" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@drawable/mm_player_half_topbar_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/player_half_bottom">
+            <ImageView android:id="@+id/player_half_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:src="@drawable/mm_player_subtitle_off" android:layout_alignParentTop="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/player_half_bottom" android:background="#64000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp">
+                <com.ss.android.lark.mm.module.player.core.layer.widget.MmVideoTimeTextView android:textSize="15dp" android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/player_half_pos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="2dp" android:layout_centerVertical="true"/>
+                <com.ss.android.lark.inno.player.widget.VcSeekBar android:id="@+id/player_half_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:progressDrawable="@drawable/mm_player_seekbar_progress" android:minHeight="2dp" android:thumb="@drawable/mm_player_shape_thumb" android:thumbOffset="6dp" android:layout_toLeftOf="@+id/player_half_dur" android:layout_toRightOf="@+id/player_half_pos" android:layout_centerVertical="true" android:paddingStart="6dp" android:paddingEnd="6dp"/>
+                <com.ss.android.lark.mm.module.player.core.layer.widget.MmVideoTimeTextView android:textSize="15dp" android:textColor="@color/lkui_N00" android:gravity="center" android:id="@+id/player_half_dur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="6dp" android:layout_toLeftOf="@+id/mm_player_half_expand" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/mm_player_half_expand" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:src="@drawable/mm_player_half_expand" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/play_btn" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mm_player_half_play" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</merge>

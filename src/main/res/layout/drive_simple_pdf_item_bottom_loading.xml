@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/simple_pdf_bottom_view_container" android:background="@color/bg_filler" android:layout_width="match_parent" android:layout_height="78dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="14dp" android:layout_height="14dp" android:indeterminateTint="@color/icon_n2"/>
+        <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Drive_Drive_Load_More" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</RelativeLayout>

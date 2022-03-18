@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/space_kit_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bytedance.ee.bear.facade.common.widget.NoNetworkView android:id="@+id/noNetworkView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/list_refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableOverScrollBounce="false" app:srlEnableOverScrollDrag="false" app:srlEnablePreviewInEditMode="true" app:srlEnableRefresh="true">
+            <com.bytedance.ee.bear.facade.common.widget.recyclerview.CircleRefreshHeader android:layout_width="match_parent" android:layout_height="60dp"/>
+            <com.bytedance.ee.bear.widgets.BaseRecyclerView android:id="@+id/todo_list_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.oubowu.stickyitemdecoration.StickyHeadContainer android:id="@+id/sticky_section_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/todo_section_item"/>
+        </com.oubowu.stickyitemdecoration.StickyHeadContainer>
+        <com.bytedance.ee.bear.todocenter.ui.widget.TodoEmptyView android:id="@+id/todo_empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:translationY="-65dp"/>
+    </FrameLayout>
+</LinearLayout>

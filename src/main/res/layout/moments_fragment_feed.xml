@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" android:id="@+id/root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout android:id="@+id/ptrLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.moments.impl.feed.MomentsFeedRv android:scrollbarStyle="outsideOverlay" android:id="@+id/rvFeed" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:choiceMode="singleChoice" android:overScrollMode="never"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrFrameLayout>
+</FrameLayout>

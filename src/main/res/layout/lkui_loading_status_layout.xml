@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/loadingLayout" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lkui_load_content_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.larksuite.component.ui.loading.LKUILoadingView android:id="@+id/lkui_loading_view" android:visibility="gone" android:layout_width="125dp" android:layout_height="125dp"/>
+        <ImageView android:id="@+id/lkui_load_status_iv" android:visibility="gone" android:layout_width="125dp" android:layout_height="125dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_placeholder" android:gravity="center" android:id="@+id/lkui_load_status_tv" android:layout_width="216.5dp" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

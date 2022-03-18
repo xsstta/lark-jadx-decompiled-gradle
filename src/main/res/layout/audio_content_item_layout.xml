@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.ui.layout.LKUIRoundableLayout android:id="@+id/audio_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/audio_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/edited_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:lineSpacingExtra="@dimen/text_default_line_spacing"/>
+            <com.ss.android.lark.widget.lark_chat_keyboard.widget.PlayControlBar android:id="@+id/play_cb" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="17sp" android:textColor="@color/text_title" android:id="@+id/recognized_text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:lineSpacingExtra="@dimen/text_default_line_spacing"/>
+            <TextView android:textSize="12sp" android:textColor="@color/text_caption" android:id="@+id/recognized_text_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/Lark_Chat_AudioConvertToTextSuccess" android:drawablePadding="4dp" android:drawableStart="@drawable/ic_svg_chat_audio_message_text_flag_gray_n500"/>
+            <ViewStub android:id="@+id/text_translate_content" android:layout="@layout/audio_content_text_translation" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.larksuite.component.ui.layout.LKUIRoundableLayout>
+    <ImageView android:layout_gravity="top" android:id="@+id/unread_tip_iv" android:background="@drawable/common_radius6dp_color_c15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3dp"/>
+</LinearLayout>

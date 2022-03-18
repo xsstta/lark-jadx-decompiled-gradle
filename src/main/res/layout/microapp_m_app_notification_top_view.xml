@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.notice.UDNotice xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/notice" android:layout_width="match_parent" android:layout_height="wrap_content" app:ud_notice_icon="@drawable/ud_icon_boards_filled" app:ud_notice_iconBtn="@drawable/ud_icon_close_outlined" app:ud_notice_iconColor="@color/function_info_500" app:ud_notice_textActionColor="@color/function_info_500" app:ud_notice_textColor="@color/black"/>

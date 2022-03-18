@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/tab_name_wrapper" android:layout_width="wrap_content" android:layout_height="28dp">
+        <TextView android:textSize="12dp" android:textColor="@drawable/workplace_template_tab_name_color" android:ellipsize="end" android:gravity="center" android:id="@+id/tab_name" android:background="@drawable/workplace_template_tab_item_bg" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="-3dp" android:maxLines="1"/>
+    </FrameLayout>
+</FrameLayout>

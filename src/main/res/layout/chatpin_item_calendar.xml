@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/pin_item_bg_selector_c11_gray_c6_alpha">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinItemStyle">
+        <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinTitleStyle"/>
+        <TextView android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PinSecondContentStyle"/>
+        <com.ss.android.lark.calendar.impl.features.events.detail.widget.TimeShowTextView android:textSize="14sp" android:textColor="#ff757575" android:id="@+id/cal_time_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/text_placeholder" android:id="@+id/tv_name_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pin_item_sender_text_margin_top"/>
+    </LinearLayout>
+</FrameLayout>

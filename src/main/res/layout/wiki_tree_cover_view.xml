@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="210dp">
+    <ImageView android:id="@+id/iv_wiki_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_collapseMode="2"/>
+    <View android:id="@+id/cover_mask_view" android:background="@color/wiki_tree_home_cover_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.bytedance.ee.bear.widgets.BaseTitleBar android:id="@+id/wiki_fixed_title_bar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/doc_titlebar_height" android:layout_alignParentTop="true" app:widget_widgets_tb_divider_visible="false"/>
+    <TextView android:textSize="30sp" android:textStyle="bold" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_wiki_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="22dp" android:maxLines="2" android:layout_below="@+id/wiki_fixed_title_bar" android:layout_marginStart="28dp" android:layout_marginEnd="28dp"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceTagTextView android:id="@+id/tv_scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28dp" android:layout_alignParentBottom="true" android:layout_marginStart="28dp"/>
+    <View android:background="@color/line_border_card" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</merge>

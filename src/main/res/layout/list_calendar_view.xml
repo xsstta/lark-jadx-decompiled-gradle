@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.lark.calendar.impl.features.common.widget.calendar.month.MonthViewPager android:id="@+id/list_calendar_month_viewpager" android:background="@color/bg_body" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/dp_216"/>
+    <com.ss.android.lark.calendar.impl.features.common.widget.calendar.week.WeekViewPager android:id="@+id/list_calendar_week_viewpager" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="@dimen/dp_40"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/list_calendar_event_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:id="@+id/calendar_status_container" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/list_calendar_status" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_22" android:src="@drawable/ud_icon_vc_toolbar_up_filled" android:scaleType="fitCenter" android:tint="@color/ud_N300"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/list_event_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/calendar_rv_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" ptr:lkui_ptr_duration_to_close_either="100" ptr:lkui_ptr_keep_header_when_refresh="true" ptr:lkui_ptr_pull_to_fresh="false" ptr:lkui_ptr_ratio_of_header_height_to_refresh="1.2" ptr:lkui_ptr_resistance="1.7">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_calendar_rv" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="4dp" android:src="@drawable/bg_shadow"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

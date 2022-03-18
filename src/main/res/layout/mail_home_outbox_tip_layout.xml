@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.larksuite.component.universe_design.notice.UDNotice xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="45dp" app:ud_notice_icon="@drawable/ud_icon_info_hollow_filled" app:ud_notice_text="@string/Mail_Outbox_Ribbon_Description" app:ud_notice_textBtn="@string/Mail_Outbox_Dismiss"/>

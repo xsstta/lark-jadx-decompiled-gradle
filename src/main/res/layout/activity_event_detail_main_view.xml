@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/detailRootView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.events.detail.widget.HeaderPanelBackground android:id="@+id/headerBgView" android:layout_width="match_parent" android:layout_height="@dimen/dp_262" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ss.android.lark.calendar.impl.features.events.detail.view.EventTitleView android:orientation="vertical" android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.calendar.impl.features.events.detail.widget.EventScrollParentLayout android:orientation="vertical" android:id="@+id/scrollingParent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:overScrollMode="never">
+            <com.ss.android.lark.calendar.impl.features.events.detail.view.EventHeaderView android:orientation="vertical" android:id="@+id/headerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/calendar_event_detail_body_view"/>
+        </com.ss.android.lark.calendar.impl.features.events.detail.widget.EventScrollParentLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:layout_alignParentBottom="true" layout="@layout/calendar_event_detail_footer_view"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.ss.android.lark.calendar.impl.features.events.edit.widget.CalendarLoadingView android:id="@+id/launchLoadingView" android:paddingTop="@dimen/dp_25" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

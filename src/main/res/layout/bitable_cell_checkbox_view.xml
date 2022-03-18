@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatCheckBox xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/space_kit_trans" android:paddingTop="0dp" android:paddingBottom="0dp" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableStart="@drawable/bitable_card_checkbox_item_selector" android:paddingStart="@dimen/space_kit_len_6" android:paddingEnd="@dimen/space_kit_len_6"/>

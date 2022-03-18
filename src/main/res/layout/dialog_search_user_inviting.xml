@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/dp_17" android:textColor="@color/text_title" android:gravity="center_vertical" android:id="@+id/participant_name_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="张三" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16"/>
+    <View android:background="@drawable/divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/dp_12"/>
+    <com.ss.android.vc.meeting.module.meetingdialog.participantmanage.ControlMenuItemLayout android:id="@+id/cancel_calling" android:layout_width="match_parent" android:layout_height="wrap_content" app:color_style="1" app:icon_src="@drawable/ud_icon_call_end_outlined" app:title_text="@string/View_G_CancelCall"/>
+    <Space android:layout_width="match_parent" android:layout_height="4dp"/>
+</LinearLayout>

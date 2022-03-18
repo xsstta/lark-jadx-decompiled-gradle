@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12dp" android:textColor="@drawable/selector_vc_feedback_tag_txt" android:gravity="center" android:background="@drawable/selector_vc_meeting_feedback_tag_bkg" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="7.5dp" android:layout_marginTop="8dp" android:layout_marginRight="7.5dp" android:layout_marginBottom="8dp" android:onClick="onItemClick"/>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/imtoken_message_topic_group_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rotateViewContainer" android:layout_width="wrap_content" android:layout_height="@dimen/dp_56" android:layout_marginStart="@dimen/dp_140" android:layout_alignParentStart="true">
+        <ImageView android:id="@+id/rotateView" android:background="@drawable/ud_icon_arrow_down_outlined" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:tint="@color/icon_n2"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/rotateHeaderText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Groups_Pulldowntorefresh" android:layout_marginStart="@dimen/dp_4"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/loadingContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_56" android:layout_centerHorizontal="true">
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/thread_topic_header_loading_bg" android:indeterminateBehavior="repeat"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_caption" android:id="@+id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Groups_RefreshLoading" android:layout_marginStart="@dimen/dp_4"/>
+    </LinearLayout>
+</RelativeLayout>

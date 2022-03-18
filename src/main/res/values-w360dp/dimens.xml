@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyboard_icon_horizontal_margin">10dp</dimen>
+    <dimen name="keyboard_icon_margin_append">12dp</dimen>
+    <dimen name="keyboard_voice_icon_horizontal_padding">14dp</dimen>
+</resources>

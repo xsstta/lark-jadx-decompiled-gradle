@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.widget.flowlayout.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/call_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_0" app:srcCompat="@drawable/ud_icon_call_net_outlined" app:tint="@color/gray_9e"/>
+    <com.ss.android.lark.widget.linked_emojicon.widget.LinkEmojiTextView android:textSize="@dimen/dp_16" android:textColor="@color/gray_9e" android:gravity="start" android:id="@+id/call_info" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_CallNow" android:layout_marginStart="@dimen/dp_8"/>
+    <LinearLayout android:id="@+id/call_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/primary_pri_500" android:id="@+id/call_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_CallNow" android:paddingStart="@dimen/dp_8"/>
+    </LinearLayout>
+</com.ss.android.lark.widget.flowlayout.FlowLayout>

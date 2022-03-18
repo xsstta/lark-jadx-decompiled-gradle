@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_attendee_layout" android:layout_width="match_parent" android:layout_height="@dimen/dp_60" android:layout_marginRight="@dimen/dp_6">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_avatar" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_4" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.joooonho.SelectableRoundedImageView android:id="@+id/iv_avatar" android:focusable="false" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:layout_marginRight="@dimen/dp_8" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:sriv_left_bottom_corner_radius="5dp" app:sriv_left_top_corner_radius="5dp" app:sriv_oval="true" app:sriv_right_bottom_corner_radius="5dp" app:sriv_right_top_corner_radius="5dp"/>
+            <ImageView android:id="@+id/iv_status" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginRight="@dimen/dp_4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="@dimen/dp_6">
+            <com.larksuite.framework.ui.SpareLayout android:orientation="horizontal" android:id="@+id/rl_attendee_feature" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_title" android:ellipsize="end" android:id="@+id/tv_attendee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" android:singleLine="true" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/tv_outer_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5"/>
+                <TextView android:textSize="@dimen/dp_11" android:textStyle="bold" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/tv_optional" android:background="@drawable/tv_border_gray" android:paddingLeft="@dimen/dp_4" android:paddingTop="@dimen/dp_1" android:paddingRight="@dimen/dp_4" android:paddingBottom="@dimen/dp_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_5" android:text="@string/Calendar_Detail_Optional" android:singleLine="true"/>
+            </com.larksuite.framework.ui.SpareLayout>
+            <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:id="@+id/tv_partial_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/Calendar_Meeting_PartOfMemLeftTip" android:singleLine="true"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/group_attendee_loading" android:visibility="gone" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/event_attendee_loading" android:indeterminateBehavior="repeat" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5"/>
+        <RelativeLayout android:id="@+id/rl_spread_group_members" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30">
+            <ImageView android:id="@+id/iv_arrow" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_down_outlined" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_invisible_group_members" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30">
+            <ImageView android:id="@+id/iv_invisible" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_visible_lock_outlined" android:tint="@color/icon_n3" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_breakup_group" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30">
+            <ImageView android:id="@+id/iv_breakup" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_expand_outlined" android:tint="@color/icon_n3" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/btn_delete_attendee" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30">
+            <ImageView android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:src="@drawable/ud_icon_close_outlined" android:tint="@color/icon_n3" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_group_members" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/view_divider" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/dp_68" android:layout_marginRight="@dimen/dp_5"/>
+</LinearLayout>

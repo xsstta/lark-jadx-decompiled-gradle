@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.calendar.impl.features.events.edit.widget.ListenableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_time_choose_container" android:background="@color/lkui_N00" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_container_all_day_switch" android:layout_width="match_parent" android:layout_height="@dimen/dp_50">
+        <com.ss.android.lark.calendar.impl.features.events.edit.widget.SwitchView android:id="@+id/switch_view_all_day" android:layout_width="@dimen/dp_51" android:layout_height="@dimen/dp_31" android:layout_marginRight="@dimen/dp_15" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SwitchButtonMD"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/lkui_N800" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:text="@string/Calendar_Edit_Allday" android:layout_toLeftOf="@+id/switch_view_all_day" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <FrameLayout android:id="@+id/ll_time_picker" android:background="@android:color/white" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/lkui_N300" android:layout_width="match_parent" android:layout_height="@dimen/dp_05"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_49">
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N400" android:gravity="center" android:id="@+id/event_start_time_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_StartTime" android:layout_weight="1"/>
+        <View android:background="@color/lkui_N300" android:layout_width="@dimen/dp_05" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/dp_16" android:textColor="@color/lkui_N400" android:gravity="center" android:id="@+id/event_end_time_button" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Calendar_Edit_EndTime" android:layout_weight="1"/>
+    </LinearLayout>
+</com.ss.android.lark.calendar.impl.features.events.edit.widget.ListenableLinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/lookEventRootView" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.lark.calendar.impl.features.common.widget.scrollview.OverScrollView android:id="@+id/lookScrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never">
+        <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.dragdrop.EventChipsDragLayer android:id="@+id/chipsDragLayer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ss.android.lark.calendar.impl.features.arrange.arrangetime.widget.TimeBarLine android:id="@+id/timeLineLayer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.gridline.EventChipsViewLayer android:id="@+id/chipsLayer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.ss.android.lark.calendar.impl.features.arrange.arrangelook.gridline.CurrentTimeLine android:id="@+id/currentTimeLine" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ss.android.lark.calendar.impl.features.arrange.arrangelook.dragdrop.EventChipsDragLayer>
+    </com.ss.android.lark.calendar.impl.features.common.widget.scrollview.OverScrollView>
+</FrameLayout>

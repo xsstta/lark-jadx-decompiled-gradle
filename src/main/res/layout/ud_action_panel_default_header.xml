@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="@dimen/ud_action_panel_title_padding_left_right" android:paddingTop="@dimen/ud_action_panel_title_padding_top_bottom" android:paddingRight="@dimen/ud_action_panel_title_padding_left_right" android:paddingBottom="@dimen/ud_action_panel_title_padding_top_bottom" android:layout_width="match_parent" android:layout_height="@dimen/ud_action_panel_title_height">
+    <TextView android:textAppearance="@style/UDText.Body2" android:textColor="@color/text_placeholder" android:ellipsize="end" android:gravity="center" android:id="@+id/ud_dialog_title_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/lkui_N900" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.photoeditor.graffiti.GraffitiView android:id="@+id/graffiti_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_graffiti_setting" android:background="@drawable/photo_editor_text_choice_color_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="115.5dp" android:layout_marginBottom="0.5dp" android:layout_alignParentBottom="true">
+        <com.ss.android.photoeditor.base.view.ColorChoiceView android:id="@+id/ll_paint_color_choice" android:layout_width="match_parent" android:layout_height="29dp" android:layout_marginLeft="15dp" android:layout_marginTop="21dp" android:layout_marginRight="15dp" android:layout_marginBottom="21dp" android:layout_alignParentBottom="true"/>
+        <com.ss.android.photoeditor.graffiti.ShowTipsSeekBarLinearLayout android:id="@+id/show_tips_seek_bar_ll" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

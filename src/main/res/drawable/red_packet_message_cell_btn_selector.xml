@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/red_packet_message_cell_btn_closed"/>
+    <item android:drawable="@drawable/red_packet_message_cell_btn_open"/>
+</selector>

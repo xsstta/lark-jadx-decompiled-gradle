@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/sticker_tab_item_view_bg" android:layout_width="32dp" android:layout_height="32dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/iv_icon" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_icon_sticker_tab_default"/>
+</FrameLayout>

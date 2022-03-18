@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="0dp" android:layout_marginRight="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/text_title" android:id="@+id/select_menu_close_image_view" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lark_Legacy_CancelTip"/>
+        <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/lkui_dialog_title_tv" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginRight="24dp"/>
+    </LinearLayout>
+    <com.larksuite.component.ui.navigation.LKUISearchView android:id="@+id/select_menu_search_view" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="6dp" android:layout_marginBottom="12dp" app:search_hint_text="@string/Lark_Legacy_Search" app:search_hint_textColor="@color/text_placeholder" app:search_left_drawable_height="14dp" app:search_left_drawable_width="14dp"/>
+</LinearLayout>

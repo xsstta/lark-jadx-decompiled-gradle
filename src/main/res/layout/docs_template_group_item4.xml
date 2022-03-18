@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/groupName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/templates" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:overScrollMode="never"/>
+    <com.bytedance.ee.bear.widgets.universedesign.SpaceEmptyState android:id="@+id/nodata" android:layout_marginTop="@dimen/space_kit_len_61" android:layout_marginBottom="@dimen/space_kit_len_61" app:ud_empty_desc="@string/Doc_List_EmptyTemplateCategory" app:ud_empty_imageRes="@drawable/illustration_empty_neutral_no_cloud_document" style="@style/SpaceEmptyStatusStyle"/>
+</LinearLayout>

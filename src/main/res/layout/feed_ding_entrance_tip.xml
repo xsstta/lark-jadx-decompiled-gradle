@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/ding_pocket_btn" android:background="@drawable/feed_urgent_ding_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginBottom="7dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="6dp" android:src="@drawable/feed_urgent_icon"/>
+    <TextView android:textSize="16sp" android:textColor="@color/static_white" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/ding_count_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="1"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="20dp" android:textColor="@color/text_placeholder" android:id="@+id/vc_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/iconfont_icon_videocam_solid"/>
+    <com.ss.android.lark.widget.flowlayout.FlowLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="@color/text_placeholder" android:id="@+id/vc_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/primary_pri_500" android:id="@+id/vc_tv" android:paddingLeft="5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/View_AV_CallAgain"/>
+    </com.ss.android.lark.widget.flowlayout.FlowLayout>
+</LinearLayout>

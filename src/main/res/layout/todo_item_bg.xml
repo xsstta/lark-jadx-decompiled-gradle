@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.lark.todo.impl.features.mainview.adapter.PerfLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.larksuite.component.blockit.hashtag.widget.SwipeLayout android:id="@+id/swipeLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="right" android:id="@+id/behind_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" android:foregroundGravity="center">
+            <RelativeLayout android:id="@+id/behind_share_view" android:background="@color/primary_pri_500" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dp_05">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/behind_share_view_image" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/ud_icon_share_outlined" android:tint="@color/static_white"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_20" android:text="@string/Todo_Common_Share"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/behind_delete_view" android:background="@drawable/todo_bg_list_backend_red_corner" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/behind_share_view">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/behind_delete_view_image" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_20" android:src="@drawable/ud_icon_delete_trash_outlined" android:tint="@color/static_white"/>
+                    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:id="@+id/behind_delete_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_20" android:text="@string/Todo_common_Delete"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container_view" android:background="@color/bg_base" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/content_title_view" android:background="@drawable/todo_main_fragment_title_bg_round" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dp_36" android:paddingStart="@dimen/dp_16">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/list_icon_img" android:layout_width="@dimen/dp_12" android:layout_height="@dimen/dp_12" android:src="@drawable/ud_icon_expand_down_filled" android:tint="@color/icon_n2" android:layout_marginEnd="@dimen/dp_8d5"/>
+                <TextView android:textSize="@dimen/dp_14" android:textStyle="bold" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/list_icon_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_placeholder" android:layout_gravity="center_vertical" android:id="@+id/list_icon_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6"/>
+                <com.larksuite.component.ui.imageview.LKUIBadgeView android:layout_gravity="center_vertical" android:id="@+id/list_icon_count_red_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" app:badgeBackground="@drawable/badge_orange_single_count_bg_no_stroke" app:textColor="@color/static_white" app:textSize="@dimen/dp_11"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_container_view" android:background="@drawable/bg_setting_group_item_rectangle" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_70">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_container" android:paddingRight="@dimen/dp_16" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <RelativeLayout android:id="@+id/complete_checkbox_container" android:layout_width="@dimen/dp_44" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/complete_checkbox" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginLeft="@dimen/dp_16" android:layout_marginTop="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_16"/>
+                        <com.airbnb.lottie.LottieAnimationView android:id="@+id/complete_checkbox_lottie" android:visibility="gone" android:layout_width="@dimen/dp_33" android:layout_height="@dimen/dp_33" android:layout_marginLeft="@dimen/dp_9d5" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_7" app:lottie_autoPlay="false" app:lottie_loop="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12">
+                        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.ss.android.lark.widget.light.LKUILightTextView android:textSize="@dimen/dp_16" android:id="@+id/title_rich_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/dp_22"/>
+                            <View android:id="@+id/item_finish_line" android:background="@color/text_caption" android:layout_width="0dp" android:layout_height="@dimen/dp_1" android:layout_marginTop="@dimen/dp_2" android:layout_centerVertical="true" app:layout_constraintBottom_toBottomOf="@+id/title_rich_text" app:layout_constraintLeft_toLeftOf="@+id/title_rich_text" app:layout_constraintRight_toRightOf="@+id/title_rich_text" app:layout_constraintTop_toTopOf="@+id/title_rich_text"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/attendee_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <androidx.recyclerview.widget.RecyclerView android:id="@+id/assignee_avatar_list" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                <TextView android:textSize="@dimen/dp_10" android:textColor="@color/text_caption" android:gravity="center" android:layout_gravity="center" android:id="@+id/assignee_avatar_count" android:background="@drawable/todo_center_assignee_item_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_7"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_end_time_first" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_end_time_first" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/ud_icon_calendar_outlined"/>
+                                <TextView android:textSize="@dimen/dp_14" android:id="@+id/tv_end_time_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_4"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_end_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_end_time" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:src="@drawable/ud_icon_calendar_outlined"/>
+                            <TextView android:textSize="@dimen/dp_14" android:id="@+id/tv_end_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/dp_4"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/divider_todo_item" android:background="@color/line_divider_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/dp_44"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.larksuite.component.blockit.hashtag.widget.SwipeLayout>
+</com.ss.android.lark.todo.impl.features.mainview.adapter.PerfLinearLayout>

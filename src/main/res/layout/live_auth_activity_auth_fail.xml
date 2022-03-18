@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/login_content_frame_container" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ss.android.vc.common.widget.IconFontView android:textSize="@dimen/dp_24" android:textColor="@color/icon_n1" android:id="@+id/iv_close" android:paddingTop="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iconfont_icon_close" android:layout_alignParentTop="true" android:paddingEnd="@dimen/dp_16" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/iv_close" app:layout_constraintTop_toBottomOf="@+id/iv_close">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/dp_12" android:layout_weight="1" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="181dp" android:scaleType="centerCrop" app:srcCompat="@drawable/ud_icon_warning_hollow_filled" app:tint="@color/function_danger_500"/>
+            <TextView android:textSize="@dimen/dp_18" android:textStyle="bold" android:textColor="@color/text_title" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/View_G_AuthenticationFailed"/>
+            <TextView android:textSize="@dimen/dp_18" android:textColor="@color/text_caption" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:text="@string/View_G_AuthenticationResultsNoMatch"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_16" android:layout_marginEnd="@dimen/dp_16">
+            <LinearLayout android:gravity="center" android:id="@+id/llNextStep" android:layout_width="match_parent" android:layout_marginBottom="@dimen/dp_16" style="@style/LiveAuthButtonStyle">
+                <TextView android:textSize="@dimen/dp_17" android:textColor="@color/static_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/View_G_AuthenticationRetry"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

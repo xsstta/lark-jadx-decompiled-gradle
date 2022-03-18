@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/drive_upload_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/above_line" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/item_icon_fl" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_marginRight="12dp">
+            <ImageView android:id="@+id/item_icon" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/list_item_icon_uploading" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="16dp">
+                <TextView android:textSize="14dp" android:textColor="@color/text_title" android:id="@+id/upload_title_text" android:layout_width="wrap_content" android:layout_height="21dp" android:layout_marginTop="14dp" android:text="@string/Doc_List_UploadingFile" android:layout_alignParentLeft="true"/>
+                <com.larksuite.component.universe_design.progress.UDProgress android:id="@+id/upload_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:progress="0" android:layout_below="@+id/upload_title_text" app:ud_progress_indicatorColor="@color/ud_B500" app:ud_progress_indicatorCornerRadius="1dp" app:ud_progress_thickness="4dp" app:ud_progress_trackColor="@color/ud_N300" app:ud_progress_type="0"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_caption" android:id="@+id/upload_progress_count" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="21dp" android:layout_marginTop="14dp" android:text="1/4" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/upload_state_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="26dp" android:src="@drawable/list_uploaded_fail_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="17dp" android:textColor="@color/text_title" android:layout_gravity="center_vertical" android:id="@+id/upload_failed_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="failed"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/under_line" android:background="@color/line_divider_default" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

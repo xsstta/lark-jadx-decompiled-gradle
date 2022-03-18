@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12dp" android:textColor="@color/text_title" android:gravity="center" android:id="@+id/select_item" android:background="@drawable/wiki_create_item_selector" android:paddingTop="16dp" android:layout_width="86dp" android:layout_height="88dp"/>

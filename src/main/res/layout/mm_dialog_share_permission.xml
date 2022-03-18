@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/mm_bg_dialog_bottom_sheet_r6" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="20dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="95dp">
+        <com.ss.android.lark.mm.widget.avatar.Avatar android:id="@+id/ivIcon" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerVertical="true" app:avatar_sizeType="-2" app:srcCompat="@drawable/mm_ic_avatar_default"/>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/shareSwitch" android:layout_toRightOf="@+id/ivIcon" android:layout_centerVertical="true">
+            <com.ss.android.lark.mm.widget.BoldTextView android:textSize="16dp" android:textColor="@color/lkui_N900" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:singleLine="true" android:layout_above="@+id/tvDesc" android:textFontWeight="500"/>
+            <com.ss.android.lark.mm.widget.BoldTextView android:textSize="14dp" android:textColor="@color/lkui_N500" android:ellipsize="end" android:id="@+id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:singleLine="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="#26000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <com.ss.android.lark.mm.module.share.permission.PermissionMenu android:id="@+id/menuRead" android:layout_width="match_parent" android:layout_height="56dp" app:share_menu_title="@string/MMWeb_G_CanView" app:share_permission="VIEW"/>
+        <com.ss.android.lark.mm.module.share.permission.PermissionMenu android:id="@+id/menuEdit" android:layout_width="match_parent" android:layout_height="56dp" app:share_menu_title="@string/MMWeb_G_CanEdit" app:share_permission="EDIT"/>
+        <com.ss.android.lark.mm.module.share.permission.PermissionMenu android:id="@+id/menuTransfer" android:layout_width="match_parent" android:layout_height="56dp" app:share_menu_title="@string/MMWeb_G_SetAsOwner" app:share_permission="OWNER"/>
+        <com.ss.android.lark.mm.module.share.permission.PermissionMenu android:id="@+id/menuDelete" android:layout_width="match_parent" android:layout_height="56dp" app:share_menu_is_danger="true" app:share_menu_title="@string/MMWeb_G_Delete" app:share_permission="NONE"/>
+    </LinearLayout>
+</LinearLayout>

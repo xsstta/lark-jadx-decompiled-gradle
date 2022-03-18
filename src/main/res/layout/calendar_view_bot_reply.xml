@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:background="0x7f0801ec" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/img_bot_replying" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" app:lottie_autoPlay="true" app:lottie_fileName="lottie/request_loading_anim.json" app:lottie_loop="true"/>
+        <ImageView android:id="@+id/img_bot_reply" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:src="@drawable/ud_icon_yes_outlined" android:scaleType="fitXY" android:tint="@color/static_white"/>
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/static_white" android:id="@+id/text_bot_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:text="回复成功"/>
+    </LinearLayout>
+</LinearLayout>

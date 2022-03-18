@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/bg_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ss.android.lark.ui.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.ss.android.lark.contact.widget.DesktopContactsTitle android:id="@+id/desktop_title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout android:id="@+id/robot_ptr_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_container" app:lkui_ptr_duration_to_close_either="500" app:lkui_ptr_keep_header_when_refresh="true" app:lkui_ptr_mode="2" app:lkui_ptr_pull_to_fresh="false" app:lkui_ptr_ratio_of_header_height_to_refresh="0.5" app:lkui_ptr_resistance="1.7">
+        <com.ss.android.lark.widget.recyclerview.CommonRecyclerView android:id="@+id/group_chat_recylerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp"/>
+    </com.ss.android.lark.widget.ptr.LKUIPtrClassicFrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/load_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="224.5dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_robot_empty"/>
+        <TextView android:textSize="14sp" android:textColor="@color/text_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/Lark_Legacy_RobotEmpty"/>
+    </LinearLayout>
+</RelativeLayout>
